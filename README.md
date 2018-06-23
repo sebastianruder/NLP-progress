@@ -181,10 +181,16 @@ above parse tree looks as follows: (S (N) (VP V N)).
 
 The Wall Street Journal section of the [Penn Treebank](https://catalog.ldc.upenn.edu/LDC99T42) is used for 
 evaluating constituency parsers. Section 22 is used for development and Section 23 is used for evaluation.
-Models are evaluated based on F1.
+Models are evaluated based on F1. Most of the below models incorporate external data or features.
+For a comparison of single models trained only on WSJ, refer to [Kitaev and Klein (2018)](https://arxiv.org/abs/1805.01052).
 
 | Model           | F1 score  |  Paper / Source |
 | ------------- | :-----:| --- |
+| Self-attentive encoder + ELMo (Kitaev and Klein, 2018) | 95.13 | [Constituency Parsing with a Self-Attentive Encoder](https://arxiv.org/abs/1805.01052) |
+| Model combination (Fried et al., 2017) | 94.66 | [Improving Neural Parsing by Disentangling Model Combination and Reranking Effects](https://arxiv.org/abs/1707.03058) |
+| In-order (Liu and Zhang, 2017) | 94.2 | [In-Order Transition-based Constituent Parsing](http://aclweb.org/anthology/Q17-1029) |
+| Semi-supervised LSTM-LM (Choe and Charniak, 2016) | 93.8 | [Parsing as Language Modeling](http://www.aclweb.org/anthology/D16-1257) | 
+| Stack-only RNNG (Kuncoro et al., 2017) | 93.6 | [What Do Recurrent Neural Network Grammars Learn About Syntax?](https://arxiv.org/abs/1611.05774) |
 | RNN Grammar (Dyer et al., 2016) | ﻿93.3 | [Recurrent Neural Network Grammars](https://www.aclweb.org/anthology/N16-1024) |
 | Transformer (Vaswani et al., 2017) | 92.7 | [Attention Is All You Need](https://arxiv.org/abs/1706.03762) |
 | Semi-supervised LSTM (Vinyals et al., 2015) | 92.1  | [Grammar as a Foreign Language](https://papers.nips.cc/paper/5635-grammar-as-a-foreign-language.pdf) |
@@ -250,9 +256,13 @@ labeled attachment score (LAS).
 
 | Model           | UAS | LAS | Paper / Source |
 | ------------- | :-----:| :-----:| --- |
+| Stack-only RNNG (Kuncoro et al., 2017) | 95.8 | 94.6 | [What Do Recurrent Neural Network Grammars Learn About Syntax?](https://arxiv.org/abs/1611.05774) |
+| Semi-supervised LSTM-LM (Choe and Charniak, 2016) | 95.9 | 94.1 | [Parsing as Language Modeling](http://www.aclweb.org/anthology/D16-1257) | 
 | Deep Biaffine (Dozat and Manning, 2017) | 95.66 | 94.03 | [Deep Biaffine Attention for Neural Dependency Parsing](https://arxiv.org/abs/1611.01734) | 
 | Andor et al. (2016) | 94.61 | 92.79 | [Globally Normalized Transition-Based Neural Networks](https://www.aclweb.org/anthology/P16-1231) |
+| Distilled neural FOG (Kuncoro et al., 2016) | 94.26 | 92.06 | [Distilling an Ensemble of Greedy Dependency Parsers into One MST Parser](https://arxiv.org/abs/1609.07561) | 
 | Weiss et al. (2015) | 94.0 | 92.0 | [Structured Training for Neural Network Transition-Based Parsing](http://anthology.aclweb.org/P/P15/P15-1032.pdf) |
+| Arc-hybrid (Ballesteros et al., 2016) | 93.56 | 91.42 | [Training with Exploration Improves a Greedy Stack-LSTM Parser](https://arxiv.org/abs/1603.03793) |
 | BIST parser (Kiperwasser and Goldberg, 2016) | 93.2 | 91.2 | [Simple and Accurate Dependency Parsing Using Bidirectional LSTM Feature Representations](https://aclweb.org/anthology/Q16-1023) |
 
 ## Dialog
@@ -401,6 +411,7 @@ corpus tagged with four different entity types (PER, LOC, ORG, MISC). Models are
 | Peters et al. (2017) | 91.93 | [Semi-supervised sequence tagging with bidirectional language models](https://arxiv.org/abs/1705.00108) |
 | Yang et al. (2017) | 91.26 | [Transfer Learning for Sequence Tagging with Hierarchical Recurrent Networks](https://arxiv.org/abs/1703.06345) |
 | Ma and Hovy (2016) | 91.21 | [End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF](https://arxiv.org/abs/1603.01354) |
+| LSTM-CRF (Lample et al., 2016) | 90.94 | [Neural Architectures for Named Entity Recognition](https://arxiv.org/abs/1603.01360) |
 
 ## Natural language inference
 
