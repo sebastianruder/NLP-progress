@@ -799,6 +799,7 @@ pertaining to the 4 largest classes. The dataset contains 30,000 training exampl
 | CNN (Johnson and Zhang, 2016) | 6.57 | [Supervised and Semi-Supervised Text Categorization using LSTM for Region Embeddings](https://arxiv.org/abs/1602.02373) |
 | DPCNN (Johnson and Zhang, 2017) | 6.87 | [Deep Pyramid Convolutional Neural Networks for Text Categorization](http://aclweb.org/anthology/P17-1052) |
 | Char-level CNN (Zhang et al., 2015) | 9.51 | [Character-level Convolutional Networks for Text Classification](https://papers.nips.cc/paper/5782-character-level-convolutional-networks-for-text-classification.pdf) |
+| VDCN (Alexis et al., 2016) | 8.67 | [Very Deep Convolutional Networks for Text Classification](https://arxiv.org/abs/1606.01781) |
 
 ### DBpedia
 
@@ -812,6 +813,7 @@ Models are evaluated based on error rate (lower is better).
 | CNN (Johnson and Zhang, 2016) | 0.84 | [Supervised and Semi-Supervised Text Categorization using LSTM for Region Embeddings](https://arxiv.org/abs/1602.02373) |
 | DPCNN (Johnson and Zhang, 2017) | 0.88 | [Deep Pyramid Convolutional Neural Networks for Text Categorization](http://aclweb.org/anthology/P17-1052) |
 | Char-level CNN (Zhang et al., 2015) | 1.55 | [Character-level Convolutional Networks for Text Classification](https://papers.nips.cc/paper/5782-character-level-convolutional-networks-for-text-classification.pdf) |
+| VDCN (Alexis et al., 2016) | 1.29 | [Very Deep Convolutional Networks for Text Classification](https://arxiv.org/abs/1606.01781) |
 
 ### TREC
 
