@@ -732,7 +732,7 @@ Binary classification:
 ## Multimodal Sentiment Analysis
 
 ### MOSI
-The MOSI dataset [Zadeh et al., 2016](https://arxiv.org/pdf/1606.06259.pdf) is a dataset rich in sentimental expressions where 93 people review topics in English. The videos are segmented with each segments sentiment label scored between +3 (strong positive) to -3 (strong negative)  by  5  annotators.
+The MOSI dataset ([Zadeh et al., 2016](https://arxiv.org/pdf/1606.06259.pdf)) is a dataset rich in sentimental expressions where 93 people review topics in English. The videos are segmented with each segments sentiment label scored between +3 (strong positive) to -3 (strong negative)  by  5  annotators.
 
 | Model           | Accuracy  |  Paper / Source |
 | ------------- | :-----:| --- |
@@ -741,7 +741,7 @@ The MOSI dataset [Zadeh et al., 2016](https://arxiv.org/pdf/1606.06259.pdf) is a
 ## Multimodal Emotion Recognition 
 
 ### IEMOCAP
-The  IEMOCAP  [Busso  et  al., 2008](https://link.springer.com/article/10.1007/s10579-008-9076-6) contains the acts of 10 speakers in a two-way conversation segmented into utterances.  The medium of the conversations in all the videos is English.  The database contains the following categorical labels: anger, happiness, sadness, neutral, excitement,  frustration,  fear,  surprise,  and  other.
+The  IEMOCAP ( [Busso  et  al., 2008](https://link.springer.com/article/10.1007/s10579-008-9076-6)) contains the acts of 10 speakers in a two-way conversation segmented into utterances.  The medium of the conversations in all the videos is English.  The database contains the following categorical labels: anger, happiness, sadness, neutral, excitement,  frustration,  fear,  surprise,  and  other.
 
 **Monologue:**
 
