@@ -99,7 +99,7 @@ datasets for other languages.
   - [Yelp](#yelp)
 - [Multimodal Sentiment Analysis](#multimodal-sentiment-analysis)
   - [MOSI](#mosi)
-- [Multimodal Emotion Recognition](multimodal-emotion-recognition)
+- [Multimodal Emotion Recognition](#multimodal-emotion-recognition)
   - [IEMOCAP](#iemocap)
 - [Semantic parsing](#semantic-parsing)
   - [WikiSQL](#wikisql)
