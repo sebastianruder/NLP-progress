@@ -97,6 +97,10 @@ datasets for other languages.
   - [Sentihood](#sentihood)
   - [SST](#sst)
   - [Yelp](#yelp)
+- [Multimodal Sentiment Analysis](#multimodal-sentiment-analysis)
+  - [MOSI](#mosi)
+- [Multimodal Emotion Recognition](multimodal-emotion-recognition)
+  - [IEMOCAP](#iemocap)
 - [Semantic parsing](#semantic-parsing)
   - [WikiSQL](#wikisql)
 - [Semantic role labeling](#semantic-role-labeling)
@@ -724,6 +728,34 @@ Binary classification:
 | DPCNN (Johnson and Zhang, 2017) | 2.64 | [Deep Pyramid Convolutional Neural Networks for Text Categorization](http://aclweb.org/anthology/P17-1052) |
 | CNN (Johnson and Zhang, 2016) | 2.90 | [Supervised and Semi-Supervised Text Categorization using LSTM for Region Embeddings](https://arxiv.org/abs/1602.02373) |
 | Char-level CNN (Zhang et al., 2015) | 4.88 | [Character-level Convolutional Networks for Text Classification](https://papers.nips.cc/paper/5782-character-level-convolutional-networks-for-text-classification.pdf) |
+
+## Multimodal Sentiment Analysis
+
+### MOSI
+The MOSI dataset [Zadeh et al., 2016](https://arxiv.org/pdf/1606.06259.pdf) is a dataset rich in sentimental expressions where 93 people review topics in English. The videos are segmented with each segments sentiment label scored between +3 (strong positive) to -3 (strong negative)  by  5  annotators.
+
+| Model           | Accuracy  |  Paper / Source |
+| ------------- | :-----:| --- |
+| bc-LSTM (Poria et al., 2018) | 80.3%  | [Context-Dependent Sentiment Analysis in User-Generated Videos](http://sentic.net/context-dependent-sentiment-analysis-in-user-generated-videos.pdf) |
+
+## Multimodal Emotion Recognition 
+
+### IEMOCAP
+The  IEMOCAP  [Busso  et  al., 2008](https://link.springer.com/article/10.1007/s10579-008-9076-6) contains the acts of 10 speakers in a two-way conversation segmented into utterances.  The medium of the conversations in all the videos is English.  The database contains the following categorical labels: anger, happiness, sadness, neutral, excitement,  frustration,  fear,  surprise,  and  other.
+
+**Monologue:**
+
+| Model           | Accuracy  |  Paper / Source |
+| ------------- | :-----:| --- |
+| bc-LSTM (Poria et al., 2018) | 76.10%  | [Context-Dependent Sentiment Analysis in User-Generated Videos](http://sentic.net/context-dependent-sentiment-analysis-in-user-generated-videos.pdf) |
+
+**Conversational:**
+
+| Model           | Score  |  Paper / Source |
+| ------------- | :-----:| --- |
+| CMN (Hazarika et al., 2018) | WAA = 77.62%  | [Conversational Memory Network for Emotion Recognition in Dyadic Dialogue Videos](http://aclweb.org/anthology/N18-1193) |
+
+
 
 ## Semantic parsing
 
