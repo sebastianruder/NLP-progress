@@ -4,7 +4,7 @@ Semantic parsing is the task of translating natural language into a formal meani
 representation on which a machine can act. Representations may be an executable language
 such as SQL or more abstract representations such as [Abstract Meaning Representation (AMR)](https://en.wikipedia.org/wiki/Abstract_Meaning_Representation).
 
-## SQL parsing
+## SQL parsing
 
 ### WikiSQL
 

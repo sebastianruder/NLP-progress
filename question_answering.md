@@ -12,7 +12,7 @@ based on accuracy.
 
 A public leaderboard is available on the [ARC website](http://data.allenai.org/arc/).
 
-## Reading comprehension
+## Reading comprehension
 
 Most current question answering datasets frame the task as reading comprehension where the question is about a paragraph
 or document and the answer often is a span in the document. The Machine Reading group

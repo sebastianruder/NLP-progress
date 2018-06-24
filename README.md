@@ -1,5 +1,29 @@
 # Tracking Progress in Natural Language Processing
 
+### Table of contents
+
+- [CCG supertagging](ccg_supertagging.md)
+- [Chunking](chunking.md)
+- [Constituency parsing](constituency_parsing.md)
+- [Coreference resolution](coreference_resolution.md)
+- [Dependency parsing](dependency_parsing.md)
+- [Dialog](dialog.md)
+- [Domain adaptation](domain_adaptation.md)
+- [Language modelling](language_modeling.md)
+- [Machine translation](machine_translation.md)
+- [Multi-task learning](multi-task_learning.md)
+- [Multimodal](multimodal.md)
+- [Named entity recognition](named_entity_recognition.md)
+- [Natural language inference](natural_language_inference.md)
+- [Part-of-speech tagging](part-of-speech_tagging.md)
+- [Question answering](question_answering.md)
+- [Semantic textual similarity](semantic_textual_similarity.md)
+- [Sentiment analysis](sentiment_analysis.md)
+- [Semantic parsing](semantic_parsing.md)
+- [Semantic role labeling](semantic_role_labeling.md)
+- [Summarization](summarization.md)
+- [Text classification](text_classification.md)
+
 This document aims to track the progress in Natural Language Processing (NLP) and give an overview
 of the state-of-the-art across the most common NLP tasks and their corresponding datasets.
 
@@ -47,27 +71,3 @@ the one that introduced the dataset.
 - We could potentially use [readthedocs](https://github.com/rtfd/readthedocs.org) to provide a clearer structure.
 - All current datasets in this list are for the English language (except for [UD](#ud)). In a separate section, we could add
 datasets for other languages.
-
-### Table of contents
-
-- [CCG supertagging](ccg_supertagging.md)
-- [Chunking](chunking.md)
-- [Constituency parsing](constituency_parsing.md)
-- [Coreference resolution](coreference_resolution.md)
-- [Dependency parsing](dependency_parsing.md)
-- [Dialog](dialog.md)
-- [Domain adaptation](domain_adaptation.md)
-- [Language modelling](language_modeling.md)
-- [Machine translation](machine_translation.md)
-- [Multi-task learning](multi-task_learning.md)
-- [Multimodal](multimodal.md)
-- [Named entity recognition](named_entity_recognition.md)
-- [Natural language inference](natural_language_inference.md)
-- [Part-of-speech tagging](part-of-speech_tagging.md)
-- [Question answering](question_answering.md)
-- [Semantic textual similarity](semantic_textual_similarity.md)
-- [Sentiment analysis](sentiment_analysis.md)
-- [Semantic parsing](semantic_parsing.md)
-- [Semantic role labeling](semantic_role_labeling.md)
-- [Summarization](summarization.md)
-- [Text classification](text_classification.md)
