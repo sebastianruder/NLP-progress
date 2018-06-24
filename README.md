@@ -40,22 +40,23 @@ If you would like to add a new result, you can do so with a pull request.
 In order to minimize noise and to make maintenance somewhat manageable, results reported
 in published papers will be preferred (indicate the venue of publication in your PR);
 an exception may be made for influential preprints. The result should include the name
-of the method, the citation, the score, and a link to the paper.
+of the method, the citation, the score, and a link to the paper and should be added
+so that the table is sorted.
 
 To add a new dataset or task, follow the below steps. Any new datasets
 should have been used for evaluation in at least one published paper besides 
 the one that introduced the dataset.
 
 1. Fork the repository.
-2. Add your dataset/task to the respective section of this document.
-3. Add your dataset/task to the table of contents.
-4. Briefly describe the dataset/task and include relevant references. 
-5. Describe the evaluation setting and evaluation metric.
-6. Show how an annotated example of the dataset/task looks like.
-7. Add a download link if available.
-8. Copy the below table and fill in at least two results (including the state-of-the-art)
-  for your dataset/task.
-9. Submit your change as a pull request.
+2. If your task is completely new, create a new file and link to it in the table of contents above.
+If not, add your task or dataset to the respective section of the corresponding file.
+3. Briefly describe the dataset/task and include relevant references. 
+4. Describe the evaluation setting and evaluation metric.
+5. Show how an annotated example of the dataset/task looks like.
+6. Add a download link if available.
+7. Copy the below table and fill in at least two results (including the state-of-the-art)
+  for your dataset/task (chang Score to the metric of your dataset).
+8. Submit your change as a pull request.
   
 | Model           | Score  |  Paper / Source |
 | ------------- | :-----:| --- |
