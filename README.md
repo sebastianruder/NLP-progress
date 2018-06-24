@@ -34,6 +34,19 @@ task of interest, which serves as a stepping stone for further research. To this
 place where results for a task are already published and regularly maintained, such as a public leaderboard,
 the reader will be pointed there.
 
+### Wish list
+
+These are tasks and datasets that are still missing.
+
+- AMR parsing
+- Bilingual dictionary induction
+- Discourse parsing
+- Information extraction
+- Knowledge base population (KBP)
+- More dialogue tasks
+- Relation extraction
+- Semi-supervised learning
+
 ### Contributing
 
 If you would like to add a new result, you can do so with a pull request. 
