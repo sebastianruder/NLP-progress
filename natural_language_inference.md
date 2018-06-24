@@ -1,4 +1,4 @@
-## Natural language inference
+# Natural language inference
 
 Natural language inference is the task of determining whether a "hypothesis" is 
 true (entailment), false (contradiction), or undetermined (neutral) given a "premise".

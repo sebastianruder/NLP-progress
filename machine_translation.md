@@ -1,4 +1,4 @@
-## Machine translation
+# Machine translation
 
 Machine translation is the task of translating a sentence in a source language to a different target language. 
 

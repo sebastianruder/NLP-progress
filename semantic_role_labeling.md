@@ -1,4 +1,4 @@
-## Semantic role labeling
+# Semantic role labeling
 
 Semantic role labeling aims to model the predicate-argument structure of a sentence
 and is often described as answering "Who did what to whom". BIO notation is typically
@@ -10,7 +10,7 @@ Example:
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | 
 | B-ARG1 | I-ARG1 | O |  O  |  O  |   V  | B-ARG2 | I-ARG2 | B-ARG3 | I-ARG3 | I-ARG3 |    
 
-### OntoNotes&mdash;semantic role labeling
+### OntoNotes
 
 Models are typically evaluated on the [OntoNotes benchmark](http://www.aclweb.org/anthology/W13-3516) based on F1.
 

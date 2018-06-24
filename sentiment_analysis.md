@@ -1,4 +1,4 @@
-## Sentiment analysis
+# Sentiment analysis
 
 Sentiment analysis is the task of classifying the polarity of a given text.
 
@@ -14,19 +14,6 @@ negative. Models are evaluated based on accuracy.
 | oh-LSTM (Johnson and Zhang, 2016) | 94.1 | [Supervised and Semi-Supervised Text Categorization using LSTM for Region Embeddings](https://arxiv.org/abs/1602.02373) |
 | Virtual adversarial training (Miyato et al., 2016) | 94.1 | [Adversarial Training Methods for Semi-Supervised Text Classification](https://arxiv.org/abs/1605.07725) |
 | BCN+Char+CoVe (McCann et al., 2017) | 91.8 | [Learned in Translation: Contextualized Word Vectors](https://arxiv.org/abs/1708.00107) |
-
-### Sentihood
-
-[Sentihood](http://www.aclweb.org/anthology/C16-1146) is a dataset for targeted aspect-based sentiment analysis (TABSA), which aims
-to identify fine-grained polarity towards a specific aspect. The dataset consists of 5,215 sentences,
-3,862 of which contain a single target, and the remainder multiple targets. F1 is used as evaluation metric
-for aspect detection and accuracy as evaluation metric for sentiment analysis.
-
-| Model           | Aspect  | Sentiment |  Paper / Source |
-| ------------- | :-----:| :-----:| --- |
-| Liu et al. (2018) | 78.5 | 91.0 | [Recurrent Entity Networks with Delayed Memory Update for Targeted Aspect-based Sentiment Analysis](http://aclweb.org/anthology/N18-2045) |
-| SenticLSTM (Ma et al., 2018) | 78.2 | 89.3 | [Targeted Aspect-Based Sentiment Analysis via Embedding Commonsense Knowledge into an Attentive LSTM](http://sentic.net/sentic-lstm.pdf) | 
-| LSTM-LOC (Saeidi et al., 2016) | 69.3 | 81.9 | [Sentihood: Targeted aspect based sentiment analysis dataset for urban neighbourhoods](http://www.aclweb.org/anthology/C16-1146) |
 
 ### SST
 
@@ -74,3 +61,18 @@ Binary classification:
 | DPCNN (Johnson and Zhang, 2017) | 2.64 | [Deep Pyramid Convolutional Neural Networks for Text Categorization](http://aclweb.org/anthology/P17-1052) |
 | CNN (Johnson and Zhang, 2016) | 2.90 | [Supervised and Semi-Supervised Text Categorization using LSTM for Region Embeddings](https://arxiv.org/abs/1602.02373) |
 | Char-level CNN (Zhang et al., 2015) | 4.88 | [Character-level Convolutional Networks for Text Classification](https://papers.nips.cc/paper/5782-character-level-convolutional-networks-for-text-classification.pdf) |
+
+## Aspect-based sentiment analysis
+
+### Sentihood
+
+[Sentihood](http://www.aclweb.org/anthology/C16-1146) is a dataset for targeted aspect-based sentiment analysis (TABSA), which aims
+to identify fine-grained polarity towards a specific aspect. The dataset consists of 5,215 sentences,
+3,862 of which contain a single target, and the remainder multiple targets. F1 is used as evaluation metric
+for aspect detection and accuracy as evaluation metric for sentiment analysis.
+
+| Model           | Aspect  | Sentiment |  Paper / Source |
+| ------------- | :-----:| :-----:| --- |
+| Liu et al. (2018) | 78.5 | 91.0 | [Recurrent Entity Networks with Delayed Memory Update for Targeted Aspect-based Sentiment Analysis](http://aclweb.org/anthology/N18-2045) |
+| SenticLSTM (Ma et al., 2018) | 78.2 | 89.3 | [Targeted Aspect-Based Sentiment Analysis via Embedding Commonsense Knowledge into an Attentive LSTM](http://sentic.net/sentic-lstm.pdf) | 
+| LSTM-LOC (Saeidi et al., 2016) | 69.3 | 81.9 | [Sentihood: Targeted aspect based sentiment analysis dataset for urban neighbourhoods](http://www.aclweb.org/anthology/C16-1146) |

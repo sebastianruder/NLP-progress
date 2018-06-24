@@ -1,4 +1,4 @@
-## Multi-task learning
+# Multi-task learning
 
 Multi-task learning aims to learn multiple different tasks simultaneously while maximizing
 performance on one or all of the tasks. 

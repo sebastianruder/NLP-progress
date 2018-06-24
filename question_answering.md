@@ -1,9 +1,6 @@
-## Question answering / reading comprehension
+# Question answering
 
-Question answering is the task of answering a question. Most current datasets
-frame this task as reading comprehension where the question is about a paragraph
-or document and the answer often is a span in the document. The Machine Reading group
-at UCL also provides an [overview of reading comprehension tasks](https://uclmr.github.io/ai4exams/data.html).
+Question answering is the task of answering a question.
 
 ### ARC
 
@@ -15,7 +12,13 @@ based on accuracy.
 
 A public leaderboard is available on the [ARC website](http://data.allenai.org/arc/).
 
-### CNN / Daily Mail&mdash;reading comprehension
+## Reading comprehension
+
+Most current question answering datasets frame the task as reading comprehension where the question is about a paragraph
+or document and the answer often is a span in the document. The Machine Reading group
+at UCL also provides an [overview of reading comprehension tasks](https://uclmr.github.io/ai4exams/data.html).
+
+### CNN / Daily Mail
 
 The [CNN / Daily Mail dataset](https://arxiv.org/abs/1506.03340) is a Cloze-style reading comprehension dataset
 created from CNN and Daily Mail news articles using heuristics. [Close-style](https://en.wikipedia.org/wiki/Cloze_test)

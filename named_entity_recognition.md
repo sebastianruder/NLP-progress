@@ -1,4 +1,4 @@
-## Named entity recognition
+# Named entity recognition
 
 Named entity recognition (NER) is the task of tagging entities in text with their corresponding type.
 Approaches typically use BIO notation, which differentiates the beginning (B) and the inside (I) of entities.

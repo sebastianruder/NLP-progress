@@ -1,4 +1,4 @@
-## Part-of-speech tagging
+# Part-of-speech tagging
 
 Part-of-speech tagging (POS tagging) is the task of tagging a word in a text with its part of speech.
 A part of speech is a category of words with similar grammatical properties. Common English
@@ -22,7 +22,7 @@ Models are typically evaluated based on the average test accuracy across 28 lang
 | Bi-LSTM (Plank et al., 2016) | 96.40 | [Multilingual Part-of-Speech Tagging with Bidirectional Long Short-Term Memory Models and Auxiliary Loss](https://arxiv.org/abs/1604.05529) | 
 | Joint Bi-LSTM (Nguyen et al., 2017) | 95.55 | [A Novel Neural Network Model for Joint POS Tagging and Graph-based Dependency Parsing](https://arxiv.org/abs/1705.05952) |
 
-### Penn Treebank&mdash;POS tagging
+### Penn Treebank
 
 A standard dataset for POS tagging is the Wall Street Journal (WSJ) portion of the Penn Treebank, containing 45 
 different POS tags. Sections 0-18 are used for training, sections 19-21 for development, and sections 

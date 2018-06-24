@@ -1,9 +1,9 @@
-## Summarization
+# Summarization
 
 Summarization is the task of producing a shorter version of a document that preserves most of the
 original document's meaning.
 
-### CNN / Daily Mail&mdash;summarization
+### CNN / Daily Mail
 
 The [CNN / Daily Mail dataset](https://arxiv.org/abs/1506.03340) as processed by 
 [Nallapati et al. (2016)](http://www.aclweb.org/anthology/K16-1028) has been used

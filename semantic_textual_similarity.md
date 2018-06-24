@@ -1,4 +1,4 @@
-## Semantic textual similarity
+# Semantic textual similarity
 
 Semantic textual similarity deals with determining how similar two pieces of texts are.
 This can take the form of assigning a score from 1 to 5. Related tasks are paraphrase or duplicate identification.
@@ -23,6 +23,8 @@ The data can be downloaded from [here](https://github.com/facebookresearch/SentE
 | ------------- | :-----:| :-----:| :-----:| :-----:| --- |
 | GenSen (Subramanian et al., 2018) | 78.6/84.4 | 0.888 | 87.8 | 78.9/78.6 | [Learning General Purpose Distributed Sentence Representations via Large Scale Multi-task Learning](https://arxiv.org/abs/1804.00079) | |
 | InferSent (Conneau et al., 2017) | 76.2/83.1 | 0.884 | 86.3 | 75.8/75.5 | [Supervised Learning of Universal Sentence Representations from Natural Language Inference Data](https://arxiv.org/abs/1705.02364) |
+
+## Paraphrase identification
 
 ### Quora Question Pairs
 

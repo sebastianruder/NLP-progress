@@ -1,4 +1,4 @@
-## Constituency parsing
+# Constituency parsing
 
 Consituency parsing aims to extract a constituency-based parse tree from a sentence that 
 represents its syntactic structure according to a [phrase structure grammar](https://en.wikipedia.org/wiki/Phrase_structure_grammar).
@@ -22,7 +22,7 @@ convert the parse tree into a sequence following a depth-first traversal in orde
 be able to apply sequence-to-sequence models to it. The linearized version of the
 above parse tree looks as follows: (S (N) (VP V N)).
  
-### Penn Treebank&mdash;constituency parsing
+### Penn Treebank
 
 The Wall Street Journal section of the [Penn Treebank](https://catalog.ldc.upenn.edu/LDC99T42) is used for 
 evaluating constituency parsers. Section 22 is used for development and Section 23 is used for evaluation.

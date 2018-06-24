@@ -1,4 +1,4 @@
-## Dependency parsing
+# Dependency parsing
 
 Dependency parsing is the task of extracting a dependency parse of a sentence that represents its grammatical
 structure and defines the relationships between "head" words and words, which modify those heads.
@@ -20,7 +20,7 @@ I  prefer  the  morning   flight  through  Denver
 Relations among the words are illustrated above the sentence with directed, labeled
 arcs from heads to dependents (+ indicates the dependent).
 
-### Penn Treebank&mdash;dependency parsing
+### Penn Treebank
 
 Models are evaluated on the [Stanford Dependency](https://nlp.stanford.edu/software/dependencies_manual.pdf)
 conversion of the Penn Treebank with predicted POS-tags. Punctuation symbols

@@ -1,8 +1,8 @@
-## Language modeling
+# Language modeling
 
 Language modeling is the task of predicting the next word in a document. * indicates models using dynamic evaluation.
 
-### Penn Treebank&mdash;language modeling
+### Penn Treebank
 
 A common evaluation dataset for language modeling ist the Penn Treebank,
 as pre-processed by [Mikolov et al. (2010)](http://www.fit.vutbr.cz/research/groups/speech/publi/2010/mikolov_interspeech2010_IS100722.pdf).
