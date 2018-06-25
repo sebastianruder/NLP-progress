@@ -43,7 +43,7 @@ consists of around 2 million words extracted from Wikipedia articles.
 ## Character Level Models
 
 ### Hutter Prize
-The Hutter Prize Wikipedia dataset (Hutter, 2018), also known as enwik8, is a byte-level dataset consisting of the
+[The Hutter Prize](http://prize.hutter1.net) Wikipedia dataset, also known as enwik8, is a byte-level dataset consisting of the
 first 100 million bytes of a Wikipedia XML dump. For simplicity we shall refer to it as a character-level dataset.
 Within these 100 million bytes are 205 unique tokens.
 
@@ -58,7 +58,7 @@ Within these 100 million bytes are 205 unique tokens.
 
 
 ### Text8
-The text8 dataset is also derived from Wikipedia text, but has all XML removed, and is lower cased to only have 26 characters of English text plus spaces.
+[The text8 dataset](http://mattmahoney.net/dc/textdata.html) is also derived from Wikipedia text, but has all XML removed, and is lower cased to only have 26 characters of English text plus spaces.
 
 | Model           | Bit per Character (BPC) |  Num. of params | Paper / Source |
 | ------------- | :-----: | :-----: | --- |
@@ -70,7 +70,7 @@ The text8 dataset is also derived from Wikipedia text, but has all XML removed, 
 | Unregularised mLSTM (Krause et al., 2016) | 1.40 | 45M | [Multiplicative LSTM for sequence modelling](https://arxiv.org/abs/1609.07959)
 
 ### Penn Treebank
-The vocabulary of the words in the character-level dataset is limited to 10,000 - the same vocabulary as used in the word level dataset.  This vastly simplifies the task of character-level language modeling as character transitions will be limited to those found within the limited word level vocabulary.
+The vocabulary of the words in the character-level dataset is limited to 10 000 - the same vocabulary as used in the word level dataset.  This vastly simplifies the task of character-level language modeling as character transitions will be limited to those found within the limited word level vocabulary.
 
 | Model           | Bit per Character (BPC) |  Num. of params | Paper / Source |
 | ------------- | :-----: | :-----: | --- |
