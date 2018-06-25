@@ -45,16 +45,16 @@ TREC-6:
 
 | Model           | Error  |  Paper / Source |
 | ------------- | :-----:| --- |
-| ULMFiT (Howard and Ruder, 2018) | 96.4 | [Universal Language Model Fine-tuning for Text Classification](https://arxiv.org/abs/1801.06146) |
-| LSTM-CNN (Zhou et al., 2016) | 96.1 | [Text Classification Improved by Integrating Bidirectional LSTM with Two-dimensional Max Pooling](http://www.aclweb.org/anthology/C16-1329) |
-| TBCNN (Mou et al., 2015) | 96.0 | [Discriminative Neural Sentence Modeling by Tree-Based Convolution](http://aclweb.org/anthology/D15-1279) |
-| CoVe (McCann et al., 2017) | 95.8 | [Learned in Translation: Contextualized Word Vectors](https://arxiv.org/abs/1708.00107) |
+| ULMFiT (Howard and Ruder, 2018) | 3.6 | [Universal Language Model Fine-tuning for Text Classification](https://arxiv.org/abs/1801.06146) |
+| LSTM-CNN (Zhou et al., 2016) | 3.9 | [Text Classification Improved by Integrating Bidirectional LSTM with Two-dimensional Max Pooling](http://www.aclweb.org/anthology/C16-1329) |
+| TBCNN (Mou et al., 2015) | 4 | [Discriminative Neural Sentence Modeling by Tree-Based Convolution](http://aclweb.org/anthology/D15-1279) |
+| CoVe (McCann et al., 2017) | 4.2 | [Learned in Translation: Contextualized Word Vectors](https://arxiv.org/abs/1708.00107) |
 
 TREC-50:
 
 | Model           | Error  |  Paper / Source |
 | ------------- | :-----:| --- |
-| Rules (Madabushi and Lee, 2016) | 97.2 |[High Accuracy Rule-based Question Classification using Question Syntax and Semantics](http://www.aclweb.org/anthology/C16-1116)|
-| SVM (Van-Tu and Anh-Cuong, 2016) | 91.6 | [Improving Question Classification by Feature Extraction and Selection](https://www.researchgate.net/publication/303553351_Improving_Question_Classification_by_Feature_Extraction_and_Selection) |
+| Rules (Madabushi and Lee, 2016) | 2.8 |[High Accuracy Rule-based Question Classification using Question Syntax and Semantics](http://www.aclweb.org/anthology/C16-1116)|
+| SVM (Van-Tu and Anh-Cuong, 2016) | 8.4 | [Improving Question Classification by Feature Extraction and Selection](https://www.researchgate.net/publication/303553351_Improving_Question_Classification_by_Feature_Extraction_and_Selection) |
 
 [Go back to the README](README.md)
