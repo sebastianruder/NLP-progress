@@ -30,7 +30,7 @@ different POS tags. Sections 0-18 are used for training, sections 19-21 for deve
 
 | Model           | Accuracy  |  Paper / Source |
 | ------------- | :-----:| --- |
-| Meta BiLSTM (Bohnet et al., 2018) | 97.96 | [Morphosyntactic Taggingwith a Meta-BiLSTM Model over Context Sensitive Tokenn Encodings](https://arxiv.org/pdf/1805.08237.pdf) |
+| Meta BiLSTM (Bohnet et al., 2018) | 97.96 | [Morphosyntactic Tagging with a Meta-BiLSTM Model over Context Sensitive Tokenn Encodings](https://arxiv.org/abs/1805.08237) |
 | Char Bi-LSTM (Ling et al., 2015) | 97.78 | [Finding Function in Form: Compositional Character Models for Open Vocabulary Word Representation](https://www.aclweb.org/anthology/D/D15/D15-1176.pdf) |
 | Adversarial Bi-LSTM (Yasunaga et al., 2018) | 97.59 | [Robust Multilingual Part-of-Speech Tagging via Adversarial Training](https://arxiv.org/abs/1711.04903) | 
 | Yang et al. (2017) | 97.55 | [Transfer Learning for Sequence Tagging with Hierarchical Recurrent Networks](https://arxiv.org/abs/1703.06345) |
