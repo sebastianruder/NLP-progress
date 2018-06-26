@@ -57,6 +57,17 @@ an exception may be made for influential preprints. The result should include th
 of the method, the citation, the score, and a link to the paper and should be added
 so that the table is sorted.
 
+In order to make reproduction easier, we recommend to add a link to an implementation 
+to each method if available. You can add a `Code` column (see below) to the table if it does not exist.
+In the `Code` column, indicate an official implementation with [Official](http://link_to_implementation).
+If an unofficial implementation is available, use [Link](http://link_to_implementation) (see below).
+If no implementation is available, you can leave the cell empty.
+
+| Model           | Score  |  Paper / Source | Code | 
+| ------------- | :-----:| --- | --- | 
+| |  |  | [Official](http://link_to_implementation) | 
+| |  |  | [Link](http://link_to_implementation) |
+
 To add a new dataset or task, follow the below steps. Any new datasets
 should have been used for evaluation in at least one published paper besides 
 the one that introduced the dataset.
@@ -72,12 +83,13 @@ If not, add your task or dataset to the respective section of the corresponding 
   for your dataset/task (chang Score to the metric of your dataset).
 8. Submit your change as a pull request.
   
-| Model           | Score  |  Paper / Source |
-| ------------- | :-----:| --- |
-|  |  |  |
+| Model           | Score  |  Paper / Source | Code | 
+| ------------- | :-----:| --- | --- | 
+|  |  |  | | 
 
 ### Things to do
 
+- Add a column for code (see above) to each table and a link to the source code to each method.
 - Add pointers on how to retrieve data.
 - Provide more details regarding the evaluation setup of each task.
 - Add an example to every task/dataset.
