@@ -19,7 +19,7 @@ Systems marked with \* are pipeline systems that require other systems (i.e. a d
 | Incremental joint model (Zhou et al., 2016)* | 0.71 | 0.66 | [AMR Parsing with an Incremental Joint Model](https://aclweb.org/anthology/D16-1065) |
 | Transition-based transducer (Wang et al., 2015)* | 0.70 | 0.66 | [Boosting Transition-based AMR Parsing with Refined Actions and Auxiliary Analyzers](http://www.aclweb.org/anthology/P15-2141) |
 | Imitation learning  (Goodman et al., 2016)* | 0.70 |  -- | [Noise reduction and targeted exploration in imitation learning for Abstract Meaning Representation parsing](http://www.aclweb.org/anthology/P16-1001) |
-MT-Based (Pust et al., 2015) | -- | 0.66 | [Parsing English into Abstract Meaning Representation Using Syntax-Based Machine Translation ](http://www.aclweb.org/anthology/D15-1136)
+MT-Based (Pust et al., 2015)* | -- | 0.66 | [Parsing English into Abstract Meaning Representation Using Syntax-Based Machine Translation ](http://www.aclweb.org/anthology/D15-1136)
 | Transition-based parser-Stack-LSTM (Ballesteros and Al-Onaizan, 2017)* | 0.69 | 0.64  | [AMR Parsing using Stack-LSTMs](http://www.aclweb.org/anthology/D17-1130) |
 | Transition-based parser-Stack-LSTM (Ballesteros and Al-Onaizan, 2017) | 0.68 | 0.63  | [AMR Parsing using Stack-LSTMs](http://www.aclweb.org/anthology/D17-1130) |
 
