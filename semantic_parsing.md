@@ -6,21 +6,27 @@ such as SQL or more abstract representations such as [Abstract Meaning Represent
 
 ## AMR parsing
 
-### LDC2014T12
+Each AMR is a single rooted, directed graph. AMRs include PropBank semantic roles, within-sentence coreference, named entities and types, modality, negation, questions, quantities, and so on. [See](https://amr.isi.edu/index.html).
 
-Models are evaluated on the newswire section and the full dataset based on F1.
-Brackets indicates the preprocessed features a model uses.
-Systems marked with \* are pipeline systems that require a dependency parse as input.
+### LDC2014T12: 
+13,051 sentences
+
+Models are evaluated on the newswire section and the full dataset based on [smatch](https://amr.isi.edu/smatch-13.pdf).
+Systems marked with \* are pipeline systems that require other systems (i.e. a dependency parse or a SRL parse) as input.
 
 | Model           | F1 Newswire  | F1 Full |  Paper / Source |
 | ------------- | :-----:| :-----:| --- |
-| Incremental joint model (POS, DEP, NER, SRL) (Zhou et al., 2016)* | 0.71 | 0.66 | [AMR Parsing with an Incremental Joint Model](https://aclweb.org/anthology/D16-1065) |
-| Augmented parser (POS, DEP, NER, SRL) (Wang et al., 2015)* | 0.70 | 0.66 | [Boosting Transition-based AMR Parsing with Refined Actions and Auxiliary Analyzers](http://www.aclweb.org/anthology/P15-2141) |
-| Stack-LSTM (POS, DEP) (Ballesteros and Al-Onaizan, 2017) | 0.69 | 0.64  | [AMR Parsing using Stack-LSTMs](http://www.aclweb.org/anthology/D17-1130) |
+| Incremental joint model (Zhou et al., 2016)* | 0.71 | 0.66 | [AMR Parsing with an Incremental Joint Model](https://aclweb.org/anthology/D16-1065) |
+| Transition-based transducer (Wang et al., 2015)* | 0.70 | 0.66 | [Boosting Transition-based AMR Parsing with Refined Actions and Auxiliary Analyzers](http://www.aclweb.org/anthology/P15-2141) |
+| Imitation learning  (Goodman et al., 2016)* | 0.70 |  -- | [Noise reduction and targeted exploration in imitation learning for Abstract Meaning Representation parsing](http://www.aclweb.org/anthology/P16-1001) |
+MT-Based (Pust et al., 2015) | -- | 0.66 | [Parsing English into Abstract Meaning Representation Using Syntax-Based Machine Translation ](http://www.aclweb.org/anthology/D15-1136)
+| Transition-based parser-Stack-LSTM (Ballesteros and Al-Onaizan, 2017)* | 0.69 | 0.64  | [AMR Parsing using Stack-LSTMs](http://www.aclweb.org/anthology/D17-1130) |
+| Transition-based parser-Stack-LSTM (Ballesteros and Al-Onaizan, 2017) | 0.68 | 0.63  | [AMR Parsing using Stack-LSTMs](http://www.aclweb.org/anthology/D17-1130) |
 
-### LDC2015E86
+### LDC2015E86: 
+19,572 sentences
 
-Models are evaluated based on smatch.
+Models are evaluated based on [smatch](https://amr.isi.edu/smatch-13.pdf).
 
 | Model           | Smatch  |  Paper / Source |
 | ------------- | :-----:| --- |
@@ -32,8 +38,9 @@ AMREager (Damonte et al., 2017) | 64.0 | [An Incremental Parser for Abstract Mea
 SEQ2SEQ + 20M (Konstas et al., 2017) | 62.1 | [Neural AMR: Sequence-to-Sequence Models for Parsing and Generation](https://arxiv.org/abs/1704.08381) |
 
 ### LDC2016E25
+39,260 sentences
 
-Results are computed over 8 runs. Models are evaluated based on smatch.
+Results are computed over 8 runs. Models are evaluated based on [smatch](https://amr.isi.edu/smatch-13.pdf).
 
 | Model           | Smatch  |  Paper / Source |
 | ------------- | :-----:| --- |
