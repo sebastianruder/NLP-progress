@@ -38,7 +38,6 @@ the reader will be pointed there.
 
 These are tasks and datasets that are still missing.
 
-- AMR parsing
 - Bilingual dictionary induction
 - Discourse parsing
 - Information extraction
