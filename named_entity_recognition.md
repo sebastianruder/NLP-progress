@@ -23,4 +23,30 @@ corpus tagged with four different entity types (PER, LOC, ORG, MISC). Models are
 | Ma and Hovy (2016) | 91.21 | [End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF](https://arxiv.org/abs/1603.01354) |
 | LSTM-CRF (Lample et al., 2016) | 90.94 | [Neural Architectures for Named Entity Recognition](https://arxiv.org/abs/1603.01360) |
 
+### Long-tail emerging entities
+
+The [WNUT 2017 Emerging Entities task](http://aclweb.org/anthology/W17-4418) operates over a wide range of English 
+text and focuses on generalisation beyond memorisation in high-variance environments. Scores are given both over
+entity chunk instances, and unique entity surface forms, to normalise the biasing impact of entities that occur frequently.
+
+#### Dataset
+
+| Feature | Train | Dev | Test |
+| --- | --- | --- | --- |
+| Posts | 3,395 | 1,009 | 1,287 |
+| Tokens | 62,729 | 15,733 | 23,394 |
+| NE tokens | 3,160 | 1,250 | 1,589 |
+
+The data is annotated for six classes - person, location, group, creative work, product and corporation.
+
+Links: [WNUT 2017 Emerging Entity task page](https://noisy-text.github.io/2017/emerging-rare-entities.html) (including direct download links for data and scoring script)
+
+#### State-of-the-art
+
+| Model         | F1  | F1 (surface form) |  Paper / Source |
+| ---           | --- | ---               | --- |
+| SpinningBytes | 40.78 | 39.33 | [Transfer Learning and Sentence Level Features for Named Entity Recognition on Tweets](http://aclweb.org/anthology/W17-4422.pdf) | 
+| Aguilar et al. (2018) | 45.55 | | [Modeling Noisiness to Recognize Named Entities using Multitask Neural Networks on Social Media](http://aclweb.org/anthology/N18-1127.pdf) |
+
+
 [Go back to the README](README.md)
