@@ -80,7 +80,7 @@ If not, add your task or dataset to the respective section of the corresponding 
 5. Show how an annotated example of the dataset/task looks like.
 6. Add a download link if available.
 7. Copy the below table and fill in at least two results (including the state-of-the-art)
-  for your dataset/task (chang Score to the metric of your dataset).
+  for your dataset/task (change Score to the metric of your dataset).
 8. Submit your change as a pull request.
   
 | Model           | Score  |  Paper / Source | Code | 
