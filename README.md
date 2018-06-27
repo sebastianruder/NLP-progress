@@ -25,6 +25,7 @@
 - [Stance detection](stance.md)
 - [Summarization](summarization.md)
 - [Temporal expression normalization](timenorm.md)
+- [Temporal information extraction](time.md)
 - [Text classification](text_classification.md)
 
 This document aims to track the progress in Natural Language Processing (NLP) and give an overview
