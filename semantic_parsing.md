@@ -125,7 +125,7 @@ Example:
 
 | Question | SQL query | 
 | ------------- |  --- |
-| Can undergrads take 550 ? | SELECT DISTINCT COURSEalias0.ADVISORY_REQUIREMENT , COURSEalias0.ENFORCED_REQUIREMENT , COURSEalias0.NAME FROM COURSE AS COURSEalias0 WHERE COURSEalias0.DEPARTMENT = \"department0\" AND COURSEalias0.NUMBER = 550 ; |
+| Can undergrads take 550 ? | `SELECT DISTINCT COURSEalias0.ADVISORY_REQUIREMENT , COURSEalias0.ENFORCED_REQUIREMENT , COURSEalias0.NAME FROM COURSE AS COURSEalias0 WHERE COURSEalias0.DEPARTMENT = \"department0\" AND COURSEalias0.NUMBER = 550 ;` |
 
 | Model           | Split | Acc ex |  Paper / Source |
 | --------------- | ----- |  :-----:| --------------- |
@@ -159,7 +159,7 @@ Example:
 
 | Question | SQL query | 
 | ------------- |  --- |
-| return me the homepage of PVLDB | SELECT JOURNALalias0.HOMEPAGE FROM JOURNAL AS JOURNALalias0 WHERE JOURNALalias0.NAME = "PVLDB" ; |
+| return me the homepage of PVLDB | `SELECT JOURNALalias0.HOMEPAGE FROM JOURNAL AS JOURNALalias0 WHERE JOURNALalias0.NAME = "PVLDB" ;` |
 
 | Model           | Split | Acc ex |  Paper / Source |
 | --------------- | ----- |  :-----:| --------------- |
