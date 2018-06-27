@@ -22,6 +22,7 @@
 - [Sentiment analysis](sentiment_analysis.md)
 - [Semantic parsing](semantic_parsing.md)
 - [Semantic role labeling](semantic_role_labeling.md)
+- [Stance detection](stance.md)
 - [Summarization](summarization.md)
 - [Text classification](text_classification.md)
 
