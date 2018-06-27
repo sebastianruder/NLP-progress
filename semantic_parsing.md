@@ -50,6 +50,157 @@ Neural-Pointer (Buys and Blunsom, 2017) | 61.9 | [Oxford at SemEval-2017 Task 9:
 
 ## SQL parsing
 
+### ATIS
+
+5,280 user questions for a flight-booking task:
+
+- Collected and manually annotated with SQL [Dahl et al., (1994)](http://dl.acm.org/citation.cfm?id=1075823)
+- Modified by [Iyer et al., (2017)](http://www.aclweb.org/anthology/P17-1089) to reduce nesting
+- Bugfixes and changes to a canonical style by [Finegan-Dollak et al., (2018)](http://arxiv.org/abs/1806.09029)
+
+
+Example:
+
+| Question | SQL query | 
+| ------------- |  --- |
+| what flights from any city land at MKE | `SELECT DISTINCT FLIGHTalias0.FLIGHT_ID FROM AIRPORT AS AIRPORTalias0 , AIRPORT_SERVICE AS AIRPORT_SERVICEalias0 , CITY AS CITYalias0 , FLIGHT AS FLIGHTalias0 WHERE AIRPORTalias0.AIRPORT_CODE = "MKE" AND CITYalias0.CITY_CODE = AIRPORT_SERVICEalias0.CITY_CODE AND FLIGHTalias0.FROM_AIRPORT = AIRPORT_SERVICEalias0.AIRPORT_CODE AND FLIGHTalias0.TO_AIRPORT = AIRPORTalias0.AIRPORT_CODE ;` |
+
+| Model           | Split | Acc ex |  Paper / Source |
+| --------------- | ----- |  :-----:| --------------- |
+| Iyer et al., (2017) | question | 45  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) |
+| Seq2Seq with copying (Finegan-Dollak et al., 2018) | question | 51   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
+| Template Baseline (Finegan-Dollak et al., 2018) | question | 45   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
+| Iyer et al., (2017) | query | 17  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) |
+| Seq2Seq with copying (Finegan-Dollak et al., 2018) | query | 32  | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
+
+### GeoQuery
+
+877 user questions about US geography:
+
+- Collected and manually annotated with Prolog [Zelle and Mooney (1996)](http://dl.acm.org/citation.cfm?id=1864519.1864543)
+- Most questions were converted to SQL by [Popescu et al., (2003)](http://doi.acm.org/10.1145/604045.604070)
+- Remaining question converted to SQL by [Giordani and Moschitti (2012)](https://doi.org/10.1007/978-3-642-45260-4_5), and independently by [Iyer et al., (2017)](http://www.aclweb.org/anthology/P17-1089)
+- Bugfixes and changes to a canonical style by [Finegan-Dollak et al., (2018)](http://arxiv.org/abs/1806.09029)
+
+Example:
+
+| Question | SQL query | 
+| ------------- |  --- |
+| what is the biggest city in arizona | `SELECT CITYalias0.CITY_NAME FROM CITY AS CITYalias0 WHERE CITYalias0.POPULATION = ( SELECT MAX( CITYalias1.POPULATION ) FROM CITY AS CITYalias1 WHERE CITYalias1.STATE_NAME = "arizona" ) AND CITYalias0.STATE_NAME = "arizona"` |
+
+| Model           | Split | Acc ex |  Paper / Source |
+| --------------- | ----- |  :-----:| --------------- |
+| Iyer et al., (2017) | question | 66  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) |
+| Seq2Seq with copying (Finegan-Dollak et al., 2018) | question | 71   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
+| Template Baseline (Finegan-Dollak et al., 2018) | question | 66   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
+| Iyer et al., (2017) | query | 40  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) |
+| Seq2Seq with copying (Finegan-Dollak et al., 2018) | query | 20  | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
+
+### Scholar
+
+817 user questions about academic publications, with automatically generated SQL that was checked by asking the user if the output was correct.
+
+- Collected by [Iyer et al., (2017)](http://www.aclweb.org/anthology/P17-1089)
+- Bugfixes and changes to a canonical style by [Finegan-Dollak et al., (2018)](http://arxiv.org/abs/1806.09029)
+
+Example:
+
+| Question | SQL query | 
+| ------------- |  --- |
+| What papers has sharon goldwater written ? | `SELECT DISTINCT WRITESalias0.PAPERID FROM AUTHOR AS AUTHORalias0 , WRITES AS WRITESalias0 WHERE AUTHORalias0.AUTHORNAME = "sharon goldwater" AND WRITESalias0.AUTHORID = AUTHORalias0.AUTHORID ;` |
+
+| Model           | Split | Acc ex |  Paper / Source |
+| --------------- | ----- |  :-----:| --------------- |
+| Iyer et al., (2017) | question | 44  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) |
+| Seq2Seq with copying (Finegan-Dollak et al., 2018) | question | 59   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
+| Template Baseline (Finegan-Dollak et al., 2018) | question | 52   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
+| Iyer et al., (2017) | query | 3  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) |
+| Seq2Seq with copying (Finegan-Dollak et al., 2018) | query | 5  | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
+
+### Advising
+
+4,570 user questions about university course advising, with manually annotated SQL [Finegan-Dollak et al., (2018)](http://arxiv.org/abs/1806.09029).
+
+Example:
+
+| Question | SQL query | 
+| ------------- |  --- |
+| Can undergrads take 550 ? | SELECT DISTINCT COURSEalias0.ADVISORY_REQUIREMENT , COURSEalias0.ENFORCED_REQUIREMENT , COURSEalias0.NAME FROM COURSE AS COURSEalias0 WHERE COURSEalias0.DEPARTMENT = \"department0\" AND COURSEalias0.NUMBER = 550 ; |
+
+| Model           | Split | Acc ex |  Paper / Source |
+| --------------- | ----- |  :-----:| --------------- |
+| Iyer et al., (2017) | question | 41  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) |
+| Seq2Seq with copying (Finegan-Dollak et al., 2018) | question | 70   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
+| Template Baseline (Finegan-Dollak et al., 2018) | question | 80   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
+| Iyer et al., (2017) | query | 1  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) |
+| Seq2Seq with copying (Finegan-Dollak et al., 2018) | query | 0  | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
+
+### Smaller Datasets
+
+Restaurants - 378 questions about restaurants, their cuisine and locations, collected by [Tang and Mooney (2000)](http://www.aclweb.org/anthology/W/W00/W00-1317.pdf), converted to SQL by [Popescu et al., (2003)]((http://doi.acm.org/10.1145/604045.604070) and [Giordani and Moschitti (2012)](https://doi.org/10.1007/978-3-642-45260-4_5), improved and converted to canonical style by [Finegan-Dollak et al., (2018)](http://arxiv.org/abs/1806.09029)
+
+Example:
+
+| Question | SQL query | 
+| ------------- |  --- |
+| where is a restaurant in alameda ? | `SELECT LOCATIONalias0.HOUSE_NUMBER , RESTAURANTalias0.NAME FROM LOCATION AS LOCATIONalias0 , RESTAURANT AS RESTAURANTalias0 WHERE LOCATIONalias0.CITY_NAME = "alameda" AND RESTAURANTalias0.ID = LOCATIONalias0.RESTAURANT_ID ;` |
+
+| Model           | Split | Acc ex |  Paper / Source |
+| --------------- | ----- |  :-----:| --------------- |
+| Iyer et al., (2017) | question | 100  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) |
+| Seq2Seq with copying (Finegan-Dollak et al., 2018) | question | 100   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
+| Template Baseline (Finegan-Dollak et al., 2018) | question | 95   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
+| Iyer et al., (2017) | query | 8  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) |
+| Seq2Seq with copying (Finegan-Dollak et al., 2018) | query | 4  | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
+
+Academic - 196 questions about publications generated by enumerating all of the different queries possible with the Microsoft Academic Search interface, then writing questions for each query [Li and Jagadish (2014)](http://dx.doi.org/10.14778/2735461.2735468). Improved and converted to a cononical style by [Finegan-Dollak et al., (2018)](http://arxiv.org/abs/1806.09029).
+
+Example:
+
+| Question | SQL query | 
+| ------------- |  --- |
+| return me the homepage of PVLDB | SELECT JOURNALalias0.HOMEPAGE FROM JOURNAL AS JOURNALalias0 WHERE JOURNALalias0.NAME = "PVLDB" ; |
+
+| Model           | Split | Acc ex |  Paper / Source |
+| --------------- | ----- |  :-----:| --------------- |
+| Iyer et al., (2017) | question | 76  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) |
+| Iyer et al., (2017) | query | 70  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) |
+| Seq2Seq with copying (Finegan-Dollak et al., 2018) | question | 81   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
+| Seq2Seq with copying (Finegan-Dollak et al., 2018) | query | 74  | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
+| Template Baseline (Finegan-Dollak et al., 2018) | question | 0   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
+
+Yelp - 128 user questions about the Yelp website [Yaghmazadeh et al., 2017](http://doi.org/10.1145/3133887). Improved and converted to a cononical style by [Finegan-Dollak et al., (2018)](http://arxiv.org/abs/1806.09029).
+
+Example:
+
+| Question | SQL query | 
+| ------------- |  --- |
+| List all businesses with rating 3.5 | `SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 WHERE BUSINESSalias0.RATING = 3.5 ;` |
+
+| Model           | Split | Acc ex |  Paper / Source |
+| --------------- | ----- |  :-----:| --------------- |
+| Iyer et al., (2017) | question | 6  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) |
+| Seq2Seq with copying (Finegan-Dollak et al., 2018) | question | 12   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
+| Template Baseline (Finegan-Dollak et al., 2018) | question | 1  | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
+| Iyer et al., (2017) | query | 6  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) |
+| Seq2Seq with copying (Finegan-Dollak et al., 2018) | query | 4  | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
+
+IMDB - 131 user questions about the Internet Movie Database [Yaghmazadeh et al., 2017](http://doi.org/10.1145/3133887). Improved and converted to a cononical style by [Finegan-Dollak et al., (2018)](http://arxiv.org/abs/1806.09029).
+
+Example:
+
+| Question | SQL query | 
+| ------------- |  --- |
+| What year was the movie " The Imitation Game " produced | `SELECT MOVIEalias0.RELEASE_YEAR FROM MOVIE AS MOVIEalias0 WHERE MOVIEalias0.TITLE = "The Imitation Game" ;` |
+
+| Model           | Split | Acc ex |  Paper / Source |
+| --------------- | ----- |  :-----:| --------------- |
+| Iyer et al., (2017) | question | 10  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) |
+| Seq2Seq with copying (Finegan-Dollak et al., 2018) | question | 26   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
+| Template Baseline (Finegan-Dollak et al., 2018) | question | 0  | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
+| Iyer et al., (2017) | query | 4  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) |
+| Seq2Seq with copying (Finegan-Dollak et al., 2018) | query | 9  | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
+
 ### WikiSQL
 
 The [WikiSQL dataset](https://arxiv.org/abs/1709.00103) consists of 87,673 
