@@ -65,13 +65,13 @@ Example:
 | ------------- |  --- |
 | what flights from any city land at MKE | `SELECT DISTINCT FLIGHTalias0.FLIGHT_ID FROM AIRPORT AS AIRPORTalias0 , AIRPORT_SERVICE AS AIRPORT_SERVICEalias0 , CITY AS CITYalias0 , FLIGHT AS FLIGHTalias0 WHERE AIRPORTalias0.AIRPORT_CODE = "MKE" AND CITYalias0.CITY_CODE = AIRPORT_SERVICEalias0.CITY_CODE AND FLIGHTalias0.FROM_AIRPORT = AIRPORT_SERVICEalias0.AIRPORT_CODE AND FLIGHTalias0.TO_AIRPORT = AIRPORTalias0.AIRPORT_CODE ;` |
 
-| Model           | Split | Acc ex |  Paper / Source |
-| --------------- | ----- |  :-----:| --------------- |
-| Iyer et al., (2017) | question | 45  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) |
-| Seq2Seq with copying (Finegan-Dollak et al., 2018) | question | 51   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
-| Template Baseline (Finegan-Dollak et al., 2018) | question | 45   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
-| Iyer et al., (2017) | query | 17  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) |
-| Seq2Seq with copying (Finegan-Dollak et al., 2018) | query | 32  | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
+| Model           | Split | Acc ex |  Paper / Source | Code |
+| --------------- | ----- |  :-----:| --------------- | ---- |
+| Iyer et al., (2017) | question | 45  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) | [System](https://github.com/sriniiyer/nl2sql) |
+| Seq2Seq with copying (Finegan-Dollak et al., 2018) | question | 51   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) | [Data and System](https://github.com/jkkummerfeld/text2sql-data) |
+| Template Baseline (Finegan-Dollak et al., 2018) | question | 45   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) | [Data and System](https://github.com/jkkummerfeld/text2sql-data) |
+| Iyer et al., (2017) | query | 17  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) | [System](https://github.com/sriniiyer/nl2sql) |
+| Seq2Seq with copying (Finegan-Dollak et al., 2018) | query | 32  | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) | [Data and System](https://github.com/jkkummerfeld/text2sql-data) |
 
 ### GeoQuery
 
@@ -88,13 +88,13 @@ Example:
 | ------------- |  --- |
 | what is the biggest city in arizona | `SELECT CITYalias0.CITY_NAME FROM CITY AS CITYalias0 WHERE CITYalias0.POPULATION = ( SELECT MAX( CITYalias1.POPULATION ) FROM CITY AS CITYalias1 WHERE CITYalias1.STATE_NAME = "arizona" ) AND CITYalias0.STATE_NAME = "arizona"` |
 
-| Model           | Split | Acc ex |  Paper / Source |
-| --------------- | ----- |  :-----:| --------------- |
-| Iyer et al., (2017) | question | 66  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) |
-| Seq2Seq with copying (Finegan-Dollak et al., 2018) | question | 71   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
-| Template Baseline (Finegan-Dollak et al., 2018) | question | 66   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
-| Iyer et al., (2017) | query | 40  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) |
-| Seq2Seq with copying (Finegan-Dollak et al., 2018) | query | 20  | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
+| Model           | Split | Acc ex |  Paper / Source | Code |
+| --------------- | ----- |  :-----:| --------------- | ---- |
+| Iyer et al., (2017) | question | 66  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) | [System](https://github.com/sriniiyer/nl2sql) |
+| Seq2Seq with copying (Finegan-Dollak et al., 2018) | question | 71   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) | [Data and System](https://github.com/jkkummerfeld/text2sql-data) |
+| Template Baseline (Finegan-Dollak et al., 2018) | question | 66   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) | [Data and System](https://github.com/jkkummerfeld/text2sql-data) |
+| Iyer et al., (2017) | query | 40  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) | [System](https://github.com/sriniiyer/nl2sql) |
+| Seq2Seq with copying (Finegan-Dollak et al., 2018) | query | 20  | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) | [Data and System](https://github.com/jkkummerfeld/text2sql-data) |
 
 ### Scholar
 
@@ -109,13 +109,13 @@ Example:
 | ------------- |  --- |
 | What papers has sharon goldwater written ? | `SELECT DISTINCT WRITESalias0.PAPERID FROM AUTHOR AS AUTHORalias0 , WRITES AS WRITESalias0 WHERE AUTHORalias0.AUTHORNAME = "sharon goldwater" AND WRITESalias0.AUTHORID = AUTHORalias0.AUTHORID ;` |
 
-| Model           | Split | Acc ex |  Paper / Source |
-| --------------- | ----- |  :-----:| --------------- |
-| Iyer et al., (2017) | question | 44  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) |
-| Seq2Seq with copying (Finegan-Dollak et al., 2018) | question | 59   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
-| Template Baseline (Finegan-Dollak et al., 2018) | question | 52   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
-| Iyer et al., (2017) | query | 3  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) |
-| Seq2Seq with copying (Finegan-Dollak et al., 2018) | query | 5  | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
+| Model           | Split | Acc ex |  Paper / Source | Code |
+| --------------- | ----- |  :-----:| --------------- | ---- |
+| Iyer et al., (2017) | question | 44  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) | [System](https://github.com/sriniiyer/nl2sql) |
+| Seq2Seq with copying (Finegan-Dollak et al., 2018) | question | 59   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) | [Data and System](https://github.com/jkkummerfeld/text2sql-data) |
+| Template Baseline (Finegan-Dollak et al., 2018) | question | 52   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) | [Data and System](https://github.com/jkkummerfeld/text2sql-data) |
+| Iyer et al., (2017) | query | 3  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) | [System](https://github.com/sriniiyer/nl2sql) |
+| Seq2Seq with copying (Finegan-Dollak et al., 2018) | query | 5  | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) | [Data and System](https://github.com/jkkummerfeld/text2sql-data) |
 
 ### Advising
 
@@ -127,13 +127,13 @@ Example:
 | ------------- |  --- |
 | Can undergrads take 550 ? | `SELECT DISTINCT COURSEalias0.ADVISORY_REQUIREMENT , COURSEalias0.ENFORCED_REQUIREMENT , COURSEalias0.NAME FROM COURSE AS COURSEalias0 WHERE COURSEalias0.DEPARTMENT = \"department0\" AND COURSEalias0.NUMBER = 550 ;` |
 
-| Model           | Split | Acc ex |  Paper / Source |
-| --------------- | ----- |  :-----:| --------------- |
-| Iyer et al., (2017) | question | 41  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) |
-| Seq2Seq with copying (Finegan-Dollak et al., 2018) | question | 70   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
-| Template Baseline (Finegan-Dollak et al., 2018) | question | 80   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
-| Iyer et al., (2017) | query | 1  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) |
-| Seq2Seq with copying (Finegan-Dollak et al., 2018) | query | 0  | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
+| Model           | Split | Acc ex |  Paper / Source | Code |
+| --------------- | ----- |  :-----:| --------------- | ---- |
+| Iyer et al., (2017) | question | 41  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) | [System](https://github.com/sriniiyer/nl2sql) |
+| Seq2Seq with copying (Finegan-Dollak et al., 2018) | question | 70   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) | [Data and System](https://github.com/jkkummerfeld/text2sql-data) |
+| Template Baseline (Finegan-Dollak et al., 2018) | question | 80   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) | [Data and System](https://github.com/jkkummerfeld/text2sql-data) |
+| Iyer et al., (2017) | query | 1  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) | [System](https://github.com/sriniiyer/nl2sql) |
+| Seq2Seq with copying (Finegan-Dollak et al., 2018) | query | 0  | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) | [Data and System](https://github.com/jkkummerfeld/text2sql-data) |
 
 
 ### WikiSQL
@@ -165,13 +165,13 @@ Example:
 | ------------- |  --- |
 | where is a restaurant in alameda ? | `SELECT LOCATIONalias0.HOUSE_NUMBER , RESTAURANTalias0.NAME FROM LOCATION AS LOCATIONalias0 , RESTAURANT AS RESTAURANTalias0 WHERE LOCATIONalias0.CITY_NAME = "alameda" AND RESTAURANTalias0.ID = LOCATIONalias0.RESTAURANT_ID ;` |
 
-| Model           | Split | Acc ex |  Paper / Source |
-| --------------- | ----- |  :-----:| --------------- |
-| Iyer et al., (2017) | question | 100  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) |
-| Seq2Seq with copying (Finegan-Dollak et al., 2018) | question | 100   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
-| Template Baseline (Finegan-Dollak et al., 2018) | question | 95   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
-| Iyer et al., (2017) | query | 8  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) |
-| Seq2Seq with copying (Finegan-Dollak et al., 2018) | query | 4  | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
+| Model           | Split | Acc ex |  Paper / Source | Code |
+| --------------- | ----- |  :-----:| --------------- | ---- |
+| Iyer et al., (2017) | question | 100  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) | [System](https://github.com/sriniiyer/nl2sql) |
+| Seq2Seq with copying (Finegan-Dollak et al., 2018) | question | 100   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) | [Data and System](https://github.com/jkkummerfeld/text2sql-data) |
+| Template Baseline (Finegan-Dollak et al., 2018) | question | 95   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) | [Data and System](https://github.com/jkkummerfeld/text2sql-data) |
+| Iyer et al., (2017) | query | 8  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) | [System](https://github.com/sriniiyer/nl2sql) |
+| Seq2Seq with copying (Finegan-Dollak et al., 2018) | query | 4  | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) | [Data and System](https://github.com/jkkummerfeld/text2sql-data) |
 
 Academic - 196 questions about publications generated by enumerating all of the different queries possible with the Microsoft Academic Search interface, then writing questions for each query [Li and Jagadish (2014)](http://dx.doi.org/10.14778/2735461.2735468). Improved and converted to a cononical style by [Finegan-Dollak et al., (2018)](http://arxiv.org/abs/1806.09029).
 
@@ -181,13 +181,13 @@ Example:
 | ------------- |  --- |
 | return me the homepage of PVLDB | `SELECT JOURNALalias0.HOMEPAGE FROM JOURNAL AS JOURNALalias0 WHERE JOURNALalias0.NAME = "PVLDB" ;` |
 
-| Model           | Split | Acc ex |  Paper / Source |
-| --------------- | ----- |  :-----:| --------------- |
-| Iyer et al., (2017) | question | 76  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) |
-| Iyer et al., (2017) | query | 70  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) |
-| Seq2Seq with copying (Finegan-Dollak et al., 2018) | question | 81   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
-| Seq2Seq with copying (Finegan-Dollak et al., 2018) | query | 74  | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
-| Template Baseline (Finegan-Dollak et al., 2018) | question | 0   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
+| Model           | Split | Acc ex |  Paper / Source | Code |
+| --------------- | ----- |  :-----:| --------------- | ---- |
+| Iyer et al., (2017) | question | 76  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) | [System](https://github.com/sriniiyer/nl2sql) |
+| Seq2Seq with copying (Finegan-Dollak et al., 2018) | question | 81   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) | [Data and System](https://github.com/jkkummerfeld/text2sql-data) |
+| Template Baseline (Finegan-Dollak et al., 2018) | question | 0   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) | [Data and System](https://github.com/jkkummerfeld/text2sql-data) |
+| Iyer et al., (2017) | query | 70  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) | [System](https://github.com/sriniiyer/nl2sql) |
+| Seq2Seq with copying (Finegan-Dollak et al., 2018) | query | 74  | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) | [Data and System](https://github.com/jkkummerfeld/text2sql-data) |
 
 Yelp - 128 user questions about the Yelp website [Yaghmazadeh et al., 2017](http://doi.org/10.1145/3133887). Improved and converted to a cononical style by [Finegan-Dollak et al., (2018)](http://arxiv.org/abs/1806.09029).
 
@@ -197,13 +197,13 @@ Example:
 | ------------- |  --- |
 | List all businesses with rating 3.5 | `SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 WHERE BUSINESSalias0.RATING = 3.5 ;` |
 
-| Model           | Split | Acc ex |  Paper / Source |
-| --------------- | ----- |  :-----:| --------------- |
-| Iyer et al., (2017) | question | 6  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) |
-| Seq2Seq with copying (Finegan-Dollak et al., 2018) | question | 12   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
-| Template Baseline (Finegan-Dollak et al., 2018) | question | 1  | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
-| Iyer et al., (2017) | query | 6  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) |
-| Seq2Seq with copying (Finegan-Dollak et al., 2018) | query | 4  | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
+| Model           | Split | Acc ex |  Paper / Source | Code |
+| --------------- | ----- |  :-----:| --------------- | ---- |
+| Iyer et al., (2017) | question | 6  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) | [System](https://github.com/sriniiyer/nl2sql) |
+| Seq2Seq with copying (Finegan-Dollak et al., 2018) | question | 12   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) | [Data and System](https://github.com/jkkummerfeld/text2sql-data) |
+| Template Baseline (Finegan-Dollak et al., 2018) | question | 1  | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) | [Data and System](https://github.com/jkkummerfeld/text2sql-data) |
+| Iyer et al., (2017) | query | 6  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) | [System](https://github.com/sriniiyer/nl2sql) |
+| Seq2Seq with copying (Finegan-Dollak et al., 2018) | query | 4  | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) | [Data and System](https://github.com/jkkummerfeld/text2sql-data) |
 
 IMDB - 131 user questions about the Internet Movie Database [Yaghmazadeh et al., 2017](http://doi.org/10.1145/3133887). Improved and converted to a cononical style by [Finegan-Dollak et al., (2018)](http://arxiv.org/abs/1806.09029).
 
@@ -213,12 +213,12 @@ Example:
 | ------------- |  --- |
 | What year was the movie " The Imitation Game " produced | `SELECT MOVIEalias0.RELEASE_YEAR FROM MOVIE AS MOVIEalias0 WHERE MOVIEalias0.TITLE = "The Imitation Game" ;` |
 
-| Model           | Split | Acc ex |  Paper / Source |
-| --------------- | ----- |  :-----:| --------------- |
-| Iyer et al., (2017) | question | 10  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) |
-| Seq2Seq with copying (Finegan-Dollak et al., 2018) | question | 26   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
-| Template Baseline (Finegan-Dollak et al., 2018) | question | 0  | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
-| Iyer et al., (2017) | query | 4  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) |
-| Seq2Seq with copying (Finegan-Dollak et al., 2018) | query | 9  | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) |
+| Model           | Split | Acc ex |  Paper / Source | Code |
+| --------------- | ----- |  :-----:| --------------- | ---- |
+| Iyer et al., (2017) | question | 10  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) | [System](https://github.com/sriniiyer/nl2sql) |
+| Seq2Seq with copying (Finegan-Dollak et al., 2018) | question | 26   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) | [Data and System](https://github.com/jkkummerfeld/text2sql-data) |
+| Template Baseline (Finegan-Dollak et al., 2018) | question | 0  | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) | [Data and System](https://github.com/jkkummerfeld/text2sql-data) |
+| Iyer et al., (2017) | query | 4  | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) | [System](https://github.com/sriniiyer/nl2sql) |
+| Seq2Seq with copying (Finegan-Dollak et al., 2018) | query | 9  | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) | [Data and System](https://github.com/jkkummerfeld/text2sql-data) |
 
 [Go back to the README](README.md)
