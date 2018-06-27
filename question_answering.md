@@ -47,6 +47,16 @@ Example:
 | Classifier (Chen et al., 2016) | 67.9 | 68.3 | [A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task](https://www.aclweb.org/anthology/P16-1223) |
 | Impatient Reader (Hermann et al., 2015) | 63.8 | 68.0 | [Teaching Machines to Read and Comprehend](https://arxiv.org/abs/1506.03340) |
 
+
+### MS MARCO
+[MS MARCO](http://www.msmarco.org/dataset.aspx) aka Human Generated MAchine
+Reading COmprehension Dataset, is designed and developed by Microsoft AI & Research. [Link to paper](https://arxiv.org/abs/1611.09268)
+- The questions are obtained from real anonymized user queries.
+- The answers are human generated. The context passages from which the answers are obtained are extracted from real documents using the latest Bing search engine.
+- The data set contains 100,000 queries and a subset of them contain multiple answers, and aim to release 1M queries in the future.  
+
+The leaderboards for multiple tasks are available on the [MS MARCO leaderboard page](http://www.msmarco.org/leaders.aspx).
+
 ### MultiRC
 MultiRC (Multi-Sentence Reading Comprehension) is a dataset of short paragraphs and multi-sentence questions that can be answered from the content of the paragraph. 
 We have designed the dataset with three key challenges in mind:
