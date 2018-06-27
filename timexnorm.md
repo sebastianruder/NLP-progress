@@ -12,7 +12,7 @@ Chuck Rich reports on entertainment <TIMEX3 tid="t11" type="SET" value="XXXX-WXX
 
 ### TimeBank
 
-TimeBank, based on the TIMEX3 standard embedded in ISO-TimeML, is a benchmark corpus containing 64K tokens of English newswire, and annotated for all asepcts of ISO-TimeML - including temporal expressions.
+TimeBank, based on the TIMEX3 standard embedded in ISO-TimeML, is a benchmark corpus containing 64K tokens of English newswire, and annotated for all asepcts of ISO-TimeML - including temporal expressions. TimeBank is freely distributed by the LDC: [TimeBank 1.2](https://catalog.ldc.upenn.edu/LDC2006T08)
 
 | Model           | F1 score  |  Paper / Source |
 | ------------- | :-----:| --- |
