@@ -118,4 +118,30 @@ Answer 0: the trophy. Answer 1: the suitcase
 | Char-LM-partial (Trinh and Le, 2018) | 57.9 | [A Simple Method for Commonsense Reasoning](https://arxiv.org/abs/1806.02847) |
 | USSM + Supervised DeepNet + KB (Liu et al., 2017) | 52.8 | [Combing Context and Commonsense Knowledge Through Neural Networks for Solving Winograd Schema Problems](https://aaai.org/ocs/index.php/SSS/SSS17/paper/view/15392) |
 
+### NewsQA
+
+The [NewsQA dataset](https://arxiv.org/pdf/1611.09830.pdf) is a reading comprehension dataset of over 100,000
+human-generated question-answer pairs from over 10,000 news articles from CNN, with answers consisting of spans of text
+from the corresponding articles.
+Some challenging characteristics of this dataset are:
+- Answers are spans of arbitrary length;
+- Some questions have no answer in the corresponding article;
+- There are no candidate answers from which to choose.
+Although very similar to the SQuAD dataset, NewsQA offers a greater challenge to existing models at time of
+introduction (eg. the paragraphs are longer than those in SQuAD). Models are evaluated based on F1 and Exact Match.
+
+Example:
+
+| Story  | Question | Answer |
+| ------------- | -----:| -----: |
+| MOSCOW, Russia (CNN) -- Russian space officials say the crew of the Soyuz space ship is resting after a rough ride back to Earth. A South Korean bioengineer was one of three people on board the Soyuz capsule. The craft carrying South Korea's first astronaut landed in northern Kazakhstan on Saturday, 260 miles (418 kilometers) off its mark, they said. Mission Control spokesman Valery Lyndin said the condition of the crew -- South Korean bioengineer Yi So-yeon, American astronaut Peggy Whitson and Russian flight engineer Yuri Malenchenko -- was satisfactory, though the three had been subjected to severe G-forces during the re-entry. [...] | Where did the Soyuz capsule land? | northern Kazakhstan |
+
+The dataset can be downloaded [here](https://github.com/Maluuba/newsqa).
+
+| Model           | F1 | EM | Paper / Source |
+| ------------- | :-----: | :-----: | --- |
+| MINIMAL(Dyn) (Min et al., 2018) | 63.2 | 50.1 | [Efficient and Robust Question Answering from Minimal Context over Documents](https://arxiv.org/abs/1805.08092) |
+| FastQAExt (Weissenborn et al., 2017) | 56.1 | 43.7 | [Making Neural QA as Simple as Possible but not Simpler](https://arxiv.org/abs/1703.04816) |
+
+
 [Go back to the README](README.md)
