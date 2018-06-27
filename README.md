@@ -9,6 +9,7 @@
 - [Dependency parsing](dependency_parsing.md)
 - [Dialog](dialog.md)
 - [Domain adaptation](domain_adaptation.md)
+- [Entity Linking](entity_linking.md)
 - [Language modelling](language_modeling.md)
 - [Machine translation](machine_translation.md)
 - [Multi-task learning](multi-task_learning.md)
@@ -40,7 +41,6 @@ These are tasks and datasets that are still missing.
 
 - Bilingual dictionary induction
 - Discourse parsing
-- Entity Linking
 - Information extraction
 - Keyphrase extraction
 - Knowledge base population (KBP)
