@@ -96,6 +96,7 @@ If not, add your task or dataset to the respective section of the corresponding 
 - Add an example to every task/dataset.
 - Add statistics to every dataset.
 - Provide a description and details for every task / dataset.
+- Add a table of contents to every file (particularly the large ones).
 - We could potentially use [readthedocs](https://github.com/rtfd/readthedocs.org) to provide a clearer structure.
 - All current datasets in this list are for the English language (except for [UD](#ud)). In a separate section, we could add
 datasets for other languages.
