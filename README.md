@@ -56,7 +56,7 @@ In order to minimize noise and to make maintenance somewhat manageable, results 
 in published papers will be preferred (indicate the venue of publication in your PR);
 an exception may be made for influential preprints. The result should include the name
 of the method, the citation, the score, and a link to the paper and should be added
-so that the table is sorted.
+so that the table is sorted (with the best result on top).
 
 In order to make reproduction easier, we recommend to add a link to an implementation 
 to each method if available. You can add a `Code` column (see below) to the table if it does not exist.
@@ -75,7 +75,7 @@ the one that introduced the dataset.
 
 1. Fork the repository.
 2. If your task is completely new, create a new file and link to it in the table of contents above.
-If not, add your task or dataset to the respective section of the corresponding file.
+If not, add your task or dataset to the respective section of the corresponding file (in alphabetical order).
 3. Briefly describe the dataset/task and include relevant references. 
 4. Describe the evaluation setting and evaluation metric.
 5. Show how an annotated example of the dataset/task looks like.
