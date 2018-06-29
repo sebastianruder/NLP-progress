@@ -4,9 +4,9 @@ Question answering is the task of answering a question.
 
 ### ARC
 
-The [AI2 Reasoning Challenge (ARC)](http://ai2-website.s3.amazonaws.com/publications/AI2ReasoningChallenge2018.pdf) 
+The [AI2 Reasoning Challenge (ARC)](http://ai2-website.s3.amazonaws.com/publications/AI2ReasoningChallenge2018.pdf)
 dataset is a question answering, which contains 7,787 genuine grade-school level, multiple-choice science questions.
-The dataset is partitioned into a Challenge Set and an Easy Set. The Challenge Set contains only questions 
+The dataset is partitioned into a Challenge Set and an Easy Set. The Challenge Set contains only questions
 answered incorrectly by both a retrieval-based algorithm and a word co-occurrence algorithm. Models are evaluated
 based on accuracy.
 
@@ -43,6 +43,9 @@ Example:
 
 | Model           | CNN  | Daily Mail  |  Paper / Source |
 | ------------- | :-----:| :-----:|--- |
+| GA Reader | 77.9 | 80.9 | [Gated-Attention Readers for Text Comprehension](http://aclweb.org/anthology/P17-1168) |
+| BIDAF | 76.9 | 79.6 |[Bidirectional Attention Flow for Machine Comprehension](https://arxiv.org/pdf/1611.01603.pdf)|
+| AoA Reader | 74.4 | - | [Attention-over-Attention Neural Networks for Reading Comprehension](http://aclweb.org/anthology/P17-1055) |
 | Neural net (Chen et al., 2016) | 72.4 | 75.8 | [A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task](https://www.aclweb.org/anthology/P16-1223) |
 | Classifier (Chen et al., 2016) | 67.9 | 68.3 | [A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task](https://www.aclweb.org/anthology/P16-1223) |
 | Impatient Reader (Hermann et al., 2015) | 63.8 | 68.0 | [Teaching Machines to Read and Comprehend](https://arxiv.org/abs/1506.03340) |
@@ -58,7 +61,7 @@ Reading COmprehension Dataset, is designed and developed by Microsoft AI & Resea
 The leaderboards for multiple tasks are available on the [MS MARCO leaderboard page](http://www.msmarco.org/leaders.aspx).
 
 ### MultiRC
-MultiRC (Multi-Sentence Reading Comprehension) is a dataset of short paragraphs and multi-sentence questions that can be answered from the content of the paragraph. 
+MultiRC (Multi-Sentence Reading Comprehension) is a dataset of short paragraphs and multi-sentence questions that can be answered from the content of the paragraph.
 We have designed the dataset with three key challenges in mind:
  - The number of correct answer-options for each question is not pre-specified. This removes the over-reliance of current approaches on answer-options and forces them to decide on the correctness of each candidate answer independently of others. In other words, unlike previous work, the task here is not to simply identify the best answer-option, but to evaluate the correctness of each answer-option individually.
  - The correct answer(s) is not required to be a span in the text.
@@ -102,9 +105,9 @@ The leaderboards for both datasets are available on the [QAngaroo website](http:
 
 ### RACE
 
-The [RACE dataset](https://arxiv.org/abs/1704.04683) is a reading comprehension dataset 
-collected from English examinations in China, which are designed for middle school and high school students. 
-The dataset contains more than 28,000 passages and nearly 100,000 questions and can be 
+The [RACE dataset](https://arxiv.org/abs/1704.04683) is a reading comprehension dataset
+collected from English examinations in China, which are designed for middle school and high school students.
+The dataset contains more than 28,000 passages and nearly 100,000 questions and can be
 downloaded [here](http://www.cs.cmu.edu/~glai1/data/race/). Models are evaluated based on accuracy
 on middle school examinations (RACE-m), high school examinations (RACE-h), and on the total dataset (RACE).
 
@@ -116,7 +119,7 @@ on middle school examinations (RACE-m), high school examinations (RACE-h), and o
 ### SQuAD
 
 The [Stanford Question Answering Dataset (SQuAD)](https://arxiv.org/abs/1606.05250)
-is a reading comprehension dataset, consisting of questions posed by crowdworkers 
+is a reading comprehension dataset, consisting of questions posed by crowdworkers
 on a set of Wikipedia articles. The answer to every question is a segment of text (a span)
 from the corresponding reading passage. Recently, [SQuAD 2.0](https://arxiv.org/abs/1806.03822)
 has been released, which includes unanswerable questions.
@@ -138,7 +141,7 @@ endings. The systems must then choose the correct ending to the story.
 ### Winograd Schema Challenge
 
 The [Winograd Schema Challenge](https://www.aaai.org/ocs/index.php/KR/KR12/paper/view/4492)
-is a dataset for common sense reasoning. It employs Winograd Schema questions that 
+is a dataset for common sense reasoning. It employs Winograd Schema questions that
 require the resolution of anaphora: the system must identify the antecedent of an ambiguous pronoun in a statement. Models
 are evaluated based on accuracy.
 
