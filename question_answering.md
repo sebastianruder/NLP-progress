@@ -43,9 +43,9 @@ Example:
 
 | Model           | CNN  | Daily Mail  |  Paper / Source |
 | ------------- | :-----:| :-----:|--- |
-| GA Reader | 77.9 | 80.9 | [Gated-Attention Readers for Text Comprehension](http://aclweb.org/anthology/P17-1168) |
-| BIDAF | 76.9 | 79.6 |[Bidirectional Attention Flow for Machine Comprehension](https://arxiv.org/pdf/1611.01603.pdf)|
-| AoA Reader | 74.4 | - | [Attention-over-Attention Neural Networks for Reading Comprehension](http://aclweb.org/anthology/P17-1055) |
+| GA Reader(Dhingra et al., 2017) | 77.9 | 80.9 | [Gated-Attention Readers for Text Comprehension](http://aclweb.org/anthology/P17-1168) |
+| BIDAF(Seo et al., 2017) | 76.9 | 79.6 |[Bidirectional Attention Flow for Machine Comprehension](https://arxiv.org/pdf/1611.01603.pdf)|
+| AoA Reader(Cui et al., 2017) | 74.4 | - | [Attention-over-Attention Neural Networks for Reading Comprehension](http://aclweb.org/anthology/P17-1055) |
 | Neural net (Chen et al., 2016) | 72.4 | 75.8 | [A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task](https://www.aclweb.org/anthology/P16-1223) |
 | Classifier (Chen et al., 2016) | 67.9 | 68.3 | [A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task](https://www.aclweb.org/anthology/P16-1223) |
 | Impatient Reader (Hermann et al., 2015) | 63.8 | 68.0 | [Teaching Machines to Read and Comprehend](https://arxiv.org/abs/1506.03340) |
