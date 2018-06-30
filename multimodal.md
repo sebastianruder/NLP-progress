@@ -27,13 +27,13 @@ Conversational setting enables the models to capture emotions expressed by the s
 
 | Model                                                        |                            F1 Score                             | Paper / Source                                               | Code        |
 | ------------------------------------------------------------ | :----------------------------------------------------------: | ------------------------------------------------------------ | ----------- |
-| 5-layer convolutional network (Krizhevsky et al., 2012), Word2Vec | 75.0% | [Shutova et. al, 2016](http://www.aclweb.org/anthology/N16-1020) | Unavailable |
+| 5-layer convolutional network (Krizhevsky et al., 2012), Word2Vec | 0.75 | [Shutova et. al, 2016](http://www.aclweb.org/anthology/N16-1020) | Unavailable |
 
 [Tsvetkov  et. al, 2014](http://www.aclweb.org/anthology/P14-1024) created a dataset of adjective-noun pairs that they then annotated for metaphoricity. Dataset is in English.
 
 | Model                                                        |                            F1 Score                             | Paper / Source                                               | Code        |
 | ------------------------------------------------------------ | :----------------------------------------------------------: | ------------------------------------------------------------ | ----------- |
-| 5-layer convolutional network (Krizhevsky et al., 2012), Word2Vec | 79.0% | [Shutova et. al, 2016](http://www.aclweb.org/anthology/N16-1020) | Unavailable |
+| 5-layer convolutional network (Krizhevsky et al., 2012), Word2Vec | 0.79 | [Shutova et. al, 2016](http://www.aclweb.org/anthology/N16-1020) | Unavailable |
 
 ## Multimodal Sentiment Analysis
 
