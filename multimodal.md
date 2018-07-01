@@ -19,7 +19,21 @@ Conversational setting enables the models to capture emotions expressed by the s
 | Model           |  Weighted Accuracy (WAA)  |  Paper / Source |
 | ------------- | :-----:| --- |
 | CMN (Hazarika et al., 2018) |  77.62%  | [Conversational Memory Network for Emotion Recognition in Dyadic Dialogue Videos](http://aclweb.org/anthology/N18-1193) |
-| Memn2n | 75.08 | [Conversational Memory Network for Emotion Recognition in Dyadic Dialogue Videos](http://aclweb.org/anthology/N18-1193)
+| Memn2n | 75.08 | [Conversational Memory Network for Emotion Recognition in Dyadic Dialogue Videos](http://aclweb.org/anthology/N18-1193)|
+
+## Multimodal Metaphor Recognition
+
+[Mohammad et. al, 2016](http://www.aclweb.org/anthology/S16-2003) created a dataset of verb-noun pairs from WordNet that had multiple senses. They annoted these pairs for metaphoricity (metaphor or not a metaphor). Dataset is in English.
+
+| Model                                                        |                            F1 Score                             | Paper / Source                                               | Code        |
+| ------------------------------------------------------------ | :----------------------------------------------------------: | ------------------------------------------------------------ | ----------- |
+| 5-layer convolutional network (Krizhevsky et al., 2012), Word2Vec | 0.75 | [Shutova et. al, 2016](http://www.aclweb.org/anthology/N16-1020) | Unavailable |
+
+[Tsvetkov  et. al, 2014](http://www.aclweb.org/anthology/P14-1024) created a dataset of adjective-noun pairs that they then annotated for metaphoricity. Dataset is in English.
+
+| Model                                                        |                            F1 Score                             | Paper / Source                                               | Code        |
+| ------------------------------------------------------------ | :----------------------------------------------------------: | ------------------------------------------------------------ | ----------- |
+| 5-layer convolutional network (Krizhevsky et al., 2012), Word2Vec | 0.79 | [Shutova et. al, 2016](http://www.aclweb.org/anthology/N16-1020) | Unavailable |
 
 ## Multimodal Sentiment Analysis
 
