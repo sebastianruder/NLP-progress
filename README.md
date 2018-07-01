@@ -48,6 +48,7 @@ These are tasks and datasets that are still missing.
 - Relation extraction
 - Semi-supervised learning
 - Grammatical error correction
+- Word sense disambiguation
 
 ### Contributing
 
