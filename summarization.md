@@ -16,6 +16,8 @@ were trained and evaluated on the anonymized version of the dataset.
 | Model           | ROUGE-1  | ROUGE-2  | ROUGE-L  |  Paper / Source |
 | ------------- | :-----:| :-----:| :-----:| --- |
 | DCA (Celikyilmaz et al., 2018) | 41.69| 19.47 | 37.92 | [Deep Communicating Agents for Abstractive Summarization](https://arxiv.org/abs/1803.10357) |
+| REFRESH - Extractive model (Narayan et al., 2018) | 40.0 | 18.2 | 36.6 | [Ranking Sentences for Extractive Summarization
+with Reinforcement Learning](https://arxiv.org/pdf/1802.08636.pdf) |
 | Pointer-generator + coverage (See et al., 2017) | 39.53| 17.28 | 36.38 | [Get To The Point: Summarization with Pointer-Generator Networks](https://arxiv.org/abs/1704.04368) |
 | Extractive model (Nallapati et al., 2017)* | ﻿39.6 | 16.2 | 35.3 | [SummaRuNNer: A Recurrent Neural Network based Sequence Model for Extractive Summarization of Documents](https://arxiv.org/abs/1611.04230) |
 | Abstractive model (Nallapti et al., 2016)* | 35.46 | 13.30 | 32.65 | [Abstractive Text Summarization using Sequence-to-sequence RNNs and Beyond](http://www.aclweb.org/anthology/K16-1028) |
