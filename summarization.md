@@ -15,7 +15,7 @@ were trained and evaluated on the anonymized version of the dataset.
 
 | Model           | ROUGE-1 | ROUGE-2 | ROUGE-L | METEOR | Paper / Source |
 | --------------- | :-----: | :-----: | :-----: | :----: | -------------- |
-| Fast-ABS-RL (Chen and Bansal, 2018) (abstractive) | 41.20 | 18.18 | 38.79 | 20.55 | [Fast Abstractive Summarization with Reinforce-Selected Sentence Rewriting](https://arxiv.org/abs/1805.11080) / [code](https://github.com/chenrocks/fast_abs_rl) |
+| Fast-ABS-RL (Chen and Bansal, 2018) | 41.20 | 18.18 | 38.79 | 20.55 | [Fast Abstractive Summarization with Reinforce-Selected Sentence Rewriting](https://arxiv.org/abs/1805.11080) / [code](https://github.com/chenrocks/fast_abs_rl) |
 | DCA (Celikyilmaz et al., 2018) | 41.69| 19.47 | 37.92 | - | [Deep Communicating Agents for Abstractive Summarization](https://arxiv.org/abs/1803.10357) |
 | REFRESH - Extractive model (Narayan et al., 2018) | 40.0 | 18.2 | 36.6 | - | [Ranking Sentences for Extractive Summarization with Reinforcement Learning](https://arxiv.org/pdf/1802.08636.pdf) |
 | Pointer-generator + coverage (See et al., 2017) | 39.53| 17.28 | 36.38 | 18.72 | [Get To The Point: Summarization with Pointer-Generator Networks](https://arxiv.org/abs/1704.04368) |
