@@ -17,6 +17,7 @@ corpus tagged with four different entity types (PER, LOC, ORG, MISC). Models are
 
 | Model           | F1  |  Paper / Source |
 | ------------- | :-----:| --- |
+| Flair embeddings (Akbik et al., 2018) | 93.09 | Paper: [Contextual String Embeddings for Sequence Labeling](https://drive.google.com/file/d/17yVpFA7MmXaQFTe-HDpZuqw9fJlmzg56/view), Code: [Flair](https://github.com/zalandoresearch/flair)
 | BiLSTM-CRF+ELMo (Peters et al., 2018) | 92.22 | [Deep contextualized word representations](https://arxiv.org/abs/1802.05365) |
 | Peters et al. (2017) | 91.93 | [Semi-supervised sequence tagging with bidirectional language models](https://arxiv.org/abs/1705.00108) |
 | Yang et al. (2017) | 91.26 | [Transfer Learning for Sequence Tagging with Hierarchical Recurrent Networks](https://arxiv.org/abs/1703.06345) |
