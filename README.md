@@ -52,12 +52,16 @@ These are tasks and datasets that are still missing.
 
 ### Contributing
 
-If you would like to add a new result, you can do so with a pull request. 
+If you would like to add a new result, you can do so with a pull request (PR). 
 In order to minimize noise and to make maintenance somewhat manageable, results reported
 in published papers will be preferred (indicate the venue of publication in your PR);
 an exception may be made for influential preprints. The result should include the name
 of the method, the citation, the score, and a link to the paper and should be added
 so that the table is sorted (with the best result on top).
+
+If your pull request contains a new result, please make sure that "new result" appears
+somewhere in the title of the PR. This way, we can track which tasks are the most
+active and receive the most attention.
 
 In order to make reproduction easier, we recommend to add a link to an implementation 
 to each method if available. You can add a `Code` column (see below) to the table if it does not exist.
