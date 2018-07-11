@@ -30,8 +30,6 @@ The [WNUT 2017 Emerging Entities task](http://aclweb.org/anthology/W17-4418) ope
 text and focuses on generalisation beyond memorisation in high-variance environments. Scores are given both over
 entity chunk instances, and unique entity surface forms, to normalise the biasing impact of entities that occur frequently.
 
-#### Dataset
-
 | Feature | Train | Dev | Test |
 | --- | --- | --- | --- |
 | Posts | 3,395 | 1,009 | 1,287 |
@@ -42,12 +40,9 @@ The data is annotated for six classes - person, location, group, creative work, 
 
 Links: [WNUT 2017 Emerging Entity task page](https://noisy-text.github.io/2017/emerging-rare-entities.html) (including direct download links for data and scoring script)
 
-#### State-of-the-art
-
 | Model         | F1  | F1 (surface form) |  Paper / Source |
 | ---           | --- | ---               | --- |
-| SpinningBytes | 40.78 | 39.33 | [Transfer Learning and Sentence Level Features for Named Entity Recognition on Tweets](http://aclweb.org/anthology/W17-4422.pdf) | 
 | Aguilar et al. (2018) | 45.55 | | [Modeling Noisiness to Recognize Named Entities using Multitask Neural Networks on Social Media](http://aclweb.org/anthology/N18-1127.pdf) |
-
+| SpinningBytes | 40.78 | 39.33 | [Transfer Learning and Sentence Level Features for Named Entity Recognition on Tweets](http://aclweb.org/anthology/W17-4422.pdf) | 
 
 [Go back to the README](README.md)

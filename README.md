@@ -10,6 +10,7 @@
 - [Dialog](dialog.md)
 - [Domain adaptation](domain_adaptation.md)
 - [Entity Linking](entity_linking.md)
+- [Information Extraction](information_extraction.md)
 - [Language modelling](language_modeling.md)
 - [Machine translation](machine_translation.md)
 - [Multi-task learning](multi-task_learning.md)
@@ -22,13 +23,10 @@
 - [Sentiment analysis](sentiment_analysis.md)
 - [Semantic parsing](semantic_parsing.md)
 - [Semantic role labeling](semantic_role_labeling.md)
-- [Stance detection](stance.md)
+- [Stance detection](stance_detection.md)
 - [Summarization](summarization.md)
-- [Temporal expression normalization](timenorm.md)
-- [Temporal information extraction](time.md)
-- [Text classification](text_classification.md)
-- [Information Extraction](information_extraction.md)
 - [Temporal Processing](temporal_processing.md)
+- [Text classification](text_classification.md)
 
 This document aims to track the progress in Natural Language Processing (NLP) and give an overview
 of the state-of-the-art across the most common NLP tasks and their corresponding datasets.
