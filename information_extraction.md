@@ -1,5 +1,6 @@
-# Open Knowledge Graph Canonicalization
+# Information Extraction
 
+## Open Knowledge Graph Canonicalization
 #### Problem
 
 Open Information Extraction approaches leads to creation of large Knowledge bases (KB) from the web. The problem with such methods is that their entities and relations are not canonicalized, which leads to storage of redundant and ambiguous facts. For example, an Open KB storing *\<Barack Obama, was born in, Honolulu\>* and *\<Obama, took birth in, Honolulu\>* doesn't know that *Barack Obama* and *Obama* mean the same entity. Similarly, *took birth in* and *was born in* also refer to the same relation. Problem of Open KB canonicalization involves identifying groups of equivalent entities and relations in the KB.
