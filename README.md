@@ -38,8 +38,8 @@ task of interest, which serves as a stepping stone for further research. To this
 place where results for a task are already published and regularly maintained, such as a public leaderboard,
 the reader will be pointed there.
 
-If you want to find this document again in the future, just type [nlpprogress.com](https://nlpprogress.com/)
-or [`nlpsota.com`](https://nlpsota.com/) in your browser address bar.
+If you want to find this document again in the future, just go to [`nlpprogress.com`](https://nlpprogress.com/)
+or [`nlpsota.com`](http://nlpsota.com/) in your browser.
 
 ### Wish list
 
