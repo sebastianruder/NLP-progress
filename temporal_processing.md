@@ -17,8 +17,8 @@ For example, in the following document, the correct creation year is 1999. This 
 
 #### Comparison on year level granularity:
 
-|                                          | APW Dataset | NYT Dataset |
-| ---------------------------------------- | :---------: | :---------: |
-| [BurstySimDater](https://pdfs.semanticscholar.org/87af/a0cb4f829ce861da0c721ca666d48a62c404.pdf) |    45.9     |    38.5     |
-| [MaxEnt-Time+NER](https://pdfs.semanticscholar.org/87af/a0cb4f829ce861da0c721ca666d48a62c404.pdf) |    52.5     |    42.3     |
-| [NeuralDater](https://github.com/malllabiisc/NeuralDater) |    64.1     |    58.9     |
+|                                        | APW Dataset | NYT Dataset | Paper/Source                             |
+| -------------------------------------- | :---------: | :---------: | ---------------------------------------- |
+| Chambers, 2012                         |    52.5     |    42.3     | [Labeling Documents with Timestamps: Learning from their Time Expressions](https://pdfs.semanticscholar.org/87af/a0cb4f829ce861da0c721ca666d48a62c404.pdf) |
+| BurstySimDater (Kotsakos et. al, 2014) |    45.9     |    38.5     | [A Burstiness-aware Approach for Document Dating](https://www.idi.ntnu.no/~noervaag/papers/SIGIR2014short.pdf) |
+| NeuralDater (Vashishth et. al, 2018)   |    64.1     |    58.9     | [Document Dating using Graph Convolution Networks](https://github.com/malllabiisc/NeuralDater) |
