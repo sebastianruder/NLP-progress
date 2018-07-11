@@ -1,7 +1,7 @@
-# Document Dating (Time Stamping)
+# Temporal Processing
 
+## Document Dating (Time-stamping)
 #### Problem
-
 Document Dating is the problem of automatically predicting the date of a document based on its content. Date of a document, also referred to as the Document Creation Time (DCT), is at the core of many important tasks, such as, information retrieval, temporal reasoning, text summarization, event detection, and analysis of historical text, among others. 
 
 For example, in the following document, the correct creation year is 1999. This can be inferred by the presence of terms *1995* and *Four years after*.
