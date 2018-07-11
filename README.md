@@ -43,7 +43,6 @@ These are tasks and datasets that are still missing.
 
 - Bilingual dictionary induction
 - Discourse parsing
-- Information extraction
 - Keyphrase extraction
 - Knowledge base population (KBP)
 - More dialogue tasks
