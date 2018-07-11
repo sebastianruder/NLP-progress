@@ -24,6 +24,8 @@
 - [Semantic role labeling](semantic_role_labeling.md)
 - [Summarization](summarization.md)
 - [Text classification](text_classification.md)
+- [Open KB Canonicalization](open_kb_canonicalization.md)
+- [Document Dating](document_dating.md)
 
 This document aims to track the progress in Natural Language Processing (NLP) and give an overview
 of the state-of-the-art across the most common NLP tasks and their corresponding datasets.
