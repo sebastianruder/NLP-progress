@@ -39,4 +39,13 @@ different POS tags. Sections 0-18 are used for training, sections 19-21 for deve
 | Bi-LSTM (Ling et al., 2017) | 97.36 | [Finding Function in Form: Compositional Character Models for Open Vocabulary Word Representation](https://www.aclweb.org/anthology/D/D15/D15-1176.pdf) | | 
 | Bi-LSTM (Plank et al., 2016) | 97.22 | [Multilingual Part-of-Speech Tagging with Bidirectional Long Short-Term Memory Models and Auxiliary Loss](https://arxiv.org/abs/1604.05529) | 
 
+### Social media
+
+The [Ritter (2011)](https://aclanthology.coli.uni-saarland.de/papers/D11-1141/d11-1141) dataset has become the benchmark for social media part-of-speech tagging. This is comprised of  some 50K tokens of English social media sampled in late 2011, and is tagged using an extended version of the PTB tagset.
+
+| Model | Accuracy | Paper |
+| --- | --- | ---|
+| GATE  | 88.69 | [Twitter Part-of-Speech Tagging for All: Overcoming Sparse and Noisy Data](https://aclanthology.coli.uni-saarland.de/papers/R13-1026/r13-1026) | 
+| CMU | 90.0 ± 0.5 | [Improved Part-of-Speech Tagging for Online Conversational Text with Word Clusters](http://www.cs.cmu.edu/~ark/TweetNLP/owoputi+etal.naacl13.pdf) | 
+
 [Go back to the README](README.md)
