@@ -24,6 +24,8 @@
 - [Semantic role labeling](semantic_role_labeling.md)
 - [Summarization](summarization.md)
 - [Text classification](text_classification.md)
+- [Information Extraction](information_extraction.md)
+- [Temporal Processing](temporal_processing.md)
 
 This document aims to track the progress in Natural Language Processing (NLP) and give an overview
 of the state-of-the-art across the most common NLP tasks and their corresponding datasets.
@@ -41,7 +43,6 @@ These are tasks and datasets that are still missing.
 
 - Bilingual dictionary induction
 - Discourse parsing
-- Information extraction
 - Keyphrase extraction
 - Knowledge base population (KBP)
 - More dialogue tasks
