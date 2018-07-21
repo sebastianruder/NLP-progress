@@ -2,6 +2,7 @@
 
 ### Table of contents
 
+- [ASR](asr.md)
 - [CCG supertagging](ccg_supertagging.md)
 - [Chunking](chunking.md)
 - [Constituency parsing](constituency_parsing.md)
