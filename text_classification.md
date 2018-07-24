@@ -23,7 +23,7 @@ pertaining to the 4 largest classes. The dataset contains 30,000 training exampl
 ### DBpedia
 
 The [DBpedia ontology](https://papers.nips.cc/paper/5782-character-level-convolutional-networks-for-text-classification.pdf) 
-dataset contains 40,000 training samples and 5,000 testing samples for each of 14 nonoverlapping classes from DBpedia.
+dataset contains 560,000 training samples and 70,000 testing samples for each of 14 nonoverlapping classes from DBpedia.
 Models are evaluated based on error rate (lower is better).
 
 | Model           | Error  |  Paper / Source | Code |
