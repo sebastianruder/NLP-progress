@@ -12,9 +12,9 @@ A common evaluation dataset for language modeling ist the Penn Treebank,
 as pre-processed by [Mikolov et al. (2010)](http://www.fit.vutbr.cz/research/groups/speech/publi/2010/mikolov_interspeech2010_IS100722.pdf).
 The dataset consists of 929k training words, 73k validation words, and
 82k test words. As part of the pre-processing, words were lower-cased, numbers
-were replaced with N, newlines were replaced with <eos>,
+were replaced with N, newlines were replaced with `<eos>`,
 and all other punctuation was removed. The vocabulary is
-the most frequent 10k words with the rest of the tokens replaced by an <unk> token.
+the most frequent 10k words with the rest of the tokens replaced by an `<unk>` token.
 Models are evaluated based on perplexity, which is the average
 per-word log-probability (lower is better).
 
