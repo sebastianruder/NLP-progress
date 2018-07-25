@@ -11,6 +11,7 @@
 - [Dialog](dialog.md)
 - [Domain adaptation](domain_adaptation.md)
 - [Entity Linking](entity_linking.md)
+- [Grammatical Error Correction](grammatical_error_correction.md)
 - [Information Extraction](information_extraction.md)
 - [Language modelling](language_modeling.md)
 - [Machine translation](machine_translation.md)
@@ -54,7 +55,6 @@ These are tasks and datasets that are still missing.
 - More dialogue tasks
 - Relation extraction
 - Semi-supervised learning
-- Grammatical error correction
 
 ### Contributing
 
