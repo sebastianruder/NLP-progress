@@ -28,6 +28,7 @@
 - [Summarization](summarization.md)
 - [Temporal Processing](temporal_processing.md)
 - [Text classification](text_classification.md)
+- [Word Sense Disambiguation](word_sense_disambiguation.md)
 
 This document aims to track the progress in Natural Language Processing (NLP) and give an overview
 of the state-of-the-art (SOTA) across the most common NLP tasks and their corresponding datasets.
@@ -54,7 +55,6 @@ These are tasks and datasets that are still missing.
 - Relation extraction
 - Semi-supervised learning
 - Grammatical error correction
-- Word sense disambiguation
 
 ### Contributing
 
