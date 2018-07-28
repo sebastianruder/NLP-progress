@@ -1,0 +1,20 @@
+<style>
+
+.chart div {
+  font: 18px sans-serif;
+  background-color: steelblue;
+  text-align: right;
+  padding: 6px;
+  margin: 2px;
+  color: white;
+}
+
+</style>
+
+<div class="chart">
+{% for result in include.results %}
+  <div style="width: {{ result.accuracy | times: 5.0 }}px;">
+    {{ result.accuracy }}
+  </div>
+{% endfor %}
+</div>
