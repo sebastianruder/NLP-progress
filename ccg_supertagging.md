@@ -12,16 +12,11 @@ Example:
 
 ### CCGBank
 
-The CCGBank is a corpus of CCG derivations and dependency structures extracted from the Penn Treebank by 
-[Hockenmaier and Steedman (2007)](http://www.aclweb.org/anthology/J07-3004). Sections 2-21 are used for training, 
+The CCGBank is a corpus of CCG derivations and dependency structures extracted from the Penn Treebank by
+[Hockenmaier and Steedman (2007)](http://www.aclweb.org/anthology/J07-3004). Sections 2-21 are used for training,
 section 00 for development, and section 23 as in-domain test set.
 Performance is only calculated on the 425 most frequent labels. Models are evaluated based on accuracy.
 
-| Model           | Accuracy |  Paper / Source |
-| ------------- | :-----:| --- |
-| Lewis et al. (2016) | 94.7 | [LSTM CCG Parsing](https://aclweb.org/anthology/N/N16/N16-1026.pdf) |
-| Vaswani et al. (2016) | 94.24 | [Supertagging with LSTMs](https://aclweb.org/anthology/N/N16/N16-1027.pdf) |
-| Low supervision (Søgaard and Goldberg, 2016) | 93.26 | [Deep multi-task learning with low level tasks supervised at lower layers](http://anthology.aclweb.org/P16-2038) |
-| Xu et al. (2015) | 93.00 | [CCG Supertagging with a Recurrent Neural Network](http://www.aclweb.org/anthology/P15-2041) |
+{% include table.html results=site.data.ccg_supertagging %}
 
 [Go back to the README](README.md)

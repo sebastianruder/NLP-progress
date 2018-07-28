@@ -1,0 +1,23 @@
+- year:     2016
+  authors:  Lewis et al.
+  accuracy: 94.7
+  paper:    LSTM CCG Parsing
+  url:      https://aclweb.org/anthology/N/N16/N16-1026.pdf
+
+- year:     2016
+  authors:  Vaswani et al.
+  accuracy: 94.24
+  paper:    Supertagging with LSTMs
+  url:      https://aclweb.org/anthology/N/N16/N16-1027.pdf
+
+- year:     2016
+  authors:  Søgaard and Goldberg
+  accuracy: 93.26
+  paper:    Deep multi-task learning with low level tasks supervised at lower layers
+  url:      http://anthology.aclweb.org/P16-2038
+
+- year:     2015
+  authors:  Xu et al.
+  accuracy: 93.00
+  paper:    CCG Supertagging with a Recurrent Neural Network
+  url:      http://www.aclweb.org/anthology/P15-2041
