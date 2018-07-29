@@ -16,7 +16,10 @@ Models are typically evaluated on the [OntoNotes benchmark](http://www.aclweb.or
 
 | Model           | F1  |  Paper / Source |
 | ------------- | :-----:| --- |
-| (He et al., 2017)+ELMo (Peters et al., 2018) | 84.6 | [Deep contextualized word representations](https://arxiv.org/abs/1802.05365) |
+| He et al., (2018) + ELMO | 85.5 | [Jointly Predicting Predicates and Arguments in Neural Semantic Role Labeling](http://aclweb.org/anthology/P18-2058) |
+| (He et al., 2017) + ELMo (Peters et al., 2018) | 84.6 | [Deep contextualized word representations](https://arxiv.org/abs/1802.05365) |
+| Tan et al. (2018) | 82.7 | [Deep Semantic Role Labeling with Self-Attention](https://arxiv.org/abs/1712.01586) |
+| He et al. (2018) | 82.1 | [Jointly Predicting Predicates and Arguments in Neural Semantic Role Labeling](http://aclweb.org/anthology/P18-2058) | 
 | He et al. (2017) | 81.7 | [Deep Semantic Role Labeling: What Works and What’s Next](http://aclweb.org/anthology/P17-1044) |
 
 [Go back to the README](README.md)
