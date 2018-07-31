@@ -32,7 +32,7 @@ More in details can be found in this [survey](http://dbgroup.cs.tsinghua.edu.cn/
 The [AIDA CoNLL-YAGO][AIDACoNLLYAGO] Dataset by [[Hoffart]](http://www.aclweb.org/anthology/D11-1072) contains assignments of entities to the mentions of named entities annotated for the original [[CoNLL]](http://www.aclweb.org/anthology/W03-0419.pdf) 2003 NER task. The entities are identified by [YAGO2](http://yago-knowledge.org/) entity identifier, by [Wikipedia URL](https://en.wikipedia.org/), or by [Freebase mid](http://wiki.freebase.com/wiki/Machine_ID).
 
 |  Paper / Source | Micro-Precision | Macro-Precision |
-| ------------- | :-----:| :----: | --- |
+| ------------- | :-----:| :----: |
 | [Radhakrishnan et al. ELDEN: Improved Entity Linking using Densified Knowledge Graphs. NAACL-HLT 2018](http://aclweb.org/anthology/N18-1167) | 93.0 | 93.7 |
 | [Le et al. Improving Entity Linking by Modeling Latent Relations between Mentions. ACL 2018](http://aclweb.org/anthology/P18-1148) | 93.07 | - |
 | [Hoffart et al. Robust Disambiguation of Named Entities in Text. EMNLP 2011](http://www.aclweb.org/anthology/D11-1072) | 82.29 | 82.02 |
