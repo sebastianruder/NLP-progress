@@ -29,13 +29,13 @@ More in details can be found in this [survey](http://dbgroup.cs.tsinghua.edu.cn/
 
 #### AIDA CoNLL-YAGO Dataset
 
-The [AIDA CoNLL-YAGO][AIDACoNLLYAGO] Dataset by [Hoffart] contains assignments of entities to the mentions of named entities annotated for the original [CoNLL 2003 NER task](http://www.aclweb.org/anthology/W03-0419.pdf) [CoNLL]. The entities are identified by [YAGO2](http://yago-knowledge.org/) entity identifier, by [Wikipedia URL](https://en.wikipedia.org/), or by [Freebase mid](http://wiki.freebase.com/wiki/Machine_ID).
+The [AIDA CoNLL-YAGO][AIDACoNLLYAGO] Dataset by [[Hoffart]](http://www.aclweb.org/anthology/D11-1072) contains assignments of entities to the mentions of named entities annotated for the original [[CoNLL]](http://www.aclweb.org/anthology/W03-0419.pdf) 2003 NER task. The entities are identified by [YAGO2](http://yago-knowledge.org/) entity identifier, by [Wikipedia URL](https://en.wikipedia.org/), or by [Freebase mid](http://wiki.freebase.com/wiki/Machine_ID).
 
-| Approach | Micro-Precision | Macro-Precision  |  Paper / Source |
+| Micro-Precision | Macro-Precision  |  Paper / Source |
 | ------------- | :-----:| :----: | --- |
-| Radhakrishnan et al. (2018) | 93.0 | 93.7 | [ELDEN: Improved Entity Linking using Densified Knowledge Graphs](http://aclweb.org/anthology/N18-1167) |
-| Le et al. (2018) | 93.07 | - | [Improving Entity Linking by Modeling Latent Relations between Mentions](https://arxiv.org/abs/1804.10637) |
-| Hoffart at al. (2011) | 82.29 | 82.02 | [Robust Disambiguation of Named Entities in Text](http://www.aclweb.org/anthology/D11-1072)
+| 93.0 | 93.7 | [Radhakrishnan et al. ELDEN: Improved Entity Linking using Densified Knowledge Graphs. NAACL-HLT 2018](http://aclweb.org/anthology/N18-1167) |
+| 93.07 | - | [Le et al. Improving Entity Linking by Modeling Latent Relations between Mentions. ACL 2018](http://aclweb.org/anthology/P18-1148) |
+| 82.29 | 82.02 | [Hoffart et al. Robust Disambiguation of Named Entities in Text. EMNLP 2011](http://www.aclweb.org/anthology/D11-1072)
 
 ### Platforms
 
@@ -51,15 +51,15 @@ GERBIL does have a number of shortcomings, the most notable of which are:
 1. There is no way to view the annotations returned by each system you test. These are handled internally by GERBIL and then discarded. This can make it difficult to determine the source of error with an EL system.
 2. There is no way to observe the candidate list considered for each surface form. This is, of course, a standard problem with any third party EL API, but if one is conducting a detailed investigation into the performance of an EL system, it is important to know if the source of error was the EL algorithm itself, or the candidate retrieval process which failed to identify the correct referent as a candidate. This was listed as an important consideration by [Hachey et al][Hachey].
 
-Nevertheless, GERBIL is an excellent resource for standardising how EL systems are tested and compared. It is also a good starting point for anyone new to Entity Linking as it contains links to a wide variety of EL resources. For more information, see the research paper by [Usbeck].
+Nevertheless, GERBIL is an excellent resource for standardising how EL systems are tested and compared. It is also a good starting point for anyone new to Entity Linking as it contains links to a wide variety of EL resources. For more information, see the research paper by [[Usbeck]](http://svn.aksw.org/papers/2015/WWW_GERBIL/public.pdf).
 
 ## References
 
-[Hoffart] Johannes Hoffart, Mohamed Amir Yosef, Ilaria Bordino, Hagen Fürstenau, Manfred Pinkal, Marc Spaniol, Bilyana Taneva, Stefan Thater, and Gerhard Weikum. Robust Disambiguation of Named Entities in Text. In Proceedings of the 2011 Conference on Empirical Methods in Natural Language Processing, EMNLP 2011, Edinburgh, Scotland, pages 782–792, 2011. (http://www.aclweb.org/anthology/D11-1072
+[Hoffart] Johannes Hoffart, Mohamed Amir Yosef, Ilaria Bordino, Hagen Fürstenau, Manfred Pinkal, Marc Spaniol, Bilyana Taneva, Stefan Thater, and Gerhard Weikum. Robust Disambiguation of Named Entities in Text. EMNLP 2011. http://www.aclweb.org/anthology/D11-1072
 
-[CoNLL] Erik F Tjong Kim Sang and Fien De Meulder. Introduction to the CoNLL-2003 Shared Task: Language-Independent Named Entity Recognition. In Proceedings of the 7th Conference on Natural Language Learning, CoNLL 2003, Edmonton, Canada, 2003. (http://www.aclweb.org/anthology/W03-0419.pdf)
+[CoNLL] Erik F Tjong Kim Sang and Fien De Meulder. Introduction to the CoNLL-2003 Shared Task: Language-Independent Named Entity Recognition. CoNLL 2003. http://www.aclweb.org/anthology/W03-0419.pdf
 
-[Usbeck] Usbeck et al. GERBIL - General Entity Annotator Benchmarking Framework. WWW 2015 (http://svn.aksw.org/papers/2015/WWW_GERBIL/public.pdf)
+[Usbeck] Usbeck et al. GERBIL - General Entity Annotator Benchmarking Framework. WWW 2015. http://svn.aksw.org/papers/2015/WWW_GERBIL/public.pdf
 
 [Go back to the README](README.md)
 
