@@ -18,6 +18,24 @@ Most current question answering datasets frame the task as reading comprehension
 or document and the answer often is a span in the document. The Machine Reading group
 at UCL also provides an [overview of reading comprehension tasks](https://uclmr.github.io/ai4exams/data.html).
 
+### CliCR
+
+The [CliCR dataset](http://aclweb.org/anthology/N18-1140) is a gap-filling reading comprehension dataset consisting of around 100,000 queries and their associated documents. The dataset was built from clinical case reports, requiring the reader to answer the query with a medical problem/test/treatment entity. The abilities to perform bridging inferences and track objects have been found to be the most frequently required skills for successful answering.
+
+The instructions for accessing the dataset, the processing scripts, the baselines and the adaptations of some neural models can be found [here](https://github.com/clips/clicr).
+
+Example:
+
+| Document  | Question | Answer |
+| ------------- | -----:| -----: |
+| We report a case of a 72-year-old Caucasian woman with pl-7 positive antisynthetase syndrome. Clinical presentation included interstitial lung disease, myositis, mechanic’s hands and dysphagia. As lung injury was the main concern, treatment consisted of prednisolone and cyclophosphamide. Complete remission with reversal of pulmonary damage was achieved, as reported by CT scan, pulmonary function tests and functional status. [...] | Therefore, in severe cases an aggressive treatment, combining ________ and glucocorticoids as used in systemic vasculitis, is suggested.| cyclophoshamide |
+
+| Model           | F1 |  Paper |
+| ------------- | :-----:| --- |
+| Gated-Attention Reader (Dhingra et al., 2017) | 33.9 | [CliCR: A Dataset of Clinical Case Reports for Machine Reading Comprehension](http://aclweb.org/anthology/N18-1140) |
+| Stanford Attentive Reader (Chen et al., 2016) | 27.2| [CliCR: A Dataset of Clinical Case Reports for Machine Reading Comprehension](http://aclweb.org/anthology/N18-1140) |
+
+
 ### CNN / Daily Mail
 
 The [CNN / Daily Mail dataset](https://arxiv.org/abs/1506.03340) is a Cloze-style reading comprehension dataset
