@@ -9,7 +9,7 @@
   <tbody>
   {% for result in include.results %}
     <tr>
-      <td>{{ result.authors }} ({{ result.year }})</td>
+      <td>{% if result.model %} {{ result.model }} by {% endif %} {{ result.authors }} ({{ result.year }})</td>
       <td style="text-align: center">{{ result.accuracy }}</td>
       <td><a href="{{ result.url }}">{{ result.paper }}</a></td>
     </tr>

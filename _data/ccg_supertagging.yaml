@@ -10,7 +10,8 @@
   paper:    Supertagging with LSTMs
   url:      https://aclweb.org/anthology/N/N16/N16-1027.pdf
 
-- year:     2016
+- model:    Low supervision
+  year:     2016
   authors:  Søgaard and Goldberg
   accuracy: 93.26
   paper:    Deep multi-task learning with low level tasks supervised at lower layers
