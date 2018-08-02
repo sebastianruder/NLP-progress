@@ -13,8 +13,9 @@
 
 <div class="chart">
 {% for result in include.results %}
-  <div style="width: {{ result.accuracy | times: 5.0 }}px;">
-    {{ result.accuracy }}
+{% assign score = result[include.score] %}
+  <div style="width: {{ score | times: 5.0 }}px;">
+    {{ score }}
   </div>
 {% endfor %}
 </div>
