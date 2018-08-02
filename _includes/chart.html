@@ -3,10 +3,17 @@
 .chart div {
   font: 18px sans-serif;
   background-color: steelblue;
-  text-align: right;
   padding: 6px;
   margin: 2px;
   color: white;
+  height: 40px;
+}
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
 }
 
 </style>
@@ -15,7 +22,8 @@
 {% for result in include.results %}
 {% assign score = result[include.score] %}
   <div style="width: {{ score | times: 5.0 }}px;">
-    {{ score }}
+    <p class="alignleft">{{ result.authors }} ({{ result.year }})</p>
+    <p class="alignright">{{ score }}</p>
   </div>
 {% endfor %}
 </div>
