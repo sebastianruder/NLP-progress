@@ -1,4 +1,8 @@
-# Hypernym Discovery
+# Taxonomy Learning
+
+Taxonomy learning is the task of hierarchically classifying concepts in an automatic manner from text corpora. The process of building taxonomies is usually divided into two main steps: (1) extracting hypernyms for concepts, which may constitute a field of research in itself (see Hypernym Discovery below) and (2) refining the structure into a taxonomy.
+
+## Hypernym Discovery
 
 Given a corpus and a target term (hyponym), the task of hypernym discovery consists of extracting a set of its most appropriate hypernyms from the corpus. For example, for the input word “dog”, some valid hypernyms would be “canine”, “mammal” or “animal”.
 
@@ -12,7 +16,7 @@ The SemEval-2018 hypernym discovery evaluation benchmark ([Camacho-Collados et a
 |Training |  11779 | 3256 | 5455 |
 |Test | 7048 | 4116 | 5233 |
 
-The results for each model and dataset are presented below (MFH stands for “Most Frequent Hypernyms” and is used as a baseline).
+The results for each model and dataset (general, medical and music) are presented below (MFH stands for “Most Frequent Hypernyms” and is used as a baseline).
 
 **General:**
 
@@ -46,7 +50,7 @@ The results for each model and dataset are presented below (MFH stands for “Mo
 
 | Model           | MAP | MRR | P@5 |  Paper / Source |
 | ------------- | :-----:|:-----:|:-----:| --- |
-|CRIM | 40.97 | 60.93 | 41.31 | [A Hybrid Approach to Hypernym Discovery](http://aclweb.org/anthology/S18-1116) |
+|CRIM (Bernier-Colborne and Barrière, 2018) | 40.97 | 60.93 | 41.31 | [A Hybrid Approach to Hypernym Discovery](http://aclweb.org/anthology/S18-1116) |
 |MFH | 33.32 | 51.48 | 35.76 | -- |
 |300-sparsans (Berend et al., 2018) | 29.54 | 46.43 | 28.86 | [Hypernymy as interaction of sparse attributes ](http://aclweb.org/anthology/S18-1152) |
 |vTE (Espinosa-Anke et al., 2016) | 12.99 | 39.36 | 12.41 | [Supervised Distributional Hypernym Discovery via Domain Adaptation](https://aclweb.org/anthology/D16-1041) |
