@@ -13,10 +13,10 @@ pertaining to the 4 largest classes. The dataset contains 30,000 training exampl
 | Model           | Error  |  Paper / Source | Code |
 | ------------- | :-----:| --- | :-----: |
 | ULMFiT (Howard and Ruder, 2018) | 5.01 | [Universal Language Model Fine-tuning for Text Classification](https://arxiv.org/abs/1801.06146) | [Official](http://nlp.fast.ai/ulmfit ) |
-| CNN (Johnson and Zhang, 2016) * | 6.57 | [Supervised and Semi-Supervised Text Categorization using LSTM for Region Embeddings](https://arxiv.org/abs/1602.02373) |
-| DPCNN (Johnson and Zhang, 2017) | 6.87 | [Deep Pyramid Convolutional Neural Networks for Text Categorization](http://aclweb.org/anthology/P17-1052) |
-| VDCN (Alexis et al., 2016) | 8.67 | [Very Deep Convolutional Networks for Text Classification](https://arxiv.org/abs/1606.01781) |
-| Char-level CNN (Zhang et al., 2015) | 9.51 | [Character-level Convolutional Networks for Text Classification](https://papers.nips.cc/paper/5782-character-level-convolutional-networks-for-text-classification.pdf) |
+| CNN (Johnson and Zhang, 2016) * | 6.57 | [Supervised and Semi-Supervised Text Categorization using LSTM for Region Embeddings](https://arxiv.org/abs/1602.02373) | [Official](https://github.com/riejohnson/ConText ) |
+| DPCNN (Johnson and Zhang, 2017) | 6.87 | [Deep Pyramid Convolutional Neural Networks for Text Categorization](http://aclweb.org/anthology/P17-1052) | [Official](https://github.com/riejohnson/ConText ) |
+| VDCN (Alexis et al., 2016) | 8.67 | [Very Deep Convolutional Networks for Text Classification](https://arxiv.org/abs/1606.01781) | [Non Official](https://github.com/ArdalanM/nlp-benchmarks/blob/master/src/VDCNN.py ) |
+| Char-level CNN (Zhang et al., 2015) | 9.51 | [Character-level Convolutional Networks for Text Classification](https://papers.nips.cc/paper/5782-character-level-convolutional-networks-for-text-classification.pdf) | [Non Official](https://github.com/ArdalanM/nlp-benchmarks/blob/master/src/CNN.py ) |
 
 \* Results reported in Johnson and Zhang, 2017
 
@@ -29,10 +29,10 @@ Models are evaluated based on error rate (lower is better).
 | Model           | Error  |  Paper / Source | Code |
 | ------------- | :-----:| --- | :-----: |
 | ULMFiT (Howard and Ruder, 2018) | 0.80 | [Universal Language Model Fine-tuning for Text Classification](https://arxiv.org/abs/1801.06146)  | [Official](http://nlp.fast.ai/ulmfit ) |
-| CNN (Johnson and Zhang, 2016) | 0.84 | [Supervised and Semi-Supervised Text Categorization using LSTM for Region Embeddings](https://arxiv.org/abs/1602.02373) |
-| DPCNN (Johnson and Zhang, 2017) | 0.88 | [Deep Pyramid Convolutional Neural Networks for Text Categorization](http://aclweb.org/anthology/P17-1052) |
-| VDCN (Alexis et al., 2016) | 1.29 | [Very Deep Convolutional Networks for Text Classification](https://arxiv.org/abs/1606.01781) |
-| Char-level CNN (Zhang et al., 2015) | 1.55 | [Character-level Convolutional Networks for Text Classification](https://papers.nips.cc/paper/5782-character-level-convolutional-networks-for-text-classification.pdf) |
+| CNN (Johnson and Zhang, 2016) | 0.84 | [Supervised and Semi-Supervised Text Categorization using LSTM for Region Embeddings](https://arxiv.org/abs/1602.02373) | [Official](https://github.com/riejohnson/ConText ) |
+| DPCNN (Johnson and Zhang, 2017) | 0.88 | [Deep Pyramid Convolutional Neural Networks for Text Categorization](http://aclweb.org/anthology/P17-1052) | [Official](https://github.com/riejohnson/ConText ) |
+| VDCN (Alexis et al., 2016) | 1.29 | [Very Deep Convolutional Networks for Text Classification](https://arxiv.org/abs/1606.01781) |  [Non Official](https://github.com/ArdalanM/nlp-benchmarks/blob/master/src/VDCNN.py ) |
+| Char-level CNN (Zhang et al., 2015) | 1.55 | [Character-level Convolutional Networks for Text Classification](https://papers.nips.cc/paper/5782-character-level-convolutional-networks-for-text-classification.pdf) | [Non Official](https://github.com/ArdalanM/nlp-benchmarks/blob/master/src/CNN.py ) |
 
 ### TREC
 
