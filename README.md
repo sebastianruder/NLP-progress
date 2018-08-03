@@ -27,6 +27,7 @@
 - [Semantic role labeling](semantic_role_labeling.md)
 - [Stance detection](stance_detection.md)
 - [Summarization](summarization.md)
+- [Taxonomy learning](taxonomy_learning.md)
 - [Temporal Processing](temporal_processing.md)
 - [Text classification](text_classification.md)
 - [Word Sense Disambiguation](word_sense_disambiguation.md)
