@@ -64,6 +64,37 @@ Binary classification:
 | CNN (Johnson and Zhang, 2016) | 2.90 | [Supervised and Semi-Supervised Text Categorization using LSTM for Region Embeddings](https://arxiv.org/abs/1602.02373) |
 | Char-level CNN (Zhang et al., 2015) | 4.88 | [Character-level Convolutional Networks for Text Classification](https://papers.nips.cc/paper/5782-character-level-convolutional-networks-for-text-classification.pdf) |
 
+
+### SemEval
+SemEval (International Workshop on Semantic Evaluation) has a specific task for Sentiment analysis.
+Latest year overview of such task (Task 4) can be reached at: http://www.aclweb.org/anthology/S17-2088
+
+SemEval-2017 Task 4 consists of five subtasks, each offered for both Arabic and English:
+
+1. Subtask A: Given a tweet, decide whether it expresses POSITIVE, NEGATIVE or NEUTRAL
+sentiment.
+
+2. Subtask B: Given a tweet and a topic, classify the sentiment conveyed towards that
+topic on a two-point scale: POSITIVE vs. NEGATIVE.
+
+3. Subtask C: Given a tweet and a topic, classify the sentiment conveyed in the
+tweet towards that topic on a five-point scale: STRONGLYPOSITIVE, WEAKLYPOSITIVE,
+NEUTRAL, WEAKLYNEGATIVE, and STRONGLYNEGATIVE.
+
+4. Subtask D: Given a set of tweets about a topic, estimate the distribution of tweets
+across the POSITIVE and NEGATIVE classes. 
+
+5. Subtask E: Given a set of tweets about a topic, estimate the distribution of tweets
+across the five classes: STRONGLYPOSITIVE, WEAKLYPOSITIVE, NEUTRAL, WEAKLYNEGATIVE, and STRONGLYNEGATIVE.
+
+Subtask A  results:
+
+| Model           | F1-score |  Paper / Source |
+| ------------- | :-----:| --- |
+| LSTMs+CNNs ensemble with multiple conv. ops (Cliche. 2017) | 0.685 | [BB twtr at SemEval-2017 Task 4: Twitter Sentiment Analysis with CNNs and LSTMs](http://www.aclweb.org/anthology/S17-2094) |
+| Deep Bi-LSTM+attention (Baziotis et al., 2017) | 0.677 | [DataStories at SemEval-2017 Task 4: Deep LSTM with Attention for Message-level and Topic-based Sentiment Analysis](http://aclweb.org/anthology/S17-2126) |
+
+
 ## Aspect-based sentiment analysis
 
 ### Sentihood
@@ -78,5 +109,6 @@ for aspect detection and accuracy as evaluation metric for sentiment analysis.
 | Liu et al. (2018) | 78.5 | 91.0 | [Recurrent Entity Networks with Delayed Memory Update for Targeted Aspect-based Sentiment Analysis](http://aclweb.org/anthology/N18-2045) |
 | SenticLSTM (Ma et al., 2018) | 78.2 | 89.3 | [Targeted Aspect-Based Sentiment Analysis via Embedding Commonsense Knowledge into an Attentive LSTM](http://sentic.net/sentic-lstm.pdf) | 
 | LSTM-LOC (Saeidi et al., 2016) | 69.3 | 81.9 | [Sentihood: Targeted aspect based sentiment analysis dataset for urban neighbourhoods](http://www.aclweb.org/anthology/C16-1146) |
+
 
 [Go back to the README](README.md)
