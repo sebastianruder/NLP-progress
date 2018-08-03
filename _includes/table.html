@@ -1,0 +1,19 @@
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th style="text-align: center">{{ include.score | capitalize }}</th>
+      <th>Paper / Source</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for result in include.results %}
+    {% assign score = result[include.score] %}
+    <tr>
+      <td>{% if result.model %} {{ result.model }} by {% endif %} {{ result.authors }} ({{ result.year }})</td>
+      <td style="text-align: center">{{ score }}</td>
+      <td><a href="{{ result.url }}">{{ result.paper }}</a></td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>

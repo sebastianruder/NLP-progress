@@ -1,0 +1,12 @@
+- model:    Low supervision
+  authors:  Søgaard and Goldberg
+  year:     2016
+  F1 score: 95.57
+  paper:    Deep multi-task learning with low level tasks supervised at lower layers
+  url:      http://anthology.aclweb.org/P16-2038
+
+- authors:  Suzuki and Isozaki
+  year:     2008
+  F1 score: 95.15
+  paper:    Semi-Supervised Sequential Labeling and Segmentation using Giga-word Scale Unlabeled Data
+  url:      https://aclanthology.info/pdf/P/P08/P08-1076.pdf
