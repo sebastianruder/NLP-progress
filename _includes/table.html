@@ -1,17 +1,22 @@
+{% assign scores = include.scores | split: "," %}
+
 <table>
   <thead>
     <tr>
       <th>Model</th>
-      <th style="text-align: center">{{ include.score | capitalize }}</th>
+      {% for score in scores %}
+      <th style="text-align: center">{{ score | capitalize }}</th>
+      {% endfor %}
       <th>Paper / Source</th>
     </tr>
   </thead>
   <tbody>
   {% for result in include.results %}
-    {% assign score = result[include.score] %}
     <tr>
       <td>{% if result.model %} {{ result.model }} by {% endif %} {{ result.authors }} ({{ result.year }})</td>
-      <td style="text-align: center">{{ score }}</td>
+      {% for score in scores %}
+      <td style="text-align: center">{{ result[score] }}</td>
+      {% endfor %}
       <td><a href="{{ result.url }}">{{ result.paper }}</a></td>
     </tr>
   {% endfor %}
