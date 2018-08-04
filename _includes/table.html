@@ -8,6 +8,7 @@
       <th style="text-align: center">{{ score | capitalize }}</th>
       {% endfor %}
       <th>Paper / Source</th>
+      <th>Code</th>
     </tr>
   </thead>
   <tbody>
@@ -18,6 +19,11 @@
       <td style="text-align: center">{{ result[score] }}</td>
       {% endfor %}
       <td><a href="{{ result.url }}">{{ result.paper }}</a></td>
+      <td>
+      {% for el in result.code %}
+        <a href="{{ el.url }}">{{ el.name }}</a>
+      {% endfor %}
+      </td>
     </tr>
   {% endfor %}
   </tbody>

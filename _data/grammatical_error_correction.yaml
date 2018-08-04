@@ -31,8 +31,8 @@ CoNLL_2014:
   paper:    A Multilayer Convolutional Encoder-Decoder Neural Network for Grammatical Error Correction
   url:      https://arxiv.org/abs/1801.08831
   code:
-    - name: Official
-    - url:  https://github.com/nusnlp/mlconvgec2018
+  - name: Official
+    url:  https://github.com/nusnlp/mlconvgec2018
 
 CoNLL_2014_10_Annotators:
 - <<:       *Ge2018
