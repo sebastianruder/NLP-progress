@@ -1,0 +1,114 @@
+Penn_Treebank:
+- &DozatManning2017
+  model:       Deep Biaffine
+  authors:     Dozat and Manning
+  year:        2017
+  POS:         97.3
+  UAS:         95.44
+  LAS:         93.76
+  paper:       Deep Biaffine Attention for Neural Dependency Parsing
+  url:         https://arxiv.org/abs/1611.01734
+  code:
+  - name:      Official
+    url:       https://github.com/tdozat/Parser-v1
+-
+  model:       jPTDP
+  authors:     Nguyen and Verspoor
+  year:        2018
+  POS:         97.97
+  UAS:         94.51
+  LAS:         92.87
+  paper:       An improved neural network model for joint POS tagging and dependency parsing
+  url:         https://arxiv.org/abs/1807.03955
+  code:
+  - name:      Official
+    url:       https://github.com/datquocnguyen/jPTDP
+-
+  model:       ''
+  authors:     Andor et al.
+  year:        2016
+  POS:         97.44
+  UAS:         94.61
+  LAS:         92.79
+  paper:       Globally Normalized Transition-Based Neural Networks
+  url:         https://www.aclweb.org/anthology/P16-1231
+  code:        []
+- model:       Distilled neural FOG
+  authors:     Kuncoro et al.
+  year:        2016
+  POS:         97.3
+  UAS:         94.26
+  LAS:         92.06
+  paper:       Distilling an Ensemble of Greedy Dependency Parsers into One MST Parser
+  url:         https://arxiv.org/abs/1609.07561
+  code:        []
+-
+  model:       ''
+  authors:     Weiss et al.
+  year:        2015
+  POS:         97.44
+  UAS:         93.99
+  LAS:         92.05
+  paper:       Structured Training for Neural Network Transition-Based Parsing
+  url:         http://anthology.aclweb.org/P/P15/P15-1032.pdf
+  code:        []
+-
+  model:       BIST transition-based parser
+  authors:     Kiperwasser and Goldberg
+  year:        2016
+  POS:         97.3
+  UAS:         93.9
+  LAS:         91.9
+  paper:       Simple and Accurate Dependency Parsing Using Bidirectional LSTM Feature Representations
+  url:         https://aclweb.org/anthology/Q16-1023
+  code:
+  - name:      Official
+    url:       https://github.com/elikip/bist-parser/tree/master/barchybrid/src
+-
+  model:       Arc-hybrid
+  authors:     Ballesteros et al.
+  year:        2016
+  POS:         97.3
+  UAS:         93.56
+  LAS:         91.42
+  paper:       Training with Exploration Improves a Greedy Stack-LSTM Parser
+  url:         https://arxiv.org/abs/1603.03793
+  code:        []
+-
+  model:       BIST graph-based parser
+  authors:     Kiperwasser and Goldberg
+  year:        2016
+  POS:         97.3
+  UAS:         93.1
+  LAS:         91.0
+  paper:       Simple and Accurate Dependency Parsing Using Bidirectional LSTM Feature Representations
+  url:         https://aclweb.org/anthology/Q16-1023
+  code:
+  - name:      Official
+    url:       https://github.com/elikip/bist-parser/tree/master/bmstparser/src
+
+Reference:
+-
+  model:       Stack-only RNNG
+  authors:     Kuncoro et al.
+  year:        2017
+  UAS:         95.8
+  LAS:         94.6
+  paper:       What Do Recurrent Neural Network Grammars Learn About Syntax?
+  url:         https://arxiv.org/abs/1611.05774
+  code:        []
+  comment:     Constituent parser
+-
+  model:       Semi-supervised LSTM-LM
+  authors:     Choe and Charniak
+  year:        2016
+  UAS:         95.9
+  LAS:         94.1
+  paper:       Parsing as Language Modeling
+  url:         http://www.aclweb.org/anthology/D16-1257
+  code:        []
+  comment:     Constituent parser
+- <<:          *DozatManning2017
+  UAS:         95.66
+  LAS:         94.03
+  comment:     Stanford conversion **v3.5.0**
