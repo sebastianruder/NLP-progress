@@ -1,0 +1,27 @@
+-
+  model:    ""
+  authors:  Radhakrishnan et al.
+  year:     2018
+  Micro-Precision: 93.0
+  Macro-Precision: 93.7
+  paper:    "ELDEN: Improved Entity Linking using Densified Knowledge Graphs"
+  url:      http://aclweb.org/anthology/N18-1167
+  code:     []
+-
+  model:    ""
+  authors:  Le et al.
+  year:     2018
+  Micro-Precision: 93.07
+  Macro-Precision:
+  paper:    "Improving Entity Linking by Modeling Latent Relations between Mentions"
+  url:      http://aclweb.org/anthology/P18-1148
+  code:     []
+-
+  model:    ""
+  authors:  Hoffart et al.
+  year:     2011
+  Micro-Precision: 82.29
+  Macro-Precision: 82.02
+  paper:    "Robust Disambiguation of Named Entities in Text"
+  url:      http://www.aclweb.org/anthology/D11-1072
+  code:     []
