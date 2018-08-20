@@ -14,7 +14,7 @@ The [Penn Treebank](https://catalog.ldc.upenn.edu/LDC99T42) is typically used fo
 Sections 15-18 are used for training, section 19 for development, and and section 20
 for testing. Models are evaluated based on F1.
 
-{% include table.html results=site.data.chunking score='F1 score' %}
+{% include table.html results=site.data.chunking scores='F1 score' %}
 
 {% include chart.html results=site.data.chunking score='F1 score' %}
 

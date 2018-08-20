@@ -1,0 +1,30 @@
+-
+    model:
+    authors: Liu et al.
+    year:   2018
+    Area:   90
+    Food:   84
+    Price:  92
+    Joint:  72
+    paper:  Dialogue Learning with Human Teaching and Feedback in End-to-End Trainable Task-Oriented Dialogue Systems
+    url:    https://arxiv.org/abs/1804.06512
+-
+    model:  Neural belief tracker
+    authors: Mrkšić et al.
+    year:   2017
+    Area:   90
+    Food:   84
+    Price:  94
+    Joint:  72
+    paper: "Neural Belief Tracker: Data-Driven Dialogue State Tracking"
+    url:    https://arxiv.org/abs/1606.03777
+-
+    model:  RNN
+    authors: Henderson et al.
+    year:   2014
+    Area:   92
+    Food:   86
+    Price:  86
+    Joint:  69
+    paper:  Robust dialog state tracking using delexicalised recurrent neural networks and unsupervised gate
+    url:    http://svr-ftp.eng.cam.ac.uk/~sjy/papers/htyo14.pdf
