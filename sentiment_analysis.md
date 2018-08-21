@@ -6,7 +6,9 @@ Sentiment analysis is the task of classifying the polarity of a given text.
 
 The [IMDb dataset](https://ai.stanford.edu/~ang/papers/acl11-WordVectorsSentimentAnalysis.pdf) is a binary
 sentiment analysis dataset consisting of 50,000 reviews from the Internet Movie Database (IMDb) labeled as positive or
-negative. Models are evaluated based on accuracy.
+negative. The dataset contains an even number of positive and negative reviews. Only highly polarizing reviews are considered. 
+A negative review has a score ≤ 4 out of 10, and a positive review has a score ≥ 7 out of 10. No more than 30 reviews are 
+included per movie. Models are evaluated based on accuracy.
 
 | Model           | Accuracy  |  Paper / Source |
 | ------------- | :-----:| --- |
