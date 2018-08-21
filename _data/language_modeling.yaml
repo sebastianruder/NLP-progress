@@ -1,0 +1,178 @@
+Word_Level:
+  Penn_Treebank:
+  - &Yang2018d
+    model:        AWD-LSTM-MoS + dynamic eval*
+    authors:      Yang et al.
+    year:         2018
+    Validation perplexity: 48.33
+    Test perplexity: 47.69
+    paper:       'Breaking the Softmax Bottleneck: A High-Rank RNN Language Model'
+    url:          https://arxiv.org/abs/1711.03953
+    code:         []
+  - &Krause2017d
+    model:        AWD-LSTM + dynamic eval*
+    authors:      Krause et al.
+    year:         2017
+    Validation perplexity: 51.6
+    Test perplexity: 51.1
+    paper:        Dynamic Evaluation of Neural Sequence Models
+    url:          https://arxiv.org/abs/1709.07432
+    code:         []
+  - &Merity2017d
+    model:        AWD-LSTM + continuous cache pointer*
+    authors:      Merity et al.
+    year:         2017
+    Validation perplexity: 53.9
+    Test perplexity: 52.8
+    paper:        Regularizing and Optimizing LSTM Language Models
+    url:          https://arxiv.org/abs/1708.02182
+    code:         []
+  - &Yang2018
+    model:        AWD-LSTM-MoS
+    authors:      Yang et al.
+    year:         2018
+    Validation perplexity: 56.54
+    Test perplexity: 54.44
+    paper: 'Breaking the Softmax Bottleneck: A High-Rank RNN Language Model'
+    url:          https://arxiv.org/abs/1711.03953
+    code:         []
+  - &Merity2017
+    model:        AWD-LSTM
+    authors:      Merity et al.
+    year:         2017
+    Validation perplexity: 60.0
+    Test perplexity: 57.3
+    paper:        Regularizing and Optimizing LSTM Language Models
+    url:          https://arxiv.org/abs/1708.02182
+    code:         []
+
+  WikiText_2:
+  - <<:           *Yang2018d
+    Validation perplexity: 42.41
+    Test perplexity: 40.68
+  - <<:           *Krause2017d
+    Validation perplexity: 46.4
+    Test perplexity: 44.3
+  - <<:           *Merity2017d
+    Validation perplexity: 53.8
+    Test perplexity: 52.0
+  - <<:           *Yang2018
+    Validation perplexity: 63.88
+    Test perplexity: 61.45
+  - <<:           *Merity2017
+    Validation perplexity: 68.6
+    Test perplexity: 65.8
+
+Char_Level:
+  Hutter_Prize:
+  - <<:           *Krause2017d
+    Bit per Character (BPC): 1.08
+    Number of params (M): 46
+  - &Merity2018
+    model:        3 layer AWD-LSTM
+    authors:      Merity et al.
+    year:         2018
+    Bit per Character (BPC): 1.232
+    Number of params (M): 47
+    paper:        An Analysis of Neural Language Modeling at Multiple Scales
+    url:          https://arxiv.org/abs/1803.08240
+    code:         []
+  - &Mujika2017
+    model:        Large FS-LSTM-4
+    authors:      Mujika et al.
+    year:         2017
+    Bit per Character (BPC): 1.245
+    Number of params (M): 47
+    paper:        Fast-Slow Recurrent Neural Networks
+    url:          https://arxiv.org/abs/1705.08639
+    code:         []
+  - &Krause2016
+    model:        Large mLSTM +emb +WN +VD
+    authors:      Krause et al.
+    year:         2016
+    Bit per Character (BPC): 1.24
+    Number of params (M): 46
+    paper:        Multiplicative LSTM for sequence modelling
+    url:          https://arxiv.org/abs/1609.07959
+    code:         []
+  - <<:           *Mujika2017
+    model:        FS-LSTM-4
+    Bit per Character (BPC): 1.277
+    Number of params (M): 27
+  - &Zilly2016
+    model:        Large RHN
+    authors:      Zilly et al.
+    year:         2016
+    Bit per Character (BPC): 1.27
+    Number of params (M): 46
+    paper:        Recurrent Highway Networks
+    url:          https://arxiv.org/abs/1607.03474
+    code:         []
+
+  Text8:
+  - <<:             *Krause2017d
+    Bit per Character (BPC): 1.19
+    Number of params (M): 45
+  - <<:             *Krause2016
+    Bit per Character (BPC): 1.27
+    Number of params (M): 45
+  - <<:             *Zilly2016
+    Bit per Character (BPC): 1.27
+    Number of params (M): 46
+  -
+    model:          LayerNorm HM-LSTM
+    authors:        Chung et al.
+    year:           2017
+    Bit per Character (BPC): 1.29
+    Number of params (M): 35
+    paper:          Hierarchical Multiscale Recurrent Neural Networks
+    url:            https://arxiv.org/abs/1609.01704
+    code:           []
+  -
+    model:          BN LSTM
+    authors:        Cooijmans et al.
+    year:           2016
+    Bit per Character (BPC): 1.36
+    Number of params (M): 16
+    paper:          Recurrent Batch Normalization
+    url:            https://arxiv.org/abs/1603.09025
+    code:           []
+  - <<:             *Krause2016
+    model:          Unregularised mLSTM
+    Bit per Character (BPC): 1.4
+    Number of params (M): 45
+
+  Penn_Treebank:
+  - <<:             *Merity2018
+    Bit per Character (BPC): 1.175
+    Number of params (M): 13.8
+  - <<:             *Merity2018
+    model:          6 layer QRNN
+    Bit per Character (BPC): 1.187
+    Number of params (M): 13.8
+  - <<:             *Mujika2017
+    model:          FS-LSTM-4
+    Bit per Character (BPC): 1.19
+    Number of params (M): 27.0
+  - <<:             *Mujika2017
+    model:          FS-LSTM-2
+    Bit per Character (BPC): 1.193
+    Number of params (M): 27.0
+  -
+    model:          NASCell
+    authors:        Zoph & Le
+    year:           2016
+    Bit per Character (BPC): 1.214
+    Number of params (M): 16.3
+    paper:          Neural Architecture Search with Reinforcement Learning
+    url:            https://arxiv.org/abs/1611.01578
+    code:           []
+  -
+    model:          2-Layer Norm HyperLSTM
+    authors:        Ha et al.
+    year:           2016
+    Bit per Character (BPC): 1.219
+    Number of params (M): 14.4
+    paper:          HyperNetworks
+    url:            https://arxiv.org/abs/1609.09106
+    code:           []

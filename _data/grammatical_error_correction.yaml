@@ -1,0 +1,54 @@
+CoNLL_2014:
+- &Ge2018
+  model:    CNN Seq2Seq + Fluency Boost
+  authors:  Ge et al.
+  year:     2018
+  F0.5:     61.34
+  paper:  "Reaching Human-level Performance in Automatic Grammatical Error Correction: An Empirical Study"
+  url:      https://arxiv.org/abs/1807.01270
+  code:     []
+- &Grundkiewicz2018
+  model:    SMT + BiGRU
+  authors:  Grundkiewicz et al.
+  year:     2018
+  F0.5:     56.25
+  paper:    Near Human-Level Performance in Grammatical Error Correction with Hybrid Machine Translation
+  url:      https://arxiv.org/abs/1804.05945
+  code:     []
+- &Junczys2018
+  model:    Transformer
+  authors:  Junczys-Dowmunt et al.
+  year:     2018
+  F0.5:     55.8
+  paper:    Approaching Neural Grammatical Error Correction as a Low-Resource Machine Translation Task
+  url:      http://aclweb.org/anthology/N18-1055
+  code:     []
+- &Chollampatt2018
+  model:    CNN Seq2Seq
+  authors:  Chollampatt & Ng
+  year:     2018
+  F0.5:     54.79
+  paper:    A Multilayer Convolutional Encoder-Decoder Neural Network for Grammatical Error Correction
+  url:      https://arxiv.org/abs/1801.08831
+  code:
+  - name: Official
+    url:  https://github.com/nusnlp/mlconvgec2018
+
+CoNLL_2014_10_Annotators:
+- <<:       *Ge2018
+  F0.5:     76.88
+- <<:       *Grundkiewicz2018
+  F0.5:     72.04
+- <<:       *Chollampatt2018
+  F0.5:     70.14
+  comment:  measured by Ge et al., 2018
+
+JFLEG:
+- <<:       *Ge2018
+  GLEU:     62.37
+- <<:       *Grundkiewicz2018
+  GLEU:     61.50
+- <<:       *Junczys2018
+  GLEU:     59.9
+- <<:       *Chollampatt2018
+  GLEU:     57.47

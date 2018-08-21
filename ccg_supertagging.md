@@ -17,7 +17,7 @@ The CCGBank is a corpus of CCG derivations and dependency structures extracted f
 section 00 for development, and section 23 as in-domain test set.
 Performance is only calculated on the 425 most frequent labels. Models are evaluated based on accuracy.
 
-{% include table.html results=site.data.ccg_supertagging score='accuracy' %}
+{% include table.html results=site.data.ccg_supertagging scores='accuracy' %}
 
 {% include chart.html results=site.data.ccg_supertagging score='accuracy' %}
 

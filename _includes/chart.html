@@ -21,7 +21,7 @@
 <div class="chart">
 {% for result in include.results %}
 {% assign score = result[include.score] %}
-  <div style="width: {{ score | times: 5.0 }}px;">
+  <div style="width: {{ score | times: 6.0 }}px;">
     <p class="alignleft">{{ result.authors }} ({{ result.year }})</p>
     <p class="alignright">{{ score }}</p>
   </div>

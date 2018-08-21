@@ -29,7 +29,7 @@ evaluating constituency parsers. Section 22 is used for development and Section 
 Models are evaluated based on F1. Most of the below models incorporate external data or features.
 For a comparison of single models trained only on WSJ, refer to [Kitaev and Klein (2018)](https://arxiv.org/abs/1805.01052).
 
-{% include table.html results=site.data.constituency_parsing score='F1 score' %}
+{% include table.html results=site.data.constituency_parsing scores='F1 score' %}
 
 {% include chart.html results=site.data.constituency_parsing score='F1 score' %}
 
