@@ -8,7 +8,7 @@ The [IMDb dataset](https://ai.stanford.edu/~ang/papers/acl11-WordVectorsSentimen
 sentiment analysis dataset consisting of 50,000 reviews from the Internet Movie Database (IMDb) labeled as positive or
 negative. Models are evaluated based on accuracy.
 
-| Model           | Score  |  Paper / Source |
+| Model           | Accuracy  |  Paper / Source |
 | ------------- | :-----:| --- |
 | ULMFiT (Howard and Ruder, 2018) | 95.4 | [Universal Language Model Fine-tuning for Text Classification](https://arxiv.org/abs/1801.06146) |
 | Block-sparse LSTM (Gray et al., 2017) | 94.99 | [GPU Kernels for Block-Sparse Weights](https://s3-us-west-2.amazonaws.com/openai-assets/blocksparse/blocksparsepaper.pdf) |
