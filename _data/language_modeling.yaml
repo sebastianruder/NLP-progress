@@ -65,9 +65,27 @@ Word_Level:
 
 Char_Level:
   Hutter_Prize:
+  - &Al-Rfou2018_T64
+    model:        T64
+    authors:      Al-Rfou et al.
+    year:         2018
+    Bits per Character (BPC): 1.06
+    Number of params (M): 235
+    paper:        Character-Level Language Modeling with Deeper Self-Attention
+    url:          https://arxiv.org/abs/1808.04444
+    code:         []
   - <<:           *Krause2017d
     Bits per Character (BPC): 1.08
     Number of params (M): 46
+  - &Al-Rfou2018_T12
+    model:        T12
+    authors:      Al-Rfou et al.
+    year:         2018
+    Bits per Character (BPC): 1.11
+    Number of params (M): 44
+    paper:        Character-Level Language Modeling with Deeper Self-Attention
+    url:          https://arxiv.org/abs/1808.04444
+    code:         []
   - &Merity2018
     model:        3 layer AWD-LSTM
     authors:      Merity et al.
@@ -110,6 +128,10 @@ Char_Level:
     code:         []
 
   Text8:
+  - <<:             *Al-Rfou2018_T64
+    Bits per Character (BPC): 1.13
+  - <<:             *Al-Rfou2018_T12
+    Bits per Character (BPC): 1.18  
   - <<:             *Krause2017d
     Bits per Character (BPC): 1.19
     Number of params (M): 45
