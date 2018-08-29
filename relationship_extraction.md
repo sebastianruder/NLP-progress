@@ -26,9 +26,9 @@ has increased over the years as systems improve, with earlier systems having ver
 
 | Model                               | P@10% | P@30% | Paper / Source | Code           |
 | ----------------------------------- | ----- | ----- | --------------- | -------------- |
-| PCNN+ATT (Lin et al., 2016)         | 69*   | 51*   | [Neural Relation Extraction with Selective Attention over Instances](http://www.aclweb.org/anthology/P16-1200) | https://github.com/thunlp/OpenNRE/ |
-| MIML-RE (Surdeneau et al., 2012)    | 61*+  |   -   | [Multi-instance Multi-label Learning for Relation Extraction](http://www.aclweb.org/anthology/D12-1042) | https://nlp.stanford.edu/software/mimlre.shtml |
-| MultiR (Hoffman et al., 2011)       | 60*+  |   -   | [Knowledge-Based Weak Supervision for Information Extraction of Overlapping Relations](http://www.aclweb.org/anthology/P11-1055) | http://aiweb.cs.washington.edu/ai/raphaelh/mr/ |
+| PCNN+ATT (Lin et al., 2016)         | 69*   | 51*   | [Neural Relation Extraction with Selective Attention over Instances](http://www.aclweb.org/anthology/P16-1200) | [OpenNRE](https://github.com/thunlp/OpenNRE/) |
+| MIML-RE (Surdeneau et al., 2012)    | 61*+  |   -   | [Multi-instance Multi-label Learning for Relation Extraction](http://www.aclweb.org/anthology/D12-1042) | [Mimlre](https://nlp.stanford.edu/software/mimlre.shtml) |
+| MultiR (Hoffman et al., 2011)       | 60*+  |   -   | [Knowledge-Based Weak Supervision for Information Extraction of Overlapping Relations](http://www.aclweb.org/anthology/P11-1055) | [MultiR](http://aiweb.cs.washington.edu/ai/raphaelh/mr/) |
 | (Mintz et al., 2009)                | 40*+  |   -   | [Distant supervision for relation extraction without labeled data](http://www.aclweb.org/anthology/P09-1113) | |
 
 
