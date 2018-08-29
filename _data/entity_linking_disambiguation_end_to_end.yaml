@@ -1,0 +1,31 @@
+-
+  model:    ""
+  authors:  Kolitsas et al.
+  year:     2018
+  Micro-F1-strong: 86.6
+  Macro-F1-strong: 89.4
+  paper:    "End-to-End Neural Entity Linking, CoNLL 2018"
+  url:      https://arxiv.org/pdf/1808.07699.pdf
+  code:
+  - name:      Official
+    url:       https://github.com/dalab/end2end_neural_el
+-
+  model:    ""
+  authors:  Piccinno et al.
+  year:     2014
+  Micro-F1-strong: 69.2
+  Macro-F1-strong: 72.8
+  paper:    "From TagME to WAT: a new entity annotator"
+  url:      https://dl.acm.org/citation.cfm?id=2634350
+  code: []
+-
+  model:    ""
+  authors:  Hoffart et al.
+  year:     2011
+  Micro-F1-strong: 68.8
+  Macro-F1-strong: 72.4
+  paper:    "Robust Disambiguation of Named Entities in Text"
+  url:      http://www.aclweb.org/anthology/D11-1072
+  code: []
+-
+

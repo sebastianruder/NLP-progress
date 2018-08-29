@@ -18,6 +18,17 @@
   code:     []
 -
   model:    ""
+  authors:  Ganea and Hofmann
+  year:     2017
+  Micro-Precision: 92.22
+  Macro-Precision:
+  paper:    "Deep Joint Entity Disambiguation with Local Neural Attention"
+  url:      https://www.aclweb.org/anthology/D17-1277
+  code:
+  - name:      Official
+    url:       https://github.com/dalab/deep-ed
+-
+  model:    ""
   authors:  Hoffart et al.
   year:     2011
   Micro-Precision: 82.29
