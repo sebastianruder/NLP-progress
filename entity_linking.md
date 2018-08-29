@@ -44,7 +44,7 @@ The [AIDA CoNLL-YAGO][AIDACoNLLYAGO] Dataset by [[Hoffart]](http://www.aclweb.or
 ##### End-to-End Models
 {% include table.html
    results=site.data.entity_linking_end_to_end
-   scores='Micro-F1-strong-match,Macro-F1-strong-match' %}
+   scores='Micro-F1-strong,Macro-F1-strong' %}
 
 ### Platforms
 
