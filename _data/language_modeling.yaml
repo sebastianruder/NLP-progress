@@ -65,14 +65,32 @@ Word_Level:
 
 Char_Level:
   Hutter_Prize:
+  - &Al-Rfou2018_T64
+    model:        T64
+    authors:      Al-Rfou et al.
+    year:         2018
+    Bits per Character (BPC): 1.06
+    Number of params (M): 235
+    paper:        Character-Level Language Modeling with Deeper Self-Attention
+    url:          https://arxiv.org/abs/1808.04444
+    code:         []
   - <<:           *Krause2017d
-    Bit per Character (BPC): 1.08
+    Bits per Character (BPC): 1.08
     Number of params (M): 46
+  - &Al-Rfou2018_T12
+    model:        T12
+    authors:      Al-Rfou et al.
+    year:         2018
+    Bits per Character (BPC): 1.11
+    Number of params (M): 44
+    paper:        Character-Level Language Modeling with Deeper Self-Attention
+    url:          https://arxiv.org/abs/1808.04444
+    code:         []
   - &Merity2018
     model:        3 layer AWD-LSTM
     authors:      Merity et al.
     year:         2018
-    Bit per Character (BPC): 1.232
+    Bits per Character (BPC): 1.232
     Number of params (M): 47
     paper:        An Analysis of Neural Language Modeling at Multiple Scales
     url:          https://arxiv.org/abs/1803.08240
@@ -81,7 +99,7 @@ Char_Level:
     model:        Large FS-LSTM-4
     authors:      Mujika et al.
     year:         2017
-    Bit per Character (BPC): 1.245
+    Bits per Character (BPC): 1.245
     Number of params (M): 47
     paper:        Fast-Slow Recurrent Neural Networks
     url:          https://arxiv.org/abs/1705.08639
@@ -90,40 +108,44 @@ Char_Level:
     model:        Large mLSTM +emb +WN +VD
     authors:      Krause et al.
     year:         2016
-    Bit per Character (BPC): 1.24
+    Bits per Character (BPC): 1.24
     Number of params (M): 46
     paper:        Multiplicative LSTM for sequence modelling
     url:          https://arxiv.org/abs/1609.07959
     code:         []
   - <<:           *Mujika2017
     model:        FS-LSTM-4
-    Bit per Character (BPC): 1.277
+    Bits per Character (BPC): 1.277
     Number of params (M): 27
   - &Zilly2016
     model:        Large RHN
     authors:      Zilly et al.
     year:         2016
-    Bit per Character (BPC): 1.27
+    Bits per Character (BPC): 1.27
     Number of params (M): 46
     paper:        Recurrent Highway Networks
     url:          https://arxiv.org/abs/1607.03474
     code:         []
 
   Text8:
+  - <<:             *Al-Rfou2018_T64
+    Bits per Character (BPC): 1.13
+  - <<:             *Al-Rfou2018_T12
+    Bits per Character (BPC): 1.18  
   - <<:             *Krause2017d
-    Bit per Character (BPC): 1.19
+    Bits per Character (BPC): 1.19
     Number of params (M): 45
   - <<:             *Krause2016
-    Bit per Character (BPC): 1.27
+    Bits per Character (BPC): 1.27
     Number of params (M): 45
   - <<:             *Zilly2016
-    Bit per Character (BPC): 1.27
+    Bits per Character (BPC): 1.27
     Number of params (M): 46
   -
     model:          LayerNorm HM-LSTM
     authors:        Chung et al.
     year:           2017
-    Bit per Character (BPC): 1.29
+    Bits per Character (BPC): 1.29
     Number of params (M): 35
     paper:          Hierarchical Multiscale Recurrent Neural Networks
     url:            https://arxiv.org/abs/1609.01704
@@ -132,37 +154,37 @@ Char_Level:
     model:          BN LSTM
     authors:        Cooijmans et al.
     year:           2016
-    Bit per Character (BPC): 1.36
+    Bits per Character (BPC): 1.36
     Number of params (M): 16
     paper:          Recurrent Batch Normalization
     url:            https://arxiv.org/abs/1603.09025
     code:           []
   - <<:             *Krause2016
     model:          Unregularised mLSTM
-    Bit per Character (BPC): 1.4
+    Bits per Character (BPC): 1.4
     Number of params (M): 45
 
   Penn_Treebank:
   - <<:             *Merity2018
-    Bit per Character (BPC): 1.175
+    Bits per Character (BPC): 1.175
     Number of params (M): 13.8
   - <<:             *Merity2018
     model:          6 layer QRNN
-    Bit per Character (BPC): 1.187
+    Bits per Character (BPC): 1.187
     Number of params (M): 13.8
   - <<:             *Mujika2017
     model:          FS-LSTM-4
-    Bit per Character (BPC): 1.19
+    Bits per Character (BPC): 1.19
     Number of params (M): 27.0
   - <<:             *Mujika2017
     model:          FS-LSTM-2
-    Bit per Character (BPC): 1.193
+    Bits per Character (BPC): 1.193
     Number of params (M): 27.0
   -
     model:          NASCell
     authors:        Zoph & Le
     year:           2016
-    Bit per Character (BPC): 1.214
+    Bits per Character (BPC): 1.214
     Number of params (M): 16.3
     paper:          Neural Architecture Search with Reinforcement Learning
     url:            https://arxiv.org/abs/1611.01578
@@ -171,7 +193,7 @@ Char_Level:
     model:          2-Layer Norm HyperLSTM
     authors:        Ha et al.
     year:           2016
-    Bit per Character (BPC): 1.219
+    Bits per Character (BPC): 1.219
     Number of params (M): 14.4
     paper:          HyperNetworks
     url:            https://arxiv.org/abs/1609.09106

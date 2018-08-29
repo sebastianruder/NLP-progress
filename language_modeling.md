@@ -42,20 +42,20 @@ Within these 100 million bytes are 205 unique tokens.
 
 {% include table.html
   results=site.data.language_modeling.Char_Level.Hutter_Prize
-  scores='Bit per Character (BPC),Number of params (M)' %}
+  scores='Bits per Character (BPC),Number of params (M)' %}
 
 ### Text8
 [The text8 dataset](http://mattmahoney.net/dc/textdata.html) is also derived from Wikipedia text, but has all XML removed, and is lower cased to only have 26 characters of English text plus spaces.
 
 {% include table.html
   results=site.data.language_modeling.Char_Level.Text8
-  scores='Bit per Character (BPC),Number of params (M)' %}
+  scores='Bits per Character (BPC),Number of params (M)' %}
 
 ### Penn Treebank
 The vocabulary of the words in the character-level dataset is limited to 10 000 - the same vocabulary as used in the word level dataset.  This vastly simplifies the task of character-level language modeling as character transitions will be limited to those found within the limited word level vocabulary.
 
 {% include table.html
   results=site.data.language_modeling.Char_Level.Penn_Treebank
-  scores='Bit per Character (BPC),Number of params (M)' %}
+  scores='Bits per Character (BPC),Number of params (M)' %}
 
 [Go back to the README](README.md)

@@ -13,7 +13,7 @@
 - [Entity Linking](entity_linking.md)
 - [Grammatical Error Correction](grammatical_error_correction.md)
 - [Information Extraction](information_extraction.md)
-- [Language modelling](language_modeling.md)
+- [Language modeling](language_modeling.md)
 - [Machine translation](machine_translation.md)
 - [Multi-task learning](multi-task_learning.md)
 - [Multimodal](multimodal.md)
