@@ -36,4 +36,30 @@ has increased over the years as systems improve, with earlier systems having ver
 
 (+) Estimated from results in the paper "Neural Relation Extraction with Selective Attention over Instances"
 
+### SemEval-2010 Task 8
+
+[SemEval-2010](http://www.aclweb.org/anthology/S10-1006) introduced 'Task 8 - Multi-Way Classification of Semantic
+Relations Between Pairs of Nominals'. The task is, given a sentence and two tagged nominals, to predict the relation
+between those nominals *and* the direction of the relation. The dataset contains nine general semantic relations
+together with a tenth 'OTHER' relation.
+
+Example:
+ > There were apples, **pears** and oranges in the **bowl**.
+
+ `(content-container, pears, bowl)`
+
+The main evaluation metric used is macro-averaged F1, averaged across the nine proper relationships (i.e. excluding the
+OTHER relation), taking directionality of the relation into account.
+
+Several papers have used additional data (e.g. pre-trained word embeddings, WordNet) to improve performance. The figures
+reported here are the highest achieved by the model using any external resources.
+
+| Model                               | F1    | Paper / Source  | Code           |
+| ----------------------------------- | ----- | --------------- | -------------- |
+| BRCNN (Cai et al., 2016)            | 86.3  | [Bidirectional Recurrent Convolutional Neural Network for Relation Classification](http://www.aclweb.org/anthology/P16-1072) | [Reimplementation](https://github.com/roomylee/rcnn-relation-extraction) |
+| DepLCNN (Xu et al., 2015)           | 85.6  | [Semantic Relation Classification via Convolutional Neural Networks with Simple Negative Sampling](https://www.aclweb.org/anthology/D/D15/D15-1062.pdf) ||
+| CR-CNN (dos Santos et al., 2015)    | 84.1  | [Classifying Relations by Ranking with Convolutional Neural Network](https://www.aclweb.org/anthology/P15-1061)
+| UTD (Rink and Harabagiu, 2010)      | 82.2  | [UTD: Classifying Semantic Relations by Combining Lexical and Semantic Resources](http://www.aclweb.org/anthology/S10-1057) ||
+
+
 [Go back to the README](README.md)
