@@ -1,0 +1,74 @@
+WN18RR:
+-
+  model:       Max-Margin Markov Graph Models (M3GM)
+  authors:     Pinter and Eisenstein
+  year:        2018
+  H@10:        59.02
+  H@1:         45.37
+  MRR:         49.83
+  paper:       Predicting Semantic Relations using Global Graph Properties
+  url:         https://arxiv.org/abs/1804.09530
+  code:        
+  - name:      Official
+    url:       http://www.github.com/yuvalpinter/m3gm
+-
+  model:       TransE (reimplementation)
+  authors:     Pinter and Eisenstein
+  year:        2018
+  H@10:        55.55
+  H@1:         42.26
+  MRR:         46.59
+  paper:       Predicting Semantic Relations using Global Graph Properties
+  url:         https://arxiv.org/abs/1804.09530
+  code:        
+  - name:      Reimplementation of Bordes et al. 2013. Translating embeddings for modeling multi-relational data.
+    url:       http://www.github.com/yuvalpinter/m3gm
+-
+  model:       ConvKB
+  authors:     Nguyen et al.
+  year:        2018
+  H@10:        52.50
+  H@1:         N/A
+  MRR:         24.80
+  paper:       A Novel Embedding Model for Knowledge Base Completion Based on Convolutional Neural Network
+  url:         http://www.aclweb.org/anthology/N18-2053
+  code:
+  - name:      Official
+    url:       https://github.com/daiquocnguyen/ConvKB
+-
+  model:       ConvE (v6)
+  authors:     Dettmers et al.
+  year:        2018
+  H@10:        52.00
+  H@1:         40.00
+  MRR:         43.00
+  paper:       Convolutional 2D Knowledge Graph Embeddings
+  url:         https://arxiv.org/abs/1707.01476
+  code:
+  - name:      Official
+    url:       https://github.com/TimDettmers/ConvE
+-
+  model:       ComplEx
+  authors:     Trouillon et al.
+  year:        2016
+  H@10:        51.00
+  H@1:         41.00
+  MRR:         44.00
+  paper:       Complex Embeddings for Simple Link Prediction
+  url:         http://www.jmlr.org/proceedings/papers/v48/trouillon16.pdf
+  code:
+  - name:      Official
+    url:       https://github.com/ttrouill/complex
+-
+  model:       DistMult (reimplementation)
+  authors:     Dettmers et al.
+  year:        2017
+  H@10:        49.00
+  H@1:         40.00
+  MRR:         43.00
+  paper:       Convolutional 2D Knowledge Graph Embeddings
+  url:         https://arxiv.org/abs/1412.6575
+  code:
+  - name:      Reimplementation of Yang et al. 2013. Embedding Entities and Relations for Learning and Inference in Knowledge Bases.
+    url:       https://github.com/uclmr/inferbeddings
+    
