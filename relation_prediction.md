@@ -36,9 +36,8 @@ As a way to overcome this problem, Dettmers et al. (2018) introduced the WN18RR 
 
 The test set is composed of triplets, each used to create two test instances, one for each entity to be predicted. Since each instance is associated with a single true entity, the maximum value for all metrics is 1.00.
 
-##### 
 {% include table.html
-   results=site.data.relation_prediction.wn18rr
+   results=site.data.relation_prediction.WN18RR
    scores='H@10,H@1,MRR' %}
 
 [Back to README](README.md)
