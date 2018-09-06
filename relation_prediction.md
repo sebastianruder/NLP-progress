@@ -30,9 +30,9 @@ The rate of correct entities appearing in the top *k* entries for each instance 
 
 #### WordNet-18-RR (WN18RR)
 
-The WN18 dataset was introduced in Bordes et al., 2013. It included the full 18 relations scraped from WordNet for roughly 41,000 synsets. This dataset was found to suffer from major training set leakage, initially by Socher et al. 2013. This means reciprocal edges from symmetric relations (e.g. *hypernym*-*hyponym*) appear in one form in the training or dev set, and in the other in the test set. A trivial rule-based system recovering these regularities surpasses 90% performance on the test set.
+The WN18 dataset was introduced in [Bordes et al., 2013](http://papers.nips.cc/paper/5071-translating-embeddings-for-modeling-multi-relational-data.pdf). It included the full 18 relations scraped from WordNet for roughly 41,000 synsets. This dataset was found to suffer from major training set leakage, initially by [Socher et al. 2013](https://papers.nips.cc/paper/5028-reasoning-with-neural-tensor-networks-for-knowledge-base-completion.pdf). This means reciprocal edges from symmetric relations (e.g. *hypernym*-*hyponym*) appear in one form in the training or dev set, and in the other in the test set. A trivial rule-based system recovering these regularities surpasses 90% performance on the test set.
 
-As a way to overcome this problem, Dettmers et al. (2018) introduced the WN18RR dataset, derived from WN18, which features 11 relations only, no pair of which is reciprocal (but still include four internally-symmetric relations like *verb_group*, allowing the rule-based system to reach 35 on all three metrics).
+As a way to overcome this problem, [Dettmers et al. (2018)](https://arxiv.org/abs/1707.01476) introduced the [WN18RR](https://github.com/villmow/datasets_knowledge_embedding) dataset, derived from WN18, which features 11 relations only, no pair of which is reciprocal (but still include four internally-symmetric relations like *verb_group*, allowing the rule-based system to reach 35 on all three metrics).
 
 The test set is composed of triplets, each used to create two test instances, one for each entity to be predicted. Since each instance is associated with a single true entity, the maximum value for all metrics is 1.00.
 
