@@ -54,6 +54,7 @@ TREC-50:
 
 | Model           | Error  |  Paper / Source | Code |
 | ------------- | :-----:| --- | :-----: |
+|USE (Cer et al., 2018) | 1.93 |[Universal Sentence Encoder](https://arxiv.org/pdf/1803.11175.pdf)| |
 | Rules (Madabushi and Lee, 2016) | 2.8 |[High Accuracy Rule-based Question Classification using Question Syntax and Semantics](http://www.aclweb.org/anthology/C16-1116)| |
 | SVM (Van-Tu and Anh-Cuong, 2016) | 8.4 | [Improving Question Classification by Feature Extraction and Selection](https://www.researchgate.net/publication/303553351_Improving_Question_Classification_by_Feature_Extraction_and_Selection) | |
 
