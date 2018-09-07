@@ -16,6 +16,9 @@ Example:
 
 More in details can be found in this [survey](http://dbgroup.cs.tsinghua.edu.cn/wangjy/papers/TKDE14-entitylinking.pdf).
 
+## Current SOTA
+[Sil][Sil], published at AAAI 2018, is the current SOTA in Cross-lingual Entity Linking. In the cross-lingual setting, they train the system on English and test not only on English; but also on other foreign unseen languages like Spanish and Chinese. Their system obtained the top end-to-end EL score at the TAC 2017 annual EL evaluation by NIST in English. Their system is a feed forward NN approach with a wide variety of similarity networks put in a "feature abstraction layer". The system is trained in a zero-shot fashion and gets SOTA score on English, Spanish and Chinese.
+
 ## Evaluation
 
 ### Metrics
@@ -40,6 +43,16 @@ The [AIDA CoNLL-YAGO][AIDACoNLLYAGO] Dataset by [[Hoffart]](http://www.aclweb.or
 {% include table.html
    results=site.data.entity_linking_disambiguation_only
    scores='Micro-Precision,Macro-Precision' %}
+   
+##### Disambiguation-Only Models (Spanish)
+{% include table.html
+   results=site.data.entity_linking_disambiguation_only_spanish.yaml
+   scores='Micro-Precision,Macro-Precision' %}
+
+##### Disambiguation-Only Models (Chinese)
+{% include table.html
+   results=site.data.entity_linking_disambiguation_only_chinese.yaml
+   scores='Micro-Precision,Macro-Precision' %}   
 
 ##### End-to-End Models
 {% include table.html
@@ -72,6 +85,7 @@ Nevertheless, GERBIL is an excellent resource for standardising how EL systems a
 
 [Go back to the README](README.md)
 
+[Sil]: https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16501/16101 "Neural Cross-Lingual Entity Linking"
 [Shen]: http://dbgroup.cs.tsinghua.edu.cn/wangjy/papers/TKDE14-entitylinking.pdf "Entity Linking with a Knowledge Base: Issues, Techniques, and Solutions"
 [AIDACoNLLYAGO]: https://www.mpi-inf.mpg.de/departments/databases-and-information-systems/research/yago-naga/aida/downloads/ "AIDA CoNLL-YAGO Dataset"
 [YAGO2]: http://yago-knowledge.org/ "YAGO2"
