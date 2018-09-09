@@ -1,5 +1,15 @@
 -
   model:    ""
+  authors:  Sil et al.
+  year:     2018
+  Micro-Precision: 94.0
+  Macro-Precision:
+  paper:    "Neural Cross-Lingual Entity Linking"
+  url:      https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16501/16101
+  code:     []
+-
+-
+  model:    ""
   authors:  Radhakrishnan et al.
   year:     2018
   Micro-Precision: 93.0
