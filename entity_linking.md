@@ -46,13 +46,13 @@ The [AIDA CoNLL-YAGO][AIDACoNLLYAGO] Dataset by [[Hoffart]](http://www.aclweb.or
    
 ##### Disambiguation-Only Models (Spanish)
 {% include table.html
-   results=site.data.entity_linking_disambiguation_only_spanish.yaml
-   scores='Micro-Precision,Macro-Precision' %}
+   results=site.data.entity_linking_disambiguation_only_spanish
+   scores='Micro-Precision' %}
 
 ##### Disambiguation-Only Models (Chinese)
 {% include table.html
-   results=site.data.entity_linking_disambiguation_only_chinese.yaml
-   scores='Micro-Precision,Macro-Precision' %}   
+   results=site.data.entity_linking_disambiguation_only_chinese
+   scores='Micro-Precision' %}   
 
 ##### End-to-End Models
 {% include table.html
