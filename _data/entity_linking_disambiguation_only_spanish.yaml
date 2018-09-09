@@ -1,0 +1,20 @@
+-
+  model:    ""
+  authors:  Sil et al.
+  year:     2018
+  Micro-Precision:: 82.3
+  Macro-Precision:
+  paper:    "Neural Cross-Lingual Entity Linking"
+  url:      https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16501/16101
+  code:     []
+-
+-
+  model:    ""
+  authors:  Tsai & Roth.
+  year:     2016
+  Micro-Precision: 80.9
+  Macro-Precision:
+  paper:    "Cross-lingual wikification using multilingual embeddings"
+  url:      http://cogcomp.org/papers/TsaiRo16b.pdf
+  code:     []
+-
