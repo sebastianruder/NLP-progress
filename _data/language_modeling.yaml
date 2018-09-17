@@ -85,7 +85,7 @@ Word_Level:
     model:        Gated CNN
     authors:      Dauphin et al.
     year:         2016
-    Validation perplexity: -
+    Validation perplexity: 
     Test perplexity: 37.2
     paper:        Language modeling with gated convolutional networks
     url:          https://arxiv.org/abs/1612.08083
@@ -94,7 +94,7 @@ Word_Level:
     model:        Temporal CNN
     authors:      Bai et al.
     year:         2018
-    Validation perplexity: -
+    Validation perplexity: 
     Test perplexity: 45.2
     paper:        Convolutional sequence modeling revisited
     url:          https://openreview.net/forum?id=rk8wKk-R-.
@@ -103,12 +103,12 @@ Word_Level:
     model:        LSTM
     authors:      Graves et al.
     year:         2014
-    Validation perplexity: -
+    Validation perplexity: 
     Test perplexity: 48.7
     paper:        Neural turing machines
     url:          https://arxiv.org/abs/1410.5401
     code:         []
-
+    
 Char_Level:
   Hutter_Prize:
   - &Al-Rfou2018_T64
