@@ -1,5 +1,7 @@
 # Language modeling
 
+Other languages: [[ Arabic AR ]](ar_language_modeling) [[ Korean KO ]](ko_language_modeling.md) [[ Polish PL ]](pl_language_modeling.md)
+
 Language modeling is the task of predicting the next word or character in a document.
 
 \* Indicates models using dynamic evaluation.
