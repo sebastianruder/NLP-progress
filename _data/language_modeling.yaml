@@ -63,6 +63,52 @@ Word_Level:
     Validation perplexity: 68.6
     Test perplexity: 65.8
 
+  WikiText_103:
+  - &Rae2018
+    model:        LSTM + Hebbian + Cache + MbPA
+    authors:      Rae et al.
+    year:         2018
+    Validation perplexity: 29.0
+    Test perplexity: 29.2
+    paper:        Fast Parametric Learning with Activation Memorization
+    url:          http://arxiv.org/abs/1803.10049
+    code:         []
+  - <<:           *Rae2018
+    model:        LSTM + Hebbian
+    Validation perplexity: 34.1
+    Test perplexity: 34.3
+  - <<:           *Rae2018
+    model:        LSTM
+    Validation perplexity: 36.0
+    Test perplexity: 36.4
+  - &Dauphin2016
+    model:        Gated CNN
+    authors:      Dauphin et al.
+    year:         2016
+    Validation perplexity: -
+    Test perplexity: 37.2
+    paper:        Language modeling with gated convolutional networks
+    url:          https://arxiv.org/abs/1612.08083
+    code:         []
+  - &Bai2018
+    model:        Temporal CNN
+    authors:      Bai et al.
+    year:         2018
+    Validation perplexity: -
+    Test perplexity: 45.2
+    paper:        Convolutional sequence modeling revisited
+    url:          https://openreview.net/forum?id=rk8wKk-R-.
+    code:         []
+  - &Graves2014
+    model:        LSTM
+    authors:      Graves et al.
+    year:         2014
+    Validation perplexity: -
+    Test perplexity: 48.7
+    paper:        Neural turing machines
+    url:          https://arxiv.org/abs/1410.5401
+    code:         []
+
 Char_Level:
   Hutter_Prize:
   - &Al-Rfou2018_T64

@@ -32,6 +32,14 @@ consists of around 2 million words extracted from Wikipedia articles.
   results=site.data.language_modeling.Word_Level.WikiText_2
   scores='Validation perplexity,Test perplexity' %}
 
+### WikiText-103
+
+[WikiText-103](https://arxiv.org/abs/1609.07843) The WikiText-103 corpus contains 267,735 unique words and each word occurs at least three times in the training set.
+
+{% include table.html
+  results=site.data.language_modeling.Word_Level.WikiText_103
+  scores='Validation perplexity,Test perplexity' %}
+
 ## Character Level Models
 
 ### Hutter Prize
