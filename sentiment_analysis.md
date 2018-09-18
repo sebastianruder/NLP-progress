@@ -112,5 +112,17 @@ for aspect detection and accuracy as evaluation metric for sentiment analysis.
 | SenticLSTM (Ma et al., 2018) | 78.2 | 89.3 | [Targeted Aspect-Based Sentiment Analysis via Embedding Commonsense Knowledge into an Attentive LSTM](http://sentic.net/sentic-lstm.pdf) | 
 | LSTM-LOC (Saeidi et al., 2016) | 69.3 | 81.9 | [Sentihood: Targeted aspect based sentiment analysis dataset for urban neighbourhoods](http://www.aclweb.org/anthology/C16-1146) |
 
+# Subjectivity analysis
+
+A related task to sentiment analysis is the subjectivity analysis with the goal of labeling an opinion as either subjective or objective.
+
+### SUBJ
+
+[Subjectivity dataset](http://www.cs.cornell.edu/people/pabo/movie-review-data/) includes 5,000 subjective and 5,000 objective processed sentences. 
+
+| Model           | Accuracy |  Paper / Source |
+| ------------- | :-----:| --- |
+| USE (Cer et al., 2018) | 93.90 | [Universal Sentence Encoder](https://arxiv.org/pdf/1803.11175.pdf) |
+| Fast Dropout (Wang and Manning, 2013) | 93.60 | [Fast Dropout Training](http://proceedings.mlr.press/v28/wang13a.pdf) |
 
 [Go back to the README](README.md)
