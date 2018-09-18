@@ -7,7 +7,7 @@ WN18RR:
   H@1:         45.37
   MRR:         49.83
   paper:       Predicting Semantic Relations using Global Graph Properties
-  url:         https://arxiv.org/abs/1804.09530
+  url:         https://arxiv.org/abs/1808.08644
   code:        
   - name:      Official
     url:       http://www.github.com/yuvalpinter/m3gm
@@ -19,7 +19,7 @@ WN18RR:
   H@1:         42.26
   MRR:         46.59
   paper:       Predicting Semantic Relations using Global Graph Properties
-  url:         https://arxiv.org/abs/1804.09530
+  url:         https://arxiv.org/abs/1808.08644
   code:        
   - name:      Reimplementation of Bordes et al. 2013. Translating embeddings for modeling multi-relational data.
     url:       http://www.github.com/yuvalpinter/m3gm
