@@ -37,4 +37,18 @@ The following results are just for references:
   results=site.data.dependency_parsing.Reference
   scores='POS,UAS,comment' %}
 
+# Unsupervised dependency parsing
+
+Unsupervised dependency parsing is the task of inferring the dependency parse of sentences without any labeled training data.
+
+## Penn Treebank
+
+As with supervised parsing, models are evaluated against the Penn Treebank. The most common evaluation setup is to use
+gold POS-tags as input and to evaluate systems using the unlabeled attachment score (also called 'directed dependency
+accuracy').
+
+{% include table.html
+  results=site.data.dependency_parsing.Unsupervised_Penn_Treebank
+  scores='UAS' %}
+
 [Go back to the README](README.md)

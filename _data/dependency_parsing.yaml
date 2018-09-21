@@ -112,3 +112,40 @@ Reference:
   UAS:         95.66
   LAS:         94.03
   comment:     Stanford conversion **v3.5.0**
+
+Unsupervised_Penn_Treebank:
+-
+  model:       Iterative reranking
+  authors:     Le & Zuidema
+  year:        2015
+  UAS:         66.2
+  paper:       Unsupervised Dependency Parsing - Let’s Use Supervised Parsers
+  url:         http://www.aclweb.org/anthology/N15-1067
+-
+  model:       Combined System
+  authors:     Spitkovsky et al
+  year:        2013
+  UAS:         64.4
+  paper:       Breaking Out of Local Optima with Count Transforms and Model Recombination - A Study in Grammar Induction
+  url:         http://www.aclweb.org/anthology/D13-1204
+-
+  model:       Tree Substitution Grammar DMV
+  authors:     Blunsom & Cohn
+  year:        2010
+  UAS:         55.7
+  paper:       Unsupervised Induction of Tree Substitution Grammars for Dependency Parsing
+  url:         http://www.aclweb.org/anthology/D10-1117
+-
+  model:       Shared Logistic Normal DMV
+  authors:     Cohen & Smith
+  year:        2009
+  UAS:         41.4
+  paper:       Shared Logistic Normal Distributions for Soft Parameter Tying in Unsupervised Grammar Induction
+  url:         http://www.aclweb.org/anthology/N09-1009
+-
+  model:       DMV
+  authors:     Klein & Manning
+  year:        2004
+  UAS:         35.9
+  paper:       Corpus-Based Induction of Syntactic Structure - Models of Dependency and Constituency
+  url:         http://www.aclweb.org/anthology/P04-1061
