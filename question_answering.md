@@ -175,5 +175,11 @@ Answer 0: the trophy. Answer 1: the suitcase
 | Char-LM-partial (Trinh and Le, 2018) | 57.9 | [A Simple Method for Commonsense Reasoning](https://arxiv.org/abs/1806.02847) |
 | USSM + Supervised DeepNet + KB (Liu et al., 2017) | 52.8 | [Combing Context and Commonsense Knowledge Through Neural Networks for Solving Winograd Schema Problems](https://aaai.org/ocs/index.php/SSS/SSS17/paper/view/15392) |
 
+### RecipQA
+
+[RecipeQA](https://arxiv.org/abs/1809.00812) is a dataset for multimodal comprehension of cooking recipes. It consists of over 36K question-answer pairs automatically generated from approximately 20K unique recipes with step-by-step instructions and images. Each question in RecipeQA involves multiple modalities such as titles, descriptions or images, and working towards an answer requires (i) joint understanding of images and text, (ii) capturing the temporal flow of events, and (iii) making sense of procedural knowledge.
+
+The public leaderboard is available on the [RecipeQA website](https://hucvl.github.io/recipeqa/).
+
 
 [Go back to the README](README.md)
