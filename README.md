@@ -14,7 +14,7 @@
 - [Grammatical Error Correction](grammatical_error_correction.md)
 - [Information Extraction](information_extraction.md)
 - [Language modeling](language_modeling.md)
-- [Lexical Normalization](normalization.md)
+- [Lexical Normalization](lexical_normalization.md)
 - [Machine translation](machine_translation.md)
 - [Multi-task learning](multi-task_learning.md)
 - [Multimodal](multimodal.md)
