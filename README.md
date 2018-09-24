@@ -14,6 +14,7 @@
 - [Grammatical Error Correction](grammatical_error_correction.md)
 - [Information Extraction](information_extraction.md)
 - [Language modeling](language_modeling.md)
+- [Lexical Normalization](normalization.md)
 - [Machine translation](machine_translation.md)
 - [Multi-task learning](multi-task_learning.md)
 - [Multimodal](multimodal.md)
@@ -57,7 +58,6 @@ These are tasks and datasets that are still missing.
 - Knowledge base population (KBP)
 - More dialogue tasks
 - Semi-supervised learning
-- Text normalization
 
 ### Contributing
 
