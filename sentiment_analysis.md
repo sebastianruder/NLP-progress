@@ -25,14 +25,14 @@ contains of 215,154 phrases with fine-grained sentiment labels in the parse tree
 of 11,855 sentences in movie reviews. Models are evaluated either on fine-grained
 (five-way) or binary classification based on accuracy.
 
-Fine-grained classification:
+Fine-grained classification (SST-5, 94,2k examples):
 
 | Model           | Accuracy |  Paper / Source |
 | ------------- | :-----:| --- |
 | BCN+ELMo (Peters et al., 2018) | 54.7 | [Deep contextualized word representations](https://arxiv.org/abs/1802.05365) |
 | BCN+Char+CoVe (McCann et al., 2017) | 53.7 | [Learned in Translation: Contextualized Word Vectors](https://arxiv.org/abs/1708.00107) |
 
-Binary classification:
+Binary classification (SST-2, 56.4k examples):
 
 | Model           | Accuracy  |  Paper / Source |
 | ------------- | :-----:| --- |
