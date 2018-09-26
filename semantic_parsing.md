@@ -147,6 +147,16 @@ Example:
 | SQLNet (Xu et al., 2017) | 68.0 | [Sqlnet: Generating structured queries from natural language without reinforcement learning](https://arxiv.org/abs/1711.04436) |
 | Seq2SQL (Zhong et al., 2017) | 59.4 | [Seq2sql: Generating structured queries from natural language using reinforcement learning](https://arxiv.org/abs/1709.00103) |
 
+
+### Spider
+
+Spider is a large-scale complex and cross-domain semantic parsing and text-to-SQL 
+dataset. It consists of 10,181 questions and 5,693 unique complex SQL queries on 
+200 databases with multiple tables covering 138 different domains. In Spider 1.0, 
+different complex SQL queries and databases appear in train and test sets. 
+
+The Spider dataset can be accessed and leaderboard can be accessed [here](https://yale-lily.github.io/spider).
+
 ### Smaller Datasets
 
 Restaurants - 378 questions about restaurants, their cuisine and locations, collected by [Tang and Mooney (2000)](http://www.aclweb.org/anthology/W/W00/W00-1317.pdf), converted to SQL by [Popescu et al., (2003)]((http://doi.acm.org/10.1145/604045.604070) and [Giordani and Moschitti (2012)](https://doi.org/10.1007/978-3-642-45260-4_5), improved and converted to canonical style by [Finegan-Dollak et al., (2018)](http://arxiv.org/abs/1806.09029)
