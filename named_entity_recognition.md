@@ -10,7 +10,7 @@ Example:
 | --- | ---| --- | --- |
 | B-PER | I-PER | O | B-LOC |
 
-### CoNLL 2003
+### CoNLL 2003 (English)
 
 The [CoNLL 2003 NER task](http://www.aclweb.org/anthology/W03-0419.pdf) consists of newswire text from the Reuters RCV1 
 corpus tagged with four different entity types (PER, LOC, ORG, MISC). Models are evaluated based on span-based F1.
@@ -45,5 +45,18 @@ Links: [WNUT 2017 Emerging Entity task page](https://noisy-text.github.io/2017/e
 | ---           | --- | ---               | --- |
 | Aguilar et al. (2018) | 45.55 | | [Modeling Noisiness to Recognize Named Entities using Multitask Neural Networks on Social Media](http://aclweb.org/anthology/N18-1127.pdf) |
 | SpinningBytes | 40.78 | 39.33 | [Transfer Learning and Sentence Level Features for Named Entity Recognition on Tweets](http://aclweb.org/anthology/W17-4422.pdf) | 
+
+### Ontonotes v5 (English)
+
+The [Ontonotes corpus v5]() is a richly annotated corpus with several layers of annotation, including named entities, coreference, part of speech, and constituency parse trees. These annotations are over a large number of tokens, a broad cross-section of domains, and 3 languages (English, Arabic, and Chinese). The common datasplit used in NER is defined in [Pradhan et al 2013](https://www.semanticscholar.org/paper/Towards-Robust-Linguistic-Analysis-using-OntoNotes-Pradhan-Moschitti/a94e4fe6f475e047be5dcc9077f445e496240852) and can be found [here](http://cemantix.org/data/ontonotes.html).
+
+| Model           | F1  |  Paper / Source | Code |
+| ------------- | :-----:| --- | --- |
+| BiLSTM-CRF (Strubell et al, 2017) | 86.99 | [Fast and Accurate Entity Recognition with Iterated Dilated Convolutions](https://arxiv.org/pdf/1702.02098.pdf)  |  |
+| Iterated Dilated CNN (Strubell et al, 2017) | 86.84 | [Fast and Accurate Entity Recognition with Iterated Dilated Convolutions](https://arxiv.org/pdf/1702.02098.pdf)  |  |
+| Joint Model (Durrett and Klein 2014) | 84.04 | [A Joint Model for Entity Analysis: Coreference, Typing, and Linking](https://pdfs.semanticscholar.org/2eaf/f2205c56378e715d8d12c521d045c0756a76.pdf) |
+| Averaged Perceptron (Ratinov and Roth 2009) | 83.45 | [Design Challenges and Misconceptions in Named Entity Recognition](https://www.semanticscholar.org/paper/Design-Challenges-and-Misconceptions-in-Named-Ratinov-Roth/27496a2ee337db705e7c611dea1fd8e6f41437c2) (These scores reported in [Durrett and Klein 2014](https://pdfs.semanticscholar.org/2eaf/f2205c56378e715d8d12c521d045c0756a76.pdf) ||
+
+
 
 [Go back to the README](README.md)
