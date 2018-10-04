@@ -42,6 +42,12 @@
 - [Chunking](korean.md)
 - [Part-of-speech tagging](korean.md)
 
+### Hindi
+
+- [Chunking](hindi.md)
+- [Machine Translation](hindi.md)
+
+
 This document aims to track the progress in Natural Language Processing (NLP) and give an overview
 of the state-of-the-art (SOTA) across the most common NLP tasks and their corresponding datasets.
 
