@@ -53,7 +53,8 @@
 
 ## Dependency parsing
 
-* The last 1020 sentences of the [benchmark Vietnamese dependency treebank VnDT](http://vndp.sourceforge.net) is used for test, while the remaining 9k+ sentences are used for training & development.
+* The last 1020 sentences of the [benchmark Vietnamese dependency treebank VnDT](http://vndp.sourceforge.net) is used for test, while the remaining 9k+ sentences are used for training & development. LAS and UAS scores are computed on all
+tokens (i.e. including punctuation).
 
 
 | | Model           | LAS |  UAS  |  Paper | Code | 
