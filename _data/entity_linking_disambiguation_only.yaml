@@ -15,7 +15,9 @@
   Macro-Precision: 93.7
   paper:    "ELDEN: Improved Entity Linking using Densified Knowledge Graphs"
   url:      http://aclweb.org/anthology/N18-1167
-  code:     []
+  code:
+  - name:      Official
+    url:       https://github.com/priyaradhakrishnan0/ELDEN
 -
   model:    ""
   authors:  Le et al.
@@ -24,7 +26,9 @@
   Macro-Precision:
   paper:    "Improving Entity Linking by Modeling Latent Relations between Mentions"
   url:      http://aclweb.org/anthology/P18-1148
-  code:     []
+  code:
+  - name:      Official
+    url:       https://github.com/lephong/mulrel-nel
 -
   model:    ""
   authors:  Ganea and Hofmann
