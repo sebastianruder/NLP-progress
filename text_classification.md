@@ -38,7 +38,7 @@ Models are evaluated based on error rate (lower is better).
 
 The [TREC dataset](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.11.2766&rep=rep1&type=pdf) is dataset for
 question classification consisting of open-domain, fact-based questions divided into broad semantic categories. 
-It has both a six-class (TREC-6) and a fifty-class (TREC-50) version. Both have 4,300 training examples, 
+It has both a six-class (TREC-6) and a fifty-class (TREC-50) version. Both have 5,452 training examples and 500 test examples, 
 but TREC-50 has finer-grained labels. Models are evaluated based on accuracy.
 
 TREC-6:
