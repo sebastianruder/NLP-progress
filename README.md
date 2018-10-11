@@ -37,6 +37,14 @@
 - [Text classification](text_classification.md)
 - [Word Sense Disambiguation](word_sense_disambiguation.md)
 
+### Vietnamese
+
+- [Word segmentation](vietnamese.md)
+- [Part-of-speech tagging](vietnamese.md)
+- [Named entity recognition](vietnamese.md)
+- [Dependency parsing](vietnamese.md)
+- [Machine translation](vietnamese.md)
+
 ### Korean
 
 - [Chunking](korean.md)
@@ -53,6 +61,8 @@
 - [Part-of-speech tagging](vietnamese.md)
 - [Named entity recognition](vietnamese.md)
 - [Dependency parsing](vietnamese.md)
+
+
 
 
 This document aims to track the progress in Natural Language Processing (NLP) and give an overview
