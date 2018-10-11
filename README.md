@@ -55,6 +55,13 @@
 - [Chunking](hindi.md)
 - [Machine Translation](hindi.md)
 
+### Vietnamese
+
+- [Word segmentation](vietnamese.md)
+- [Part-of-speech tagging](vietnamese.md)
+- [Named entity recognition](vietnamese.md)
+- [Dependency parsing](vietnamese.md)
+
 
 
 
