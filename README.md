@@ -53,6 +53,9 @@
 - [Part-of-speech tagging](vietnamese.md)
 - [Named entity recognition](vietnamese.md)
 - [Dependency parsing](vietnamese.md)
+- [Machine translation](vietnamese.md)
+
+
 
 
 This document aims to track the progress in Natural Language Processing (NLP) and give an overview
