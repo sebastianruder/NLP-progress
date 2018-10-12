@@ -38,14 +38,14 @@ Models are evaluated based on error rate (lower is better).
 
 The [TREC dataset](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.11.2766&rep=rep1&type=pdf) is dataset for
 question classification consisting of open-domain, fact-based questions divided into broad semantic categories. 
-It has both a six-class (TREC-6) and a fifty-class (TREC-50) version. Both have 4,300 training examples, 
+It has both a six-class (TREC-6) and a fifty-class (TREC-50) version. Both have 5,452 training examples and 500 test examples, 
 but TREC-50 has finer-grained labels. Models are evaluated based on accuracy.
 
 TREC-6:
 
 | Model           | Error  |  Paper / Source | Code |
 | ------------- | :-----:| --- | :-----: |
-| USE (Cer et al., 2018) | 1.93 | [Universal Sentence Encoder](https://arxiv.org/pdf/1803.11175.pdf) | [Official](https://tfhub.dev/google/universal-sentence-encoder/1) |
+| USE_T+CNN (Cer et al., 2018) | 1.93 | [Universal Sentence Encoder](https://arxiv.org/pdf/1803.11175.pdf) | [Official](https://tfhub.dev/google/universal-sentence-encoder/1) |
 | ULMFiT (Howard and Ruder, 2018) | 3.6 | [Universal Language Model Fine-tuning for Text Classification](https://arxiv.org/abs/1801.06146) | [Official](http://nlp.fast.ai/ulmfit ) |
 | LSTM-CNN (Zhou et al., 2016) | 3.9 | [Text Classification Improved by Integrating Bidirectional LSTM with Two-dimensional Max Pooling](http://www.aclweb.org/anthology/C16-1329) |
 | TBCNN (Mou et al., 2015) | 4 | [Discriminative Neural Sentence Modeling by Tree-Based Convolution](http://aclweb.org/anthology/D15-1279) |
