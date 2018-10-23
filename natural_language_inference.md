@@ -45,7 +45,8 @@ corpus were used as premises. Models are evaluated based on accuracy.
 
 | Model           | Accuracy  |  Paper / Source |
 | ------------- | :-----:| --- |
-| Finetuned Transformer LM (Radford et al., 2018) | 88.3 | [Improving Language Understanding by Generative Pre-Training](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf) |
+| Finetuned Transformer LM (Radford et al., 2018) | 88.3 | [Improving Language Understanding by Generative Pre-Training](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf) 
+| Hierarchical BiLSTM Max Pooling (Talman et al., 2018) | 86.0 | [Natural Language Inference with Hierarchical BiLSTM Max Pooling](https://arxiv.org/abs/1808.08762)
 | CAFE (Tay et al., 2018) | 83.3 | [A Compare-Propagate Architecture with Alignment Factorization for Natural Language Inference](https://arxiv.org/abs/1801.00102) |
 
 [Go back to the README](README.md)
