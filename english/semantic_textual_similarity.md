@@ -39,4 +39,4 @@ duplicate of the other. Models are evaluated based on accuracy.
 | BiMPM (Wang et al., 2017) | 88.17 | [Bilateral Multi-Perspective Matching for Natural Language Sentences](https://arxiv.org/abs/1702.03814) | [Official](https://github.com/zhiguowang/BiMPM) |
 | GenSen (Subramanian et al., 2018) | 87.01 | [Learning General Purpose Distributed Sentence Representations via Large Scale Multi-task Learning](https://arxiv.org/abs/1804.00079) | [Official](https://github.com/Maluuba/gensen) |
 
-[Go back to the README](README.md)
+[Go back to the README](../README.md)

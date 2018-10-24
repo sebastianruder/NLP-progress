@@ -27,4 +27,4 @@ CoNLL-2012 evaluation scripts. The main evaluation metric is the average F1 of t
 | (Lee et al., 2017)+ELMo (Peters et al., 2018) | 70.4 | [Deep contextualized word representatIions](https://arxiv.org/abs/1802.05365) | |
 | Lee et al. (2017) | 67.2 | [End-to-end Neural Coreference Resolution](https://arxiv.org/abs/1707.07045) | |
 
-[Go back to the README](README.md)
+[Go back to the README](../README.md)

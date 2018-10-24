@@ -21,4 +21,4 @@ Performance is only calculated on the 425 most frequent labels. Models are evalu
 
 {% include chart.html results=site.data.ccg_supertagging score='accuracy' %}
 
-[Go back to the README](README.md)
+[Go back to the README](../README.md)

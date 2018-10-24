@@ -12,4 +12,4 @@ average accuracy across all tasks.
 
 The state-of-the-art results can be seen on the public [GLUE leaderboard](https://gluebenchmark.com/leaderboard).
 
-[Go back to the README](README.md)
+[Go back to the README](../README.md)

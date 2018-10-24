@@ -16,4 +16,4 @@ metric is accuracy and scores are averaged across each domain.
    results=site.data.domain_adaptation
    scores='DVD,Books,Electronics,Kitchen,Average' %}
 
-[Go back to the README](README.md)
+[Go back to the README](../README.md)

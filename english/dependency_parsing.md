@@ -51,4 +51,4 @@ accuracy').
   results=site.data.dependency_parsing.Unsupervised_Penn_Treebank
   scores='UAS' %}
 
-[Go back to the README](README.md)
+[Go back to the README](../README.md)

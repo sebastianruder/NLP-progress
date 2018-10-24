@@ -50,5 +50,5 @@ but chooses the wrong normalization, it is penalized twice.
 
 {% include table.html results=site.data.lexical_normalization_lexnorm2015 scores='F1' %}
 
-[Go back to the README](README.md)
+[Go back to the README](../README.md)
 

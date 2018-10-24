@@ -59,4 +59,4 @@ The [Ontonotes corpus v5](https://catalog.ldc.upenn.edu/docs/LDC2013T19/OntoNote
 
 
 
-[Go back to the README](README.md)
+[Go back to the README](../README.md)

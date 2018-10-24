@@ -215,4 +215,4 @@ Example:
 | Iyer et al., (2017) | 10 | 4 | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) | [System](https://github.com/sriniiyer/nl2sql) |
 | Template Baseline (Finegan-Dollak et al., 2018) | 0 | 0 | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) | [Data and System](https://github.com/jkkummerfeld/text2sql-data) |
 
-[Go back to the README](README.md)
+[Go back to the README](../README.md)

@@ -35,4 +35,4 @@ on BLEU.
 | ConvS2S (Gehring et al., 2017) | 40.46 | [Convolutional Sequence to Sequence Learning](https://arxiv.org/abs/1705.03122) | 
 | Transformer Base (Vaswani et al., 2017) | 38.1 | [Attention Is All You Need](https://arxiv.org/abs/1706.03762) |
 
-[Go back to the README](README.md)
+[Go back to the README](../README.md)

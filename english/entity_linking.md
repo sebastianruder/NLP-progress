@@ -83,7 +83,7 @@ Nevertheless, GERBIL is an excellent resource for standardising how EL systems a
 
 [Usbeck] Usbeck et al. GERBIL - General Entity Annotator Benchmarking Framework. WWW 2015. http://svn.aksw.org/papers/2015/WWW_GERBIL/public.pdf
 
-[Go back to the README](README.md)
+[Go back to the README](../README.md)
 
 [Sil]: https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16501/16101 "Neural Cross-Lingual Entity Linking"
 [Shen]: http://dbgroup.cs.tsinghua.edu.cn/wangjy/papers/TKDE14-entitylinking.pdf "Entity Linking with a Knowledge Base: Issues, Techniques, and Solutions"

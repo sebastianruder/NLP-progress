@@ -33,4 +33,4 @@ For a comparison of single models trained only on WSJ, refer to [Kitaev and Klei
 
 {% include chart.html results=site.data.constituency_parsing score='F1 score' %}
 
-[Go back to the README](README.md)
+[Go back to the README](../README.md)

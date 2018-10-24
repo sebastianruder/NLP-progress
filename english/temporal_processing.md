@@ -112,4 +112,4 @@ The [Parsing Time Normalizations corpus](https://github.com/bethard/anafora-anno
 | Chrono | 0.70 | [Chrono at SemEval-2018 task 6: A system for normalizing temporal expressions](http://aclweb.org/anthology/S18-1012) | 
 
 
-[Go back to the README](README.md)
+[Go back to the README](../README.md)

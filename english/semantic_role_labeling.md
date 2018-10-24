@@ -22,4 +22,4 @@ Models are typically evaluated on the [OntoNotes benchmark](http://www.aclweb.or
 | He et al. (2018) | 82.1 | [Jointly Predicting Predicates and Arguments in Neural Semantic Role Labeling](http://aclweb.org/anthology/P18-2058) | 
 | He et al. (2017) | 81.7 | [Deep Semantic Role Labeling: What Works and What’s Next](http://aclweb.org/anthology/P17-1044) |
 
-[Go back to the README](README.md)
+[Go back to the README](../README.md)

@@ -18,4 +18,4 @@ evaluated based on accuracy on both individual and joint slot tracking.
 
 {% include chart.html results=site.data.dialog score='Joint' %}
 
-[Go back to the README](README.md)
+[Go back to the README](../README.md)

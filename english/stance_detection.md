@@ -20,4 +20,4 @@ This dataset subsumes the large [PHEME collection of rumors and stance](http://j
 | Bahuleyan and Vechtomova 2017| 0.780 | [UWaterloo at SemEval-2017 Task 8: Detecting Stance towards Rumours with Topic Independent Features](http://www.aclweb.org/anthology/S/S17/S17-2080.pdf) |
 |
 
-[Go back to the README](README.md)
+[Go back to the README](../README.md)

@@ -63,4 +63,4 @@ reported here are the highest achieved by the model using any external resources
 | UTD (Rink and Harabagiu, 2010)      | 82.2  | [UTD: Classifying Semantic Relations by Combining Lexical and Semantic Resources](http://www.aclweb.org/anthology/S10-1057) ||
 
 
-[Go back to the README](README.md)
+[Go back to the README](../README.md)

@@ -49,4 +49,4 @@ corpus were used as premises. Models are evaluated based on accuracy.
 | Hierarchical BiLSTM Max Pooling (Talman et al., 2018) | 86.0 | [Natural Language Inference with Hierarchical BiLSTM Max Pooling](https://arxiv.org/abs/1808.08762)
 | CAFE (Tay et al., 2018) | 83.3 | [A Compare-Propagate Architecture with Alignment Factorization for Natural Language Inference](https://arxiv.org/abs/1801.00102) |
 
-[Go back to the README](README.md)
+[Go back to the README](../README.md)

@@ -125,4 +125,4 @@ A related task to sentiment analysis is the subjectivity analysis with the goal 
 | USE (Cer et al., 2018) | 93.90 | [Universal Sentence Encoder](https://arxiv.org/pdf/1803.11175.pdf) |
 | Fast Dropout (Wang and Manning, 2013) | 93.60 | [Fast Dropout Training](http://proceedings.mlr.press/v28/wang13a.pdf) |
 
-[Go back to the README](README.md)
+[Go back to the README](../README.md)

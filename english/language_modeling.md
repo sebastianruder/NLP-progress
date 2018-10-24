@@ -66,4 +66,4 @@ The vocabulary of the words in the character-level dataset is limited to 10 000 
   results=site.data.language_modeling.Char_Level.Penn_Treebank
   scores='Bits per Character (BPC),Number of params (M)' %}
 
-[Go back to the README](README.md)
+[Go back to the README](../README.md)

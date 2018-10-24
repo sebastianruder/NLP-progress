@@ -51,4 +51,4 @@ Models are typically evaluated based on the average test accuracy across 28 lang
 | Bi-LSTM (Plank et al., 2016) | 96.40 | [Multilingual Part-of-Speech Tagging with Bidirectional Long Short-Term Memory Models and Auxiliary Loss](https://arxiv.org/abs/1604.05529) | 
 | Joint Bi-LSTM (Nguyen et al., 2017) | 95.55 | [A Novel Neural Network Model for Joint POS Tagging and Graph-based Dependency Parsing](https://arxiv.org/abs/1705.05952) |
 
-[Go back to the README](README.md)
+[Go back to the README](../README.md)

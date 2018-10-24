@@ -182,4 +182,4 @@ Answer 0: the trophy. Answer 1: the suitcase
 The public leaderboard is available on the [RecipeQA website](https://hucvl.github.io/recipeqa/).
 
 
-[Go back to the README](README.md)
+[Go back to the README](../README.md)

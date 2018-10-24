@@ -40,4 +40,4 @@ The test set is composed of triplets, each used to create two test instances, on
    results=site.data.relation_prediction.WN18RR
    scores='H@10,H@1,MRR' %}
 
-[Back to README](README.md)
+[Back to README](../README.md)

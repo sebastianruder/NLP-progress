@@ -18,4 +18,4 @@ for testing. Models are evaluated based on F1.
 
 {% include chart.html results=site.data.chunking score='F1 score' %}
 
-[Go back to the README](README.md)
+[Go back to the README](../README.md)

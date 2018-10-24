@@ -58,4 +58,4 @@ TREC-50:
 | Rules (Madabushi and Lee, 2016) | 2.8 |[High Accuracy Rule-based Question Classification using Question Syntax and Semantics](http://www.aclweb.org/anthology/C16-1116)| |
 | SVM (Van-Tu and Anh-Cuong, 2016) | 8.4 | [Improving Question Classification by Feature Extraction and Selection](https://www.researchgate.net/publication/303553351_Improving_Question_Classification_by_Feature_Extraction_and_Selection) | |
 
-[Go back to the README](README.md)
+[Go back to the README](../README.md)
