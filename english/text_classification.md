@@ -48,6 +48,7 @@ TREC-6:
 | USE_T+CNN (Cer et al., 2018) | 1.93 | [Universal Sentence Encoder](https://arxiv.org/pdf/1803.11175.pdf) | [Official](https://tfhub.dev/google/universal-sentence-encoder/1) |
 | ULMFiT (Howard and Ruder, 2018) | 3.6 | [Universal Language Model Fine-tuning for Text Classification](https://arxiv.org/abs/1801.06146) | [Official](http://nlp.fast.ai/ulmfit ) |
 | LSTM-CNN (Zhou et al., 2016) | 3.9 | [Text Classification Improved by Integrating Bidirectional LSTM with Two-dimensional Max Pooling](http://www.aclweb.org/anthology/C16-1329) |
+| CNN+MCFA (Amplayo et al., 2018) | 4 | [Translations as Additional Contexts for Sentence Classification](https://arxiv.org/pdf/1806.05516.pdf) |
 | TBCNN (Mou et al., 2015) | 4 | [Discriminative Neural Sentence Modeling by Tree-Based Convolution](http://aclweb.org/anthology/D15-1279) |
 | CoVe (McCann et al., 2017) | 4.2 | [Learned in Translation: Contextualized Word Vectors](https://arxiv.org/abs/1708.00107) |
 
