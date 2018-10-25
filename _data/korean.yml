@@ -1,9 +1,0 @@
--
-  model:       "KoNLPy: Korean natural language processing in Python"
-  authors:     Eunjeong L. Park and Sungzoon Cho
-  year:        2014
-  paper:       "KoNLPy: Korean natural language processing in Python"
-  url:         http://dmlab.snu.ac.kr/~lucypark/docs/2014-10-10-hclt.pdf
-  code:        
-  - name:      (Github) Python package for Korean natural language processing
-    url:       https://github.com/konlpy/konlpy

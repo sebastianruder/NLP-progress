@@ -26,8 +26,12 @@ used as training data, because of its similar annotation style.
 This dataset is commonly evaluated with accuracy on the non-standard words. This
 means that the system knows in advance which words are in need of normalization.
 
-
-{% include table.html results=site.data.lexical_normalization_lexnorm scores='accuracy' %}
+| Model           | Accuracy  |  Paper / Source | Code | 
+| ------------- | :-----:| --- | --- | 
+| MoNoise (van der Goot & van Noord, 2017) | 87.63 | [MoNoise: Modeling Noise Using a Modular Normalization System](http://www.let.rug.nl/rob/doc/clin27.paper.pdf) | [Official](https://bitbucket.org/robvanderg/monoise/) | 
+| Joint POS + Norm in a Viterbi decoding (Li & Liu, 2015) | 87.58* | [Joint POS Tagging and Text Normalization for Informal Text](http://www.aaai.org/ocs/index.php/IJCAI/IJCAI15/paper/download/10839/10838) | |
+| Syllable based (Xu et al., 2015) | 86.08 | [Tweet Normalization with Syllables](http://www.aclweb.org/anthology/P15-1089) | |
+| unLOL (Yang & Eisenstein, 2013) | 82.06 | [A Log-Linear Model for Unsupervised Text Normalization](http://www.aclweb.org/anthology/D13-1007) | |
 
 \* used a slightly different version of the data
 
@@ -48,7 +52,9 @@ Recall: out of all normalization by system, how many correct
 This means that if the system replaces a word which is in need of normalization, 
 but chooses the wrong normalization, it is penalized twice.
 
-{% include table.html results=site.data.lexical_normalization_lexnorm2015 scores='F1' %}
+| Model           | F1  | Precision | Recall | Paper / Source | Code | 
+| ------------- | :-----:| :-----:| :-----:| --- | --- | 
+| MoNoise (van der Goot & van Noord, 2017) | 86.39 | 93.53 | 80.26 | [MoNoise: Modeling Noise Using a Modular Normalization System](http://www.let.rug.nl/rob/doc/clin27.paper.pdf) | [Official](https://bitbucket.org/robvanderg/monoise/) | 
+| Random Forest + novel similarity metric (Jin, 2017) | 84.21 | 90.61 | 78.65 | [NCSU-SAS-Ning: Candidate Generation and Feature Engineering for Supervised Lexical Normalization](http://www.aclweb.org/anthology/W15-4313) | |
 
 [Go back to the README](../README.md)
-

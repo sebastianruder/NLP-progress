@@ -29,10 +29,10 @@ Public leaderboards for [in-genre (matched)](https://www.kaggle.com/c/multinli-m
 and [cross-genre (mismatched)](https://www.kaggle.com/c/multinli-mismatched-open-evaluation/leaderboard)
 evaluation are available, but entries do not correspond to published models.
 
-| Model           | Matched  | Mismatched | Paper / Source |
-| ------------- | :-----:| :-----:| --- |
-| Finetuned Transformer LM (Radford et al., 2018) | 82.1 | 81.4 | [Improving Language Understanding by Generative Pre-Training](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf) |
-| Multi-task BiLSTM + Attn (Wang et al., 2018) | 72.2 | 72.1 | [GLUE: A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding](https://arxiv.org/abs/1804.07461) |
+| Model           | Matched  | Mismatched | Paper / Source | Code | 
+| ------------- | :-----:| :-----:| --- | --- |
+| Finetuned Transformer LM (Radford et al., 2018) | 82.1 | 81.4 | [Improving Language Understanding by Generative Pre-Training](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf) | |
+| Multi-task BiLSTM + Attn (Wang et al., 2018) | 72.2 | 72.1 | [GLUE: A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding](https://arxiv.org/abs/1804.07461) | |
 | GenSen (Subramanian et al., 2018) | 71.4 | 71.3 | [Learning General Purpose Distributed Sentence Representations via Large Scale Multi-task Learning](https://arxiv.org/abs/1804.00079) | |
 
 ### SciTail
