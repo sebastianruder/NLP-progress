@@ -3,6 +3,14 @@
 Multi-task learning aims to learn multiple different tasks simultaneously while maximizing
 performance on one or all of the tasks. 
 
+### DecaNLP
+
+The [Natural Language Decathlon](https://arxiv.org/abs/1806.08730) (decaNLP) is a benchmark for studying general NLP 
+models that can perform a variety of complex, natural language tasks. 
+It evaluates performance on ten disparate natural language tasks.
+
+Results can be seen on the [public leaderboard](https://decanlp.com/).
+
 ### GLUE
 
 The [General Language Understanding Evaluation benchmark](https://arxiv.org/abs/1804.07461) (GLUE)

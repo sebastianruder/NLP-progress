@@ -2,6 +2,24 @@
 
 Question answering is the task of answering a question.
 
+### Table of contents
+
+- [ARC](#arc)
+- [Reading comprehension](#reading-comprehension)
+  - [CliCR](#clicr)
+  - [CNN / Daily Mail](#cnn--daily-mail)
+  - [CoQA](#coqa)
+  - [HotpotQA](#hotpotqa)
+  - [MS MARCO](#ms-marco)
+  - [MultiRC](#multirc)
+  - [NewsQA](#newsqa)
+  - [QAngaroo](#qangaroo)
+  - [QuAC](#quac)
+  - [RACE](#race)
+  - [SQuAD](#squad)
+  - [Story Cloze Test](#story-cloze-test)
+  - [Recipe QA](#recipeqa)
+
 ### ARC
 
 The [AI2 Reasoning Challenge (ARC)](http://ai2-website.s3.amazonaws.com/publications/AI2ReasoningChallenge2018.pdf)
@@ -35,7 +53,6 @@ Example:
 | Gated-Attention Reader (Dhingra et al., 2017) | 33.9 | [CliCR: A Dataset of Clinical Case Reports for Machine Reading Comprehension](http://aclweb.org/anthology/N18-1140) |
 | Stanford Attentive Reader (Chen et al., 2016) | 27.2| [CliCR: A Dataset of Clinical Case Reports for Machine Reading Comprehension](http://aclweb.org/anthology/N18-1140) |
 
-
 ### CNN / Daily Mail
 
 The [CNN / Daily Mail dataset](https://arxiv.org/abs/1506.03340) is a Cloze-style reading comprehension dataset
@@ -68,6 +85,21 @@ Example:
 | Classifier (Chen et al., 2016) | 67.9 | 68.3 | [A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task](https://www.aclweb.org/anthology/P16-1223) |
 | Impatient Reader (Hermann et al., 2015) | 63.8 | 68.0 | [Teaching Machines to Read and Comprehend](https://arxiv.org/abs/1506.03340) |
 
+### CoQA
+
+[CoQA](https://arxiv.org/abs/1808.07042) is a large-scale dataset for building Conversational Question Answering systems. 
+CoQA contains 127,000+ questions with answers collected from 8000+ conversations.
+Each conversation is collected by pairing two crowdworkers to chat about a passage in the form of questions and answers.
+
+The data and public leaderboard are available [here](https://stanfordnlp.github.io/coqa/).
+
+### HotpotQA
+
+HotpotQA is a dataset with 113k Wikipedia-based question-answer pairs. Questions require 
+finding and reasoning over multiple supporting documents and are not constrained to any pre-existing knowledge bases.
+Sentence-level supporting facts are available.
+
+The data and public leaderboard are available from the [HotpotQA website](https://hotpotqa.github.io/).
 
 ### MS MARCO
 [MS MARCO](http://www.msmarco.org/dataset.aspx) aka Human Generated MAchine
@@ -121,6 +153,15 @@ PubMed.
 
 The leaderboards for both datasets are available on the [QAngaroo website](http://qangaroo.cs.ucl.ac.uk/leaderboard.html).
 
+### QuAC
+
+Question Answering in Context (QuAC) is a dataset for modeling, understanding, and participating in information seeking dialog.
+Data instances consist of an interactive dialog between two crowd workers:
+(1) a student who poses a sequence of freeform questions to learn as much as possible about a hidden Wikipedia text,
+and (2) a teacher who answers the questions by providing short excerpts (spans) from the text.
+
+The leaderboard and data are available on the [QuAC website](http://quac.ai/).
+
 ### RACE
 
 The [RACE dataset](https://arxiv.org/abs/1704.04683) is a reading comprehension dataset
@@ -156,24 +197,6 @@ endings. The systems must then choose the correct ending to the story.
 | Liu et al. (2018) | 78.7 | [Narrative Modeling with Memory Chains and Semantic Supervision](http://aclweb.org/anthology/P18-2045) |
 | Hidden Coherence Model (Chaturvedi et al., 2017) | 77.6 | [Story Comprehension for Predicting What Happens Next](http://aclweb.org/anthology/D17-1168) |
 | val-LS-skip (Srinivasan et al., 2018) | 76.5 | [A Simple and Effective Approach to the Story Cloze Test](http://aclweb.org/anthology/N18-2015) |
-
-### Winograd Schema Challenge
-
-The [Winograd Schema Challenge](https://www.aaai.org/ocs/index.php/KR/KR12/paper/view/4492)
-is a dataset for common sense reasoning. It employs Winograd Schema questions that
-require the resolution of anaphora: the system must identify the antecedent of an ambiguous pronoun in a statement. Models
-are evaluated based on accuracy.
-
-Example:
-
-The trophy doesn’t fit in the suitcase because _it_ is too big. What is too big?
-Answer 0: the trophy. Answer 1: the suitcase
-
-| Model           | Score  |  Paper / Source |
-| ------------- | :-----:| --- |
-| Word-LM-partial (Trinh and Le, 2018) | 62.6 | [A Simple Method for Commonsense Reasoning](https://arxiv.org/abs/1806.02847) |
-| Char-LM-partial (Trinh and Le, 2018) | 57.9 | [A Simple Method for Commonsense Reasoning](https://arxiv.org/abs/1806.02847) |
-| USSM + Supervised DeepNet + KB (Liu et al., 2017) | 52.8 | [Combing Context and Commonsense Knowledge Through Neural Networks for Solving Winograd Schema Problems](https://aaai.org/ocs/index.php/SSS/SSS17/paper/view/15392) |
 
 ### RecipeQA
 
