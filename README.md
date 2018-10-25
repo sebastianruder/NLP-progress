@@ -7,6 +7,7 @@
 - [Automatic speech recognition](english/automatic_speech_recognition.md)
 - [CCG supertagging](english/ccg_supertagging.md)
 - [Chunking](english/chunking.md)
+- [Common sense](english/common_sense.md)
 - [Constituency parsing](english/constituency_parsing.md)
 - [Coreference resolution](english/coreference_resolution.md)
 - [Dependency parsing](english/dependency_parsing.md)
