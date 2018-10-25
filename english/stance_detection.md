@@ -18,6 +18,5 @@ This dataset subsumes the large [PHEME collection of rumors and stance](http://j
 | ------------- | ----- | --- |
 | Kochkina et al. 2017 | 0.784 | [Turing at SemEval-2017 Task 8: Sequential Approach to Rumour Stance Classification with Branch-LSTM](http://www.aclweb.org/anthology/S/S17/S17-2083.pdf)|
 | Bahuleyan and Vechtomova 2017| 0.780 | [UWaterloo at SemEval-2017 Task 8: Detecting Stance towards Rumours with Topic Independent Features](http://www.aclweb.org/anthology/S/S17/S17-2080.pdf) |
-|
 
 [Go back to the README](../README.md)

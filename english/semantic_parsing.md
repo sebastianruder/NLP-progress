@@ -1,5 +1,20 @@
 # Semantic parsing
 
+### Table of contents
+
+- [AMR parsing](#amr-parsing)
+  - [LDC2014T12](#ldc2014t12)
+  - [LDC2015E86](#ldc2015e86)
+  - [LDC2016E25](#ldc2016e25)
+- [SQL parsing](#sql-parsing)
+  - [ATIS](#atis)
+  - [Advising](#advising)
+  - [GeoQuery](#geoquery)
+  - [Scholar](#scholar)
+  - [Spider](#spider)
+  - [WikiSQL](#wikisql)
+  - [Smaller datasets](#smaller-datasets)
+
 Semantic parsing is the task of translating natural language into a formal meaning
 representation on which a machine can act. Representations may be an executable language
 such as SQL or more abstract representations such as [Abstract Meaning Representation (AMR)](https://en.wikipedia.org/wiki/Abstract_Meaning_Representation).
@@ -71,6 +86,22 @@ Example:
 | Iyer et al., (2017) | 45 | 17 | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) | [System](https://github.com/sriniiyer/nl2sql) |
 | Template Baseline (Finegan-Dollak et al., 2018) | 45 | 0 | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) | [Data and System](https://github.com/jkkummerfeld/text2sql-data) |
 
+### Advising
+
+4,570 user questions about university course advising, with manually annotated SQL [Finegan-Dollak et al., (2018)](http://arxiv.org/abs/1806.09029).
+
+Example:
+
+| Question | SQL query | 
+| ------------- |  --- |
+| Can undergrads take 550 ? | `SELECT DISTINCT COURSEalias0.ADVISORY_REQUIREMENT , COURSEalias0.ENFORCED_REQUIREMENT , COURSEalias0.NAME FROM COURSE AS COURSEalias0 WHERE COURSEalias0.DEPARTMENT = \"department0\" AND COURSEalias0.NUMBER = 550 ;` |
+
+| Model           | Question Split | Query Split |  Paper / Source | Code |
+| --------------- | ----- |  :-----:| --------------- | ---- |
+| Template Baseline (Finegan-Dollak et al., 2018) | 80 | 0 | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) | [Data and System](https://github.com/jkkummerfeld/text2sql-data) |
+| Seq2Seq with copying (Finegan-Dollak et al., 2018) | 70 | 0  | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) | [Data and System](https://github.com/jkkummerfeld/text2sql-data) |
+| Iyer et al., (2017) | 41 | 1 | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) | [System](https://github.com/sriniiyer/nl2sql) |
+
 ### GeoQuery
 
 877 user questions about US geography:
@@ -111,22 +142,14 @@ Example:
 | Template Baseline (Finegan-Dollak et al., 2018) | 52 | 0   | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) | [Data and System](https://github.com/jkkummerfeld/text2sql-data) |
 | Iyer et al., (2017) | 44 | 3 | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) | [System](https://github.com/sriniiyer/nl2sql) |
 
-### Advising
+### Spider
 
-4,570 user questions about university course advising, with manually annotated SQL [Finegan-Dollak et al., (2018)](http://arxiv.org/abs/1806.09029).
+Spider is a large-scale complex and cross-domain semantic parsing and text-to-SQL 
+dataset. It consists of 10,181 questions and 5,693 unique complex SQL queries on 
+200 databases with multiple tables covering 138 different domains. In Spider 1.0, 
+different complex SQL queries and databases appear in train and test sets. 
 
-Example:
-
-| Question | SQL query | 
-| ------------- |  --- |
-| Can undergrads take 550 ? | `SELECT DISTINCT COURSEalias0.ADVISORY_REQUIREMENT , COURSEalias0.ENFORCED_REQUIREMENT , COURSEalias0.NAME FROM COURSE AS COURSEalias0 WHERE COURSEalias0.DEPARTMENT = \"department0\" AND COURSEalias0.NUMBER = 550 ;` |
-
-| Model           | Question Split | Query Split |  Paper / Source | Code |
-| --------------- | ----- |  :-----:| --------------- | ---- |
-| Template Baseline (Finegan-Dollak et al., 2018) | 80 | 0 | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) | [Data and System](https://github.com/jkkummerfeld/text2sql-data) |
-| Seq2Seq with copying (Finegan-Dollak et al., 2018) | 70 | 0  | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) | [Data and System](https://github.com/jkkummerfeld/text2sql-data) |
-| Iyer et al., (2017) | 41 | 1 | [Learning a neural semantic parser from user feedback](http://www.aclweb.org/anthology/P17-1089) | [System](https://github.com/sriniiyer/nl2sql) |
-
+The Spider dataset can be accessed and leaderboard can be accessed [here](https://yale-lily.github.io/spider).
 
 ### WikiSQL
 
@@ -146,16 +169,6 @@ Example:
 | TypeSQL+TC (Yu et al., 2018) | 82.6 | [TypeSQL: Knowledge-based Type-Aware Neural Text-to-SQL Generation](https://arxiv.org/abs/1804.09769) |
 | SQLNet (Xu et al., 2017) | 68.0 | [Sqlnet: Generating structured queries from natural language without reinforcement learning](https://arxiv.org/abs/1711.04436) |
 | Seq2SQL (Zhong et al., 2017) | 59.4 | [Seq2sql: Generating structured queries from natural language using reinforcement learning](https://arxiv.org/abs/1709.00103) |
-
-
-### Spider
-
-Spider is a large-scale complex and cross-domain semantic parsing and text-to-SQL 
-dataset. It consists of 10,181 questions and 5,693 unique complex SQL queries on 
-200 databases with multiple tables covering 138 different domains. In Spider 1.0, 
-different complex SQL queries and databases appear in train and test sets. 
-
-The Spider dataset can be accessed and leaderboard can be accessed [here](https://yale-lily.github.io/spider).
 
 ### Smaller Datasets
 

@@ -35,9 +35,14 @@ The WN18 dataset was introduced in [Bordes et al., 2013](http://papers.nips.cc/p
 As a way to overcome this problem, [Dettmers et al. (2018)](https://arxiv.org/abs/1707.01476) introduced the [WN18RR](https://github.com/villmow/datasets_knowledge_embedding) dataset, derived from WN18, which features 11 relations only, no pair of which is reciprocal (but still include four internally-symmetric relations like *verb_group*, allowing the rule-based system to reach 35 on all three metrics).
 
 The test set is composed of triplets, each used to create two test instances, one for each entity to be predicted. Since each instance is associated with a single true entity, the maximum value for all metrics is 1.00.
-
-{% include table.html
-   results=site.data.relation_prediction.WN18RR
-   scores='H@10,H@1,MRR' %}
+   
+| Model           | H@10 | H@1 | MRR | Paper / Source | Code | 
+| ------------- | :-----:| :-----:| :-----:| --- | --- | 
+| Max-Margin Markov Graph Models (Pinter & Eisenstein, 2018) | 59.02 | 45.37 | 49.83 | [Predicting Semantic Relations using Global Graph Properties](https://arxiv.org/abs/1808.08644) | [Official](http://www.github.com/yuvalpinter/m3gm) |
+| TransE (reimplementation by Pinter & Eisenstein, 2018) | 55.55 | 42.26 | 46.59 | [Predicting Semantic Relations using Global Graph Properties](https://arxiv.org/abs/1808.08644) | [Official](http://www.github.com/yuvalpinter/m3gm) |
+| ConvKB (Nguyen et al., 2018) | 52.50 | - | 24.80 | [A Novel Embedding Model for Knowledge Base Completion Based on Convolutional Neural Network](http://www.aclweb.org/anthology/N18-2053) | [Official](https://github.com/daiquocnguyen/ConvKB) |
+| ConvE (v6; Dettmers et al., 2018) | 52.00 | 40.00 | 43.00 | [Convolutional 2D Knowledge Graph Embeddings](https://arxiv.org/abs/1707.01476) | [Official](https://github.com/TimDettmers/ConvE) |
+| ComplEx (Trouillon et al., 2016) | 51.00 | 41.00 | 44.00 | [Complex Embeddings for Simple Link Prediction](http://www.jmlr.org/proceedings/papers/v48/trouillon16.pdf) | [Official](https://github.com/ttrouill/complex) | 
+| DistMult (reimplementation by Dettmers et al., 2017) | 49.00 | 40.00 | 43.00 | [Convolutional 2D Knowledge Graph Embeddings](https://arxiv.org/abs/1412.6575) | [Link](https://github.com/uclmr/inferbeddings) |
 
 [Back to README](../README.md)
