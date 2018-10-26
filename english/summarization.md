@@ -119,6 +119,7 @@ Models are evaluated using the following metrics:
 
 | Model           | F1 | CR |Paper / Source | Code |
 | -------------   | :-----:| --- | --- | --- |
+| BiRNN + LM Evaluator (Zhao et al. 2018) | 0.851 | 0.39 | [A Language Model based Evaluator for Sentence Compression](https://aclweb.org/anthology/P18-2028) | https://github.com/code4conference/code4sc |
 | LSTM (Filippova et al., 2015) | 0.82 | 0.38 | [Sentence Compression by Deletion with LSTMs](https://research.google.com/pubs/archive/43852.pdf) | |
 | BiLSTM (Wang et al., 2017) | 0.8 | 0.43 | [Can Syntax Help? Improving an LSTM-based Sentence Compression Model for New Domains](http://www.aclweb.org/anthology/P17-1127) |  |
 
