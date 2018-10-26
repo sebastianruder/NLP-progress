@@ -64,7 +64,7 @@ The Gigaword summarization dataset has been first used by [Rush et al., 2015](ht
 | SEASS (Zhou et al., 2017) | 36.15 | 17.54 | 33.63 | [Selective Encoding for Abstractive Sentence Summarization](http://aclweb.org/anthology/P17-1101) | |
 | EndDec+WFE (Suzuki and Nagata, 2017) | 36.30 | 17.31 | 33.88 | [Cutting-off Redundant Repeating Generations for Neural Abstractive Summarization](http://aclweb.org/anthology/E17-2047) | |
 | Seq2seq + selective + MTL + ERAM (Li et al., 2018) | 35.33 | 17.27 | 33.19 | [Ensure the Correctness of the Summary: Incorporate Entailment Knowledge into Abstractive Sentence Summarization](http://aclweb.org/anthology/C18-1121) | |
-| BASE+E2T_cnn+sd (Amplayo et al., 2018) | 37.04 | 16.66 | 34.93 | [Entity Commonsense Representation for Neural Abstractive Summarization](http://aclweb.org/anthology/N18-1064) | |
+| Seq2seq + E2T_cnn (Amplayo et al., 2018) | 37.04 | 16.66 | 34.93 | [Entity Commonsense Representation for Neural Abstractive Summarization](http://aclweb.org/anthology/N18-1064) | |
 | RAS-Elman (Chopra et al., 2016) | 33.78 | 15.97 | 31.15 | [Abstractive Sentence Summarization with Attentive Recurrent Neural Networks](http://www.aclweb.org/anthology/N16-1012) | |
 | ABS+ (Rush et al., 2015) | 29.76 | 11.88 | 26.96 | [A Neural Attention Model for Sentence Summarization](https://www.aclweb.org/anthology/D/D15/D15-1044.pdf) * | |
 | ABS (Rush et al., 2015) | 29.55 | 11.32 | 26.42 | [A Neural Attention Model for Sentence Summarization](https://www.aclweb.org/anthology/D/D15/D15-1044.pdf) * | |

@@ -106,9 +106,9 @@ to identify fine-grained polarity towards a specific aspect. The dataset consist
 3,862 of which contain a single target, and the remainder multiple targets. F1 is used as evaluation metric
 for aspect detection and accuracy as evaluation metric for sentiment analysis.
 
-| Model           | Aspect  | Sentiment |  Paper / Source |
-| ------------- | :-----:| :-----:| --- |
-| Liu et al. (2018) | 78.5 | 91.0 | [Recurrent Entity Networks with Delayed Memory Update for Targeted Aspect-based Sentiment Analysis](http://aclweb.org/anthology/N18-2045) |
+| Model           | Aspect  | Sentiment |  Paper / Source |  Code |
+| ------------- | :-----:| :-----:| --- | --- |
+| Liu et al. (2018) | 78.5 | 91.0 | [Recurrent Entity Networks with Delayed Memory Update for Targeted Aspect-based Sentiment Analysis](http://aclweb.org/anthology/N18-2045) | [Official](https://github.com/liufly/delayed-memory-update-entnet)
 | SenticLSTM (Ma et al., 2018) | 78.2 | 89.3 | [Targeted Aspect-Based Sentiment Analysis via Embedding Commonsense Knowledge into an Attentive LSTM](http://sentic.net/sentic-lstm.pdf) | 
 | LSTM-LOC (Saeidi et al., 2016) | 69.3 | 81.9 | [Sentihood: Targeted aspect based sentiment analysis dataset for urban neighbourhoods](http://www.aclweb.org/anthology/C16-1146) |
 
@@ -122,6 +122,9 @@ A related task to sentiment analysis is the subjectivity analysis with the goal 
 
 | Model           | Accuracy |  Paper / Source |
 | ------------- | :-----:| --- |
+| AdaSent (Zhao et al., 2015) | 95.50 | [Self-Adaptive Hierarchical Sentence Model](https://arxiv.org/pdf/1504.05070.pdf) |
+| CNN+MCFA (Amplayo et al., 2018) | 94.80 | [Translations as Additional Contexts for Sentence Classification](https://arxiv.org/abs/1806.05516) |
+| Byte mLSTM (Radford et al., 2017) | 94.60 | [Learning to Generate Reviews and Discovering Sentiment](https://arxiv.org/pdf/1704.01444.pdf) |
 | USE (Cer et al., 2018) | 93.90 | [Universal Sentence Encoder](https://arxiv.org/pdf/1803.11175.pdf) |
 | Fast Dropout (Wang and Manning, 2013) | 93.60 | [Fast Dropout Training](http://proceedings.mlr.press/v28/wang13a.pdf) |
 
