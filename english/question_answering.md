@@ -33,13 +33,13 @@ A public leaderboard is available on the [ARC website](http://data.allenai.org/a
 
 ### ShARC
 
-[ShARC](https://arxiv.org/abs/1809.01494) is a challenging QA dataset that requires  logical reasoning, elements of entailment/NLI and Natural language generation.
+[ShARC](https://arxiv.org/abs/1809.01494) is a challenging QA dataset that requires  logical reasoning, elements of entailment/NLI and natural language generation.
 
-Most work in machine reading focuses on question answering problems where the answer is directly expressed in the text to read. However, many real-world question answering problems require the reading of text not because it contains the literal answer, but because it contains a recipe to derive an answer together with the reader's background knowledge. We formalise this task and introduce the challenging ShARC dataset with 37k task instances. 
+Most work in machine reading focuses on question answering problems where the answer is directly expressed in the text to read. However, many real-world question answering problems require the reading of text not because it contains the literal answer, but because it contains a recipe to derive an answer together with the reader's background knowledge. We formalise this task and introduce the challenging ShARC dataset with 32k task instances. 
 
 The goal is to answer questions by possibly asking follow-up questions first. We assume that the question does not provide enough information to be answered directly. However, a model can use the supporting rule text to infer what needs to be asked in order to determine the final answer. Concretely, The model must decide whether to answer with "Yes", "No", "Irrelevant", or to generate a follow-up question given rule text, a user scenario and a conversation history. Performance is measured with Micro and Macro Accuracy for "Yes"/"No"/"Irrelevant"/"More" classifications, and the quality of follow-up questions are measured with BLEU.
 
-The public data, further task details and public leaderboard are available on the [ShARC Website](https://sharc-data.github.io/)
+The public data, further task details and public leaderboard are available on the [ShARC Website](https://sharc-data.github.io/).
 
 ## Reading comprehension
 
