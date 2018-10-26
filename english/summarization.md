@@ -3,6 +3,16 @@
 Summarization is the task of producing a shorter version of one or several documents that preserves most of the
 input's meaning.
 
+### Warning: Evaluation Metrics
+
+For summarization, automatic metrics such as ROUGE and METEOR have serious limitations:
+1. They only assess content selection and do not account for other quality aspects, such as fluency, grammaticality, coherence, etc. 
+2. To assess content selection, they rely mostly on lexical overlap, although an abstractive summary could express they same content as a reference without any lexical overlap.
+3. Given the subjectiveness of summarization and the correspondingly low agreement between annotators, the metrics were designed to be used with multiple reference summaries per input. However, recent datasets such as CNN/DailyMail and Gigaword provide only a single reference.
+
+Therefore, tracking progress and claiming state-of-the-art based only on these metrics is questionable. Most papers carry out additional manual comparisons of alternative summaries. Unfortunately, such experiments are difficult to compare across papers. If you have an idea on how to do that, feel free to contribute.
+
+
 ### CNN / Daily Mail
 
 The [CNN / Daily Mail dataset](https://arxiv.org/abs/1506.03340) as processed by 
