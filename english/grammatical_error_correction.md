@@ -17,7 +17,8 @@ The shared task setting restricts that systems use only publicly available datas
 
 | Model           | F0.5  |  Paper / Source | Code |
 | ------------- | :-----:| --- | :-----: |
-|_**Restricted**_     |           
+|_**Restricted**_     |      
+| CNN Seq2Seq + Quality Estimation (Chollampatt & Ng, EMNLP 2018) | 56.52 | [Neural Quality Estimation of Grammatical Error Correction](http://aclweb.org/anthology/D18-1274) | |
 | SMT + BiGRU (Grundkiewicz et al., 2018) |  56.25 | [Near Human-Level Performance in Grammatical Error Correction with Hybrid Machine Translation](https://arxiv.org/abs/1804.05945)| NA |
 | Transformer (Junczys-Dowmunt et al., 2018) | 55.8 | [Approaching Neural Grammatical Error Correction as a Low-Resource Machine Translation Task](http://aclweb.org/anthology/N18-1055)| NA |
 | CNN Seq2Seq (Chollampatt & Ng, 2018)| 54.79 | [ A Multilayer Convolutional Encoder-Decoder Neural Network for Grammatical Error Correction](https://arxiv.org/abs/1801.08831)| [Official](https://github.com/nusnlp/mlconvgec2018) |
