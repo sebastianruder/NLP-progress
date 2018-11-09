@@ -20,6 +20,7 @@ Question answering is the task of answering a question.
   - [SQuAD](#squad)
   - [Story Cloze Test](#story-cloze-test)
   - [Recipe QA](#recipeqa)
+  - [DuReader](#dureader)
 
 ### ARC
 
@@ -214,6 +215,18 @@ endings. The systems must then choose the correct ending to the story.
 [RecipeQA](https://arxiv.org/abs/1809.00812) is a dataset for multimodal comprehension of cooking recipes. It consists of over 36K question-answer pairs automatically generated from approximately 20K unique recipes with step-by-step instructions and images. Each question in RecipeQA involves multiple modalities such as titles, descriptions or images, and working towards an answer requires (i) joint understanding of images and text, (ii) capturing the temporal flow of events, and (iii) making sense of procedural knowledge.
 
 The public leaderboard is available on the [RecipeQA website](https://hucvl.github.io/recipeqa/).
+
+### DuReader
+[DuReader](https://ai.baidu.com/broad/subordinate?dataset=dureader) is a large-scale, open-domain Chinese machine reading comprehension (MRC) dataset, designed to address real-world MRC. [Link to paper](https://arxiv.org/pdf/1711.05073.pdf) 
+
+DuReader has three advantages over other MRC datasets: 
+- (1) data sources: questions and documents are based on Baidu Search and Baidu Zhidao; answers are manually generated. 
+- (2) question types: it provides rich annotations for more question types, especially yes-no and opinion questions, that leaves more opportunity for the research community. 
+- (3) scale: it contains 300K questions, 660K answers and 1.5M documents; it is the largest Chinese MRC dataset so far. 
+
+To help the community make these improvements, both the [dataset](https://ai.baidu.com/broad/download?dataset=dureader) of DuReader and [baseline systems](https://github.com/baidu/DuReader) have been posted online. 
+
+The [leaderboard](https://ai.baidu.com/broad/leaderboard?dataset=dureader) is avaiable on DuReader page.
 
 
 [Go back to the README](../README.md)
