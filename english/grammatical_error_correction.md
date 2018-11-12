@@ -23,7 +23,7 @@ The shared task setting restricts that systems use only publicly available datas
 | Transformer (Junczys-Dowmunt et al., 2018) | 55.8 | [Approaching Neural Grammatical Error Correction as a Low-Resource Machine Translation Task](http://aclweb.org/anthology/N18-1055)| NA |
 | CNN Seq2Seq (Chollampatt and Ng, 2018)| 54.79 | [A Multilayer Convolutional Encoder-Decoder Neural Network for Grammatical Error Correction](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/viewFile/17308/16137)| [Official](https://github.com/nusnlp/mlconvgec2018) |
 |_**Unrestricted**_  |
-| CNN Seq2Seq + Fluency Boost (Ge et al., 2018) |  61.34 | [Reaching Human-level Performance in Automatic Grammatical Error Correc-tion: An Empirical Study](https://arxiv.org/pdf/1807.01270.pdf)| NA |
+| CNN Seq2Seq + Fluency Boost (Ge et al., 2018) |  61.34 | [Reaching Human-level Performance in Automatic Grammatical Error Correction: An Empirical Study](https://arxiv.org/pdf/1807.01270.pdf)| NA |
 
 _**Restricted**_: uses only publicly available datasets. _**Unrestricted**_: uses non-public datasets.
 
