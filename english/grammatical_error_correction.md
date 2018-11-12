@@ -30,7 +30,7 @@ _**Restricted**_: uses only publicly available datasets. _**Unrestricted**_: use
 
 ### CoNLL-2014 10 Annotations
 
-[Bryant and Ng, 2015](https://pdfs.semanticscholar.org/f76f/fd242c3dc88e52d1f427cdd0f5dccd814937.pdf) released 8 additional annotations (in addition to the two official annotations) for the CoNLL-2014 shared task test set )([link](http://www.comp.nus.edu.sg/~nlp/sw/10gec_annotations.zip)).
+[Bryant and Ng, 2015](http://aclweb.org/anthology/P15-1068) released 8 additional annotations (in addition to the two official annotations) for the CoNLL-2014 shared task test set )([link](http://www.comp.nus.edu.sg/~nlp/sw/10gec_annotations.zip)).
 
 | Model           | F0.5  |  Paper / Source | Code |
 | ------------- | :-----:| --- | :-----: |
