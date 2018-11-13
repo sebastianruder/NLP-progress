@@ -153,6 +153,8 @@ The dataset can be downloaded [here](https://github.com/Maluuba/newsqa).
 
 | Model           | F1 | EM | Paper / Source |
 | ------------- | :-----: | :-----: | --- |
+| DecaProp (Tay et al., 2018) | 66.3 | 53.1 | [Densely Connected Attention Propagation for Reading Comprehension](https://arxiv.org/abs/1811.04210) |
+| AMANDA (Kundu et al., 2018) | 63.7 | 48.4| [A Question-Focused Multi-Factor Attention Network for Question Answering](https://arxiv.org/abs/1801.08290) |
 | MINIMAL(Dyn) (Min et al., 2018) | 63.2 | 50.1 | [Efficient and Robust Question Answering from Minimal Context over Documents](https://arxiv.org/abs/1805.08092) |
 | FastQAExt (Weissenborn et al., 2017) | 56.1 | 43.7 | [Making Neural QA as Simple as Possible but not Simpler](https://arxiv.org/abs/1703.04816) |
 
