@@ -230,5 +230,14 @@ To help the community make these improvements, both the [dataset](https://ai.bai
 
 The [leaderboard](https://ai.baidu.com/broad/leaderboard?dataset=dureader) is avaiable on DuReader page.
 
+### Quasar
+[Quasar](https://arxiv.org/abs/1707.03904) is a question answering datasets which aims the question answering system to search and read. It consists of two parts: (1) The Quasar-S dataset consists of 37,000 cloze-style queries constructed from definitions of software entity tags on the popular website Stack Overflow. (2) The Quasar-T dataset consists of 43,000 open-domain trivia questions and their answers obtained from various internet sources. 
+
+| Model                        | EM (Quasar-T)     | F1 (Quasar-T)    |Paper / Source | Code |
+| -------------                | :-----:| :-----:|---            | ---  |
+|GA (Dhingra et al., 2017)	   |26.4    |26.4	   |[Gated-Attention Readers for Text Comprehension](https://arxiv.org/pdf/1606.01549)       |      |
+|BiDAF (Seo et al., 2017)	     |25.9	  |28.5	   |[Bidirectional Attention Flow for Machine Comprehensio](https://arxiv.org/abs/1611.01603)               | [official](https://github.com/allenai/bi-att-flow)|
+|R^3 (Wang et al., 2018)	     |35.3	  |41.7	   |[R^3: Reinforced Ranker-Reader for Open-Domain Question Answering](https://aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16712/16165)|[official](https://github.com/shuohangwang/mprc)|
+|Denoising QA (Lin et al. 2018)|42.2	  |49.3    |[Denoising Distantly Supervised Open-Domain Question Answering](http://aclweb.org/anthology/P18-1161)|[official](https://github.com/thunlp/OpenQA)|
 
 [Go back to the README](../README.md)
