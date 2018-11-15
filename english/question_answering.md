@@ -250,7 +250,7 @@ To help the community make these improvements, both the [dataset](https://ai.bai
 The [leaderboard](https://ai.baidu.com/broad/leaderboard?dataset=dureader) is avaiable on DuReader page.
 
 ### Quasar
-[Quasar](https://arxiv.org/abs/1707.03904) is a datasets for open-domain question answering. It includes two parts: (1) The Quasar-S dataset consists of 37,000 cloze-style queries constructed from definitions of software entity tags on the popular website Stack Overflow. (2) The Quasar-T dataset consists of 43,000 open-domain trivia questions and their answers obtained from various internet sources. 
+[Quasar](https://arxiv.org/abs/1707.03904) is a dataset for open-domain question answering. It includes two parts: (1) The Quasar-S dataset consists of 37,000 cloze-style queries constructed from definitions of software entity tags on the popular website Stack Overflow. (2) The Quasar-T dataset consists of 43,000 open-domain trivia questions and their answers obtained from various internet sources. 
 
 | Model                        | EM (Quasar-T)     | F1 (Quasar-T)    |Paper / Source | Code |
 | -------------                | :-----:| :-----:|---            | ---  |
