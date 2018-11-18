@@ -63,5 +63,8 @@ The test set is composed of triplets, each used to create two test instances, on
 | ComplEx (Trouillon et al., 2016) | 51.00 | 41.00 | 44.00 | [Complex Embeddings for Simple Link Prediction](http://www.jmlr.org/proceedings/papers/v48/trouillon16.pdf) | [Official](https://github.com/ttrouill/complex) | 
 | DistMult (reimplementation by Dettmers et al., 2017) | 49.00 | 40.00 | 43.00 | [Convolutional 2D Knowledge Graph Embeddings](https://arxiv.org/abs/1412.6575) | [Link](https://github.com/uclmr/inferbeddings) |
 
+## Resources
+[OpenKE](http://aclweb.org/anthology/D18-2024) is an open toolkit for relational learning which provides a standard training and testing framework. Currently, the implemented models in OpenKE include TransE, TransH, TransR, TransD, RESCAL, DistMult, ComplEx and HolE.
+[KRLPapers](https://github.com/thunlp/KRLPapers) is a must-read paper list for relational learning.
 
 [Back to README](../README.md)
