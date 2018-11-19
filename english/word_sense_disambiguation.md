@@ -48,7 +48,7 @@ The main evaluation measure is F1-score.
 |UKB<sub>ppr_w2w</sub> | **67.3** | 68.8 | 66.1 | 53.0 | **68.8** | **70.3** | [[9]](https://www.mitpressjournals.org/doi/full/10.1162/COLI_a_00164) [[12]](http://aclweb.org/anthology/W18-2505) |
 |WSD-TM | 66.9 | **69.0** | **66.9** | **55.6** | 65.3 | 69.6 | [[10]](https://arxiv.org/pdf/1801.01900.pdf) |
 
-Note: The scores of [6,7] and [9] are not taken from the original papers but from the results of the implementations of [11] and [12], respectively.
+Note: 'All' is the concatenation of all datasets, as described in [10] and [12]. The scores of [6,7] and [9] are not taken from the original papers but from the results of the implementations of [11] and [12], respectively.
 
 [1] [Word Sense Disambiguation: A Unified Evaluation Framework and Empirical Comparison](http://aclweb.org/anthology/E/E17/E17-1010.pdf)
 
