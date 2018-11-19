@@ -84,4 +84,10 @@ reported here are the highest achieved by the model using any external resources
 | MVRNN (Socher et al., 2012)         | 82.4  | [Semantic Compositionality through Recursive Matrix-Vector Spaces](http://aclweb.org/anthology/D12-1110) | [pratapbhanu's Reimplementation](https://github.com/pratapbhanu/MVRNN) |
 
 
+# FewRel
+
+The Few-Shot Relation Classification Dataset (FewRel) is a different setting from the previous datasets. This dataset consists of 70K sentences expressing 100 relations annotated by crowdworkers on Wikipedia corpus. The few-shot learning task follows the N-way K-shot meta learning setting. It is both the largest supervised relation classification dataset as well as the largest few-shot learning dataset till now. 
+
+The public leaderboard is available on the [FewRel website](http://zhuhao.me/fewrel).
+
 [Go back to the README](../README.md)
