@@ -50,7 +50,7 @@ The test set is composed of triplets, each used to create two test instances, on
 | ConvKB (Nguyen et al., 2018) | 52.50 | - | 24.80 | [A Novel Embedding Model for Knowledge Base Completion Based on Convolutional Neural Network](http://www.aclweb.org/anthology/N18-2053) | [Official](https://github.com/daiquocnguyen/ConvKB) |
 | ConvE (v6; Dettmers et al., 2018) | 52.00 | 40.00 | 43.00 | [Convolutional 2D Knowledge Graph Embeddings](https://arxiv.org/abs/1707.01476) | [Official](https://github.com/TimDettmers/ConvE) |
 | ComplEx (Trouillon et al., 2016) | 51.00 | 41.00 | 44.00 | [Complex Embeddings for Simple Link Prediction](http://www.jmlr.org/proceedings/papers/v48/trouillon16.pdf) | [Official](https://github.com/ttrouill/complex) | 
-| DistMult (reimplementation by Dettmers et al., 2018) | 49.00 | 40.00 | 43.00 | [Convolutional 2D Knowledge Graph Embeddings](https://arxiv.org/abs/1412.6575) | [Link](https://github.com/uclmr/inferbeddings) |
+| DistMult (reimplementation by Dettmers et al., 2018) | 49.00 | 40.00 | 43.00 | [Embedding Entities and Relations for Learning and Inference in Knowledge Bases.](https://arxiv.org/pdf/1412.6575) | [Link](https://github.com/thunlp/OpenKE) |
 
 #### FB15K-237
 
@@ -60,7 +60,7 @@ The test set is composed of triplets, each used to create two test instances, on
 | ConvKB (Nguyen et al., 2018) | 51.70 | - | 39.60 | [A Novel Embedding Model for Knowledge Base Completion Based on Convolutional Neural Network](http://www.aclweb.org/anthology/N18-2053) | [Official](https://github.com/daiquocnguyen/ConvKB) |
 | ConvE (v6; Dettmers et al., 2018) | 50.10 | 23.70 | 32.50 | [Convolutional 2D Knowledge Graph Embeddings](https://arxiv.org/abs/1707.01476) | [Official](https://github.com/TimDettmers/ConvE) |
 | ComplEx (reimplementation by Dettmers et al., 2018) | 42.80 | 15.80 | 24.70 | [Complex Embeddings for Simple Link Prediction](http://www.jmlr.org/proceedings/papers/v48/trouillon16.pdf) | [Official](https://github.com/ttrouill/complex) | 
-| DistMult (reimplementation by Dettmers et al., 2018) | 41.90 | 15.50 | 24.10 | [Convolutional 2D Knowledge Graph Embeddings](https://arxiv.org/abs/1412.6575) | [Link](https://github.com/uclmr/inferbeddings) |
+| DistMult (reimplementation by Dettmers et al., 2018) | 41.90 | 15.50 | 24.10 | [Embedding Entities and Relations for Learning and Inference in Knowledge Bases.](https://arxiv.org/pdf/1412.6575) | [Link](https://github.com/thunlp/OpenKE) |
 
 ## Resources
 [OpenKE](http://aclweb.org/anthology/D18-2024) is an open toolkit for relational learning which provides a standard training and testing framework. Currently, the implemented models in OpenKE include TransE, TransH, TransR, TransD, RESCAL, DistMult, ComplEx and HolE.
