@@ -46,22 +46,21 @@ The test set is composed of triplets, each used to create two test instances, on
 | Model           | H@10 | H@1 | MRR | Paper / Source | Code | 
 | ------------- | :-----:| :-----:| :-----:| --- | --- | 
 | Max-Margin Markov Graph Models (Pinter & Eisenstein, 2018) | 59.02 | 45.37 | 49.83 | [Predicting Semantic Relations using Global Graph Properties](https://arxiv.org/abs/1808.08644) | [Official](http://www.github.com/yuvalpinter/m3gm) |
-| TransE (reimplementation by Pinter & Eisenstein, 2018) | 55.55 | 42.26 | 46.59 | [Predicting Semantic Relations using Global Graph Properties](https://arxiv.org/abs/1808.08644) | [Official](http://www.github.com/yuvalpinter/m3gm) |
+| TransE (reimplementation by Pinter & Eisenstein, 2018) | 55.55 | 42.26 | 46.59 | [Translating Embeddings for Modeling Multi-relational Data. ](http://papers.nips.cc/paper/5071-translating-embeddings-for-modeling-multi-relational-data.pdf) | [OpenKE](https://github.com/thunlp/OpenKE) |
 | ConvKB (Nguyen et al., 2018) | 52.50 | - | 24.80 | [A Novel Embedding Model for Knowledge Base Completion Based on Convolutional Neural Network](http://www.aclweb.org/anthology/N18-2053) | [Official](https://github.com/daiquocnguyen/ConvKB) |
 | ConvE (v6; Dettmers et al., 2018) | 52.00 | 40.00 | 43.00 | [Convolutional 2D Knowledge Graph Embeddings](https://arxiv.org/abs/1707.01476) | [Official](https://github.com/TimDettmers/ConvE) |
 | ComplEx (Trouillon et al., 2016) | 51.00 | 41.00 | 44.00 | [Complex Embeddings for Simple Link Prediction](http://www.jmlr.org/proceedings/papers/v48/trouillon16.pdf) | [Official](https://github.com/ttrouill/complex) | 
-| DistMult (reimplementation by Dettmers et al., 2017) | 49.00 | 40.00 | 43.00 | [Convolutional 2D Knowledge Graph Embeddings](https://arxiv.org/abs/1412.6575) | [Link](https://github.com/uclmr/inferbeddings) |
+| DistMult (reimplementation by Dettmers et al., 2018) | 49.00 | 40.00 | 43.00 | [Convolutional 2D Knowledge Graph Embeddings](https://arxiv.org/abs/1412.6575) | [Link](https://github.com/uclmr/inferbeddings) |
 
 #### FB15K-237
 
 | Model           | H@10 | H@1 | MRR | Paper / Source | Code | 
 | ------------- | :-----:| :-----:| :-----:| --- | --- | 
-| Max-Margin Markov Graph Models (Pinter & Eisenstein, 2018) | 59.02 | 45.37 | 49.83 | [Predicting Semantic Relations using Global Graph Properties](https://arxiv.org/abs/1808.08644) | [Official](http://www.github.com/yuvalpinter/m3gm) |
-| TransE (reimplementation by Pinter & Eisenstein, 2018) | 55.55 | 42.26 | 46.59 | [Predicting Semantic Relations using Global Graph Properties](https://arxiv.org/abs/1808.08644) | [Official](http://www.github.com/yuvalpinter/m3gm) |
-| ConvKB (Nguyen et al., 2018) | 52.50 | - | 24.80 | [A Novel Embedding Model for Knowledge Base Completion Based on Convolutional Neural Network](http://www.aclweb.org/anthology/N18-2053) | [Official](https://github.com/daiquocnguyen/ConvKB) |
-| ConvE (v6; Dettmers et al., 2018) | 52.00 | 40.00 | 43.00 | [Convolutional 2D Knowledge Graph Embeddings](https://arxiv.org/abs/1707.01476) | [Official](https://github.com/TimDettmers/ConvE) |
-| ComplEx (Trouillon et al., 2016) | 51.00 | 41.00 | 44.00 | [Complex Embeddings for Simple Link Prediction](http://www.jmlr.org/proceedings/papers/v48/trouillon16.pdf) | [Official](https://github.com/ttrouill/complex) | 
-| DistMult (reimplementation by Dettmers et al., 2017) | 49.00 | 40.00 | 43.00 | [Convolutional 2D Knowledge Graph Embeddings](https://arxiv.org/abs/1412.6575) | [Link](https://github.com/uclmr/inferbeddings) |
+| TransE (reimplementation by (Nguyen et al., 2018) | 46.50 | - | 29.40 | [Translating Embeddings for Modeling Multi-relational Data. ](http://papers.nips.cc/paper/5071-translating-embeddings-for-modeling-multi-relational-data.pdf) | [OpenKE](https://github.com/thunlp/OpenKE) |
+| ConvKB (Nguyen et al., 2018) | 51.70 | - | 39.60 | [A Novel Embedding Model for Knowledge Base Completion Based on Convolutional Neural Network](http://www.aclweb.org/anthology/N18-2053) | [Official](https://github.com/daiquocnguyen/ConvKB) |
+| ConvE (v6; Dettmers et al., 2018) | 50.10 | 23.70 | 32.50 | [Convolutional 2D Knowledge Graph Embeddings](https://arxiv.org/abs/1707.01476) | [Official](https://github.com/TimDettmers/ConvE) |
+| ComplEx (reimplementation by Dettmers et al., 2018) | 42.80 | 15.80 | 24.70 | [Complex Embeddings for Simple Link Prediction](http://www.jmlr.org/proceedings/papers/v48/trouillon16.pdf) | [Official](https://github.com/ttrouill/complex) | 
+| DistMult (reimplementation by Dettmers et al., 2018) | 41.90 | 15.50 | 24.10 | [Convolutional 2D Knowledge Graph Embeddings](https://arxiv.org/abs/1412.6575) | [Link](https://github.com/uclmr/inferbeddings) |
 
 ## Resources
 [OpenKE](http://aclweb.org/anthology/D18-2024) is an open toolkit for relational learning which provides a standard training and testing framework. Currently, the implemented models in OpenKE include TransE, TransH, TransR, TransD, RESCAL, DistMult, ComplEx and HolE.
