@@ -96,6 +96,9 @@ Similar to Gigaword, task 1 of [DUC 2004](https://duc.nist.gov/duc2004/) is a se
 | RAS-Elman (Chopra et al., 2016) | 28.97 | 8.26 | 24.06 | [Abstractive Sentence Summarization with Attentive Recurrent Neural Networks](http://www.aclweb.org/anthology/N16-1012) | |
 | ABS (Rush et al., 2015) | 26.55 | 7.06 | 22.05 | [A Neural Attention Model for Sentence Summarization](https://www.aclweb.org/anthology/D/D15/D15-1044.pdf) | |
 
+## Webis-TLDR-17 Corpus
+
+This [dataset](https://zenodo.org/record/1168855) contains 3 Million pairs of content and self-written summaries mined from Reddit. It is one of the first large-scale summarization dataset from the social media domain. For more details, refer to [TL;DR: Mining Reddit to Learn Automatic Summarization](https://aclweb.org/anthology/W17-4508)
 
 ## Sentence Compression
 

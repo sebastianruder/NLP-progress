@@ -20,10 +20,11 @@ Question answering is the task of answering a question.
   - [SQuAD](#squad)
   - [Story Cloze Test](#story-cloze-test)
   - [Recipe QA](#recipeqa)
+  - [NarrativeQA](#narrativeqa)
+- [Open-domain Question Answering](#open-domain-question-answering)
   - [DuReader](#dureader)
   - [Quasar](#quasar)
   - [SearchQA](#searchqa)
-  - [NarrativeQA](#narrativeqa)
 
 ### ARC
 
@@ -221,6 +222,21 @@ endings. The systems must then choose the correct ending to the story.
 
 The public leaderboard is available on the [RecipeQA website](https://hucvl.github.io/recipeqa/).
 
+
+
+### NarrativeQA
+[NarrativeQA](https://arxiv.org/abs/1712.07040) is a dataset built to encourage deeper comprehension of language. This dataset involves reasoning over reading entire books or movie scripts. This dataset contains approximately 45K question answer pairs in free form text. There are two modes of this dataset (1) reading comprehension over summaries and (2) reading comprehension over entire books/scripts. 
+
+| Model                        | BLEU-1     | BLEU-4   | METEOR | Rouge-L | Paper / Source | Code |
+| -------------                | :-----:   | :-----:|:-----:| :-----:|---            | ---  |
+|DecaProp (Tay et al., 2018)	   |44.35    |27.61	 | 21.80 | 44.69   |[Densely Connected Attention Propagation for Reading Comprehension](https://arxiv.org/abs/1811.04210)       |      |
+|BiAttention + DCU-LSTM (Tay et al., 2018)	   |36.55    |19.79	 | 17.87 | 41.44  |[Multi-Granular Sequence Encoding via Dilated Compositional Units for Reading Comprehension](http://aclweb.org/anthology/D18-1238)       |      |
+|BiDAF (Seo et al., 2017)	   |33.45    |15.69	 | 15.68 | 36.74  |[Bidirectional Attention Flow for Machine Comprehension](https://arxiv.org/abs/1611.01603)       |      |
+
+*Note that the above is for the Summary setting. There are no official published results for reading over entire books/stories except for the original paper. 
+
+## Open-domain Question Answering
+
 ### DuReader
 [DuReader](https://ai.baidu.com/broad/subordinate?dataset=dureader) is a large-scale, open-domain Chinese machine reading comprehension (MRC) dataset, designed to address real-world MRC. [Link to paper](https://arxiv.org/pdf/1711.05073.pdf) 
 
@@ -234,7 +250,7 @@ To help the community make these improvements, both the [dataset](https://ai.bai
 The [leaderboard](https://ai.baidu.com/broad/leaderboard?dataset=dureader) is avaiable on DuReader page.
 
 ### Quasar
-[Quasar](https://arxiv.org/abs/1707.03904) is a question answering datasets which aims the question answering system to search and read. It consists of two parts: (1) The Quasar-S dataset consists of 37,000 cloze-style queries constructed from definitions of software entity tags on the popular website Stack Overflow. (2) The Quasar-T dataset consists of 43,000 open-domain trivia questions and their answers obtained from various internet sources. 
+[Quasar](https://arxiv.org/abs/1707.03904) is a dataset for open-domain question answering. It includes two parts: (1) The Quasar-S dataset consists of 37,000 cloze-style queries constructed from definitions of software entity tags on the popular website Stack Overflow. (2) The Quasar-T dataset consists of 43,000 open-domain trivia questions and their answers obtained from various internet sources. 
 
 | Model                        | EM (Quasar-T)     | F1 (Quasar-T)    |Paper / Source | Code |
 | -------------                | :-----:| :-----:|---            | ---  |
@@ -249,25 +265,15 @@ The [leaderboard](https://ai.baidu.com/broad/leaderboard?dataset=dureader) is av
 ### SearchQA
 [SearchQA](https://arxiv.org/abs/1704.05179) was constructed to reflect a full pipeline of general question-answering. SearchQA consists of more than 140k question-answer pairs with each pair having 49.6 snippets on average. Each question-answer-context tuple of the SearchQA comes with additional meta-data such as the snippet's URL.
 
-| Model                        | Unigram Acc     | N-gram F1   |Paper / Source | Code |
-| -------------                | :-----:| :-----:|---            | ---  |
-|DecaProp (Tay et al., 2018)	   |62.2    |70.8	   |[Densely Connected Attention Propagation for Reading Comprehension](https://arxiv.org/abs/1811.04210)       |      |
-|Bi-Attention + DCU-LSTM (Tay et al., 2018)	   |49.4    |59.5	   |[Multi-Granular Sequence Encoding via Dilated Compositional Units for Reading Comprehension](http://aclweb.org/anthology/D18-1238)       |      |
-|AMANDA (Kundu et al., 2018)	     |46.8	  |56.6	   |[A Question-Focused Multi-Factor Attention Network for Question Answering](https://arxiv.org/abs/1801.08290)               | [official](https://github.com/nusnlp/amanda)|
-|Focused Hierarchical RNN	(Ke et al., 2018)     |46.8	  |53.4	   |[Focused Hierarchical RNNs for Conditional Sequence Processing](http://proceedings.mlr.press/v80/ke18a/ke18a.pdf)||
-|ASR (Kadlec et al, 2016) |41.3	  |22.8    |[Text Understanding with the Attention Sum Reader Network](https://arxiv.org/abs/1603.01547)|
-
-### NarrativeQA
-[NarrativeQA](https://arxiv.org/abs/1712.07040) is a dataset built to encourage deeper comprehension of language. This dataset involves reasoning over reading entire books or movie scripts. This dataset contains approximately 45K question answer pairs in free form text. There are two modes of this dataset (1) reading comprehension over summaries and (2) reading comprehension over entire books/scripts. 
-
-| Model                        | BLEU-1     | BLEU-4   | METEOR | Rouge-L | Paper / Source | Code |
-| -------------                | :-----:   | :-----:|:-----:| :-----:|---            | ---  |
-|DecaProp (Tay et al., 2018)	   |44.35    |27.61	 | 21.80 | 44.69   |[Densely Connected Attention Propagation for Reading Comprehension](https://arxiv.org/abs/1811.04210)       |      |
-|BiAttention + DCU-LSTM (Tay et al., 2018)	   |36.55    |19.79	 | 17.87 | 41.44  |[Multi-Granular Sequence Encoding via Dilated Compositional Units for Reading Comprehension](http://aclweb.org/anthology/D18-1238)       |      |
-|BiDAF (Seo et al., 2017)	   |33.45    |15.69	 | 15.68 | 36.74  |[Bidirectional Attention Flow for Machine Comprehension](https://arxiv.org/abs/1611.01603)       |      |
-
-*Note that the above is for the Summary setting. There are no official published results for reading over entire books/stories except for the original paper. 
-
+| Model                        | Unigram Acc     | N-gram F1   | EM     |  F1   |Paper / Source | Code |
+| -------------                | :-----:| :-----:| :-----:| :-----:|---            | ---  |
+|DecaProp (Tay et al., 2018)	   |62.2    |70.8	   |56.8 |63.6    |[Densely Connected Attention Propagation for Reading Comprehension](https://arxiv.org/abs/1811.04210)       |      |
+|Denoising QA (Lin et al. 2018)| - |-    | 58.8| 64.5|[Denoising Distantly Supervised Open-Domain Question Answering](http://aclweb.org/anthology/P18-1161)|[official](https://github.com/thunlp/OpenQA)|
+|R^3 (Wang et al., 2018)	     |-	  |-	 | 49.0| 55.3  |[R^3: Reinforced Ranker-Reader for Open-Domain Question Answering](https://aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16712/16165)|[official](https://github.com/shuohangwang/mprc)|
+|Bi-Attention + DCU-LSTM (Tay et al., 2018)	   |49.4    |59.5	   |- |-    |[Multi-Granular Sequence Encoding via Dilated Compositional Units for Reading Comprehension](http://aclweb.org/anthology/D18-1238)       |      |
+|AMANDA (Kundu et al., 2018)	     |46.8	  |56.6	   |- |-    |[A Question-Focused Multi-Factor Attention Network for Question Answering](https://arxiv.org/abs/1801.08290)               | [official](https://github.com/nusnlp/amanda)|
+|Focused Hierarchical RNN	(Ke et al., 2018)     |46.8	  |53.4	   |- |-    |[Focused Hierarchical RNNs for Conditional Sequence Processing](http://proceedings.mlr.press/v80/ke18a/ke18a.pdf)||
+|ASR (Kadlec et al, 2016) |41.3	  |22.8    |- |-    |[Text Understanding with the Attention Sum Reader Network](https://arxiv.org/abs/1603.01547)|
 
 
 [Go back to the README](../README.md)
