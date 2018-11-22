@@ -56,7 +56,10 @@ The test set is composed of triplets, each used to create two test instances, on
 
 | Model           | H@10 | H@1 | MRR | Paper / Source | Code | 
 | ------------- | :-----:| :-----:| :-----:| --- | --- | 
-| TransE (reimplementation by (Nguyen et al., 2018) | 46.50 | - | 29.40 | [Translating Embeddings for Modeling Multi-relational Data. ](http://papers.nips.cc/paper/5071-translating-embeddings-for-modeling-multi-relational-data.pdf) | [OpenKE](https://github.com/thunlp/OpenKE) |
+| TransE (reimplementation by Han et al., 2018) | 47.09 | 19.87 | 29.04 | [Translating Embeddings for Modeling Multi-relational Data. ](http://papers.nips.cc/paper/5071-translating-embeddings-for-modeling-multi-relational-data.pdf) | [OpenKE](https://github.com/thunlp/OpenKE) |
+| TransH (reimplementation by Han et al., 2018) | 41.32 | 5.79 | 17.66 | [Knowledge Graph Embedding by Translating on Hyperplanes.](http://www.aaai.org/ocs/index.php/AAAI/AAAI14/paper/viewFile/8531/8546) | [OpenKE](https://github.com/thunlp/OpenKE) |
+| TransR (reimplementation by Han et al., 2018) | 40.67 | 16.35 | 24.44 | [ Learning Entity and Relation Embeddings for Knowledge Graph Completion.](http://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/download/9571/9523/) | [OpenKE](https://github.com/thunlp/OpenKE) |
+| TransD (reimplementation by Han et al., 2018) | 46.05 | 14.83 | 25.27 | [Knowledge Graph Embedding via Dynamic Mapping Matrix.](http://anthology.aclweb.org/P/P15/P15-1067.pdf) | [OpenKE](https://github.com/thunlp/OpenKE) |
 | ConvKB (Nguyen et al., 2018) | 51.70 | - | 39.60 | [A Novel Embedding Model for Knowledge Base Completion Based on Convolutional Neural Network](http://www.aclweb.org/anthology/N18-2053) | [Official](https://github.com/daiquocnguyen/ConvKB) |
 | ConvE (v6; Dettmers et al., 2018) | 50.10 | 23.70 | 32.50 | [Convolutional 2D Knowledge Graph Embeddings](https://arxiv.org/abs/1707.01476) | [Official](https://github.com/TimDettmers/ConvE) |
 | ComplEx (reimplementation by Dettmers et al., 2018) | 42.80 | 15.80 | 24.70 | [Complex Embeddings for Simple Link Prediction](http://www.jmlr.org/proceedings/papers/v48/trouillon16.pdf) | [Official](https://github.com/ttrouill/complex) | 
