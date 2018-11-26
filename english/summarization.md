@@ -31,7 +31,7 @@ The following models have been evaluated on the entitiy-anonymized version of th
 | RNES w/o coherence (Wu and Hu, 2018) | 41.25 | 18.87 | 37.75 | - | [Learning to Extract Coherent Summary via Deep Reinforcement Learning](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16838/16118) | |
 | SWAP-NET (Jadhav and Rajan, 2018) | 41.6 | 18.3 | 37.7 | - | [Extractive Summarization with SWAP-NET: Sentences and Words from Alternating Pointer Networks](http://aclweb.org/anthology/P18-1014) | |
 | HSASS (Al-Sabahi et al., 2018) | 42.3 | 17.8 | 37.6 | - | [A Hierarchical Structured Self-Attentive Model for Extractive Document Summarization (HSSAS)](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8344797) | |
-| GAN (Liu et al., 2018) | 39.92 | 17.65 | 36.71 | - | [Generative Adversarial Network for Abstractive Text Summarizatin](https://aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16238/16492) | |
+| GAN (Liu et al., 2018) | 39.92 | 17.65 | 36.71 | - | [Generative Adversarial Network for Abstractive Text Summarization](https://aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16238/16492) | |
 | KIGN+Prediction-guide (Li et al., 2018) | 38.95| 17.12 | 35.68 | - | [Guiding Generation for Abstractive Text Summarization based on Key Information Guide Network](http://aclweb.org/anthology/N18-2009) | |
 | SummaRuNNer (Nallapati et al., 2017) | ﻿39.6 | 16.2 | 35.3 | - | [SummaRuNNer: A Recurrent Neural Network based Sequence Model for Extractive Summarization of Documents](https://arxiv.org/abs/1611.04230) | |
 | rnn-ext + abs + RL + rerank (Chen and Bansal, 2018) | 39.66 | 15.85 | 37.34 | - | [Fast Abstractive Summarization with Reinforce-Selected Sentence Rewriting](http://aclweb.org/anthology/P18-1063) | [Official](https://github.com/ChenRocks/fast_abs_rl) |
@@ -96,6 +96,9 @@ Similar to Gigaword, task 1 of [DUC 2004](https://duc.nist.gov/duc2004/) is a se
 | RAS-Elman (Chopra et al., 2016) | 28.97 | 8.26 | 24.06 | [Abstractive Sentence Summarization with Attentive Recurrent Neural Networks](http://www.aclweb.org/anthology/N16-1012) | |
 | ABS (Rush et al., 2015) | 26.55 | 7.06 | 22.05 | [A Neural Attention Model for Sentence Summarization](https://www.aclweb.org/anthology/D/D15/D15-1044.pdf) | |
 
+## Webis-TLDR-17 Corpus
+
+This [dataset](https://zenodo.org/record/1168855) contains 3 Million pairs of content and self-written summaries mined from Reddit. It is one of the first large-scale summarization dataset from the social media domain. For more details, refer to [TL;DR: Mining Reddit to Learn Automatic Summarization](https://aclweb.org/anthology/W17-4508)
 
 ## Sentence Compression
 
@@ -119,6 +122,7 @@ Models are evaluated using the following metrics:
 
 | Model           | F1 | CR |Paper / Source | Code |
 | -------------   | :-----:| --- | --- | --- |
+| BiRNN + LM Evaluator (Zhao et al. 2018) | 0.851 | 0.39 | [A Language Model based Evaluator for Sentence Compression](https://aclweb.org/anthology/P18-2028) | https://github.com/code4conference/code4sc |
 | LSTM (Filippova et al., 2015) | 0.82 | 0.38 | [Sentence Compression by Deletion with LSTMs](https://research.google.com/pubs/archive/43852.pdf) | |
 | BiLSTM (Wang et al., 2017) | 0.8 | 0.43 | [Can Syntax Help? Improving an LSTM-based Sentence Compression Model for New Domains](http://www.aclweb.org/anthology/P17-1127) |  |
 

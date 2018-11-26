@@ -23,6 +23,7 @@ per-word log-probability (lower is better).
 | AWD-LSTM-MoS + dynamic eval (Yang et al., 2018)* | 48.33 | 47.69 | [Breaking the Softmax Bottleneck: A High-Rank RNN Language Model](https://arxiv.org/abs/1711.03953) |
 | AWD-LSTM + dynamic eval (Krause et al., 2017)* | 51.6 | 51.1 | [Dynamic Evaluation of Neural Sequence Models](https://arxiv.org/abs/1709.07432) |
 | AWD-LSTM + continuous cache pointer (Merity et al., 2017)* | 53.9 | 52.8 | [Regularizing and Optimizing LSTM Language Models](https://arxiv.org/abs/1708.02182) | 
+| AWD-LSTM-DOC (Takase et al., 2018) | 54.12 | 52.38 | [Direct Output Connection for a High-Rank Language Model](https://arxiv.org/abs/1808.10143) |
 | AWD-LSTM-MoS (Yang et al., 2018) | 56.54 | 54.44 | [Breaking the Softmax Bottleneck: A High-Rank RNN Language Model](https://arxiv.org/abs/1711.03953) |
 | AWD-LSTM (Merity et al., 2017) | 60.0 | 57.3 | [Regularizing and Optimizing LSTM Language Models](https://arxiv.org/abs/1708.02182) | 
 
@@ -37,6 +38,7 @@ consists of around 2 million words extracted from Wikipedia articles.
 | AWD-LSTM-MoS + dynamic eval (Yang et al., 2018)* | 42.41 | 40.68 | [Breaking the Softmax Bottleneck: A High-Rank RNN Language Model](https://arxiv.org/abs/1711.03953) |
 | AWD-LSTM + dynamic eval (Krause et al., 2017)* | 46.4 | 44.3 | [Dynamic Evaluation of Neural Sequence Models](https://arxiv.org/abs/1709.07432) |
 | AWD-LSTM + continuous cache pointer (Merity et al., 2017)* | 53.8 | 52.0 | [Regularizing and Optimizing LSTM Language Models](https://arxiv.org/abs/1708.02182) | 
+| AWD-LSTM-DOC (Takase et al., 2018) | 60.29 | 58.03 | [Direct Output Connection for a High-Rank Language Model](https://arxiv.org/abs/1808.10143) |
 | AWD-LSTM-MoS (Yang et al., 2018) | 63.88 | 61.45 | [Breaking the Softmax Bottleneck: A High-Rank RNN Language Model](https://arxiv.org/abs/1711.03953) |
 | AWD-LSTM (Merity et al., 2017) | 68.6 | 65.8 | [Regularizing and Optimizing LSTM Language Models](https://arxiv.org/abs/1708.02182) | 
 
@@ -67,6 +69,7 @@ Within these 100 million bytes are 205 unique tokens.
 
 | Model           | Bit per Character (BPC) |  Number of params | Paper / Source |
 | ---------------- | :-----: | :-----: | --- |
+| Character Transformer Model (Al-Rfou et al., 2018) | 1.06 | 235M | [Character-Level Language Modeling with Deeper Self-Attention](https://arxiv.org/abs/1808.04444)
 | mLSTM + dynamic eval (Krause et al., 2017)* | 1.08 | 46M | [Dynamic Evaluation of Neural Sequence Models](https://arxiv.org/abs/1709.07432)
 | 3 layer AWD-LSTM (Merity et al., 2018)  | 1.232 | 47M | [An Analysis of Neural Language Modeling at Multiple Scales](https://arxiv.org/abs/1803.08240) |
 | Large FS-LSTM-4 (Mujika et al., 2017) | 1.245 | 47M | [Fast-Slow Recurrent Neural Networks](https://arxiv.org/abs/1705.08639) |
@@ -79,6 +82,7 @@ Within these 100 million bytes are 205 unique tokens.
 
 | Model           | Bit per Character (BPC) |  Number of params | Paper / Source |
 | ---------------- | :-----: | :-----: | --- |
+| Character Transformer Model (Al-Rfou et al., 2018) | 1.13 | 235M | [Character-Level Language Modeling with Deeper Self-Attention](https://arxiv.org/abs/1808.04444)
 | mLSTM + dynamic eval (Krause et al., 2017)* | 1.19 | 45M | [Dynamic Evaluation of Neural Sequence Models](https://arxiv.org/abs/1709.07432)
 | Large mLSTM +emb +WN +VD (Krause et al., 2016) | 1.27 | 45M | [Multiplicative LSTM for sequence modelling](https://arxiv.org/abs/1609.07959)
 | Large RHN (Zilly et al., 2016) | 1.27 | 46M | [Recurrent Highway Networks](https://arxiv.org/abs/1607.03474)
