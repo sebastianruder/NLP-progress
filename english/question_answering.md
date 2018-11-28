@@ -229,7 +229,7 @@ The public leaderboard is available on the [RecipeQA website](https://hucvl.gith
 
 | Model                        | BLEU-1     | BLEU-4   | METEOR | Rouge-L | Paper / Source | Code |
 | -------------                | :-----:   | :-----:|:-----:| :-----:|---            | ---  |
-|DecaProp (Tay et al., 2018)	   |44.35    |27.61	 | 21.80 | 44.69   |[Densely Connected Attention Propagation for Reading Comprehension](https://arxiv.org/abs/1811.04210)       |      |
+|DecaProp (Tay et al., 2018)	   |44.35    |27.61	 | 21.80 | 44.69   |[Densely Connected Attention Propagation for Reading Comprehension](https://arxiv.org/abs/1811.04210)       |  [official](https://github.com/vanzytay/NIPS2018_DECAPROP)    |
 |BiAttention + DCU-LSTM (Tay et al., 2018)	   |36.55    |19.79	 | 17.87 | 41.44  |[Multi-Granular Sequence Encoding via Dilated Compositional Units for Reading Comprehension](http://aclweb.org/anthology/D18-1238)       |      |
 |BiDAF (Seo et al., 2017)	   |33.45    |15.69	 | 15.68 | 36.74  |[Bidirectional Attention Flow for Machine Comprehension](https://arxiv.org/abs/1611.01603)       |      |
 
@@ -255,7 +255,7 @@ The [leaderboard](https://ai.baidu.com/broad/leaderboard?dataset=dureader) is av
 | Model                        | EM (Quasar-T)     | F1 (Quasar-T)    |Paper / Source | Code |
 | -------------                | :-----:| :-----:|---            | ---  |
 |Denoising QA (Lin et al. 2018)|42.2	  |49.3    |[Denoising Distantly Supervised Open-Domain Question Answering](http://aclweb.org/anthology/P18-1161)|[official](https://github.com/thunlp/OpenQA)|
-|DecaProp (Tay et al., 2018)	     |38.6	  |46.9	   |[Densely Connected Attention Propagation for Reading Comprehension](https://arxiv.org/abs/1811.04210)||
+|DecaProp (Tay et al., 2018)	     |38.6	  |46.9	   |[Densely Connected Attention Propagation for Reading Comprehension](https://arxiv.org/abs/1811.04210)|[official](https://github.com/vanzytay/NIPS2018_DECAPROP)|
 |R^3 (Wang et al., 2018)	     |35.3	  |41.7	   |[R^3: Reinforced Ranker-Reader for Open-Domain Question Answering](https://aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16712/16165)|[official](https://github.com/shuohangwang/mprc)|
 |BiDAF (Seo et al., 2017)	     |25.9	  |28.5	   |[Bidirectional Attention Flow for Machine Comprehensio](https://arxiv.org/abs/1611.01603)               | [official](https://github.com/allenai/bi-att-flow)|
 |GA (Dhingra et al., 2017)	   |26.4    |26.4	   |[Gated-Attention Readers for Text Comprehension](https://arxiv.org/pdf/1606.01549)       |      |
@@ -267,7 +267,7 @@ The [leaderboard](https://ai.baidu.com/broad/leaderboard?dataset=dureader) is av
 
 | Model                        | Unigram Acc     | N-gram F1   | EM     |  F1   |Paper / Source | Code |
 | -------------                | :-----:| :-----:| :-----:| :-----:|---            | ---  |
-|DecaProp (Tay et al., 2018)	   |62.2    |70.8	   |56.8 |63.6    |[Densely Connected Attention Propagation for Reading Comprehension](https://arxiv.org/abs/1811.04210)       |      |
+|DecaProp (Tay et al., 2018)	   |62.2    |70.8	   |56.8 |63.6    |[Densely Connected Attention Propagation for Reading Comprehension](https://arxiv.org/abs/1811.04210)       | [official](https://github.com/vanzytay/NIPS2018_DECAPROP)     |
 |Denoising QA (Lin et al. 2018)| - |-    | 58.8| 64.5|[Denoising Distantly Supervised Open-Domain Question Answering](http://aclweb.org/anthology/P18-1161)|[official](https://github.com/thunlp/OpenQA)|
 |R^3 (Wang et al., 2018)	     |-	  |-	 | 49.0| 55.3  |[R^3: Reinforced Ranker-Reader for Open-Domain Question Answering](https://aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16712/16165)|[official](https://github.com/shuohangwang/mprc)|
 |Bi-Attention + DCU-LSTM (Tay et al., 2018)	   |49.4    |59.5	   |- |-    |[Multi-Granular Sequence Encoding via Dilated Compositional Units for Reading Comprehension](http://aclweb.org/anthology/D18-1238)       |      |
