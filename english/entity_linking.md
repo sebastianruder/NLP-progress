@@ -57,6 +57,16 @@ The [AIDA CoNLL-YAGO][AIDACoNLLYAGO] Dataset by [[Hoffart]](http://www.aclweb.or
 | Piccinno et al. (2014) | 69.32 | 72.8 | [From TagME to WAT: a new entity annotator](https://dl.acm.org/citation.cfm?id=2634350) | |
 | Hoffart et al. (2011) | 68.8 | 72.4 | [Robust Disambiguation of Named Entities in Text](http://www.aclweb.org/anthology/D11-1072) | |
 
+#### TAC KBP English Entity Linking Comprehensive and Evaluation Data 2010 
+
+The Knowledge Base Population (KBP) Track at [TAC 2010](https://tac.nist.gov/2010) will explore extraction of information about entities with reference to an external knowledge source. Using basic schema for persons, organizations, and locations, nodes in an ontology must be created and populated using unstructured information found in text. A collection of [Wikipedia Infoboxes](http://en.wikipedia.org/wiki/Help:Infobox) will serve as a rudimentary initial knowledge representation. You can download the dataset from [LDC](https://www.ldc.upenn.edu/) or [here](https://github.com/ChrisLeeJ/TAC_KBP_English_EL_2010).
+
+##### Disambiguation-Only Models
+
+| Paper / Source    | Micro-F1-strong | Macro-F1-strong |                        Paper / Source                        | Code |
+| :---------------- | :-------------: | :-------------: | :----------------------------------------------------------: | ---- |
+| Sil et al. (2018) |      87.4       |        -        | [Neural Cross-Lingual Entity Linking](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16501/16101) |      |
+
 ### Platforms
 
 Evaluating Entity Linking systems in a manner that allows for direct comparison of performance can be difficult. The precise definition of a "correct" annotation can be somewhat subjective and it is easy to make mistakes. To provide a simple example, given the input surface form **"Tom Waits"**, an evaluation dataset might record the dbpedia resource `http://dbpedia.org/resource/Tom_Waits` as the correct referent. Yet an annotation system which returns a reference to `http://dbpedia.org/resource/PEHDTSCKJBMA` has technically provided an appropriate annotation as this resource is a redirect to `http://dbpedia.org/resource/Tom_Waits`. Alternatively if evaluating an End-to-End EL system, then accuracy with respect to word boundaries must be considered e.g. if a system only annotates **"Obama"** with the URI `http://dbpedia.org/resource/Barack_Obama` in the surface form **"Barack Obama"**, then is the system correct or incorrect in its annotation?
