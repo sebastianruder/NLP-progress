@@ -44,6 +44,7 @@ The [AIDA CoNLL-YAGO][AIDACoNLLYAGO] Dataset by [[Hoffart]](http://www.aclweb.or
    
 |  Paper / Source | Micro-Precision | Macro-Precision | Paper / Source | Code | 
 | ------------- | :-----:| :----: | :----: | --- |
+| Raiman et al. (2018) | 94.88 | - | [DeepType: Multilingual Entity Linking by Neural Type System Evolution](https://arxiv.org/pdf/1802.01021.pdf) | [Official](https://github.com/openai/deeptype) |
 | Sil et al. (2018) | 94.0 | - | [Neural Cross-Lingual Entity Linking](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16501/16101) | |
 | Radhakrishnan et al. (2018) | 93.0 | 93.7 | [ELDEN: Improved Entity Linking using Densified Knowledge Graphs](http://aclweb.org/anthology/N18-1167) | |
 | Le et al. (2018) | 93.07 | - | [Improving Entity Linking by Modeling Latent Relations between Mentions](http://aclweb.org/anthology/P18-1148) |
@@ -54,7 +55,6 @@ The [AIDA CoNLL-YAGO][AIDACoNLLYAGO] Dataset by [[Hoffart]](http://www.aclweb.or
    
 |  Paper / Source | Micro-F1-strong | Macro-F1-strong | Paper / Source | Code | 
 | ------------- | :-----:| :----: | :----: | --- |
-| Raiman et al. (2018) | 94.88 | - | [DeepType: Multilingual Entity Linking by Neural Type System Evolution](https://arxiv.org/pdf/1802.01021.pdf) | [Official](https://github.com/openai/deeptype) |
 | Kolitsas et al. (2018) | 86.6 | 89.4 | [End-to-End Neural Entity Linking](https://arxiv.org/pdf/1808.07699.pdf) | [Official](https://github.com/dalab/end2end_neural_el) |
 | Piccinno et al. (2014) | 69.32 | 72.8 | [From TagME to WAT: a new entity annotator](https://dl.acm.org/citation.cfm?id=2634350) | |
 | Hoffart et al. (2011) | 68.8 | 72.4 | [Robust Disambiguation of Named Entities in Text](http://www.aclweb.org/anthology/D11-1072) | |
