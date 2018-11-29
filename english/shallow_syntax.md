@@ -1,6 +1,11 @@
-# Chunking
+# Shallow syntax
 
-Chunking is a shallow form of parsing that identifies continuous spans of tokens that form syntactic units such as noun phrases or verb phrases.
+Shallow syntactic tasks provide an analysis of a text on the level of the syntactic structure 
+of the text.
+
+## Chunking
+
+Chunking, also known as shallow parsing, identifies continuous spans of tokens that form syntactic units such as noun phrases or verb phrases.
 
 Example:
 

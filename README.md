@@ -6,7 +6,6 @@
 
 - [Automatic speech recognition](english/automatic_speech_recognition.md)
 - [CCG supertagging](english/ccg_supertagging.md)
-- [Chunking](english/chunking.md)
 - [Common sense](english/common_sense.md)
 - [Constituency parsing](english/constituency_parsing.md)
 - [Coreference resolution](english/coreference_resolution.md)
@@ -31,6 +30,7 @@
 - [Semantic parsing](english/semantic_parsing.md)
 - [Semantic role labeling](english/semantic_role_labeling.md)
 - [Sentiment analysis](english/sentiment_analysis.md)
+- [Shallow syntax](english/shallow_syntax.md)
 - [Stance detection](english/stance_detection.md)
 - [Summarization](english/summarization.md)
 - [Taxonomy learning](english/taxonomy_learning.md)
