@@ -17,7 +17,8 @@ Example:
 More in details can be found in this [survey](http://dbgroup.cs.tsinghua.edu.cn/wangjy/papers/TKDE14-entitylinking.pdf).
 
 ## Current SOTA
-[Sil][Sil], published at AAAI 2018, is the current SOTA in Cross-lingual Entity Linking. In the cross-lingual setting, they train the system on English and test not only on English; but also on other foreign unseen languages like Spanish and Chinese. Their system obtained the top end-to-end EL score at the TAC 2017 annual EL evaluation by NIST in English. Their system is a feed forward NN approach with a wide variety of similarity networks put in a "feature abstraction layer". The system is trained in a zero-shot fashion and gets SOTA score on English, Spanish and Chinese.
+[Raiman][Raiman] is the current SOTA in Cross-lingual Entity Linking. They construct a type system, and use it to constrain the outputs of a neural network to respect the symbolic structure. They achieve this by reformulating the design problem into a mixed integer problem: create a type system and subsequently train a neural network with it. They propose a 2-step algorithm: 1) heuristic search or stochastic optimization over discrete variables that define a type system
+informed by an Oracle and a Learnability heuristic, 2) gradient descent to fit classifier parameters. They apply DeepType to the problem of Entity Linking on three standard datasets (i.e. WikiDisamb30, CoNLL (YAGO), TAC KBP 2010) and find that it outperforms all existing solutions by a wide margin, including approaches that rely on a human-designed type system or recent deep learning-based entity embeddings, while explicitly using symbolic information lets it integrate new entities without retraining.
 
 ## Evaluation
 
@@ -43,6 +44,7 @@ The [AIDA CoNLL-YAGO][AIDACoNLLYAGO] Dataset by [[Hoffart]](http://www.aclweb.or
    
 |  Paper / Source | Micro-Precision | Macro-Precision | Paper / Source | Code | 
 | ------------- | :-----:| :----: | :----: | --- |
+| Raiman et al. (2018) | 94.88 | - | [DeepType: Multilingual Entity Linking by Neural Type System Evolution](https://arxiv.org/pdf/1802.01021.pdf) | [Official](https://github.com/openai/deeptype) |
 | Sil et al. (2018) | 94.0 | - | [Neural Cross-Lingual Entity Linking](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16501/16101) | |
 | Radhakrishnan et al. (2018) | 93.0 | 93.7 | [ELDEN: Improved Entity Linking using Densified Knowledge Graphs](http://aclweb.org/anthology/N18-1167) | |
 | Le et al. (2018) | 93.07 | - | [Improving Entity Linking by Modeling Latent Relations between Mentions](http://aclweb.org/anthology/P18-1148) |
@@ -56,6 +58,18 @@ The [AIDA CoNLL-YAGO][AIDACoNLLYAGO] Dataset by [[Hoffart]](http://www.aclweb.or
 | Kolitsas et al. (2018) | 86.6 | 89.4 | [End-to-End Neural Entity Linking](https://arxiv.org/pdf/1808.07699.pdf) | [Official](https://github.com/dalab/end2end_neural_el) |
 | Piccinno et al. (2014) | 69.32 | 72.8 | [From TagME to WAT: a new entity annotator](https://dl.acm.org/citation.cfm?id=2634350) | |
 | Hoffart et al. (2011) | 68.8 | 72.4 | [Robust Disambiguation of Named Entities in Text](http://www.aclweb.org/anthology/D11-1072) | |
+
+#### TAC KBP English Entity Linking Comprehensive and Evaluation Data 2010 
+
+The Knowledge Base Population (KBP) Track at [TAC 2010](https://tac.nist.gov/2010) will explore extraction of information about entities with reference to an external knowledge source. Using basic schema for persons, organizations, and locations, nodes in an ontology must be created and populated using unstructured information found in text. A collection of [Wikipedia Infoboxes](http://en.wikipedia.org/wiki/Help:Infobox) will serve as a rudimentary initial knowledge representation. You can download the dataset from [LDC](https://www.ldc.upenn.edu/) or [here](https://github.com/ChrisLeeJ/TAC_KBP_English_EL_2010).
+
+##### Disambiguation-Only Models
+
+|  Paper / Source | Micro-Precision | Macro-Precision | Paper / Source | Code | 
+| ------------- | :-----:| :----: | :----: | --- |
+| Raiman et al. (2018) | 90.85 | - | [DeepType: Multilingual Entity Linking by Neural Type System Evolution](https://arxiv.org/pdf/1802.01021.pdf) | [Official](https://github.com/openai/deeptype) |
+| Sil et al. (2018) | 87.4 | - | [Neural Cross-Lingual Entity Linking](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16501/16101) |      |
+| Yamada et al. (2016) | 85.2 | - | [Joint Learning of the Embedding of Words and Entities for Named Entity Disambiguation](https://arxiv.org/pdf/1601.01343.pdf) |      |
 
 ### Platforms
 
@@ -97,3 +111,4 @@ Nevertheless, GERBIL is an excellent resource for standardising how EL systems a
 [GERBIL]: http://aksw.org/Projects/GERBIL.html "General Entity Annotator Benchmarking framework"
 [AKSW]: http://aksw.org/About.html "Agile Knowledge Engineering and Semantic Web"
 [Hachey]: http://benhachey.info/pubs/hachey-aij12-evaluating.pdf "Evaluating Entity Linking with Wikipedia"
+[Raiman]: https://arxiv.org/pdf/1802.01021.pdf "DeepType: Multilingual Entity Linking by Neural Type System Evolution"
