@@ -11,7 +11,7 @@ tasks. The semantic textual similarity (STS) benchmark tasks from 2012-2016 (STS
 of two sentences based on the cosine similarity of the two representations. The evaluation criterion is Pearson correlation.
 
 The SICK relatedness (SICK-R) task trains a linear model to output a score from 1 to 5 indicating the relatedness of two sentences. For
-the same dataset (SICK-E) can be treated as a binary classification problem using the entailment labels.
+the same dataset (SICK-E) can be treated as a three-class classification problem using the entailment labels (classes are 'entailment', 'contradiction', and 'neutral').
 The evaluation metric for SICK-R is Pearson correlation and classification accuracy for SICK-E.
 
 The Microsoft Research Paraphrase Corpus (MRPC) corpus is a paraphrase identification dataset, where systems
