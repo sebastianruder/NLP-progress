@@ -37,7 +37,7 @@ Example:
 Scope is enclosed in square brackets and focus marked between % signs.
 
 The [CD-SCO (Conan Doyle Scope) dataset](https://www.clips.uantwerpen.be/sem2012-st-neg/data.html) is for scope detection.
- The [PB-FOC (PropBank Focus dataset](https://www.clips.uantwerpen.be/sem2012-st-neg/data.html) is for focus detection.
+ The [PB-FOC (PropBank Focus) dataset](https://www.clips.uantwerpen.be/sem2012-st-neg/data.html) is for focus detection.
 The public leaderboard is available on the [*SEM Shared Task 2012 website](https://www.clips.uantwerpen.be/sem2012-st-neg/results.html).
 
 [Go back to the README](../README.md)
