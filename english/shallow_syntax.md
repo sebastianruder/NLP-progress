@@ -26,4 +26,18 @@ for testing. Models are evaluated based on F1.
 | Suzuki and Isozaki (2008) | 95.15 | [Semi-Supervised Sequential Labeling and Segmentation using Giga-word Scale Unlabeled Data](https://aclanthology.info/pdf/P/P08/P08-1076.pdf) | 
 | NCRF++ (Yang and Zhang, 2018)| 95.06 | [NCRF++: An Open-source Neural Sequence Labeling Toolkit](http://www.aclweb.org/anthology/P18-4013) | [NCRF++](https://github.com/jiesutd/NCRFpp) |
 
+## Resolving the Scope and focus of negation
+
+Scope of negation is the part of the meaning that is negated and focus the part of the scope that is most prominently negated (Huddleston and Pullum 2002).
+
+Example:
+
+`[John had] never [said %as much% before].`
+
+Scope is enclosed in square brackets and focus marked between % signs.
+
+The [CD-SCO (Conan Doyle Scope) dataset](https://www.clips.uantwerpen.be/sem2012-st-neg/data.html) is for scope detection.
+ The [PB-FOC (PropBank Focus dataset](https://www.clips.uantwerpen.be/sem2012-st-neg/data.html) is for focus detection.
+The public leaderboard is available on the [*SEM Shared Task 2012 website](https://www.clips.uantwerpen.be/sem2012-st-neg/results.html).
+
 [Go back to the README](../README.md)
