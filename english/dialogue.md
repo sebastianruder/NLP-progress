@@ -43,12 +43,12 @@ For goal-oriented dialogue, the dataset of the [second dialogue state tracking c
 (DSTC2) is a common evaluation dataset. The DSTC2 focuses on the restaurant search domain. Models are
 evaluated based on accuracy on both individual and joint slot tracking.
 
-| Model           | Area  |  Food  |  Price  |  Joint  |  Paper / Source |
-| ------------- | :-----:| :-----:| :-----:| :-----:| --- |
-| Zhong et al. (2018) | - | - | - | 74.5| [Global-locally Self-attentive Dialogue State Tracker](https://arxiv.org/abs/1805.09655) |
-| Liu et al. (2018) | 90 | 84 | 92 | 72 | [Dialogue Learning with Human Teaching and Feedback in End-to-End Trainable Task-Oriented Dialogue Systems](https://arxiv.org/abs/1804.06512) |
-| Neural belief tracker (Mrkšić et al., 2017) | 90 | 84 | 94 | 72 | [Neural Belief Tracker: Data-Driven Dialogue State Tracking](https://arxiv.org/abs/1606.03777) |
-| RNN (Henderson et al., 2014) |﻿92 | 86 | 86 | 69 | [Robust dialog state tracking using delexicalised recurrent neural networks and unsupervised gate](http://svr-ftp.eng.cam.ac.uk/~sjy/papers/htyo14.pdf) | 
+| Model           | Request | Area  |  Food  |  Price  |  Joint  |  Paper / Source |
+| ------------- | :-----: | :-----:| :-----:| :-----:| :-----:| --- |
+| Zhong et al. (2018) | 97.5 | - | - | - | 74.5| [Global-locally Self-attentive Dialogue State Tracker](https://arxiv.org/abs/1805.09655) |
+| Liu et al. (2018) | - | 90 | 84 | 92 | 72 | [Dialogue Learning with Human Teaching and Feedback in End-to-End Trainable Task-Oriented Dialogue Systems](https://arxiv.org/abs/1804.06512) |
+| Neural belief tracker (Mrkšić et al., 2017) | 96.5 | 90 | 84 | 94 | 73.4 | [Neural Belief Tracker: Data-Driven Dialogue State Tracking](https://arxiv.org/abs/1606.03777) |
+| RNN (Henderson et al., 2014) | 95.7 | 92 | 86 | 86 | 69 | [Robust dialog state tracking using delexicalised recurrent neural networks and unsupervised gate](http://svr-ftp.eng.cam.ac.uk/~sjy/papers/htyo14.pdf) | 
 
 [Go back to the README](../README.md)
 
