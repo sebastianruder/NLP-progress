@@ -26,12 +26,12 @@ The main evaluation measure is F1-score.
 | Model           | Senseval 2  |Senseval 3  |SemEval 2007 |SemEval 2013 |SemEval 2015 | Paper / Source |
 | ------------- | :-----:|:-----:|:-----:|:-----:|:-----:| --- |
 |MFS baseline | 65.6 | 66.0 | 54.5 | 63.8 | 67.1 |  [[1]](http://aclweb.org/anthology/E/E17/E17-1010.pdf) |
-|Bi-LSTM<sub>att+LEX</sub> |  72.0 | 69.4 |63.7* | 66.4 | 72.4 | [[2]]((http://aclweb.org/anthology/D17-1120)) |
+|Bi-LSTM<sub>att+LEX</sub> |  72.0 | 69.4 |63.7* | 66.4 | 72.4 | [[2]](http://aclweb.org/anthology/D17-1120) |
 |Bi-LSTM<sub>att+LEX+POS</sub> |   72.0 | 69.1|64.8* | 66.9 | 71.5 | [[2]](http://aclweb.org/anthology/D17-1120) |
-|context2vec | 71.8 | 69.1 |61.3  | 65.6 | 71.9 | [[3]]((http://www.aclweb.org/anthology/K16-1006)) | 
-|ELMo | 71.6 | 69.6 | 62.2 | 66.2 | 71.3 | [[4]]((http://aclweb.org/anthology/N18-1202)) |
+|context2vec | 71.8 | 69.1 |61.3  | 65.6 | 71.9 | [[3]](http://www.aclweb.org/anthology/K16-1006) | 
+|ELMo | 71.6 | 69.6 | 62.2 | 66.2 | 71.3 | [[4]](http://aclweb.org/anthology/N18-1202) |
 |GAS (Linear) | 72.0  | 70.0 | --* | 66.7 | 71.6 | [[5]](http://aclweb.org/anthology/P18-1230) |
-|GAS (Concatenation) | 72.1 | 70.2 | --* | 67 | 71.8 |  [[5]](http://aclweb.org/anthology/P18-1230))  |
+|GAS (Concatenation) | 72.1 | 70.2 | --* | 67 | 71.8 |  [[5]](http://aclweb.org/anthology/P18-1230)  |
 |GAS<sub>ext</sub> (Linear) | 72.4 | 70.1 | --* | 67.1 | 72.1 |[[5]](http://aclweb.org/anthology/P18-1230)  |
 |GAS<sub>ext</sub> (Concatenation) | 72.2 | 70.5 | --* | 67.2 | 72.6 | [[5]](http://aclweb.org/anthology/P18-1230)  |
 |supWSD | 71.3 | 68.8 | 60.2 | 65.8 | 70.0 | [[6]](https://aclanthology.info/pdf/P/P10/P10-4014.pdf) [[11]](http://aclweb.org/anthology/D17-2018) |
