@@ -29,6 +29,7 @@ labeled attachment score (LAS). Here, we also mention the predicted POS tagging 
 
 | Model           | POS | UAS | LAS | Paper / Source | Code |
 | ------------- | :-----: | :-----:| :-----:| --- | --- |
+| CVT + Multi-Task (Clark et al., 2018) | ---  | 96.61 | 95.02 | [Semi-Supervised Sequence Modeling with Cross-View Training](https://arxiv.org/abs/1809.08370) | [Official](https://github.com/tensorflow/models/tree/master/research/cvt_text) |
 | Deep Biaffine (Dozat and Manning, 2017) | 97.3 | 95.44 | 93.76 | [Deep Biaffine Attention for Neural Dependency Parsing](https://arxiv.org/abs/1611.01734) | [Official](https://github.com/tdozat/Parser-v1) |
 | jPTDP (Nguyen and Verspoor, 2018) | 97.97 | 94.51 | 92.87  | [An improved neural network model for joint POS tagging and dependency parsing](https://arxiv.org/abs/1807.03955) | [Official](https://github.com/datquocnguyen/jPTDP) |
 | Andor et al. (2016) | 97.44 | 94.61 | 92.79 | [Globally Normalized Transition-Based Neural Networks](https://www.aclweb.org/anthology/P16-1231) | |
