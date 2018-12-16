@@ -34,6 +34,8 @@ def extract_paper_title_and_link(paper_md:str) -> Tuple:
 
     if len(md_links) > 1:
         print("WARNING: Found multiple paper references: `%s`, using only the first..." % paper_md)
+    if len(md_links) == 0:
+        return None, None
 
     md_link = md_links[0]
 
@@ -82,14 +84,15 @@ def extract_sota_table(table_lines:List[str]) -> Dict:
         model_inx = cols_sanitized.index("model")
     else:
         print("ERROR: Model name not found in this SOTA table, skipping...\n", file=sys.stderr)
-        [print(l, file=sys.stderr) for l in table_lines]
+        print("".join(table_lines), file=sys.stderr)
         return {}
 
     if "paper/source" in cols_sanitized:
         paper_inx = cols_sanitized.index("paper/source")
     else:
         print("ERROR: Paper reference not found in this SOTA table, skipping...\n", file=sys.stderr)
-        [print(l, file=sys.stderr) for l in table_lines]
+        print("".join(table_lines), file=sys.stderr)
+        return {}
 
     if "code" in cols_sanitized:
         code_inx = cols_sanitized.index("code")
@@ -104,10 +107,16 @@ def extract_sota_table(table_lines:List[str]) -> Dict:
     sota["metrics"] = metrics_names
     sota["rows"] = []
 
+    min_cols = len(header_cols)
+
     # now parse the table rows
     rows = table_lines[2:]
     for row in rows:
         row_cols = [h.strip() for h in row.split("|")][1:]
+
+        if len(row_cols) < min_cols:
+            print("This row doesn't have enough columns, skipping: %s" % row, file=sys.stderr)
+            continue
 
         # extract all the metrics
         metrics = {}
@@ -120,9 +129,11 @@ def extract_sota_table(table_lines:List[str]) -> Dict:
         sota_row = {
             "model_name": row_cols[model_inx],
             "metrics": metrics,
-            "paper_title": paper_title,
-            "paper_url": paper_link,
         }
+
+        if paper_title is not None and paper_link is not None:
+            sota_row["paper_title"] = paper_title
+            sota_row["paper_url"] = paper_link
 
         # and code links if they exist
         if code_inx is not None:
@@ -152,7 +163,7 @@ def get_line_no(sections:List[str], section_index:int, section_line=0) -> int:
     return sum(lens)+1+section_index
 
 
-def parse_markdown_file(md_file:str) -> Dict:
+def parse_markdown_file(md_file:str) -> List:
     """
     Parse a single markdown file
 
@@ -253,7 +264,8 @@ def parse_markdown_file(md_file:str) -> Dict:
             ds["description"] = "".join([s for s in section[1:] if not s.startswith("|")]).strip()
 
             table_lines = [s for s in section if s.startswith("|")]
-            ds["sota"] = extract_sota_table(table_lines)
+            if table_lines:
+                ds["sota"] = extract_sota_table(table_lines)
 
     if t:
         parsed_out.append(t)
@@ -272,10 +284,12 @@ def parse_markdown_directory(path:str):
     md_files = [f for f in all_files if f.endswith(".md")]
 
     out = []
-    for md_file in ["dialogue.md"]:   # md_files
+    for md_file in md_files:
+        print("Processing `%s`..." % md_file)
         out.extend(parse_markdown_file(os.path.join(path, md_file)))
 
     return out
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
