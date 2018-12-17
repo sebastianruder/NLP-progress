@@ -1,4 +1,4 @@
-# Exporting NLP-progress into a machine-readable structure format
+# Exporting NLP-progress into a structure format
 
 Parse and export the unstructured information from Markdown into a structured JSON format. 
 
