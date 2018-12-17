@@ -6,6 +6,30 @@ import re
 import sys
 import json
 
+
+def extract_dataset_desc_links(desc:List[str]) -> List:
+    """
+    Extract all the links from the description of datasets
+
+    :param desc:
+    :return:
+    """
+
+    out = []
+    md = "".join(desc)
+
+    md_links = re.findall("\\[.*\\]\\(.*\\)", md)
+
+    for md_link in md_links:
+        title, link = extract_title_and_link(md_link)
+        out.append({
+            "title": title,
+            "url": link,
+        })
+
+    return out
+
+
 def sanitize_subdataset_name(name:str):
     """
     Do some sanitization on automatically extracted subdataset name
@@ -370,6 +394,11 @@ def parse_markdown_file(md_file:str) -> List:
             # dataset description is everything that's not a table
             desc, tables = extract_dataset_desc_and_sota_table(section[1:])
             ds["description"] = "".join(desc).strip()
+
+            # see if there is an arxiv link in the first paragraph of the description
+            dataset_links = extract_dataset_desc_links(desc)
+            if dataset_links:
+                ds["dataset_links"] = dataset_links
 
             if tables:
                 if len(tables) > 1:
