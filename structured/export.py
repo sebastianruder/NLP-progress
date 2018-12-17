@@ -6,6 +6,84 @@ import re
 import sys
 import json
 
+def sanitize_subdataset_name(name:str):
+    """
+    Do some sanitization on automatically extracted subdataset name
+
+    :param name:
+    :return:
+    """
+
+    name = name.replace("**", "")
+    if name.endswith(":"):
+        name = name[:-1]
+
+    return name.strip()
+
+
+def extract_lines_before_tables(lines:List[str]):
+    """
+    Extract the non-empty line before the table
+
+    :param lines: a list of lines
+    :return:
+    """
+
+    out = []
+
+    before = None
+    in_table = False
+    for l in lines:
+        if l.startswith("|") and not in_table:
+            if before is not None:
+                out.append(before)
+            in_table = True
+        elif in_table and not l.startswith("|"):
+            in_table = False
+            before = None
+            if l.strip() != "":
+                before = l.strip()
+        elif l.strip() != "":
+            before = l.strip()
+
+    return out
+
+
+def handle_multiple_sota_table_exceptions(section:List[str], sota_tables:List[List[str]]):
+    """
+    Manually handle the edge cases with dataset partitions
+
+    These are not captured in a consistent format, so no unified approach is possible atm.
+
+    :param section: The lines in this section
+    :param sota_tables: The list of sota table lines
+    :return:
+    """
+
+    section_full = "".join(section)
+    out = []
+
+    # Use the line before the table
+    subdatasets = extract_lines_before_tables(section)
+    subdatasets = [sanitize_subdataset_name(s) for s in subdatasets]
+
+    # exceptions:
+    if "hypernym discovery evaluation benchmark" in section_full:
+        subdatasets = subdatasets[1:]
+
+    if len(subdatasets) != len(sota_tables):
+        print("ERROR parsing the subdataset SOTA tables", file=sys.stderr)
+        print(sota_tables, file=sys.stderr)
+    else:
+        for i in range(len(subdatasets)):
+            out.append({
+                "subdataset": subdatasets[i],
+                "sota": extract_sota_table(sota_tables[i])
+            })
+
+    return out
+
+
 def extract_title_and_link(md_link:str) -> Tuple:
     """
     Extract the anchor text and URL from a markdown link
@@ -74,7 +152,7 @@ def extract_sota_table(table_lines:List[str]) -> Dict:
     header = table_lines[0]
     header_cols = [h.strip() for h in header.split("|") if h.strip()]
     cols_sanitized = [h.lower() for h in header_cols]
-    cols_sanitized = [re.sub(" +", "", h) for h in cols_sanitized]
+    cols_sanitized = [re.sub(" +", "", h).replace("**","") for h in cols_sanitized]
 
     # find the model name column (usually the first one)
     if "model" in cols_sanitized:
@@ -295,9 +373,9 @@ def parse_markdown_file(md_file:str) -> List:
 
             if tables:
                 if len(tables) > 1:
-                    print("ERROR: Multiple tables found, using just the first one...", file=sys.stderr)
-                    print(tables)
-                ds["sota"] = extract_sota_table(tables[0])
+                    ds["subdatasets"] = handle_multiple_sota_table_exceptions(section, tables)
+                else:
+                    ds["sota"] = extract_sota_table(tables[0])
 
     if t:
         parsed_out.append(t)
