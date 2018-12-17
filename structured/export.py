@@ -11,7 +11,7 @@ def extract_dataset_desc_links(desc:List[str]) -> List:
     """
     Extract all the links from the description of datasets
 
-    :param desc:
+    :param desc: Lines of the description of the dataset
     :return:
     """
 
@@ -34,7 +34,7 @@ def sanitize_subdataset_name(name:str):
     """
     Do some sanitization on automatically extracted subdataset name
 
-    :param name:
+    :param name: raw subdataset name line
     :return:
     """
 
