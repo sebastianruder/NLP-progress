@@ -134,6 +134,14 @@ These are tasks and datasets that are still missing:
 - More dialogue tasks
 - Semi-supervised learning
 
+### Exporting into a structured format
+
+You can now extract all the data into a structured, machine-readable JSON format with parsed tasks, results and descriptions. 
+
+The instructions are in [structured/README.md](structured/README.md).
+
 ### Instructions for building the site locally
 
 Instructions for building the website locally using Jekyll can be found [here](jekyll_instructions.md).
+
+

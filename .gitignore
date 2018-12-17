@@ -2,4 +2,4 @@ _site/
 Gemfile*
 venv
 .idea
-export.json
+structured.json

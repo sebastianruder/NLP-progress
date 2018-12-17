@@ -20,21 +20,15 @@ pip install -r requirements.txt
 From the NLP-progress root directly (where the LICENCE file is), run:
 
 ```shell
-python export/export.py <one or more languages>
+python structured/export.py <one or more directories or files>
 ```
 
-For example, to export all the english data:
+For example, to export all the data in the `english/` directory:
 
 ```shell
-python export/export.py english
+python structured/export.py english
 ```
 
-or for multiple languages:
-
-```shell
-python export/export.py chinese english hindi spanish vietnamese
-```
-
-By default the output will be written into `export.json`, but you can override this with the `--output` parameter. 
+By default the output will be written into `structured.json`, but you can override this with the `--output` parameter. 
 
 

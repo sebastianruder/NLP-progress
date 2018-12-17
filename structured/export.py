@@ -6,9 +6,6 @@ import re
 import sys
 import json
 
-class Debug:
-    counter = 1
-
 def extract_title_and_link(md_link:str) -> Tuple:
     """
     Extract the anchor text and URL from a markdown link
@@ -89,6 +86,8 @@ def extract_sota_table(table_lines:List[str]) -> Dict:
 
     if "paper/source" in cols_sanitized:
         paper_inx = cols_sanitized.index("paper/source")
+    elif "paper" in cols_sanitized:
+        paper_inx = cols_sanitized.index("paper")
     else:
         print("ERROR: Paper reference not found in this SOTA table, skipping...\n", file=sys.stderr)
         print("".join(table_lines), file=sys.stderr)
@@ -141,10 +140,6 @@ def extract_sota_table(table_lines:List[str]) -> Dict:
 
         sota["rows"].append(sota_row)
 
-    #Debug.counter -= 1
-    #if Debug.counter == 0:
-    #    from IPython import embed; embed()
-
     return sota
 
 
@@ -161,6 +156,40 @@ def get_line_no(sections:List[str], section_index:int, section_line=0) -> int:
         return 1+section_line
     lens = [len(s) for s in sections[:section_index]]
     return sum(lens)+1+section_index
+
+
+def extract_dataset_desc_and_sota_table(md_lines:List[str]) -> Tuple:
+    """
+    Extract the lines that are the description and lines that are the sota table(s)
+
+    :param md_lines: a list of lines in this section
+    :return:
+    """
+
+    # Main assumption is that the Sota table will minimally have a "Model" column
+    desc = []
+    tables = []
+    t = None
+    in_table = False
+    for l in md_lines:
+        if l.startswith("|") and "model" in l.lower() and not in_table:
+            t = [l]
+            in_table = True
+        elif in_table and l.startswith("|"):
+            t.append(l)
+        elif in_table and not l.startswith("|"):
+            if t is not None:
+                tables.append(t)
+            t = None
+            desc.append(l)
+            in_table = False
+        else:
+            desc.append(l)
+
+    if t is not None:
+        tables.append(t)
+
+    return desc, tables
 
 
 def parse_markdown_file(md_file:str) -> List:
@@ -238,7 +267,7 @@ def parse_markdown_file(md_file:str) -> List:
             ds = None
 
         ### Dataset definition
-        if header.startswith("###") and not header.startswith("####"):
+        if header.startswith("###") and not header.startswith("####") and "Table of content" not in header:
             if "task" not in t:
                 print("ERROR: Unexpected dataset without a parent task at %s:#%d" %
                       (md_file, get_line_no(sections, section_index)), file=sys.stderr)
@@ -261,11 +290,14 @@ def parse_markdown_file(md_file:str) -> List:
 
             ds["dataset"] = header[3:].strip()
             # dataset description is everything that's not a table
-            ds["description"] = "".join([s for s in section[1:] if not s.startswith("|")]).strip()
+            desc, tables = extract_dataset_desc_and_sota_table(section[1:])
+            ds["description"] = "".join(desc).strip()
 
-            table_lines = [s for s in section if s.startswith("|")]
-            if table_lines:
-                ds["sota"] = extract_sota_table(table_lines)
+            if tables:
+                if len(tables) > 1:
+                    print("ERROR: Multiple tables found, using just the first one...", file=sys.stderr)
+                    print(tables)
+                ds["sota"] = extract_sota_table(tables[0])
 
     if t:
         parsed_out.append(t)
@@ -293,14 +325,17 @@ def parse_markdown_directory(path:str):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("languages", nargs="+", type=str)
-    parser.add_argument("--output", default="export.json", type=str)
+    parser.add_argument("paths", nargs="+", type=str, help="Files or directories to convert")
+    parser.add_argument("--output", default="structured.json", type=str, help="Output JSON file name")
 
     args = parser.parse_args()
 
     out = []
-    for language in args.languages:
-        out.extend(parse_markdown_directory(language))
+    for path in args.paths:
+        if os.path.isdir(path):
+            out.extend(parse_markdown_directory(path))
+        else:
+            out.extend(parse_markdown_file(path))
 
     with open(args.output, "w") as f:
         f.write(json.dumps(out, indent=2))
