@@ -133,6 +133,7 @@ These are tasks and datasets that are still missing:
 - Knowledge base population (KBP)
 - More dialogue tasks
 - Semi-supervised learning
+- Frame-semantic parsing (FrameNet full-sentence analysis)
 
 ### Instructions for building the site locally
 
