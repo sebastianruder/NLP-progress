@@ -54,12 +54,13 @@ consists of around 2 million words extracted from Wikipedia articles.
 | Model           | Validation perplexity | Test perplexity |  Paper / Source | Code |
 | ------------- | :-----:| :-----:| --- | --- |
 | Transformer-XL Large (Dai et al., 2018) ***under review*** | 18.2 | 18.9 | 257M | [Transformer-XL: Language Modeling with Longer-Term Dependency](https://openreview.net/pdf?id=HJePno0cYm) ||
+| Transformer with tied adaptive inputs and outputs (Baevski and Auli, 2018) | 19.8 | 20.5 | 247M | [Adaptive Input Representations for Neural Language Modeling](https://arxiv.org/pdf/1809.10853.pdf) | [Link](https://github.com/AranKomat/adapinp) |
 | Transformer-XL Standard (Dai et al., 2018) ***under review*** | 23.1 | 24.0 | 151M | [Transformer-XL: Language Modeling with Longer-Term Dependency](https://openreview.net/pdf?id=HJePno0cYm) ||
 | LSTM + Hebbian + Cache + MbPA (Rae et al., 2018) | 29.0 | 29.2 | [Fast Parametric Learning with Activation Memorization](http://arxiv.org/abs/1803.10049) ||
 | LSTM + Hebbian (Rae et al., 2018) | 34.1 | 34.3 | [Fast Parametric Learning with Activation Memorization](http://arxiv.org/abs/1803.10049) ||
 | LSTM (Rae et al., 2018) | 36.0 | 36.4 | [Fast Parametric Learning with Activation Memorization](http://arxiv.org/abs/1803.10049) ||
 | Gated CNN (Dauphin et al., 2016) | - | 37.2 | [Language modeling with gated convolutional networks](https://arxiv.org/abs/1612.08083) ||
-| Neural cache model (size = 2,000) (Grave et al., 2017) | - | 40.8 | [Improving Neural Language Models with a Continuous Cache](https://arxiv.org/pdf/1612.04426.pdf) ||
+| Neural cache model (size = 2,000) (Grave et al., 2017) | - | 40.8 | [Improving Neural Language Models with a Continuous Cache](https://arxiv.org/pdf/1612.04426.pdf) | [Link](https://github.com/kaishengtai/torch-ntm) |
 | Temporal CNN (Bai et al., 2018) | - | 45.2 | [Convolutional sequence modeling revisited](https://openreview.net/forum?id=BJEX-H1Pf) ||
 | LSTM (Grave et al., 2017) | - | 48.7 | [Improving Neural Language Models with a Continuous Cache](https://arxiv.org/pdf/1612.04426.pdf) | [Link](https://github.com/kaishengtai/torch-ntm) |
 
@@ -76,7 +77,6 @@ Within these 100 million bytes are 205 unique tokens.
 | 24-layer Transformer-XL (Dai et al., 2018) ***under review*** | 0.99 | 277M | [Transformer-XL: Language Modeling with Longer-Term Dependency](https://openreview.net/pdf?id=HJePno0cYm) ||
 | 18-layer Transformer-XL (Dai et al., 2018) ***under review*** | 1.03 | 88M | [Transformer-XL: Language Modeling with Longer-Term Dependency](https://openreview.net/pdf?id=HJePno0cYm) ||
 | 64-layer Character Transformer Model (Al-Rfou et al., 2018) | 1.06 | 235M | [Character-Level Language Modeling with Deeper Self-Attention](https://arxiv.org/abs/1808.04444) ||
-| Character Transformer Model (Al-Rfou et al., 2018) | 1.06 | 235M | [Character-Level Language Modeling with Deeper Self-Attention](https://arxiv.org/abs/1808.04444) ||
 | mLSTM + dynamic eval (Krause et al., 2017)* | 1.08 | 46M | [Dynamic Evaluation of Neural Sequence Models](https://arxiv.org/abs/1709.07432) | [Official](https://github.com/benkrause/dynamic-evaluation) |
 | 12-layer Character Transformer Model (Al-Rfou et al., 2018) | 1.11 | 44M | [Character-Level Language Modeling with Deeper Self-Attention](https://arxiv.org/abs/1808.04444) ||
 | 3-layer AWD-LSTM (Merity et al., 2018)  | 1.232 | 47M | [An Analysis of Neural Language Modeling at Multiple Scales](https://arxiv.org/abs/1803.08240) | [Official](https://github.com/salesforce/awd-lstm-lm) |
