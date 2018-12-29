@@ -54,7 +54,7 @@ consists of around 2 million words extracted from Wikipedia articles.
 | Model           | Validation perplexity | Test perplexity | Number of params | Paper / Source | Code |
 | ------------- | :---:| :---:| :---:| -------- | --- |
 | Transformer-XL Large (Dai et al., 2018) ***under review*** | 18.2 | 18.9 | 257M | [Transformer-XL: Language Modeling with Longer-Term Dependency](https://openreview.net/pdf?id=HJePno0cYm) ||
-| Transformer with tied adaptive inputs and outputs (Baevski and Auli, 2018) | 19.8 | 20.5 | 247M | [Adaptive Input Representations for Neural Language Modeling](https://arxiv.org/pdf/1809.10853.pdf) | [Link](https://github.com/AranKomat/adapinp) |
+| Transformer with tied adaptive embeddings (Baevski and Auli, 2018) | 19.8 | 20.5 | 247M | [Adaptive Input Representations for Neural Language Modeling](https://arxiv.org/pdf/1809.10853.pdf) | [Link](https://github.com/AranKomat/adapinp) |
 | Transformer-XL Standard (Dai et al., 2018) ***under review*** | 23.1 | 24.0 | 151M | [Transformer-XL: Language Modeling with Longer-Term Dependency](https://openreview.net/pdf?id=HJePno0cYm) ||
 | LSTM + Hebbian + Cache + MbPA (Rae et al., 2018) | 29.0 | 29.2 | | [Fast Parametric Learning with Activation Memorization](http://arxiv.org/abs/1803.10049) ||
 | LSTM + Hebbian (Rae et al., 2018) | 34.1 | 34.3 | | [Fast Parametric Learning with Activation Memorization](http://arxiv.org/abs/1803.10049) ||
@@ -64,6 +64,21 @@ consists of around 2 million words extracted from Wikipedia articles.
 | Temporal CNN (Bai et al., 2018) | - | 45.2 | | [Convolutional sequence modeling revisited](https://openreview.net/forum?id=BJEX-H1Pf) ||
 | LSTM (Grave et al., 2017) | - | 48.7 | | [Improving Neural Language Models with a Continuous Cache](https://arxiv.org/pdf/1612.04426.pdf) | [Link](https://github.com/kaishengtai/torch-ntm) |
 
+### 1B Words / Google Billion Word benchmark
+
+[The One-Billion Word benchmark](https://arxiv.org/pdf/1312.3005.pdf) is a large dataset derived from a news-commentary site.
+The dataset consists of 829,250,940 tokens over a vocabulary of 793,471 words.
+Importantly, sentences in this model are shuffled and hence context is limited.
+
+| Model         | Test perplexity | Number of params | Paper / Source | Code |
+| ------------- | :-----:| :-----:| --------- | --- |
+| Transformer-XL Large (Dai et al., 2018) ***under review*** | 23.5 | 0.46B | [Transformer-XL: Language Modeling with Longer-Term Dependency](https://openreview.net/pdf?id=HJePno0cYm) ||
+| 10 LSTM+CNN inputs + SNM10-SKIP (Jozefowicz et al., 2016) ***ensemble*** | 23.7 | 43B? | [Exploring the Limits of Language Modeling](https://arxiv.org/pdf/1602.02410.pdf) | [Official](https://github.com/rafaljozefowicz/lm) |
+| Transformer with shared adaptive embeddings (Baevski and Auli, 2018) | 24.1 | 0.46B | [Adaptive Input Representations for Neural Language Modeling](https://arxiv.org/pdf/1809.10853.pdf) | [Link](https://github.com/AranKomat/adapinp) 
+| Big LSTM+CNN inputs (Jozefowicz et al., 2016) | 30.0 | 1.04B | [Exploring the Limits of Language Modeling](https://arxiv.org/pdf/1602.02410.pdf) ||
+| BIGLSTM baseline (Kuchaiev and Ginsburg, 2018) | 35.1 | 0.151B | [Factorization tricks for LSTM networks](https://arxiv.org/pdf/1703.10722.pdf) | [Official](https://github.com/okuchaiev/f-lm) |
+| BIG F-LSTM F512 (Kuchaiev and Ginsburg, 2018) | 36.3 | 0.052B | [Factorization tricks for LSTM networks](https://arxiv.org/pdf/1703.10722.pdf) | [Official](https://github.com/okuchaiev/f-lm) |
+| BIG G-LSTM G-8 (Kuchaiev and Ginsburg, 2018) | 39.4 | 0.035B | [Factorization tricks for LSTM networks](https://arxiv.org/pdf/1703.10722.pdf) | [Official](https://github.com/okuchaiev/f-lm) |
 
 
 ## Character Level Models
