@@ -69,9 +69,10 @@ Within these 100 million bytes are 205 unique tokens.
 
 | Model           | Bit per Character (BPC) |  Number of params | Paper / Source |
 | ---------------- | :-----: | :-----: | --- |
-| Character Transformer Model (Al-Rfou et al., 2018) | 1.06 | 235M | [Character-Level Language Modeling with Deeper Self-Attention](https://arxiv.org/abs/1808.04444)
+| 64-layer Character Transformer Model (Al-Rfou et al., 2018) | 1.06 | 235M | [Character-Level Language Modeling with Deeper Self-Attention](https://arxiv.org/abs/1808.04444)
 | mLSTM + dynamic eval (Krause et al., 2017)* | 1.08 | 46M | [Dynamic Evaluation of Neural Sequence Models](https://arxiv.org/abs/1709.07432)
-| 3 layer AWD-LSTM (Merity et al., 2018)  | 1.232 | 47M | [An Analysis of Neural Language Modeling at Multiple Scales](https://arxiv.org/abs/1803.08240) |
+| 12-layer Character Transformer Model (Al-Rfou et al., 2018) | 1.11 | 44M | [Character-Level Language Modeling with Deeper Self-Attention](https://arxiv.org/abs/1808.04444)
+| 3-layer AWD-LSTM (Merity et al., 2018)  | 1.232 | 47M | [An Analysis of Neural Language Modeling at Multiple Scales](https://arxiv.org/abs/1803.08240) |
 | Large FS-LSTM-4 (Mujika et al., 2017) | 1.245 | 47M | [Fast-Slow Recurrent Neural Networks](https://arxiv.org/abs/1705.08639) |
 | Large mLSTM +emb +WN +VD (Krause et al., 2017) | 1.24 | 46M | [Multiplicative LSTM for sequence modelling](https://arxiv.org/abs/1609.07959)
 | FS-LSTM-4 (Mujika et al., 2017) | 1.277 | 27M | [Fast-Slow Recurrent Neural Networks](https://arxiv.org/abs/1705.08639) |
@@ -82,8 +83,9 @@ Within these 100 million bytes are 205 unique tokens.
 
 | Model           | Bit per Character (BPC) |  Number of params | Paper / Source |
 | ---------------- | :-----: | :-----: | --- |
-| Character Transformer Model (Al-Rfou et al., 2018) | 1.13 | 235M | [Character-Level Language Modeling with Deeper Self-Attention](https://arxiv.org/abs/1808.04444)
+| 64-layer Character Transformer Model (Al-Rfou et al., 2018) | 1.13 | 235M | [Character-Level Language Modeling with Deeper Self-Attention](https://arxiv.org/abs/1808.04444)
 | mLSTM + dynamic eval (Krause et al., 2017)* | 1.19 | 45M | [Dynamic Evaluation of Neural Sequence Models](https://arxiv.org/abs/1709.07432)
+| 12-layer Character Transformer Model (Al-Rfou et al., 2018) | 1.18 | 44M | [Character-Level Language Modeling with Deeper Self-Attention](https://arxiv.org/abs/1808.04444)
 | Large mLSTM +emb +WN +VD (Krause et al., 2016) | 1.27 | 45M | [Multiplicative LSTM for sequence modelling](https://arxiv.org/abs/1609.07959)
 | Large RHN (Zilly et al., 2016) | 1.27 | 46M | [Recurrent Highway Networks](https://arxiv.org/abs/1607.03474)
 | LayerNorm HM-LSTM (Chung et al., 2017) | 1.29 |  35M | [Hierarchical Multiscale Recurrent Neural Networks](https://arxiv.org/abs/1609.01704)
@@ -95,11 +97,11 @@ The vocabulary of the words in the character-level dataset is limited to 10 000 
 
 | Model           | Bit per Character (BPC) |  Number of params | Paper / Source |
 | ---------------- | :-----: | :-----: | --- |
-| 3 layer AWD-LSTM (Merity et al., 2018)  | 1.175 | 13.8M | [An Analysis of Neural Language Modeling at Multiple Scales](https://arxiv.org/abs/1803.08240) |
-| 6 layer QRNN (Merity et al., 2018)  | 1.187 | 13.8M | [An Analysis of Neural Language Modeling at Multiple Scales](https://arxiv.org/abs/1803.08240) |
+| 3-layer AWD-LSTM (Merity et al., 2018)  | 1.175 | 13.8M | [An Analysis of Neural Language Modeling at Multiple Scales](https://arxiv.org/abs/1803.08240) |
+| 6-layer QRNN (Merity et al., 2018)  | 1.187 | 13.8M | [An Analysis of Neural Language Modeling at Multiple Scales](https://arxiv.org/abs/1803.08240) |
 | FS-LSTM-4 (Mujika et al., 2017) | 1.190 | 27M | [Fast-Slow Recurrent Neural Networks](https://arxiv.org/abs/1705.08639) |
 | FS-LSTM-2 (Mujika et al., 2017) | 1.193 | 27M | [Fast-Slow Recurrent Neural Networks](https://arxiv.org/abs/1705.08639) |
 | NASCell (Zoph & Le, 2016) | 1.214 |  16.3M | [Neural Architecture Search with Reinforcement Learning](https://arxiv.org/abs/1611.01578)
-| 2-Layer Norm HyperLSTM (Ha et al., 2016) |  1.219 | 14.4M | [HyperNetworks](https://arxiv.org/abs/1609.09106)
+| 2-layer Norm HyperLSTM (Ha et al., 2016) |  1.219 | 14.4M | [HyperNetworks](https://arxiv.org/abs/1609.09106)
 
 [Go back to the README](../README.md)
