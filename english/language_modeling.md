@@ -22,9 +22,10 @@ per-word log-probability (lower is better).
 | ------------- | :-----:| :-----:| --- |
 | AWD-LSTM-MoS + dynamic eval (Yang et al., 2018)* | 48.33 | 47.69 | [Breaking the Softmax Bottleneck: A High-Rank RNN Language Model](https://arxiv.org/abs/1711.03953) |
 | AWD-LSTM + dynamic eval (Krause et al., 2017)* | 51.6 | 51.1 | [Dynamic Evaluation of Neural Sequence Models](https://arxiv.org/abs/1709.07432) |
-| AWD-LSTM + continuous cache pointer (Merity et al., 2017)* | 53.9 | 52.8 | [Regularizing and Optimizing LSTM Language Models](https://arxiv.org/abs/1708.02182) | 
+| AWD-LSTM + continuous cache pointer (Merity et al., 2017)* | 53.9 | 52.8 | [Regularizing and Optimizing LSTM Language Models](https://arxiv.org/abs/1708.02182) |
 | AWD-LSTM-DOC (Takase et al., 2018) | 54.12 | 52.38 | [Direct Output Connection for a High-Rank Language Model](https://arxiv.org/abs/1808.10143) |
 | AWD-LSTM-MoS (Yang et al., 2018) | 56.54 | 54.44 | [Breaking the Softmax Bottleneck: A High-Rank RNN Language Model](https://arxiv.org/abs/1711.03953) |
+| Transformer-XL (Dai et al., 2018) ***under review*** | 56.72 | 54.55 | [Transformer-XL: Language Modeling with Longer-Term Dependency](https://openreview.net/pdf?id=HJePno0cYm) |
 | AWD-LSTM (Merity et al., 2017) | 60.0 | 57.3 | [Regularizing and Optimizing LSTM Language Models](https://arxiv.org/abs/1708.02182) | 
 
 ### WikiText-2
@@ -50,25 +51,29 @@ consists of around 2 million words extracted from Wikipedia articles.
   results=site.data.language_modeling.Word_Level.WikiText_103
   scores='Validation perplexity,Test perplexity' %}
   
-| Model           | Validation perplexity | Test perplexity |  Paper / Source | Code |
-| ------------- | :-----:| :-----:| --- | --- |
-| LSTM + Hebbian + Cache + MbPA (Rae et al., 2018) | 29.0 | 29.2 | [Fast Parametric Learning with Activation Memorization](http://arxiv.org/abs/1803.10049) | |
-| LSTM + Hebbian (Rae et al., 2018) | 34.1 | 34.3 | [Fast Parametric Learning with Activation Memorization](http://arxiv.org/abs/1803.10049) | |
-| LSTM (Rae et al., 2018) | 36.0 | 36.4 | [Fast Parametric Learning with Activation Memorization](http://arxiv.org/abs/1803.10049) | |
-| Gated CNN (Dauphin et al., 2016) | - | 37.2 | [Language modeling with gated convolutional networks](https://arxiv.org/abs/1612.08083) | | 
-| Temporal CNN (Bai et al., 2018) | - | 45.2 | [Convolutional sequence modeling revisited](https://openreview.net/forum?id=BJEX-H1Pf) | |
-| LSTM (Graves et al., 2014) | - | 48.7 | [Neural turing machines](https://arxiv.org/abs/1410.5401) | |
+| Model           | Validation perplexity | Test perplexity | Number of params | Paper / Source | Code |
+| ------------- | :-----: | :-----: | :-----: | --- | --- |
+| Transformer-XL Large (Dai et al., 2018) ***under review*** | 18.2 | 18.9 | 257M | [Transformer-XL: Language Modeling with Longer-Term Dependency](https://openreview.net/pdf?id=HJePno0cYm) ||
+| Transformer-XL Standard (Dai et al., 2018) ***under review*** | 23.1 | 24.0 | 151M | [Transformer-XL: Language Modeling with Longer-Term Dependency](https://openreview.net/pdf?id=HJePno0cYm) ||
+| LSTM + Hebbian + Cache + MbPA (Rae et al., 2018) | 29.0 | 29.2 | | [Fast Parametric Learning with Activation Memorization](http://arxiv.org/abs/1803.10049) | |
+| LSTM + Hebbian (Rae et al., 2018) | 34.1 | 34.3 | | [Fast Parametric Learning with Activation Memorization](http://arxiv.org/abs/1803.10049) | |
+| LSTM (Rae et al., 2018) | 36.0 | 36.4 | | [Fast Parametric Learning with Activation Memorization](http://arxiv.org/abs/1803.10049) | |
+| Gated CNN (Dauphin et al., 2016) | - | 37.2 | | [Language modeling with gated convolutional networks](https://arxiv.org/abs/1612.08083) | | 
+| Temporal CNN (Bai et al., 2018) | - | 45.2 | | [Convolutional sequence modeling revisited](https://openreview.net/forum?id=BJEX-H1Pf) | |
+| LSTM (Graves et al., 2014) | - | 48.7 | | [Neural turing machines](https://arxiv.org/abs/1410.5401) | |
 
 ## Character Level Models
 
 ### Hutter Prize
 
-[The Hutter Prize](http://prize.hutter1.net) Wikipedia dataset, also known as enwik8, is a byte-level dataset consisting of the
+[The Hutter Prize](http://prize.hutter1.net) Wikipedia dataset, also known as enwiki8, is a byte-level dataset consisting of the
 first 100 million bytes of a Wikipedia XML dump. For simplicity we shall refer to it as a character-level dataset.
 Within these 100 million bytes are 205 unique tokens.
 
 | Model           | Bit per Character (BPC) |  Number of params | Paper / Source |
 | ---------------- | :-----: | :-----: | --- |
+| 24-layer Transformer-XL (Dai et al., 2018) ***under review*** | 0.99 | 277M | [Transformer-XL: Language Modeling with Longer-Term Dependency](https://openreview.net/pdf?id=HJePno0cYm) ||
+| 18-layer Transformer-XL (Dai et al., 2018) ***under review*** | 1.03 | 88M | [Transformer-XL: Language Modeling with Longer-Term Dependency](https://openreview.net/pdf?id=HJePno0cYm) ||
 | Character Transformer Model (Al-Rfou et al., 2018) | 1.06 | 235M | [Character-Level Language Modeling with Deeper Self-Attention](https://arxiv.org/abs/1808.04444)
 | mLSTM + dynamic eval (Krause et al., 2017)* | 1.08 | 46M | [Dynamic Evaluation of Neural Sequence Models](https://arxiv.org/abs/1709.07432)
 | 3 layer AWD-LSTM (Merity et al., 2018)  | 1.232 | 47M | [An Analysis of Neural Language Modeling at Multiple Scales](https://arxiv.org/abs/1803.08240) |
