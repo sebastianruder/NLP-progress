@@ -2,14 +2,14 @@
 
 Language modeling is the task of predicting the next word or character in a document.
 
-\* Indicates models using dynamic evaluation.
+\* indicates models using dynamic evaluation; where, at test time, models may adapt to seen tokens in order to improve performance on following tokens. ([Mikolov et al., (2010)](https://www.fit.vutbr.cz/research/groups/speech/publi/2010/mikolov_interspeech2010_IS100722.pdf), [Kraus et al., (2017)](https://arxiv.org/pdf/1709.07432))
 
 ## Word Level Models
 
 ### Penn Treebank
 
 A common evaluation dataset for language modeling ist the Penn Treebank,
-as pre-processed by [Mikolov et al. (2010)](http://www.fit.vutbr.cz/research/groups/speech/publi/2010/mikolov_interspeech2010_IS100722.pdf).
+as pre-processed by [Mikolov et al., (2010)](http://www.fit.vutbr.cz/research/groups/speech/publi/2010/mikolov_interspeech2010_IS100722.pdf).
 The dataset consists of 929k training words, 73k validation words, and
 82k test words. As part of the pre-processing, words were lower-cased, numbers
 were replaced with N, newlines were replaced with `<eos>`,
