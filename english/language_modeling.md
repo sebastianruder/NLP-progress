@@ -25,7 +25,7 @@ per-word log-probability (lower is better).
 | AWD-LSTM + continuous cache pointer (Merity et al., 2017)* | 53.9 | 52.8 | [Regularizing and Optimizing LSTM Language Models](https://arxiv.org/abs/1708.02182) |
 | AWD-LSTM-DOC (Takase et al., 2018) | 54.12 | 52.38 | [Direct Output Connection for a High-Rank Language Model](https://arxiv.org/abs/1808.10143) |
 | AWD-LSTM-MoS (Yang et al., 2018) | 56.54 | 54.44 | [Breaking the Softmax Bottleneck: A High-Rank RNN Language Model](https://arxiv.org/abs/1711.03953) |
-| Under review: Transformer-XL | 56.72 | 54.55 | [Transformer-XL: Language Modeling with Longer-Term Dependency](https://openreview.net/pdf?id=HJePno0cYm) ||
+| Under review: Transformer-XL | 56.72 | 54.55 | [Transformer-XL: Language Modeling with Longer-Term Dependency](https://openreview.net/pdf?id=HJePno0cYm) |
 | AWD-LSTM (Merity et al., 2017) | 60.0 | 57.3 | [Regularizing and Optimizing LSTM Language Models](https://arxiv.org/abs/1708.02182) | 
 
 ### WikiText-2
@@ -51,7 +51,7 @@ consists of around 2 million words extracted from Wikipedia articles.
   results=site.data.language_modeling.Word_Level.WikiText_103
   scores='Validation perplexity,Test perplexity' %}
   
-| Model           | Validation perplexity | Test perplexity | #Params | Paper / Source | Code |
+| Model           | Validation perplexity | Test perplexity | Number of params | Paper / Source | Code |
 | ------------- | :-----: | :-----: | :-----: | --- | --- |
 | Under review: Transformer-XL Large (Dai et al., 2018) | 18.2 | 18.9 | 257M | [Transformer-XL: Language Modeling with Longer-Term Dependency](https://openreview.net/pdf?id=HJePno0cYm) ||
 | Under review: Transformer-XL Standard (Dai et al., 2018) | 23.1 | 24.0 | 151M | [Transformer-XL: Language Modeling with Longer-Term Dependency](https://openreview.net/pdf?id=HJePno0cYm) ||
