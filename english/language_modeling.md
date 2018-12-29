@@ -50,17 +50,18 @@ consists of around 2 million words extracted from Wikipedia articles.
 {% include table.html
   results=site.data.language_modeling.Word_Level.WikiText_103
   scores='Validation perplexity,Test perplexity' %}
-  
+
 | Model           | Validation perplexity | Test perplexity |  Paper / Source | Code |
-| ------------- | :-----:| :-----: | -------------- | ---- |
+| ------------- | :-----:| :-----:| --- | --- |
 | Transformer-XL Large (Dai et al., 2018) ***under review*** | 18.2 | 18.9 | 257M | [Transformer-XL: Language Modeling with Longer-Term Dependency](https://openreview.net/pdf?id=HJePno0cYm) ||
 | Transformer-XL Standard (Dai et al., 2018) ***under review*** | 23.1 | 24.0 | 151M | [Transformer-XL: Language Modeling with Longer-Term Dependency](https://openreview.net/pdf?id=HJePno0cYm) ||
 | LSTM + Hebbian + Cache + MbPA (Rae et al., 2018) | 29.0 | 29.2 | [Fast Parametric Learning with Activation Memorization](http://arxiv.org/abs/1803.10049) ||
 | LSTM + Hebbian (Rae et al., 2018) | 34.1 | 34.3 | [Fast Parametric Learning with Activation Memorization](http://arxiv.org/abs/1803.10049) ||
 | LSTM (Rae et al., 2018) | 36.0 | 36.4 | [Fast Parametric Learning with Activation Memorization](http://arxiv.org/abs/1803.10049) ||
 | Gated CNN (Dauphin et al., 2016) | - | 37.2 | [Language modeling with gated convolutional networks](https://arxiv.org/abs/1612.08083) ||
+| Neural cache model (size = 2,000) (Grave et al., 2017) | - | 40.8 | [Improving Neural Language Models with a Continuous Cache](https://arxiv.org/pdf/1612.04426.pdf) ||
 | Temporal CNN (Bai et al., 2018) | - | 45.2 | [Convolutional sequence modeling revisited](https://openreview.net/forum?id=BJEX-H1Pf) ||
-| LSTM (Graves et al., 2014) | - | 48.7 | [Neural turing machines](https://arxiv.org/abs/1410.5401) | [Link](https://github.com/kaishengtai/torch-ntm) |
+| LSTM (Grave et al., 2017) | - | 48.7 | [Improving Neural Language Models with a Continuous Cache](https://arxiv.org/pdf/1612.04426.pdf) | [Link](https://github.com/kaishengtai/torch-ntm) |
 
 ## Character Level Models
 
