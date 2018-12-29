@@ -56,8 +56,9 @@ consists of around 2 million words extracted from Wikipedia articles.
 | LSTM + Hebbian (Rae et al., 2018) | 34.1 | 34.3 | [Fast Parametric Learning with Activation Memorization](http://arxiv.org/abs/1803.10049) | |
 | LSTM (Rae et al., 2018) | 36.0 | 36.4 | [Fast Parametric Learning with Activation Memorization](http://arxiv.org/abs/1803.10049) | |
 | Gated CNN (Dauphin et al., 2016) | - | 37.2 | [Language modeling with gated convolutional networks](https://arxiv.org/abs/1612.08083) | | 
+| Neural cache model (size = 2,000) (Graves et al., 2017) | - | 40.8 | [Improving Neural Language Models with a Continuous Cache](https://arxiv.org/pdf/1612.04426.pdf) | |
 | Temporal CNN (Bai et al., 2018) | - | 45.2 | [Convolutional sequence modeling revisited](https://openreview.net/forum?id=BJEX-H1Pf) | |
-| LSTM (Graves et al., 2014) | - | 48.7 | [Neural turing machines](https://arxiv.org/abs/1410.5401) | |
+| LSTM (Graves et al., 2017) | - | 48.7 | [Improving Neural Language Models with a Continuous Cache](https://arxiv.org/pdf/1612.04426.pdf) | |
 
 ## Character Level Models
 
