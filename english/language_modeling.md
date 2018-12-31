@@ -18,15 +18,16 @@ the most frequent 10k words with the rest of the tokens replaced by an `<unk>` t
 Models are evaluated based on perplexity, which is the average
 per-word log-probability (lower is better).
 
-| Model           | Validation perplexity | Test perplexity |  Paper / Source | Code |
-| ------------- | :-----:| :-----: | -------------- | ---- |
-| AWD-LSTM-MoS + dynamic eval (Yang et al., 2018)* | 48.33 | 47.69 | [Breaking the Softmax Bottleneck: A High-Rank RNN Language Model](https://arxiv.org/abs/1711.03953) | [Official](https://github.com/zihangdai/mos) |
-| AWD-LSTM + dynamic eval (Krause et al., 2017)* | 51.6 | 51.1 | [Dynamic Evaluation of Neural Sequence Models](https://arxiv.org/abs/1709.07432) | [Official](https://github.com/benkrause/dynamic-evaluation) |
-| AWD-LSTM + continuous cache pointer (Merity et al., 2017)* | 53.9 | 52.8 | [Regularizing and Optimizing LSTM Language Models](https://arxiv.org/abs/1708.02182) | [Official](https://github.com/salesforce/awd-lstm-lm) |
-| AWD-LSTM-DOC (Takase et al., 2018) | 54.12 | 52.38 | [Direct Output Connection for a High-Rank Language Model](https://arxiv.org/abs/1808.10143) | [Official](https://github.com/nttcslab-nlp/doc_lm) |
-| AWD-LSTM-MoS (Yang et al., 2018) | 56.54 | 54.44 | [Breaking the Softmax Bottleneck: A High-Rank RNN Language Model](https://arxiv.org/abs/1711.03953) | [Official](https://github.com/zihangdai/mos) |
-| Transformer-XL (Dai et al., 2018) ***under review*** | 56.72 | 54.55 | [Transformer-XL: Language Modeling with Longer-Term Dependency](https://openreview.net/pdf?id=HJePno0cYm) ||
-| AWD-LSTM (Merity et al., 2017) | 60.0 | 57.3 | [Regularizing and Optimizing LSTM Language Models](https://arxiv.org/abs/1708.02182) | [Official](https://github.com/salesforce/awd-lstm-lm) |
+| Model           | Validation perplexity | Test perplexity | Number of params |  Paper / Source | Code |
+| ------------- | :-----:| :-----: | :-----: | -------------- | ---- |
+| AWD-LSTM-DOC x5 (Takase et al., 2018) | 48.63 | 47.17 | 185M | [Direct Output Connection for a High-Rank Language Model](https://arxiv.org/abs/1808.10143) | [Official](https://github.com/nttcslab-nlp/doc_lm) |
+| AWD-LSTM-MoS + dynamic eval (Yang et al., 2018)* | 48.33 | 47.69 | 22M | [Breaking the Softmax Bottleneck: A High-Rank RNN Language Model](https://arxiv.org/abs/1711.03953) | [Official](https://github.com/zihangdai/mos) |
+| AWD-LSTM + dynamic eval (Krause et al., 2017)* | 51.6 | 51.1 | 24M | [Dynamic Evaluation of Neural Sequence Models](https://arxiv.org/abs/1709.07432) | [Official](https://github.com/benkrause/dynamic-evaluation) |
+| AWD-LSTM + continuous cache pointer (Merity et al., 2017)* | 53.9 | 52.8 | 24M | [Regularizing and Optimizing LSTM Language Models](https://arxiv.org/abs/1708.02182) | [Official](https://github.com/salesforce/awd-lstm-lm) |
+| AWD-LSTM-DOC (Takase et al., 2018) | 54.12 | 52.38 | 23M | [Direct Output Connection for a High-Rank Language Model](https://arxiv.org/abs/1808.10143) | [Official](https://github.com/nttcslab-nlp/doc_lm) |
+| AWD-LSTM-MoS (Yang et al., 2018) | 56.54 | 54.44 | 22M | [Breaking the Softmax Bottleneck: A High-Rank RNN Language Model](https://arxiv.org/abs/1711.03953) | [Official](https://github.com/zihangdai/mos) |
+| Transformer-XL (Dai et al., 2018) ***under review*** | 56.72 | 54.55 | 24M | [Transformer-XL: Language Modeling with Longer-Term Dependency](https://openreview.net/pdf?id=HJePno0cYm) ||
+| AWD-LSTM (Merity et al., 2017) | 60.0 | 57.3 | 24M | [Regularizing and Optimizing LSTM Language Models](https://arxiv.org/abs/1708.02182) | [Official](https://github.com/salesforce/awd-lstm-lm) |
 
 ### WikiText-2
 
@@ -34,14 +35,15 @@ per-word log-probability (lower is better).
 benchmark for language modeling than the pre-processed Penn Treebank. WikiText-2
 consists of around 2 million words extracted from Wikipedia articles.
 
-| Model           | Validation perplexity | Test perplexity |  Paper / Source | Code |
-| ------------- | :-----:| :-----: | -------------- | ---- |
-| AWD-LSTM-MoS + dynamic eval (Yang et al., 2018)* | 42.41 | 40.68 | [Breaking the Softmax Bottleneck: A High-Rank RNN Language Model](https://arxiv.org/abs/1711.03953) | [Official](https://github.com/zihangdai/mos) |
-| AWD-LSTM + dynamic eval (Krause et al., 2017)* | 46.4 | 44.3 | [Dynamic Evaluation of Neural Sequence Models](https://arxiv.org/abs/1709.07432) | [Official](https://github.com/benkrause/dynamic-evaluation) |
-| AWD-LSTM + continuous cache pointer (Merity et al., 2017)* | 53.8 | 52.0 | [Regularizing and Optimizing LSTM Language Models](https://arxiv.org/abs/1708.02182) | [Official](https://github.com/salesforce/awd-lstm-lm) |
-| AWD-LSTM-DOC (Takase et al., 2018) | 60.29 | 58.03 | [Direct Output Connection for a High-Rank Language Model](https://arxiv.org/abs/1808.10143) | [Official](https://github.com/nttcslab-nlp/doc_lm) |
-| AWD-LSTM-MoS (Yang et al., 2018) | 63.88 | 61.45 | [Breaking the Softmax Bottleneck: A High-Rank RNN Language Model](https://arxiv.org/abs/1711.03953) | [Official](https://github.com/zihangdai/mos) |
-| AWD-LSTM (Merity et al., 2017) | 68.6 | 65.8 | [Regularizing and Optimizing LSTM Language Models](https://arxiv.org/abs/1708.02182) | [Official](https://github.com/salesforce/awd-lstm-lm) |
+| Model           | Validation perplexity | Test perplexity | Number of params | Paper / Source | Code |
+| ------------- | :-----:| :-----: | :-----: | -------------- | ---- |
+| AWD-LSTM-MoS + dynamic eval (Yang et al., 2018)* | 42.41 | 40.68 | 35M | [Breaking the Softmax Bottleneck: A High-Rank RNN Language Model](https://arxiv.org/abs/1711.03953) | [Official](https://github.com/zihangdai/mos) |
+| AWD-LSTM + dynamic eval (Krause et al., 2017)* | 46.4 | 44.3 | 33M | [Dynamic Evaluation of Neural Sequence Models](https://arxiv.org/abs/1709.07432) | [Official](https://github.com/benkrause/dynamic-evaluation) |
+| AWD-LSTM + continuous cache pointer (Merity et al., 2017)* | 53.8 | 52.0 | 33M | [Regularizing and Optimizing LSTM Language Models](https://arxiv.org/abs/1708.02182) | [Official](https://github.com/salesforce/awd-lstm-lm) |
+| AWD-LSTM-DOC x5 (Takase et al., 2018) | 54.19 | 53.09 | 185M | [Direct Output Connection for a High-Rank Language Model](https://arxiv.org/abs/1808.10143) | [Official](https://github.com/nttcslab-nlp/doc_lm) |
+| AWD-LSTM-DOC (Takase et al., 2018) | 60.29 | 58.03 | 37M | [Direct Output Connection for a High-Rank Language Model](https://arxiv.org/abs/1808.10143) | [Official](https://github.com/nttcslab-nlp/doc_lm) |
+| AWD-LSTM-MoS (Yang et al., 2018) | 63.88 | 61.45 | 35M | [Breaking the Softmax Bottleneck: A High-Rank RNN Language Model](https://arxiv.org/abs/1711.03953) | [Official](https://github.com/zihangdai/mos) |
+| AWD-LSTM (Merity et al., 2017) | 68.6 | 65.8 | 33M | [Regularizing and Optimizing LSTM Language Models](https://arxiv.org/abs/1708.02182) | [Official](https://github.com/salesforce/awd-lstm-lm) |
 
 ### WikiText-103
 
