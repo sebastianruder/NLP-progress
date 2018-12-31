@@ -27,6 +27,7 @@ per-word log-probability (lower is better).
 | AWD-LSTM-DOC (Takase et al., 2018) | 54.12 | 52.38 | 23M | [Direct Output Connection for a High-Rank Language Model](https://arxiv.org/abs/1808.10143) | [Official](https://github.com/nttcslab-nlp/doc_lm) |
 | AWD-LSTM-MoS (Yang et al., 2018) | 56.54 | 54.44 | 22M | [Breaking the Softmax Bottleneck: A High-Rank RNN Language Model](https://arxiv.org/abs/1711.03953) | [Official](https://github.com/zihangdai/mos) |
 | Transformer-XL (Dai et al., 2018) ***under review*** | 56.72 | 54.55 | 24M | [Transformer-XL: Language Modeling with Longer-Term Dependency](https://openreview.net/pdf?id=HJePno0cYm) ||
+| AWD-LSTM 3-layer with Fraternal dropout (Zołna et al., 2018) |  58.9 | 56.8 | 24M | [Fraternal dropout](https://arxiv.org/pdf/1711.00066.pdf) | [Official](https://github.com/kondiz/fraternal-dropout) |
 | AWD-LSTM (Merity et al., 2017) | 60.0 | 57.3 | 24M | [Regularizing and Optimizing LSTM Language Models](https://arxiv.org/abs/1708.02182) | [Official](https://github.com/salesforce/awd-lstm-lm) |
 
 ### WikiText-2
@@ -43,6 +44,7 @@ consists of around 2 million words extracted from Wikipedia articles.
 | AWD-LSTM-DOC x5 (Takase et al., 2018) | 54.19 | 53.09 | 185M | [Direct Output Connection for a High-Rank Language Model](https://arxiv.org/abs/1808.10143) | [Official](https://github.com/nttcslab-nlp/doc_lm) |
 | AWD-LSTM-DOC (Takase et al., 2018) | 60.29 | 58.03 | 37M | [Direct Output Connection for a High-Rank Language Model](https://arxiv.org/abs/1808.10143) | [Official](https://github.com/nttcslab-nlp/doc_lm) |
 | AWD-LSTM-MoS (Yang et al., 2018) | 63.88 | 61.45 | 35M | [Breaking the Softmax Bottleneck: A High-Rank RNN Language Model](https://arxiv.org/abs/1711.03953) | [Official](https://github.com/zihangdai/mos) |
+| AWD-LSTM 3-layer with Fraternal dropout (Zołna et al., 2018) |  66.8 | 64.1 | 34M | [Fraternal dropout](https://arxiv.org/pdf/1711.00066.pdf) | [Official](https://github.com/kondiz/fraternal-dropout) |
 | AWD-LSTM (Merity et al., 2017) | 68.6 | 65.8 | 33M | [Regularizing and Optimizing LSTM Language Models](https://arxiv.org/abs/1708.02182) | [Official](https://github.com/salesforce/awd-lstm-lm) |
 
 ### WikiText-103
