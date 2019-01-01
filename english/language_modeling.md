@@ -51,10 +51,6 @@ consists of around 2 million words extracted from Wikipedia articles.
 
 [WikiText-103](https://arxiv.org/abs/1609.07843) The WikiText-103 corpus contains 267,735 unique words and each word occurs at least three times in the training set.
 
-{% include table.html
-  results=site.data.language_modeling.Word_Level.WikiText_103
-  scores='Validation perplexity,Test perplexity' %}
-
 | Model           | Validation perplexity | Test perplexity | Number of params | Paper / Source | Code |
 | ------------- | :---:| :---:| :---:| -------- | --- |
 | Transformer-XL Large (Dai et al., 2018) ***under review*** | 18.2 | 18.9 | 257M | [Transformer-XL: Language Modeling with Longer-Term Dependency](https://openreview.net/pdf?id=HJePno0cYm) ||
