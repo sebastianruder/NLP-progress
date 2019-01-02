@@ -93,6 +93,7 @@ Within these 100 million bytes are 205 unique tokens.
 | ---------------- | :-----: | :-----: | -------------- | ---- |
 | 24-layer Transformer-XL (Dai et al., 2018) ***under review*** | 0.99 | 277M | [Transformer-XL: Language Modeling with Longer-Term Dependency](https://openreview.net/pdf?id=HJePno0cYm) ||
 | 18-layer Transformer-XL (Dai et al., 2018) ***under review*** | 1.03 | 88M | [Transformer-XL: Language Modeling with Longer-Term Dependency](https://openreview.net/pdf?id=HJePno0cYm) ||
+| 12-layer Transformer-XL (Dai et al., 2018) ***under review*** | 1.06 | 41M | [Transformer-XL: Language Modeling with Longer-Term Dependency](https://openreview.net/pdf?id=HJePno0cYm) ||
 | 64-layer Character Transformer Model (Al-Rfou et al., 2018) | 1.06 | 235M | [Character-Level Language Modeling with Deeper Self-Attention](https://arxiv.org/abs/1808.04444) ||
 | mLSTM + dynamic eval (Krause et al., 2017)* | 1.08 | 46M | [Dynamic Evaluation of Neural Sequence Models](https://arxiv.org/abs/1709.07432) | [Official](https://github.com/benkrause/dynamic-evaluation) |
 | 12-layer Character Transformer Model (Al-Rfou et al., 2018) | 1.11 | 44M | [Character-Level Language Modeling with Deeper Self-Attention](https://arxiv.org/abs/1808.04444) ||
