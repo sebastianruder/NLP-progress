@@ -76,6 +76,7 @@ Importantly, sentences in this model are shuffled and hence context is limited.
 | 10 LSTM+CNN inputs + SNM10-SKIP (Jozefowicz et al., 2016) ***ensemble*** | 23.7 | 43B? | [Exploring the Limits of Language Modeling](https://arxiv.org/pdf/1602.02410.pdf) | [Official](https://github.com/rafaljozefowicz/lm) |
 | Transformer with shared adaptive embeddings (Baevski and Auli, 2018) | 24.1 | 0.46B | [Adaptive Input Representations for Neural Language Modeling](https://arxiv.org/pdf/1809.10853.pdf) | [Link](https://github.com/AranKomat/adapinp) 
 | Big LSTM+CNN inputs (Jozefowicz et al., 2016) | 30.0 | 1.04B | [Exploring the Limits of Language Modeling](https://arxiv.org/pdf/1602.02410.pdf) ||
+| Gated CNN-14Bottleneck (Dauphin et al., 2017) | 31.9 | ? | [Language Modeling with Gated Convolutional Networks](https://arxiv.org/pdf/1612.08083.pdf) ||
 | BIGLSTM baseline (Kuchaiev and Ginsburg, 2018) | 35.1 | 0.151B | [Factorization tricks for LSTM networks](https://arxiv.org/pdf/1703.10722.pdf) | [Official](https://github.com/okuchaiev/f-lm) |
 | BIG F-LSTM F512 (Kuchaiev and Ginsburg, 2018) | 36.3 | 0.052B | [Factorization tricks for LSTM networks](https://arxiv.org/pdf/1703.10722.pdf) | [Official](https://github.com/okuchaiev/f-lm) |
 | BIG G-LSTM G-8 (Kuchaiev and Ginsburg, 2018) | 39.4 | 0.035B | [Factorization tricks for LSTM networks](https://arxiv.org/pdf/1703.10722.pdf) | [Official](https://github.com/okuchaiev/f-lm) |
