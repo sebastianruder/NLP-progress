@@ -21,6 +21,7 @@ for testing. Models are evaluated based on F1.
 
 | Model           | F1 score  |  Paper / Source |
 | ------------- | :-----:| --- |
+| Flair embeddings (Akbik et al., 2018) | 96.72 | [Contextual String Embeddings for Sequence Labeling](http://aclweb.org/anthology/C18-1139) |
 | JMT (Hashimoto et al., 2017) | 95.77 | [A Joint Many-Task Model: Growing a Neural Network for Multiple NLP Tasks](https://www.aclweb.org/anthology/D17-1206) |
 | Low supervision (Søgaard and Goldberg, 2016) | 95.57 | [Deep multi-task learning with low level tasks supervised at lower layers](http://anthology.aclweb.org/P16-2038) |
 | Suzuki and Isozaki (2008) | 95.15 | [Semi-Supervised Sequential Labeling and Segmentation using Giga-word Scale Unlabeled Data](https://aclanthology.info/pdf/P/P08/P08-1076.pdf) | 
