@@ -105,6 +105,8 @@ Subtask A  results:
 to identify fine-grained polarity towards a specific aspect. The dataset consists of 5,215 sentences,
 3,862 of which contain a single target, and the remainder multiple targets.
 
+Dataset mirror: https://github.com/uclmr/jack/tree/master/data/sentihood
+
 | Model           | Aspect (F1) | Sentiment (acc) |  Paper / Source |  Code |
 | ------------- | :-----:| :-----:| --- | --- |
 | Liu et al. (2018) | 78.5 | 91.0 | [Recurrent Entity Networks with Delayed Memory Update for Targeted Aspect-based Sentiment Analysis](http://aclweb.org/anthology/N18-2045) | [Official](https://github.com/liufly/delayed-memory-update-entnet)
