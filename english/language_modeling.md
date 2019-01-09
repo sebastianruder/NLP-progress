@@ -25,8 +25,10 @@ per-word log-probability (lower is better).
 | AWD-LSTM + dynamic eval (Krause et al., 2017)* | 51.6 | 51.1 | 24M | [Dynamic Evaluation of Neural Sequence Models](https://arxiv.org/abs/1709.07432) | [Official](https://github.com/benkrause/dynamic-evaluation) |
 | AWD-LSTM + continuous cache pointer (Merity et al., 2017)* | 53.9 | 52.8 | 24M | [Regularizing and Optimizing LSTM Language Models](https://arxiv.org/abs/1708.02182) | [Official](https://github.com/salesforce/awd-lstm-lm) |
 | AWD-LSTM-DOC (Takase et al., 2018) | 54.12 | 52.38 | 23M | [Direct Output Connection for a High-Rank Language Model](https://arxiv.org/abs/1808.10143) | [Official](https://github.com/nttcslab-nlp/doc_lm) |
-| AWD-LSTM-MoS (Yang et al., 2018) | 56.54 | 54.44 | 22M | [Breaking the Softmax Bottleneck: A High-Rank RNN Language Model](https://arxiv.org/abs/1711.03953) | [Official](https://github.com/zihangdai/mos) |
+| Trellis Network (Bai et al., 2019) |   -   | 54.19 | 34M | [Trellis Networks for Sequence Modeling](https://openreview.net/pdf?id=HyeVtoRqtQ) | [Official](https://github.com/locuslab/trellisnet)
+| AWD-LSTM-MoS + finetune (Yang et al., 2018) | 56.54 | 54.44 | 22M | [Breaking the Softmax Bottleneck: A High-Rank RNN Language Model](https://arxiv.org/abs/1711.03953) | [Official](https://github.com/zihangdai/mos) |
 | Transformer-XL (Dai et al., 2018) ***under review*** | 56.72 | 54.55 | 24M | [Transformer-XL: Language Modeling with Longer-Term Dependency](https://openreview.net/pdf?id=HJePno0cYm) ||
+| AWD-LSTM-MoS (Yang et al., 2018) | 58.08 | 55.97 | 22M | [Breaking the Softmax Bottleneck: A High-Rank RNN Language Model](https://arxiv.org/abs/1711.03953) | [Official](https://github.com/zihangdai/mos) |
 | AWD-LSTM 3-layer with Fraternal dropout (Zołna et al., 2018) |  58.9 | 56.8 | 24M | [Fraternal dropout](https://arxiv.org/pdf/1711.00066.pdf) | [Official](https://github.com/kondiz/fraternal-dropout) |
 | AWD-LSTM (Merity et al., 2017) | 60.0 | 57.3 | 24M | [Regularizing and Optimizing LSTM Language Models](https://arxiv.org/abs/1708.02182) | [Official](https://github.com/salesforce/awd-lstm-lm) |
 
@@ -57,6 +59,7 @@ consists of around 2 million words extracted from Wikipedia articles.
 | Transformer with tied adaptive embeddings (Baevski and Auli, 2018) | 19.8 | 20.5 | 247M | [Adaptive Input Representations for Neural Language Modeling](https://arxiv.org/pdf/1809.10853.pdf) | [Link](https://github.com/AranKomat/adapinp) |
 | Transformer-XL Standard (Dai et al., 2018) ***under review*** | 23.1 | 24.0 | 151M | [Transformer-XL: Language Modeling with Longer-Term Dependency](https://openreview.net/pdf?id=HJePno0cYm) ||
 | LSTM + Hebbian + Cache + MbPA (Rae et al., 2018) | 29.0 | 29.2 | | [Fast Parametric Learning with Activation Memorization](http://arxiv.org/abs/1803.10049) ||
+| Trellis Network (Bai et al., 2019) |   -   | 30.35 | 180M | [Trellis Networks for Sequence Modeling](https://openreview.net/pdf?id=HyeVtoRqtQ) | [Official](https://github.com/locuslab/trellisnet)
 | LSTM + Hebbian (Rae et al., 2018) | 34.1 | 34.3 | | [Fast Parametric Learning with Activation Memorization](http://arxiv.org/abs/1803.10049) ||
 | LSTM (Rae et al., 2018) | 36.0 | 36.4 | | [Fast Parametric Learning with Activation Memorization](http://arxiv.org/abs/1803.10049) ||
 | Gated CNN (Dauphin et al., 2016) | - | 37.2 | | [Language modeling with gated convolutional networks](https://arxiv.org/abs/1612.08083) ||
@@ -123,6 +126,7 @@ The vocabulary of the words in the character-level dataset is limited to 10 000 
 
 | Model           | Bit per Character (BPC) |  Number of params | Paper / Source | Code |
 | ---------------- | :-----: | :-----: | -------------- | ---- |
+| Trellis Network (Bai et al., 2019) | 1.159 | 13.4M | [Trellis Networks for Sequence Modeling](https://openreview.net/pdf?id=HyeVtoRqtQ) | [Official](https://github.com/locuslab/trellisnet)
 | 3-layer AWD-LSTM (Merity et al., 2018)  | 1.175 | 13.8M | [An Analysis of Neural Language Modeling at Multiple Scales](https://arxiv.org/abs/1803.08240) | [Official](https://github.com/salesforce/awd-lstm-lm) |
 | 6-layer QRNN (Merity et al., 2018)  | 1.187 | 13.8M | [An Analysis of Neural Language Modeling at Multiple Scales](https://arxiv.org/abs/1803.08240) | [Official](https://github.com/salesforce/awd-lstm-lm) |
 | FS-LSTM-4 (Mujika et al., 2017) | 1.190 | 27M | [Fast-Slow Recurrent Neural Networks](https://arxiv.org/abs/1705.08639) | [Official](https://github.com/amujika/Fast-Slow-LSTM) |
