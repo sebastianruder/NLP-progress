@@ -47,7 +47,7 @@ The [AIDA CoNLL-YAGO][AIDACoNLLYAGO] Dataset by [[Hoffart]](http://www.aclweb.or
 | Raiman et al. (2018) | 94.88 | - | [DeepType: Multilingual Entity Linking by Neural Type System Evolution](https://arxiv.org/pdf/1802.01021.pdf) | [Official](https://github.com/openai/deeptype) |
 | Sil et al. (2018) | 94.0 | - | [Neural Cross-Lingual Entity Linking](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16501/16101) | |
 | Radhakrishnan et al. (2018) | 93.0 | 93.7 | [ELDEN: Improved Entity Linking using Densified Knowledge Graphs](http://aclweb.org/anthology/N18-1167) | |
-| Le et al. (2018) | 93.07 | - | [Improving Entity Linking by Modeling Latent Relations between Mentions](http://aclweb.org/anthology/P18-1148) |
+| Le et al. (2018) | 93.07 | - | [Improving Entity Linking by Modeling Latent Relations between Mentions](http://aclweb.org/anthology/P18-1148) |[Official](https://github.com/lephong/mulrel-nel)
 | Ganea and Hofmann (2017) | 92.22 | - | [Deep Joint Entity Disambiguation with Local Neural Attention](https://www.aclweb.org/anthology/D17-1277) | [Link](https://github.com/dalab/deep-ed) |
 | Hoffart et al. (2011) | 82.29 | 82.02 | [Robust Disambiguation of Named Entities in Text](http://www.aclweb.org/anthology/D11-1072) |  |
 

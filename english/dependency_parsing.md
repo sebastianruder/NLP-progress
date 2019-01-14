@@ -34,6 +34,7 @@ labeled attachment score (LAS). Here, we also mention the predicted POS tagging 
 | jPTDP (Nguyen and Verspoor, 2018) | 97.97 | 94.51 | 92.87  | [An improved neural network model for joint POS tagging and dependency parsing](https://arxiv.org/abs/1807.03955) | [Official](https://github.com/datquocnguyen/jPTDP) |
 | Andor et al. (2016) | 97.44 | 94.61 | 92.79 | [Globally Normalized Transition-Based Neural Networks](https://www.aclweb.org/anthology/P16-1231) | |
 | Distilled neural FOG (Kuncoro et al., 2016) | 97.3 | 94.26 | 92.06 | [Distilling an Ensemble of Greedy Dependency Parsers into One MST Parser](https://arxiv.org/abs/1609.07561) | |
+| Distilled transition-based parser (Liu et al., 2018) | 97.3 | 94.05 | 92.14 | [Distilling Knowledge for Search-based Structured Prediction](http://aclweb.org/anthology/P18-1129) | [Official](https://github.com/Oneplus/twpipe) |
 | Weiss et al. (2015) | 97.44 | 93.99 | 92.05 | [Structured Training for Neural Network Transition-Based Parsing](http://anthology.aclweb.org/P/P15/P15-1032.pdf) | |
 | BIST transition-based parser (Kiperwasser and Goldberg, 2016) | 97.3 | 93.9 | 91.9 | [Simple and Accurate Dependency Parsing Using Bidirectional LSTM Feature Representations](https://aclweb.org/anthology/Q16-1023) | [Official](https://github.com/elikip/bist-parser/tree/master/barchybrid/src) | 
 | Arc-hybrid (Ballesteros et al., 2016) | 97.3 | 93.56 | 91.42 | [Training with Exploration Improves a Greedy Stack-LSTM Parser](https://arxiv.org/abs/1603.03793) | |

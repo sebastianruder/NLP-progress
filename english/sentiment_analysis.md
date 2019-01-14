@@ -103,14 +103,43 @@ Subtask A  results:
 
 [Sentihood](http://www.aclweb.org/anthology/C16-1146) is a dataset for targeted aspect-based sentiment analysis (TABSA), which aims
 to identify fine-grained polarity towards a specific aspect. The dataset consists of 5,215 sentences,
-3,862 of which contain a single target, and the remainder multiple targets. F1 is used as evaluation metric
-for aspect detection and accuracy as evaluation metric for sentiment analysis.
+3,862 of which contain a single target, and the remainder multiple targets.
 
-| Model           | Aspect  | Sentiment |  Paper / Source |  Code |
+Dataset mirror: https://github.com/uclmr/jack/tree/master/data/sentihood
+
+| Model           | Aspect (F1) | Sentiment (acc) |  Paper / Source |  Code |
 | ------------- | :-----:| :-----:| --- | --- |
 | Liu et al. (2018) | 78.5 | 91.0 | [Recurrent Entity Networks with Delayed Memory Update for Targeted Aspect-based Sentiment Analysis](http://aclweb.org/anthology/N18-2045) | [Official](https://github.com/liufly/delayed-memory-update-entnet)
 | SenticLSTM (Ma et al., 2018) | 78.2 | 89.3 | [Targeted Aspect-Based Sentiment Analysis via Embedding Commonsense Knowledge into an Attentive LSTM](http://sentic.net/sentic-lstm.pdf) | 
 | LSTM-LOC (Saeidi et al., 2016) | 69.3 | 81.9 | [Sentihood: Targeted aspect based sentiment analysis dataset for urban neighbourhoods](http://www.aclweb.org/anthology/C16-1146) |
+
+### SemEval-2014 Task 4
+
+The [SemEval-2014 Task 4](http://alt.qcri.org/semeval2014/task4/) contains two domain-specific datasets for laptops and restaurants, consisting of over 6K sentences with fine-grained aspect-level human annotations.
+
+The task consists of the following subtasks:
+
+- Subtask 1: Aspect term extraction
+
+- Subtask 2: Aspect term polarity
+
+- Subtask 3: Aspect category detection
+
+- Subtask 4: Aspect category polarity
+
+Preprocessed dataset: https://github.com/songyouwei/ABSA-PyTorch/tree/master/datasets/semeval14
+
+Subtask 2 results:
+
+| Model           | Restaurant (acc) | Laptop (acc) |  Paper / Source |  Code |
+| ------------- | :-----:| :-----:| --- | --- |
+| AOA (Huang, Binxuan, et al., 2018) | 81.20 | 74.50 | [Aspect Level Sentiment Classification with Attention-over-Attention Neural Networks](https://arxiv.org/pdf/1804.06536.pdf) | [Link](https://github.com/songyouwei/ABSA-PyTorch/blob/master/models/aoa.py)
+| TNet (Li, Xin, et al., 2018) | 80.79 | 76.01 | [Transformation Networks for Target-Oriented Sentiment Classification](http://aclweb.org/anthology/P18-1087) | [Official](https://github.com/lixin4ever/TNet) / [Link](https://github.com/songyouwei/ABSA-PyTorch/blob/master/models/tnet_lf.py)
+| RAM (Chen, Peng, et al., 2017) | 80.23 | 74.49 | [Recurrent Attention Network on Memory for Aspect Sentiment Analysis](http://www.aclweb.org/anthology/D17-1047) | [Link](https://github.com/songyouwei/ABSA-PyTorch/blob/master/models/ram.py)
+| MemNet (Tang, Duyu, et al., 2016) | 80.95 | 72.21 | [Aspect Level Sentiment Classification with Deep Memory Network](https://pdfs.semanticscholar.org/b28f/7e2996b6ee2784dd2dbb8212cfa0c79ba9e7.pdf) | [Official](https://drive.google.com/open?id=1Hc886aivHmIzwlawapzbpRdTfPoTyi1U) / [Link](https://github.com/songyouwei/ABSA-PyTorch/blob/master/models/memnet.py)
+| IAN (Ma, Dehong, et al., 2017) | 78.60 | 72.10 | [Interactive Attention Networks for Aspect-Level Sentiment Classification](http://www.ijcai.org/proceedings/2017/0568.pdf) | [Link](https://github.com/songyouwei/ABSA-PyTorch/blob/master/models/ian.py)
+| ATAE-LSTM (Wang, Yequan, et al. 2016) | 77.20 | 68.70 | [Attention-based lstm for aspect-level sentiment classification](https://aclweb.org/anthology/D16-1058) | [Link](https://github.com/songyouwei/ABSA-PyTorch/blob/master/models/atae_lstm.py)
+| TD-LSTM (Tang, Duyu, et al., 2016) | 75.63 | 68.13 | [Effective LSTMs for Target-Dependent Sentiment Classification](https://www.aclweb.org/anthology/C/C16/C16-1311.pdf) | [Official](https://drive.google.com/open?id=17RF8MZs456ov9MDiUYZp0SCGL6LvBQl6) / [Link](https://github.com/songyouwei/ABSA-PyTorch/blob/master/models/td_lstm.py)
 
 # Subjectivity analysis
 
