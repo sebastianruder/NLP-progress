@@ -364,6 +364,10 @@ def parse_markdown_file(md_file:str) -> List:
 
             st["task"] = header[2:].strip()
             st["description"] = "".join(section[1:]).strip()
+            st["source_link"] = {
+                "title": "NLP-progress",
+                "url": "https://github.com/sebastianruder/NLP-progress"
+            }
 
             # reset the last dataset
             ds = None
@@ -407,6 +411,10 @@ def parse_markdown_file(md_file:str) -> List:
                     ds["sota"] = extract_sota_table(tables[0])
 
     if t:
+        t["source_link"] = {
+            "title": "NLP-progress",
+            "url": "https://github.com/sebastianruder/NLP-progress"
+        }
         parsed_out.append(t)
 
     return parsed_out
