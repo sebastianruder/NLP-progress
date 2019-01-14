@@ -121,6 +121,27 @@ def extract_title_and_link(md_link:str) -> Tuple:
     return title, link
 
 
+def extract_model_name_and_author(md_name:str) -> Tuple:
+    """
+    Extract the model name and author, if provided
+
+    :param md_name: a string with the model name from the sota table
+    :return: tuple (model_name, author_names)
+    """
+
+    if ' (' in md_name and ')' in md_name:
+        model_name = md_name.split(' (')[0]
+        model_authors = md_name.split(' (')[1].split(')')[0]
+    elif '(' in md_name and ')' in md_name: # only has author name
+        model_name = None
+        model_authors = md_name
+    else:
+        model_name = md_name
+        model_authors = None
+
+    return model_name, model_authors
+
+
 def extract_paper_title_and_link(paper_md:str) -> Tuple:
     """
     Extract the title and link to the paper
@@ -227,8 +248,11 @@ def extract_sota_table(table_lines:List[str]) -> Dict:
         # extract paper references
         paper_title, paper_link = extract_paper_title_and_link(row_cols[paper_inx])
 
+        # extract model_name and author
+        model_name, model_author = extract_model_name_and_author(row_cols[model_inx])
+
         sota_row = {
-            "model_name": row_cols[model_inx],
+            "model_name": model_name,
             "metrics": metrics,
         }
 
