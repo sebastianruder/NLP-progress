@@ -28,7 +28,7 @@ per-word log-probability (lower is better).
 | AWD-LSTM-DOC (Takase et al., 2018) | 54.12 | 52.38 | 23M | [Direct Output Connection for a High-Rank Language Model](https://arxiv.org/abs/1808.10143) | [Official](https://github.com/nttcslab-nlp/doc_lm) |
 | Trellis Network (Bai et al., 2019) |   -   | 54.19 | 34M | [Trellis Networks for Sequence Modeling](https://openreview.net/pdf?id=HyeVtoRqtQ) | [Official](https://github.com/locuslab/trellisnet)
 | AWD-LSTM-MoS + finetune (Yang et al., 2018) | 56.54 | 54.44 | 22M | [Breaking the Softmax Bottleneck: A High-Rank RNN Language Model](https://arxiv.org/abs/1711.03953) | [Official](https://github.com/zihangdai/mos) |
-| Transformer-XL (Dai et al., 2018) ***under review*** | 56.72 | 54.55 | 24M | [Transformer-XL: Language Modeling with Longer-Term Dependency](https://openreview.net/pdf?id=HJePno0cYm) ||
+| Transformer-XL (Dai et al., 2018) ***under review*** | 56.72 | 54.52 | 24M | [Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context](https://arxiv.org/pdf/1901.02860.pdf) | [Official](https://github.com/kimiyoung/transformer-xl) |
 | AWD-LSTM-MoS (Yang et al., 2018) | 58.08 | 55.97 | 22M | [Breaking the Softmax Bottleneck: A High-Rank RNN Language Model](https://arxiv.org/abs/1711.03953) | [Official](https://github.com/zihangdai/mos) |
 | AWD-LSTM 3-layer with Fraternal dropout (Zołna et al., 2018) |  58.9 | 56.8 | 24M | [Fraternal dropout](https://arxiv.org/pdf/1711.00066.pdf) | [Official](https://github.com/kondiz/fraternal-dropout) |
 | AWD-LSTM (Merity et al., 2017) | 60.0 | 57.3 | 24M | [Regularizing and Optimizing LSTM Language Models](https://arxiv.org/abs/1708.02182) | [Official](https://github.com/salesforce/awd-lstm-lm) |
@@ -57,9 +57,9 @@ consists of around 2 million words extracted from Wikipedia articles.
 
 | Model           | Validation perplexity | Test perplexity | Number of params | Paper / Source | Code |
 | ------------- | :---:| :---:| :---:| -------- | --- |
-| Transformer-XL Large (Dai et al., 2018) ***under review*** | 18.2 | 18.9 | 257M | [Transformer-XL: Language Modeling with Longer-Term Dependency](https://openreview.net/pdf?id=HJePno0cYm) ||
+| Transformer-XL Large (Dai et al., 2018) ***under review*** | 17.7 | 18.3 | 257M | [Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context](https://arxiv.org/pdf/1901.02860.pdf) | [Official](https://github.com/kimiyoung/transformer-xl) |
 | Transformer with tied adaptive embeddings (Baevski and Auli, 2018) | 19.8 | 20.5 | 247M | [Adaptive Input Representations for Neural Language Modeling](https://arxiv.org/pdf/1809.10853.pdf) | [Link](https://github.com/AranKomat/adapinp) |
-| Transformer-XL Standard (Dai et al., 2018) ***under review*** | 23.1 | 24.0 | 151M | [Transformer-XL: Language Modeling with Longer-Term Dependency](https://openreview.net/pdf?id=HJePno0cYm) ||
+| Transformer-XL Standard (Dai et al., 2018) ***under review*** | 23.1 | 24.0 | 151M | [Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context](https://arxiv.org/pdf/1901.02860.pdf) | [Official](https://github.com/kimiyoung/transformer-xl) |
 | LSTM + Hebbian + Cache + MbPA (Rae et al., 2018) | 29.0 | 29.2 | | [Fast Parametric Learning with Activation Memorization](http://arxiv.org/abs/1803.10049) ||
 | Trellis Network (Bai et al., 2019) |   -   | 30.35 | 180M | [Trellis Networks for Sequence Modeling](https://openreview.net/pdf?id=HyeVtoRqtQ) | [Official](https://github.com/locuslab/trellisnet)
 | LSTM + Hebbian (Rae et al., 2018) | 34.1 | 34.3 | | [Fast Parametric Learning with Activation Memorization](http://arxiv.org/abs/1803.10049) ||
@@ -77,7 +77,9 @@ Importantly, sentences in this model are shuffled and hence context is limited.
 
 | Model         | Test perplexity | Number of params | Paper / Source | Code |
 | ------------- | :-----:| :-----:| --------- | --- |
-| Transformer-XL Large (Dai et al., 2018) ***under review*** | 23.5 | 0.46B | [Transformer-XL: Language Modeling with Longer-Term Dependency](https://openreview.net/pdf?id=HJePno0cYm) ||
+| Transformer-XL Large (Dai et al., 2018) ***under review*** | 21.8 | 0.8B | [Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context](https://arxiv.org/pdf/1901.02860.pdf) | [Official](https://github.com/kimiyoung/transformer-xl) |
+| Transformer-XL Base (Dai et al., 2018) ***under review*** | 23.5 | 0.46B | [Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context](https://arxiv.org/pdf/1901.02860.pdf) | [Official](https://github.com/kimiyoung/transformer-xl) |
+| Transformer with shared adaptive embeddings - Very large (Baevski and Auli, 2018) | 23.7 | 0.8B | [Adaptive Input Representations for Neural Language Modeling](https://arxiv.org/pdf/1809.10853.pdf) | [Link](https://github.com/AranKomat/adapinp) 
 | 10 LSTM+CNN inputs + SNM10-SKIP (Jozefowicz et al., 2016) ***ensemble*** | 23.7 | 43B? | [Exploring the Limits of Language Modeling](https://arxiv.org/pdf/1602.02410.pdf) | [Official](https://github.com/rafaljozefowicz/lm) |
 | Transformer with shared adaptive embeddings (Baevski and Auli, 2018) | 24.1 | 0.46B | [Adaptive Input Representations for Neural Language Modeling](https://arxiv.org/pdf/1809.10853.pdf) | [Link](https://github.com/AranKomat/adapinp) 
 | Big LSTM+CNN inputs (Jozefowicz et al., 2016) | 30.0 | 1.04B | [Exploring the Limits of Language Modeling](https://arxiv.org/pdf/1602.02410.pdf) ||
@@ -97,9 +99,9 @@ Within these 100 million bytes are 205 unique tokens.
 
 | Model           | Bit per Character (BPC) |  Number of params | Paper / Source | Code |
 | ---------------- | :-----: | :-----: | -------------- | ---- |
-| 24-layer Transformer-XL (Dai et al., 2018) ***under review*** | 0.99 | 277M | [Transformer-XL: Language Modeling with Longer-Term Dependency](https://openreview.net/pdf?id=HJePno0cYm) ||
-| 18-layer Transformer-XL (Dai et al., 2018) ***under review*** | 1.03 | 88M | [Transformer-XL: Language Modeling with Longer-Term Dependency](https://openreview.net/pdf?id=HJePno0cYm) ||
-| 12-layer Transformer-XL (Dai et al., 2018) ***under review*** | 1.06 | 41M | [Transformer-XL: Language Modeling with Longer-Term Dependency](https://openreview.net/pdf?id=HJePno0cYm) ||
+| 24-layer Transformer-XL (Dai et al., 2018) ***under review*** | 0.99 | 277M | [Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context](https://arxiv.org/pdf/1901.02860.pdf) | [Official](https://github.com/kimiyoung/transformer-xl) |
+| 18-layer Transformer-XL (Dai et al., 2018) ***under review*** | 1.03 | 88M | [Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context](https://arxiv.org/pdf/1901.02860.pdf) | [Official](https://github.com/kimiyoung/transformer-xl) |
+| 12-layer Transformer-XL (Dai et al., 2018) ***under review*** | 1.06 | 41M | [Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context](https://arxiv.org/pdf/1901.02860.pdf) | [Official](https://github.com/kimiyoung/transformer-xl) |
 | 64-layer Character Transformer Model (Al-Rfou et al., 2018) | 1.06 | 235M | [Character-Level Language Modeling with Deeper Self-Attention](https://arxiv.org/abs/1808.04444) ||
 | mLSTM + dynamic eval (Krause et al., 2017)* | 1.08 | 46M | [Dynamic Evaluation of Neural Sequence Models](https://arxiv.org/abs/1709.07432) | [Official](https://github.com/benkrause/dynamic-evaluation) |
 | 12-layer Character Transformer Model (Al-Rfou et al., 2018) | 1.11 | 44M | [Character-Level Language Modeling with Deeper Self-Attention](https://arxiv.org/abs/1808.04444) ||
@@ -114,6 +116,7 @@ Within these 100 million bytes are 205 unique tokens.
 
 | Model           | Bit per Character (BPC) |  Number of params | Paper / Source | Code |
 | ---------------- | :-----: | :-----: | -------------- | ---- |
+| Transformer-XL Large (Dai et al., 2018) ***under review*** | 1.08 | 277M | [Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context](https://arxiv.org/pdf/1901.02860.pdf) | [Official](https://github.com/kimiyoung/transformer-xl) |
 | 64-layer Character Transformer Model (Al-Rfou et al., 2018) | 1.13 | 235M | [Character-Level Language Modeling with Deeper Self-Attention](https://arxiv.org/abs/1808.04444) ||
 | 12-layer Character Transformer Model (Al-Rfou et al., 2018) | 1.18 | 44M | [Character-Level Language Modeling with Deeper Self-Attention](https://arxiv.org/abs/1808.04444) ||
 | mLSTM + dynamic eval (Krause et al., 2017)* | 1.19 | 45M | [Dynamic Evaluation of Neural Sequence Models](https://arxiv.org/abs/1709.07432) | [Official](https://github.com/benkrause/dynamic-evaluation) |
