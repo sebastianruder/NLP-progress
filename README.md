@@ -135,6 +135,14 @@ These are tasks and datasets that are still missing:
 - Semi-supervised learning
 - Frame-semantic parsing (FrameNet full-sentence analysis)
 
+### Exporting into a structured format
+
+You can extract all the data into a structured, machine-readable JSON format with parsed tasks, descriptions and SOTA tables. 
+
+The instructions are in [structured/README.md](structured/README.md).
+
 ### Instructions for building the site locally
 
 Instructions for building the website locally using Jekyll can be found [here](jekyll_instructions.md).
+
+
