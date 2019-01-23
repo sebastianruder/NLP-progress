@@ -9,7 +9,7 @@ Language modeling is the task of predicting the next word or character in a docu
 ### Penn Treebank
 
 A common evaluation dataset for language modeling ist the Penn Treebank,
-as pre-processed by [Mikolov et al., (2010)](http://www.fit.vutbr.cz/research/groups/speech/publi/2010/mikolov_interspeech2010_IS100722.pdf).
+as pre-processed by [Mikolov et al., (2011)](https://www.isca-speech.org/archive/archive_papers/interspeech_2011/i11_0605.pdf).
 The dataset consists of 929k training words, 73k validation words, and
 82k test words. As part of the pre-processing, words were lower-cased, numbers
 were replaced with N, newlines were replaced with `<eos>`,
