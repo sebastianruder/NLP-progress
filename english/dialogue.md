@@ -66,7 +66,7 @@ The [WoZ 2.0 dataset](https://arxiv.org/pdf/1606.03777.pdf) is a newer dialogue 
 ## Retrieval-based Chatbot
 The main task retrieval-based chatbot is response selection, that aims to find correct responses from a pre-defined index. 
 ### Ubuntu Corpus
-The [Ubuntu Corpus](https://arxiv.org/pdf/1506.08909.pdf) contains almost 1 million multi-turn dialogues from the Ubuntu Chat Logs. The task of Ubuntu Corpus is to select the correct response from 10 candidates (others are negatively sampled) by considering previous conversation history. You can find more details at [here](https://github.com/ryan-lowe/Ubuntu-Dialogue-Generationv2). The Evaluation metric is recall at positionK in N candidates (Recall_N@K). 
+The [Ubuntu Corpus](https://arxiv.org/pdf/1506.08909.pdf) contains almost 1 million multi-turn dialogues from the Ubuntu Chat Logs. The task of Ubuntu Corpus is to select the correct response from 10 candidates (others are negatively sampled) by considering previous conversation history. You can find more details at [here](https://github.com/ryan-lowe/Ubuntu-Dialogue-Generationv2). The Evaluation metric is recall at position K in N candidates (Recall_N@K). 
 
 | Model           | R_2@1  |  R_10@1   |  Paper / Source |
 | -------------   |    :---------: | :---------:|---------------|
