@@ -1,14 +1,29 @@
 # Named entity recognition
 
+1. [Intro](#intro)
+1. [Datasets](#datasets)
+ 1. [CoNLL 2003 (English)](#conll-2003-english)
+ 1. [Long-tail emerging entities](#long-tail-emerging-entities)
+ 1. [Ontonotes v5 (English)](#ontonotes-v5-english)
+
+ 
+
+## Intro 
+
 Named entity recognition (NER) is the task of tagging entities in text with their corresponding type.
-Approaches typically use BIO notation, which differentiates the beginning (B) and the inside (I) of entities.
-O is used for non-entity tokens.
+Approaches typically use BIO2 notation, which differentiates the beginning (B) and the inside (I) of entities.
+O is used for non-entity tokens (B tag is given for every token, which exists at the beginning of the chunk). 
 
 Example:
 
 | Mark | Watney | visited | Mars |
 | --- | ---| --- | --- |
 | B-PER | I-PER | O | B-LOC |
+
+There are also others notations like IOB1, IOE1, IOE2, IOBES, and IO ([Krishnan et al., 2005](http://cs229.stanford.edu/proj2005/KrishnanGanapathy-NamedEntityRecognition.pdf)). 
+
+
+## Datasets
 
 ### CoNLL 2003 (English)
 
