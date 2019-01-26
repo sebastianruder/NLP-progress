@@ -22,21 +22,26 @@ such as SQL or more abstract representations such as [Abstract Meaning Represent
 ## AMR parsing
 
 Each AMR is a single rooted, directed graph. AMRs include PropBank semantic roles, within-sentence coreference, named entities and types, modality, negation, questions, quantities, and so on. [See](https://amr.isi.edu/index.html).
+In the following tables, systems marked with &hearts; are pipeline systems that require POS as input,
+&spades; is for those require NER,
+&diams; is for those require syntax parsing,
+and &clubs; is for those require SRL.
 
 ### LDC2014T12: 
 13,051 sentences
 
 Models are evaluated on the newswire section and the full dataset based on [smatch](https://amr.isi.edu/smatch-13.pdf).
-Systems marked with \* are pipeline systems that require other systems (i.e. a dependency parse or a SRL parse) as input.
 
 | Model           | F1 Newswire  | F1 Full |  Paper / Source |
 | ------------- | :-----:| :-----:| --- |
-| Incremental joint model (Zhou et al., 2016)* | 0.71 | 0.66 | [AMR Parsing with an Incremental Joint Model](https://aclweb.org/anthology/D16-1065) |
-| Transition-based transducer (Wang et al., 2015)* | 0.70 | 0.66 | [Boosting Transition-based AMR Parsing with Refined Actions and Auxiliary Analyzers](http://www.aclweb.org/anthology/P15-2141) |
-| Imitation learning  (Goodman et al., 2016)* | 0.70 |  -- | [Noise reduction and targeted exploration in imitation learning for Abstract Meaning Representation parsing](http://www.aclweb.org/anthology/P16-1001) |
-MT-Based (Pust et al., 2015)* | -- | 0.66 | [Parsing English into Abstract Meaning Representation Using Syntax-Based Machine Translation ](http://www.aclweb.org/anthology/D15-1136)
-| Transition-based parser-Stack-LSTM (Ballesteros and Al-Onaizan, 2017)* | 0.69 | 0.64  | [AMR Parsing using Stack-LSTMs](http://www.aclweb.org/anthology/D17-1130) |
-| Transition-based parser-Stack-LSTM (Ballesteros and Al-Onaizan, 2017) | 0.68 | 0.63  | [AMR Parsing using Stack-LSTMs](http://www.aclweb.org/anthology/D17-1130) |
+| Transition-based+improved aligner+ensemble (Liu et al. 2018)&hearts; | 73.3 | 68.4 | [An AMR Aligner Tuned by Transition-based Parser](http://aclweb.org/anthology/D18-1264) |
+| Improved CAMR (Wang and Xue, 2017)&spades;&diams; | --| 68.1| [Getting the Most out of AMR Parsing](http://aclweb.org/anthology/D17-1129) |
+| Incremental joint model (Zhou et al., 2016)&hearts;&spades; | 71 | 66 | [AMR Parsing with an Incremental Joint Model](https://aclweb.org/anthology/D16-1065) |
+| Transition-based transducer (Wang et al., 2015)&hearts;&diams;&clubs; | 70 | 66 | [Boosting Transition-based AMR Parsing with Refined Actions and Auxiliary Analyzers](http://www.aclweb.org/anthology/P15-2141) |
+| Imitation learning  (Goodman et al., 2016)&hearts;&spades; | 70 |  -- | [Noise reduction and targeted exploration in imitation learning for Abstract Meaning Representation parsing](http://www.aclweb.org/anthology/P16-1001) |
+MT-Based (Pust et al., 2015)&spades; | -- | 66 | [Parsing English into Abstract Meaning Representation Using Syntax-Based Machine Translation ](http://www.aclweb.org/anthology/D15-1136)
+| Transition-based parser-Stack-LSTM (Ballesteros and Al-Onaizan, 2017)&hearts;&diams; | 69 | 64  | [AMR Parsing using Stack-LSTMs](http://www.aclweb.org/anthology/D17-1130) |
+| Transition-based parser-Stack-LSTM (Ballesteros and Al-Onaizan, 2017) | 68 | 63  | [AMR Parsing using Stack-LSTMs](http://www.aclweb.org/anthology/D17-1130) |
 
 ### LDC2015E86: 
 19,572 sentences
@@ -45,12 +50,12 @@ Models are evaluated based on [smatch](https://amr.isi.edu/smatch-13.pdf).
 
 | Model           | Smatch  |  Paper / Source |
 | ------------- | :-----:| --- |
-Joint model (Lyu and Titov, 2018) | 73.7 | [AMR Parsing as Graph Prediction with Latent Alignment](https://arxiv.org/abs/1805.05286) |
-Mul-BiLSTM (Foland and Martin, 2017) | 70.7 | [Abstract Meaning Representation Parsing using LSTM Recurrent Neural Networks](http://aclweb.org/anthology/P17-1043) |
-JAMR (Flanigan et al., 2016) | 67.0 | [CMU at SemEval-2016 Task 8: Graph-based AMR Parsing with Infinite Ramp Loss](http://www.aclweb.org/anthology/S16-1186) |
-CAMR (Wang et al., 2016) | 66.5 | [CAMR at SemEval-2016 Task 8: An Extended Transition-based AMR Parser](http://www.aclweb.org/anthology/S16-1181) |
-AMREager (Damonte et al., 2017) | 64.0 | [An Incremental Parser for Abstract Meaning Representation](http://www.aclweb.org/anthology/E17-1051) |
-SEQ2SEQ + 20M (Konstas et al., 2017) | 62.1 | [Neural AMR: Sequence-to-Sequence Models for Parsing and Generation](https://arxiv.org/abs/1704.08381) |
+| Joint model (Lyu and Titov, 2018)&hearts;&spades; | 73.7 | [AMR Parsing as Graph Prediction with Latent Alignment](https://arxiv.org/abs/1805.05286) |
+| Mul-BiLSTM (Foland and Martin, 2017)&spades; | 70.7 | [Abstract Meaning Representation Parsing using LSTM Recurrent Neural Networks](http://aclweb.org/anthology/P17-1043) |
+| JAMR (Flanigan et al., 2016)&hearts;&diams;&clubs; | 67.0 | [CMU at SemEval-2016 Task 8: Graph-based AMR Parsing with Infinite Ramp Loss](http://www.aclweb.org/anthology/S16-1186) |
+| CAMR (Wang et al., 2016)&hearts;&diams;&clubs; | 66.5 | [CAMR at SemEval-2016 Task 8: An Extended Transition-based AMR Parser](http://www.aclweb.org/anthology/S16-1181) |
+| AMREager (Damonte et al., 2017)&hearts;&spades;&diams; | 64.0 | [An Incremental Parser for Abstract Meaning Representation](http://www.aclweb.org/anthology/E17-1051) |
+| SEQ2SEQ + 20M (Konstas et al., 2017)&spades; | 62.1 | [Neural AMR: Sequence-to-Sequence Models for Parsing and Generation](https://arxiv.org/abs/1704.08381) |
 
 ### LDC2016E25
 39,260 sentences
@@ -59,9 +64,9 @@ Results are computed over 8 runs. Models are evaluated based on [smatch](https:/
 
 | Model           | Smatch  |  Paper / Source |
 | ------------- | :-----:| --- |
-Joint model (Lyu and Titov, 2018) | 74.4 | [AMR Parsing as Graph Prediction with Latent Alignment](https://arxiv.org/abs/1805.05286) |
-ChSeq + 100K (van Noord and Bos, 2017) | 71.0 | [Neural Semantic Parsing by Character-based Translation: Experiments with Abstract Meaning Representations](https://arxiv.org/abs/1705.09980) |
-Neural-Pointer (Buys and Blunsom, 2017) | 61.9 | [Oxford at SemEval-2017 Task 9: Neural AMR Parsing with Pointer-Augmented Attention](http://aclweb.org/anthology/S17-2157) |
+| Joint model (Lyu and Titov, 2018)&hearts;&spades; | 74.4 | [AMR Parsing as Graph Prediction with Latent Alignment](https://arxiv.org/abs/1805.05286) |
+| ChSeq + 100K (van Noord and Bos, 2017)&hearts; | 71.0 | [Neural Semantic Parsing by Character-based Translation: Experiments with Abstract Meaning Representations](https://arxiv.org/abs/1705.09980) |
+| Neural-Pointer (Buys and Blunsom, 2017)&hearts;&spades; | 61.9 | [Oxford at SemEval-2017 Task 9: Neural AMR Parsing with Pointer-Augmented Attention](http://aclweb.org/anthology/S17-2157) |
 
 ## SQL parsing
 
