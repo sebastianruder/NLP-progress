@@ -24,8 +24,7 @@ arcs from heads to dependents (+ indicates the dependent).
 
 Models are evaluated on the [Stanford Dependency](https://nlp.stanford.edu/software/dependencies_manual.pdf)
 conversion (**v3.3.0**) of the Penn Treebank with __predicted__ POS-tags. Punctuation symbols
-are excluded from the evaluation. Evaluation metrics are unlabeled attachment score (UAS) and
-labeled attachment score (LAS). Here, we also mention the predicted POS tagging accuracy.
+are excluded from the evaluation. Evaluation metrics are unlabeled attachment score (UAS) and labeled attachment score (LAS). UAS does not consider the semantic relation (e.g. Subj) used to label the attachment between the head and the child, while LAS requires a semantic correct label for each attachment.Here, we also mention the predicted POS tagging accuracy.
 
 | Model           | POS | UAS | LAS | Paper / Source | Code |
 | ------------- | :-----: | :-----:| :-----:| --- | --- |
