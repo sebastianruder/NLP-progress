@@ -14,7 +14,7 @@ Example:
 &spades; marks the system that uses character unigram as input.
 &clubs; marks the systme that uses character bigram as input.
 
-- Yang et al. (2018): Lattice LSTM-CRF &spades;&clubs; 
+- Yang et al. (2018): Lattice LSTM-CRF + BPE subword embeddings &spades;&clubs; 
 - Ma et al. (2018): BiLSTM-CRF + hyper-params search&spades;&clubs;
 - Yang et al. (2017): Transition-based + Beam-search + Rich pretrain&spades;&clubs; 
 - Zhou et al. (2017): Greedy Search + word context&spades;
