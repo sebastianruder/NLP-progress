@@ -56,7 +56,7 @@ F1-score
 | Model         | F1 | Paper / Source | Code |
 | ------------- | :-----: |  --- | --- |
 | Ma et al. (2018) | 96.2 | [State-of-the-art Chinese Word Segmentation with Bi-LSTMs](https://aclweb.org/anthology/D18-1529)| |
-| Yang et al. (2017) | 95.7 | [Neural Word Segmentation with Rich Pretraining](http://aclweb.org/anthology/P17-1078) | |
+| Yang et al. (2017) | 95.7 | [Neural Word Segmentation with Rich Pretraining](http://aclweb.org/anthology/P17-1078) |[Github](https://github.com/jiesutd/RichWordSegmentor) |
 | Cai et al. (2017) | 95.3 | [Fast and Accurate Neural Word Segmentation for Chinese](http://aclweb.org/anthology/P17-2096) | [Github](https://github.com/jcyk/greedyCWS) |
 | Chen et al. (2017) | 94.8 | [Adversarial Multi-Criteria Learning for Chinese Word Segmentation](http://aclweb.org/anthology/P17-1110) | [Github](https://github.com/FudanNLP/adversarial-multi-criteria-learning-for-CWS) |
 
