@@ -58,6 +58,7 @@ _**Restricted**_: uses only publicly available datasets. _**Unrestricted**_: use
 
 
 _**Restricted**_:
+
 | Model           | GLEU  |  Paper / Source | Code |
 | ------------- | :-----:| --- | :-----: |
 | SMT + BiGRU (Grundkiewicz and Junczys-Dowmunt, 2018) |  61.50 | [Near Human-Level Performance in Grammatical Error Correction with Hybrid Machine Translation](http://aclweb.org/anthology/N18-2046)| NA |
