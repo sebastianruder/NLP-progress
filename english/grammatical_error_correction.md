@@ -57,7 +57,8 @@ _**Restricted**_: uses only publicly available datasets. _**Unrestricted**_: use
 [JFLEG test set](https://github.com/keisks/jfleg) released by [Napoles et al., 2017](http://aclweb.org/anthology/E17-2037) consists of 747 English sentences with 4 references for each sentence. Models are evaluated with [GLEU](https://github.com/cnap/gec-ranking/) metric ([Napoles et al., 2016](https://arxiv.org/pdf/1605.02592.pdf)).
 
 
-_**Restricted**_:
+**Restricted**:  
+
 | Model           | GLEU  |  Paper / Source | Code |
 | ------------- | :-----:| --- | :-----: |
 | SMT + BiGRU (Grundkiewicz and Junczys-Dowmunt, 2018) |  61.50 | [Near Human-Level Performance in Grammatical Error Correction with Hybrid Machine Translation](http://aclweb.org/anthology/N18-2046)| NA |
