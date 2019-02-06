@@ -44,3 +44,20 @@ Answer 0: the trophy. Answer 1: the suitcase
 | Word-LM-partial (Trinh and Le, 2018) | 62.6 | [A Simple Method for Commonsense Reasoning](https://arxiv.org/abs/1806.02847) |
 | Char-LM-partial (Trinh and Le, 2018) | 57.9 | [A Simple Method for Commonsense Reasoning](https://arxiv.org/abs/1806.02847) |
 | USSM + Supervised DeepNet + KB (Liu et al., 2017) | 52.8 | [Combing Context and Commonsense Knowledge Through Neural Networks for Solving Winograd Schema Problems](https://aaai.org/ocs/index.php/SSS/SSS17/paper/view/15392) |
+
+### Visual Common Sense
+
+Visual Commonsense Reasoning (VCR) is a new task and large-scale dataset for cognition-level visual understanding.
+With one glance at an image, we can effortlessly imagine the world beyond the pixels (e.g. that [person1] ordered 
+pancakes). While this task is easy for humans, it is tremendously difficult for today's vision systems, requiring 
+higher-order cognition and commonsense reasoning about the world. We formalize this task as Visual Commonsense 
+Reasoning. In addition to answering challenging visual questions expressed in natural language, a model must provide a 
+rationale explaining why its answer is true.
+
+| Model | Q->A  | QA->R  | Q->AR  | Paper / Source | Code |
+| ------ | :-------:| :-------: | :-------:| ------ |  ------ | 
+| Human Performance University of Washington (Zellers et al. '18) | 91.0 | 93.0 | 85.0 | [From Recognition to Cognition: Visual Commonsense Reasoning](https://arxiv.org/abs/1811.10830) | | 
+| Recognition to Cognition Networks University of Washington | 65.1 | 67.3 | 44.0 | [From Recognition to Cognition: Visual Commonsense Reasoning](https://arxiv.org/abs/1811.10830) |  https://github.com/rowanz/r2c |
+| BERT-Base Google AI Language (experiment by Rowan) | 53.9 | 64.5 | 35.0 | | https://github.com/google-research/bert |
+| MLB Seoul National University (experiment by Rowan) | 46.2 | 36.8 | 17.2 | | https://github.com/jnhwkim/MulLowBiVQA |
+| Random Performance | 25.0 | 25.0 | 6.2 | | | 
