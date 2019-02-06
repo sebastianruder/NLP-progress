@@ -55,7 +55,7 @@ Reasoning. In addition to answering challenging visual questions expressed in na
 rationale explaining why its answer is true.
 
 | Model | Q->A | QA->R | Q->AR | Paper / Source | Code |
-| ------ | :-----:| :-----: | :-----:| ------ |  ------ | 
+| ------ | :-------:| :-------: | :-------:| ------ |  ------ | 
 | Human Performance University of Washington (Zellers et al. '18) | 91.0 | 93.0 | 85.0 | [From Recognition to Cognition: Visual Commonsense Reasoning](https://arxiv.org/abs/1811.10830) | | 
 | Recognition to Cognition Networks University of Washington | 65.1 | 67.3 | 44.0 | [From Recognition to Cognition: Visual Commonsense Reasoning](https://arxiv.org/abs/1811.10830) |  https://github.com/rowanz/r2c |
 | BERT-Base Google AI Language (experiment by Rowan) | 53.9 | 64.5 | 35.0 | | https://github.com/google-research/bert |
