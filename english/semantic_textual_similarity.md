@@ -35,6 +35,7 @@ duplicate of the other. Models are evaluated based on accuracy.
 
 | Model           | Accuracy  |  Paper / Source | Code |
 | ------------- | :-----:| --- | --- |
+| MwAN (Tan et al., 2018) | 89.12 | [Multiway Attention Networks for Modeling Sentence Pairs](https://www.ijcai.org/proceedings/2018/0613.pdf) | |
 | DIIN (Gong et al., 2018) | 89.06 | [Natural Language Inference Over Interaction Space](https://arxiv.org/pdf/1709.04348.pdf) | [Official](https://github.com/YichenGong/Densely-Interactive-Inference-Network) |
 | pt-DecAtt (Char) (Tomar et al., 2017) | 88.40 | [Neural Paraphrase Identification of Questions with Noisy Pretraining](https://arxiv.org/abs/1704.04565) | |
 | BiMPM (Wang et al., 2017) | 88.17 | [Bilateral Multi-Perspective Matching for Natural Language Sentences](https://arxiv.org/abs/1702.03814) | [Official](https://github.com/zhiguowang/BiMPM) |
