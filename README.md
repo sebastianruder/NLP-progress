@@ -31,6 +31,7 @@
 - [Semantic role labeling](english/semantic_role_labeling.md)
 - [Sentiment analysis](english/sentiment_analysis.md)
 - [Shallow syntax](english/shallow_syntax.md)
+- [Simplification](english/simplification.md)
 - [Stance detection](english/stance_detection.md)
 - [Summarization](english/summarization.md)
 - [Taxonomy learning](english/taxonomy_learning.md)
@@ -119,9 +120,9 @@ In both cases, follow the steps below:
   has multiple metrics, add them to the right of `Score`.
 1. Submit your change as a pull request.
   
-| Model           | Score  |  Paper / Source | Code | 
-| ------------- | :-----:| --- | --- | 
-|  |  |  | | 
+| Model           | Score  |  Paper / Source | Code |
+| ------------- | :-----:| --- | --- |
+|  |  |  | |
 
 
 ### Wish list
