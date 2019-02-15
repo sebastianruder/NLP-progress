@@ -84,6 +84,25 @@ reported here are the highest achieved by the model using any external resources
 | MVRNN (Socher et al., 2012)         | 82.4  | [Semantic Compositionality through Recursive Matrix-Vector Spaces](http://aclweb.org/anthology/D12-1110) | [pratapbhanu's Reimplementation](https://github.com/pratapbhanu/MVRNN) |
 
 
+### TACRED
+
+[TACRED](https://nlp.stanford.edu/projects/tacred/) is a large-scale relation extraction dataset with 106,264 examples built over newswire and web text from the [corpus](https://catalog.ldc.upenn.edu/LDC2018T03) used in the yearly [TAC Knowledge Base Population (TAC KBP) challenges](https://tac.nist.gov/2017/KBP/index.html). Examples in TACRED cover 41 relation types as used in the TAC KBP challenges (e.g., _per:schools_attended_ and _org:members_) or are labeled as _no_relation_ if no defined relation is held. These examples are created by combining available human annotations from the TAC KBP challenges and crowdsourcing.
+
+Example:
+ > *Billy Mays*, the bearded, boisterious pitchman who, as the undisputed king of TV yell and sell, became an inlikely pop culture icon, died at his home in *Tampa*, Fla, on Sunday. 
+
+ `(per:city_of_death, Billy Mays, Tampa)`
+
+The main evaluation metric used is micro-averaged F1 over instances with proper relationships (i.e. excluding the
+_no_relation_ type).
+
+| Model                                  | F1    | Paper / Source  | Code           |
+| -------------------------------------- | ----- | --------------- | -------------- |
+| C-GCN + PA-LSTM (Zhang et al. 2018) | **68.2** | [Graph Convolution over Pruned Dependency Trees Improves Relation Extraction](http://aclweb.org/anthology/D18-1244) | [Offical](https://github.com/qipeng/gcn-over-pruned-trees) |
+| PA-LSTM (Zhang et al, 2017) | 65.1 | [Position-aware Attention and Supervised Data Improve Slot Filling](http://aclweb.org/anthology/D17-1004) | [Official](https://github.com/yuhaozhang/tacred-relation) |
+
+
+
 # FewRel
 
 The Few-Shot Relation Classification Dataset (FewRel) is a different setting from the previous datasets. This dataset consists of 70K sentences expressing 100 relations annotated by crowdworkers on Wikipedia corpus. The few-shot learning task follows the N-way K-shot meta learning setting. It is both the largest supervised relation classification dataset as well as the largest few-shot learning dataset till now. 
