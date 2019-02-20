@@ -2,7 +2,7 @@
 
 Language modeling is the task of predicting the next word or character in a document.
 
-\* indicates models using dynamic evaluation; where, at test time, models may adapt to seen tokens in order to improve performance on following tokens. ([Mikolov et al., (2010)](https://www.fit.vutbr.cz/research/groups/speech/publi/2010/mikolov_interspeech2010_IS100722.pdf), [Kraus et al., (2017)](https://arxiv.org/pdf/1709.07432))
+\* indicates models using dynamic evaluation; where, at test time, models may adapt to seen tokens in order to improve performance on following tokens. ([Mikolov et al., (2010)](https://www.fit.vutbr.cz/research/groups/speech/publi/2010/mikolov_interspeech2010_IS100722.pdf), [Krause et al., (2017)](https://arxiv.org/pdf/1709.07432))
 
 ## Word Level Models
 
