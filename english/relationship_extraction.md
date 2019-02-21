@@ -63,7 +63,7 @@ reported here are the highest achieved by the model using any external resources
 | CR-CNN (dos Santos et al., 2015)       | 84.1  | [Classifying Relations by Ranking with Convolutional Neural Network](https://www.aclweb.org/anthology/P15-1061) | [pratapbhanu's Reimplementation](https://github.com/pratapbhanu/CRCNN) |
 | CNN (Zeng et al., 2014)                | 82.7  | [Relation Classification via Convolutional Deep Neural Network](http://www.aclweb.org/anthology/C14-1220) | [roomylee's Reimplementation](https://github.com/roomylee/cnn-relation-extraction) |
 | *RNN-based Models* |
-| Entity Attention Bi-LSTM (Lee and Seo, 2018) | **85.2** | [Semantic Relation Classification via Bidirectional LSTM Networks with Entity-aware Attention using Latent Entity Typing]() |
+| Entity Attention Bi-LSTM (Lee et al., 2019) | **85.2** | [Semantic Relation Classification via Bidirectional LSTM Networks with Entity-aware Attention using Latent Entity Typing](https://arxiv.org/abs/1901.08163) | [Official](https://github.com/roomylee/entity-aware-relation-classification) |
 | Hierarchical Attention Bi-LSTM (Xiao and C Liu, 2016) | 84.3 | [Semantic Relation Classification via Hierarchical Recurrent Neural Network with Attention](http://www.aclweb.org/anthology/C16-1119) |
 | Attention Bi-LSTM (Zhou et al., 2016)  | 84.0 | [Attention-Based Bidirectional Long Short-Term Memory Networks for Relation Classification](http://www.aclweb.org/anthology/P16-2034) | [SeoSangwoo's Reimplementation](https://github.com/SeoSangwoo/Attention-Based-BiLSTM-relation-extraction) |
 | Bi-LSTM (Zhang et al., 2015)           | 82.7<br>84.3<sup>[\*](#footnote)</sup> | [Bidirectional long short-term memory networks for relation classification](http://www.aclweb.org/anthology/Y15-1009) |
