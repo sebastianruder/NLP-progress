@@ -21,6 +21,7 @@ Question answering is the task of answering a question.
   - [Story Cloze Test](#story-cloze-test)
   - [Recipe QA](#recipeqa)
   - [NarrativeQA](#narrativeqa)
+  - [DuoRC](#duorc)
 - [Open-domain Question Answering](#open-domain-question-answering)
   - [DuReader](#dureader)
   - [Quasar](#quasar)
@@ -234,6 +235,16 @@ The public leaderboard is available on the [RecipeQA website](https://hucvl.gith
 |BiDAF (Seo et al., 2017)	   |33.45    |15.69	 | 15.68 | 36.74  |[Bidirectional Attention Flow for Machine Comprehension](https://arxiv.org/abs/1611.01603)       |      |
 
 *Note that the above is for the Summary setting. There are no official published results for reading over entire books/stories except for the original paper. 
+
+### DuoRC
+
+[DuoRC](https://duorc.github.io) contains 186,089 unique question-answer pairs created from a collection of 7680 pairs of movie plots where each pair in the collection reflects two versions of the same movie. 
+
+DuoRC pushes the NLP community to address challenges on incorporating knowledge and reasoning in neural architectures for reading comprehension. It poses several interesting challenges such as:
+  - DuoRC using parallel plots is especially designed to contain a large number of questions with low lexical overlap between questions and their corresponding passages
+  - It requires models to go beyond the content of the given passage itself and incorporate world-knowledge, background knowledge, and common-sense knowledge to arrive at the answer
+  - It revolves around narrative passages from movie plots describing complex events and therefore naturally require complex reasoning (e.g. temporal reasoning, entailment, long-distance anaphoras, etc.) across multiple sentences to infer the answer to questions
+  - Several of the questions in DuoRC, while seeming relevant, cannot actually be answered from the given passage. This requires the model to detect the unanswerability of questions. This aspect is important for machines to achieve in industrial settings in particular.
 
 ## Open-domain Question Answering
 
