@@ -47,6 +47,21 @@ The following results are just for references:
 | Semi-supervised LSTM-LM (Choe and Charniak, 2016) (Constituent parser) | 95.9 | 94.1 | Constituent parser |[Parsing as Language Modeling](http://www.aclweb.org/anthology/D16-1257) | 
 | Deep Biaffine (Dozat and Manning, 2017)   | 95.66 | 94.03 | Stanford conversion **v3.5.0** | [Deep Biaffine Attention for Neural Dependency Parsing](https://arxiv.org/abs/1611.01734) | 
 
+# Cross-lingual zero-shot dependency parsing
+
+Cross-lingual zero-shot parsing is the task of inferring the dependency parse of sentences from one language without any labeled training trees for that language.
+
+## Universal Dependency Treebank
+
+Models are evaluated against the [Universal Dependency Treebank v2.0](https://github.com/ryanmcd/uni-dep-tb/). For each of the 6 target languages, models can use the trees of all other languages and English and are evaluated by the UAS and LAS on the target. The final score is the average score across the 6 target languages. The most common evaluation setup is to use
+gold POS-tags.
+
+| Model           |  UAS | LAS | Paper / Source | Code |
+| ------------- |  :-----:| :-----:| --- | --- |
+| Cross-Lingual ELMo (Schuster et al., 2019) | 84.2 | 77.3 | [Cross-Lingual Alignment of Contextual Word Embeddings, with Applications to Zero-shot Dependency Parsing](https://arxiv.org/abs/1902.09492) | [Official](https://github.com/TalSchuster/CrossLingualELMo)
+| MALOPA (Ammar et al., 2016) |  | 70.5 | [Many Languages, One Parser](https://www.transacl.org/ojs/index.php/tacl/article/view/892) | [Official](https://github.com/clab/language-universal-parser)
+| Guo et al. (2016) | 76.7 | 69.9 | [A representation learning framework for multi-source transfer parsing](https://dl.acm.org/citation.cfm?id=3016100.3016284) | 
+
 # Unsupervised dependency parsing
 
 Unsupervised dependency parsing is the task of inferring the dependency parse of sentences without any labeled training data.
