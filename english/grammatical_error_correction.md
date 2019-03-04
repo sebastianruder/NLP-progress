@@ -18,6 +18,7 @@ The shared task setting restricts that systems use only publicly available datas
 
 | Model           | F0.5  |  Paper / Source | Code |
 | ------------- | :-----:| --- | :-----: |
+| Copy-Augmented Transformer + Pre-train (Zhao and Wang, NAACL 2019) | 61.15 | [Improving Grammatical Error Correction via Pre-Training a Copy-Augmented Architecture with Unlabeled Data](https://arxiv.org/pdf/1903.00138.pdf) | NA |
 | CNN Seq2Seq + Quality Estimation (Chollampatt and Ng, EMNLP 2018) | 56.52 | [Neural Quality Estimation of Grammatical Error Correction](http://aclweb.org/anthology/D18-1274) | [Official](https://github.com/nusnlp/neuqe/) |
 | SMT + BiGRU (Grundkiewicz and Junczys-Dowmunt, 2018) |  56.25 | [Near Human-Level Performance in Grammatical Error Correction with Hybrid Machine Translation](http://aclweb.org/anthology/N18-2046)| NA |
 | Transformer (Junczys-Dowmunt et al., 2018) | 55.8 | [Approaching Neural Grammatical Error Correction as a Low-Resource Machine Translation Task](http://aclweb.org/anthology/N18-1055)| [Official](https://github.com/grammatical/neural-naacl2018) |
