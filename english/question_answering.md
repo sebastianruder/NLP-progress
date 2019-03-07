@@ -22,6 +22,7 @@ Question answering is the task of answering a question.
   - [Recipe QA](#recipeqa)
   - [NarrativeQA](#narrativeqa)
   - [DuoRC](#duorc)
+  - [DROP](#drop)
 - [Open-domain Question Answering](#open-domain-question-answering)
   - [DuReader](#dureader)
   - [Quasar](#quasar)
@@ -245,6 +246,10 @@ DuoRC pushes the NLP community to address challenges on incorporating knowledge 
   - It requires models to go beyond the content of the given passage itself and incorporate world-knowledge, background knowledge, and common-sense knowledge to arrive at the answer
   - It revolves around narrative passages from movie plots describing complex events and therefore naturally require complex reasoning (e.g. temporal reasoning, entailment, long-distance anaphoras, etc.) across multiple sentences to infer the answer to questions
   - Several of the questions in DuoRC, while seeming relevant, cannot actually be answered from the given passage. This requires the model to detect the unanswerability of questions. This aspect is important for machines to achieve in industrial settings in particular.
+  
+### DROP
+
+[DROP](https://allennlp.org/drop) is a crowdsourced, adversarially-created, 96k-question benchmark, in which a system must resolve references in a question, perhaps to multiple input positions, and perform discrete operations over them (such as addition, counting, or sorting). These operations require a much more comprehensive understanding of the content of paragraphs than what was necessary for prior datasets.
 
 ## Open-domain Question Answering
 
