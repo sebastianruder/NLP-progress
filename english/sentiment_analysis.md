@@ -36,6 +36,8 @@ Binary classification (SST-2, 56.4k examples):
 
 | Model           | Accuracy  |  Paper / Source |
 | ------------- | :-----:| --- |
+| MT-DNN (Liu et al., 2019) | 95.6 | [Multi-Task Deep Neural Networks for Natural Language Understanding](https://arxiv.org/abs/1901.11504) |
+| Bidirectional Encoder Representations from Transformers (Devlin et al., 2018) | 94.9 | [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805) |
 | Block-sparse LSTM (Gray et al., 2017) | 93.2 | [GPU Kernels for Block-Sparse Weights](https://s3-us-west-2.amazonaws.com/openai-assets/blocksparse/blocksparsepaper.pdf) |
 | bmLSTM (Radford et al., 2017) | 91.8 | [Learning to Generate Reviews and Discovering Sentiment](https://arxiv.org/abs/1704.01444) |
 | BCN+Char+CoVe (McCann et al., 2017) | 90.3 | [Learned in Translation: Contextualized Word Vectors](https://arxiv.org/abs/1708.00107)
