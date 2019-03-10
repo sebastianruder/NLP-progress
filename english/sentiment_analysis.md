@@ -143,6 +143,20 @@ Subtask 2 results:
 | ATAE-LSTM (Wang, Yequan, et al. 2016) | 77.20 | 68.70 | [Attention-based lstm for aspect-level sentiment classification](https://aclweb.org/anthology/D16-1058) | [Link](https://github.com/songyouwei/ABSA-PyTorch/blob/master/models/atae_lstm.py)
 | TD-LSTM (Tang, Duyu, et al., 2016) | 75.63 | 68.13 | [Effective LSTMs for Target-Dependent Sentiment Classification](https://www.aclweb.org/anthology/C/C16/C16-1311.pdf) | [Official](https://drive.google.com/open?id=17RF8MZs456ov9MDiUYZp0SCGL6LvBQl6) / [Link](https://github.com/songyouwei/ABSA-PyTorch/blob/master/models/td_lstm.py)
 
+## Sentiment classification with user and product information
+
+This is the same task on sentiment classification, where the given text is a review, but we are also additionally given (a) the *user* who wrote the text, and (b) the *product* which the text is written for. There are three widely used datasets, introduced by [Tang et. al (2015)](http://aclweb.org/anthology/P15-1098): IMDB, Yelp 2013, and Yelp 2014. Evaluation is done using both accuracy and RMSE, but for brevity, we only provide the accuracy here. Please look at the papers for the RMSE values.
+
+| Model              | IMDB (acc) | Yelp 2013 (acc) | Yelp 2014 (acc) | Paper / Source | Code |
+| ------------------ | :--------: | :-------------: | :-------------: | -------------- | ---- |
+| BiLSTM + linear-basis-cust (Kim, Jihyeok, et al., 2019) | - | 67.1 | - | [Categorical Metadata Representation for Customized Text Classification](https://arxiv.org/pdf/1902.05196.pdf) | [Link](https://github.com/zizi1532/BasisCustomize) |
+| CMA (Ma, Dehong, et al., 2017) | 54.0 | 66.4 | 67.6 | [Cascading Multiway Attention for Document-level Sentiment Classification](http://aclweb.org/anthology/I17-1064) | - |
+| DUPMN (Long, Yunfei, et al., 2018) | 53.9 | 66.2 | 67.6 | [Dual Memory Network Model for Biased Product Review Classification](http://aclweb.org/anthology/W18-6220) | - |
+| HCSC (Amplayo, Reinald Kim, et al., 2018) | 54.2 | 65.7 | - | [Cold-Start Aware User and Product Attention for Sentiment Classification](http://aclweb.org/anthology/P18-1236) | [Link](https://github.com/rktamplayo/HCSC) |
+| NSC (Chen, Huimin, et al., 2016) | 53.3 | 65.0 | 66.7 | [Neural Sentiment Classification with User and Product Attention](http://aclweb.org/anthology/D16-1171) | [Link](https://github.com/thunlp/NSC) |
+| UPDMN (Dou, Zi-Yi, 2017) | 46.5 | 63.9 | 61.3 | [Capturing User and Product Information for Document Level Sentiment Analysis with Deep Memory Network](http://aclweb.org/anthology/D17-1054) | - |
+| UPNN (Tang, Duyu, et al., 2016) | 43.5 | 59.6 | 60.8 | [Learning Semantic Representations of Users and Products for Document Level Sentiment Classification](http://aclweb.org/anthology/P15-1098) | [Link](http://ir.hit.edu.cn/~dytang/paper/acl2015/UserTextNN.zip) |
+
 # Subjectivity analysis
 
 A related task to sentiment analysis is the subjectivity analysis with the goal of labeling an opinion as either subjective or objective.
