@@ -14,6 +14,7 @@ Example:
 &spades; marks the system that uses character unigram as input.
 &clubs; marks the systme that uses character bigram as input.
 
+- Huang et al. (2019): BERT + model compression + multi-criterial learing &spades;
 - Yang et al. (2018): Lattice LSTM-CRF + BPE subword embeddings &spades;&clubs; 
 - Ma et al. (2018): BiLSTM-CRF + hyper-params search&spades;&clubs;
 - Yang et al. (2017): Transition-based + Beam-search + Rich pretrain&spades;&clubs; 
@@ -37,6 +38,7 @@ F1-score
 
 | Model         | F1 | Paper / Source | Code |
 | ------------- | :-----: |  --- | --- |
+| Huang et al. (2019) | 97.6 |[Toward Fast and Accurate Neural Chinese Word Segmentation with Multi-Criteria Learning](https://arxiv.org/pdf/1903.04190.pdf)||
 | Ma et al. (2018) | 96.7 | [State-of-the-art Chinese Word Segmentation with Bi-LSTMs](https://aclweb.org/anthology/D18-1529)| |
 | Yang et al. (2018) | 96.3 | [Subword Encoding in Lattice LSTM for Chinese Word Segmentation](https://arxiv.org/pdf/1810.12594.pdf) | [Github](https://github.com/jiesutd/SubwordEncoding-CWS)|
 | Yang et al. (2017) | 96.2 | [Neural Word Segmentation with Rich Pretraining](http://aclweb.org/anthology/P17-1078) | [Github](https://github.com/jiesutd/RichWordSegmentor)|
@@ -55,6 +57,7 @@ F1-score
 
 | Model         | F1 | Paper / Source | Code |
 | ------------- | :-----: |  --- | --- |
+| Huang et al. (2019) | 96.6 | [Toward Fast and Accurate Neural Chinese Word Segmentation with Multi-Criteria Learning](https://arxiv.org/pdf/1903.04190.pdf)| |
 | Ma et al. (2018) | 96.2 | [State-of-the-art Chinese Word Segmentation with Bi-LSTMs](https://aclweb.org/anthology/D18-1529)| |
 | Yang et al. (2017) | 95.7 | [Neural Word Segmentation with Rich Pretraining](http://aclweb.org/anthology/P17-1078) |[Github](https://github.com/jiesutd/RichWordSegmentor) |
 | Cai et al. (2017) | 95.3 | [Fast and Accurate Neural Word Segmentation for Chinese](http://aclweb.org/anthology/P17-2096) | [Github](https://github.com/jcyk/greedyCWS) |
@@ -64,6 +67,7 @@ F1-score
 
 | Model         | F1 | Paper / Source | Code |
 | ------------- | :-----: |  --- | --- |
+| Huang et al. (2019) | 97.6 | [Toward Fast and Accurate Neural Chinese Word Segmentation with Multi-Criteria Learning](https://arxiv.org/pdf/1903.04190.pdf)| |
 | Ma et al. (2018) | 97.2 | [State-of-the-art Chinese Word Segmentation with Bi-LSTMs](https://aclweb.org/anthology/D18-1529)| |
 | Yang et al. (2017) | 96.9 | [Neural Word Segmentation with Rich Pretraining](http://aclweb.org/anthology/P17-1078) | [Github](https://github.com/jiesutd/RichWordSegmentor)|
 | Cai et al. (2017) | 95.6 | [Fast and Accurate Neural Word Segmentation for Chinese](http://aclweb.org/anthology/P17-2096) | [Github](https://github.com/jcyk/greedyCWS) |
@@ -73,6 +77,7 @@ F1-score
 
 | Model         | F1 | Paper / Source | Code |
 | ------------- | :-----: |  --- | --- |
+| Huang et al. (2019) | 96.6 | [Toward Fast and Accurate Neural Chinese Word Segmentation with Multi-Criteria Learning](https://arxiv.org/pdf/1903.04190.pdf)| |
 | Yang et al. (2017) | 96.3 | [Neural Word Segmentation with Rich Pretraining](http://aclweb.org/anthology/P17-1078) | [Github](https://github.com/jiesutd/RichWordSegmentor)|
 | Ma et al. (2018) | 96.1 | [State-of-the-art Chinese Word Segmentation with Bi-LSTMs](https://aclweb.org/anthology/D18-1529)| |
 | Yang et al. (2018) | 95.9 | [Subword Encoding in Lattice LSTM for Chinese Word Segmentation](https://arxiv.org/pdf/1810.12594.pdf) | [Github](https://github.com/jiesutd/SubwordEncoding-CWS)|
@@ -86,6 +91,7 @@ F1-score
 | Model         | F1 | Paper / Source | Code |
 | ------------- | :-----: |  --- | --- |
 | Ma et al. (2018) | 98.1 | [State-of-the-art Chinese Word Segmentation with Bi-LSTMs](https://aclweb.org/anthology/D18-1529)| |
+| Huang et al. (2019) | 97.9 | [Toward Fast and Accurate Neural Chinese Word Segmentation with Multi-Criteria Learning](https://arxiv.org/pdf/1903.04190.pdf)| |
 | Yang et al. (2018) | 97.8 | [Subword Encoding in Lattice LSTM for Chinese Word Segmentation](https://arxiv.org/pdf/1810.12594.pdf) | [Github](https://github.com/jiesutd/SubwordEncoding-CWS)|
 | Yang et al. (2017) | 97.5 | [Neural Word Segmentation with Rich Pretraining](http://aclweb.org/anthology/P17-1078) | [Github](https://github.com/jiesutd/RichWordSegmentor)|
 | Cai et al. (2017) | 97.1 | [Fast and Accurate Neural Word Segmentation for Chinese](http://aclweb.org/anthology/P17-2096) | [Github](https://github.com/jcyk/greedyCWS) |
