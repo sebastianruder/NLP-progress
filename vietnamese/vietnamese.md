@@ -46,15 +46,18 @@ tokens (i.e. including punctuation).
   * Gold POS and chunking tags are NOT available in a real-world application.
 * For a realistic scenario, contiguous syllables constituting a full name are merged to form a word. POS/chunking tags--if used--have to be automatically predicted! 
 
-| Model           | F1  |  Paper | Code | 
-| ------------- | :-----:| --- | --- | 
+| Model           | F1  |  Paper | Code | Note | 
+| ------------- | :-----:| --- | --- | --- | 
+| VnCoreNLP (2018) [1] | 91.30 | [VnCoreNLP: A Vietnamese Natural Language Processing Toolkit](http://aclweb.org/anthology/N18-5012) | [Official](https://github.com/vncorenlp/VnCoreNLP) | Pre-trained embeddings learned from Vietnamese Wikipedia corpus |
+| BiLSTM-CRF + CNN-char  (2016) [1] | 91.09 | [End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF](http://www.aclweb.org/anthology/P16-1101) | [Official](https://github.com/XuezheMax/LasagneNLP) / [Link](https://github.com/UKPLab/emnlp2017-bilstm-cnn-crf/)  | Pre-trained embeddings learned from Vietnamese Wikipedia corpus | 
 | VNER (2019) | 89.58 | [Attentive Neural Network for Named Entity Recognition in Vietnamese](https://arxiv.org/abs/1810.13097) | | 
-| VnCoreNLP (2018) | 88.55 | [VnCoreNLP: A Vietnamese Natural Language Processing Toolkit](http://aclweb.org/anthology/N18-5012) | [Official](https://github.com/vncorenlp/VnCoreNLP) | 
-| BiLSTM-CRF + CNN-char  (2016) | 88.28 | [End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF](http://www.aclweb.org/anthology/P16-1101) | [Official](https://github.com/XuezheMax/LasagneNLP) / [Link](https://github.com/UKPLab/emnlp2017-bilstm-cnn-crf/) | 
-| BiLSTM-CRF + LSTM-char (2016) | 87.71 | [Neural Architectures for Named Entity Recognition](http://www.aclweb.org/anthology/N16-1030) | [Link](https://github.com/UKPLab/emnlp2017-bilstm-cnn-crf/) | 
-| BiLSTM-CRF (2015) | 86.48 | [Bidirectional LSTM-CRF Models for Sequence Tagging](https://arxiv.org/abs/1508.01991) | [Link](https://github.com/UKPLab/emnlp2017-bilstm-cnn-crf/) | 
+| VnCoreNLP (2018) | 88.55 | [VnCoreNLP: A Vietnamese Natural Language Processing Toolkit](http://aclweb.org/anthology/N18-5012) | [Official](https://github.com/vncorenlp/VnCoreNLP) | Pre-trained embeddings learned from Baomoi corpus |
+| BiLSTM-CRF + CNN-char  (2016) [2] | 88.28 | [End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF](http://www.aclweb.org/anthology/P16-1101) | [Official](https://github.com/XuezheMax/LasagneNLP) / [Link](https://github.com/UKPLab/emnlp2017-bilstm-cnn-crf/) | Pre-trained embeddings learned from Baomoi corpus |
+| BiLSTM-CRF + LSTM-char (2016) [2] | 87.71 | [Neural Architectures for Named Entity Recognition](http://www.aclweb.org/anthology/N16-1030) | [Link](https://github.com/UKPLab/emnlp2017-bilstm-cnn-crf/) | Pre-trained embeddings learned from Baomoi corpus |
+| BiLSTM-CRF (2015) [2] | 86.48 | [Bidirectional LSTM-CRF Models for Sequence Tagging](https://arxiv.org/abs/1508.01991) | [Link](https://github.com/UKPLab/emnlp2017-bilstm-cnn-crf/) | Pre-trained embeddings learned from Baomoi corpus |
 
-* BiLSTM-CRF-based scores are reported in  "[VnCoreNLP: A Vietnamese Natural Language Processing Toolkit](http://aclweb.org/anthology/N18-5012)."
+* [1] denotes that scores are reported in  "[ETNLP: A Toolkit for Extraction, Evaluation and Visualization of Pre-trained Word Embeddings](https://arxiv.org/pdf/1903.04433v1.pdf)"
+* [2] denotes that BiLSTM-CRF-based scores are reported in  "[VnCoreNLP: A Vietnamese Natural Language Processing Toolkit](http://aclweb.org/anthology/N18-5012)"
 
 ## Part-of-speech tagging 
 
