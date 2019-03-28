@@ -213,7 +213,8 @@ endings. The systems must then choose the correct ending to the story.
 
 | Model           | Accuracy  |  Paper / Source | Code |
 | ------------- | :-----:| --- | --- |
-| Finetuned Transformer LM (Radford et al., 2018) | 86.5 | [Improving Language Understanding by Generative Pre-Training](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf) |
+| GPT+General Reading Strategies (Sun et al., 2018) | 88.3 | [Improving Machine Reading Comprehension by General Reading Strategies](https://arxiv.org/pdf/1810.13441v1.pdf) |
+| Finetuned Transformer LM (Radford et al., 2018) | 86.5 | [Improving Language Understanding by Generative Pre-Training](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf) | | [Official](https://github.com/openai/finetune-transformer-lm)
 | Liu et al. (2018) | 78.7 | [Narrative Modeling with Memory Chains and Semantic Supervision](http://aclweb.org/anthology/P18-2045) | [Official](https://github.com/liufly/narrative-modeling)
 | Hidden Coherence Model (Chaturvedi et al., 2017) | 77.6 | [Story Comprehension for Predicting What Happens Next](http://aclweb.org/anthology/D17-1168) |
 | val-LS-skip (Srinivasan et al., 2018) | 76.5 | [A Simple and Effective Approach to the Story Cloze Test](http://aclweb.org/anthology/N18-2015) |
