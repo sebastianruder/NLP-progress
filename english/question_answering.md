@@ -213,7 +213,7 @@ The [Story Cloze Test](http://aclweb.org/anthology/W17-0906.pdf) is a dataset fo
 story understanding that provides systems with four-sentence stories and two possible
 endings. The systems must then choose the correct ending to the story.
 
-The data are available on the [Story Cloze Test Challenge](https://competitions.codalab.org/competitions/15333).
+More details are available on the [Story Cloze Test Challenge](https://competitions.codalab.org/competitions/15333).
 
 | Model           | Accuracy  |  Paper / Source | Code |
 | ------------- | :-----:| --- | --- |
