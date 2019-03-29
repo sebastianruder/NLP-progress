@@ -107,6 +107,6 @@ _no_relation_ type).
 
 The Few-Shot Relation Classification Dataset (FewRel) is a different setting from the previous datasets. This dataset consists of 70K sentences expressing 100 relations annotated by crowdworkers on Wikipedia corpus. The few-shot learning task follows the N-way K-shot meta learning setting. It is both the largest supervised relation classification dataset as well as the largest few-shot learning dataset till now. 
 
-The public leaderboard is available on the [FewRel website](http://zhuhao.me/fewrel).
+The public leaderboard is available on the [FewRel website](http://www.zhuhao.me/fewrel/).
 
 [Go back to the README](../README.md)

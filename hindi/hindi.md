@@ -19,4 +19,4 @@ The IIT Bombay English-Hindi Parallel Corpus used by Kunchukuttan et al. (2018) 
 
 | Model           | BLEU  | METEOR | Paper / Source | Code | 
 | ------------- | :-----:| :-----:| --- | --- | 
-| Kunchukuttan et al. (2018) | 89.35 | 0.308 | [The IIT Bombay English-Hindi Parallel Corpus](http://www.lrec-conf.org/proceedings/lrec2018/pdf/847.pdf) | | 
+| Kunchukuttan et al. (2018) | 12.23 (eng-hin) & 12.83 (hin-eng) | 0.308 | [The IIT Bombay English-Hindi Parallel Corpus](http://www.lrec-conf.org/proceedings/lrec2018/pdf/847.pdf) | | 
