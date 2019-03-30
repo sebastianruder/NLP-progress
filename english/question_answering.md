@@ -190,6 +190,8 @@ The dataset contains more than 28,000 passages and nearly 100,000 questions and 
 downloaded [here](http://www.cs.cmu.edu/~glai1/data/race/). Models are evaluated based on accuracy
 on middle school examinations (RACE-m), high school examinations (RACE-h), and on the total dataset (RACE).
 
+The public leaderboard is available on the [RACE leaderboard](http://www.qizhexie.com//data/RACE_leaderboard).
+
 | Model           | RACE-m | RACE-h | RACE | Paper / Source |
 | ------------- | :-----:| :-----:| :-----:| --- |
 | Finetuned Transformer LM (Radford et al., 2018) | 62.9 | 57.4 | 59.0 | [Improving Language Understanding by Generative Pre-Training](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf) |
@@ -211,10 +213,12 @@ The [Story Cloze Test](http://aclweb.org/anthology/W17-0906.pdf) is a dataset fo
 story understanding that provides systems with four-sentence stories and two possible
 endings. The systems must then choose the correct ending to the story.
 
+More details are available on the [Story Cloze Test Challenge](https://competitions.codalab.org/competitions/15333).
+
 | Model           | Accuracy  |  Paper / Source | Code |
 | ------------- | :-----:| --- | --- |
-| GPT+General Reading Strategies (Sun et al., 2018) | 88.3 | [Improving Machine Reading Comprehension by General Reading Strategies](https://arxiv.org/pdf/1810.13441v1.pdf) |
-| Finetuned Transformer LM (Radford et al., 2018) | 86.5 | [Improving Language Understanding by Generative Pre-Training](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf) | | [Official](https://github.com/openai/finetune-transformer-lm)
+| Reading Strategies Model (Sun et al., 2018) | 88.3 | [Improving Machine Reading Comprehension by General Reading Strategies](https://arxiv.org/pdf/1810.13441v1.pdf) |
+| Finetuned Transformer LM (Radford et al., 2018) | 86.5 | [Improving Language Understanding by Generative Pre-Training](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf) |  [Official](https://github.com/openai/finetune-transformer-lm)
 | Liu et al. (2018) | 78.7 | [Narrative Modeling with Memory Chains and Semantic Supervision](http://aclweb.org/anthology/P18-2045) | [Official](https://github.com/liufly/narrative-modeling)
 | Hidden Coherence Model (Chaturvedi et al., 2017) | 77.6 | [Story Comprehension for Predicting What Happens Next](http://aclweb.org/anthology/D17-1168) |
 | val-LS-skip (Srinivasan et al., 2018) | 76.5 | [A Simple and Effective Approach to the Story Cloze Test](http://aclweb.org/anthology/N18-2015) |
