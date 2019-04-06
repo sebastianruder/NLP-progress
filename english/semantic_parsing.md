@@ -169,11 +169,7 @@ Example:
 | ------------- |  --- |
 | How many engine types did Val Musetti use? | `SELECT COUNT Engine WHERE Driver = Val Musetti` | 
 
-| Model           | Acc ex |  Paper / Source |
-| -------------| :-----:| --- |
-| TypeSQL+TC (Yu et al., 2018) | 82.6 | [TypeSQL: Knowledge-based Type-Aware Neural Text-to-SQL Generation](https://arxiv.org/abs/1804.09769) |
-| SQLNet (Xu et al., 2017) | 68.0 | [Sqlnet: Generating structured queries from natural language without reinforcement learning](https://arxiv.org/abs/1711.04436) |
-| Seq2SQL (Zhong et al., 2017) | 59.4 | [Seq2sql: Generating structured queries from natural language using reinforcement learning](https://arxiv.org/abs/1709.00103) |
+The WikiSQL dataset and leaderboard can be accessed [here](https://github.com/salesforce/WikiSQL).
 
 ### Smaller Datasets
 
