@@ -39,6 +39,19 @@ are excluded from the evaluation. Evaluation metrics are unlabeled attachment sc
 | Arc-hybrid (Ballesteros et al., 2016)                        | 97.3  | 93.56 | 91.42 | [Training with Exploration Improves a Greedy Stack-LSTM Parser](https://arxiv.org/abs/1603.03793) |                                                              |
 | BIST graph-based parser (Kiperwasser and Goldberg, 2016)     | 97.3  | 93.1  | 91.0  | [Simple and Accurate Dependency Parsing Using Bidirectional LSTM Feature Representations](https://aclweb.org/anthology/Q16-1023) | [Official](https://github.com/elikip/bist-parser/tree/master/bmstparser/src) |
 
+### Universal Dependencies
+
+The focus of the task is learning syntactic dependency parsers that can work in a real-world setting, starting from raw text, and that can work over many typologically different languages, even low-resource languages for which there is little or no training data, by exploiting a common syntactic annotation standard. This task has been made possible by the Universal Dependencies initiative (UD, http://universaldependencies.org/), which has developed treebanks for 60+ languages with cross-linguistically consistent annotation and recoverability of the original raw texts.
+
+Participating systems will have to find labeled syntactic dependencies between words, i.e. a syntactic head for each word, and a label classifying the type of the dependency relation. In addition to syntactic dependencies, prediction of morphology and lemmatization will be evaluated. There will be multiple test sets in various languages but all data sets will adhere to the common annotation style of UD. Participants will be asked to parse raw text where no gold-standard pre-processing (tokenization, lemmas, morphology) is available. Data preprocessed by a baseline system (UDPipe, https://ufal.mff.cuni.cz/udpipe/) was provided so that the participants could focus on improving just one part of the processing pipeline. The organizers believed that this made the task reasonably accessible for everyone.
+
+| Model                                                        |  LAS  |  MLAS  |  BLEX  | Paper / Source                                               | Code                                                         |
+| ------------------------------------------------------------ | :---: | :---: | :---: | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Stanford (Qi et al.)                        | 74.16 | 62.08 | 65.28 | [Universal Dependency Parsing from Scratch](https://arxiv.org/pdf/1901.10457.pdf) | [Official](https://github.com/stanfordnlp/stanfordnlp) |
+| UDPipe Future (Straka)                      | 73.11  | 61.25 | 64.49 | [UDPipe 2.0 Prototype at CoNLL 2018 UD Shared Task](https://www.aclweb.org/anthology/K18-2020) | [Official](https://github.com/CoNLL-UD-2018/UDPipe-Future)              |
+| HIT-SCIR (Che et al.)                            | 75.84 | 59.78 | 65.33 | [Towards Better UD Parsing: Deep Contextualized Word Embeddings, Ensemble, and Treebank Concatenation](https://arxiv.org/abs/1807.03955) |           |
+| TurkuNLP (Kanerva et al.)                             | 73.28 | 60.99 | 66.09 | [Turku Neural Parser Pipeline: An End-to-End System for the CoNLL 2018 Shared Task](https://universaldependencies.org/conll18/proceedings/pdf/K18-2013.pdf) | [Official](https://github.com/TurkuNLP/Turku-neural-parser-pipeline)          |
+
 The following results are just for references:
 
 | Model                                                        |  UAS  |  LAS  | Note                           | Paper / Source                                               |
