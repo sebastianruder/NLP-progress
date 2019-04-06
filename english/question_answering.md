@@ -27,6 +27,7 @@ Question answering is the task of answering a question.
   - [DuReader](#dureader)
   - [Quasar](#quasar)
   - [SearchQA](#searchqa)
+- [Knowledge Base Question Answering](#knowledge-base-question-answering)
 
 ### ARC
 
@@ -296,5 +297,19 @@ The [leaderboard](https://ai.baidu.com/broad/leaderboard?dataset=dureader) is av
 |Focused Hierarchical RNN	(Ke et al., 2018)     |46.8	  |53.4	   |- |-    |[Focused Hierarchical RNNs for Conditional Sequence Processing](http://proceedings.mlr.press/v80/ke18a/ke18a.pdf)||
 |ASR (Kadlec et al, 2016) |41.3	  |22.8    |- |-    |[Text Understanding with the Attention Sum Reader Network](https://arxiv.org/abs/1603.01547)|
 
+## Knowledge Base Question Answering
+
+Knowledge Base Question Answering is the task of answering natural language question based on a knowledge base/knowledge graph such as [DBpedia](https://wiki.dbpedia.org/) or [Wikidata](https://www.wikidata.org/).
+
+### QALD-9
+[QALD-9](http://ceur-ws.org/Vol-2241/paper-06.pdf) is a manually curated superset of the previous eight editions of the [Question Answering over Linked Data (QALD) challenge](http://2018.nliwod.org/challenge) published in 2018. It is constructed by human experts to cover a wide range of natural language to SPARQL conversions based on DBpedia 2016-10 knowledge base. Each question-answer-pair has additional meta-data. QALD-9 is best evaluated using the [GERBIL QA platform](http://gerbil-qa.aksw.org/gerbil/config) for repeatability of the evaluation numbers.
+
+| Annotator | Macro P | Macro R | Macro F1 | Error Count | Average Time/Doc ms | Macro F1 QALD | Paper (including links to webservices/source code)|
+|------------------------|:-------:|:-------:|:--------:|:-----------:|:-------------------:|:-------------:|----------------------|
+| Elon (WS)              |   0.049 |   0.053 |    0.050 |           2 |                 219 |         0.100 ||
+| QASystem (WS)          |   0.097 |   0.116 |    0.098 |           0 |                1014 |         0.200 ||
+| TeBaQA (WS)            |   0.129 |   0.134 |    0.130 |           0 |                2668 |         0.222 ||
+| wdaqua-core1 (DBpedia) |   0.261 |   0.267 |    0.250 |           0 |                 661 |         0.289 | Diefenbach, Dennis, Kamal Singh, and Pierre Maret. "Wdaqua-core1: a question answering service for rdf knowledge bases." Companion of the The Web Conference 2018 on The Web Conference 2018. International World Wide Web Conferences Steering Committee, 2018. |
+| gAnswer (WS)           |   0.293 |   0.327 |    0.298 |           1 |                3076 |         0.430 | Zou, Lei, et al. "Natural language question answering over RDF: a graph data driven approach." Proceedings of the 2014 ACM SIGMOD international conference on Management of data. ACM, 2014.|
 
 [Go back to the README](../README.md)
