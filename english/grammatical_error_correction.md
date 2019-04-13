@@ -71,7 +71,7 @@ _**Restricted**_: uses only publicly available datasets. _**Unrestricted**_: use
 
 | Model           | GLEU  |  Paper / Source | Code |
 | ------------- | :-----:| --- | :-----: |
-| CNN Seq2Seq + Fluency Boost and inference (Ge et al., 2018) |  62.37 | [Reaching Human-level Performance in Automatic Grammatical Error Correction: An Empirical Study](https://arxiv.org/pdf/1807.01270.pdf)| NA |
+| CNN Seq2Seq + Fluency Boost and inference (Ge et al., 2018) |  62.42 | [Reaching Human-level Performance in Automatic Grammatical Error Correction: An Empirical Study](https://arxiv.org/pdf/1807.01270.pdf)| NA |
 
 _**Restricted**_: uses only publicly available datasets. _**Unrestricted**_: uses non-public datasets.
 
