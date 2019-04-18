@@ -57,6 +57,7 @@ consists of around 2 million words extracted from Wikipedia articles.
 
 | Model           | Validation perplexity | Test perplexity | Number of params | Paper / Source | Code |
 | ------------- | :---:| :---:| :---:| -------- | --- |
+| Transformer-XL + RMS dynamic eval (Krause et al., 2019)* ***arxiv preprint*** | 15.8 | 16.4 | 257M | [Dynamic Evaluation of Transformer Language Models](https://arxiv.org/pdf/1904.08378.pdf) | [Official](https://github.com/benkrause/dynamiceval-transformer) |
 | Transformer-XL Large (Dai et al., 2018) ***under review*** | 17.7 | 18.3 | 257M | [Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context](https://arxiv.org/pdf/1901.02860.pdf) | [Official](https://github.com/kimiyoung/transformer-xl) |
 | Transformer with tied adaptive embeddings (Baevski and Auli, 2018) | 19.8 | 20.5 | 247M | [Adaptive Input Representations for Neural Language Modeling](https://arxiv.org/pdf/1809.10853.pdf) | [Link](https://github.com/AranKomat/adapinp) |
 | Transformer-XL Standard (Dai et al., 2018) ***under review*** | 23.1 | 24.0 | 151M | [Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context](https://arxiv.org/pdf/1901.02860.pdf) | [Official](https://github.com/kimiyoung/transformer-xl) |
@@ -99,6 +100,7 @@ Within these 100 million bytes are 205 unique tokens.
 
 | Model           | Bit per Character (BPC) |  Number of params | Paper / Source | Code |
 | ---------------- | :-----: | :-----: | -------------- | ---- |
+| Transformer-XL + RMS dynamic eval (Krause et al., 2019)* ***arxiv preprint*** | 0.94 | 277M | [Dynamic Evaluation of Transformer Language Models](https://arxiv.org/pdf/1904.08378.pdf) | [Official](https://github.com/benkrause/dynamiceval-transformer) |
 | 24-layer Transformer-XL (Dai et al., 2018) ***under review*** | 0.99 | 277M | [Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context](https://arxiv.org/pdf/1901.02860.pdf) | [Official](https://github.com/kimiyoung/transformer-xl) |
 | 18-layer Transformer-XL (Dai et al., 2018) ***under review*** | 1.03 | 88M | [Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context](https://arxiv.org/pdf/1901.02860.pdf) | [Official](https://github.com/kimiyoung/transformer-xl) |
 | 12-layer Transformer-XL (Dai et al., 2018) ***under review*** | 1.06 | 41M | [Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context](https://arxiv.org/pdf/1901.02860.pdf) | [Official](https://github.com/kimiyoung/transformer-xl) |
@@ -116,6 +118,7 @@ Within these 100 million bytes are 205 unique tokens.
 
 | Model           | Bit per Character (BPC) |  Number of params | Paper / Source | Code |
 | ---------------- | :-----: | :-----: | -------------- | ---- |
+| Transformer-XL + RMS dynamic eval (Krause et al., 2019)* ***arxiv preprint*** | 1.038 | 277M | [Dynamic Evaluation of Transformer Language Models](https://arxiv.org/pdf/1904.08378.pdf) | [Official](https://github.com/benkrause/dynamiceval-transformer) |
 | Transformer-XL Large (Dai et al., 2018) ***under review*** | 1.08 | 277M | [Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context](https://arxiv.org/pdf/1901.02860.pdf) | [Official](https://github.com/kimiyoung/transformer-xl) |
 | 64-layer Character Transformer Model (Al-Rfou et al., 2018) | 1.13 | 235M | [Character-Level Language Modeling with Deeper Self-Attention](https://arxiv.org/abs/1808.04444) ||
 | 12-layer Character Transformer Model (Al-Rfou et al., 2018) | 1.18 | 44M | [Character-Level Language Modeling with Deeper Self-Attention](https://arxiv.org/abs/1808.04444) ||
