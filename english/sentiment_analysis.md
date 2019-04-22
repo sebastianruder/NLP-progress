@@ -131,12 +131,23 @@ The task consists of the following subtasks:
 
 - Subtask 4: Aspect category polarity
 
-Preprocessed dataset: https://github.com/songyouwei/ABSA-PyTorch/tree/master/datasets/semeval14
+Preprocessed dataset: https://github.com/songyouwei/ABSA-PyTorch/tree/master/datasets/semeval14   
+https://github.com/howardhsu/BERT-for-RRC-ABSA (with both subtask 1 and subtask 2)
+
+Subtask 1 results (SemEval-2014 Task 4 for Laptop and SemEval-2016 Task 5 for Restaurant):
+
+| Model           | Laptop (F1) | Restaurant (F1) |  Paper / Source |  Code |
+| ------------- | :-----:| :-----:| --- | --- |
+| BERT-PT (Hu, Xu, et al., 2019) | 84.26 | 77.97 | [BERT Post-Training for Review Reading Comprehension and Aspect-based Sentiment Analysis](https://arxiv.org/pdf/1904.02232.pdf) | [official](https://github.com/howardhsu/BERT-for-RRC-ABSA)
+| DE-CNN (Hu, Xu, et al., 2018) | 81.59 | 74.37 | [Double Embeddings and CNN-based Sequence Labeling for Aspect Extraction](https://www.aclweb.org/anthology/P18-2094) | [official](https://github.com/howardhsu/DE-CNN)
+| MIN (Li, Xin, et al., 2017) | 77.58 | 73.44 | [Deep Multi-Task Learning for Aspect Term Extraction with Memory Interaction] | 
+| RNCRF (Wang, Wenya. et al., 2016) | 78.42 | 69.74 | [Recursive Neural Conditional Random Fields for Aspect-based Sentiment Analysis](https://www.aclweb.org/anthology/papers/D/D16/D16-1059/) | [official](https://github.com/happywwy/Recursive-Neural-Conditional-Random-Field)
 
 Subtask 2 results:
 
 | Model           | Restaurant (acc) | Laptop (acc) |  Paper / Source |  Code |
 | ------------- | :-----:| :-----:| --- | --- |
+| BERT-PT (Hu, Xu, et al., 2019) | 84.95 | 78.07 | [BERT Post-Training for Review Reading Comprehension and Aspect-based Sentiment Analysis](https://arxiv.org/pdf/1904.02232.pdf) | [official](https://github.com/howardhsu/BERT-for-RRC-ABSA)
 | AOA (Huang, Binxuan, et al., 2018) | 81.20 | 74.50 | [Aspect Level Sentiment Classification with Attention-over-Attention Neural Networks](https://arxiv.org/pdf/1804.06536.pdf) | [Link](https://github.com/songyouwei/ABSA-PyTorch/blob/master/models/aoa.py)
 | TNet (Li, Xin, et al., 2018) | 80.79 | 76.01 | [Transformation Networks for Target-Oriented Sentiment Classification](http://aclweb.org/anthology/P18-1087) | [Official](https://github.com/lixin4ever/TNet) / [Link](https://github.com/songyouwei/ABSA-PyTorch/blob/master/models/tnet_lf.py)
 | RAM (Chen, Peng, et al., 2017) | 80.23 | 74.49 | [Recurrent Attention Network on Memory for Aspect Sentiment Analysis](http://www.aclweb.org/anthology/D17-1047) | [Link](https://github.com/songyouwei/ABSA-PyTorch/blob/master/models/ram.py)
