@@ -53,7 +53,7 @@ Links: [WNUT 2017 Emerging Entity task page](https://noisy-text.github.io/2017/e
 
 | Model         | F1  | F1 (surface form) |  Paper / Source |
 | ---           | --- | ---               | --- |
-| Flair embeddings (Akbik et al., 2018) | 50.20 | | [Contextual String Embeddings for Sequence Labeling](http://aclweb.org/anthology/C18-1139) / [Flair framework](https://github.com/zalandoresearch/flair) |
+| Flair embeddings (Akbik et al., 2018) | 49.59 | | [Pooled Contextualized Embeddings for Named Entity Recognition](http://alanakbik.github.io/papers/naacl2019_embeddings.pdf) / [Flair framework](https://github.com/zalandoresearch/flair) |
 | Aguilar et al. (2018) | 45.55 | | [Modeling Noisiness to Recognize Named Entities using Multitask Neural Networks on Social Media](http://aclweb.org/anthology/N18-1127.pdf) |
 | SpinningBytes | 40.78 | 39.33 | [Transfer Learning and Sentence Level Features for Named Entity Recognition on Tweets](http://aclweb.org/anthology/W17-4422.pdf) | 
 
