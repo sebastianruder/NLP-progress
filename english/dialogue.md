@@ -75,4 +75,15 @@ The [Ubuntu Corpus](https://arxiv.org/pdf/1506.08909.pdf) contains almost 1 mill
 | Multi-View (Zhou et al. 2017) | 90.8 | 66.2 | [Multi-view Response Selection for Human-Computer Conversation](https://aclweb.org/anthology/D16-1036) |
 | Bi-LSTM (Kadlec et al. 2015) | 89.5 | 63.0 | [Improved Deep Learning Baselines for Ubuntu Corpus Dialogs](https://arxiv.org/pdf/1510.03753.pdf) |
 
+## Generative-based Chatbot
+The main task of generative-based chatbot is to generate consistent and engaging response given the context.
+### Personalized Chit-chat
 
+The task of persinalized chit-chat dialogue generation is first proposed by [PersonaChat](https://arxiv.org/pdf/1801.07243.pdf). The motivation is to enhance the engagingness and consistency of chit-chat bots via endowing explicit personas to agents. Here the `persona` is defined as several profile natural language sentences like "I weight 300 pounds.". NIPS 2018 has hold a competition [The Conversational Intelligence Challenge 2 (ConvAI2)](http://convai.io/) based on the dataset. The Evaluation metric is F1, Hits@1 and ppl. F1 evaluates on the word-level, and Hits@1 represents the probability of the real next utterance ranking the highest according to the model, while ppl is perplexity for language modeling. The following results are reported on dev set (test set is still hidden), almost of them are borrowed from [ConvAI2 Leaderboard](https://github.com/DeepPavlov/convai/blob/master/leaderboards.md).
+
+| Model           | F1 | Hits@1 | ppl | Paper / Source | Code |
+| -------------   | :---------: | :---------:| :--------: | ---------------| ------------- |
+| TransferTransfo (Thomas et al. 2019) | 19.09 | 82.1 | 17.51 | [TransferTransfo: A Transfer Learning Approach for Neural Network Based Conversational Agents](https://arxiv.org/pdf/1901.08149.pdf) | [Code](https://github.com/huggingface/transfer-learning-conv-ai) |
+| Lost In Conversation | 17.79 | - | 17.3 | [NIPS 2018 Workshop Presentation](http://convai.io/NeurIPSParticipantSlides.pptx) | [Code](https://github.com/atselousov/transformer_chatbot) |
+| Seq2Seq + Attention (Dzmitry et al. 2014) | 16.18 | 12.6 | 29.8 | [Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/pdf/1409.0473.pdf) | [Code](https://github.com/facebookresearch/ParlAI/tree/master/projects/convai2/baselines/seq2seq) |
+| KV Profile Memory (Zhang et al. 2018) | 11.9 | 55.2 | - | [Personalizing Dialogue Agents: I have a dog, do you have pets too?](https://arxiv.org/pdf/1801.07243.pdf) | [Code](https://github.com/facebookresearch/ParlAI/tree/master/projects/convai2/baselines/kvmemnn)
