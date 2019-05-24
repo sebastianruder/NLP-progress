@@ -58,6 +58,8 @@ reported here are the highest achieved by the model using any external resources
 
 | Model                                  | F1    | Paper / Source  | Code           |
 | -------------------------------------- | ----- | --------------- | -------------- |
+| *BERT-based Models* |
+| R-BERT (Wu et al. 2019) | **89.25** | [Enriching Pre-trained Language Model with Entity Information for Relation Classification](https://arxiv.org/abs/1905.08284) |
 | *CNN-based Models* |
 | Multi-Attention CNN (Wang et al. 2016) | **88.0** | [Relation Classification via Multi-Level Attention CNNs](http://aclweb.org/anthology/P16-1123) | [lawlietAi's Reimplementation](https://github.com/lawlietAi/relation-classification-via-attention-model) |
 | Attention CNN (Huang and Y Shen, 2016) | 84.3<br>85.9<sup>[\*](#footnote)</sup> | [Attention-Based Convolutional Neural Network for Semantic Relation Extraction](http://www.aclweb.org/anthology/C16-1238) |
