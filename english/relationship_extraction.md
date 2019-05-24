@@ -26,6 +26,7 @@ has increased over the years as systems improve, with earlier systems having ver
 
 | Model                               | P@10% | P@30% | Paper / Source | Code           |
 | ----------------------------------- | ----- | ----- | --------------- | -------------- |
+| PCNN+noise_convert+cond_opt (Wu et al., 2019)         | 81.7   | 61.8   | [Improving Distantly Supervised Relation Extraction with Neural Noise Converter and Conditional Optimal Selector](https://arxiv.org/pdf/1811.05616.pdf) |  |
 | Intra- and Inter-Bag (Ye and Ling, 2019)         | 78.9   | 62.4   | [Distant Supervision Relation Extraction with Intra-Bag and Inter-Bag Attentions](https://arxiv.org/pdf/1904.00143.pdf) | [Code](https://github.com/ZhixiuYe/Intra-Bag-and-Inter-Bag-Attentions) |
 | RESIDE (Vashishth et al., 2018)         | 73.6   | 59.5   | [RESIDE: Improving Distantly-Supervised Neural Relation Extraction using Side Information](http://malllabiisc.github.io/publications/papers/reside_emnlp18.pdf) | [RESIDE](https://github.com/malllabiisc/RESIDE) |
 | PCNN+ATT (Lin et al., 2016)         | 69.4   | 51.8   | [Neural Relation Extraction with Selective Attention over Instances](http://www.aclweb.org/anthology/P16-1200) | [OpenNRE](https://github.com/thunlp/OpenNRE/) |
