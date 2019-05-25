@@ -4,6 +4,51 @@ Relationship extraction is the task of extracting semantic relationships from a 
 occur between two or more entities of a certain type (e.g. Person, Organisation, Location) and fall into a number of
 semantic categories (e.g. married to, employed by, lives in).
 
+## Extraction of entities and their semantic relations
+
+The task involves two sub-tasks of named entity recognition (NER) and relation classification (RC). 
+
+
+### CoNLL04 corpus
+
+The benchmark "entity and relation recognition" dataset CoNLL04 is available from [HERE](https://cogcomp.org/page/resource_view/43) by Dan Roth and Wen-tau Yih.  
+
+On this corpus, two evaluation setup scenarios are : (1) NER & RC: A realistic scenario where entity boundaries are not given. (2) EC & RC: A less realistic scenario where the entity boundaries are given. Thus the NER task which identifies both entity boundaries and classes reduces to the entity classification (EC) task. 
+
+Metric: macro-averaged F1.
+
+
+| Model | (1) NER | (1) RC | (2) EC | (2) RC | Paper | Code  |    train/dev/test | 
+| ------| ------- | ------- | ------- | ------- | ------- | ------- | ------ | 
+|  Nguyen and  Verspoor (2019) [+++] | 86.2 |  64.4 |  93.8 |  69.6 | [End-to-end neural relation extraction using deep biaffine attention](https://arxiv.org/abs/1812.11275) | [Official](https://github.com/datquocnguyen/jointRE) | 64/16/20 |
+| Bekoulis et al. (2018) [+++]|  83.9 | 62.0 |  93.3 |  67.0 | [Joint entity recognition and relation extraction as a multi-head selection problem](https://arxiv.org/abs/1804.07847) | [Official](https://github.com/bekou/multihead_joint_entity_relation_extraction) | 64/16/20 |
+| Bekoulis et al. (2018) [+++]  |  83.6 | 62.0 | 93.0 | 68.0 | [Adversarial training for multi-context joint entity and relation extraction](https://arxiv.org/abs/1808.06876) | [Official](https://github.com/bekou/multihead_joint_entity_relation_extraction) | 64/16/20 |
+| Adel and Schutze (2017) [+++] |  n/a  |  n/a | 82.1 | 62.5 | [Global Normalization of Convolutional Neural Networks for Joint Entity and Relation Classification](https://www.aclweb.org/anthology/D17-1181) | [Official](http://cistern.cis.lmu.de/globalNormalization/) | 64/16/20 |
+| Gupta et al. (2016) [+++]  |  n/a  |  n/a | 92.4 | 69.9 | [Table Filling Multi-Task Recurrent Neural Network for Joint Entity and Relation Extraction](https://aclweb.org/anthology/papers/C/C16/C16-1239/) | [Official](https://github.com/pgcool/TF-MTRNN) |  80/0/20 |
+| Miwa and Sasaki (2014) [---] | 80.7 | 61.0 | 92.3 | 71.0 | [Modeling Joint Entity and Relation Extraction with Table Representation](https://www.aclweb.org/anthology/D14-1200)|   |   80/0/20 |
+|Zhang et al. (2017) [---]| 85.6 | 67.8| n/a|n/a | [End-to-End Neural Relation Extraction with Global Optimization](https://www.aclweb.org/anthology/D17-1182)|    |   72/8/20 |
+
+* [+++] denotes that those models used the same test set. Although using the same test set, Gupta
+et al. (2016)  reported results on a 80/0/20 training/development/test split, instead of a 64/16/20 split used in Nguyen and  Verspoor (2019), Bekoulis et al. (2018)  and Adel and Schutze (2017).
+
+* [---] denotes that results are just for reference, **not for comparison**, due to a random sampling of the test set. In particular, Miwa and Sasaki (2014) used the 80/0/20 split for Setup 1 and performed 5-fold cross validation (i.e. sort of equivalent to 80/0/20) for Setup 2, while Zhang et al. (2017) used a 72/8/20 split.
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Relation prediction/classification
+
+In cases where (gold standard) entity mentions were already given, the task reduces to predicting a relation type for a given entity pair.
+
 ### New York Times Corpus
 
 The standard corpus for distantly supervised relationship extraction is the New York Times (NYT) corpus, published in
@@ -35,6 +80,7 @@ has increased over the years as systems improve, with earlier systems having ver
 
 
 (+) Obtained from results in the paper "Neural Relation Extraction with Selective Attention over Instances"
+
 
 ### SemEval-2010 Task 8
 
