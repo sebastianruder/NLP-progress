@@ -1,18 +1,21 @@
-# Relation Prediction
+# Link Prediction
 
 ## Task
 
-Relation Prediction is the task of recognizing a named relation between two named semantic entities. The common test setup is to hide one entity from the relation triplet, asking the system to recover it based on the other entity and the relation type.
+Link Prediction is the task of recognizing a named relation between two named semantic entities. The common test setup is to hide one entity from the relation triplet, asking the system to recover it based on the other entity and the relation type.
 
 For example, given the triple \<*Roman Jakobson*, *born-in-city*, *?*\>, the system is required to replace the question mark with *Moscow*.
 
-Relation Prediction datasets are typically extracted from two types of resources: 
+Link Prediction datasets are typically extracted from two types of resources: 
 * *Knowledge Bases*: KBs such as [FreeBase](https://developers.google.com/freebase/) contain hundreds or thousands of relation types pertaining to world-knowledge obtained autmoatically or semi-automatically from various resources on millions of entities. These relations include *born-in*, *nationality*, *is-in* (for geographical entities), *part-of* (for organizations, among others), and more.
 * *Semantic Graphs*: SGs such as [WordNet](https://wordnet.princeton.edu/) are often manually-curated resources of semantic concepts, restricted to more "linguistic" relations compared to free real-world knowledge. The most common semantic relation is *hypernym*, also known as the *is-a* relation (example: \<*cat*, *hypernym*, *feline*\>).
 
+**NOTE**: An overview  of state-of-the-art models for this task can be found at **[HERE](https://arxiv.org/pdf/1703.08098.pdf)** (summarizing experimental results up-to-April-2019).
+
+
 ## Evaluation
 
-Evaluation in Relation Prediction hinges on a list of ranked candidates given by the system to the test instance. The metrics below are derived from the location of correct candidate(s) in that list.
+Evaluation in Link Prediction hinges on a list of ranked candidates given by the system to the test instance. The metrics below are derived from the location of correct candidate(s) in that list.
 
 A common action performed before evaluation on a given list is *filtering*, where the list is cleaned of entities whose corresponding triples exist in the knowledge graph. Unless specified otherwise, results here are from filtered lists.
 
