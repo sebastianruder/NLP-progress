@@ -34,6 +34,7 @@ Models are evaluated on the newswire section and the full dataset based on [smat
 
 | Model           | F1 Newswire  | F1 Full |  Paper / Source |
 | ------------- | :-----:| :-----:| --- |
+| Two-stage Sequence-to-Graph Transducer (Zhang et al., 2019)&hearts; | -- | 70.2 | [AMR Parsing as Sequence-to-Graph Transduction](https://arxiv.org/abs/1905.08704) |
 | Transition-based+improved aligner+ensemble (Liu et al. 2018)&hearts; | 73.3 | 68.4 | [An AMR Aligner Tuned by Transition-based Parser](http://aclweb.org/anthology/D18-1264) |
 | Improved CAMR (Wang and Xue, 2017)&spades;&diams; | --| 68.1| [Getting the Most out of AMR Parsing](http://aclweb.org/anthology/D17-1129) |
 | Incremental joint model (Zhou et al., 2016)&hearts;&spades; | 71 | 66 | [AMR Parsing with an Incremental Joint Model](https://aclweb.org/anthology/D16-1065) |
@@ -64,6 +65,7 @@ Results are computed over 8 runs. Models are evaluated based on [smatch](https:/
 
 | Model           | Smatch  |  Paper / Source |
 | ------------- | :-----:| --- |
+| Two-stage Sequence-to-Graph Transducer (Zhang et al., 2019)&hearts; | 76.3 | [AMR Parsing as Sequence-to-Graph Transduction](https://arxiv.org/abs/1905.08704) |
 | Joint model (Lyu and Titov, 2018)&hearts;&spades; | 74.4 | [AMR Parsing as Graph Prediction with Latent Alignment](https://arxiv.org/abs/1805.05286) |
 | ChSeq + 100K (van Noord and Bos, 2017)&hearts; | 71.0 | [Neural Semantic Parsing by Character-based Translation: Experiments with Abstract Meaning Representations](https://arxiv.org/abs/1705.09980) |
 | Neural-Pointer (Buys and Blunsom, 2017)&hearts;&spades; | 61.9 | [Oxford at SemEval-2017 Task 9: Neural AMR Parsing with Pointer-Augmented Attention](http://aclweb.org/anthology/S17-2157) |
