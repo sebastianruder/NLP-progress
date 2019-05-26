@@ -12,7 +12,7 @@ Example:
 
 ## Systems
 &spades; marks the system that uses character unigram as input.
-&clubs; marks the systme that uses character bigram as input.
+&clubs; marks the system that uses character bigram as input.
 
 - Huang et al. (2019): BERT + model compression + multi-criterial learing &spades;
 - Yang et al. (2018): Lattice LSTM-CRF + BPE subword embeddings &spades;&clubs; 
