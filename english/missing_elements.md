@@ -20,11 +20,15 @@ Models are evaluated based on accuracy.
 Annotated Examples:
 
 #### Reference
+
 | I | bought | 5 | apples | but | got | only | 4 | . |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |   |        |   | HEAD   |     |     |      | NFH | |
 
 #### Implicit
+
 | Let | 's | meet | at | 5 | tomorrow | ? |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |    |      |    | NFH-TIME |   |   |
 
 
