@@ -23,7 +23,7 @@ Annotated Examples:
 
 | I | bought | 5 | apples | but | got | only | 4 | . |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|   |        |   | HEAD   |     |     |      | NFH | |
+|   |        |   | HEAD   |     |     |      | NFH-REFERENCE | |
 
 #### Implicit
 
