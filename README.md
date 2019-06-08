@@ -18,6 +18,7 @@
 - [Language modeling](english/language_modeling.md)
 - [Lexical normalization](english/lexical_normalization.md)
 - [Machine translation](english/machine_translation.md)
+- [Missing elements](english/missing_elements.md)
 - [Multi-task learning](english/multi-task_learning.md)
 - [Multi-modal](english/multimodal.md)
 - [Named entity recognition](english/named_entity_recognition.md)
