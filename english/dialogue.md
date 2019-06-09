@@ -50,8 +50,6 @@ evaluated based on accuracy on both individual and joint slot tracking.
 | Neural belief tracker (Mrkšić et al., 2017) | 96.5 | 90 | 84 | 94 | 73.4 | [Neural Belief Tracker: Data-Driven Dialogue State Tracking](https://arxiv.org/abs/1606.03777) |
 | RNN (Henderson et al., 2014) | 95.7 | 92 | 86 | 86 | 69 | [Robust dialog state tracking using delexicalised recurrent neural networks and unsupervised gate](http://svr-ftp.eng.cam.ac.uk/~sjy/papers/htyo14.pdf) | 
 
-[Go back to the README](../README.md)
-
 ### Wizard-of-Oz
 
 The [WoZ 2.0 dataset](https://arxiv.org/pdf/1606.03777.pdf) is a newer dialogue state tracking dataset whose evaluation is detached from the noisy output of speech recognition systems. Similar to DSTC2, it covers the restaurant search domain and has identical evaluation.
@@ -62,6 +60,19 @@ The [WoZ 2.0 dataset](https://arxiv.org/pdf/1606.03777.pdf) is a newer dialogue 
 | Zhong et al. (2018) | 97.1 | 88.1 | [Global-locally Self-attentive Dialogue State Tracker](https://arxiv.org/abs/1805.09655) |
 | Neural belief tracker (Mrkšić et al., 2017) | 96.5 | 84.4 | [Neural Belief Tracker: Data-Driven Dialogue State Tracking](https://arxiv.org/abs/1606.03777) |
 | RNN (Henderson et al., 2014) | 87.1 | 70.8 | [Robust dialog state tracking using delexicalised recurrent neural networks and unsupervised gate](http://svr-ftp.eng.cam.ac.uk/~sjy/papers/htyo14.pdf) | 
+
+
+### MultiWOZ
+
+The [MultiWOZ dataset](https://arxiv.org/abs/1810.00278) is a fully-labeled collection of human-human written conversations spanning over multiple domains and topics. At a size of 10k dialogues, it is at least one order of magnitude larger than all previous annotated task-oriented corpora. The dialogue are set between a tourist and a clerk in the information. It spans over 7 domains.
+
+
+| Model           | Joint  |  Slot  |  Paper / Source |
+| ------------- |  :-----:| :-----:| --- |
+| Ramadan et al. (2018) | 15.57 |	89.53 | [Large-Scale Multi-Domain Belief Tracking with Knowledge Sharing](https://www.aclweb.org/anthology/P18-2069) |
+| Zhong et al. (2018) | 35.57 |	95.44  | [Global-locally Self-attentive Dialogue State Tracker](https://arxiv.org/abs/1805.09655) |
+| Nouri and Hosseini-Asl (2019) | 36.27 |	98.42 | [Toward Scalable Neural Dialogue State Tracking Model](https://arxiv.org/pdf/1812.00899.pdf) |
+| Wu et al. (2019) |48.62 | 	96.92| [Transferable Multi-Domain State Generator for Task-OrientedDialogue System](https://arxiv.org/pdf/1905.08743.pdf) |
 
 ## Retrieval-based Chatbot
 The main task retrieval-based chatbot is response selection, that aims to find correct responses from a pre-defined index. 
