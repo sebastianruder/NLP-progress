@@ -45,12 +45,14 @@ The [Ritter (2011)](https://aclanthology.coli.uni-saarland.de/papers/D11-1141/d1
 
 [Universal Dependencies (UD)](http://universaldependencies.org/) is a framework for 
 cross-linguistic grammatical annotation, which contains more than 100 treebanks in over 60 languages.
-Models are typically evaluated based on the average test accuracy across 28 languages.
+Models are typically evaluated based on the average test accuracy across 21 high-resource languages (♦ evaluated on 17 languages).
 
 | Model           | Avg accuracy  |  Paper / Source |
 | ------------- | :-----:| --- |
-| Adversarial Bi-LSTM (Yasunaga et al., 2018) | 96.73 | [Robust Multilingual Part-of-Speech Tagging via Adversarial Training](https://arxiv.org/abs/1711.04903) | 
-| Bi-LSTM (Plank et al., 2016) | 96.40 | [Multilingual Part-of-Speech Tagging with Bidirectional Long Short-Term Memory Models and Auxiliary Loss](https://arxiv.org/abs/1604.05529) | 
-| Joint Bi-LSTM (Nguyen et al., 2017) | 95.55 | [A Novel Neural Network Model for Joint POS Tagging and Graph-based Dependency Parsing](https://arxiv.org/abs/1705.05952) |
+| Multilingual BERT and BPEmb (Heinzerling and Strube, 2019) | 96.77 | [Sequence Tagging with Contextual and Non-Contextual Subword Representations: A Multilingual Evaluation](https://arxiv.org/abs/1906.01569) |
+| Adversarial Bi-LSTM (Yasunaga et al., 2018) | 96.65 | [Robust Multilingual Part-of-Speech Tagging via Adversarial Training](https://arxiv.org/abs/1711.04903) | 
+| MultiBPEmb (Heinzerling and Strube, 2019) | 96.62 | [Sequence Tagging with Contextual and Non-Contextual Subword Representations: A Multilingual Evaluation](https://arxiv.org/abs/1906.01569) |
+| Bi-LSTM (Plank et al., 2016) | 96.40 | [Multilingual Part-of-Speech Tagging with Bidirectional Long Short-Term Memory Models and Auxiliary Loss](https://arxiv.org/abs/1604.05529) |
+| Joint Bi-LSTM (Nguyen et al., 2017)♦ | 95.55 | [A Novel Neural Network Model for Joint POS Tagging and Graph-based Dependency Parsing](https://arxiv.org/abs/1705.05952) |
 
 [Go back to the README](../README.md)
