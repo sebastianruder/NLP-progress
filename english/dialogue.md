@@ -80,10 +80,10 @@ The [Reddit Corpus](https://arxiv.org/abs/1904.06472) contains 726 million multi
 
 | Model           |   R_1@100   |  Paper / Source |
 | -------------   |   :---------:|---------------|
-| ELMO (Peters et al. 2018) | 19.3 | [Deep contextualized word representations](https://arxiv.org/abs/1802.05365) |
-| BERT (Devlin et al. 2017) | 24.0 | [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805) |
-| USE (Cer et al. 2018) | 47.7 | [Universal Sentence Encoder](https://arxiv.org/abs/1803.11175) |
 | PolyAI Encoder (Henderson et al. 2019) |  61.3 | [A Repository of Conversational Dataset](https://arxiv.org/pdf/1904.06472.pdf) |
+| USE (Cer et al. 2018) | 47.7 | [Universal Sentence Encoder](https://arxiv.org/abs/1803.11175) |
+| BERT (Devlin et al. 2017) | 24.0 | [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805) |
+| ELMO (Peters et al. 2018) | 19.3 | [Deep contextualized word representations](https://arxiv.org/abs/1802.05365) |
 
 ## Generative-based Chatbot
 The main task of generative-based chatbot is to generate consistent and engaging response given the context.
