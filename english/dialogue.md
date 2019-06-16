@@ -86,6 +86,16 @@ The [Ubuntu Corpus](https://arxiv.org/pdf/1506.08909.pdf) contains almost 1 mill
 | Multi-View (Zhou et al. 2017) | 90.8 | 66.2 | [Multi-view Response Selection for Human-Computer Conversation](https://aclweb.org/anthology/D16-1036) |
 | Bi-LSTM (Kadlec et al. 2015) | 89.5 | 63.0 | [Improved Deep Learning Baselines for Ubuntu Corpus Dialogs](https://arxiv.org/pdf/1510.03753.pdf) |
 
+### Reddit Corpus
+The [Reddit Corpus](https://arxiv.org/abs/1904.06472) contains 726 million multi-turn dialogues from the Reddit board. Reddit  is an American social news aggregation website, where users can post links, and take partin discussions on these post. The task of Reddit Corpus is to select the correct response from 100 candidates (others are negatively sampled) by considering previous conversation history.  Models are evaluated with the Recall 1 at 100 metric (the 1-of-100 ranking accuracy). You can find more details at [here](https://github.com/PolyAI-LDN/conversational-datasets).
+
+| Model           |   R_1@100   |  Paper / Source |
+| -------------   |   :---------:|---------------|
+| PolyAI Encoder (Henderson et al. 2019) |  61.3 | [A Repository of Conversational Dataset](https://arxiv.org/pdf/1904.06472.pdf) |
+| USE (Cer et al. 2018) | 47.7 | [Universal Sentence Encoder](https://arxiv.org/abs/1803.11175) |
+| BERT (Devlin et al. 2017) | 24.0 | [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805) |
+| ELMO (Peters et al. 2018) | 19.3 | [Deep contextualized word representations](https://arxiv.org/abs/1802.05365) |
+
 ## Generative-based Chatbot
 The main task of generative-based chatbot is to generate consistent and engaging response given the context.
 ### Personalized Chit-chat
