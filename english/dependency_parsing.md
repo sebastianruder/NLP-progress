@@ -49,7 +49,7 @@ Participating systems will have to find labeled syntactic dependencies between w
 | ------------------------------------------------------------ | :---: | :---: | :---: | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Stanford (Qi et al.)                        | 74.16 | 62.08 | 65.28 | [Universal Dependency Parsing from Scratch](https://arxiv.org/pdf/1901.10457.pdf) | [Official](https://github.com/stanfordnlp/stanfordnlp) |
 | UDPipe Future (Straka)                      | 73.11  | 61.25 | 64.49 | [UDPipe 2.0 Prototype at CoNLL 2018 UD Shared Task](https://www.aclweb.org/anthology/K18-2020) | [Official](https://github.com/CoNLL-UD-2018/UDPipe-Future)              |
-| HIT-SCIR (Che et al.)                            | 75.84 | 59.78 | 65.33 | [Towards Better UD Parsing: Deep Contextualized Word Embeddings, Ensemble, and Treebank Concatenation](https://arxiv.org/abs/1807.03955) |           |
+| HIT-SCIR (Che et al.)                            | 75.84 | 59.78 | 65.33 | [Towards Better UD Parsing: Deep Contextualized Word Embeddings, Ensemble, and Treebank Concatenation](https://arxiv.org/abs/1807.03121) |           |
 | TurkuNLP (Kanerva et al.)                             | 73.28 | 60.99 | 66.09 | [Turku Neural Parser Pipeline: An End-to-End System for the CoNLL 2018 Shared Task](https://universaldependencies.org/conll18/proceedings/pdf/K18-2013.pdf) | [Official](https://github.com/TurkuNLP/Turku-neural-parser-pipeline)          |
 
 The following results are just for references:
