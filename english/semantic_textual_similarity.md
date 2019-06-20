@@ -33,12 +33,15 @@ The [Quora Question Pairs dataset](https://data.quora.com/First-Quora-Dataset-Re
 consists of over 400,000 pairs of questions on Quora. Systems must identify whether one question is a
 duplicate of the other. Models are evaluated based on accuracy.
 
-| Model           | Accuracy  |  Paper / Source | Code |
-| ------------- | :-----:| --- | --- |
-| MwAN (Tan et al., 2018) | 89.12 | [Multiway Attention Networks for Modeling Sentence Pairs](https://www.ijcai.org/proceedings/2018/0613.pdf) | |
-| DIIN (Gong et al., 2018) | 89.06 | [Natural Language Inference Over Interaction Space](https://arxiv.org/pdf/1709.04348.pdf) | [Official](https://github.com/YichenGong/Densely-Interactive-Inference-Network) |
-| pt-DecAtt (Char) (Tomar et al., 2017) | 88.40 | [Neural Paraphrase Identification of Questions with Noisy Pretraining](https://arxiv.org/abs/1704.04565) | |
-| BiMPM (Wang et al., 2017) | 88.17 | [Bilateral Multi-Perspective Matching for Natural Language Sentences](https://arxiv.org/abs/1702.03814) | [Official](https://github.com/zhiguowang/BiMPM) |
-| GenSen (Subramanian et al., 2018) | 87.01 | [Learning General Purpose Distributed Sentence Representations via Large Scale Multi-task Learning](https://arxiv.org/abs/1804.00079) | [Official](https://github.com/Maluuba/gensen) |
+| Model           | F1 | Accuracy  |  Paper / Source | Code |
+| ------------- | :-----: | :-----:| --- | --- |
+| XLNet-Large (ensemble) (Yang et al., 2019) | 74.2 | 90.3 | [XLNet: Generalized Autoregressive Pretraining for Language Understanding](https://arxiv.org/pdf/1906.08237.pdf) | [Official](https://github.com/zihangdai/xlnet/) |
+| MT-DNN-ensemble (Liu et al., 2019) | 73.7 | 89.9 | [Improving Multi-Task Deep Neural Networks via Knowledge Distillation for Natural Language Understanding](https://arxiv.org/pdf/1904.09482.pdf) | [Official](https://github.com/namisan/mt-dnn/) |
+| Snorkel MeTaL(ensemble) (Ratner et al., 2018) | 73.1 | 89.9 | [Training Complex Models with Multi-Task Weak Supervision](https://arxiv.org/pdf/1810.02840.pdf) | [Official](https://github.com/HazyResearch/metal) |
+| MwAN (Tan et al., 2018) | | 89.12 | [Multiway Attention Networks for Modeling Sentence Pairs](https://www.ijcai.org/proceedings/2018/0613.pdf) | |
+| DIIN (Gong et al., 2018) | | 89.06 | [Natural Language Inference Over Interaction Space](https://arxiv.org/pdf/1709.04348.pdf) | [Official](https://github.com/YichenGong/Densely-Interactive-Inference-Network) |
+| pt-DecAtt (Char) (Tomar et al., 2017) | | 88.40 | [Neural Paraphrase Identification of Questions with Noisy Pretraining](https://arxiv.org/abs/1704.04565) | |
+| BiMPM (Wang et al., 2017) | | 88.17 | [Bilateral Multi-Perspective Matching for Natural Language Sentences](https://arxiv.org/abs/1702.03814) | [Official](https://github.com/zhiguowang/BiMPM) |
+| GenSen (Subramanian et al., 2018) | | 87.01 | [Learning General Purpose Distributed Sentence Representations via Large Scale Multi-task Learning](https://arxiv.org/abs/1804.00079) | [Official](https://github.com/Maluuba/gensen) |
 
 [Go back to the README](../README.md)
