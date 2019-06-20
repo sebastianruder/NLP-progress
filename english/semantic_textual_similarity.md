@@ -21,6 +21,9 @@ The data can be downloaded from [here](https://github.com/facebookresearch/SentE
 
 | Model           | MRPC | SICK-R | SICK-E | STS | Paper / Source | Code |
 | ------------- | :-----:| :-----:| :-----:| :-----:| --- | --- |
+| XLNet-Large (ensemble) (Yang et al., 2019) | 93.0/90.7 | - | - | - | [XLNet: Generalized Autoregressive Pretraining for Language Understanding](https://arxiv.org/pdf/1906.08237.pdf) | [Official](https://github.com/zihangdai/xlnet/) |
+| MT-DNN-ensemble (Liu et al., 2019) | 92.7/90.3 | - | - | - | [Improving Multi-Task Deep Neural Networks via Knowledge Distillation for Natural Language Understanding](https://arxiv.org/pdf/1904.09482.pdf) | [Official](https://github.com/namisan/mt-dnn/) |
+| Snorkel MeTaL(ensemble) (Ratner et al., 2018) | 91.5/88.5 | - | - | - | [Training Complex Models with Multi-Task Weak Supervision](https://arxiv.org/pdf/1810.02840.pdf) | [Official](https://github.com/HazyResearch/metal) |
 | GenSen (Subramanian et al., 2018) | 78.6/84.4 | 0.888 | 87.8 | 78.9/78.6 | [Learning General Purpose Distributed Sentence Representations via Large Scale Multi-task Learning](https://arxiv.org/abs/1804.00079) | [Official](https://github.com/Maluuba/gensen) |
 | InferSent (Conneau et al., 2017) | 76.2/83.1 | 0.884 | 86.3 | 75.8/75.5 | [Supervised Learning of Universal Sentence Representations from Natural Language Inference Data](https://arxiv.org/abs/1705.02364) | [Official](https://github.com/facebookresearch/InferSent) |
 | TF-KLD (Ji and Eisenstein, 2013) | 80.4/85.9 | - | - | - | [Discriminative Improvements to Distributional Sentence Similarity](http://www.aclweb.org/anthology/D/D13/D13-1090.pdf) |  |
