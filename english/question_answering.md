@@ -9,6 +9,7 @@ Question answering is the task of answering a question.
 - [Reading comprehension](#reading-comprehension)
   - [CliCR](#clicr)
   - [CNN / Daily Mail](#cnn--daily-mail)
+  - [CODAH](#codah)
   - [CoQA](#coqa)
   - [HotpotQA](#hotpotqa)
   - [MS MARCO](#ms-marco)
@@ -19,6 +20,7 @@ Question answering is the task of answering a question.
   - [RACE](#race)
   - [SQuAD](#squad)
   - [Story Cloze Test](#story-cloze-test)
+  - [SWAG](#swag)
   - [Recipe QA](#recipeqa)
   - [NarrativeQA](#narrativeqa)
   - [DuoRC](#duorc)
@@ -103,6 +105,11 @@ Example:
 | Neural net (Chen et al., 2016) | 72.4 | 75.8 | [A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task](https://www.aclweb.org/anthology/P16-1223) |
 | Classifier (Chen et al., 2016) | 67.9 | 68.3 | [A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task](https://www.aclweb.org/anthology/P16-1223) |
 | Impatient Reader (Hermann et al., 2015) | 63.8 | 68.0 | [Teaching Machines to Read and Comprehend](https://arxiv.org/abs/1506.03340) |
+
+### CODAH
+[CODAH](https://arxiv.org/abs/1904.04365) is an adversarially-constructed evaluation dataset with 2.8k questions for testing common sense. CODAH forms a challenging extension to the SWAG dataset, which tests commonsense knowledge using sentence-completion questions that describe situations observed in video.
+
+The dataset and more information can be found [here](https://github.com/Websail-NU/CODAH)
 
 ### CoQA
 
@@ -223,6 +230,12 @@ More details are available on the [Story Cloze Test Challenge](https://competiti
 | Liu et al. (2018) | 78.7 | [Narrative Modeling with Memory Chains and Semantic Supervision](http://aclweb.org/anthology/P18-2045) | [Official](https://github.com/liufly/narrative-modeling)
 | Hidden Coherence Model (Chaturvedi et al., 2017) | 77.6 | [Story Comprehension for Predicting What Happens Next](http://aclweb.org/anthology/D17-1168) |
 | val-LS-skip (Srinivasan et al., 2018) | 76.5 | [A Simple and Effective Approach to the Story Cloze Test](http://aclweb.org/anthology/N18-2015) |
+
+### SWAG
+
+[SWAG](https://arxiv.org/abs/1808.05326) (Situations With Adversarial Generations) is a large-scale dataset for the task of grounded commonsense inference, unifying natural language inference and physically grounded reasoning. The dataset consists of 113k multiple choice questions about grounded situations. Each question is a video caption from LSMDC or ActivityNet Captions, with four answer choices about what might happen next in the scene. The correct answer is the (real) video caption for the next event in the video; the three incorrect answers are adversarially generated and human verified, so as to fool machines but not humans.
+
+The public leaderboard is available on the [AI2 website] (https://leaderboard.allenai.org/swag/submissions/public).
 
 ### RecipeQA
 
