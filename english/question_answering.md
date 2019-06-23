@@ -200,10 +200,13 @@ on middle school examinations (RACE-m), high school examinations (RACE-h), and o
 
 The public leaderboard is available on the [RACE leaderboard](http://www.qizhexie.com//data/RACE_leaderboard).
 
-| Model           | RACE-m | RACE-h | RACE | Paper / Source |
-| ------------- | :-----:| :-----:| :-----:| --- |
-| Finetuned Transformer LM (Radford et al., 2018) | 62.9 | 57.4 | 59.0 | [Improving Language Understanding by Generative Pre-Training](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf) |
-| BiAttention MRU (Tay et al., 2018) | 60.2 | 50.3 | 53.3 | [Multi-range Reasoning for Machine Comprehension](https://arxiv.org/abs/1803.09074) |
+| Model           | RACE-m | RACE-h | RACE | Paper | Code |
+| ------------- | :-----:| :-----:| :-----:| --- | --- |
+| XLNet (Yang et al., 2019) | 85.45 | 80.21 | 81.75 | [XLNet: Generalized Autoregressive Pretraining for Language Understanding](https://arxiv.org/pdf/1906.08237.pdf) | [Official](https://github.com/zihangdai/xlnet/) |
+| OCN_large (Ran et al., 2019) | 76.7 | 69.6 | 71.7 | [Option Comparison Network for Multiple-choice Reading Comprehension](https://arxiv.org/pdf/1903.03033.pdf) | |
+| DCMN_large (Zhang et al., 2019) | 73.4 | 68.1 | 69.7 | [Dual Co-Matching Network for Multi-choice Reading Comprehension](https://arxiv.org/pdf/1901.09381.pdf) | |
+| Finetuned Transformer LM (Radford et al., 2018) | 62.9 | 57.4 | 59.0 | [Improving Language Understanding by Generative Pre-Training](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf) | [Official](https://github.com/openai/finetune-transformer-lm) |
+| BiAttention MRU (Tay et al., 2018) | 60.2 | 50.3 | 53.3 | [Multi-range Reasoning for Machine Comprehension](https://arxiv.org/abs/1803.09074) | |
 
 ### SQuAD
 

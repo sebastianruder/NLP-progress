@@ -7,7 +7,7 @@ This can take the form of assigning a score from 1 to 5. Related tasks are parap
 
 [SentEval](https://arxiv.org/abs/1803.05449) is an evaluation toolkit for evaluating sentence
 representations. It includes 17 downstream tasks, including common semantic textual similarity
-tasks. The semantic textual similarity (STS) benchmark tasks from 2012-2016 (STS12, STS13, STS14, STS15, STS16, STSB) measure the relatedness
+tasks. The semantic textual similarity (STS) benchmark tasks from 2012-2016 (STS12, STS13, STS14, STS15, STS16, STS-B) measure the relatedness
 of two sentences based on the cosine similarity of the two representations. The evaluation criterion is Pearson correlation.
 
 The SICK relatedness (SICK-R) task trains a linear model to output a score from 1 to 5 indicating the relatedness of two sentences. For
@@ -21,9 +21,14 @@ The data can be downloaded from [here](https://github.com/facebookresearch/SentE
 
 | Model           | MRPC | SICK-R | SICK-E | STS | Paper / Source | Code |
 | ------------- | :-----:| :-----:| :-----:| :-----:| --- | --- |
+| XLNet-Large (ensemble) (Yang et al., 2019) | 93.0/90.7 | - | - | 91.6/91.1* | [XLNet: Generalized Autoregressive Pretraining for Language Understanding](https://arxiv.org/pdf/1906.08237.pdf) | [Official](https://github.com/zihangdai/xlnet/) |
+| MT-DNN-ensemble (Liu et al., 2019) | 92.7/90.3 | - | - | 91.1/90.7* | [Improving Multi-Task Deep Neural Networks via Knowledge Distillation for Natural Language Understanding](https://arxiv.org/pdf/1904.09482.pdf) | [Official](https://github.com/namisan/mt-dnn/) |
+| Snorkel MeTaL(ensemble) (Ratner et al., 2018) | 91.5/88.5 | - | - | 90.1/89.7* | [Training Complex Models with Multi-Task Weak Supervision](https://arxiv.org/pdf/1810.02840.pdf) | [Official](https://github.com/HazyResearch/metal) |
 | GenSen (Subramanian et al., 2018) | 78.6/84.4 | 0.888 | 87.8 | 78.9/78.6 | [Learning General Purpose Distributed Sentence Representations via Large Scale Multi-task Learning](https://arxiv.org/abs/1804.00079) | [Official](https://github.com/Maluuba/gensen) |
 | InferSent (Conneau et al., 2017) | 76.2/83.1 | 0.884 | 86.3 | 75.8/75.5 | [Supervised Learning of Universal Sentence Representations from Natural Language Inference Data](https://arxiv.org/abs/1705.02364) | [Official](https://github.com/facebookresearch/InferSent) |
 | TF-KLD (Ji and Eisenstein, 2013) | 80.4/85.9 | - | - | - | [Discriminative Improvements to Distributional Sentence Similarity](http://www.aclweb.org/anthology/D/D13/D13-1090.pdf) |  |
+
+\* only evaluated on STS-B
 
 ## Paraphrase identification
 
@@ -33,12 +38,15 @@ The [Quora Question Pairs dataset](https://data.quora.com/First-Quora-Dataset-Re
 consists of over 400,000 pairs of questions on Quora. Systems must identify whether one question is a
 duplicate of the other. Models are evaluated based on accuracy.
 
-| Model           | Accuracy  |  Paper / Source | Code |
-| ------------- | :-----:| --- | --- |
-| MwAN (Tan et al., 2018) | 89.12 | [Multiway Attention Networks for Modeling Sentence Pairs](https://www.ijcai.org/proceedings/2018/0613.pdf) | |
-| DIIN (Gong et al., 2018) | 89.06 | [Natural Language Inference Over Interaction Space](https://arxiv.org/pdf/1709.04348.pdf) | [Official](https://github.com/YichenGong/Densely-Interactive-Inference-Network) |
-| pt-DecAtt (Char) (Tomar et al., 2017) | 88.40 | [Neural Paraphrase Identification of Questions with Noisy Pretraining](https://arxiv.org/abs/1704.04565) | |
-| BiMPM (Wang et al., 2017) | 88.17 | [Bilateral Multi-Perspective Matching for Natural Language Sentences](https://arxiv.org/abs/1702.03814) | [Official](https://github.com/zhiguowang/BiMPM) |
-| GenSen (Subramanian et al., 2018) | 87.01 | [Learning General Purpose Distributed Sentence Representations via Large Scale Multi-task Learning](https://arxiv.org/abs/1804.00079) | [Official](https://github.com/Maluuba/gensen) |
+| Model           | F1 | Accuracy  |  Paper / Source | Code |
+| ------------- | :-----: | :-----:| --- | --- |
+| XLNet-Large (ensemble) (Yang et al., 2019) | 74.2 | 90.3 | [XLNet: Generalized Autoregressive Pretraining for Language Understanding](https://arxiv.org/pdf/1906.08237.pdf) | [Official](https://github.com/zihangdai/xlnet/) |
+| MT-DNN-ensemble (Liu et al., 2019) | 73.7 | 89.9 | [Improving Multi-Task Deep Neural Networks via Knowledge Distillation for Natural Language Understanding](https://arxiv.org/pdf/1904.09482.pdf) | [Official](https://github.com/namisan/mt-dnn/) |
+| Snorkel MeTaL(ensemble) (Ratner et al., 2018) | 73.1 | 89.9 | [Training Complex Models with Multi-Task Weak Supervision](https://arxiv.org/pdf/1810.02840.pdf) | [Official](https://github.com/HazyResearch/metal) |
+| MwAN (Tan et al., 2018) | | 89.12 | [Multiway Attention Networks for Modeling Sentence Pairs](https://www.ijcai.org/proceedings/2018/0613.pdf) | |
+| DIIN (Gong et al., 2018) | | 89.06 | [Natural Language Inference Over Interaction Space](https://arxiv.org/pdf/1709.04348.pdf) | [Official](https://github.com/YichenGong/Densely-Interactive-Inference-Network) |
+| pt-DecAtt (Char) (Tomar et al., 2017) | | 88.40 | [Neural Paraphrase Identification of Questions with Noisy Pretraining](https://arxiv.org/abs/1704.04565) | |
+| BiMPM (Wang et al., 2017) | | 88.17 | [Bilateral Multi-Perspective Matching for Natural Language Sentences](https://arxiv.org/abs/1702.03814) | [Official](https://github.com/zhiguowang/BiMPM) |
+| GenSen (Subramanian et al., 2018) | | 87.01 | [Learning General Purpose Distributed Sentence Representations via Large Scale Multi-task Learning](https://arxiv.org/abs/1804.00079) | [Official](https://github.com/Maluuba/gensen) |
 
 [Go back to the README](../README.md)
