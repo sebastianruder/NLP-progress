@@ -24,8 +24,7 @@ section 00 for development, and section 23 as in-domain test set. Some work
 | Lewis et al. (2016) | 88.1 | [LSTM CCG Parsing](https://aclweb.org/anthology/N/N16/N16-1026.pdf) |
 | Xu et al. (2015) | 87.04 | [CCG Supertagging with a Recurrent Neural Network](http://www.aclweb.org/anthology/P15-2041) |
 | Kummerfeld et al. (2010), with additional unlabeled data | 85.95 | [Faster Parsing by Supertagger Adaptation](https://www.aclweb.org/anthology/papers/P/P10/P10-1036/) |
-| Clark and Curran (2007) | 85.45 | [Wide-Coverage Efficient Statistical Parsing
-with CCG and Log-Linear Models](https://www.aclweb.org/anthology/J07-4004) |
+| Clark and Curran (2007) | 85.45 | [Wide-Coverage Efficient Statistical Parsing with CCG and Log-Linear Models](https://www.aclweb.org/anthology/J07-4004) |
 
 ### Wikipedia
 
@@ -36,10 +35,13 @@ with CCG and Log-Linear Models](https://www.aclweb.org/anthology/J07-4004) |
 
 ### Bioinfer
 
-| Model           | Accuracy |  Paper / Source |
-| ------------- | :-----:| --- |
-| Xu et al. (2015) | 77.74 | [CCG Supertagging with a Recurrent Neural Network](http://www.aclweb.org/anthology/P15-2041) |
-| Kummerfeld et al. (2010), with additional unlabeled data | 76.1 | [Faster Parsing by Supertagger Adaptation](https://www.aclweb.org/anthology/papers/P/P10/P10-1036/) |
+| Model         | Bio specifc taggers? | Accuracy |  Paper / Source |
+| ------------- | -------------------- | :-------:| --- |
+| Kummerfeld et al. (2010), with additional unlabeled data | Yes | 82.3 | [Faster Parsing by Supertagger Adaptation](https://www.aclweb.org/anthology/papers/P/P10/P10-1036/) |
+| Rimell and Clark (2008) | Yes | 81.5 | [Adapting a Lexicalized-Grammar Parser to Contrasting Domains](https://aclweb.org/anthology/papers/D/D08/D08-1050/) |
+| Xu et al. (2015) | No | 77.74 | [CCG Supertagging with a Recurrent Neural Network](http://www.aclweb.org/anthology/P15-2041) |
+| Kummerfeld et al. (2010), with additional unlabeled data | No | 76.1 | [Faster Parsing by Supertagger Adaptation](https://www.aclweb.org/anthology/papers/P/P10/P10-1036/) |
+| Rimell and Clark (2008) | No | 76.0 | [Adapting a Lexicalized-Grammar Parser to Contrasting Domains](https://aclweb.org/anthology/papers/D/D08/D08-1050/) |
 
 ## Supertagging
 
@@ -58,6 +60,10 @@ For Supertagging evaluation on CCGBank, performance is only calculated over the 
 
 ## Conversion to PTB
 
+There has been interest in converting CCG derivations to phrase structure parses for comparison with phrase structure parsers (since CCGBank is based on the PTB).
+
+| Model           | Accuracy |  Paper / Source |
+| ------------- | :-----:| --- |
 | Kummerfeld et al. (2012) | 96.30 | [Robust Conversion of CCG Derivations to Phrase Structure Trees](https://www.aclweb.org/anthology/P12-2021) |
 | Zhang et al. (2012) | 95.71 | [A Machine Learning Approach to Convert CCGbank to Penn Treebank](https://www.aclweb.org/anthology/C12-3067)
 | Clark and Curran (2009) | 94.64 | [Comparing the Accuracy of CCG and Penn Treebank Parsers](https://aclweb.org/anthology/papers/P/P09/P09-2014/) |
