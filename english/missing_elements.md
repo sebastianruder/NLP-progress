@@ -36,3 +36,15 @@ Annotated Examples:
 | ------------- | :-----:| --- | :-----: |
 | Bi-LSTM + Scoring (Elazar and Goldberg, 2019) | 60.8 | [Where’s My Head? Definition, Dataset and Models for Numeric Fused-Heads Identification and Resolution](https://arxiv.org/abs/1905.10886) | [Official](https://github.com/yanaiela/num_fh) |
 | Bi-LSTM + Elmo + Scoring (Elazar and Goldberg, 2019) | 74.0 | [Where’s My Head? Definition, Dataset and Models for Numeric Fused-Heads Identification and Resolution](https://arxiv.org/abs/1905.10886) | [Official](https://github.com/yanaiela/num_fh) |
+
+## PTB Traces and Null Elements
+
+These are evaluated on section 23 of the Penn Treebank, using a metric defined by Johnson (2002).
+An implementation of the metric is available with the code from [Kummerfeld and Klein (2017)](https://github.com/jkkummerfeld/1ec-graph-parser/tree/master/evaluation).
+
+| Model           | F-score  |  Paper / Source | Code |
+| ------------- | :-----:| --- | :-----: |
+| Kato and Matsubara (2016) | 77.8 | [Transition-Based Left-Corner Parsing for Identifying PTB-Style Nonlocal Dependencies](https://www.aclweb.org/anthology/P16-1088) | 
+| Kummerfeld and Klein (2017) | 70.6 | [Parsing with Traces: An O(n^4) Algorithm and a Structural Representation](https://aclweb.org/anthology/papers/Q/Q17/Q17-1031/) | [Github](https://github.com/jkkummerfeld/1ec-graph-parser)
+| Johnson (2002) | 68 | [A simple pattern-matching algorithm for recovering empty nodes and their antecedents](https://www.aclweb.org/anthology/P02-1018) | [Code](http://web.science.mq.edu.au/~mjohnson/code/Restorer.tbz) and [README](http://web.science.mq.edu.au/~mjohnson/code/Restorer-README.txt)
+

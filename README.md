@@ -5,7 +5,7 @@
 ### English
 
 - [Automatic speech recognition](english/automatic_speech_recognition.md)
-- [CCG supertagging](english/ccg_supertagging.md)
+- [CCG](english/ccg.md)
 - [Common sense](english/common_sense.md)
 - [Constituency parsing](english/constituency_parsing.md)
 - [Coreference resolution](english/coreference_resolution.md)
