@@ -7,7 +7,7 @@ Relation Prediction is the task of recognizing a named relation between two name
 For example, given the triple \<*Roman Jakobson*, *born-in-city*, *?*\>, the system is required to replace the question mark with *Moscow*.
 
 Relation Prediction datasets are typically extracted from two types of resources: 
-* *Knowledge Bases*: KBs such as [FreeBase](https://developers.google.com/freebase/) contain hundreds or thousands of relation types pertaining to world-knowledge obtained autmoatically or semi-automatically from various resources on millions of entities. These relations include *born-in*, *nationality*, *is-in* (for geographical entities), *part-of* (for organizations, among others), and more.
+* *Knowledge Bases*: KBs such as [FreeBase](https://developers.google.com/freebase/) contain hundreds or thousands of relation types pertaining to world-knowledge obtained automatically or semi-automatically from various resources on millions of entities. These relations include *born-in*, *nationality*, *is-in* (for geographical entities), *part-of* (for organizations, among others), and more.
 * *Semantic Graphs*: SGs such as [WordNet](https://wordnet.princeton.edu/) are often manually-curated resources of semantic concepts, restricted to more "linguistic" relations compared to free real-world knowledge. The most common semantic relation is *hypernym*, also known as the *is-a* relation (example: \<*cat*, *hypernym*, *feline*\>).
 
 ## Evaluation
