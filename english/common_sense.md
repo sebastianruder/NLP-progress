@@ -41,12 +41,21 @@ Answer 0: the trophy. Answer 1: the suitcase
 
 | Model           | Score  |  Paper / Source | Code |
 | ------------- | :-----:| --- | --- |
-| XLNet-Large (ensemble) (Yang et al., 2019) | 90.4 | [XLNet: Generalized Autoregressive Pretraining for Language Understanding](https://arxiv.org/pdf/1906.08237.pdf) | [Official](https://github.com/zihangdai/xlnet/) |
-| MT-DNN-ensemble (Liu et al., 2019) | 89.0 | [Improving Multi-Task Deep Neural Networks via Knowledge Distillation for Natural Language Understanding](https://arxiv.org/pdf/1904.09482.pdf) | [Official](https://github.com/namisan/mt-dnn/) |
-| Snorkel MeTaL(ensemble) (Ratner et al., 2018) | 65.1 | [Training Complex Models with Multi-Task Weak Supervision](https://arxiv.org/pdf/1810.02840.pdf) | [Official](https://github.com/HazyResearch/metal) |
 | Word-LM-partial (Trinh and Le, 2018) | 62.6 | [A Simple Method for Commonsense Reasoning](https://arxiv.org/abs/1806.02847) | |
 | Char-LM-partial (Trinh and Le, 2018) | 57.9 | [A Simple Method for Commonsense Reasoning](https://arxiv.org/abs/1806.02847) | |
 | USSM + Supervised DeepNet + KB (Liu et al., 2017) | 52.8 | [Combing Context and Commonsense Knowledge Through Neural Networks for Solving Winograd Schema Problems](https://aaai.org/ocs/index.php/SSS/SSS17/paper/view/15392) | |
+
+### Winograd NLI (WNLI)
+
+WNLI is a relaxation of the Winograd Schema Challenge proposed as part of the [GLUE benchmark](https://arxiv.org/abs/1804.07461) and a conversion to the natural language inference (NLI) format. The task is to predict if the sentence with the pronoun substituted is entailed by the original sentence. While the training set is balanced between two classes (entailment and not entailment), the test set is imbalanced between them (35% entailment, 65% not entailment). The majority baseline is thus 65%, while for the Winograd Schema Challenge it is 50% ([Liu et al., 2017](https://www.aaai.org/ocs/index.php/SSS/SSS17/paper/view/15392)). The latter is more challenging.
+
+Results are available at the [GLUE leaderboard](https://gluebenchmark.com/leaderboard). Here is a subset of results of recent models:
+
+| Model           | Score  |  Paper / Source | Code |
+| ------------- | :-----:| --- | --- |
+| XLNet-Large (ensemble) (Yang et al., 2019) | 90.4 | [XLNet: Generalized Autoregressive Pretraining for Language Understanding](https://arxiv.org/pdf/1906.08237.pdf) | [Official](https://github.com/zihangdai/xlnet/) |
+| MT-DNN-ensemble (Liu et al., 2019) | 89.0 | [Improving Multi-Task Deep Neural Networks via Knowledge Distillation for Natural Language Understanding](https://arxiv.org/pdf/1904.09482.pdf) | [Official](https://github.com/namisan/mt-dnn/) |
+| Snorkel MeTaL(ensemble) (Ratner et al., 2018) | 65.1 | [Training Complex Models with Multi-Task Weak Supervision](https://arxiv.org/pdf/1810.02840.pdf) | [Official](https://github.com/HazyResearch/metal) |
 
 ### Visual Common Sense
 
