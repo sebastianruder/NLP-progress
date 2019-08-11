@@ -53,6 +53,7 @@ F1-score
 | ------------- | :-----: |  --- | --- |
 | Ma et al. (2018) | 96.6 | [State-of-the-art Chinese Word Segmentation with Bi-LSTMs](https://aclweb.org/anthology/D18-1529)| |
 | Kurita et al. (2017) | 96.2 | [Neural Joint Model for Transition-based Chinese Syntactic Analysis](http://www.aclweb.org/anthology/P17-1111) | |
+
 #### AS
 
 | Model         | F1 | Paper / Source | Code |
