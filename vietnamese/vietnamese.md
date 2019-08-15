@@ -56,7 +56,7 @@ tokens (i.e. including punctuation).
 | BiLSTM-CRF + LSTM-char (2016) [2] | 87.71 | [Neural Architectures for Named Entity Recognition](http://www.aclweb.org/anthology/N16-1030) | [Link](https://github.com/UKPLab/emnlp2017-bilstm-cnn-crf/) | Pre-trained embeddings learned from Baomoi corpus |
 | BiLSTM-CRF (2015) [2] | 86.48 | [Bidirectional LSTM-CRF Models for Sequence Tagging](https://arxiv.org/abs/1508.01991) | [Link](https://github.com/UKPLab/emnlp2017-bilstm-cnn-crf/) | Pre-trained embeddings learned from Baomoi corpus |
 
-* [1] denotes that scores are reported in  "[ETNLP: A Toolkit for Extraction, Evaluation and Visualization of Pre-trained Word Embeddings](https://arxiv.org/pdf/1903.04433v1.pdf)"
+* [1] denotes that scores are reported in  "[ETNLP: a visual-aided systematic approach to select pre-trained embeddings for a downstream task](https://arxiv.org/abs/1903.04433)"
 * [2] denotes that BiLSTM-CRF-based scores are reported in  "[VnCoreNLP: A Vietnamese Natural Language Processing Toolkit](http://aclweb.org/anthology/N18-5012)"
 
 ## Part-of-speech tagging 
