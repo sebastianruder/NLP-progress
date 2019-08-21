@@ -76,3 +76,41 @@ _**Restricted**_: uses only publicly available datasets. _**Unrestricted**_: use
 _**Restricted**_: uses only publicly available datasets. _**Unrestricted**_: uses non-public datasets.
 
 
+### BEA Shared Task - 2019
+[BEA shared task - 2019 dataset](https://www.cl.cam.ac.uk/research/nl/bea2019st/) released for the BEA Shared Task on Grammatical Error Correction provides a newer and bigger dataset for evaluating GEC models in 3 tracks, based on the datasets used for training:
+- [Restricted track](https://competitions.codalab.org/competitions/20228)
+- [Unrestricted track](https://competitions.codalab.org/competitions/20229)
+- [Low-resource track](https://competitions.codalab.org/competitions/20230)   
+
+
+Training and dev sets are released publicly and a GEC model's performance is evaluated by F-0.5 score. The model outputs on the test-set have to be uploaded to Codalab(publicly available) where category-wise error metrics are displayed. The test set consists of 4477 sentences(larger and diverse than the CoNLL-14 dataset) and the outputs are scored via [ERRANT](https://github.com/chrisjbryant/errant) toolkit. The released data are collected from 2 sources: 
+  - Write & Improve, an online web platform that assists non-native English students with their writing.
+  - LOCNESS, a corpus consisting of essays written by native English students.   
+
+
+
+The description of tracks from the BEA [site](https://www.cl.cam.ac.uk/research/nl/bea2019st/#tracks) is given below:   
+
+
+_**Restricted Track:**_
+In the restricted track, participants may only use the following learner datasets:
+  - FCE (Yannakoudakis et al., 2011)
+  - Lang-8 Corpus of Learner English (Mizumoto et al., 2011; Tajiri et al., 2012)
+  - NUCLE (Dahlmeier et al., 2013)
+  - W&I+LOCNESS (Bryant et al., 2019; Granger, 1998)   
+Note that we restrict participants to the preprocessed Lang-8 Corpus of Learner English rather than the raw, multilingual Lang-8 Learner Corpus because participants would otherwise need to filter the raw corpus themselves. We also do not allow the use of the CoNLL 2013/2014 shared task test sets in this track.   
+
+
+_**Unrestricted Track:**_
+In the unrestricted track, participants may use anything and everything to build their systems. This includes proprietary datasets and software.   
+
+
+_**Low Resource Track (formerly Unsupervised Track):**_
+In the low resource track, participants may only use the following learner dataset: W&I+LOCNESS development set.   
+
+Since current state-of-the-art systems rely on as much annotated learner data as possible to reach the best performance, the goal of the low resource track is to encourage research into systems that do not rely on large amounts of learner data. This track should be of particular interest to researchers working on GEC for languages where large learner corpora do not exist.   
+
+ 
+ **Reference**:
+ - Helen Yannakoudakis, Ekaterina Kochmar, Claudia Leacock, Nitin Madnani, Ildikó Pilán, Torsten Zesch, in [Proceedings of the Fourteenth Workshop on Innovative Use of NLP for Building Educational Applications](https://www.aclweb.org/anthology/W19-44)
+ - Christopher Bryant, Mariano Felice, and Ted Briscoe. 2017. Automatic annotation and evaluation of Error Types for Grammatical Error Correction. In Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers). Vancouver, Canada.
