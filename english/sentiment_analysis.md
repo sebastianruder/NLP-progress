@@ -22,7 +22,7 @@ included per movie. Models are evaluated based on accuracy.
 ### SST
 
 The [Stanford Sentiment Treebank](https://nlp.stanford.edu/sentiment/index.html) 
-contains of 215,154 phrases with fine-grained sentiment labels in the parse trees
+contains 215,154 phrases with fine-grained sentiment labels in the parse trees
 of 11,855 sentences in movie reviews. Models are evaluated either on fine-grained
 (five-way) or binary classification based on accuracy.
 
