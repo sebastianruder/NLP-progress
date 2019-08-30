@@ -37,9 +37,9 @@ The [Ritter (2011)](https://aclanthology.coli.uni-saarland.de/papers/D11-1141/d1
 
 | Model | Accuracy | Paper |
 | --- | --- | ---|
-| GATE  | 88.69 | [Twitter Part-of-Speech Tagging for All: Overcoming Sparse and Noisy Data](https://aclanthology.coli.uni-saarland.de/papers/R13-1026/r13-1026) | 
-| CMU | 90.0 ± 0.5 | [Improved Part-of-Speech Tagging for Online Conversational Text with Word Clusters](http://www.cs.cmu.edu/~ark/TweetNLP/owoputi+etal.naacl13.pdf) | 
 | FastText + CNN + CRF | 90.53 | [Twitter word embeddings (Godin et al. 2019 (Chapter 3))](https://fredericgodin.com/research/twitter-word-embeddings/) | 
+| CMU | 90.0 ± 0.5 | [Improved Part-of-Speech Tagging for Online Conversational Text with Word Clusters](http://www.cs.cmu.edu/~ark/TweetNLP/owoputi+etal.naacl13.pdf) | 
+| GATE  | 88.69 | [Twitter Part-of-Speech Tagging for All: Overcoming Sparse and Noisy Data](https://aclanthology.coli.uni-saarland.de/papers/R13-1026/r13-1026) | 
 
 ### UD
 
