@@ -80,7 +80,7 @@ The Gigaword summarization dataset has been first used by [Rush et al., 2015](ht
 
 | Model           | ROUGE-1 | ROUGE-2 | ROUGE-L | Paper / Source | Code |
 | --------------- | :-----: | :-----: | :-----: | -------------- | ---- |
-| BiSET (Wang et al., 2019) | 39.11 | 17.98 | 36.87 | [BiSET: Bi-directional Selective Encoding with Template for Abstractive Summarization](https://www.aclweb.org/anthology/P19-1207) | [Official](https://github.com/InitialBug/BiSET) |
+| BiSET (Wang et al., 2019) | 39.11 | 19.78 | 36.87 | [BiSET: Bi-directional Selective Encoding with Template for Abstractive Summarization](https://www.aclweb.org/anthology/P19-1207) | [Official](https://github.com/InitialBug/BiSET) |
 | MASS (Song et al., 2019) | 38.73 | 19.71 | 35.96 | [MASS: Masked Sequence to Sequence Pre-training for Language Generation](https://arxiv.org/pdf/1905.02450v5.pdf) | [Official](https://github.com/microsoft/MASS) |
 | Re^3 Sum (Cao et al., 2018) | 37.04 | 19.03 | 34.46 | [Retrieve, Rerank and Rewrite: Soft Template Based Neural Summarization](http://aclweb.org/anthology/P18-1015) | |
 | CGU (Lin et al., 2018) | 36.3 | 18.0 | 33.8 | [Global Encoding for Abstractive Summarization](http://aclweb.org/anthology/P18-2027) | [Official](https://www.github.com/lancopku/Global-Encoding) |
