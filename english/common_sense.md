@@ -73,3 +73,14 @@ rationale explaining why its answer is true.
 | BERT-Base Google AI Language (experiment by Rowan) | 53.9 | 64.5 | 35.0 | | https://github.com/google-research/bert |
 | MLB Seoul National University (experiment by Rowan) | 46.2 | 36.8 | 17.2 | | https://github.com/jnhwkim/MulLowBiVQA |
 | Random Performance | 25.0 | 25.0 | 6.2 | | | 
+
+### ReCoRD
+
+Reading Comprehension with Commonsense Reasoning Dataset (ReCoRD) is a large-scale reading comprehension dataset which requires commonsense reasoning. ReCoRD consists of queries automatically generated from CNN/Daily Mail news articles; the answer to each query is a text span from a summarizing passage of the corresponding news. The goal of ReCoRD is to evaluate a machine's ability of commonsense reasoning in reading comprehension. ReCoRD is pronounced as [ˈrɛkərd] and is part of the [SuperGLUE benchmark](https://arxiv.org/pdf/1905.00537.pdf).
+
+| Model | EM  | F1  | Paper / Source | Code |
+| ------ | ------- | ------- | ------ |  ------ | 
+| Human Performance Johns Hopkins University (Zhang et al. '18) | 91.31 | 91.69 | [ReCoRD: Bridging the Gap between Human and Machine Commonsense Reading Comprehension](https://arxiv.org/pdf/1810.12885.pdf) | | 
+| RoBERTa (Facebook AI)  | 90.0 | 90.6 | [RoBERTa: A Robustly Optimized BERT Pretraining Approach](https://arxiv.org/pdf/1907.11692.pdf) | [Official](https://github.com/pytorch/fairseq/tree/master/examples/roberta) | 
+| XLNet + MTL + Verifier (ensemble)  | 83.09 | 83.74 | | | 
+| CSRLM (single model) | 81.78 | 82.58 | | |
