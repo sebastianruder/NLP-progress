@@ -4,6 +4,37 @@ Relationship extraction is the task of extracting semantic relationships from a 
 occur between two or more entities of a certain type (e.g. Person, Organisation, Location) and fall into a number of
 semantic categories (e.g. married to, employed by, lives in).
 
+### Capturing discriminative attributes (SemEval 2018 Task 10)
+
+**Capturing discriminative attributes (SemEval 2018 Task 10)** is a binary classification task where participants were asked to identify whether an attribute could help discriminate between two concepts. Unlike other word similarity prediction tasks, this task focuses on the semantic differences between words.
+
+e.g. red(attribute) can be used to discriminate apple (concept1) from banana (concept2) -> label 1
+
+More examples:
+| Attribute | concept1 | concept2 | label |
+| --------- | -------- | -------- | ----- |
+| bookcase | fridge | wood | 1 |
+| bucket | mug | round | 0 |
+| angle | curve | sharp | 1 |
+| pelican | turtle | water | 0 |
+| wire | coil | metal | 0 |
+
+Task paper: [https://www.aclweb.org/anthology/S18-1117](https://www.aclweb.org/anthology/S18-1117)
+
+Task Codalab: [https://competitions.codalab.org/competitions/17326](https://competitions.codalab.org/competitions/17326)
+
+| Model | Explainability | F1 Score | Paper / Source | Code |
+| ----- | -------------- | -------- | -------------- | ---- |
+| **SVM** with GloVe                                                                            | **None**           | **0.76** | [SUNNYNLP at SemEval-2018 Task 10: A Support-Vector-Machine-Based Method for Detecting Semantic Difference using Taxonomy and Word Embedding Features](https://aclweb.org/anthology/S18-1118) | [Author's](https://github.com/Yermouth/sunnynlp)                    |
+| **SVM** with ConceptNet, Wikipedia articles and WordNet synonyms                              | None               | 0.74     | [Luminoso at SemEval-2018 Task 10: Distinguishing Attributes Using Text Corpora and Relational Knowledge](https://aclweb.org/anthology/S18-1162)                                              | [Author's](https://github.com/LuminosoInsight/semeval-discriminatt) |
+| **MLP** combining information from various DSMs, PMI, and ConceptNet                          | None               | 0.73     | [THU NGN at SemEval-2018 Task 10: Capturing Discriminative Attributes with MLP-CNN model](https://aclweb.org/anthology/S18-1157)                                                              |                                                                     |
+| **Gradient boosting** with co-occurrence count features and JoBimText features                | None               | 0.73     | [BomJi at SemEval-2018 Task 10: Combining Vector-, Pattern- and Graph-based Information to Identify Discriminative Attributes](https://aclweb.org/anthology/S18-1163)                         |                                                                     |
+| LexVec, word co-occurrence, and ConceptNet data combined using **maximum entropy classifier** | None               | 0.72     | [UWB at SemEval-2018 Task 10: Capturing Discriminative Attributes from Word Distributions](https://aclweb.org/anthology/S18-1153)                                                             | [Author's](https://github.com/dpaperno/DiscriminAtt)                |
+| Composes explicit **vector spaces** from WordNet Definitions, ConceptNet and Visual Genome    | **Fully Explainable**  | **0.69** | [Identifying and Explaining Discriminative Attributes](https://arxiv.org/abs/1909.05363)                                                                                                      | [Author's](https://github.com/ab-10/Hawk)                           |
+| **Word2Vec** cosine similarities of WordNet glosses Transp. (No expl.)                        | Transp. (No expl.) | 0.69     | [Meaning space at SemEval-2018 Task 10: Combining explicitly encoded knowledge with information extracted from word embeddings](https://aclweb.org/anthology/S18-1154)                        | [Author's](https://github.com/cltl/meaning_space)                   |
+| Use of Wikipedia and ConceptNet Transp. (No expl.)                                            | Transp. (No expl.) | 0.69     | [ELiRF-UPV at SemEval-2018 Task 10: Capturing Discriminative Attributes with Knowledge Graphs and Wikipedia](https://aclweb.org/anthology/S18-1159)                                           |                                                                     |
+
+
 ### New York Times Corpus
 
 The standard corpus for distantly supervised relationship extraction is the New York Times (NYT) corpus, published in
@@ -87,7 +118,6 @@ reported here are the highest achieved by the model using any external resources
 | DepNN (Liu et al., 2015)            | 83.6  | [A Dependency-Based Neural Network for Relation Classification](http://www.aclweb.org/anthology/P15-2047) |
 | FCN (Yu et al., 2014)               | 83.0  | [Factor-based compositional embedding models](https://www.cs.cmu.edu/~mgormley/papers/yu+gormley+dredze.nipsw.2014.pdf) |
 | MVRNN (Socher et al., 2012)         | 82.4  | [Semantic Compositionality through Recursive Matrix-Vector Spaces](http://aclweb.org/anthology/D12-1110) | [pratapbhanu's Reimplementation](https://github.com/pratapbhanu/MVRNN) |
-
 
 ### TACRED
 
