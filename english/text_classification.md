@@ -7,8 +7,8 @@ The categories depend on the chosen dataset and can range from topics.
 
 The [AG News corpus](https://papers.nips.cc/paper/5782-character-level-convolutional-networks-for-text-classification.pdf)
 consists of news articles from the [AG's corpus of news articles on the web](http://www.di.unipi.it/~gulli/AG_corpus_of_news_articles.html)
-pertaining to the 4 largest classes. The dataset contains 30,000 training examples for each class
-1,900 examples for each class for testing. Models are evaluated based on error rate (lower is better).
+pertaining to the 4 largest classes. The dataset contains 30,000 training and 1,900 testing examples for each class.
+Models are evaluated based on error rate (lower is better).
 
 | Model           | Error  |  Paper / Source | Code |
 | ------------- | :-----:| --- | :-----: |

@@ -31,6 +31,7 @@ For a comparison of single models trained only on WSJ, refer to [Kitaev and Klei
 
 | Model           | F1 score  |  Paper / Source |
 | ------------- | :-----:| --- |
+| Head-Driven Phrase Structure Grammar Parsing (Joint) + XLNet (Zhou and Zhao, 2019) | 96.33 | [Head-Driven Phrase Structure Grammar Parsing on Penn Treebank](https://arxiv.org/pdf/1907.02684.pdf) |
 | Head-Driven Phrase Structure Grammar Parsing (Joint) + BERT (Zhou and Zhao, 2019) | 95.84 | [Head-Driven Phrase Structure Grammar Parsing on Penn Treebank](https://arxiv.org/pdf/1907.02684.pdf) |
 | Self-attentive encoder + ELMo (Kitaev and Klein, 2018) | 95.13 | [Constituency Parsing with a Self-Attentive Encoder](https://arxiv.org/abs/1805.01052) |
 | Model combination (Fried et al., 2017) | 94.66 | [Improving Neural Parsing by Disentangling Model Combination and Reranking Effects](https://arxiv.org/abs/1707.03058) |
