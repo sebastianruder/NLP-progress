@@ -91,16 +91,16 @@ The Gigaword summarization dataset has been first used by [Rush et al., 2015](ht
 | MASS (Song et al., 2019) | 38.73 | 19.71 | 35.96 | [MASS: Masked Sequence to Sequence Pre-training for Language Generation](https://arxiv.org/pdf/1905.02450v5.pdf) | [Official](https://github.com/microsoft/MASS) |
 | CNN-2sent-hieco-RBM (Zhang et al., 2019) | 37.95 | 18.64 | 35.11 | [Abstract Text Summarization with a Convolutional Seq2Seq Model](https://www.mdpi.com/2076-3417/9/8/1665/pdf) | | |
 | Re^3 Sum (Cao et al., 2018) | 37.04 | 19.03 | 34.46 | [Retrieve, Rerank and Rewrite: Soft Template Based Neural Summarization](http://aclweb.org/anthology/P18-1015) | |
-| CGU (Lin et al., 2018) | 36.3 | 18.0 | 33.8 | [Global Encoding for Abstractive Summarization](http://aclweb.org/anthology/P18-2027) | [Official](https://www.github.com/lancopku/Global-Encoding) |
-| Pointer + Coverage + EntailmentGen + QuestionGen (Guo et al., 2018) | 35.98 | 17.76 | 33.63 | [Soft Layer-Specific Multi-Task Summarization with Entailment and Question Generation](http://aclweb.org/anthology/P18-1064) | |
-| Struct+2Way+Word (Song et al., 2018) | 35.47 | 17.66 | 33.52 | [Structure-Infused Copy Mechanisms for Abstractive Summarization](http://aclweb.org/anthology/C18-1146) | [Official](https://github.com/KaiQiangSong/struct_infused_summ)|
 | FTSum_g (Cao et al., 2018) | 37.27 | 17.65 | 34.24 | [Faithful to the Original: Fact Aware Neural Abstractive Summarization](https://arxiv.org/pdf/1711.04434.pdf) | |
+| Seq2seq + E2T_cnn (Amplayo et al., 2018) | 37.04 | 16.66 | 34.93 | [Entity Commonsense Representation for Neural Abstractive Summarization](http://aclweb.org/anthology/N18-1064) | |
 | Reinforced-Topic-ConvS2S (Wang et al., 2018) | 36.92 | 18.29 | 34.58 | [A Reinforced Topic-Aware Convolutional Sequence-to-Sequence Model for Abstractive Text Summarization](https://www.ijcai.org/proceedings/2018/0619.pdf) | |
+| CGU (Lin et al., 2018) | 36.3 | 18.0 | 33.8 | [Global Encoding for Abstractive Summarization](http://aclweb.org/anthology/P18-2027) | [Official](https://www.github.com/lancopku/Global-Encoding) |
 | DRGD (Li et al., 2017) | 36.27 | 17.57 | 33.62 | [Deep Recurrent Generative Decoder for Abstractive Text Summarization](http://aclweb.org/anthology/D17-1222) | |
 | SEASS (Zhou et al., 2017) | 36.15 | 17.54 | 33.63 | [Selective Encoding for Abstractive Sentence Summarization](http://aclweb.org/anthology/P17-1101) | [Official](https://github.com/magic282/SEASS) |
 | EndDec+WFE (Suzuki and Nagata, 2017) | 36.30 | 17.31 | 33.88 | [Cutting-off Redundant Repeating Generations for Neural Abstractive Summarization](http://aclweb.org/anthology/E17-2047) | |
+| Pointer + Coverage + EntailmentGen + QuestionGen (Guo et al., 2018) | 35.98 | 17.76 | 33.63 | [Soft Layer-Specific Multi-Task Summarization with Entailment and Question Generation](http://aclweb.org/anthology/P18-1064) | |
+| Struct+2Way+Word (Song et al., 2018) | 35.47 | 17.66 | 33.52 | [Structure-Infused Copy Mechanisms for Abstractive Summarization](http://aclweb.org/anthology/C18-1146) | [Official](https://github.com/KaiQiangSong/struct_infused_summ)|
 | Seq2seq + selective + MTL + ERAM (Li et al., 2018) | 35.33 | 17.27 | 33.19 | [Ensure the Correctness of the Summary: Incorporate Entailment Knowledge into Abstractive Sentence Summarization](http://aclweb.org/anthology/C18-1121) | |
-| Seq2seq + E2T_cnn (Amplayo et al., 2018) | 37.04 | 16.66 | 34.93 | [Entity Commonsense Representation for Neural Abstractive Summarization](http://aclweb.org/anthology/N18-1064) | |
 | RAS-Elman (Chopra et al., 2016) | 33.78 | 15.97 | 31.15 | [Abstractive Sentence Summarization with Attentive Recurrent Neural Networks](http://www.aclweb.org/anthology/N16-1012) | |
 | words-lvt5k-1sent (Nallapti et al., 2016) | 32.67 | 15.59 | 30.64 | [Abstractive Text Summarization using Sequence-to-sequence RNNs and Beyond](http://www.aclweb.org/anthology/K16-1028) | |
 | ABS+ (Rush et al., 2015) | 29.76 | 11.88 | 26.96 | [A Neural Attention Model for Sentence Summarization](https://www.aclweb.org/anthology/D/D15/D15-1044.pdf) * | |
