@@ -11,6 +11,7 @@ semantic categories (e.g. married to, employed by, lives in).
 e.g. red(attribute) can be used to discriminate apple (concept1) from banana (concept2) -> label 1
 
 More examples:
+
 | Attribute | concept1 | concept2 | label |
 | --------- | -------- | -------- | ----- |
 | bookcase | fridge | wood | 1 |
