@@ -56,7 +56,8 @@ The following models have been evaluated on the non-anonymized version of the da
 | REFRESH (Narayan et al., 2018) | 40.0 | 18.2 | 36.6 | - | [Ranking Sentences for Extractive Summarization with Reinforcement Learning](http://aclweb.org/anthology/N18-1158) | [Official](https://github.com/EdinburghNLP/Refresh) |
 | Lead-3 baseline (See et al., 2017) | 40.34 | 17.70 | 36.57 | 22.21 | [Get To The Point: Summarization with Pointer-Generator Networks](http://aclweb.org/anthology/P17-1099) | [Official](https://github.com/abisee/pointer-generator) |
 | **Abstractive Models & Mixed Models**|  |  |  |  |  |  |
-| BertSumExtAbs (Liu and Lapata 2019) | 42.13 | 19.60 | 39.18 | - | [Text Summarization with Pretrained Encoders](https://arxiv.org/abs/1908.08345) |[Official](https://github.com/nlpyang/PreSumm) | 
+| CNN-2sent-hieco-RBM (Zhang et al., 2019) | 42.04 | 19.77 | 39.42 | - | [Abstract Text Summarization with a Convolutional Seq2Seq Model](https://www.mdpi.com/2076-3417/9/8/1665/pdf) | |
+| BertSumExtAbs (Liu and Lapata 2019) | 42.13 | 19.60 | 39.18 | - | [Text Summarization with Pretrained Encoders](https://arxiv.org/abs/1908.08345) |[Official](https://github.com/nlpyang/PreSumm) |
 | Two-Stage + RL (Zhang et al., 2019) | 41.71 | 19.49 | 38.79 | - | [Pretraining-Based Natural Language Generation for Text Summarization](https://arxiv.org/abs/1902.09243) | |
 | DCA (Celikyilmaz et al., 2018) | 41.69 | 19.47 | 37.92 | - | [Deep Communicating Agents for Abstractive Summarization](http://aclweb.org/anthology/N18-1150) | |
 | EditNet (Moroshko et al., 2018) | 41.42 | 19.03 | 38.36 | - | [An Editorial Network for Enhanced Document Summarization](https://arxiv.org/abs/1902.10360) | |
@@ -82,6 +83,7 @@ The Gigaword summarization dataset has been first used by [Rush et al., 2015](ht
 | --------------- | :-----: | :-----: | :-----: | -------------- | ---- |
 | BiSET (Wang et al., 2019) | 39.11 | 19.78 | 36.87 | [BiSET: Bi-directional Selective Encoding with Template for Abstractive Summarization](https://www.aclweb.org/anthology/P19-1207) | [Official](https://github.com/InitialBug/BiSET) |
 | MASS (Song et al., 2019) | 38.73 | 19.71 | 35.96 | [MASS: Masked Sequence to Sequence Pre-training for Language Generation](https://arxiv.org/pdf/1905.02450v5.pdf) | [Official](https://github.com/microsoft/MASS) |
+| CNN-2sent-hieco-RBM (Zhang et al., 2019) | 37.95 | 18.64 | 35.11 | - | [Abstract Text Summarization with a Convolutional Seq2Seq Model](https://www.mdpi.com/2076-3417/9/8/1665/pdf) | |
 | Re^3 Sum (Cao et al., 2018) | 37.04 | 19.03 | 34.46 | [Retrieve, Rerank and Rewrite: Soft Template Based Neural Summarization](http://aclweb.org/anthology/P18-1015) | |
 | CGU (Lin et al., 2018) | 36.3 | 18.0 | 33.8 | [Global Encoding for Abstractive Summarization](http://aclweb.org/anthology/P18-2027) | [Official](https://www.github.com/lancopku/Global-Encoding) |
 | Pointer + Coverage + EntailmentGen + QuestionGen (Guo et al., 2018) | 35.98 | 17.76 | 33.63 | [Soft Layer-Specific Multi-Task Summarization with Entailment and Question Generation](http://aclweb.org/anthology/P18-1064) | |
@@ -110,6 +112,7 @@ Similar to Gigaword, task 1 of [DUC 2004](https://duc.nist.gov/duc2004/) is a se
 | DRGD (Li et al., 2017) | 31.79 | 10.75 | 27.48 | [Deep Recurrent Generative Decoder for Abstractive Text Summarization](http://aclweb.org/anthology/D17-1222) | |
 | EndDec+WFE (Suzuki and Nagata, 2017) | 32.28 | 10.54 | 27.8 | [Cutting-off Redundant Repeating Generations for Neural Abstractive Summarization](http://aclweb.org/anthology/E17-2047) | |
 | Reinforced-Topic-ConvS2S (Wang et al., 2018) | 31.15 | 10.85 | 27.68 | [A Reinforced Topic-Aware Convolutional Sequence-to-Sequence Model for Abstractive Text Summarization](https://www.ijcai.org/proceedings/2018/0619.pdf) | |
+| CNN-2sent-hieco-RBM (Zhang et al., 2019) | 29.74 | 9.85 | 25.81 | - | [Abstract Text Summarization with a Convolutional Seq2Seq Model](https://www.mdpi.com/2076-3417/9/8/1665/pdf) | |
 | Seq2seq + selective + MTL + ERAM (Li et al., 2018) | 29.33 | 10.24 | 25.24 | [Ensure the Correctness of the Summary: Incorporate Entailment Knowledge into Abstractive Sentence Summarization](http://aclweb.org/anthology/C18-1121) | |
 | SEASS (Zhou et al., 2017) | 29.21 | 9.56 | 25.51 | [Selective Encoding for Abstractive Sentence Summarization](http://aclweb.org/anthology/P17-1101) | |
 | words-lvt5k-1sent (Nallapti et al., 2016) | 28.61 | 9.42 | 25.24 | [Abstractive Text Summarization using Sequence-to-sequence RNNs and Beyond](http://www.aclweb.org/anthology/K16-1028) | |
