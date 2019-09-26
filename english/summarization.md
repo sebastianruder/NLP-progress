@@ -64,6 +64,7 @@ The first table covers Extractive Models, while the second covers abstractive ap
 | --------------- | :-----: | :-----: | :-----: | :----: | -------------- | ---- |
 | CNN-2sent-hieco-RBM (Zhang et al., 2019) | 42.04 | 19.77 | 39.42 | - |[Abstract Text Summarization with a Convolutional Seq2Seq Model](https://www.mdpi.com/2076-3417/9/8/1665/pdf) | |
 | BertSumExtAbs (Liu and Lapata 2019) | 42.13 | 19.60 | 39.18 | - | [Text Summarization with Pretrained Encoders](https://arxiv.org/abs/1908.08345) |[Official](https://github.com/nlpyang/PreSumm) |
+| Bert-ext + abs + RL + rerank (Bae et al., 2019) | 41.90 | 19.08 | 39.64 | - | [Summary Level Training of Sentence Rewriting for Abstractive Summarization](https://arxiv.org/abs/1909.08752) | |
 | Two-Stage + RL (Zhang et al., 2019) | 41.71 | 19.49 | 38.79 | - | [Pretraining-Based Natural Language Generation for Text Summarization](https://arxiv.org/abs/1902.09243) | |
 | DCA (Celikyilmaz et al., 2018) | 41.69 | 19.47 | 37.92 | - | [Deep Communicating Agents for Abstractive Summarization](http://aclweb.org/anthology/N18-1150) | |
 | EditNet (Moroshko et al., 2018) | 41.42 | 19.03 | 38.36 | - | [An Editorial Network for Enhanced Document Summarization](https://arxiv.org/abs/1902.10360) | |
