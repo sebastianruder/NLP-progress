@@ -51,6 +51,7 @@ The first table covers Extractive Models, while the second covers abstractive ap
 | Model           | ROUGE-1 | ROUGE-2 | ROUGE-L | METEOR | Paper / Source | Code |
 | --------------- | :-----: | :-----: | :-----: | :----: | -------------- | ---- |
 | BertSumExt (Liu and Lapata 2019) | 43.85 | 20.34 | 39.90 | - | [Text Summarization with Pretrained Encoders](https://arxiv.org/abs/1908.08345) |[Official](https://github.com/nlpyang/PreSumm) | 
+| BERT-ext + RL (Bae et al., 2019) | 42.76 | 19.87 | 39.11 | - | [Summary Level Training of Sentence Rewriting for Abstractive Summarization](https://arxiv.org/abs/1909.08752) | |
 | HIBERT (Zhang et al., 2019) | 42.37 | 19.95 | 38.83 | - | [HIBERT: Document Level Pre-training of Hierarchical Bidirectional Transformers for Document Summarization](https://arxiv.org/abs/1905.06566) | |
 | NeuSUM (Zhou et al., 2018) | 41.59 | 19.01 | 37.98 | - | [Neural Document Summarization by Jointly Learning to Score and Select Sentences](http://aclweb.org/anthology/P18-1061) | [Official](https://github.com/magic282/NeuSum) |
 | Latent (Zhang et al., 2018) | 41.05 | 18.77 | 37.54 | - | [Neural Latent Extractive Document Summarization](http://aclweb.org/anthology/D18-1088) | | 
@@ -64,6 +65,7 @@ The first table covers Extractive Models, while the second covers abstractive ap
 | --------------- | :-----: | :-----: | :-----: | :----: | -------------- | ---- |
 | CNN-2sent-hieco-RBM (Zhang et al., 2019) | 42.04 | 19.77 | 39.42 | - |[Abstract Text Summarization with a Convolutional Seq2Seq Model](https://www.mdpi.com/2076-3417/9/8/1665/pdf) | |
 | BertSumExtAbs (Liu and Lapata 2019) | 42.13 | 19.60 | 39.18 | - | [Text Summarization with Pretrained Encoders](https://arxiv.org/abs/1908.08345) |[Official](https://github.com/nlpyang/PreSumm) |
+| BERT-ext + abs + RL + rerank (Bae et al., 2019) | 41.90 | 19.08 | 39.64 | - | [Summary Level Training of Sentence Rewriting for Abstractive Summarization](https://arxiv.org/abs/1909.08752) | |
 | Two-Stage + RL (Zhang et al., 2019) | 41.71 | 19.49 | 38.79 | - | [Pretraining-Based Natural Language Generation for Text Summarization](https://arxiv.org/abs/1902.09243) | |
 | DCA (Celikyilmaz et al., 2018) | 41.69 | 19.47 | 37.92 | - | [Deep Communicating Agents for Abstractive Summarization](http://aclweb.org/anthology/N18-1150) | |
 | EditNet (Moroshko et al., 2018) | 41.42 | 19.03 | 38.36 | - | [An Editorial Network for Enhanced Document Summarization](https://arxiv.org/abs/1902.10360) | |
