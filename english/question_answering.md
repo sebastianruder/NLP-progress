@@ -55,7 +55,7 @@ The public data, further task details and public leaderboard are available on th
 
 Most current question answering datasets frame the task as reading comprehension where the question is about a paragraph
 or document and the answer often is a span in the document. The Machine Reading group
-at UCL also provides an [overview of reading comprehension tasks](https://uclmr.github.io/ai4exams/data.html).
+at UCL also provides an [overview of reading comprehension tasks](https://uclnlp.github.io/ai4exams/data.html).
 
 ### CliCR
 
