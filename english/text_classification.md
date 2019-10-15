@@ -7,8 +7,8 @@ The categories depend on the chosen dataset and can range from topics.
 
 The [AG News corpus](https://papers.nips.cc/paper/5782-character-level-convolutional-networks-for-text-classification.pdf)
 consists of news articles from the [AG's corpus of news articles on the web](http://www.di.unipi.it/~gulli/AG_corpus_of_news_articles.html)
-pertaining to the 4 largest classes. The dataset contains 30,000 training examples for each class
-1,900 examples for each class for testing. Models are evaluated based on error rate (lower is better).
+pertaining to the 4 largest classes. The dataset contains 30,000 training and 1,900 testing examples for each class.
+Models are evaluated based on error rate (lower is better).
 
 | Model           | Error  |  Paper / Source | Code |
 | ------------- | :-----:| --- | :-----: |
@@ -30,6 +30,7 @@ Models are evaluated based on error rate (lower is better).
 | Model           | Error  |  Paper / Source | Code |
 | ------------- | :-----:| --- | :-----: |
 | XLNet (Yang et al., 2019) | 0.62 | [XLNet: Generalized Autoregressive Pretraining for Language Understanding](https://arxiv.org/pdf/1906.08237.pdf) | [Official](https://github.com/zihangdai/xlnet/) |
+| Bidirectional Encoder Representations from Transformers (Devlin et al., 2018) | 0.64 | [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805) | [Official](https://github.com/google-research/bert) |
 | ULMFiT (Howard and Ruder, 2018) | 0.80 | [Universal Language Model Fine-tuning for Text Classification](https://arxiv.org/abs/1801.06146)  | [Official](http://nlp.fast.ai/ulmfit ) |
 | CNN (Johnson and Zhang, 2016) | 0.84 | [Supervised and Semi-Supervised Text Categorization using LSTM for Region Embeddings](https://arxiv.org/abs/1602.02373) | [Official](https://github.com/riejohnson/ConText ) |
 | DPCNN (Johnson and Zhang, 2017) | 0.88 | [Deep Pyramid Convolutional Neural Networks for Text Categorization](http://aclweb.org/anthology/P17-1052) | [Official](https://github.com/riejohnson/ConText ) |

@@ -31,6 +31,7 @@ evaluation are available, but entries do not correspond to published models.
 
 | Model           | Matched  | Mismatched | Paper / Source | Code | 
 | ------------- | :-----:| :-----:| --- | --- |
+| RoBERTa (Liu et al., 2019) | 90.8 | 90.2 | [RoBERTa: A Robustly Optimized BERT Pretraining Approach](https://arxiv.org/pdf/1907.11692.pdf) | [Official](https://github.com/pytorch/fairseq/blob/master/examples/roberta/README.md) |
 | XLNet-Large (ensemble) (Yang et al., 2019) | 90.2 | 89.8 | [XLNet: Generalized Autoregressive Pretraining for Language Understanding](https://arxiv.org/pdf/1906.08237.pdf) | [Official](https://github.com/zihangdai/xlnet/) |
 | MT-DNN-ensemble (Liu et al., 2019) | 87.9 | 87.4 | [Improving Multi-Task Deep Neural Networks via Knowledge Distillation for Natural Language Understanding](https://arxiv.org/pdf/1904.09482.pdf) | [Official](https://github.com/namisan/mt-dnn/) |
 | Snorkel MeTaL(ensemble) (Ratner et al., 2018) | 87.6 | 87.2 | [Training Complex Models with Multi-Task Weak Supervision](https://arxiv.org/pdf/1810.02840.pdf) | [Official](https://github.com/HazyResearch/metal) |
