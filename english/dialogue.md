@@ -151,11 +151,11 @@ Manually labeled by [Kummerfeld et al. (2019)](https://www.aclweb.org/anthology/
 
 | Model                  | VI   | 1-1  | Precision | Recall | F-Score | Paper / Source | Code          |
 | ---------------------- | :--: | :--: | :-------: | :----: | :-----: | ---------------| ------------- |
-| FF ensemble: Intersect (Kummerfeld et al., 2019) | 69.3 | 26.6 | 67.0 | 21.1 | 32.1 | [A Large-Scale Corpus for Conversation Disentanglement](https://www.aclweb.org/anthology/P19-1374/) | [Code](https://jkk.name/irc-disentanglement) |
 | FF ensemble: Vote      (Kummerfeld et al., 2019) | 91.5 | 76.0 | 36.3 | 39.7 | 38.0 | [A Large-Scale Corpus for Conversation Disentanglement](https://www.aclweb.org/anthology/P19-1374/) | [Code](https://jkk.name/irc-disentanglement) |
 | Feedforward            (Kummerfeld et al., 2019) | 91.3 | 75.6 | 34.6 | 38.0 | 36.2 | [A Large-Scale Corpus for Conversation Disentanglement](https://www.aclweb.org/anthology/P19-1374/) | [Code](https://jkk.name/irc-disentanglement) |
-| Heuristic              (Lowe et al., 2015)       | 80.6 | 53.7 | 10.8 |  7.6 |  8.9 | [Training End-to-End Dialogue Systems with the Ubuntu Dialogue Corpus](http://dad.uni-bielefeld.de/index.php/dad/article/view/3698) | [Code](https://github.com/npow/ubuntu-corpus) |
+| FF ensemble: Intersect (Kummerfeld et al., 2019) | 69.3 | 26.6 | 67.0 | 21.1 | 32.1 | [A Large-Scale Corpus for Conversation Disentanglement](https://www.aclweb.org/anthology/P19-1374/) | [Code](https://jkk.name/irc-disentanglement) |
 | Linear                 (Elsner and Charniak, 2008) | 82.1 | 51.4 | 12.1 | 21.5 | 15.5 | [You Talking to Me? A Corpus and Algorithm for Conversation Disentanglement](https://www.aclweb.org/anthology/P08-1095/) | [Code](https://www.asc.ohio-state.edu/elsner.14/resources/chat-distr.tgz) |
+| Heuristic              (Lowe et al., 2015)       | 80.6 | 53.7 | 10.8 |  7.6 |  8.9 | [Training End-to-End Dialogue Systems with the Ubuntu Dialogue Corpus](http://dad.uni-bielefeld.de/index.php/dad/article/view/3698) | [Code](https://github.com/npow/ubuntu-corpus) |
 
 ### Linux IRC
 
@@ -167,12 +167,10 @@ This data has been manually annotated three times:
 
 | Data | Model           | 1-1        | Local | Shen F-1 | Paper / Source | Code          |
 | ---- | -------------   | :---------:| :---: | :------: | ---------------| ------------- |
+| Kummerfeld | Linear     (Elsner and Charniak, 2008) | 59.7 | 80.8 | 63.0 | [You Talking to Me? A Corpus and Algorithm for Conversation Disentanglement](https://www.aclweb.org/anthology/P08-1095/) | [Code](https://www.asc.ohio-state.edu/elsner.14/resources/chat-distr.tgz) |
 | Kummerfeld | Feedforward (Kummerfeld et al., 2019)  | 57.7 | 80.3 | 59.8 | [A Large-Scale Corpus for Conversation Disentanglement](https://www.aclweb.org/anthology/P19-1374/) | [Code](https://jkk.name/irc-disentanglement) |
 | Kummerfeld | Heuristic   (Lowe et al., 2015)        | 43.4 | 67.9 | 50.7 | [Training End-to-End Dialogue Systems with the Ubuntu Dialogue Corpus](http://dad.uni-bielefeld.de/index.php/dad/article/view/3698) | [Code](https://github.com/npow/ubuntu-corpus) |
-| Kummerfeld | Linear     (Elsner and Charniak, 2008) | 59.7 | 80.8 | 63.0 | [You Talking to Me? A Corpus and Algorithm for Conversation Disentanglement](https://www.aclweb.org/anthology/P08-1095/) | [Code](https://www.asc.ohio-state.edu/elsner.14/resources/chat-distr.tgz) |
+| Elsner | Linear     (Elsner and Charniak, 2008)     | 53.1 | 81.9 | 55.1 | [You Talking to Me? A Corpus and Algorithm for Conversation Disentanglement](https://www.aclweb.org/anthology/P08-1095/) | [Code](https://www.asc.ohio-state.edu/elsner.14/resources/chat-distr.tgz) |
 | Elsner | Feedforward (Kummerfeld et al., 2019)      | 52.1 | 77.8 | 53.8 | [A Large-Scale Corpus for Conversation Disentanglement](https://www.aclweb.org/anthology/P19-1374/) | [Code](https://jkk.name/irc-disentanglement) |
 | Elsner | Wang and Oard (2009) | 47.0 | 75.1 | 52.8 | [Context-based Message Expansion for Disentanglement of Interleaved Text Conversations](https://www.aclweb.org/anthology/N09-1023/) | - |
 | Elsner | Heuristic   (Lowe et al., 2015)            | 45.1 | 73.8 | 51.8 | [Training End-to-End Dialogue Systems with the Ubuntu Dialogue Corpus](http://dad.uni-bielefeld.de/index.php/dad/article/view/3698) | [Code](https://github.com/npow/ubuntu-corpus) |
-| Elsner | Linear     (Elsner and Charniak, 2008)     | 53.1 | 81.9 | 55.1 | [You Talking to Me? A Corpus and Algorithm for Conversation Disentanglement](https://www.aclweb.org/anthology/P08-1095/) | [Code](https://www.asc.ohio-state.edu/elsner.14/resources/chat-distr.tgz) |
-
-Wang (2009) 47.0 75.1 52.8
