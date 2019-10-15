@@ -74,17 +74,31 @@ The [MultiWOZ dataset](https://arxiv.org/abs/1810.00278) is a fully-labeled coll
 | Nouri and Hosseini-Asl (2019) | 36.27 |	98.42 | [Toward Scalable Neural Dialogue State Tracking Model](https://arxiv.org/pdf/1812.00899.pdf) |
 | Wu et al. (2019) |48.62 | 	96.92| [Transferable Multi-Domain State Generator for Task-OrientedDialogue System](https://arxiv.org/pdf/1905.08743.pdf) |
 
-## Retrieval-based Chatbot
-The main task retrieval-based chatbot is response selection, that aims to find correct responses from a pre-defined index. 
-### Ubuntu Corpus
-The [Ubuntu Corpus](https://arxiv.org/pdf/1506.08909.pdf) contains almost 1 million multi-turn dialogues from the Ubuntu Chat Logs. The task of Ubuntu Corpus is to select the correct response from 10 candidates (others are negatively sampled) by considering previous conversation history. You can find more details at [here](https://github.com/ryan-lowe/Ubuntu-Dialogue-Generationv2). The Evaluation metric is recall at position K in N candidates (Recall_N@K). 
+## Retrieval-based Chatbots
+These systems take as input a context and a list of possible responses and rank the responses, returning the highest ranking one.
 
-| Model           | R_2@1  |  R_10@1   |  Paper / Source |
-| -------------   |    :---------: | :---------:|---------------|
-| DAM (Zhou et al. 2018) | 93.8 | 76.7| [Multi-Turn Response Selection for Chatbots with Deep Attention Matching Network](http://www.aclweb.org/anthology/P18-1103) |
-| SMN (Wu et al. 2017) | 92.3 | 72.3| [Sequential Matching Network: A New Architecture for Multi-turn Response Selection in Retrieval-Based Chatbots](https://arxiv.org/pdf/1612.01627.pdf) |
-| Multi-View (Zhou et al. 2017) | 90.8 | 66.2 | [Multi-view Response Selection for Human-Computer Conversation](https://aclweb.org/anthology/D16-1036) |
-| Bi-LSTM (Kadlec et al. 2015) | 89.5 | 63.0 | [Improved Deep Learning Baselines for Ubuntu Corpus Dialogs](https://arxiv.org/pdf/1510.03753.pdf) |
+### Ubuntu IRC Data
+
+There are several corpra based on the [Ubuntu IRC Channel Logs](https://irclogs.ubuntu.com):
+
+- [Uthus and Aha (2013)](), available [here](https://daviduthus.org/UCC/), the first dataset to use the resource, but not for retrieval-based chatbot research.
+- [Lowe et al. (2015)](https://arxiv.org/abs/1506.08909), available [here](http://dataset.cs.mcgill.ca/ubuntu-corpus-1.0/), the first version of the Ubuntu Dialogue Corpus
+- [Lowe et al. (2017)](http://dad.uni-bielefeld.de/index.php/dad/article/view/3698), available [here](https://arxiv.org/abs/1506.08909), the second version of the Ubuntu Dialogue Corpus
+- [Gunasekara et al. (2019)](http://workshop.colips.org/dstc7/papers/dstc7_task1_final_report.pdf), available [here](https://ibm.github.io/dstc-noesis/public/index.html), the data from DSTC 7 track 1.
+- [Gunasekara et al. (2020)](), available [here](https://github.com/dstc8-track2/NOESIS-II/), the data from DSTC 8 track 2.
+
+Each version of the dataset contains a set of dialogues from the IRC channel, extracted by automatically disentangling conversations occurring simultaneously. The exact tasks used vary slightly, but all consider variations of Recall_N@K, which means how often the true answer is in the top K options when there are N total candidates.
+
+| Data   | Model           | R_2@1       |  R_10@1     |  R_100@1    |  R_100@10   |  R_100@50   |  MRR        |  Paper / Source |
+| ------ | -------------   | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: |---------------|
+| DSTC 8 |                                       |
+| DSTC 7 | Seq-Att-Network (Chen and Wang, 2019) | - | - |64.5 | 90.2 | 99.4 | 73.5 | [Sequential Attention-based Network for Noetic End-to-End Response Selection](http://workshop.colips.org/dstc7/papers/07.pdf)
+| UDC v2 | DAM (Zhou et al. 2018) | 93.8 | 76.7| - | - | - | - | [Multi-Turn Response Selection for Chatbots with Deep Attention Matching Network](http://www.aclweb.org/anthology/P18-1103) |
+| UDC v2  | SMN (Wu et al. 2017) | 92.3 | 72.3| - | - | - | - | [Sequential Matching Network: A New Architecture for Multi-turn Response Selection in Retrieval-Based Chatbots](https://arxiv.org/pdf/1612.01627.pdf) |
+| UDC v2  | Multi-View (Zhou et al. 2017) | 90.8 | 66.2 | - | - | - | - | [Multi-view Response Selection for Human-Computer Conversation](https://aclweb.org/anthology/D16-1036) |
+| UDC v2  | Bi-LSTM (Kadlec et al. 2015) | 89.5 | 63.0 | - | - | - | - | [Improved Deep Learning Baselines for Ubuntu Corpus Dialogs](https://arxiv.org/pdf/1510.03753.pdf) |
+
+Additional results can be found in the DSTC task reports linked above.
 
 ### Reddit Corpus
 The [Reddit Corpus](https://arxiv.org/abs/1904.06472) contains 726 million multi-turn dialogues from the Reddit board. Reddit  is an American social news aggregation website, where users can post links, and take partin discussions on these post. The task of Reddit Corpus is to select the correct response from 100 candidates (others are negatively sampled) by considering previous conversation history.  Models are evaluated with the Recall 1 at 100 metric (the 1-of-100 ranking accuracy). You can find more details at [here](https://github.com/PolyAI-LDN/conversational-datasets).
@@ -96,7 +110,15 @@ The [Reddit Corpus](https://arxiv.org/abs/1904.06472) contains 726 million multi
 | BERT (Devlin et al. 2017) | 24.0 | [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805) |
 | ELMO (Peters et al. 2018) | 19.3 | [Deep contextualized word representations](https://arxiv.org/abs/1802.05365) |
 
-## Generative-based Chatbot
+### Advising Corpus
+The [Advising Corpus](http://workshop.colips.org/dstc7/papers/dstc7_task1_final_report.pdf), available [here](https://ibm.github.io/dstc-noesis/public/index.html), contains a collection of conversations between a student and an advisor at the University of Michigan. They were released as part of DSTC 7 track 1 and used again in DSTC 8 track 2.
+
+| Data   | Model           |  R_100@1    |  R_100@10   |  R_100@50   |  MRR        |  Paper / Source |
+| ------ | -------------   | :---------: | :---------: | :---------: | :---------: |---------------|
+| DSTC 7 | Seq-Att-Network (Chen and Wang, 2019) | 21.4 | 63.0 | 94.8 | 33.9 | [Sequential Attention-based Network for Noetic End-to-End Response Selection](http://workshop.colips.org/dstc7/papers/07.pdf)
+
+
+## Generative-based Chatbots
 The main task of generative-based chatbot is to generate consistent and engaging response given the context.
 ### Personalized Chit-chat
 
