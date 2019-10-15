@@ -82,10 +82,10 @@ These systems take as input a context and a list of possible responses and rank 
 There are several corpra based on the [Ubuntu IRC Channel Logs](https://irclogs.ubuntu.com):
 
 - [Uthus and Aha (2013)](), available [here](https://daviduthus.org/UCC/), the first dataset to use the resource, but not for retrieval-based chatbot research.
-- [Lowe et al. (2015)](https://arxiv.org/abs/1506.08909), available [here](http://dataset.cs.mcgill.ca/ubuntu-corpus-1.0/), the first version of the Ubuntu Dialogue Corpus
-- [Lowe et al. (2017)](http://dad.uni-bielefeld.de/index.php/dad/article/view/3698), available [here](https://arxiv.org/abs/1506.08909), the second version of the Ubuntu Dialogue Corpus
-- [Gunasekara et al. (2019)](http://workshop.colips.org/dstc7/papers/dstc7_task1_final_report.pdf), available [here](https://ibm.github.io/dstc-noesis/public/index.html), the data from DSTC 7 track 1.
-- [Gunasekara et al. (2020)](), available [here](https://github.com/dstc8-track2/NOESIS-II/), the data from DSTC 8 track 2.
+- UDC v1, [Lowe et al. (2015)](https://arxiv.org/abs/1506.08909), available [here](http://dataset.cs.mcgill.ca/ubuntu-corpus-1.0/), the first version of the Ubuntu Dialogue Corpus.
+- UDC v2, [Lowe et al. (2017)](http://dad.uni-bielefeld.de/index.php/dad/article/view/3698), available [here](https://arxiv.org/abs/1506.08909), the second version of the Ubuntu Dialogue Corpus.
+- DSTC 7, [Gunasekara et al. (2019)](http://workshop.colips.org/dstc7/papers/dstc7_task1_final_report.pdf), available [here](https://ibm.github.io/dstc-noesis/public/index.html), the data from DSTC 7 track 1.
+- DSTC 8, [Gunasekara et al. (2020)](), available [here](https://github.com/dstc8-track2/NOESIS-II/), the data from DSTC 8 track 2.
 
 Each version of the dataset contains a set of dialogues from the IRC channel, extracted by automatically disentangling conversations occurring simultaneously. See below for results on the disentanglement process.
 
