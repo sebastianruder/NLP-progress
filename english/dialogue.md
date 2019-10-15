@@ -145,9 +145,9 @@ This can be formultated as a clustering problem, with no clear best metric. Seve
 - Local overlap
 - Another form of F-1 defined by [Shen et al. (2006)](https://dl.acm.org/citation.cfm?doid=1148170.1148180)
 
-### Kummerfeld et al. [(ACL 2019)](https://www.aclweb.org/anthology/P19-1374)
+### Ubuntu IRC
 
-Data available [here](https://jkk.name/irc-disentanglement/)
+Manually labeled by [Kummerfeld et al. (2019)](https://www.aclweb.org/anthology/P19-1374), this data is available [here](https://jkk.name/irc-disentanglement/).
 
 | Model                  | VI   | 1-1  | Precision | Recall | F-Score | Paper / Source | Code          |
 | ---------------------- | :--: | :--: | :-------: | :----: | :-----: | ---------------| ------------- |
@@ -157,13 +157,13 @@ Data available [here](https://jkk.name/irc-disentanglement/)
 | Heuristic              (Lowe et al., 2015)       | 80.6 | 53.7 | 10.8 |  7.6 |  8.9 | [Training End-to-End Dialogue Systems with the Ubuntu Dialogue Corpus](http://dad.uni-bielefeld.de/index.php/dad/article/view/3698) | [Code](https://github.com/npow/ubuntu-corpus) |
 | Linear                 (Elsner and Charniak, 2008) | 82.1 | 51.4 | 12.1 | 21.5 | 15.5 | [You Talking to Me? A Corpus and Algorithm for Conversation Disentanglement](https://www.aclweb.org/anthology/P08-1095/) | [Code](https://www.asc.ohio-state.edu/elsner.14/resources/chat-distr.tgz) |
 
-### Elsner and Charniak [(ACL 2008)](https://www.aclweb.org/anthology/P08-1095)
+### Linux IRC
 
-This data has been annotated three times:
+This data has been manually annotated three times:
 
-- By Elsner and Charniak (2008), available [here](https://www.asc.ohio-state.edu/elsner.14/resources/chat-distr.tgz).
-- By Kummerfeld et al. (2019), available [here](https://jkk.name/irc-disentanglement).
-- By [Mehri and Carenini (2017)](https://aclweb.org/anthology/I17-1062/), available [here](http://shikib.com/td_annotations).
+- By [Elsner and Charniak (2008)](https://www.aclweb.org/anthology/P08-1095), available [here](https://www.asc.ohio-state.edu/elsner.14/resources/chat-distr.tgz).
+- A portion by [Mehri and Carenini (2017)](https://aclweb.org/anthology/I17-1062/), available [here](http://shikib.com/td_annotations).
+- By [Kummerfeld et al. (2019)](https://www.aclweb.org/anthology/P19-1374), available [here](https://jkk.name/irc-disentanglement/).
 
 | Data | Model           | 1-1        | Local | Shen F-1 | Paper / Source | Code          |
 | ---- | -------------   | :---------:| :---: | :------: | ---------------| ------------- |
