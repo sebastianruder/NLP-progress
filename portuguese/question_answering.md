@@ -6,7 +6,7 @@ See [here](../english/question_answering.md) for more information about the task
 
 #### QA@Clef Chave (2008) Dataset
 
-The Chave collection contains about 4000 questions in Portuguese where about 1000 provide at least one response. Each question has included a category and type as well as other information such as identification code and year of creation. This collection is provided by [Linguateca](https://www.linguateca.pt/CHAVE/), a center of resource for the computational processing of the Portuguese language.
+The Chave collection contains about 4000 questions in Portuguese, where about 1000 provide at least one response. Each question has included a category and type as well as other information such as identification code and year of creation. This collection is provided by [Linguateca](https://www.linguateca.pt/CHAVE/), a center of resource for the computational processing of the Portuguese language.
 
 
 |  Model | Accuracy | Paper / Source | Code | 
