@@ -1,4 +1,4 @@
-# Entity Linking
+# Question Answering
 
 See [here](../english/question_answering.md) for more information about the task.
 
