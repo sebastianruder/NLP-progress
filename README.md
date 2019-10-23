@@ -63,6 +63,10 @@
 
 - [Entity linking](spanish/entity_linking.md#entity-linking)
 
+### Portuguese
+
+- [Question Answering](portuguese/question_answering.md)
+
 This document aims to track the progress in Natural Language Processing (NLP) and give an overview
 of the state-of-the-art (SOTA) across the most common NLP tasks and their corresponding datasets.
 
