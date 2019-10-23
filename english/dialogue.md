@@ -74,17 +74,33 @@ The [MultiWOZ dataset](https://arxiv.org/abs/1810.00278) is a fully-labeled coll
 | Nouri and Hosseini-Asl (2019) | 36.27 |	98.42 | [Toward Scalable Neural Dialogue State Tracking Model](https://arxiv.org/pdf/1812.00899.pdf) |
 | Wu et al. (2019) |48.62 | 	96.92| [Transferable Multi-Domain State Generator for Task-OrientedDialogue System](https://arxiv.org/pdf/1905.08743.pdf) |
 
-## Retrieval-based Chatbot
-The main task retrieval-based chatbot is response selection, that aims to find correct responses from a pre-defined index. 
-### Ubuntu Corpus
-The [Ubuntu Corpus](https://arxiv.org/pdf/1506.08909.pdf) contains almost 1 million multi-turn dialogues from the Ubuntu Chat Logs. The task of Ubuntu Corpus is to select the correct response from 10 candidates (others are negatively sampled) by considering previous conversation history. You can find more details at [here](https://github.com/ryan-lowe/Ubuntu-Dialogue-Generationv2). The Evaluation metric is recall at position K in N candidates (Recall_N@K). 
+## Retrieval-based Chatbots
+These systems take as input a context and a list of possible responses and rank the responses, returning the highest ranking one.
 
-| Model           | R_2@1  |  R_10@1   |  Paper / Source |
-| -------------   |    :---------: | :---------:|---------------|
-| DAM (Zhou et al. 2018) | 93.8 | 76.7| [Multi-Turn Response Selection for Chatbots with Deep Attention Matching Network](http://www.aclweb.org/anthology/P18-1103) |
-| SMN (Wu et al. 2017) | 92.3 | 72.3| [Sequential Matching Network: A New Architecture for Multi-turn Response Selection in Retrieval-Based Chatbots](https://arxiv.org/pdf/1612.01627.pdf) |
-| Multi-View (Zhou et al. 2017) | 90.8 | 66.2 | [Multi-view Response Selection for Human-Computer Conversation](https://aclweb.org/anthology/D16-1036) |
-| Bi-LSTM (Kadlec et al. 2015) | 89.5 | 63.0 | [Improved Deep Learning Baselines for Ubuntu Corpus Dialogs](https://arxiv.org/pdf/1510.03753.pdf) |
+### Ubuntu IRC Data
+
+There are several corpra based on the [Ubuntu IRC Channel Logs](https://irclogs.ubuntu.com):
+
+- [Uthus and Aha (2013)](), available [here](https://daviduthus.org/UCC/), the first dataset to use the resource, but not for retrieval-based chatbot research.
+- UDC v1, [Lowe et al. (2015)](https://arxiv.org/abs/1506.08909), available [here](http://dataset.cs.mcgill.ca/ubuntu-corpus-1.0/), the first version of the Ubuntu Dialogue Corpus.
+- UDC v2, [Lowe et al. (2017)](http://dad.uni-bielefeld.de/index.php/dad/article/view/3698), available [here](https://arxiv.org/abs/1506.08909), the second version of the Ubuntu Dialogue Corpus.
+- DSTC 7, [Gunasekara et al. (2019)](http://workshop.colips.org/dstc7/papers/dstc7_task1_final_report.pdf), available [here](https://ibm.github.io/dstc-noesis/public/index.html), the data from DSTC 7 track 1.
+- DSTC 8, [Gunasekara et al. (2020)](), available [here](https://github.com/dstc8-track2/NOESIS-II/), the data from DSTC 8 track 2.
+
+Each version of the dataset contains a set of dialogues from the IRC channel, extracted by automatically disentangling conversations occurring simultaneously. See below for results on the disentanglement process.
+
+The exact tasks used vary slightly, but all consider variations of Recall_N@K, which means how often the true answer is in the top K options when there are N total candidates.
+
+| Data   | Model           | R_2@1       |  R_10@1     |  R_100@1    |  R_100@10   |  R_100@50   |  MRR        |  Paper / Source |
+| ------ | -------------   | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: |---------------|
+| DSTC 8 |                                       |
+| DSTC 7 | Seq-Att-Network (Chen and Wang, 2019) | - | - |64.5 | 90.2 | 99.4 | 73.5 | [Sequential Attention-based Network for Noetic End-to-End Response Selection](http://workshop.colips.org/dstc7/papers/07.pdf)
+| UDC v2 | DAM (Zhou et al. 2018) | 93.8 | 76.7| - | - | - | - | [Multi-Turn Response Selection for Chatbots with Deep Attention Matching Network](http://www.aclweb.org/anthology/P18-1103) |
+| UDC v2  | SMN (Wu et al. 2017) | 92.3 | 72.3| - | - | - | - | [Sequential Matching Network: A New Architecture for Multi-turn Response Selection in Retrieval-Based Chatbots](https://arxiv.org/pdf/1612.01627.pdf) |
+| UDC v2  | Multi-View (Zhou et al. 2017) | 90.8 | 66.2 | - | - | - | - | [Multi-view Response Selection for Human-Computer Conversation](https://aclweb.org/anthology/D16-1036) |
+| UDC v2  | Bi-LSTM (Kadlec et al. 2015) | 89.5 | 63.0 | - | - | - | - | [Improved Deep Learning Baselines for Ubuntu Corpus Dialogs](https://arxiv.org/pdf/1510.03753.pdf) |
+
+Additional results can be found in the DSTC task reports linked above.
 
 ### Reddit Corpus
 The [Reddit Corpus](https://arxiv.org/abs/1904.06472) contains 726 million multi-turn dialogues from the Reddit board. Reddit  is an American social news aggregation website, where users can post links, and take partin discussions on these post. The task of Reddit Corpus is to select the correct response from 100 candidates (others are negatively sampled) by considering previous conversation history.  Models are evaluated with the Recall 1 at 100 metric (the 1-of-100 ranking accuracy). You can find more details at [here](https://github.com/PolyAI-LDN/conversational-datasets).
@@ -96,7 +112,15 @@ The [Reddit Corpus](https://arxiv.org/abs/1904.06472) contains 726 million multi
 | BERT (Devlin et al. 2017) | 24.0 | [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805) |
 | ELMO (Peters et al. 2018) | 19.3 | [Deep contextualized word representations](https://arxiv.org/abs/1802.05365) |
 
-## Generative-based Chatbot
+### Advising Corpus
+The [Advising Corpus](http://workshop.colips.org/dstc7/papers/dstc7_task1_final_report.pdf), available [here](https://ibm.github.io/dstc-noesis/public/index.html), contains a collection of conversations between a student and an advisor at the University of Michigan. They were released as part of DSTC 7 track 1 and used again in DSTC 8 track 2.
+
+| Data   | Model           |  R_100@1    |  R_100@10   |  R_100@50   |  MRR        |  Paper / Source |
+| ------ | -------------   | :---------: | :---------: | :---------: | :---------: |---------------|
+| DSTC 7 | Seq-Att-Network (Chen and Wang, 2019) | 21.4 | 63.0 | 94.8 | 33.9 | [Sequential Attention-based Network for Noetic End-to-End Response Selection](http://workshop.colips.org/dstc7/papers/07.pdf)
+
+
+## Generative-based Chatbots
 The main task of generative-based chatbot is to generate consistent and engaging response given the context.
 ### Personalized Chit-chat
 
@@ -108,3 +132,45 @@ The task of persinalized chit-chat dialogue generation is first proposed by [Per
 | Lost In Conversation | 17.79 | - | 17.3 | [NIPS 2018 Workshop Presentation](http://convai.io/NeurIPSParticipantSlides.pptx) | [Code](https://github.com/atselousov/transformer_chatbot) |
 | Seq2Seq + Attention (Dzmitry et al. 2014) | 16.18 | 12.6 | 29.8 | [Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/pdf/1409.0473.pdf) | [Code](https://github.com/facebookresearch/ParlAI/tree/master/projects/convai2/baselines/seq2seq) |
 | KV Profile Memory (Zhang et al. 2018) | 11.9 | 55.2 | - | [Personalizing Dialogue Agents: I have a dog, do you have pets too?](https://arxiv.org/pdf/1801.07243.pdf) | [Code](https://github.com/facebookresearch/ParlAI/tree/master/projects/convai2/baselines/kvmemnn)
+
+## Disentanglement
+
+As noted for the Ubuntu data above, sometimes multiple conversations are mixed together in a single channel. Work on conversation disentanglement aims to separate out conversations. There are two main resources for the task.
+
+This can be formultated as a clustering problem, with no clear best metric. Several metrics are considered:
+
+- Variation of Information
+- F-1 over 1-1 matched clusters using max-flow
+- Precision, Recall, and F-score on exact match for clusters
+- Local overlap
+- Another form of F-1 defined by [Shen et al. (2006)](https://dl.acm.org/citation.cfm?doid=1148170.1148180)
+
+### Ubuntu IRC
+
+Manually labeled by [Kummerfeld et al. (2019)](https://www.aclweb.org/anthology/P19-1374), this data is available [here](https://jkk.name/irc-disentanglement/).
+
+| Model                  | VI   | 1-1  | Precision | Recall | F-Score | Paper / Source | Code          |
+| ---------------------- | :--: | :--: | :-------: | :----: | :-----: | ---------------| ------------- |
+| FF ensemble: Vote      (Kummerfeld et al., 2019) | 91.5 | 76.0 | 36.3 | 39.7 | 38.0 | [A Large-Scale Corpus for Conversation Disentanglement](https://www.aclweb.org/anthology/P19-1374/) | [Code](https://jkk.name/irc-disentanglement) |
+| Feedforward            (Kummerfeld et al., 2019) | 91.3 | 75.6 | 34.6 | 38.0 | 36.2 | [A Large-Scale Corpus for Conversation Disentanglement](https://www.aclweb.org/anthology/P19-1374/) | [Code](https://jkk.name/irc-disentanglement) |
+| FF ensemble: Intersect (Kummerfeld et al., 2019) | 69.3 | 26.6 | 67.0 | 21.1 | 32.1 | [A Large-Scale Corpus for Conversation Disentanglement](https://www.aclweb.org/anthology/P19-1374/) | [Code](https://jkk.name/irc-disentanglement) |
+| Linear                 (Elsner and Charniak, 2008) | 82.1 | 51.4 | 12.1 | 21.5 | 15.5 | [You Talking to Me? A Corpus and Algorithm for Conversation Disentanglement](https://www.aclweb.org/anthology/P08-1095/) | [Code](https://www.asc.ohio-state.edu/elsner.14/resources/chat-distr.tgz) |
+| Heuristic              (Lowe et al., 2015)       | 80.6 | 53.7 | 10.8 |  7.6 |  8.9 | [Training End-to-End Dialogue Systems with the Ubuntu Dialogue Corpus](http://dad.uni-bielefeld.de/index.php/dad/article/view/3698) | [Code](https://github.com/npow/ubuntu-corpus) |
+
+### Linux IRC
+
+This data has been manually annotated three times:
+
+- By [Elsner and Charniak (2008)](https://www.aclweb.org/anthology/P08-1095), available [here](https://www.asc.ohio-state.edu/elsner.14/resources/chat-distr.tgz).
+- A portion by [Mehri and Carenini (2017)](https://aclweb.org/anthology/I17-1062/), available [here](http://shikib.com/td_annotations).
+- By [Kummerfeld et al. (2019)](https://www.aclweb.org/anthology/P19-1374), available [here](https://jkk.name/irc-disentanglement/).
+
+| Data | Model           | 1-1        | Local | Shen F-1 | Paper / Source | Code          |
+| ---- | -------------   | :---------:| :---: | :------: | ---------------| ------------- |
+| Kummerfeld | Linear     (Elsner and Charniak, 2008) | 59.7 | 80.8 | 63.0 | [You Talking to Me? A Corpus and Algorithm for Conversation Disentanglement](https://www.aclweb.org/anthology/P08-1095/) | [Code](https://www.asc.ohio-state.edu/elsner.14/resources/chat-distr.tgz) |
+| Kummerfeld | Feedforward (Kummerfeld et al., 2019)  | 57.7 | 80.3 | 59.8 | [A Large-Scale Corpus for Conversation Disentanglement](https://www.aclweb.org/anthology/P19-1374/) | [Code](https://jkk.name/irc-disentanglement) |
+| Kummerfeld | Heuristic   (Lowe et al., 2015)        | 43.4 | 67.9 | 50.7 | [Training End-to-End Dialogue Systems with the Ubuntu Dialogue Corpus](http://dad.uni-bielefeld.de/index.php/dad/article/view/3698) | [Code](https://github.com/npow/ubuntu-corpus) |
+| Elsner | Linear     (Elsner and Charniak, 2008)     | 53.1 | 81.9 | 55.1 | [You Talking to Me? A Corpus and Algorithm for Conversation Disentanglement](https://www.aclweb.org/anthology/P08-1095/) | [Code](https://www.asc.ohio-state.edu/elsner.14/resources/chat-distr.tgz) |
+| Elsner | Feedforward (Kummerfeld et al., 2019)      | 52.1 | 77.8 | 53.8 | [A Large-Scale Corpus for Conversation Disentanglement](https://www.aclweb.org/anthology/P19-1374/) | [Code](https://jkk.name/irc-disentanglement) |
+| Elsner | Wang and Oard (2009) | 47.0 | 75.1 | 52.8 | [Context-based Message Expansion for Disentanglement of Interleaved Text Conversations](https://www.aclweb.org/anthology/N09-1023/) | - |
+| Elsner | Heuristic   (Lowe et al., 2015)            | 45.1 | 73.8 | 51.8 | [Training End-to-End Dialogue Systems with the Ubuntu Dialogue Corpus](http://dad.uni-bielefeld.de/index.php/dad/article/view/3698) | [Code](https://github.com/npow/ubuntu-corpus) |
