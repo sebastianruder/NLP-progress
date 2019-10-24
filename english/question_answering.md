@@ -25,6 +25,7 @@ Question answering is the task of answering a question.
   - [NarrativeQA](#narrativeqa)
   - [DuoRC](#duorc)
   - [DROP](#drop)
+  - [Cosmos QA](#cosmos-qa)
 - [Open-domain Question Answering](#open-domain-question-answering)
   - [DuReader](#dureader)
   - [Quasar](#quasar)
@@ -272,6 +273,10 @@ DuoRC pushes the NLP community to address challenges on incorporating knowledge 
 ### DROP
 
 [DROP](https://allennlp.org/drop) is a crowdsourced, adversarially-created, 96k-question benchmark, in which a system must resolve references in a question, perhaps to multiple input positions, and perform discrete operations over them (such as addition, counting, or sorting). These operations require a much more comprehensive understanding of the content of paragraphs than what was necessary for prior datasets.
+
+### Cosmos QA
+
+[Cosmos QA](https://wilburone.github.io/cosmos/) is a large-scale dataset of 35.6K problems that require commonsense-based reading comprehension, formulated as multiple-choice questions. It focuses on reading between the lines over a diverse collection of people's everyday narratives, asking questions concerning on the likely causes or effects of events that require reasoning beyond the exact text spans in the context.
 
 ## Open-domain Question Answering
 
