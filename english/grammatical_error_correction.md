@@ -117,6 +117,7 @@ Since current state-of-the-art systems rely on as much annotated learner data as
 
 | Model           | F0.5  |  Paper / Source | Code |
 | ------------- | :-----:| --- | :-----: |
+| BEA Combination | 73.18 | [Learning to Combine Grammatical Error Corrections ](https://www.aclweb.org/anthology/W19-4414/) | NA |
 | Transformer + Pre-train with Pseudo Data (Kiyono et al., EMNLP 2019) | 70.2 | [An Empirical Study of Incorporating Pseudo Data into Grammatical Error Correction](https://arxiv.org/abs/1909.00502) | NA |
 | Transformer | 69.47  | [Neural Grammatical Error Correction Systems with UnsupervisedPre-training on Synthetic Data](https://www.aclweb.org/anthology/W19-4427)| [Official: Code to be updated soon](https://github.com/grammatical/pretraining-bea2019) |
 | Transformer | 69.00  | [A Neural Grammatical Error Correction System Built OnBetter Pre-training and Sequential Transfer Learning](https://www.aclweb.org/anthology/W19-4423)| [Official](https://github.com/kakaobrain/helo_word/) |
