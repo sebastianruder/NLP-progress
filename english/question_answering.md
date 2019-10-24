@@ -25,6 +25,7 @@ Question answering is the task of answering a question.
   - [NarrativeQA](#narrativeqa)
   - [DuoRC](#duorc)
   - [DROP](#drop)
+  - [Cosmos QA](#cosmos-qa)
 - [Open-domain Question Answering](#open-domain-question-answering)
   - [DuReader](#dureader)
   - [Quasar](#quasar)
