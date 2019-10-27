@@ -28,6 +28,7 @@ The following models have been evaluated on the entitiy-anonymized version of th
 
 | Model           | ROUGE-1 | ROUGE-2 | ROUGE-L | METEOR | Paper / Source | Code |
 | --------------- | :-----: | :-----: | :-----: | :----: | -------------- | ---- |
+| HierNSE factoring | 45.58 | 26.81 | 41.17 | - | [Read, Highlight and Summarize: A Hierarchical Neural Semantic Encoder-based Approach](https://arxiv.org/pdf/1910.03177.pdf) | [Official](https://github.com/rajeev595/RHS_HierNSE) |
 | RNES w/o coherence (Wu and Hu, 2018) | 41.25 | 18.87 | 37.75 | - | [Learning to Extract Coherent Summary via Deep Reinforcement Learning](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16838/16118) | |
 | SWAP-NET (Jadhav and Rajan, 2018) | 41.6 | 18.3 | 37.7 | - | [Extractive Summarization with SWAP-NET: Sentences and Words from Alternating Pointer Networks](http://aclweb.org/anthology/P18-1014) | |
 | HSASS (Al-Sabahi et al., 2018) | 42.3 | 17.8 | 37.6 | - | [A Hierarchical Structured Self-Attentive Model for Extractive Document Summarization (HSSAS)](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8344797) | |
@@ -80,6 +81,7 @@ The first table covers Extractive Models, while the second covers abstractive ap
 | Pointer + Coverage + EntailmentGen + QuestionGen (Guo et al., 2018) | 39.81 | 17.64 | 36.54 | 18.54 | [Soft Layer-Specific Multi-Task Summarization with Entailment and Question Generation](http://aclweb.org/anthology/P18-1064) | |
 | ML+RL ROUGE+Novel, with LM (Kryscinski et al., 2018) | 40.19 | 17.38 | 37.52 | - | [Improving Abstraction in Text Summarization](http://aclweb.org/anthology/D18-1207) | |
 | Pointer-generator + coverage (See et al., 2017) | 39.53 | 17.28 | 36.38 | 18.72 | [Get To The Point: Summarization with Pointer-Generator Networks](http://aclweb.org/anthology/P17-1099) | [Official](https://github.com/abisee/pointer-generator) |
+| Hier-NSE Self-Critical | 39.42 | 16.46 | 36.93 | - | [Read, Highlight and Summarize: A Hierarchical Neural Semantic Encoder-based Approach](https://arxiv.org/pdf/1910.03177.pdf) | [Official](https://github.com/rajeev595/RHS_HierNSE) |
 
 
 
