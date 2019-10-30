@@ -28,7 +28,6 @@ The following models have been evaluated on the entitiy-anonymized version of th
 
 | Model           | ROUGE-1 | ROUGE-2 | ROUGE-L | METEOR | Paper / Source | Code |
 | --------------- | :-----: | :-----: | :-----: | :----: | -------------- | ---- |
-| HierNSE factoring | 45.58 | 26.81 | 41.17 | - | [Read, Highlight and Summarize: A Hierarchical Neural Semantic Encoder-based Approach](https://arxiv.org/pdf/1910.03177.pdf) | [Official](https://github.com/rajeev595/RHS_HierNSE) |
 | RNES w/o coherence (Wu and Hu, 2018) | 41.25 | 18.87 | 37.75 | - | [Learning to Extract Coherent Summary via Deep Reinforcement Learning](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16838/16118) | |
 | SWAP-NET (Jadhav and Rajan, 2018) | 41.6 | 18.3 | 37.7 | - | [Extractive Summarization with SWAP-NET: Sentences and Words from Alternating Pointer Networks](http://aclweb.org/anthology/P18-1014) | |
 | HSASS (Al-Sabahi et al., 2018) | 42.3 | 17.8 | 37.6 | - | [A Hierarchical Structured Self-Attentive Model for Extractive Document Summarization (HSSAS)](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8344797) | |
@@ -64,6 +63,7 @@ The first table covers Extractive Models, while the second covers abstractive ap
 
 | Model           | ROUGE-1 | ROUGE-2 | ROUGE-L | METEOR | Paper / Source | Code |
 | --------------- | :-----: | :-----: | :-----: | :----: | -------------- | ---- |
+| HierNSE factoring (Results are on factored data) | 45.58 | 26.81 | 41.17 | - | [Read, Highlight and Summarize: A Hierarchical Neural Semantic Encoder-based Approach](https://arxiv.org/pdf/1910.03177.pdf) | [Official](https://github.com/rajeev595/RHS_HierNSE) |
 | CNN-2sent-hieco-RBM (Zhang et al., 2019) | 42.04 | 19.77 | 39.42 | - |[Abstract Text Summarization with a Convolutional Seq2Seq Model](https://www.mdpi.com/2076-3417/9/8/1665/pdf) | |
 | BertSumExtAbs (Liu and Lapata 2019) | 42.13 | 19.60 | 39.18 | - | [Text Summarization with Pretrained Encoders](https://arxiv.org/abs/1908.08345) |[Official](https://github.com/nlpyang/PreSumm) |
 | BERT-ext + abs + RL + rerank (Bae et al., 2019) | 41.90 | 19.08 | 39.64 | - | [Summary Level Training of Sentence Rewriting for Abstractive Summarization](https://arxiv.org/abs/1909.08752) | |
