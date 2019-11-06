@@ -67,6 +67,10 @@
 
 - [Question Answering](portuguese/question_answering.md)
 
+### Nepali
+
+- [Machine Translation](nepali/nepali.md#machine-translation)
+
 This document aims to track the progress in Natural Language Processing (NLP) and give an overview
 of the state-of-the-art (SOTA) across the most common NLP tasks and their corresponding datasets.
 
