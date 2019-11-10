@@ -31,6 +31,7 @@ For a comparison of single models trained only on WSJ, refer to [Kitaev and Klei
 
 | Model           | F1 score  |  Paper / Source |
 | ------------- | :-----:| --- |
+| Label Attention Layer + HPSG + XLNet (Mrini et al., 2019) | 96.33 | [Rethinking Self-Attention: An Interpretable Self-Attentive Encoder-Decoder Parser](https://khalilmrini.github.io/Label_Attention_Layer.pdf) |
 | Head-Driven Phrase Structure Grammar Parsing (Joint) + XLNet (Zhou and Zhao, 2019) | 96.33 | [Head-Driven Phrase Structure Grammar Parsing on Penn Treebank](https://arxiv.org/pdf/1907.02684.pdf) |
 | Head-Driven Phrase Structure Grammar Parsing (Joint) + BERT (Zhou and Zhao, 2019) | 95.84 | [Head-Driven Phrase Structure Grammar Parsing on Penn Treebank](https://arxiv.org/pdf/1907.02684.pdf) |
 | Self-attentive encoder + ELMo (Kitaev and Klein, 2018) | 95.13 | [Constituency Parsing with a Self-Attentive Encoder](https://arxiv.org/abs/1805.01052) |
