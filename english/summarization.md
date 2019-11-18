@@ -115,7 +115,7 @@ The Gigaword summarization dataset has been first used by [Rush et al., 2015](ht
 X-Sum (standing for _Extreme Summarization_), introduced by [Narayan et al., 2018](https://arxiv.org/pdf/1808.08745.pdf), is a summarization dataset which does not favor extractive strategies and calls for an abstractive modeling approach.  
 The idea of this dataset is to create a short, one sentence news summary.  
 Data is collected by harvesting online articles from the BBC.  
-The dataset contain **204 045** samples for the training set, **11 332** for the validation set, and **11 334** for the test set. In average the length of article is 431 words (~20 sentences) and the length of summary is 23 words.
+The dataset contain **204 045** samples for the training set, **11 332** for the validation set, and **11 334** for the test set. In average the length of article is 431 words (~20 sentences) and the length of summary is 23 words. It can be downloaded [here](https://github.com/EdinburghNLP/XSum)
 Evaluation metrics are ROUGE-1, ROUGE-2 and ROUGE-L.
 
 | Model           | ROUGE-1 | ROUGE-2 | ROUGE-L | Paper / Source | Code |
