@@ -63,8 +63,8 @@ The first table covers Extractive Models, while the second covers abstractive ap
 
 | Model           | ROUGE-1 | ROUGE-2 | ROUGE-L | METEOR | Paper / Source | Code |
 | --------------- | :-----: | :-----: | :-----: | :----: | -------------- | ---- |
-| UniLM (Dong et al., 2019) | 43.08 | 20.43 | 40.34 | - | [Unified Language Model Pre-training for
-Natural Language Understanding and Generation](https://arxiv.org/pdf/1905.03197.pdf) | [Official](https://github.com/microsoft/unilm) |
+| UniLM (Dong et al., 2019) | 43.08 | 20.43 | 40.34 | - | [Unified Language Model Pre-training for Natural Language Understanding and Generation](https://arxiv.org/pdf/1905.03197.pdf) | [Official](https://github.com/microsoft/unilm) |
+| BART (Lewis et al., 2019) | 44.16 | 21.28 | 40.90 | - | [BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension](https://arxiv.org/pdf/1910.13461.pdf) | [Official](https://github.com/pytorch/fairseq/tree/master/examples/bart) |
 | HierNSE factoring (Results are on factored data) | 45.58 | 26.81 | 41.17 | - | [Read, Highlight and Summarize: A Hierarchical Neural Semantic Encoder-based Approach](https://arxiv.org/pdf/1910.03177.pdf) | [Official](https://github.com/rajeev595/RHS_HierNSE) |
 | CNN-2sent-hieco-RBM (Zhang et al., 2019) | 42.04 | 19.77 | 39.42 | - |[Abstract Text Summarization with a Convolutional Seq2Seq Model](https://www.mdpi.com/2076-3417/9/8/1665/pdf) | |
 | BertSumExtAbs (Liu and Lapata 2019) | 42.13 | 19.60 | 39.18 | - | [Text Summarization with Pretrained Encoders](https://arxiv.org/abs/1908.08345) |[Official](https://github.com/nlpyang/PreSumm) |
