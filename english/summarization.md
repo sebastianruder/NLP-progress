@@ -115,14 +115,12 @@ The Gigaword summarization dataset has been first used by [Rush et al., 2015](ht
 X-Sum (standing for _Extreme Summarization_), introduced by [Narayan et al., 2018](https://arxiv.org/pdf/1808.08745.pdf), is a summarization dataset which does not favor extractive strategies and calls for an abstractive modeling approach.  
 The idea of this dataset is to create a short, one sentence news summary.  
 Data is collected by harvesting online articles from the BBC.  
-The dataset contain **204 045** samples for the training set, **11 332** for the validation set, and **11 334** for the test set. In average the length of article is 431 words (~20 sentences) and the length of summary is 23 words. It can be downloaded [here](https://github.com/EdinburghNLP/XSum)
+The dataset contain **204 045** samples for the training set, **11 332** for the validation set, and **11 334** for the test set. In average the length of article is 431 words (~20 sentences) and the length of summary is 23 words. It can be downloaded [here](https://github.com/EdinburghNLP/XSum).  
 Evaluation metrics are ROUGE-1, ROUGE-2 and ROUGE-L.
 
 | Model           | ROUGE-1 | ROUGE-2 | ROUGE-L | Paper / Source | Code |
 | --------------- | :-----: | :-----: | :-----: | -------------- | ---- |
-| BART (Lewis et al., 2019) | 45.14 | 22.27 | 37.25 | [BART: Denoising Sequence-to-Sequence Pre-training for Natural
-Language Generation, Translation, and Comprehension
-](https://arxiv.org/pdf/1910.13461.pdf) | [Official](https://github.com/pytorch/fairseq/tree/master/examples/bart) |
+| BART (Lewis et al., 2019) | 45.14 | 22.27 | 37.25 | [BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension](https://arxiv.org/pdf/1910.13461.pdf) | [Official](https://github.com/pytorch/fairseq/tree/master/examples/bart) |
 | BertSumExtAbs (Liu et al., 2019) | 38.81 | 16.50 | 31.27 | [Text Summarization with Pretrained Encoders](https://arxiv.org/pdf/1908.08345.pdf) | [Official](https://github.com/nlpyang/PreSumm) |
 | T-ConvS2S | 31.89 | 11.54 | 25.75 | [Don’t Give Me the Details, Just the Summary!](https://arxiv.org/pdf/1808.08745.pdf) | [Official](https://github.com/EdinburghNLP/XSum) |
 | PtGen | 29.70 | 9.21 | 23.24 | [Don’t Give Me the Details, Just the Summary!](https://arxiv.org/pdf/1808.08745.pdf) | [Official](https://github.com/EdinburghNLP/XSum) |
