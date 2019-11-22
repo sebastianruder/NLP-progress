@@ -33,6 +33,7 @@
 - [Sentiment analysis](english/sentiment_analysis.md)
 - [Shallow syntax](english/shallow_syntax.md)
 - [Simplification](english/simplification.md)
+- [Spoken Language Understanding](english/spoken_language_understanding.md)
 - [Stance detection](english/stance_detection.md)
 - [Summarization](english/summarization.md)
 - [Taxonomy learning](english/taxonomy_learning.md)
