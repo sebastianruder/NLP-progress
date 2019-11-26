@@ -91,12 +91,12 @@ Below Results are ranking by ROUGE-2-F1 Scores.
 
 | Model (Ranking by ROURGE2 | ROUGE-1 | ROUGE-2* | ROUGE-L | Paper / Source | Code |
 | --------------- | :-----: | :-----: | :-----: | -------------- | ---- |
-| ControlCopying (Song et al., 2020) | 39.08 | 20.47 | 36.69 | [Controlling the Amount of Verbatim Copying in Abstractive Summarizatio](http://i2u.world/kqsong/paper/aaai2020_kaiqiang_2.pdf) | [Official](https://github.com/ucfnlp/control-over-copying) |
+| ControlCopying (Song et al., 2020) | 39.08 | 20.47 | 36.69 | [Controlling the Amount of Verbatim Copying in Abstractive Summarizatio](https://arxiv.org/pdf/1911.10390.pdf) | [Official](https://github.com/ucfnlp/control-over-copying) |
 | UniLM (Dong et al., 2019) | 38.90 | 20.05 | 36.00 | [Unified Language Model Pre-training for Natural Language Understanding and Generation](https://arxiv.org/pdf/1905.03197.pdf) | [Official](https://github.com/microsoft/unilm) |
 | BiSET (Wang et al., 2019) | 39.11 | 19.78 | 36.87 | [BiSET: Bi-directional Selective Encoding with Template for Abstractive Summarization](https://www.aclweb.org/anthology/P19-1207) | [Official](https://github.com/InitialBug/BiSET) |
 | MASS (Song et al., 2019) | 38.73 | 19.71 | 35.96 | [MASS: Masked Sequence to Sequence Pre-training for Language Generation](https://arxiv.org/pdf/1905.02450v5.pdf) | [Official](https://github.com/microsoft/MASS) |
 | Re^3 Sum (Cao et al., 2018) | 37.04 | 19.03 | 34.46 | [Retrieve, Rerank and Rewrite: Soft Template Based Neural Summarization](http://aclweb.org/anthology/P18-1015) | |
-| JointParsing (Song el at., 2020) | 36.61 | 18.85 | 34.33 | [Joint Parsing and Generation for Abstractive Summarization](http://i2u.world/kqsong/paper/aaai2020_kaiqiang_1.pdf) | [Official](https://github.com/KaiQiangSong/joint_parse_summ) |
+| JointParsing (Song el at., 2020) | 36.61 | 18.85 | 34.33 | [Joint Parsing and Generation for Abstractive Summarization](https://arxiv.org/pdf/1911.10389.pdf) | [Official](https://github.com/KaiQiangSong/joint_parse_summ) |
 | CNN-2sent-hieco-RBM (Zhang et al., 2019) | 37.95 | 18.64 | 35.11 | [Abstract Text Summarization with a Convolutional Seq2Seq Model](https://www.mdpi.com/2076-3417/9/8/1665/pdf) | | |
 | Reinforced-Topic-ConvS2S (Wang et al., 2018) | 36.92 | 18.29 | 34.58 | [A Reinforced Topic-Aware Convolutional Sequence-to-Sequence Model for Abstractive Text Summarization](https://www.ijcai.org/proceedings/2018/0619.pdf) | |
 | CGU (Lin et al., 2018) | 36.3 | 18.0 | 33.8 | [Global Encoding for Abstractive Summarization](http://aclweb.org/anthology/P18-2027) | [Official](https://www.github.com/lancopku/Global-Encoding) |
