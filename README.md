@@ -33,6 +33,7 @@
 - [Sentiment analysis](english/sentiment_analysis.md)
 - [Shallow syntax](english/shallow_syntax.md)
 - [Simplification](english/simplification.md)
+- [Intent Detection and Slot Filling](english/intent_detection_slot_filling.md)
 - [Stance detection](english/stance_detection.md)
 - [Summarization](english/summarization.md)
 - [Taxonomy learning](english/taxonomy_learning.md)
