@@ -1,5 +1,5 @@
-# Spoken Language Understanding
-Spoken Language Understanding is the task of interpreting user commands/queries by extracting the intent and the relevant slots.
+# Intent Detection and Slot Filling
+Intent Detection and Slot Filling is the task of interpreting user commands/queries by extracting the intent and the relevant slots.
 
 Example (from ATIS):
 ```
@@ -33,7 +33,7 @@ ATIS (Air Travel Information System) (Hemphill et al.) is a dataset by Microsoft
 
 
 ## SNIPS
-SNIPS is a dataset by Snips.ai for SLU benchmarking. Available from the [github page](https://github.com/snipsco/nlu-benchmark). This dataset contains several day to day user command categories (e.g. play a song, book a restaurant).
+SNIPS is a dataset by Snips.ai for Intent Detection and Slot Filling benchmarking. Available from the [github page](https://github.com/snipsco/nlu-benchmark). This dataset contains several day to day user command categories (e.g. play a song, book a restaurant).
 
 | Model | Slot F1 Score | Intent Accuracy | Paper / Source | Code |
 | ------ | ------ | ------ | ------ | ------ |
