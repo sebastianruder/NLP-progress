@@ -87,7 +87,7 @@ The first table covers Extractive Models, while the second covers abstractive ap
 
 The Gigaword summarization dataset has been first used by [Rush et al., 2015](https://www.aclweb.org/anthology/D/D15/D15-1044.pdf) and represents a sentence summarization / headline generation task with very short input documents (31.4 tokens) and summaries (8.3 tokens). It contains 3.8M training, 189k development and 1951 test instances. Models are evaluated with ROUGE-1, ROUGE-2 and ROUGE-L using full-length F1-scores.
 
-Below Results are ranking by ROUGE-2-F1 Scores.
+Below Results are ranking by ROUGE-2 Scores.
 
 | Model (Ranking by ROURGE2 | ROUGE-1 | ROUGE-2* | ROUGE-L | Paper / Source | Code |
 | --------------- | :-----: | :-----: | :-----: | -------------- | ---- |
