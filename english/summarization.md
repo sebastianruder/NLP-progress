@@ -89,7 +89,7 @@ The Gigaword summarization dataset has been first used by [Rush et al., 2015](ht
 
 Below Results are ranking by ROUGE-2 Scores.
 
-| Model (Ranking by ROURGE2 | ROUGE-1 | ROUGE-2* | ROUGE-L | Paper / Source | Code |
+| Model | ROUGE-1 | ROUGE-2* | ROUGE-L | Paper / Source | Code |
 | --------------- | :-----: | :-----: | :-----: | -------------- | ---- |
 | ControlCopying (Song et al., 2020) | 39.08 | 20.47 | 36.69 | [Controlling the Amount of Verbatim Copying in Abstractive Summarizatio](https://arxiv.org/pdf/1911.10390.pdf) | [Official](https://github.com/ucfnlp/control-over-copying) |
 | UniLM (Dong et al., 2019) | 38.90 | 20.05 | 36.00 | [Unified Language Model Pre-training for Natural Language Understanding and Generation](https://arxiv.org/pdf/1905.03197.pdf) | [Official](https://github.com/microsoft/unilm) |
