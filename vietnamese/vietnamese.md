@@ -34,7 +34,8 @@
 ### English-Vietnamese translation
 * Dataset is from [The IWSLT 2015 Evaluation Campaign](http://workshop2015.iwslt.org/downloads/proceeding.pdf), also be obtained from [https://github.com/tensorflow/nmt](https://github.com/tensorflow/nmt).
 
-##### English-to-Vietnamese & `tst2015` is used for test
+#### English-to-Vietnamese
+`tst2015` is used for test
 
 | Model           | BLEU  |  Paper | Code | 
 | ------------- | :-----:| --- | --- | 
