@@ -57,7 +57,7 @@
 
 * The ELMo score is reported in [Semi-Supervised Sequence Modeling with Cross-View Training](https://arxiv.org/abs/1809.08370). The Transformer score is available at  [https://github.com/duyvuleo/Transformer-DyNet](https://github.com/duyvuleo/Transformer-DyNet).
 
-##### Vietnamese-to-English
+#### Vietnamese-to-English
 
 | Model           | BLEU  |  Paper | Code | 
 | ------------- | :-----:| --- | --- | 
