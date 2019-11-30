@@ -44,7 +44,8 @@
 | Stanford (2015) |26.4 | [Stanford Neural Machine Translation Systems for Spoken Language Domains](https://nlp.stanford.edu/pubs/luong-manning-iwslt15.pdf) | | 
 
 
-##### English-to-Vietnamese & `tst2013` is used for test
+---
+`tst2013` is used for test
 
 | Model           | BLEU  |  Paper | Code | 
 | ------------- | :-----:| --- | --- | 
