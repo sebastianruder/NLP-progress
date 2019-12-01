@@ -34,7 +34,8 @@ Models are evaluated on the newswire section and the full dataset based on [smat
 
 | Model           | F1 Newswire  | F1 Full |  Paper / Source |
 | ------------- | :-----:| :-----:| --- |
-| Two-stage Sequence-to-Graph Transducer (Zhang et al., 2019)&hearts; | -- | 70.2 | [AMR Parsing as Sequence-to-Graph Transduction](https://arxiv.org/abs/1905.08704) |
+| Broad-Coverage Semantic Parsing as Transduction (Zhang et al., 2019)&hearts; | -- | 71.3 | [Broad-Coverage Semantic Parsing as Transduction](https://www.aclweb.org/anthology/D19-1392.pdf) |
+| Two-stage Sequence-to-Graph Transducer (Zhang et al., 2019)&hearts; | -- | 70.2 | [AMR Parsing as Sequence-to-Graph Transduction](https://www.aclweb.org/anthology/P19-1009.pdf) |
 | Transition-based+improved aligner+ensemble (Liu et al. 2018)&hearts; | 73.3 | 68.4 | [An AMR Aligner Tuned by Transition-based Parser](http://aclweb.org/anthology/D18-1264) |
 | Improved CAMR (Wang and Xue, 2017)&spades;&diams; | --| 68.1| [Getting the Most out of AMR Parsing](http://aclweb.org/anthology/D17-1129) |
 | Incremental joint model (Zhou et al., 2016)&hearts;&spades; | 71 | 66 | [AMR Parsing with an Incremental Joint Model](https://aclweb.org/anthology/D16-1065) |
@@ -65,7 +66,8 @@ Results are computed over 8 runs. Models are evaluated based on [smatch](https:/
 
 | Model           | Smatch  |  Paper / Source |
 | ------------- | :-----:| --- |
-| Two-stage Sequence-to-Graph Transducer (Zhang et al., 2019)&hearts; | 76.3 | [AMR Parsing as Sequence-to-Graph Transduction](https://arxiv.org/abs/1905.08704) |
+| Broad-Coverage Semantic Parsing as Transduction (Zhang et al., 2019)&hearts; | 77.0 | [Broad-Coverage Semantic Parsing as Transduction](https://www.aclweb.org/anthology/D19-1392.pdf) |
+| Two-stage Sequence-to-Graph Transducer (Zhang et al., 2019)&hearts; | 76.3 | [AMR Parsing as Sequence-to-Graph Transduction](https://www.aclweb.org/anthology/P19-1009.pdf) |
 | Rewarding Smatch: Transition-Based AMR Parsing with Reinforcement Learning (Naseem et al., 2019)&hearts;&spades;&diams; | 75.5 | [Rewarding Smatch: Transition-Based AMR Parsing with Reinforcement Learning](https://arxiv.org/pdf/1905.13370) |
 | Joint model (Lyu and Titov, 2018)&hearts;&spades; | 74.4 | [AMR Parsing as Graph Prediction with Latent Alignment](https://arxiv.org/abs/1805.05286) |
 | Rewarding Smatch: Transition-Based AMR Parsing with Reinforcement Learning (Naseem et al., 2019); | 73.4 | [Rewarding Smatch: Transition-Based AMR Parsing with Reinforcement Learning](https://arxiv.org/pdf/1905.13370) |
