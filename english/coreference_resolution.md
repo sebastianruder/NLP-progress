@@ -31,7 +31,7 @@ CoNLL-2012 evaluation scripts. The main evaluation metric is the average F1 of t
 | Lee et al. (2017) | 67.2 | [End-to-end Neural Coreference Resolution](https://arxiv.org/abs/1707.07045) | |
 
 
-<a name="myfootnote1">1</a>: (Lee et al., 2017)+coarse-to-fine & second-order inference (Lee et al., 2018)+BERT (Devlin et al., 2019)
+<a name="myfootnote1">[1]</a> Joshi et al. (2019): (Lee et al., 2017)+coarse-to-fine & second-order inference (Lee et al., 2018)+BERT (Devlin et al., 2019)
 
 
 [Go back to the README](../README.md)
