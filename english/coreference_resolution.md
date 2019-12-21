@@ -23,8 +23,13 @@ CoNLL-2012 evaluation scripts. The main evaluation metric is the average F1 of t
 
 | Model           | Avg F1 |  Paper / Source | Code |
 | ------------- | :-----:| --- | --- |
+| Joshi et al. (2019) | 76.9 | [BERT for Coreference Resolution: Baselines and Analysis](https://arxiv.org/abs/1908.09091) | [Official](https://github.com/mandarjoshi90/coref) |
 | (Lee et al., 2017)+ELMo (Peters et al., 2018)+coarse-to-fine & second-order inference (Lee et al., 2018) | 73.0 | [Higher-order Coreference Resolution with Coarse-to-fine Inference](http://aclweb.org/anthology/N18-2108) | [Official](https://github.com/kentonl/e2e-coref) |
 | (Lee et al., 2017)+ELMo (Peters et al., 2018) | 70.4 | [Deep contextualized word representatIions](https://arxiv.org/abs/1802.05365) | |
 | Lee et al. (2017) | 67.2 | [End-to-end Neural Coreference Resolution](https://arxiv.org/abs/1707.07045) | |
+
+
+<a name="myfootnote1">1</a>: (Lee et al., 2017)+coarse-to-fine & second-order inference (Lee et al., 2018)+BERT (Devlin et al., 2019)
+
 
 [Go back to the README](../README.md)
