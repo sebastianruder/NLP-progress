@@ -15,6 +15,7 @@ on BLEU.
 | Transformer Big + BT (Edunov et al., 2018) | 35.0 | [Understanding Back-Translation at Scale](https://arxiv.org/pdf/1808.09381.pdf) |
 | DeepL | 33.3 | [DeepL Press release](https://www.deepl.com/press.html) |
 | DynamicConv (Wu et al., 2019)| 29.7 | [Pay Less Attention With Lightweight and Dynamic Convolutions](https://arxiv.org/abs/1901.10430) |
+| AdvSoft + Transformer Big (Wang et al., 2019)| 29.52 | [Improving Neural Language Modeling via Adversarial Training](http://proceedings.mlr.press/v97/wang19f/wang19f.pdf) |
 | Transformer Big (Ott et al., 2018) | 29.3 | [Scaling Neural Machine Translation](https://arxiv.org/abs/1806.00187) |
 | RNMT+ (Chen et al., 2018) | 28.5* | [The Best of Both Worlds: Combining Recent Advances in Neural Machine Translation](https://arxiv.org/abs/1804.09849) |
 | Transformer Big (Vaswani et al., 2017) | 28.4 | [Attention Is All You Need](https://arxiv.org/abs/1706.03762) |
