@@ -36,8 +36,8 @@ The main evaluation measure is F1-score.
 |GAS<sub>ext</sub> (Concatenation) | 72.2 | 70.5 | --* | 67.2 | 72.6 | [[5]](http://aclweb.org/anthology/P18-1230)  |
 |supWSD | 71.3 | 68.8 | 60.2 | 65.8 | 70.0 | [[6]](https://aclanthology.info/pdf/P/P10/P10-4014.pdf) [[11]](http://aclweb.org/anthology/D17-2018) |
 |supWSD<sub>emb</sub> | 72.7 | 70.6 | 63.1 | 66.8 | 71.8 | [[7]](http://www.aclweb.org/anthology/P16-1085) [[11]](http://aclweb.org/anthology/D17-2018) |
-|BERT (nearest neighbor) | 73.8 | 71.6 | 64.0 | 69.2 | 74.4 | [[13]](https://arxiv.org/pdf/1910.00194.pdf) [[code]](https://github.com/nusnlp/contextemb-wsd) |
-|BERT (linear projection) | 76.4 | 74.0 | 69.3 | 71.1 | 76.2 | [[13]](https://arxiv.org/pdf/1910.00194.pdf) [[code]](https://github.com/nusnlp/contextemb-wsd) |
+|BERT (nearest neighbor) | 73.8 | 71.6 | 63.3 | 69.2 | 74.4 | [[13]](https://www.aclweb.org/anthology/D19-1533.pdf) [[code]](https://github.com/nusnlp/contextemb-wsd) |
+|BERT (linear projection) | 75.5 | 73.6 | 68.1 | 71.1 | 76.2 | [[13]](https://www.aclweb.org/anthology/D19-1533.pdf) [[code]](https://github.com/nusnlp/contextemb-wsd) |
 |GlossBERT | 77.7 | 75.2 | 72.5 | 76.1 | 80.4 | [[14]](https://arxiv.org/pdf/1908.07245.pdf) |
 |SemCor+WNGC, hypernyms | 79.7 | 77.8 | 73.4 | 78.7 | 82.6 | [[15]](https://arxiv.org/abs/1905.05677) |
 
