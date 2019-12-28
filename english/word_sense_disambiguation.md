@@ -78,7 +78,7 @@ Note: 'All' is the concatenation of all datasets, as described in [10] and [12].
 
 [12] [The risk of sub-optimal use of Open Source NLP Software: UKB is inadvertently state-of-the-art in knowledge-based WSD](http://aclweb.org/anthology/W18-2505)
 
-[13] [Improved Word Sense Disambiguation Using Pre-Trained Contextualized Word Representations](https://arxiv.org/pdf/1910.00194.pdf)
+[13] [Improved Word Sense Disambiguation Using Pre-Trained Contextualized Word Representations](https://www.aclweb.org/anthology/D19-1533.pdf)
 
 [14] [GlossBERT: BERT for Word Sense Disambiguation with Gloss Knowledge](https://arxiv.org/pdf/1908.07245.pdf)
 
