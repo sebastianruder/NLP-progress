@@ -6,6 +6,9 @@
   - [LDC2014T12](#ldc2014t12)
   - [LDC2015E86](#ldc2015e86)
   - [LDC2016E25](#ldc2016e25)
+- [UCCA parsing](#ucca-parsing)
+  - [SemEval 2019 Task 1](semeval-2019-task-1)
+  - [CoNLL 2019](conll-2019)
 - [SQL parsing](#sql-parsing)
   - [ATIS](#atis)
   - [Advising](#advising)
@@ -17,7 +20,8 @@
 
 Semantic parsing is the task of translating natural language into a formal meaning
 representation on which a machine can act. Representations may be an executable language
-such as SQL or more abstract representations such as [Abstract Meaning Representation (AMR)](https://en.wikipedia.org/wiki/Abstract_Meaning_Representation).
+such as SQL or more abstract representations such as [Abstract Meaning Representation (AMR)](https://en.wikipedia.org/wiki/Abstract_Meaning_Representation)
+and [Universal Conceptual Cognitive Annotation (UCCA)](http://www.cs.huji.ac.il/~oabend/ucca.html).
 
 ## AMR parsing
 
@@ -73,6 +77,50 @@ Results are computed over 8 runs. Models are evaluated based on [smatch](https:/
 | Rewarding Smatch: Transition-Based AMR Parsing with Reinforcement Learning (Naseem et al., 2019); | 73.4 | [Rewarding Smatch: Transition-Based AMR Parsing with Reinforcement Learning](https://arxiv.org/pdf/1905.13370) |
 | ChSeq + 100K (van Noord and Bos, 2017)&hearts; | 71.0 | [Neural Semantic Parsing by Character-based Translation: Experiments with Abstract Meaning Representations](https://arxiv.org/abs/1705.09980) |
 | Neural-Pointer (Buys and Blunsom, 2017)&hearts;&spades; | 61.9 | [Oxford at SemEval-2017 Task 9: Neural AMR Parsing with Pointer-Augmented Attention](http://aclweb.org/anthology/S17-2157) |
+
+## UCCA parsing
+
+UCCA ([Abend and Rappoport, 2013](https://www.aclweb.org/anthology/P13-1023.pdf))
+is a semantic representation whose main design principles
+are ease of annotation, cross-linguistic applicability, and a modular architecture. UCCA represents
+the semantics of linguistic utterances as directed acyclic graphs (DAGs), where terminal (childless)
+nodes correspond to the text tokens, and non-terminal nodes to semantic units that participate in
+some super-ordinate relation. Edges are labeled,
+indicating the role of a child in the relation the parent represents.
+UCCA's foundational layer mostly covers predicate-argument structure,
+semantic heads and inter-Scene relations.
+UCCA distinguishes primary edges, corresponding to explicit relations, from remote edges
+that allow for a unit to participate in several super-ordinate relations.
+Primary edges form a tree in each layer, whereas remote edges enable reentrancy, forming a DAG.
+
+Evaluation is done by labeled F1 on the graph edges, matched by child terminal yield.
+
+### [SemEval 2019 Task 1](https://www.aclweb.org/anthology/S19-2001.pdf)
+
+Open and closed tracks on English, French and German [UCCA corpora](https://github.com/UniversalConceptualCognitiveAnnotation) from Wikipedia and *Twenty Thousand Leagues Under the Sea*.
+Results for the English open track data are given here, with 5,141 training sentences.
+
+| Model | English-Wiki (open) F1 | English-20K (open) F1 | Paper / Source | Code |
+| ------| :--------------------: | :-------------------: | -------------- | ---- |
+| Constituent Tree Parsing + BERT (Jiang et al., 2019) | 80.5 | 76.7 | [HLT@SUDA at SemEval-2019 Task 1: UCCA Graph Parsing as Constituent Tree Parsing](https://www.aclweb.org/anthology/S19-2002/) | https://github.com/SUDA-LA/ucca-parser |
+| Neural Transducer (Zhang et al., 2019) | 76.6 | -- | [Broad-Coverage Semantic Parsing as Transduction](https://www.aclweb.org/anthology/D19-1392.pdf) | https://github.com/sheng-z/stog |
+| Transition-based + MTL (Hershcovich et al., 2018) | 73.5 | 68.4 | [Multitask Parsing Across Semantic Representations](https://www.aclweb.org/anthology/P18-1035.pdf) | https://github.com/danielhers/tupa |
+| Transition-based (Hershcovich et al., 2017) | 72.8 | 67.2 | [A Transition-Based Directed Acyclic Graph Parser for UCCA](https://www.aclweb.org/anthology/P17-1104.pdf) | https://github.com/danielhers/tupa |
+
+### [CoNLL 2019](https://www.aclweb.org/anthology/K19-2001.pdf)
+
+The CoNLL 2019 shared task included parsing to AMR, UCCA, DM, PSD, and EDS.
+The [UCCA training data](http://svn.nlpl.eu/mrp/2019/public/ucca.tgz) is freely available.
+
+UCCA evaluation is done both by UCCA F1 (as in SemEval 2019) and by the MRP metric, which is similar to smatch.
+The training data contains 6,572 sentences from web reviews and Wikipedia.
+There are two evaluation sets: one with 1,131, from the same domains (Full), and one with 87 sentences, from *The Little Prince* (LPP). Note that due to an error, 535 of the 1,131 Full Evaluation sentences were included in the training data, and therefore the full evaluation scores are an overestimate. The LPP scores are unaffected by this.
+
+| Model | Full UCCA F1 | Full MRP F1 | LPP UCCA F1 | LPP MRP F1 | Paper / Source | Code |
+| ------| :----------: | :---------: | :---------: | :--------: | -------------- | ---- |
+| Transition-based + BERT + Efficient Training + Effective Encoding (Che et al., 2019) | 66.7 | 81.7 | 64.4 | 82.6 | [HIT-SCIR at MRP 2019: A Unified Pipeline for Meaning Representation Parsing via Efficient Training and Effective Encoding](https://www.aclweb.org/anthology/K19-2007.pdf) | https://github.com/DreamerDeo/HIT-SCIR-CoNLL2019 |
+| Transition-based + BERT (Hershcovich and Arviv, 2019) | 57.4 | 77.7 |  65.9 | 82.2 | [TUPA at MRP 2019: A Multi-Task Baseline System](https://www.aclweb.org/anthology/K19-2002.pdf) | https://github.com/danielhers/tupa/tree/mrp |
+| Transition-based + BERT + MTL (Hershcovich and Arviv, 2019) | 35.6 | 64.1 |  50.3 | 73.1 | [TUPA at MRP 2019: A Multi-Task Baseline System](https://www.aclweb.org/anthology/K19-2002.pdf) | https://github.com/danielhers/tupa/tree/mrp |
 
 ## SQL parsing
 
