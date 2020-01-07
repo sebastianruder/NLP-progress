@@ -21,6 +21,7 @@ per-word log-probability (lower is better).
 | Model           | Validation perplexity | Test perplexity | Number of params |  Paper / Source | Code |
 | ------------- | :-----:| :-----: | :-----: | -------------- | ---- |
 | Mogrifier LSTM + dynamic eval (Melis et al., 2019)      | 44.9  | 44.8  | 24M | [Mogrifier LSTM](http://arxiv.org/abs/1909.01792) | |
+| AdvSoft + AWD-LSTM-MoS + dynamic eval (Wang et al., 2019) | 46.63 | 46.01 | 22M | [Improving Neural Language Modeling via Adversarial Training](http://proceedings.mlr.press/v97/wang19f/wang19f.pdf) | [Official](https://github.com/ChengyueGongR/advsoft) |
 | FRAGE + AWD-LSTM-MoS + dynamic eval (Gong et al., 2018) | 47.38 | 46.54 | 22M | [FRAGE: Frequency-Agnostic Word Representation](https://arxiv.org/abs/1809.06858) | [Official](https://github.com/ChengyueGongR/Frequency-Agnostic) |
 | AWD-LSTM-DOC x5 (Takase et al., 2018) | 48.63 | 47.17 | 185M | [Direct Output Connection for a High-Rank Language Model](https://arxiv.org/abs/1808.10143) | [Official](https://github.com/nttcslab-nlp/doc_lm) |
 | AWD-LSTM-MoS + dynamic eval (Yang et al., 2018)* | 48.33 | 47.69 | 22M | [Breaking the Softmax Bottleneck: A High-Rank RNN Language Model](https://arxiv.org/abs/1711.03953) | [Official](https://github.com/zihangdai/mos) |
@@ -46,6 +47,7 @@ consists of around 2 million words extracted from Wikipedia articles.
 | Model           | Validation perplexity | Test perplexity | Number of params | Paper / Source | Code |
 | ------------- | :-----:| :-----: | :-----: | -------------- | ---- |
 | Mogrifier LSTM + dynamic eval (Melis et al., 2019)      | 40.2  | 38.6  | 35M | [Mogrifier LSTM](http://arxiv.org/abs/1909.01792) | |
+| AdvSoft + AWD-LSTM-MoS + dynamic eval (Wang et al., 2019) | 40.27 | 38.65 | 35M | [Improving Neural Language Modeling via Adversarial Training](http://proceedings.mlr.press/v97/wang19f/wang19f.pdf) | [Official](https://github.com/ChengyueGongR/advsoft) |
 | FRAGE + AWD-LSTM-MoS + dynamic eval (Gong et al., 2018) | 40.85 | 39.14 | 35M | [FRAGE: Frequency-Agnostic Word Representation](https://arxiv.org/abs/1809.06858) | [Official](https://github.com/ChengyueGongR/Frequency-Agnostic) |
 | AWD-LSTM-MoS + dynamic eval (Yang et al., 2018)* | 42.41 | 40.68 | 35M | [Breaking the Softmax Bottleneck: A High-Rank RNN Language Model](https://arxiv.org/abs/1711.03953) | [Official](https://github.com/zihangdai/mos) |
 | AWD-LSTM + dynamic eval (Krause et al., 2017)* | 46.4 | 44.3 | 33M | [Dynamic Evaluation of Neural Sequence Models](https://arxiv.org/abs/1709.07432) | [Official](https://github.com/benkrause/dynamic-evaluation) |
@@ -70,6 +72,7 @@ consists of around 2 million words extracted from Wikipedia articles.
 | Transformer-XL Large (Dai et al., 2018) ***under review*** | 17.7 | 18.3 | 257M | [Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context](https://arxiv.org/pdf/1901.02860.pdf) | [Official](https://github.com/kimiyoung/transformer-xl) |
 | Transformer with tied adaptive embeddings (Baevski and Auli, 2018) | 19.8 | 20.5 | 247M | [Adaptive Input Representations for Neural Language Modeling](https://arxiv.org/pdf/1809.10853.pdf) | [Link](https://github.com/AranKomat/adapinp) |
 | Transformer-XL Standard (Dai et al., 2018) ***under review*** | 23.1 | 24.0 | 151M | [Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context](https://arxiv.org/pdf/1901.02860.pdf) | [Official](https://github.com/kimiyoung/transformer-xl) |
+| AdvSoft + 4 layer QRNN + dynamic eval (Wang et al., 2019) | 27.2 | 28.0 |  | [Improving Neural Language Modeling via Adversarial Training](http://proceedings.mlr.press/v97/wang19f/wang19f.pdf) | [Official](https://github.com/ChengyueGongR/advsoft) |
 | LSTM + Hebbian + Cache + MbPA (Rae et al., 2018) | 29.0 | 29.2 | | [Fast Parametric Learning with Activation Memorization](http://arxiv.org/abs/1803.10049) ||
 | Trellis Network (Bai et al., 2019) |   -   | 30.35 | 180M | [Trellis Networks for Sequence Modeling](https://openreview.net/pdf?id=HyeVtoRqtQ) | [Official](https://github.com/locuslab/trellisnet)
 | AWD-LSTM-MoS + ATOI (Kocher et al., 2019) | 31.92 | 32.85 | | [Alleviating Sequence Information Loss with Data Overlapping and Prime Batch Sizes](https://arxiv.org/abs/1909.08700) | [Official](https://github.com/nkcr/overlap-ml) |
