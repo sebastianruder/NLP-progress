@@ -1,6 +1,6 @@
 # Constituency parsing
 
-Consituency parsing aims to extract a constituency-based parse tree from a sentence that
+Constituency parsing aims to extract a constituency-based parse tree from a sentence that
 represents its syntactic structure according to a [phrase structure grammar](https://en.wikipedia.org/wiki/Phrase_structure_grammar).
 
 Example:
@@ -31,8 +31,13 @@ For a comparison of single models trained only on WSJ, refer to [Kitaev and Klei
 
 | Model           | F1 score  |  Paper / Source |
 | ------------- | :-----:| --- |
+| Label Attention Layer + HPSG + XLNet (Mrini et al., 2019) | 96.34 | [Rethinking Self-Attention: An Interpretable Self-Attentive Encoder-Decoder Parser](https://khalilmrini.github.io/Label_Attention_Layer.pdf) |
+| Head-Driven Phrase Structure Grammar Parsing (Joint) + XLNet (Zhou and Zhao, 2019) | 96.33 | [Head-Driven Phrase Structure Grammar Parsing on Penn Treebank](https://arxiv.org/pdf/1907.02684.pdf) |
+| Head-Driven Phrase Structure Grammar Parsing (Joint) + BERT (Zhou and Zhao, 2019) | 95.84 | [Head-Driven Phrase Structure Grammar Parsing on Penn Treebank](https://arxiv.org/pdf/1907.02684.pdf) |
 | Self-attentive encoder + ELMo (Kitaev and Klein, 2018) | 95.13 | [Constituency Parsing with a Self-Attentive Encoder](https://arxiv.org/abs/1805.01052) |
 | Model combination (Fried et al., 2017) | 94.66 | [Improving Neural Parsing by Disentangling Model Combination and Reranking Effects](https://arxiv.org/abs/1707.03058) |
+| LSTM Encoder-Decoder + LSTM-LM (Takase et al., 2018) | 94.47 | [Direct Output Connection for a High-Rank Language Model](http://aclweb.org/anthology/D18-1489)
+| LSTM Encoder-Decoder + LSTM-LM (Suzuki et al., 2018) | 94.32 | [An Empirical Study of Building a Strong Baseline for Constituency Parsing](http://aclweb.org/anthology/P18-2097)
 | In-order (Liu and Zhang, 2017) | 94.2 | [In-Order Transition-based Constituent Parsing](http://aclweb.org/anthology/Q17-1029) |
 | Semi-supervised LSTM-LM (Choe and Charniak, 2016) | 93.8 | [Parsing as Language Modeling](http://www.aclweb.org/anthology/D16-1257) | 
 | Stack-only RNNG (Kuncoro et al., 2017) | 93.6 | [What Do Recurrent Neural Network Grammars Learn About Syntax?](https://arxiv.org/abs/1611.05774) |

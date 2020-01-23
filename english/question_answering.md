@@ -9,6 +9,7 @@ Question answering is the task of answering a question.
 - [Reading comprehension](#reading-comprehension)
   - [CliCR](#clicr)
   - [CNN / Daily Mail](#cnn--daily-mail)
+  - [CODAH](#codah)
   - [CoQA](#coqa)
   - [HotpotQA](#hotpotqa)
   - [MS MARCO](#ms-marco)
@@ -19,12 +20,17 @@ Question answering is the task of answering a question.
   - [RACE](#race)
   - [SQuAD](#squad)
   - [Story Cloze Test](#story-cloze-test)
+  - [SWAG](#swag)
   - [Recipe QA](#recipeqa)
   - [NarrativeQA](#narrativeqa)
+  - [DuoRC](#duorc)
+  - [DROP](#drop)
+  - [Cosmos QA](#cosmos-qa)
 - [Open-domain Question Answering](#open-domain-question-answering)
   - [DuReader](#dureader)
   - [Quasar](#quasar)
   - [SearchQA](#searchqa)
+- [Knowledge Base Question Answering](#knowledge-base-question-answering)
 
 ### ARC
 
@@ -50,7 +56,7 @@ The public data, further task details and public leaderboard are available on th
 
 Most current question answering datasets frame the task as reading comprehension where the question is about a paragraph
 or document and the answer often is a span in the document. The Machine Reading group
-at UCL also provides an [overview of reading comprehension tasks](https://uclmr.github.io/ai4exams/data.html).
+at UCL also provides an [overview of reading comprehension tasks](https://uclnlp.github.io/ai4exams/data.html).
 
 ### CliCR
 
@@ -100,6 +106,11 @@ Example:
 | Neural net (Chen et al., 2016) | 72.4 | 75.8 | [A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task](https://www.aclweb.org/anthology/P16-1223) |
 | Classifier (Chen et al., 2016) | 67.9 | 68.3 | [A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task](https://www.aclweb.org/anthology/P16-1223) |
 | Impatient Reader (Hermann et al., 2015) | 63.8 | 68.0 | [Teaching Machines to Read and Comprehend](https://arxiv.org/abs/1506.03340) |
+
+### CODAH
+[CODAH](https://arxiv.org/abs/1904.04365) is an adversarially-constructed evaluation dataset with 2.8k questions for testing common sense. CODAH forms a challenging extension to the SWAG dataset, which tests commonsense knowledge using sentence-completion questions that describe situations observed in video.
+
+The dataset and more information can be found [here](https://github.com/Websail-NU/CODAH)
 
 ### CoQA
 
@@ -188,10 +199,15 @@ The dataset contains more than 28,000 passages and nearly 100,000 questions and 
 downloaded [here](http://www.cs.cmu.edu/~glai1/data/race/). Models are evaluated based on accuracy
 on middle school examinations (RACE-m), high school examinations (RACE-h), and on the total dataset (RACE).
 
-| Model           | RACE-m | RACE-h | RACE | Paper / Source |
-| ------------- | :-----:| :-----:| :-----:| --- |
-| Finetuned Transformer LM (Radford et al., 2018) | 62.9 | 57.4 | 59.0 | [Improving Language Understanding by Generative Pre-Training](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf) |
-| BiAttention MRU (Tay et al., 2018) | 60.2 | 50.3 | 53.3 | [Multi-range Reasoning for Machine Comprehension](https://arxiv.org/abs/1803.09074) |
+The public leaderboard is available on the [RACE leaderboard](http://www.qizhexie.com//data/RACE_leaderboard).
+
+| Model           | RACE-m | RACE-h | RACE | Paper | Code |
+| ------------- | :-----:| :-----:| :-----:| --- | --- |
+| XLNet (Yang et al., 2019) | 85.45 | 80.21 | 81.75 | [XLNet: Generalized Autoregressive Pretraining for Language Understanding](https://arxiv.org/pdf/1906.08237.pdf) | [Official](https://github.com/zihangdai/xlnet/) |
+| OCN_large (Ran et al., 2019) | 76.7 | 69.6 | 71.7 | [Option Comparison Network for Multiple-choice Reading Comprehension](https://arxiv.org/pdf/1903.03033.pdf) | |
+| DCMN_large (Zhang et al., 2019) | 73.4 | 68.1 | 69.7 | [Dual Co-Matching Network for Multi-choice Reading Comprehension](https://arxiv.org/pdf/1901.09381.pdf) | |
+| Finetuned Transformer LM (Radford et al., 2018) | 62.9 | 57.4 | 59.0 | [Improving Language Understanding by Generative Pre-Training](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf) | [Official](https://github.com/openai/finetune-transformer-lm) |
+| BiAttention MRU (Tay et al., 2018) | 60.2 | 50.3 | 53.3 | [Multi-range Reasoning for Machine Comprehension](https://arxiv.org/abs/1803.09074) | |
 
 ### SQuAD
 
@@ -209,12 +225,21 @@ The [Story Cloze Test](http://aclweb.org/anthology/W17-0906.pdf) is a dataset fo
 story understanding that provides systems with four-sentence stories and two possible
 endings. The systems must then choose the correct ending to the story.
 
+More details are available on the [Story Cloze Test Challenge](https://competitions.codalab.org/competitions/15333).
+
 | Model           | Accuracy  |  Paper / Source | Code |
 | ------------- | :-----:| --- | --- |
-| Finetuned Transformer LM (Radford et al., 2018) | 86.5 | [Improving Language Understanding by Generative Pre-Training](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf) |
+| Reading Strategies Model (Sun et al., 2018) | 88.3 | [Improving Machine Reading Comprehension by General Reading Strategies](https://arxiv.org/pdf/1810.13441v1.pdf) |
+| Finetuned Transformer LM (Radford et al., 2018) | 86.5 | [Improving Language Understanding by Generative Pre-Training](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf) |  [Official](https://github.com/openai/finetune-transformer-lm)
 | Liu et al. (2018) | 78.7 | [Narrative Modeling with Memory Chains and Semantic Supervision](http://aclweb.org/anthology/P18-2045) | [Official](https://github.com/liufly/narrative-modeling)
 | Hidden Coherence Model (Chaturvedi et al., 2017) | 77.6 | [Story Comprehension for Predicting What Happens Next](http://aclweb.org/anthology/D17-1168) |
 | val-LS-skip (Srinivasan et al., 2018) | 76.5 | [A Simple and Effective Approach to the Story Cloze Test](http://aclweb.org/anthology/N18-2015) |
+
+### SWAG
+
+[SWAG](https://arxiv.org/abs/1808.05326) (Situations With Adversarial Generations) is a large-scale dataset for the task of grounded commonsense inference, unifying natural language inference and physically grounded reasoning. The dataset consists of 113k multiple choice questions about grounded situations. Each question is a video caption from LSMDC or ActivityNet Captions, with four answer choices about what might happen next in the scene. The correct answer is the (real) video caption for the next event in the video; the three incorrect answers are adversarially generated and human verified, so as to fool machines but not humans.
+
+The public leaderboard is available on the [AI2 website] (https://leaderboard.allenai.org/swag/submissions/public).
 
 ### RecipeQA
 
@@ -234,6 +259,24 @@ The public leaderboard is available on the [RecipeQA website](https://hucvl.gith
 |BiDAF (Seo et al., 2017)	   |33.45    |15.69	 | 15.68 | 36.74  |[Bidirectional Attention Flow for Machine Comprehension](https://arxiv.org/abs/1611.01603)       |      |
 
 *Note that the above is for the Summary setting. There are no official published results for reading over entire books/stories except for the original paper. 
+
+### DuoRC
+
+[DuoRC](https://duorc.github.io) contains 186,089 unique question-answer pairs created from a collection of 7680 pairs of movie plots where each pair in the collection reflects two versions of the same movie. 
+
+DuoRC pushes the NLP community to address challenges on incorporating knowledge and reasoning in neural architectures for reading comprehension. It poses several interesting challenges such as:
+  - DuoRC using parallel plots is especially designed to contain a large number of questions with low lexical overlap between questions and their corresponding passages
+  - It requires models to go beyond the content of the given passage itself and incorporate world-knowledge, background knowledge, and common-sense knowledge to arrive at the answer
+  - It revolves around narrative passages from movie plots describing complex events and therefore naturally require complex reasoning (e.g. temporal reasoning, entailment, long-distance anaphoras, etc.) across multiple sentences to infer the answer to questions
+  - Several of the questions in DuoRC, while seeming relevant, cannot actually be answered from the given passage. This requires the model to detect the unanswerability of questions. This aspect is important for machines to achieve in industrial settings in particular.
+  
+### DROP
+
+[DROP](https://allennlp.org/drop) is a crowdsourced, adversarially-created, 96k-question benchmark, in which a system must resolve references in a question, perhaps to multiple input positions, and perform discrete operations over them (such as addition, counting, or sorting). These operations require a much more comprehensive understanding of the content of paragraphs than what was necessary for prior datasets.
+
+### Cosmos QA
+
+[Cosmos QA](https://wilburone.github.io/cosmos/) is a large-scale dataset of 35.6K problems that require commonsense-based reading comprehension, formulated as multiple-choice questions. It focuses on reading between the lines over a diverse collection of people's everyday narratives, asking questions concerning on the likely causes or effects of events that require reasoning beyond the exact text spans in the context.
 
 ## Open-domain Question Answering
 
@@ -275,5 +318,19 @@ The [leaderboard](https://ai.baidu.com/broad/leaderboard?dataset=dureader) is av
 |Focused Hierarchical RNN	(Ke et al., 2018)     |46.8	  |53.4	   |- |-    |[Focused Hierarchical RNNs for Conditional Sequence Processing](http://proceedings.mlr.press/v80/ke18a/ke18a.pdf)||
 |ASR (Kadlec et al, 2016) |41.3	  |22.8    |- |-    |[Text Understanding with the Attention Sum Reader Network](https://arxiv.org/abs/1603.01547)|
 
+## Knowledge Base Question Answering
+
+Knowledge Base Question Answering is the task of answering natural language question based on a knowledge base/knowledge graph such as [DBpedia](https://wiki.dbpedia.org/) or [Wikidata](https://www.wikidata.org/).
+
+### QALD-9
+[QALD-9](http://ceur-ws.org/Vol-2241/paper-06.pdf) is a manually curated superset of the previous eight editions of the [Question Answering over Linked Data (QALD) challenge](http://2018.nliwod.org/challenge) published in 2018. It is constructed by human experts to cover a wide range of natural language to SPARQL conversions based on DBpedia 2016-10 knowledge base. Each question-answer-pair has additional meta-data. QALD-9 is best evaluated using the [GERBIL QA platform](http://gerbil-qa.aksw.org/gerbil/config) for repeatability of the evaluation numbers.
+
+| Annotator | Macro P | Macro R | Macro F1 | Error Count | Average Time/Doc ms | Macro F1 QALD | Paper (including links to webservices/source code)|
+|------------------------|:-------:|:-------:|:--------:|:-----------:|:-------------------:|:-------------:|----------------------|
+| Elon (WS)              |   0.049 |   0.053 |    0.050 |           2 |                 219 |         0.100 ||
+| QASystem (WS)          |   0.097 |   0.116 |    0.098 |           0 |                1014 |         0.200 ||
+| TeBaQA (WS)            |   0.129 |   0.134 |    0.130 |           0 |                2668 |         0.222 ||
+| wdaqua-core1 (DBpedia) |   0.261 |   0.267 |    0.250 |           0 |                 661 |         0.289 | Diefenbach, Dennis, Kamal Singh, and Pierre Maret. "Wdaqua-core1: a question answering service for rdf knowledge bases." Companion of the The Web Conference 2018 on The Web Conference 2018. International World Wide Web Conferences Steering Committee, 2018. |
+| gAnswer (WS)           |   0.293 |   0.327 |    0.298 |           1 |                3076 |         0.430 | Zou, Lei, et al. "Natural language question answering over RDF: a graph data driven approach." Proceedings of the 2014 ACM SIGMOD international conference on Management of data. ACM, 2014.|
 
 [Go back to the README](../README.md)

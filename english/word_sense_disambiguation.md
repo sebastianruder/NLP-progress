@@ -36,6 +36,10 @@ The main evaluation measure is F1-score.
 |GAS<sub>ext</sub> (Concatenation) | 72.2 | 70.5 | --* | 67.2 | 72.6 | [[5]](http://aclweb.org/anthology/P18-1230)  |
 |supWSD | 71.3 | 68.8 | 60.2 | 65.8 | 70.0 | [[6]](https://aclanthology.info/pdf/P/P10/P10-4014.pdf) [[11]](http://aclweb.org/anthology/D17-2018) |
 |supWSD<sub>emb</sub> | 72.7 | 70.6 | 63.1 | 66.8 | 71.8 | [[7]](http://www.aclweb.org/anthology/P16-1085) [[11]](http://aclweb.org/anthology/D17-2018) |
+|BERT (nearest neighbor) | 73.8 | 71.6 | 63.3 | 69.2 | 74.4 | [[13]](https://www.aclweb.org/anthology/D19-1533.pdf) [[code]](https://github.com/nusnlp/contextemb-wsd) |
+|BERT (linear projection) | 75.5 | 73.6 | 68.1 | 71.1 | 76.2 | [[13]](https://www.aclweb.org/anthology/D19-1533.pdf) [[code]](https://github.com/nusnlp/contextemb-wsd) |
+|GlossBERT | 77.7 | 75.2 | 72.5 | 76.1 | 80.4 | [[14]](https://arxiv.org/pdf/1908.07245.pdf) |
+|SemCor+WNGC, hypernyms | 79.7 | 77.8 | 73.4 | 78.7 | 82.6 | [[15]](https://arxiv.org/abs/1905.05677) |
 
 
 ### Knowledge-based:
@@ -73,3 +77,36 @@ Note: 'All' is the concatenation of all datasets, as described in [10] and [12].
 [11] [SupWSD: A Flexible Toolkit for Supervised Word Sense Disambiguation](http://aclweb.org/anthology/D17-2018)
 
 [12] [The risk of sub-optimal use of Open Source NLP Software: UKB is inadvertently state-of-the-art in knowledge-based WSD](http://aclweb.org/anthology/W18-2505)
+
+[13] [Improved Word Sense Disambiguation Using Pre-Trained Contextualized Word Representations](https://www.aclweb.org/anthology/D19-1533.pdf)
+
+[14] [GlossBERT: BERT for Word Sense Disambiguation with Gloss Knowledge](https://arxiv.org/pdf/1908.07245.pdf)
+
+[15] [Sense Vocabulary Compression through the Semantic Knowledge of WordNet for Neural Word Sense Disambiguation](https://arxiv.org/abs/1905.05677)
+
+## Word Sense Induction
+
+Word sense induction (WSI) is widely known as the "unsupervised version" of WSD. The problem states as: Given a target word (e.g., "cold") and a collection of sentences (e.g., "I caught a cold", "The weather is cold") that use the word, cluster the sentences according to their different senses/meanings. We do not need to know the sense/meaning of each cluster, but sentences inside a cluster should have used the target words with the same sense.
+
+There are two widely used datasets: SemEval 2010 and 2013, and both of them use different kinds of metrices: V-Measure (V-M) and paired F-Score (F-S) for SemEval 2010, and fuzzy B-Cubed (F-BC) and fuzzy normalized mutual information (F-NMI). For ease of system comparisons, the metrics are usually aggregated using a geometric mean (AVG).
+
+### SemEval 2010
+
+| Model         | F-S    | V-M   | AVG   | Paper/source | Code |
+| ------------- | :-----:|:-----:|:-----:| ------------ | ---- |
+| BERT+DP (Amrami and Goldberg, 2019) | 71.3 | 40.4 | 53.6 | [Towards better substitution-based word sense induction](https://arxiv.org/pdf/1905.12598.pdf) | [Code](https://github.com/asafamr/bertwsi) |
+| AutoSense (Amplayo et al., 2019) | 61.7 | 9.8 | 24.59 | [AutoSense Model for Word Sense Induction](https://wvvw.aaai.org/ojs/index.php/AAAI/article/view/4580/4458) | [Code](https://github.com/rktamplayo/AutoSense) |
+| SE-WSI-fix (Song et al., 2016) | 55.1 | 9.8 | 23.24 | [Sense Embedding Learning for Word Sense Induction](https://aclweb.org/anthology/S16-2009/) |  |
+| BNP-HC (Chang et al., 2014) | 23.1 | 21.4 | 22.23 | [Inducing Word Sense with Automatically Learned Hidden Concepts](https://www.aclweb.org/anthology/C14-1035/) |  |
+| LDA (Goyal and Hovy, 2014) | 60.7 | 4.4 | 16.34 | [Unsupervised Word Sense Induction using Distributional Statistics](https://www.aclweb.org/anthology/C14-1123/) |  |
+
+### SemEval 2013
+
+| Model         | F-BC    | F_NMI   | AVG   | Paper/source | Code |
+| ------------- | :-----:|:-----:|:-----:| ------------ | ---- |
+| BERT+DP (Amrami and Goldberg, 2019) | 64.0 | 21.4 | 37.0 | [Towards better substitution-based word sense induction](https://arxiv.org/pdf/1905.12598.pdf) | [Code](https://github.com/asafamr/bertwsi) |
+| LSDP (Amrami and Goldberg, 2018) | 57.5 | 11.3 | 25.4 | [Word Sense Induction with Neural biLM and Symmetric Patterns](https://www.aclweb.org/anthology/D18-1523/) | [Code](https://github.com/asafamr/SymPatternWSI) |
+| AutoSense (Amplayo et al., 2019) | 61.7 | 7.96 | 22.16 | [AutoSense Model for Word Sense Induction](https://wvvw.aaai.org/ojs/index.php/AAAI/article/view/4580/4458) | [Code](https://github.com/rktamplayo/AutoSense) |
+| MCC-S (Komninos and Manandhar, 2016) | 55.6 | 7.62 | 20.58 | [Structured Generative Models of Continuous Features for Word Sense Induction](https://www.aclweb.org/anthology/C16-1337/) |  |
+| STM+w2v (Wang et al., 2016) | 55.4 | 7.14 | 19.89 | [A Sense-Topic Model for Word Sense Induction with Unsupervised Data Enrichment](https://www.aclweb.org/anthology/Q15-1005/) |  |
+| AI-KU (Baskaya et al., 2013) | 39.0 | 6.5 | 15.92 | [AI-KU: Using Substitute Vectors and Co-Occurrence Modeling For Word Sense Induction and Disambiguation](https://www.aclweb.org/anthology/S13-2050/) |  |
