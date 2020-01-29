@@ -36,7 +36,7 @@ The previous two metrics will be used to rank the models in the following sectio
 
 Since a simplification could involve text transformations beyond paraphrasing (which SARI intends to assess).  For these cases, it could be more suitable to use **SAMSA** [(Sulem et al., 2018a)](http://aclweb.org/anthology/N18-1063), a metric designed to measure *structural simplicity* (i.e. sentence splitting). However, it has not been used in papers besides the one where it was introduced (yet).
 
-**EASSE:** [Alva-Manchego et al. (2019)](https://www.aclweb.org/anthology/D19-3009) released a [tool][https://github.com/feralvam/easse] that provides easy access to all of the above metrics (and several others) through the command line and as a python package. EASSE also contains commonly-used test sets for the task. Its aim is to help standarise automatic evaluation for sentence simplification.
+**EASSE:** [Alva-Manchego et al. (2019)](https://www.aclweb.org/anthology/D19-3009) released a [tool](https://github.com/feralvam/easse) that provides easy access to all of the above metrics (and several others) through the command line and as a python package. EASSE also contains commonly-used test sets for the task. Its aim is to help standarise automatic evaluation for sentence simplification.
 
 **IMPORTANT NOTE:** In the tables of the following sections, a score with a \* means that it was not reported by the original authors but by future research that re-implemented and/or re-trained and re-tested the model. In these cases, the original reported score (if there is one) is shown in parentheses. 
 
