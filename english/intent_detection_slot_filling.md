@@ -13,7 +13,7 @@ Slots:
 ```
 
 ## ATIS
-ATIS (Air Travel Information System) (Hemphill et al.) is a dataset by Microsoft CNTK. Available from the [github page](https://github.com/microsoft/CNTK/tree/master/Examples/LanguageUnderstanding/ATIS). The slots are labeled in the BIO ([Inside Outside Beginning](https://en.wikipedia.org/wiki/Inside%E2%80%93outside%E2%80%93beginning)) format (similar to NER). This dataset contains only air travel related commands. Most of the ATIS results are based on the work [here](https://github.com/zhenwenzhang/Slot_Filling).
+ATIS (Air Travel Information System) (Hemphill et al.) is a dataset by Microsoft CNTK. Available from the [github page](https://github.com/microsoft/CNTK/tree/master/Examples/LanguageUnderstanding/ATIS). The slots are labeled in the BIO ([Inside Outside Beginning](https://en.wikipedia.org/wiki/Inside%E2%80%93outside%E2%80%93beginning_(tagging))) format (similar to NER). This dataset contains only air travel related commands. Most of the ATIS results are based on the work [here](https://github.com/zhenwenzhang/Slot_Filling).
 
 | Model | Slot F1 Score | Intent Accuracy | Paper / Source | Code |
 | ------ | ------ | ------ | ------ | ------ |
