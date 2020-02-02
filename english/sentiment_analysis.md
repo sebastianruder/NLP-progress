@@ -32,7 +32,6 @@ Fine-grained classification (SST-5, 94,2k examples):
 
 | Model           | Accuracy |  Paper / Source |
 | ------------- | :-----:| --- |
-| EDD-LG shared (Patro et al., 2018) | 64.4 | [Learning Semantic Sentence Embeddings using Pair-wise Discriminator](https://arxiv.org/pdf/1806.00807.pdf) |
 | BCN+Suffix BiLSTM-Tied+CoVe (Brahma, 2018) | 56.2 | [Improved Sentence Modeling using Suffix Bidirectional LSTM](https://arxiv.org/pdf/1805.07340v2.pdf) |
 | BCN+ELMo (Peters et al., 2018) | 54.7 | [Deep contextualized word representations](https://arxiv.org/abs/1802.05365) |
 | BCN+Char+CoVe (McCann et al., 2017) | 53.7 | [Learned in Translation: Contextualized Word Vectors](https://arxiv.org/abs/1708.00107) |
