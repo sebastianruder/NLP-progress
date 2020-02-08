@@ -40,7 +40,7 @@ Metrics used are F1 score on Masculine (M) and Feminine (F) examples, Overall, a
 
 | Model           | Overall F1 | Masculine F1 (M) | Feminine F1 (F) | Bias (F/M) | Paper / Source | Code |
 | ------------- | :-----:| :-----:| :-----:| :-----:| --- | --- |
-| Attree et al. (2019) | 92.5 | 94.0 | 91.1 | 0.97 | [Gendered Ambiguous Pronouns Shared Task: Boosting Model Confidence by Evidence Pooling](https://arxiv.org/abs/1906.00839) | [GAP](https://github.com/sattree/gap) |
+| Attree et al. (2019) | 92.5 | 94.0 | 91.1 | 0.97 | [Gendered Ambiguous Pronouns Shared Task: Boosting Model Confidence by Evidence Pooling](https://arxiv.org/abs/1906.00839) | [GREP](https://github.com/sattree/gap) |
 | Chada et al. (2019) | 90.2 | 90.9 | 89.5 | 0.98 | [Gendered Pronoun Resolution using BERT and an extractive question answering formulation](https://arxiv.org/abs/1906.03695) | [CorefQA](https://github.com/rakeshchada/corefqa) |
 
 
