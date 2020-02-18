@@ -91,15 +91,18 @@ Each version of the dataset contains a set of dialogues from the IRC channel, ex
 
 The exact tasks used vary slightly, but all consider variations of Recall_N@K, which means how often the true answer is in the top K options when there are N total candidates.
 
-| Data   | Model           | R_2@1       |  R_10@1     |  R_100@1    |  R_100@10   |  R_100@50   |  MRR        |  Paper / Source |
-| ------ | -------------   | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: |---------------|
-| DSTC 8 (main) | Wu et. al., (2020) | - | - | 76.1 | 97.9 | - | 84.8 | Enhancing Response Selection with Advanced Context Modeling and Post-training |
-| DSTC 8 (subtask 2) | Yang et. al., (2020) | - | - | 56.4 | 87.8 | - | 67.7 | Transformer-based Semantic Matching Model for Noetic Response Selection |
-| DSTC 7 | Seq-Att-Network (Chen and Wang, 2019) | - | - |64.5 | 90.2 | 99.4 | 73.5 | [Sequential Attention-based Network for Noetic End-to-End Response Selection](http://workshop.colips.org/dstc7/papers/07.pdf) |
-| UDC v2 | DAM (Zhou et al. 2018) | 93.8 | 76.7| - | - | - | - | [Multi-Turn Response Selection for Chatbots with Deep Attention Matching Network](http://www.aclweb.org/anthology/P18-1103) |
-| UDC v2  | SMN (Wu et al. 2017) | 92.3 | 72.3| - | - | - | - | [Sequential Matching Network: A New Architecture for Multi-turn Response Selection in Retrieval-Based Chatbots](https://arxiv.org/pdf/1612.01627.pdf) |
-| UDC v2  | Multi-View (Zhou et al. 2017) | 90.8 | 66.2 | - | - | - | - | [Multi-view Response Selection for Human-Computer Conversation](https://aclweb.org/anthology/D16-1036) |
-| UDC v2  | Bi-LSTM (Kadlec et al. 2015) | 89.5 | 63.0 | - | - | - | - | [Improved Deep Learning Baselines for Ubuntu Corpus Dialogs](https://arxiv.org/pdf/1510.03753.pdf) |
+| Data   | Model           |  R_100@1    |  R_100@10   |  R_100@50   |  MRR        |  Paper / Source |
+| ------ | -------------   | :---------: | :---------: | :---------: | :---------: |---------------|
+| DSTC 8 (main) | Wu et. al., (2020) | 76.1 | 97.9 | - | 84.8 | Enhancing Response Selection with Advanced Context Modeling and Post-training |
+| DSTC 8 (subtask 2) | Yang et. al., (2020) | 56.4 | 87.8 | - | 67.7 | Transformer-based Semantic Matching Model for Noetic Response Selection |
+| DSTC 7 | Seq-Att-Network (Chen and Wang, 2019) | 64.5 | 90.2 | 99.4 | 73.5 | [Sequential Attention-based Network for Noetic End-to-End Response Selection](http://workshop.colips.org/dstc7/papers/07.pdf) |
+
+| Data   | Model           | R_2@1       |  R_10@1      |  Paper / Source |
+| ------ | -------------   | :---------: | :---------: |---------------|
+| UDC v2 | DAM (Zhou et al. 2018) | 93.8 | 76.7 | [Multi-Turn Response Selection for Chatbots with Deep Attention Matching Network](http://www.aclweb.org/anthology/P18-1103) |
+| UDC v2  | SMN (Wu et al. 2017) | 92.3 | 72.3 | [Sequential Matching Network: A New Architecture for Multi-turn Response Selection in Retrieval-Based Chatbots](https://arxiv.org/pdf/1612.01627.pdf) |
+| UDC v2  | Multi-View (Zhou et al. 2017) | 90.8 | 66.2 | [Multi-view Response Selection for Human-Computer Conversation](https://aclweb.org/anthology/D16-1036) |
+| UDC v2  | Bi-LSTM (Kadlec et al. 2015) | 89.5 | 63.0 | [Improved Deep Learning Baselines for Ubuntu Corpus Dialogs](https://arxiv.org/pdf/1510.03753.pdf) |
 
 Additional results can be found in the DSTC task reports linked above.
 
