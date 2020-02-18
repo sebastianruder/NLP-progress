@@ -94,7 +94,7 @@ The exact tasks used vary slightly, but all consider variations of Recall_N@K, w
 | Data   | Model           |  R_100@1    |  R_100@10   |  R_100@50   |  MRR        |  Paper / Source |
 | ------ | -------------   | :---------: | :---------: | :---------: | :---------: |---------------|
 | DSTC 8 (main) | Wu et. al., (2020) | 76.1 | 97.9 | - | 84.8 | Enhancing Response Selection with Advanced Context Modeling and Post-training |
-| DSTC 8 (subtask 2) | Yang et. al., (2020) | 56.4 | 87.8 | - | 67.7 | Transformer-based Semantic Matching Model for Noetic Response Selection |
+| DSTC 8 (subtask 2) | Wu et. al., (2020) | 70.6 | 95.7 | - | 79.9 | Enhancing Response Selection with Advanced Context Modeling and Post-training |
 | DSTC 7 | Seq-Att-Network (Chen and Wang, 2019) | 64.5 | 90.2 | 99.4 | 73.5 | [Sequential Attention-based Network for Noetic End-to-End Response Selection](http://workshop.colips.org/dstc7/papers/07.pdf) |
 
 | Data   | Model           | R_2@1       |  R_10@1      |  Paper / Source |
@@ -119,9 +119,10 @@ The [Reddit Corpus](https://arxiv.org/abs/1904.06472) contains 726 million multi
 ### Advising Corpus
 The [Advising Corpus](http://workshop.colips.org/dstc7/papers/dstc7_task1_final_report.pdf), available [here](https://ibm.github.io/dstc-noesis/public/index.html), contains a collection of conversations between a student and an advisor at the University of Michigan. They were released as part of DSTC 7 track 1 and used again in DSTC 8 track 2.
 
-| Data   | Model           |  R_100@1    |  R_100@10   |  R_100@50   |  MRR        |  Paper / Source |
-| ------ | -------------   | :---------: | :---------: | :---------: | :---------: |---------------|
-| DSTC 7 | Seq-Att-Network (Chen and Wang, 2019) | 21.4 | 63.0 | 94.8 | 33.9 | [Sequential Attention-based Network for Noetic End-to-End Response Selection](http://workshop.colips.org/dstc7/papers/07.pdf)
+| Model           |  R_100@1    |  R_100@10   |  R_100@50   |  MRR        |  Paper / Source |
+| -------------   | :---------: | :---------: | :---------: | :---------: |---------------|
+| Yang et. al., (2020) | 56.4 | 87.8 | - | 67.7 | Transformer-based Semantic Matching Model for Noetic Response Selection |
+| Seq-Att-Network (Chen and Wang, 2019) | 21.4 | 63.0 | 94.8 | 33.9 | [Sequential Attention-based Network for Noetic End-to-End Response Selection](http://workshop.colips.org/dstc7/papers/07.pdf)
 
 
 ## Generative-based Chatbots
