@@ -93,7 +93,7 @@ The exact tasks used vary slightly, but all consider variations of Recall_N@K, w
 
 | Data   | Model           | R_2@1       |  R_10@1     |  R_100@1    |  R_100@10   |  R_100@50   |  MRR        |  Paper / Source |
 | ------ | -------------   | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: |---------------|
-| DSTC 8 (main) | Wu et. al., (2020) | - | - | 76.1 | 97.9 | - | 84.8 | | Enhancing Response Selection with Advanced Context Modeling and Post-training |
+| DSTC 8 (main) | Wu et. al., (2020) | - | - | 76.1 | 97.9 | - | 84.8 | Enhancing Response Selection with Advanced Context Modeling and Post-training |
 | DSTC 8 (subtask 2) | Yang et. al., (2020) | - | - | 56.4 | 87.8 | - | 67.7 | Transformer-based Semantic Matching Model for Noetic Response Selection |
 | DSTC 7 | Seq-Att-Network (Chen and Wang, 2019) | - | - |64.5 | 90.2 | 99.4 | 73.5 | [Sequential Attention-based Network for Noetic End-to-End Response Selection](http://workshop.colips.org/dstc7/papers/07.pdf) |
 | UDC v2 | DAM (Zhou et al. 2018) | 93.8 | 76.7| - | - | - | - | [Multi-Turn Response Selection for Chatbots with Deep Attention Matching Network](http://www.aclweb.org/anthology/P18-1103) |
@@ -150,14 +150,14 @@ This can be formultated as a clustering problem, with no clear best metric. Seve
 
 Manually labeled by [Kummerfeld et al. (2019)](https://www.aclweb.org/anthology/P19-1374), this data is available [here](https://jkk.name/irc-disentanglement/).
 
-| Model                  | VI   | 1-1  | Precision | Recall | F-Score | Paper / Source | Code          |
-| ---------------------- | :--: | :--: | :-------: | :----: | :-----: | ---------------| ------------- |
-| ??                     | 93.3 |    - |      44.3 |   49.6 |  46.8 0 | Pre-Trained and Attention-Based Neural Networks for Building Noetic Task-Oriented Dialogue Systems | - |
-| FF ensemble: Vote      (Kummerfeld et al., 2019) | 91.5 | 76.0 | 36.3 | 39.7 | 38.0 | [A Large-Scale Corpus for Conversation Disentanglement](https://www.aclweb.org/anthology/P19-1374/) | [Code](https://jkk.name/irc-disentanglement) |
-| Feedforward            (Kummerfeld et al., 2019) | 91.3 | 75.6 | 34.6 | 38.0 | 36.2 | [A Large-Scale Corpus for Conversation Disentanglement](https://www.aclweb.org/anthology/P19-1374/) | [Code](https://jkk.name/irc-disentanglement) |
-| FF ensemble: Intersect (Kummerfeld et al., 2019) | 69.3 | 26.6 | 67.0 | 21.1 | 32.1 | [A Large-Scale Corpus for Conversation Disentanglement](https://www.aclweb.org/anthology/P19-1374/) | [Code](https://jkk.name/irc-disentanglement) |
-| Linear                 (Elsner and Charniak, 2008) | 82.1 | 51.4 | 12.1 | 21.5 | 15.5 | [You Talking to Me? A Corpus and Algorithm for Conversation Disentanglement](https://www.aclweb.org/anthology/P08-1095/) | [Code](https://www.asc.ohio-state.edu/elsner.14/resources/chat-distr.tgz) |
-| Heuristic              (Lowe et al., 2015)       | 80.6 | 53.7 | 10.8 |  7.6 |  8.9 | [Training End-to-End Dialogue Systems with the Ubuntu Dialogue Corpus](http://dad.uni-bielefeld.de/index.php/dad/article/view/3698) | [Code](https://github.com/npow/ubuntu-corpus) |
+| Model                                            | VI   | 1-1  | Precision | Recall | F-Score | Paper / Source | Code      |
+| ------------------------------------------------ | :--: | :--: | :-------: | :----: | :-----: | ---------------| --------- |
+| BERT + BiLSTM                                    | 93.3 |    - |      44.3 |   49.6 |    46.8 | Pre-Trained and Attention-Based Neural Networks for Building Noetic Task-Oriented Dialogue Systems | - |
+| FF ensemble: Vote      (Kummerfeld et al., 2019) | 91.5 | 76.0 |      36.3 |   39.7 |    38.0 | [A Large-Scale Corpus for Conversation Disentanglement](https://www.aclweb.org/anthology/P19-1374/) | [Code](https://jkk.name/irc-disentanglement) |
+| Feedforward            (Kummerfeld et al., 2019) | 91.3 | 75.6 |      34.6 |   38.0 |    36.2 | [A Large-Scale Corpus for Conversation Disentanglement](https://www.aclweb.org/anthology/P19-1374/) | [Code](https://jkk.name/irc-disentanglement) |
+| FF ensemble: Intersect (Kummerfeld et al., 2019) | 69.3 | 26.6 |      67.0 |   21.1 |    32.1 | [A Large-Scale Corpus for Conversation Disentanglement](https://www.aclweb.org/anthology/P19-1374/) | [Code](https://jkk.name/irc-disentanglement) |
+| Linear               (Elsner and Charniak, 2008) | 82.1 | 51.4 |      12.1 |   21.5 |    15.5 | [You Talking to Me? A Corpus and Algorithm for Conversation Disentanglement](https://www.aclweb.org/anthology/P08-1095/) | [Code](https://www.asc.ohio-state.edu/elsner.14/resources/chat-distr.tgz) |
+| Heuristic            (Lowe et al., 2015)         | 80.6 | 53.7 |      10.8 |    7.6 |     8.9 | [Training End-to-End Dialogue Systems with the Ubuntu Dialogue Corpus](http://dad.uni-bielefeld.de/index.php/dad/article/view/3698) | [Code](https://github.com/npow/ubuntu-corpus) |
 
 ### Linux IRC
 
