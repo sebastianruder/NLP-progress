@@ -41,17 +41,6 @@
 - [Text classification](english/text_classification.md)
 - [Word sense disambiguation](english/word_sense_disambiguation.md)
 
-### Chinese
-
-- [Entity linking](chinese/chinese.md#entity-linking)
-- [Chinese word segmentation](chinese/chinese_word_segmentation.md)
-
-### Hindi
-
-- [Chunking](hindi/hindi.md#chunking)
-- [Part-of-speech tagging](hindi/hindi.md#part-of-speech-tagging)
-- [Machine Translation](hindi/hindi.md#machine-translation)
-
 ### Vietnamese
 
 - [Dependency parsing](vietnamese/vietnamese.md#dependency-parsing)
@@ -59,6 +48,25 @@
 - [Named entity recognition](vietnamese/vietnamese.md#named-entity-recognition)
 - [Part-of-speech tagging](vietnamese/vietnamese.md#part-of-speech-tagging)
 - [Word segmentation](vietnamese/vietnamese.md#word-segmentation)
+
+### Hindi
+
+- [Chunking](hindi/hindi.md#chunking)
+- [Part-of-speech tagging](hindi/hindi.md#part-of-speech-tagging)
+- [Machine Translation](hindi/hindi.md#machine-translation)
+
+### Chinese
+
+- [Entity linking](chinese/chinese.md#entity-linking)
+- [Chinese word segmentation](chinese/chinese_word_segmentation.md)
+
+### French
+
+- [Question answering](french/question_answering.md)
+
+### Russian
+
+- [Question answering](russian/question_answering.md)
 
 ### Spanish
 
