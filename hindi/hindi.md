@@ -17,6 +17,7 @@
 
 The IIT Bombay English-Hindi Parallel Corpus used by Kunchukuttan et al. (2018) can be accessed [here](http://www.cfilt.iitb.ac.in/iitb_parallel/).
 
-| Model           | BLEU  | METEOR | Paper / Source | Code | 
-| ------------- | :-----:| :-----:| --- | --- | 
-| Kunchukuttan et al. (2018) | 12.23 (eng-hin) & 12.83 (hin-eng) | 0.308 | [The IIT Bombay English-Hindi Parallel Corpus](http://www.lrec-conf.org/proceedings/lrec2018/pdf/847.pdf) | | 
+| Model           | BLEU | Paper / Source | Code | 
+| ------------- | :-----:| --- | --- | 
+| Saini et al. (2018) | 18.215 (eng-hin)| [Neural Machine Translation for English to Hindi](https://www.researchgate.net/publication/327717152_Neural_Machine_Translation_for_English_to_Hindi) | | 
+| Goyal et al. (2019) | 19.06 (hin-eng)| [LTRC-MT Simple & Effective Hindi-English Neural Machine Translation Systems at WAT 2019](https://www.aclweb.org/anthology/D19-5216.pdf) | |
