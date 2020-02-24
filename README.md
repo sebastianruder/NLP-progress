@@ -59,6 +59,7 @@
 
 - [Entity linking](chinese/chinese.md#entity-linking)
 - [Chinese word segmentation](chinese/chinese_word_segmentation.md)
+- [Question answering](chinese/question_answering.md)
 
 ### French
 
@@ -75,6 +76,10 @@
 ### Portuguese
 
 - [Question Answering](portuguese/question_answering.md)
+
+### Korean
+
+- [Question Answering](korean/question_answering.md)
 
 ### Nepali
 
