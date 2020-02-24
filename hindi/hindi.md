@@ -20,4 +20,4 @@ The IIT Bombay English-Hindi Parallel Corpus used by Kunchukuttan et al. (2018) 
 | Model           | BLEU | Paper / Source | Code | 
 | ------------- | :-----:| --- | --- | 
 | Saini et al. (2018) | 18.215 (eng-hin)| [Neural Machine Translation for English to Hindi](https://www.researchgate.net/publication/327717152_Neural_Machine_Translation_for_English_to_Hindi) | | 
-| Best Submission of WAT2019 | 19.06 (hin-eng)| mentioned in the 3rd best WAT2019 paper: [LTRC-MT Simple & Effective Hindi-English Neural Machine Translation Systems at WAT 2019](https://www.aclweb.org/anthology/D19-5216.pdf) | |
+| Goyal et al. (2019) | 19.06 (hin-eng)| [LTRC-MT Simple & Effective Hindi-English Neural Machine Translation Systems at WAT 2019](https://www.aclweb.org/anthology/D19-5216.pdf) | |
