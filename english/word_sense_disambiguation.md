@@ -94,8 +94,7 @@ Iaccobacci et, al. (2016) provide the state-of-the-art results until 2016 [1]. M
 ### Lexical Sample results:
 
 | Model           | Senseval 2  |Senseval 3  |SemEval 2007 | Paper / Source |
-| ------------- | :-----:|:-----:|:-----:|:-----:|:-----:| --- |
-
+| ------------- | :-----: | :-----: | :-----: | --- |
 |IMSE + heuristics | 71.4 | 76.2  | - | [[2]](http://cv.znu.ac.ir/afsharchim/pub/JofIFS2019-2.pdf) |
 |IMS + Word2vec | 69.9 | 75.2  | 89.4 | [[1]](http://www.aclweb.org/anthology/P16-1085) |
 |AutoExtend | 66.5 | 73.6 | − | [[3]](https://arxiv.org/abs/1507.01127) |
@@ -103,9 +102,13 @@ Iaccobacci et, al. (2016) provide the state-of-the-art results until 2016 [1]. M
 |IMS | 65.3 | 72.9 | 87.9 | [[5]](https://arxiv.org/abs/1905.05677) |
 
 [1] [Embeddings for Word Sense Disambiguation: An Evaluation Study](http://www.aclweb.org/anthology/P16-1085)
+
 [2] [Supervised word sense disambiguation using new features based on word embeddings] (https://content.iospress.com/articles/journal-of-intelligent-and-fuzzy-systems/ifs182868)
+
 [3] [AutoExtend: Extending Word Embeddings to Embeddings for Synsets and Lexemes] (https://arxiv.org/abs/1507.01127)
+
 [4] [Semi-SupervisedWord Sense Disambiguation UsingWord Embeddings in General and Specific Domains] (https://www.aclweb.org/anthology/N15-1035.pdf)
+
 [5] [It makes sense: A wide-coverage word sense disambiguation system for free text] (https://www.aclweb.org/anthology/P10-4014.pdf)
 
 ## Word Sense Induction
