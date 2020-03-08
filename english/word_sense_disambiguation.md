@@ -84,6 +84,30 @@ Note: 'All' is the concatenation of all datasets, as described in [10] and [12].
 
 [15] [Sense Vocabulary Compression through the Semantic Knowledge of WordNet for Neural Word Sense Disambiguation](https://arxiv.org/abs/1905.05677)
 
+## WSD Lexical Sample task:
+
+Above task is called All-words WSD because the systems attempt to disambiguate all of the words in a document, while there is another task which is called 
+Lexical Sample task. In this task a number of words are selected and the system should only disambiguate the occurrences of these words in a test set. 
+Iaccobacci et, al. (2016) provide the state-of-the-art results until 2016 [1]. Main tasks include Senseval 2, Senseval 3  and SemEval 2007. Evaluation metrics are as same as All words task. 
+
+
+### Lexical Sample results:
+
+| Model           | Senseval 2  |Senseval 3  |SemEval 2007 | Paper / Source |
+| ------------- | :-----:|:-----:|:-----:|:-----:|:-----:| --- |
+
+|IMSE + heuristics | 71.4 | 76.2  | - | [[2]](http://cv.znu.ac.ir/afsharchim/pub/JofIFS2019-2.pdf) |
+|IMS + Word2vec | 69.9 | 75.2  | 89.4 | [[1]](http://www.aclweb.org/anthology/P16-1085) |
+|AutoExtend | 66.5 | 73.6 | − | [[3]](https://arxiv.org/abs/1507.01127) |
+|Taghipour and Ng | 66.2 | 73.4 | − | [[4]](https://arxiv.org/abs/1905.05677) |
+|IMS | 65.3 | 72.9 | 87.9 | [[5]](https://arxiv.org/abs/1905.05677) |
+
+[1] [Embeddings for Word Sense Disambiguation: An Evaluation Study](http://www.aclweb.org/anthology/P16-1085)
+[2] [Supervised word sense disambiguation using new features based on word embeddings] (https://content.iospress.com/articles/journal-of-intelligent-and-fuzzy-systems/ifs182868)
+[3] [AutoExtend: Extending Word Embeddings to Embeddings for Synsets and Lexemes] (https://arxiv.org/abs/1507.01127)
+[4] [Semi-SupervisedWord Sense Disambiguation UsingWord Embeddings in General and Specific Domains] (https://www.aclweb.org/anthology/N15-1035.pdf)
+[5] [It makes sense: A wide-coverage word sense disambiguation system for free text] (https://www.aclweb.org/anthology/P10-4014.pdf)
+
 ## Word Sense Induction
 
 Word sense induction (WSI) is widely known as the "unsupervised version" of WSD. The problem states as: Given a target word (e.g., "cold") and a collection of sentences (e.g., "I caught a cold", "The weather is cold") that use the word, cluster the sentences according to their different senses/meanings. We do not need to know the sense/meaning of each cluster, but sentences inside a cluster should have used the target words with the same sense.
