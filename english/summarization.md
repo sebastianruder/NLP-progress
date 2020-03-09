@@ -165,6 +165,11 @@ Similar to Gigaword, task 1 of [DUC 2004](https://duc.nist.gov/duc2004/) is a se
 
 This [dataset](https://zenodo.org/record/1168855) contains 3 Million pairs of content and self-written summaries mined from Reddit. It is one of the first large-scale summarization dataset from the social media domain. For more details, refer to [TL;DR: Mining Reddit to Learn Automatic Summarization](https://aclweb.org/anthology/W17-4508)
 
+| Model              | ROUGE-1 | ROUGE-2 | ROUGE-L | Paper/Source                                                                                                                     | Code |
+|--------------------|---------|---------|---------|----------------------------------------------------------------------------------------------------------------------------------|------|
+| Transformer + Copy (Gehrmann et al., 2019) | 22      | 6       | 17      | [Generating Summaries with Finetuned Language Models](https://www.aclweb.org/anthology/W19-8665/)                                |      |
+| Unified VAE + PGN (Choi et al., 2019) | 19      | 4       | 15      | [VAE-PGN based Abstractive Model in Multi-stage Architecture for Text Summarization](https://www.aclweb.org/anthology/W19-8664/) |      |
+
 ## Sentence Compression
 
 Sentence compression produces a shorter sentence by removing redundant information,
