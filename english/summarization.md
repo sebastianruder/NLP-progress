@@ -165,6 +165,10 @@ Similar to Gigaword, task 1 of [DUC 2004](https://duc.nist.gov/duc2004/) is a se
 
 This [dataset](https://zenodo.org/record/1168855) contains 3 Million pairs of content and self-written summaries mined from Reddit. It is one of the first large-scale summarization dataset from the social media domain. For more details, refer to [TL;DR: Mining Reddit to Learn Automatic Summarization](https://aclweb.org/anthology/W17-4508)
 
+| Model              | ROUGE-1 | ROUGE-2 | ROUGE-L | Paper/Source                                                                                                                     | Code |
+|--------------------|---------|---------|---------|----------------------------------------------------------------------------------------------------------------------------------|------|
+| Transformer + Copy (Gehrmann et al., 2019) | 22      | 6       | 17      | [Generating Summaries with Finetuned Language Models](https://www.aclweb.org/anthology/W19-8665/)                                |      |
+| Unified VAE + PGN (Choi et al., 2019) | 19      | 4       | 15      | [VAE-PGN based Abstractive Model in Multi-stage Architecture for Text Summarization](https://www.aclweb.org/anthology/W19-8664/) |      |
 
 ## Webis-Snippet-20 Corpus
 This [dataset](https://zenodo.org/record/3653834) contains approximately 10 Million (webpage content, abstractive snippet) pairs and 3.5 Million (query term, webpage content, abstractive snippet) triples for the novel task of (query-biased) abstractive snippet generation of web pages. The corpus is compiled from ClueWeb09, ClueWeb12 and the DMOZ Open Directory Project. For more details, refer to [Abstractive Snippet Generation](https://arxiv.org/abs/2002.10782)
@@ -172,7 +176,6 @@ This [dataset](https://zenodo.org/record/3653834) contains approximately 10 Mill
 | Model                                             | ROUGE-1 | ROUGE-2 | ROUGE-L | Paper/Source                                                       | Code |
 |---------------------------------------------------|---------|---------|---------|--------------------------------------------------------------------|------|
 | Anchor-context + Query biased (Chen et al., 2020) | 25.7    | 5.2     | 20.1    | [Abstractive Snippet Generation](https://arxiv.org/abs/2002.10782) |      |
-
 
 ## Sentence Compression
 
