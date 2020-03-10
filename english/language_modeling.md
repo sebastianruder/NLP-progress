@@ -20,7 +20,6 @@ per-word log-probability (lower is better).
 
 | Model           | Validation perplexity | Test perplexity | Number of params |  Paper / Source | Code |
 | ------------- | :-----:| :-----: | :-----: | -------------- | ---- |
-| TCAN + dynamic eval (Hao et al., 2020) | -  | 26.92  | 13M | [Temporal Convolutional Attention-based Network For Sequence Modeling](http://arxiv.org/abs/2002.12530) | [Official](https://github.com/haohy/TCAN) |
 | Mogrifier LSTM + dynamic eval (Melis et al., 2019)      | 44.9  | 44.8  | 24M | [Mogrifier LSTM](http://arxiv.org/abs/1909.01792) | [Official](https://github.com/deepmind/lamb) |
 | AdvSoft + AWD-LSTM-MoS + dynamic eval (Wang et al., 2019) | 46.63 | 46.01 | 22M | [Improving Neural Language Modeling via Adversarial Training](http://proceedings.mlr.press/v97/wang19f/wang19f.pdf) | [Official](https://github.com/ChengyueGongR/advsoft) |
 | FRAGE + AWD-LSTM-MoS + dynamic eval (Gong et al., 2018) | 47.38 | 46.54 | 22M | [FRAGE: Frequency-Agnostic Word Representation](https://arxiv.org/abs/1809.06858) | [Official](https://github.com/ChengyueGongR/Frequency-Agnostic) |
@@ -47,7 +46,6 @@ consists of around 2 million words extracted from Wikipedia articles.
 
 | Model           | Validation perplexity | Test perplexity | Number of params | Paper / Source | Code |
 | ------------- | :-----:| :-----: | :-----: | -------------- | ---- |
-| TCAN + dynamic eval (Hao et al., 2020) | -  | 6.66  | 33M | [Temporal Convolutional Attention-based Network For Sequence Modeling](http://arxiv.org/abs/2002.12530) | [Official](https://github.com/haohy/TCAN) |
 | Mogrifier LSTM + dynamic eval (Melis et al., 2019)      | 40.2  | 38.6  | 35M | [Mogrifier LSTM](http://arxiv.org/abs/1909.01792) | [Official](https://github.com/deepmind/lamb) |
 | AdvSoft + AWD-LSTM-MoS + dynamic eval (Wang et al., 2019) | 40.27 | 38.65 | 35M | [Improving Neural Language Modeling via Adversarial Training](http://proceedings.mlr.press/v97/wang19f/wang19f.pdf) | [Official](https://github.com/ChengyueGongR/advsoft) |
 | FRAGE + AWD-LSTM-MoS + dynamic eval (Gong et al., 2018) | 40.85 | 39.14 | 35M | [FRAGE: Frequency-Agnostic Word Representation](https://arxiv.org/abs/1809.06858) | [Official](https://github.com/ChengyueGongR/Frequency-Agnostic) |
@@ -152,7 +150,6 @@ The vocabulary of the words in the character-level dataset is limited to 10 000 
 
 | Model           | Bit per Character (BPC) |  Number of params | Paper / Source | Code |
 | ---------------- | :-----: | :-----: | -------------- | ---- |
-| TCAN + dynamic eval (Hao et al., 2020) | 1.043 | 4.3M | [Temporal Convolutional Attention-based Network For Sequence Modeling](http://arxiv.org/abs/2002.12530) | [Official](https://github.com/haohy/TCAN) |
 | Mogrifier LSTM + dynamic eval (Melis et al., 2019)| 1.083 | 24M | [Mogrifier LSTM](http://arxiv.org/abs/1909.01792) | [Official](https://github.com/deepmind/lamb) |
 | Mogrifier LSTM (Melis et al., 2019)               | 1.120 | 24M | [Mogrifier LSTM](http://arxiv.org/abs/1909.01792) | [Official](https://github.com/deepmind/lamb) |
 | Trellis Network (Bai et al., 2019) | 1.159 | 13.4M | [Trellis Networks for Sequence Modeling](https://openreview.net/pdf?id=HyeVtoRqtQ) | [Official](https://github.com/locuslab/trellisnet)
