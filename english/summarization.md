@@ -65,9 +65,9 @@ The first table covers Extractive Models, while the second covers abstractive ap
 | Model           | ROUGE-1 | ROUGE-2 | ROUGE-L | METEOR | Paper / Source | Code |
 | --------------- | :-----: | :-----: | :-----: | :----: | -------------- | ---- |
 | SemSim (Yoon et al., 2020) | 44.72 | 21.46 | 41.53 | - | [Learning by Semantic Similarity Makes Abstractive Summarization Better](https://arxiv.org/pdf/2002.07767v1.pdf) | [Official](https://github.com/icml-2020-nlp/semsim) |
+| ProphetNet (Yan, Qi, Gong, Liu et al., 2020) | 44.20 | 21.17 | 41.30 | - | [ProphetNet: Predicting Future N-gram for Sequence-to-Sequence Pre-training](https://arxiv.org/pdf/2001.04063.pdf) | [Official](https://github.com/microsoft/ProphetNet) |
 | PEGASUS (Zhang et al., 2019) | 44.17 | 21.47 | 41.11 | - | [PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization](https://arxiv.org/pdf/1912.08777.pdf) | - |
 | BART (Lewis et al., 2019) | 44.16 | 21.28 | 40.90 | - | [BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension](https://arxiv.org/pdf/1910.13461.pdf) | [Official](https://github.com/pytorch/fairseq/tree/master/examples/bart) |
-| ProphetNet (Yan, Qi, Gong, Liu et al., 2020) | 43.68 | 20.64 | 40.72 | - | [ProphetNet: Predicting Future N-gram for Sequence-to-Sequence Pre-training](https://arxiv.org/pdf/2001.04063.pdf) | - |
 | T5 (Raffel et al., 2019) | 43.52 | 21.55 | 40.69 | - | [Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer](https://arxiv.org/pdf/1910.10683.pdf) | [Official](https://github.com/google-research/text-to-text-transfer-transformer) |
 | UniLM (Dong et al., 2019) | 43.33 | 20.21 | 40.51 | - | [Unified Language Model Pre-training for Natural Language Understanding and Generation](https://arxiv.org/pdf/1905.03197.pdf) | [Official](https://github.com/microsoft/unilm) |
 | CNN-2sent-hieco-RBM (Zhang et al., 2019) | 42.04 | 19.77 | 39.42 | - |[Abstract Text Summarization with a Convolutional Seq2Seq Model](https://www.mdpi.com/2076-3417/9/8/1665/pdf) | |
@@ -97,7 +97,7 @@ Below Results are ranking by ROUGE-2 Scores.
 | Model | ROUGE-1 | ROUGE-2* | ROUGE-L | Paper / Source | Code |
 | --------------- | :-----: | :-----: | :-----: | -------------- | ---- |
 | ControlCopying (Song et al., 2020) | 39.08 | 20.47 | 36.69 | [Controlling the Amount of Verbatim Copying in Abstractive Summarizatio](https://arxiv.org/pdf/1911.10390.pdf) | [Official](https://github.com/ucfnlp/control-over-copying) |
-| ProphetNet (Yan, Qi, Gong, Liu et al., 2020) | 39.23 | 20.36 | 36.57 | [ProphetNet: Predicting Future N-gram for Sequence-to-Sequence Pre-training](https://arxiv.org/pdf/2001.04063.pdf) | - |
+| ProphetNet (Yan, Qi, Gong, Liu et al., 2020) | 39.51 | 20.42 | 36.69 | [ProphetNet: Predicting Future N-gram for Sequence-to-Sequence Pre-training](https://arxiv.org/pdf/2001.04063.pdf) | [Official](https://github.com/microsoft/ProphetNet) |
 | UniLM (Dong et al., 2019) | 38.90 | 20.05 | 36.00 | [Unified Language Model Pre-training for Natural Language Understanding and Generation](https://arxiv.org/pdf/1905.03197.pdf) | [Official](https://github.com/microsoft/unilm) |
 | PEGASUS (Zhang et al., 2019) | 39.12 | 19.86 | 36.24 | [PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization](https://arxiv.org/pdf/1912.08777.pdf) | - |
 | BiSET (Wang et al., 2019) | 39.11 | 19.78 | 36.87 | [BiSET: Bi-directional Selective Encoding with Template for Abstractive Summarization](https://www.aclweb.org/anthology/P19-1207) | [Official](https://github.com/InitialBug/BiSET) |
