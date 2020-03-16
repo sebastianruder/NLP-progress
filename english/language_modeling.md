@@ -67,6 +67,7 @@ consists of around 2 million words extracted from Wikipedia articles.
 
 | Model           | Validation perplexity | Test perplexity | Number of params | Paper / Source | Code |
 | ------------- | :---:| :---:| :---:| -------- | --- |
+| Routing Transformer (Roy et al., 2020)* ***arxiv preprint*** | - | 15.8 | - | [Efficient Content-Based Sparse Attention with Routing Transformers](https://arxiv.org/pdf/2003.05997.pdf) | - |
 | Transformer-XL + RMS dynamic eval (Krause et al., 2019)* ***arxiv preprint*** | 15.8 | 16.4 | 257M | [Dynamic Evaluation of Transformer Language Models](https://arxiv.org/pdf/1904.08378.pdf) | [Official](https://github.com/benkrause/dynamiceval-transformer) |
 | Compressive Transformer (Rae et al., 2019)* ***arxiv preprint*** | 16.0 | 17.1(16.1 with basic dynamic evaluation) | ~257M | [Compressive Transformers for Long-Range Sequence Modelling](https://arxiv.org/pdf/1911.05507.pdf) | - |
 | Transformer-XL Large (Dai et al., 2018) ***under review*** | 17.7 | 18.3 | 257M | [Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context](https://arxiv.org/pdf/1901.02860.pdf) | [Official](https://github.com/kimiyoung/transformer-xl) |
