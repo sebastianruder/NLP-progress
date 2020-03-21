@@ -72,4 +72,6 @@ The test set is composed of triplets, each used to create two test instances, on
 
 [KRLPapers](https://github.com/thunlp/KRLPapers) is a must-read paper list for relational learning.
 
+[datasets-knowledge-embedding](https://github.com/simonepri/datasets-knowledge-embedding) is a collection of common datasets used in knowledge embedding.
+
 [Back to README](../README.md)
