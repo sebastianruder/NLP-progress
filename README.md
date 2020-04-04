@@ -85,6 +85,11 @@
 
 - [Machine Translation](nepali/nepali.md#machine-translation)
 
+### Bengali
+- [Part-of-speech Tagging](bengali/part_of_speech_tagging.md)
+
+
+
 This document aims to track the progress in Natural Language Processing (NLP) and give an overview
 of the state-of-the-art (SOTA) across the most common NLP tasks and their corresponding datasets.
 
