@@ -1,15 +1,3 @@
----
-layout: post
-title: "Korean Dataset "
-excerpt: "Github Blog Tuto"
-
-categories:
-  - NLP
-tags:
-  - NLP, Dataset
-
-last_modified_at : 2020-04-06T00:00:00
----
 ### Naver sentiment movie corpus
 
 The [NSMC dataset](https://ai.stanford.edu/~ang/papers/acl11-WordVectorsSentimentAnalysis.pdf) is a is a movie review dataset in the Korean language. Reviews were scraped from [Naver Movies](http://movie.naver.com/movie/point/af/list.nhn). The dataset construction is based on the method noted in [Large movie review dataset](http://ai.stanford.edu/~amaas/data/sentiment/) from Maas et al., 2011.
