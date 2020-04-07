@@ -39,19 +39,20 @@
 
 | Model           | BLEU  |  Paper | Code | 
 | ------------- | :-----:| --- | --- | 
-| BPE-Dropout (2019) | 33.3 | [BPE-Dropout: Simple and Effective Subword Regularization](https://arxiv.org/abs/1910.13267) | | 
-| Nguyen and Salazar (2019) | 32.8 | [Transformers without Tears: Improving the Normalization of Self-Attention](https://arxiv.org/abs/1910.05895) | [Official](https://github.com/tnq177/transformers_without_tears) | 
-| Stanford (2015) |26.4 | [Stanford Neural Machine Translation Systems for Spoken Language Domains](https://nlp.stanford.edu/pubs/luong-manning-iwslt15.pdf) | | 
-
+| Stanford (2015) | 26.4 | [Stanford Neural Machine Translation Systems for Spoken Language Domains](https://nlp.stanford.edu/pubs/luong-manning-iwslt15.pdf) | | 
 
 ---
 `tst2013` is used for test
 
 | Model           | BLEU  |  Paper | Code | 
 | ------------- | :-----:| --- | --- | 
-| CVT (2018) | 29.6 | [Semi-Supervised Sequence Modeling with Cross-View Training](https://arxiv.org/abs/1809.08370) |  |
-| ELMo (2018) | 29.3 | [Deep contextualized word representations](http://aclweb.org/anthology/N18-1202)| | 
-| Transformer (2017) | 28.9 | [Attention is all you need](http://papers.nips.cc/paper/7181-attention-is-all-you-need) | [Link](https://github.com/duyvuleo/Transformer-DyNet) | 
+| Nguyen and Salazar (2019) | 32.8 | [Transformers without Tears: Improving the Normalization of Self-Attention](https://arxiv.org/abs/1910.05895) | [Official](https://github.com/tnq177/transformers_without_tears) | 
+| Provilkov et al. (2019) | 33.27 (uncased) | [BPE-Dropout: Simple and Effective Subword Regularization](https://arxiv.org/abs/1910.13267) | |
+| Xu et al. (2019) | 31.4 | [Understanding and Improving Layer Normalization](https://papers.nips.cc/paper/8689-understanding-and-improving-layer-normalization.pdf) | [Official](https://github.com/lancopku/AdaNorm) |
+| CVT (2018) | 29.6 (SST) | [Semi-Supervised Sequence Modeling with Cross-View Training](https://arxiv.org/abs/1809.08370) | |
+| ELMo (2018) | 29.3 (SST) | [Deep contextualized word representations](http://aclweb.org/anthology/N18-1202)| | 
+| Transformer (2017) | 28.9 | [Attention is all you need](http://papers.nips.cc/paper/7181-attention-is-all-you-need) | [Link](https://github.com/duyvuleo/Transformer-DyNet) |
+| Kudo (2018) | 28.5 | [Subword Regularization: Improving Neural Network Translation Models with Multiple Subword Candidates](https://arxiv.org/abs/1804.10959) | | 
 | Google (2017) | 26.1 | [Neural machine translation (seq2seq) tutorial](https://github.com/tensorflow/nmt)  | [Official](https://github.com/tensorflow/nmt) | 
 | Stanford (2015) |23.3 | [Stanford Neural Machine Translation Systems for Spoken Language Domains](https://nlp.stanford.edu/pubs/luong-manning-iwslt15.pdf) | | 
 
@@ -59,9 +60,12 @@
 
 #### Vietnamese-to-English
 
+`tst2013` is used for test
+
 | Model           | BLEU  |  Paper | Code | 
 | ------------- | :-----:| --- | --- | 
-| BPE-Dropout (2019) | 32.99 | [BPE-Dropout: Simple and Effective Subword Regularization](https://arxiv.org/abs/1910.13267) | | 
+| Provilkov et al. (2019) | 32.99 (uncased) | [BPE-Dropout: Simple and Effective Subword Regularization](https://arxiv.org/abs/1910.13267) | |
+| Kudo (2018) | 26.31 | [Subword Regularization: Improving Neural Network Translation Models with Multiple Subword Candidates](https://arxiv.org/abs/1804.10959) | | 
 
 
 ## Named entity recognition
