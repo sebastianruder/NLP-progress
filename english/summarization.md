@@ -171,11 +171,11 @@ This [dataset](https://zenodo.org/record/1168855) contains 3 Million pairs of co
 | Unified VAE + PGN (Choi et al., 2019) | 19      | 4       | 15      | [VAE-PGN based Abstractive Model in Multi-stage Architecture for Text Summarization](https://www.aclweb.org/anthology/W19-8664/) |      |
 
 ## Webis-Snippet-20 Corpus
-This [dataset](https://zenodo.org/record/3653834) contains approximately 10 Million (webpage content, abstractive snippet) pairs and 3.5 Million (query term, webpage content, abstractive snippet) triples for the novel task of (query-biased) abstractive snippet generation of web pages. The corpus is compiled from ClueWeb09, ClueWeb12 and the DMOZ Open Directory Project. For more details, refer to [Abstractive Snippet Generation](https://arxiv.org/abs/2002.10782)
+This [dataset](https://webis.de/data/webis-snippet-20.html) contains approximately 10 Million (webpage content, abstractive snippet) pairs and 3.5 Million (query term, webpage content, abstractive snippet) triples for the novel task of (query-biased) abstractive snippet generation of web pages. The corpus is compiled from ClueWeb09, ClueWeb12 and the DMOZ Open Directory Project. For more details, refer to [Abstractive Snippet Generation](https://arxiv.org/abs/2002.10782)
 
-| Model                                             | ROUGE-1 | ROUGE-2 | ROUGE-L | Paper/Source                                                       | Code |
-|---------------------------------------------------|---------|---------|---------|--------------------------------------------------------------------|------|
-| Anchor-context + Query biased (Chen et al., 2020) | 25.7    | 5.2     | 20.1    | [Abstractive Snippet Generation](https://arxiv.org/abs/2002.10782) |      |
+| Model                                             | ROUGE-1 | ROUGE-2 | ROUGE-L | Usefulness | Paper/Source                                                       | Code |
+|---------------------------------------------------|---------|---------|---------|------------|-------------------------------------------------------|------|
+| Anchor-context + Query biased (Chen et al., 2020) | 25.7    | 5.2     | 20.1    | 66.18 | [Abstractive Snippet Generation](https://arxiv.org/abs/2002.10782) |      |
 
 ## Sentence Compression
 
