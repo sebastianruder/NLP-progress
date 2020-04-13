@@ -118,6 +118,8 @@ Within these 100 million bytes are 205 unique tokens.
 | Compressive Transformer (Rae et al., 2019) ***arxiv preprint*** | 0.97 | - | [Compressive Transformers for Long-Range Sequence Modelling](https://arxiv.org/pdf/1911.05507.pdf) | - |
 | Mogrifier LSTM + dynamic eval (Melis et al., 2019)            | 0.988 | 96M | [Mogrifier LSTM](http://arxiv.org/abs/1909.01792) | [Official](https://github.com/deepmind/lamb) |
 | 24-layer Transformer-XL (Dai et al., 2018) ***under review*** | 0.99 | 277M | [Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context](https://arxiv.org/pdf/1901.02860.pdf) | [Official](https://github.com/kimiyoung/transformer-xl) |
+| Longformer Large (Beltagy, Peters, and Cohan; 2020) | 0.99 | 102M | [Longformer: The Long-Document Transformer](https://arxiv.org/pdf/2004.05150.pdf) | [Official](https://github.com/allenai/longformer) |
+| Longformer Small (Beltagy, Peters, and Cohan; 2020) | 1.00 | 41M | [Longformer: The Long-Document Transformer](https://arxiv.org/pdf/2004.05150.pdf) | [Official](https://github.com/allenai/longformer) |
 | 18-layer Transformer-XL (Dai et al., 2018) ***under review*** | 1.03 | 88M | [Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context](https://arxiv.org/pdf/1901.02860.pdf) | [Official](https://github.com/kimiyoung/transformer-xl) |
 | 12-layer Transformer-XL (Dai et al., 2018) ***under review*** | 1.06 | 41M | [Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context](https://arxiv.org/pdf/1901.02860.pdf) | [Official](https://github.com/kimiyoung/transformer-xl) |
 | 64-layer Character Transformer Model (Al-Rfou et al., 2018) | 1.06 | 235M | [Character-Level Language Modeling with Deeper Self-Attention](https://arxiv.org/abs/1808.04444) ||
@@ -137,6 +139,7 @@ Within these 100 million bytes are 205 unique tokens.
 | ---------------- | :-----: | :-----: | -------------- | ---- |
 | Transformer-XL + RMS dynamic eval (Krause et al., 2019)* ***arxiv preprint*** | 1.038 | 277M | [Dynamic Evaluation of Transformer Language Models](https://arxiv.org/pdf/1904.08378.pdf) | [Official](https://github.com/benkrause/dynamiceval-transformer) |
 | Transformer-XL Large (Dai et al., 2018) ***under review*** | 1.08 | 277M | [Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context](https://arxiv.org/pdf/1901.02860.pdf) | [Official](https://github.com/kimiyoung/transformer-xl) |
+| Longformer Small (Beltagy, Peters, and Cohan; 2020) | 1.10 | 41M | [Longformer: The Long-Document Transformer](https://arxiv.org/pdf/2004.05150.pdf) | [Official](https://github.com/allenai/longformer) |
 | 64-layer Character Transformer Model (Al-Rfou et al., 2018) | 1.13 | 235M | [Character-Level Language Modeling with Deeper Self-Attention](https://arxiv.org/abs/1808.04444) ||
 | 12-layer Character Transformer Model (Al-Rfou et al., 2018) | 1.18 | 44M | [Character-Level Language Modeling with Deeper Self-Attention](https://arxiv.org/abs/1808.04444) ||
 | mLSTM + dynamic eval (Krause et al., 2017)* | 1.19 | 45M | [Dynamic Evaluation of Neural Sequence Models](https://arxiv.org/abs/1709.07432) | [Official](https://github.com/benkrause/dynamic-evaluation) |
