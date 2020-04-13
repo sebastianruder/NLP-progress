@@ -45,4 +45,34 @@ The MOSI dataset ([Zadeh et al., 2016](https://arxiv.org/pdf/1606.06259.pdf)) is
 | bc-LSTM (Poria et al., 2017) | 80.3%  | [Context-Dependent Sentiment Analysis in User-Generated Videos](http://sentic.net/context-dependent-sentiment-analysis-in-user-generated-videos.pdf) |
 | MARN (Zadeh et al., 2018) | 77.1%  | [Multi-attention Recurrent Network for Human Communication Comprehension](https://arxiv.org/pdf/1802.00923.pdf) |
 
+## Visual Question Answering
+
+### VQAv2 
+
+- [Website](https://cs.stanford.edu/people/dorarad/gqa/)
+- [Challenge](https://cs.stanford.edu/people/dorarad/gqa/challenge.html)
+
+
+### GQA - Visual Reasoning in the Real World 
+
+- [Website](https://cs.stanford.edu/people/dorarad/gqa/)
+- [Challenge](https://cs.stanford.edu/people/dorarad/gqa/challenge.html)
+
+### TextVQA
+
+- [Website](https://textvqa.org/)
+- [Challenge](https://textvqa.org/challenge)
+
+
+### VizWiz 
+
+- [Website](https://vizwiz.org/tasks-and-datasets/vqa/)
+- [Challenge](https://vizwiz.org/tasks-and-datasets/vqa/)
+
+
+## Other multimodal resources
+
+- [awesome-multimodal-ml](https://github.com/pliang279/awesome-multimodal-ml)
+- [awesome-vision-and-language-papers](https://github.com/sangminwoo/awesome-vision-and-language-papers)
+
 [Go back to the README](../README.md)
