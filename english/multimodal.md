@@ -52,16 +52,30 @@ The MOSI dataset ([Zadeh et al., 2016](https://arxiv.org/pdf/1606.06259.pdf)) is
 - [Website](https://cs.stanford.edu/people/dorarad/gqa/)
 - [Challenge](https://cs.stanford.edu/people/dorarad/gqa/challenge.html)
 
+| Model           | Accuracy  |  Paper / Source | Comments | Conference |
+| ------------- | :-----:| --- | ---| --- |
+| LXMERT (Tan et al., 2019) | 72.54 | [LXMERT: Learning Cross-Modality Encoder Representations from Transformers](https://github.com/airsplay/lxmert) | Published SOTA | EMNLP'19 |
+| UNITER (Chen et al., 2019) | 73.4 | [UNITER: LEARNING UNIVERSAL IMAGE-TEXT REPRESENTATIONS](https://arxiv.org/pdf/1909.11740.pdf) | Unpublished (ICLR'20 submission) | - |
+
 
 ### GQA - Visual Reasoning in the Real World 
 
 - [Website](https://cs.stanford.edu/people/dorarad/gqa/)
 - [Challenge](https://cs.stanford.edu/people/dorarad/gqa/challenge.html)
 
+| Model           | Accuracy  |  Paper / Source | Comments | Conference |
+| ------------- | :-----:| --- | ---| --- |
+| LXMERT (Tan et al., 2019) | 60.3 | [LXMERT: Learning Cross-Modality Encoder Representations from Transformers](https://github.com/airsplay/lxmert) | Published SOTA | EMNLP'19 |
+| KaKao Brain | 73.24 | [GQA Challenge](https://drive.google.com/file/d/1CtFk0ldbN5w2qhwvfKrNzAFEj-I9Tjgy/view) | Challenge Results |  |
+
 ### TextVQA
 
 - [Website](https://textvqa.org/)
 - [Challenge](https://textvqa.org/challenge)
+
+| Model           | Accuracy  |  Paper / Source |
+| ------------- | :-----:| --- |
+| M4C (Hu et al., 2020) | 40.46 | [Iterative Answer Prediction with Pointer-Augmented Multimodal Transformers for TextVQA](https://arxiv.org/pdf/1911.06258.pdf) |
 
 
 ### VizWiz 
