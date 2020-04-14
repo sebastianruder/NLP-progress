@@ -73,16 +73,20 @@ The MOSI dataset ([Zadeh et al., 2016](https://arxiv.org/pdf/1606.06259.pdf)) is
 - [Website](https://textvqa.org/)
 - [Challenge](https://textvqa.org/challenge)
 
-| Model           | Accuracy  |  Paper / Source |
-| ------------- | :-----:| --- |
-| M4C (Hu et al., 2020) | 40.46 | [Iterative Answer Prediction with Pointer-Augmented Multimodal Transformers for TextVQA](https://arxiv.org/pdf/1911.06258.pdf) |
+| Model           | Accuracy  |  Paper / Source | Comments | Conference |
+| ------------- | :-----:| --- |---| --- |
+| M4C (Hu et al., 2020) | 40.46 | [Iterative Answer Prediction with Pointer-Augmented Multimodal Transformers for TextVQA](https://arxiv.org/pdf/1911.06258.pdf) | Baseline by organizers | |
 
 
-### VizWiz 
+### VizWiz dataset
 
 - [Website](https://vizwiz.org/tasks-and-datasets/vqa/)
 - [Challenge](https://vizwiz.org/tasks-and-datasets/vqa/)
 
+| Model           | Accuracy  |  Paper / Source | Comments | Conference |
+| ------------- | :-----:| --- | ---| --- |
+| BUTD Vizwiz (Gurari et al., 2018) | 46.9 | [VizWiz Grand Challenge: Answering Visual Questions from Blind People](https://arxiv.org/abs/1802.08218) | Published SOTA | CVPR'18 |
+| Pythia | 54.22 | [FB's Pythia repository](https://github.com/facebookresearch/pythia/blob/master/docs/source/tutorials/pretrained_models.md) | Unofficial SOTA |  |
 
 ## Other multimodal resources
 
