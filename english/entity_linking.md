@@ -55,9 +55,9 @@ The [AIDA CoNLL-YAGO][AIDACoNLLYAGO] Dataset by [[Hoffart]](http://www.aclweb.or
    
 |  Paper / Source | Micro-F1-strong | Macro-F1-strong | Paper / Source | Code | 
 | ------------- | :-----:| :----: | :----: | --- |
-| Kolitsas et al. (2018) | 86.6 | 89.4 | [End-to-End Neural Entity Linking](https://arxiv.org/pdf/1808.07699.pdf) | [Official](https://github.com/dalab/end2end_neural_el) |
-| Piccinno et al. (2014) | 69.32 | 72.8 | [From TagME to WAT: a new entity annotator](https://dl.acm.org/citation.cfm?id=2634350) | |
-| Hoffart et al. (2011) | 68.8 | 72.4 | [Robust Disambiguation of Named Entities in Text](http://www.aclweb.org/anthology/D11-1072) | |
+| Kolitsas et al. (2018) | 82.6 | 82.4 | [End-to-End Neural Entity Linking](https://arxiv.org/pdf/1808.07699.pdf) | [Official](https://github.com/dalab/end2end_neural_el) |
+| Piccinno et al. (2014) | 70.8 | 73.0 | [From TagME to WAT: a new entity annotator](https://dl.acm.org/citation.cfm?id=2634350) | |
+| Hoffart et al. (2011) | 71.9 | 72.8 | [Robust Disambiguation of Named Entities in Text](http://www.aclweb.org/anthology/D11-1072) | |
 
 #### TAC KBP English Entity Linking Comprehensive and Evaluation Data 2010 
 
