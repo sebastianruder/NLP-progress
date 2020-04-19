@@ -133,6 +133,7 @@ The task of persinalized chit-chat dialogue generation is first proposed by [Per
 
 | Model           | F1 | Hits@1 | ppl | Paper / Source | Code |
 | -------------   | :---------: | :---------:| :--------: | ---------------| ------------- |
+| P^2 Bot (Liu et al. 2020) | 19.77 | 81.9 | 15.12 | [You Impress Me: Dialogue Generation via Mutual Persona Perception](https://arxiv.org/pdf/2004.05388.pdf) | [Code](https://github.com/SivilTaram/Persona-Dialogue-Generation) |
 | TransferTransfo (Thomas et al. 2019) | 19.09 | 82.1 | 17.51 | [TransferTransfo: A Transfer Learning Approach for Neural Network Based Conversational Agents](https://arxiv.org/pdf/1901.08149.pdf) | [Code](https://github.com/huggingface/transfer-learning-conv-ai) |
 | Lost In Conversation | 17.79 | - | 17.3 | [NIPS 2018 Workshop Presentation](http://convai.io/NeurIPSParticipantSlides.pptx) | [Code](https://github.com/atselousov/transformer_chatbot) |
 | Seq2Seq + Attention (Dzmitry et al. 2014) | 16.18 | 12.6 | 29.8 | [Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/pdf/1409.0473.pdf) | [Code](https://github.com/facebookresearch/ParlAI/tree/master/projects/convai2/baselines/seq2seq) |
