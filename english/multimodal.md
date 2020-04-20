@@ -54,10 +54,10 @@ Given an image and a natural language question about the image, the task is to p
 - [Website](https://visualqa.org)
 - [Challenge](https://visualqa.org/challenge.html)
 
-| Model           | Accuracy  |  Paper / Source | 
-| ------------- | :-----:| --- |
-| UNITER (Chen et al., 2019) | 73.4 | [UNITER: LEARNING UNIVERSAL IMAGE-TEXT REPRESENTATIONS](https://arxiv.org/pdf/1909.11740.pdf)
-| LXMERT (Tan et al., 2019) | 72.54 | [LXMERT: Learning Cross-Modality Encoder Representations from Transformers](https://arxiv.org/abs/1908.07490)
+| Model           | Accuracy  |  Paper / Source | Code |
+| ------------- | :-----:| --- | --- |
+| UNITER (Chen et al., 2019) | 73.4 | [UNITER: LEARNING UNIVERSAL IMAGE-TEXT REPRESENTATIONS](https://arxiv.org/pdf/1909.11740.pdf) | [Link](https://github.com/ChenRocks/UNITER) |
+| LXMERT (Tan et al., 2019) | 72.54 | [LXMERT: Learning Cross-Modality Encoder Representations from Transformers](https://arxiv.org/abs/1908.07490) | [Link](https://github.com/airsplay/lxmert) |
 
 ### GQA - Visual Reasoning in the Real World 
 
@@ -66,10 +66,10 @@ GQA focuses on real-world compositional reasoning.
 - [Website](https://cs.stanford.edu/people/dorarad/gqa/)
 - [Challenge](https://cs.stanford.edu/people/dorarad/gqa/challenge.html)
 
-| Model           | Accuracy  |  Paper / Source |
-| ------------- | :-----:| --- |
-| KaKao Brain | 73.24 | [GQA Challenge](https://drive.google.com/file/d/1CtFk0ldbN5w2qhwvfKrNzAFEj-I9Tjgy/view) |
-| LXMERT (Tan et al., 2019) | 60.3 | [LXMERT: Learning Cross-Modality Encoder Representations from Transformers](https://arxiv.org/abs/1908.07490)
+| Model           | Accuracy  |  Paper / Source | Code |
+| ------------- | :-----:| --- | --- |
+| KaKao Brain | 73.24 | [GQA Challenge](https://drive.google.com/file/d/1CtFk0ldbN5w2qhwvfKrNzAFEj-I9Tjgy/view) | Unavailable |
+| LXMERT (Tan et al., 2019) | 60.3 | [LXMERT: Learning Cross-Modality Encoder Representations from Transformers](https://arxiv.org/abs/1908.07490) | [Link](https://github.com/airsplay/lxmert) |
 
 ### TextVQA
 
@@ -78,9 +78,9 @@ TextVQA requires models to read and reason about text in an image to answer ques
 - [Website](https://textvqa.org/)
 - [Challenge](https://textvqa.org/challenge)
 
-| Model           | Accuracy  |  Paper / Source |
-| ------------- | :-----:| --- |
-| M4C (Hu et al., 2020) | 40.46 | [Iterative Answer Prediction with Pointer-Augmented Multimodal Transformers for TextVQA](https://arxiv.org/pdf/1911.06258.pdf) |
+| Model           | Accuracy  |  Paper / Source | Code |
+| ------------- | :-----:| --- | --- |
+| M4C (Hu et al., 2020) | 40.46 | [Iterative Answer Prediction with Pointer-Augmented Multimodal Transformers for TextVQA](https://arxiv.org/pdf/1911.06258.pdf) | [Link](https://github.com/facebookresearch/pythia/tree/project/m4c/projects/M4C_Captioner) |
 
 
 ### VizWiz dataset
@@ -89,10 +89,10 @@ This task focuses on answering visual questions that originate from a real use c
 - [Website](https://vizwiz.org/tasks-and-datasets/vqa/)
 - [Challenge](https://vizwiz.org/tasks-and-datasets/vqa/)
 
-| Model           | Accuracy  |  Paper / Source |
-| ------------- | :-----:| --- |
-| Pythia | 54.22 | [FB's Pythia repository](https://github.com/facebookresearch/pythia/blob/master/docs/source/tutorials/pretrained_models.md) |
-| BUTD Vizwiz (Gurari et al., 2018) | 46.9 | [VizWiz Grand Challenge: Answering Visual Questions from Blind People](https://arxiv.org/abs/1802.08218) |
+| Model           | Accuracy  |  Paper / Source | Code |
+| ------------- | :-----:| --- | --- |
+| Pythia | 54.22 | [FB's Pythia repository](https://github.com/facebookresearch/pythia/blob/master/docs/source/tutorials/pretrained_models.md) | [Link](https://github.com/facebookresearch/pythia/blob/master/docs/source/tutorials/pretrained_models.md) |
+| BUTD Vizwiz (Gurari et al., 2018) | 46.9 | [VizWiz Grand Challenge: Answering Visual Questions from Blind People](https://arxiv.org/abs/1802.08218) | Unavailable |
 
 ## Other multimodal resources
 
