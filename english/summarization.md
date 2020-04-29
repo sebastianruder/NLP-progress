@@ -149,6 +149,7 @@ Similar to Gigaword, task 1 of [DUC 2004](https://duc.nist.gov/duc2004/) is a se
 
 | Model           | ROUGE-1 | ROUGE-2 | ROUGE-L | Paper / Source | Code |
 | --------------- | :-----: | :-----: | :-----: | -------------- | ---- |
+|Transformer + LRPE + PE + ALONE + RE-ranking (Takase and Kobayashi, 2020)| 32.57 | 11.63 | 28.24 | [All Word Embeddings from One Embedding](https://arxiv.org/abs/2004.12073) | [Official](https://github.com/takase/alone_seq2seq) |
 | Transformer + LRPE + PE + Re-ranking (Takase and Okazaki, 2019) | 32.29 | 11.49 | 28.03 | [Positional Encoding to Control Output Sequence Length](https://arxiv.org/abs/1904.07418) | [Official](https://github.com/takase/control-length) |
 | DRGD (Li et al., 2017) | 31.79 | 10.75 | 27.48 | [Deep Recurrent Generative Decoder for Abstractive Text Summarization](http://aclweb.org/anthology/D17-1222) | |
 | EndDec+WFE (Suzuki and Nagata, 2017) | 32.28 | 10.54 | 27.8 | [Cutting-off Redundant Repeating Generations for Neural Abstractive Summarization](http://aclweb.org/anthology/E17-2047) | |
