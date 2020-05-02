@@ -36,8 +36,10 @@ The main evaluation measure is F1-score.
 |GAS<sub>ext</sub> (Concatenation) | 72.2 | 70.5 | --* | 67.2 | 72.6 | [[5]](http://aclweb.org/anthology/P18-1230)  |
 |supWSD | 71.3 | 68.8 | 60.2 | 65.8 | 70.0 | [[6]](https://aclanthology.info/pdf/P/P10/P10-4014.pdf) [[11]](http://aclweb.org/anthology/D17-2018) |
 |supWSD<sub>emb</sub> | 72.7 | 70.6 | 63.1 | 66.8 | 71.8 | [[7]](http://www.aclweb.org/anthology/P16-1085) [[11]](http://aclweb.org/anthology/D17-2018) |
-|GlossBERT | 77.7 | 75.2 | 72.5 | 76.1 | 80.4 | [[13]](https://arxiv.org/pdf/1908.07245.pdf) |
-|SemCor+WNGC, hypernyms | 79.7 | 77.8 | 73.4 | 78.7 | 82.6 | [[14]](https://arxiv.org/abs/1905.05677) |
+|BERT (nearest neighbor) | 73.8 | 71.6 | 63.3 | 69.2 | 74.4 | [[13]](https://www.aclweb.org/anthology/D19-1533.pdf) [[code]](https://github.com/nusnlp/contextemb-wsd) |
+|BERT (linear projection) | 75.5 | 73.6 | 68.1 | 71.1 | 76.2 | [[13]](https://www.aclweb.org/anthology/D19-1533.pdf) [[code]](https://github.com/nusnlp/contextemb-wsd) |
+|GlossBERT | 77.7 | 75.2 | 72.5 | 76.1 | 80.4 | [[14]](https://arxiv.org/pdf/1908.07245.pdf) |
+|SemCor+WNGC, hypernyms | 79.7 | 77.8 | 73.4 | 78.7 | 82.6 | [[15]](https://arxiv.org/abs/1905.05677) |
 
 
 ### Knowledge-based:
@@ -45,10 +47,11 @@ The main evaluation measure is F1-score.
 | Model           | All | Senseval 2 |Senseval 3 |SemEval 2007 |SemEval 2013 |SemEval 2015 |  Paper / Source |
 | ------------- | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | --- |
 |WN 1st sense baseline | 65.2 | 66.8 | 66.2 | 55.2 | 63.0 | 67.8 | [[1]](http://aclweb.org/anthology/E/E17/E17-1010.pdf) |
-|Babelfy | 65.5 | 67.0 | 63.5 | 51.6 | 66.4 | **70.3** | [[8]](http://aclweb.org/anthology/Q14-1019) |
+|Babelfy | 65.5 | 67.0 | 63.5 | 51.6 | 66.4 | 70.3 | [[8]](http://aclweb.org/anthology/Q14-1019) |
 |UKB<sub>ppr_w2w-nf</sub> | 57.5 | 64.2 | 54.8 | 40.0 | 64.5 | 64.5 | [[9]](https://www.mitpressjournals.org/doi/full/10.1162/COLI_a_00164) [[12]](http://aclweb.org/anthology/W18-2505) |
-|UKB<sub>ppr_w2w</sub> | **67.3** | 68.8 | 66.1 | 53.0 | **68.8** | **70.3** | [[9]](https://www.mitpressjournals.org/doi/full/10.1162/COLI_a_00164) [[12]](http://aclweb.org/anthology/W18-2505) |
-|WSD-TM | 66.9 | **69.0** | **66.9** | **55.6** | 65.3 | 69.6 | [[10]](https://arxiv.org/pdf/1801.01900.pdf) |
+|UKB<sub>ppr_w2w</sub> | 67.3 | 68.8 | 66.1 | 53.0 | **68.8** | 70.3 | [[9]](https://www.mitpressjournals.org/doi/full/10.1162/COLI_a_00164) [[12]](http://aclweb.org/anthology/W18-2505) |
+|WSD-TM | 66.9 | 69.0 | **66.9** | 55.6 | 65.3 | 69.6 | [[10]](https://arxiv.org/pdf/1801.01900.pdf) |
+|KEF | **68.0** | **69.6** | 66.1 | **56.9** | 68.4 | **72.3** | [[16]](https://doi.org/10.1016/j.knosys.2019.105030) [[code]](https://github.com/lwmlyy/Knowledge-based-WSD)|
 
 Note: 'All' is the concatenation of all datasets, as described in [10] and [12]. The scores of [6,7] and [9] are not taken from the original papers but from the results of the implementations of [11] and [12], respectively.
 
@@ -76,9 +79,30 @@ Note: 'All' is the concatenation of all datasets, as described in [10] and [12].
 
 [12] [The risk of sub-optimal use of Open Source NLP Software: UKB is inadvertently state-of-the-art in knowledge-based WSD](http://aclweb.org/anthology/W18-2505)
 
-[13] [GlossBERT: BERT for Word Sense Disambiguation with Gloss Knowledge](https://arxiv.org/pdf/1908.07245.pdf)
+[13] [Improved Word Sense Disambiguation Using Pre-Trained Contextualized Word Representations](https://www.aclweb.org/anthology/D19-1533.pdf)
 
-[14] [Sense Vocabulary Compression through the Semantic Knowledge of WordNet for Neural Word Sense Disambiguation](https://arxiv.org/abs/1905.05677)
+[14] [GlossBERT: BERT for Word Sense Disambiguation with Gloss Knowledge](https://arxiv.org/pdf/1908.07245.pdf)
+
+[15] [Sense Vocabulary Compression through the Semantic Knowledge of WordNet for Neural Word Sense Disambiguation](https://arxiv.org/abs/1905.05677)
+
+[16] [Word Sense Disambiguation: A Comprehensive Knowledge Exploitation Framework](https://doi.org/10.1016/j.knosys.2019.105030)
+
+
+## WSD Lexical Sample task:
+
+Above task is called All-words WSD because the systems attempt to disambiguate all of the words in a document, while there is another task which is called 
+Lexical Sample task. In this task a number of words are selected and the system should only disambiguate the occurrences of these words in a test set. 
+Iaccobacci et, al. (2016) provide the state-of-the-art results until 2016 [1]. Main tasks include Senseval 2, Senseval 3  and SemEval 2007. Evaluation metrics are as same as All words task. 
+
+### Lexical Sample results:
+
+| Model           | Senseval 2  |Senseval 3  |SemEval 2007 | Paper / Source |
+| ------------- | :-----: | :-----: | :-----: | --- |
+|IMSE + heuristics | 71.4 | 76.2  | - | [[Preprint]](http://cv.znu.ac.ir/afsharchim/pub/JofIFS2019-2.pdf) [[2]](https://content.iospress.com/articles/journal-of-intelligent-and-fuzzy-systems/ifs182868) |
+|IMS + Word2vec | 69.9 | 75.2  | 89.4 | [[1]](http://www.aclweb.org/anthology/P16-1085) |
+|AutoExtend | 66.5 | 73.6 | − | [[3]](https://arxiv.org/abs/1507.01127) [[4]](https://www.mitpressjournals.org/doi/abs/10.1162/COLI_a_00294)|
+|Taghipour and Ng | 66.2 | 73.4 | − | [[4]](https://www.aclweb.org/anthology/N15-1035.pdf) |
+|IMS | 65.3 | 72.9 | 87.9 | [[6]](https://www.aclweb.org/anthology/P10-4014.pdf) |
 
 ## Word Sense Induction
 

@@ -50,8 +50,10 @@ The first table covers Extractive Models, while the second covers abstractive ap
 
 | Model           | ROUGE-1 | ROUGE-2 | ROUGE-L | METEOR | Paper / Source | Code |
 | --------------- | :-----: | :-----: | :-----: | :----: | -------------- | ---- |
+| MatchSum (Zhong et al., 2020) | 44.41 | 20.86 | 40.55 | - | [Extractive Summarization as Text Matching](https://arxiv.org/abs/2004.08795) | [Official](https://github.com/maszhongming/MatchSum) |
 | BertSumExt (Liu and Lapata 2019) | 43.85 | 20.34 | 39.90 | - | [Text Summarization with Pretrained Encoders](https://arxiv.org/abs/1908.08345) |[Official](https://github.com/nlpyang/PreSumm) | 
 | BERT-ext + RL (Bae et al., 2019) | 42.76 | 19.87 | 39.11 | - | [Summary Level Training of Sentence Rewriting for Abstractive Summarization](https://arxiv.org/abs/1909.08752) | |
+| PNBERT (Zhong et al., 2019) | 42.69 | 19.60 | 38.85 | - | [Searching for Effective Neural Extractive Summarization: What Works and What's Next](https://arxiv.org/abs/1907.03491) | [Official](https://github.com/maszhongming/Effective_Extractive_Summarization) |
 | HIBERT (Zhang et al., 2019) | 42.37 | 19.95 | 38.83 | - | [HIBERT: Document Level Pre-training of Hierarchical Bidirectional Transformers for Document Summarization](https://arxiv.org/abs/1905.06566) | |
 | NeuSUM (Zhou et al., 2018) | 41.59 | 19.01 | 37.98 | - | [Neural Document Summarization by Jointly Learning to Score and Select Sentences](http://aclweb.org/anthology/P18-1061) | [Official](https://github.com/magic282/NeuSum) |
 | Latent (Zhang et al., 2018) | 41.05 | 18.77 | 37.54 | - | [Neural Latent Extractive Document Summarization](http://aclweb.org/anthology/D18-1088) | | 
@@ -63,7 +65,11 @@ The first table covers Extractive Models, while the second covers abstractive ap
 
 | Model           | ROUGE-1 | ROUGE-2 | ROUGE-L | METEOR | Paper / Source | Code |
 | --------------- | :-----: | :-----: | :-----: | :----: | -------------- | ---- |
-| HierNSE factoring (Results are on factored data) | 45.58 | 26.81 | 41.17 | - | [Read, Highlight and Summarize: A Hierarchical Neural Semantic Encoder-based Approach](https://arxiv.org/pdf/1910.03177.pdf) | [Official](https://github.com/rajeev595/RHS_HierNSE) |
+| ProphetNet (Yan, Qi, Gong, Liu et al., 2020) | 44.20 | 21.17 | 41.30 | - | [ProphetNet: Predicting Future N-gram for Sequence-to-Sequence Pre-training](https://arxiv.org/pdf/2001.04063.pdf) | [Official](https://github.com/microsoft/ProphetNet) |
+| PEGASUS (Zhang et al., 2019) | 44.17 | 21.47 | 41.11 | - | [PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization](https://arxiv.org/pdf/1912.08777.pdf) | - |
+| BART (Lewis et al., 2019) | 44.16 | 21.28 | 40.90 | - | [BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension](https://arxiv.org/pdf/1910.13461.pdf) | [Official](https://github.com/pytorch/fairseq/tree/master/examples/bart) |
+| T5 (Raffel et al., 2019) | 43.52 | 21.55 | 40.69 | - | [Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer](https://arxiv.org/pdf/1910.10683.pdf) | [Official](https://github.com/google-research/text-to-text-transfer-transformer) |
+| UniLM (Dong et al., 2019) | 43.33 | 20.21 | 40.51 | - | [Unified Language Model Pre-training for Natural Language Understanding and Generation](https://arxiv.org/pdf/1905.03197.pdf) | [Official](https://github.com/microsoft/unilm) |
 | CNN-2sent-hieco-RBM (Zhang et al., 2019) | 42.04 | 19.77 | 39.42 | - |[Abstract Text Summarization with a Convolutional Seq2Seq Model](https://www.mdpi.com/2076-3417/9/8/1665/pdf) | |
 | BertSumExtAbs (Liu and Lapata 2019) | 42.13 | 19.60 | 39.18 | - | [Text Summarization with Pretrained Encoders](https://arxiv.org/abs/1908.08345) |[Official](https://github.com/nlpyang/PreSumm) |
 | BERT-ext + abs + RL + rerank (Bae et al., 2019) | 41.90 | 19.08 | 39.64 | - | [Summary Level Training of Sentence Rewriting for Abstractive Summarization](https://arxiv.org/abs/1909.08752) | |
@@ -81,36 +87,61 @@ The first table covers Extractive Models, while the second covers abstractive ap
 | Pointer + Coverage + EntailmentGen + QuestionGen (Guo et al., 2018) | 39.81 | 17.64 | 36.54 | 18.54 | [Soft Layer-Specific Multi-Task Summarization with Entailment and Question Generation](http://aclweb.org/anthology/P18-1064) | |
 | ML+RL ROUGE+Novel, with LM (Kryscinski et al., 2018) | 40.19 | 17.38 | 37.52 | - | [Improving Abstraction in Text Summarization](http://aclweb.org/anthology/D18-1207) | |
 | Pointer-generator + coverage (See et al., 2017) | 39.53 | 17.28 | 36.38 | 18.72 | [Get To The Point: Summarization with Pointer-Generator Networks](http://aclweb.org/anthology/P17-1099) | [Official](https://github.com/abisee/pointer-generator) |
-| Hier-NSE Self-Critical | 39.42 | 16.46 | 36.93 | - | [Read, Highlight and Summarize: A Hierarchical Neural Semantic Encoder-based Approach](https://arxiv.org/pdf/1910.03177.pdf) | [Official](https://github.com/rajeev595/RHS_HierNSE) |
-
-
 
 ### Gigaword
 
 The Gigaword summarization dataset has been first used by [Rush et al., 2015](https://www.aclweb.org/anthology/D/D15/D15-1044.pdf) and represents a sentence summarization / headline generation task with very short input documents (31.4 tokens) and summaries (8.3 tokens). It contains 3.8M training, 189k development and 1951 test instances. Models are evaluated with ROUGE-1, ROUGE-2 and ROUGE-L using full-length F1-scores.
 
-| Model           | ROUGE-1 | ROUGE-2 | ROUGE-L | Paper / Source | Code |
+Below Results are ranking by ROUGE-2 Scores.
+
+| Model | ROUGE-1 | ROUGE-2* | ROUGE-L | Paper / Source | Code |
 | --------------- | :-----: | :-----: | :-----: | -------------- | ---- |
+| ControlCopying (Song et al., 2020) | 39.08 | 20.47 | 36.69 | [Controlling the Amount of Verbatim Copying in Abstractive Summarizatio](https://arxiv.org/pdf/1911.10390.pdf) | [Official](https://github.com/ucfnlp/control-over-copying) |
+| ProphetNet (Yan, Qi, Gong, Liu et al., 2020) | 39.51 | 20.42 | 36.69 | [ProphetNet: Predicting Future N-gram for Sequence-to-Sequence Pre-training](https://arxiv.org/pdf/2001.04063.pdf) | [Official](https://github.com/microsoft/ProphetNet) |
+| UniLM (Dong et al., 2019) | 38.90 | 20.05 | 36.00 | [Unified Language Model Pre-training for Natural Language Understanding and Generation](https://arxiv.org/pdf/1905.03197.pdf) | [Official](https://github.com/microsoft/unilm) |
+| PEGASUS (Zhang et al., 2019) | 39.12 | 19.86 | 36.24 | [PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization](https://arxiv.org/pdf/1912.08777.pdf) | - |
 | BiSET (Wang et al., 2019) | 39.11 | 19.78 | 36.87 | [BiSET: Bi-directional Selective Encoding with Template for Abstractive Summarization](https://www.aclweb.org/anthology/P19-1207) | [Official](https://github.com/InitialBug/BiSET) |
 | MASS (Song et al., 2019) | 38.73 | 19.71 | 35.96 | [MASS: Masked Sequence to Sequence Pre-training for Language Generation](https://arxiv.org/pdf/1905.02450v5.pdf) | [Official](https://github.com/microsoft/MASS) |
-| CNN-2sent-hieco-RBM (Zhang et al., 2019) | 37.95 | 18.64 | 35.11 | [Abstract Text Summarization with a Convolutional Seq2Seq Model](https://www.mdpi.com/2076-3417/9/8/1665/pdf) | | |
 | Re^3 Sum (Cao et al., 2018) | 37.04 | 19.03 | 34.46 | [Retrieve, Rerank and Rewrite: Soft Template Based Neural Summarization](http://aclweb.org/anthology/P18-1015) | |
-| FTSum_g (Cao et al., 2018) | 37.27 | 17.65 | 34.24 | [Faithful to the Original: Fact Aware Neural Abstractive Summarization](https://arxiv.org/pdf/1711.04434.pdf) | |
-| Seq2seq + E2T_cnn (Amplayo et al., 2018) | 37.04 | 16.66 | 34.93 | [Entity Commonsense Representation for Neural Abstractive Summarization](http://aclweb.org/anthology/N18-1064) | |
+| JointParsing (Song el at., 2020) | 36.61 | 18.85 | 34.33 | [Joint Parsing and Generation for Abstractive Summarization](https://arxiv.org/pdf/1911.10389.pdf) | [Official](https://github.com/KaiQiangSong/joint_parse_summ) |
+| CNN-2sent-hieco-RBM (Zhang et al., 2019) | 37.95 | 18.64 | 35.11 | [Abstract Text Summarization with a Convolutional Seq2Seq Model](https://www.mdpi.com/2076-3417/9/8/1665/pdf) | | |
 | Reinforced-Topic-ConvS2S (Wang et al., 2018) | 36.92 | 18.29 | 34.58 | [A Reinforced Topic-Aware Convolutional Sequence-to-Sequence Model for Abstractive Text Summarization](https://www.ijcai.org/proceedings/2018/0619.pdf) | |
 | CGU (Lin et al., 2018) | 36.3 | 18.0 | 33.8 | [Global Encoding for Abstractive Summarization](http://aclweb.org/anthology/P18-2027) | [Official](https://www.github.com/lancopku/Global-Encoding) |
+| Pointer + Coverage + EntailmentGen + QuestionGen (Guo et al., 2018) | 35.98 | 17.76 | 33.63 | [Soft Layer-Specific Multi-Task Summarization with Entailment and Question Generation](http://aclweb.org/anthology/P18-1064) | |
+| Struct+2Way+Word (Song et al., 2018) | 35.47 | 17.66 | 33.52 | [Structure-Infused Copy Mechanisms for Abstractive Summarization](http://aclweb.org/anthology/C18-1146) | [Official](https://github.com/KaiQiangSong/struct_infused_summ)|
+| FTSum_g (Cao et al., 2018) | 37.27 | 17.65 | 34.24 | [Faithful to the Original: Fact Aware Neural Abstractive Summarization](https://arxiv.org/pdf/1711.04434.pdf) | |
 | DRGD (Li et al., 2017) | 36.27 | 17.57 | 33.62 | [Deep Recurrent Generative Decoder for Abstractive Text Summarization](http://aclweb.org/anthology/D17-1222) | |
 | SEASS (Zhou et al., 2017) | 36.15 | 17.54 | 33.63 | [Selective Encoding for Abstractive Sentence Summarization](http://aclweb.org/anthology/P17-1101) | [Official](https://github.com/magic282/SEASS) |
 | EndDec+WFE (Suzuki and Nagata, 2017) | 36.30 | 17.31 | 33.88 | [Cutting-off Redundant Repeating Generations for Neural Abstractive Summarization](http://aclweb.org/anthology/E17-2047) | |
-| Pointer + Coverage + EntailmentGen + QuestionGen (Guo et al., 2018) | 35.98 | 17.76 | 33.63 | [Soft Layer-Specific Multi-Task Summarization with Entailment and Question Generation](http://aclweb.org/anthology/P18-1064) | |
-| Struct+2Way+Word (Song et al., 2018) | 35.47 | 17.66 | 33.52 | [Structure-Infused Copy Mechanisms for Abstractive Summarization](http://aclweb.org/anthology/C18-1146) | [Official](https://github.com/KaiQiangSong/struct_infused_summ)|
 | Seq2seq + selective + MTL + ERAM (Li et al., 2018) | 35.33 | 17.27 | 33.19 | [Ensure the Correctness of the Summary: Incorporate Entailment Knowledge into Abstractive Sentence Summarization](http://aclweb.org/anthology/C18-1121) | |
+| Seq2seq + E2T_cnn (Amplayo et al., 2018) | 37.04 | 16.66 | 34.93 | [Entity Commonsense Representation for Neural Abstractive Summarization](http://aclweb.org/anthology/N18-1064) | |
 | RAS-Elman (Chopra et al., 2016) | 33.78 | 15.97 | 31.15 | [Abstractive Sentence Summarization with Attentive Recurrent Neural Networks](http://www.aclweb.org/anthology/N16-1012) | |
 | words-lvt5k-1sent (Nallapti et al., 2016) | 32.67 | 15.59 | 30.64 | [Abstractive Text Summarization using Sequence-to-sequence RNNs and Beyond](http://www.aclweb.org/anthology/K16-1028) | |
 | ABS+ (Rush et al., 2015) | 29.76 | 11.88 | 26.96 | [A Neural Attention Model for Sentence Summarization](https://www.aclweb.org/anthology/D/D15/D15-1044.pdf) * | |
 | ABS (Rush et al., 2015) | 29.55 | 11.32 | 26.42 | [A Neural Attention Model for Sentence Summarization](https://www.aclweb.org/anthology/D/D15/D15-1044.pdf) * | |
 
 (*) [Rush et al., 2015](https://www.aclweb.org/anthology/D/D15/D15-1044.pdf)  report ROUGE recall, the table here contains ROUGE F1-scores for Rush's model reported by [Chopra et al., 2016](http://www.aclweb.org/anthology/N16-1012)
+
+### X-Sum
+
+X-Sum (standing for _Extreme Summarization_), introduced by [Narayan et al., 2018](https://arxiv.org/pdf/1808.08745.pdf), is a summarization dataset which does not favor extractive strategies and calls for an abstractive modeling approach.  
+The idea of this dataset is to create a short, one sentence news summary.  
+Data is collected by harvesting online articles from the BBC.  
+The dataset contain **204 045** samples for the training set, **11 332** for the validation set, and **11 334** for the test set. In average the length of article is 431 words (~20 sentences) and the length of summary is 23 words. It can be downloaded [here](https://github.com/EdinburghNLP/XSum).  
+Evaluation metrics are ROUGE-1, ROUGE-2 and ROUGE-L.
+
+| Model           | ROUGE-1 | ROUGE-2 | ROUGE-L | Paper / Source | Code |
+| --------------- | :-----: | :-----: | :-----: | -------------- | ---- |
+| PEGASUS (Zhang et al., 2019) | 47.21 | 24.56 | 39.25 | [PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization](https://arxiv.org/pdf/1912.08777.pdf) | - |
+| BART (Lewis et al., 2019) | 45.14 | 22.27 | 37.25 | [BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension](https://arxiv.org/pdf/1910.13461.pdf) | [Official](https://github.com/pytorch/fairseq/tree/master/examples/bart) |
+| BertSumExtAbs (Liu et al., 2019) | 38.81 | 16.50 | 31.27 | [Text Summarization with Pretrained Encoders](https://arxiv.org/pdf/1908.08345.pdf) | [Official](https://github.com/nlpyang/PreSumm) |
+| T-ConvS2S | 31.89 | 11.54 | 25.75 | [Don’t Give Me the Details, Just the Summary!](https://arxiv.org/pdf/1808.08745.pdf) | [Official](https://github.com/EdinburghNLP/XSum) |
+| PtGen | 29.70 | 9.21 | 23.24 | [Don’t Give Me the Details, Just the Summary!](https://arxiv.org/pdf/1808.08745.pdf) | [Official](https://github.com/EdinburghNLP/XSum) |
+| Seq2Seq | 28.42 | 8.77 | 22.48 | [Don’t Give Me the Details, Just the Summary!](https://arxiv.org/pdf/1808.08745.pdf) | [Official](https://github.com/EdinburghNLP/XSum) |
+| PtGen-Covg | 28.10 | 8.02 | 21.72 | [Don’t Give Me the Details, Just the Summary!](https://arxiv.org/pdf/1808.08745.pdf) | [Official](https://github.com/EdinburghNLP/XSum) |
+| Baseline : Extractive Oracle | 29.79 | 8.81 | 22.66 | [Don’t Give Me the Details, Just the Summary!](https://arxiv.org/pdf/1808.08745.pdf) | [Official](https://github.com/EdinburghNLP/XSum) |
+| Baseline : Lead-3 | 16.30 | 1.60 | 11.95 | [Don’t Give Me the Details, Just the Summary!](https://arxiv.org/pdf/1808.08745.pdf) | [Official](https://github.com/EdinburghNLP/XSum) |
+| Baseline : Random | 15.16 | 1.78 | 11.27 | [Don’t Give Me the Details, Just the Summary!](https://arxiv.org/pdf/1808.08745.pdf) | [Official](https://github.com/EdinburghNLP/XSum) |
 
 ### DUC 2004 Task 1
 
@@ -133,6 +164,18 @@ Similar to Gigaword, task 1 of [DUC 2004](https://duc.nist.gov/duc2004/) is a se
 ## Webis-TLDR-17 Corpus
 
 This [dataset](https://zenodo.org/record/1168855) contains 3 Million pairs of content and self-written summaries mined from Reddit. It is one of the first large-scale summarization dataset from the social media domain. For more details, refer to [TL;DR: Mining Reddit to Learn Automatic Summarization](https://aclweb.org/anthology/W17-4508)
+
+| Model              | ROUGE-1 | ROUGE-2 | ROUGE-L | Paper/Source                                                                                                                     | Code |
+|--------------------|---------|---------|---------|----------------------------------------------------------------------------------------------------------------------------------|------|
+| Transformer + Copy (Gehrmann et al., 2019) | 22      | 6       | 17      | [Generating Summaries with Finetuned Language Models](https://www.aclweb.org/anthology/W19-8665/)                                |      |
+| Unified VAE + PGN (Choi et al., 2019) | 19      | 4       | 15      | [VAE-PGN based Abstractive Model in Multi-stage Architecture for Text Summarization](https://www.aclweb.org/anthology/W19-8664/) |      |
+
+## Webis-Snippet-20 Corpus
+This [dataset](https://webis.de/data/webis-snippet-20.html) contains approximately 10 Million (webpage content, abstractive snippet) pairs and 3.5 Million (query term, webpage content, abstractive snippet) triples for the novel task of (query-biased) abstractive snippet generation of web pages. The corpus is compiled from ClueWeb09, ClueWeb12 and the DMOZ Open Directory Project. For more details, refer to [Abstractive Snippet Generation](https://arxiv.org/abs/2002.10782)
+
+| Model                                             | ROUGE-1 | ROUGE-2 | ROUGE-L | Usefulness | Paper/Source                                                       | Code |
+|---------------------------------------------------|---------|---------|---------|------------|-------------------------------------------------------|------|
+| Anchor-context + Query biased (Chen et al., 2020) | 25.7    | 5.2     | 20.1    | 66.18 | [Abstractive Snippet Generation](https://arxiv.org/abs/2002.10782) |      |
 
 ## Sentence Compression
 
