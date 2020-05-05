@@ -18,6 +18,7 @@ The shared task setting restricts that systems use only publicly available datas
 
 | Model           | F0.5  |  Paper / Source | Code |
 | ------------- | :-----:| --- | :-----: |
+| Transformer + Pre-train with Pseudo Data + BERT (Kaneko et al., ACL 2020) | 65.2 | [Encoder-Decoder Models Can Benefit from Pre-trained Masked Language Models in Grammatical Error Correction](https://arxiv.org/pdf/2005.00987.pdf) | [Official](https://github.com/kanekomasahiro/bert-gec) |
 | Transformer + Pre-train with Pseudo Data (Kiyono et al., EMNLP 2019) | 65.0 | [An Empirical Study of Incorporating Pseudo Data into Grammatical Error Correction](https://arxiv.org/abs/1909.00502) | NA |
 | Sequence Labeling with edits using BERT, Faster inference (Ensemble)  (Awasthi et al., EMNLP 2019) | 61.2 | [Parallel Iterative Edit Models for Local Sequence Transduction](https://www.aclweb.org/anthology/D19-1435.pdf) | [Official](https://github.com/awasthiabhijeet/PIE) |
 | Copy-Augmented Transformer + Pre-train (Zhao and Wang, NAACL 2019) | 61.15 | [Improving Grammatical Error Correction via Pre-Training a Copy-Augmented Architecture with Unlabeled Data](https://arxiv.org/pdf/1903.00138.pdf) | [Official](https://github.com/zhawe01/fairseq-gec) |
@@ -65,6 +66,7 @@ _**Restricted**_: uses only publicly available datasets. _**Unrestricted**_: use
 
 | Model           | GLEU  |  Paper / Source | Code |
 | ------------- | :-----:| --- | :-----: |
+| Transformer + Pre-train with Pseudo Data + BERT (Kaneko et al., ACL 2020) | 62.0 | [Encoder-Decoder Models Can Benefit from Pre-trained Masked Language Models in Grammatical Error Correction](https://arxiv.org/pdf/2005.00987.pdf) | [Official](https://github.com/kanekomasahiro/bert-gec) |
 | SMT + BiGRU (Grundkiewicz and Junczys-Dowmunt, 2018) |  61.50 | [Near Human-Level Performance in Grammatical Error Correction with Hybrid Machine Translation](http://aclweb.org/anthology/N18-2046)| NA |
 | Transformer (Junczys-Dowmunt et al., 2018) | 59.9 | [Approaching Neural Grammatical Error Correction as a Low-Resource Machine Translation Task](http://aclweb.org/anthology/N18-1055)| NA |
 | CNN Seq2Seq (Chollampatt and Ng, 2018)| 57.47 | [ A Multilayer Convolutional Encoder-Decoder Neural Network for Grammatical Error Correction](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/viewFile/17308/16137)| [Official](https://github.com/nusnlp/mlconvgec2018) |
@@ -121,6 +123,7 @@ Since current state-of-the-art systems rely on as much annotated learner data as
 | ------------- | :-----:| --- | :-----: |
 | BEA Combination | 73.18 | [Learning to Combine Grammatical Error Corrections ](https://www.aclweb.org/anthology/W19-4414/) | NA |
 | Transformer + Pre-train with Pseudo Data (Kiyono et al., EMNLP 2019) | 70.2 | [An Empirical Study of Incorporating Pseudo Data into Grammatical Error Correction](https://arxiv.org/abs/1909.00502) | NA |
+| Transformer + Pre-train with Pseudo Data + BERT (Kaneko et al., ACL 2020) | 69.8 | [Encoder-Decoder Models Can Benefit from Pre-trained Masked Language Models in Grammatical Error Correction](https://arxiv.org/pdf/2005.00987.pdf) | [Official](https://github.com/kanekomasahiro/bert-gec) |
 | Transformer | 69.47  | [Neural Grammatical Error Correction Systems with UnsupervisedPre-training on Synthetic Data](https://www.aclweb.org/anthology/W19-4427)| [Official: Code to be updated soon](https://github.com/grammatical/pretraining-bea2019) |
 | Transformer | 69.00  | [A Neural Grammatical Error Correction System Built OnBetter Pre-training and Sequential Transfer Learning](https://www.aclweb.org/anthology/W19-4423)| [Official](https://github.com/kakaobrain/helo_word/) |
 | Ensemble of models | 66.78  | [The LAIX Systems in the BEA-2019 GEC Shared Task](https://www.aclweb.org/anthology/W19-4416)| NA |
