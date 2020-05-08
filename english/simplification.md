@@ -84,19 +84,19 @@ We present the models tested in this dataset **ranked by SARI score**.
 
 | Model           | BLEU | SARI | Paper / Source | Code |
 | --------------- | :-----: | :-----: | -------------- | ---- |
-| ACCESS (Martin et al., 2019) |  | 41.87  | [Controllable Sentence Simplification](https://arxiv.org/abs/1910.02677) | [Official](https://github.com/facebookresearch/access) |
+| ACCESS (Martin et al., 2019) | 72.53 | 41.87  | [Controllable Sentence Simplification](https://arxiv.org/abs/1910.02677) | [Official](https://github.com/facebookresearch/access) |
 | DMASS + DCSS (Zhao et al., 2018) |  | 40.45 | [Integrating Transformer and Paraphrase Rules for Sentence Simplification](http://aclweb.org/anthology/D18-1355) | [Official](https://github.com/Sanqiang/text_simplification) |
 | SBSMT + PPDB + SARI (Xu et al, 2016) | 73.08\* (72.36) | 39.96\* (37.91) | [Optimizing Statistical Machine Translation for Text Simplification](http://aclweb.org/anthology/Q16-1029) | [Official](https://github.com/cocoxu/simplification/) |
 | PBMT-R (Wubben et al., 2012) | 81.11\* | 38.56\* | [Sentence Simplification by Monolingual Machine Translation](http://aclweb.org/anthology/P12-1107) |  |
-| EditNTS (Dong et al., 2019) |  | 38.22 | [EditNTS: An Neural Programmer-Interpreter Model for Sentence Simplification through Explicit Editing](https://www.aclweb.org/anthology/P19-1331) | [Official](https://github.com/yuedongP/EditNTS) |
+| EditNTS (Dong et al., 2019) | 86.69 | 38.22 | [EditNTS: An Neural Programmer-Interpreter Model for Sentence Simplification through Explicit Editing](https://www.aclweb.org/anthology/P19-1331) | [Official](https://github.com/yuedongP/EditNTS) |
 | Pointer + Multi-task Entailment and Paraphrase Generation (Guo et al., 2018) | 81.49 | 37.45 | [Dynamic Multi-Level Multi-Task Learning for Sentence Simplification](http://aclweb.org/anthology/C18-1039) | [Official](https://github.com/HanGuo97/MultitaskSimplification) |
 | NTS + SARI (Nisioi et al., 2017) | 80.69 | 37.25 | [Exploring Neural Text Simplification Models](http://aclweb.org/anthology/P17-2014) | [Official](https://github.com/senisioi/NeuralTextSimplification) |
 | DRESS-LS (Zhang and Lapata, 2017) | 80.12 | 37.27 | [Sentence Simplification with Deep Reinforcement Learning](http://aclweb.org/anthology/D17-1062) | [Official](https://github.com/XingxingZhang/dress) |
+| UnsupNTS (Surya et al., 2019) | 74.02 | 37.20| [Unsupervised Neural Text Simplification](https://www.aclweb.org/anthology/P19-1198) | [Official](https://github.com/subramanyamdvss/UnsupNTS) |
 | DRESS (Zhang and Lapata, 2017) | 77.18 | 37.08 | [Sentence Simplification with Deep Reinforcement Learning](http://aclweb.org/anthology/D17-1062) | [Official](https://github.com/XingxingZhang/dress) |
 | SeqLabel (Alva-Manchego et al., 2017) |  | 37.08\* | [Learning How to Simplify From Explicit Labeling of Complex-Simplified Text Pairs](https://www.aclweb.org/anthology/I17-1030) | |
 | NSELSTM-S (Vu et al., 2018) | 80.43 | 36.88 | [Sentence Simplification with Memory-Augmented Neural Networks](http://aclweb.org/anthology/N18-2013) |  |
 | SEMoses (Sulem et al., 2018)                                 |      74.49       |     36.70      | [Simple and Effective Text Simplification Using Semantic and Neural Methods](http://aclweb.org/anthology/P18-1016) | [Official](https://github.com/eliorsulem/simplification-acl2018) |
-| UnsupNTS (Surya et al., 2019) | 76.13 | 35.29 | [Unsupervised Neural Text Simplification](https://www.aclweb.org/anthology/P19-1198) | [Official](https://github.com/subramanyamdvss/UnsupNTS) |
 | NSELSTM-B (Vu et al., 2018) | 92.02 | 33.43 | [Sentence Simplification with Memory-Augmented Neural Networks](http://aclweb.org/anthology/N18-2013) | |
 | Hybrid (Narayan and Gardent, 2014) | 48.97\* | 31.40\* | [Hybrid Simplification using Deep Semantics and Machine Translation](http://aclweb.org/anthology/P/P14/P14-1041.pdf) | [Official](https://github.com/shashiongithub/Sentence-Simplification-ACL14) |
 
@@ -118,12 +118,12 @@ Using their splits, [Zhang and Lapata (2017)](http://aclweb.org/anthology/D17-10
 
 | Model           | BLEU | SARI | Paper / Source | Code |
 | --------------- | :-----: | :-----: | -------------- | ---- |
-|S2S-Cluster-FA (Kriz et al., 2019) |  | 37.22 | [Complexity-Weighted Loss and Diverse Reranking for Sentence Simplification](https://www.aclweb.org/anthology/N19-1317) | [Official](https://github.com/rekriz11/sockeye-recipes) |
 | Pointer + Multi-task Entailment and Paraphrase Generation (Guo et al., 2018) | 11.14 | 33.22 | [Dynamic Multi-Level Multi-Task Learning for Sentence Simplification](http://aclweb.org/anthology/C18-1039) | [Official](https://github.com/HanGuo97/MultitaskSimplification) |
-| EditNTS (Dong et al., 2019) |  | 31.41 | [EditNTS: An Neural Programmer-Interpreter Model for Sentence Simplification through Explicit Editing](https://www.aclweb.org/anthology/P19-1331) | [Official](https://github.com/yuedongP/EditNTS) |
-| Hybrid (Narayan and Gardent, 2014) | 14.46\* | 30.00\* | [Hybrid Simplification using Deep Semantics and Machine Translation](http://aclweb.org/anthology/P/P14/P14-1041.pdf) | [Official](https://github.com/shashiongithub/Sentence-Simplification-ACL14) |
+|S2S-Cluster-FA (Kriz et al., 2019) | 19.55 | 30.73 | [Complexity-Weighted Loss and Diverse Reranking for Sentence Simplification](https://www.aclweb.org/anthology/N19-1317) | [Official](https://github.com/rekriz11/sockeye-recipes) |
+| EditNTS (Dong et al., 2019) | 19.85 | 30.27 | [EditNTS: An Neural Programmer-Interpreter Model for Sentence Simplification through Explicit Editing](https://www.aclweb.org/anthology/P19-1331) | [Official](https://github.com/yuedongP/EditNTS) |
 | NSELSTM-S (Vu et al., 2018) | 22.62 | 29.58 | [Sentence Simplification with Memory-Augmented Neural Networks](http://aclweb.org/anthology/N18-2013) | |
 | SeqLabel (Alva-Manchego et al., 2017) |  | 29.53\* | [Learning How to Simplify From Explicit Labeling of Complex-Simplified Text Pairs](https://www.aclweb.org/anthology/I17-1030) | |
+| Hybrid (Narayan and Gardent, 2014) | 14.46\* | 28.61\* | [Hybrid Simplification using Deep Semantics and Machine Translation](http://aclweb.org/anthology/P/P14/P14-1041.pdf) | [Official](https://github.com/shashiongithub/Sentence-Simplification-ACL14) |
 | NSELSTM-B (Vu et al., 2018) | 26.31 | 27.42 | [Sentence Simplification with Memory-Augmented Neural Networks](http://aclweb.org/anthology/N18-2013) | |
 | DRESS (Zhang and Lapata, 2017) | 23.21 | 27.37 | [Sentence Simplification with Deep Reinforcement Learning](http://aclweb.org/anthology/D17-1062) | [Official](https://github.com/XingxingZhang/dress) |
 | DMASS + DCSS (Zhao et al., 2018) |  | 27.28 | [Integrating Transformer and Paraphrase Rules for Sentence Simplification](http://aclweb.org/anthology/D18-1355) | [Official](https://github.com/Sanqiang/text_simplification) |
