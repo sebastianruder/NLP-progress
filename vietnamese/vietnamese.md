@@ -8,6 +8,8 @@
 
 | | Model           | LAS |  UAS  |  Paper | Code | 
 | ----- | ------------- | :-----:| --- | --- | --- |
+| **Predicted POS** | PhoBERT-base (2020) | 78.77 | 85.22 | [PhoBERT: Pre-trained language models for Vietnamese](https://arxiv.org/abs/2003.00744) | [Official](https://github.com/VinAIResearch/PhoBERT) | 
+| **Predicted POS** | PhoBERT-large (2020) | 77.85 | 84.32 | [PhoBERT: Pre-trained language models for Vietnamese](https://arxiv.org/abs/2003.00744) |  [Official](https://github.com/VinAIResearch/PhoBERT) | 
 | **Predicted POS** | Biaffine (2017) | 74.99 | 81.19 | [Deep Biaffine Attention for Neural Dependency Parsing](https://arxiv.org/abs/1611.01734) |  | 
 | **Predicted POS** | jointWPD (2018) | 73.90 | 80.12 | [A neural joint model for Vietnamese word segmentation, POS tagging and dependency parsing](https://arxiv.org/abs/1812.11459)  |  | 
 | **Predicted POS** | jPTDP-v2 (2018) |  73.12 | 79.63 | [An improved neural network model for joint POS tagging and dependency parsing](http://aclweb.org/anthology/K18-2008) |  | 
@@ -80,8 +82,10 @@
 
 | Model           | F1  |  Paper | Code | Note | 
 | ------------- | :-----:| --- | --- | --- | 
-| VnCoreNLP (2018) [1] | 91.30 | [VnCoreNLP: A Vietnamese Natural Language Processing Toolkit](http://aclweb.org/anthology/N18-5012) | [Official](https://github.com/vncorenlp/VnCoreNLP) | Pre-trained embeddings learned from Vietnamese Wikipedia corpus |
-| BiLSTM-CRF + CNN-char  (2016) [1] | 91.09 | [End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF](http://www.aclweb.org/anthology/P16-1101) | [Official](https://github.com/XuezheMax/LasagneNLP) / [Link](https://github.com/UKPLab/emnlp2017-bilstm-cnn-crf/)  | Pre-trained embeddings learned from Vietnamese Wikipedia corpus | 
+| PhoBERT-large (2020) | 94.7 | [PhoBERT: Pre-trained language models for Vietnamese](https://arxiv.org/abs/2003.00744) | [Official](https://github.com/VinAIResearch/PhoBERT) | 
+| PhoBERT-base (2020) | 93.6 | [PhoBERT: Pre-trained language models for Vietnamese](https://arxiv.org/abs/2003.00744) |  [Official](https://github.com/VinAIResearch/PhoBERT) | 
+| VnCoreNLP (2018) [1] | 91.30 | [VnCoreNLP: A Vietnamese Natural Language Processing Toolkit](http://aclweb.org/anthology/N18-5012) | [Official](https://github.com/vncorenlp/VnCoreNLP) | Used ETNLP embeddings |
+| BiLSTM-CRF + CNN-char  (2016) [1] | 91.09 | [End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF](http://www.aclweb.org/anthology/P16-1101) | [Official](https://github.com/XuezheMax/LasagneNLP) / [Link](https://github.com/UKPLab/emnlp2017-bilstm-cnn-crf/)  | Used ETNLP embeddings | 
 | VNER (2019) | 89.58 | [Attentive Neural Network for Named Entity Recognition in Vietnamese](https://arxiv.org/abs/1810.13097) | | 
 | VnCoreNLP (2018) | 88.55 | [VnCoreNLP: A Vietnamese Natural Language Processing Toolkit](http://aclweb.org/anthology/N18-5012) | [Official](https://github.com/vncorenlp/VnCoreNLP) | Pre-trained embeddings learned from Baomoi corpus |
 | BiLSTM-CRF + CNN-char  (2016) [2] | 88.28 | [End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF](http://www.aclweb.org/anthology/P16-1101) | [Official](https://github.com/XuezheMax/LasagneNLP) / [Link](https://github.com/UKPLab/emnlp2017-bilstm-cnn-crf/) | Pre-trained embeddings learned from Baomoi corpus |
@@ -100,6 +104,8 @@
 
 | Model           | Accuracy  |  Paper | Code | 
 | ------------- | :-----:| --- | --- | 
+| PhoBERT-large (2020) | 96.8 | [PhoBERT: Pre-trained language models for Vietnamese](https://arxiv.org/abs/2003.00744) | [Official](https://github.com/VinAIResearch/PhoBERT) | 
+| PhoBERT-base (2020) | 96.7 | [PhoBERT: Pre-trained language models for Vietnamese](https://arxiv.org/abs/2003.00744) |  [Official](https://github.com/VinAIResearch/PhoBERT) | 
 | jointWPD (2018) | 95.97 | [A neural joint model for Vietnamese word segmentation, POS tagging and dependency parsing](https://arxiv.org/abs/1812.11459) | | 
 | VnCoreNLP-VnMarMoT (2017) | 95.88 | [From Word Segmentation to POS Tagging for Vietnamese](http://aclweb.org/anthology/U17-1013) | [Official](https://github.com/datquocnguyen/vnmarmot) | 
 | jPTDP-v2 (2018) | 95.70 | [An improved neural network model for joint POS tagging and dependency parsing](http://aclweb.org/anthology/K18-2008) | | 
