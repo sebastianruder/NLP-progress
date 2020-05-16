@@ -19,7 +19,7 @@ The shared task setting restricts that systems use only publicly available datas
 | Model           | F0.5  |  Paper / Source | Code |
 | ------------- | :-----:| --- | :-----: |
 | Transformer + Pre-train with Pseudo Data + BERT (Kaneko et al., ACL 2020) | 65.2 | [Encoder-Decoder Models Can Benefit from Pre-trained Masked Language Models in Grammatical Error Correction](https://arxiv.org/pdf/2005.00987.pdf) | [Official](https://github.com/kanekomasahiro/bert-gec) |
-| Transformer + Pre-train with Pseudo Data (Kiyono et al., EMNLP 2019) | 65.0 | [An Empirical Study of Incorporating Pseudo Data into Grammatical Error Correction](https://arxiv.org/abs/1909.00502) | NA |
+| Transformer + Pre-train with Pseudo Data (Kiyono et al., EMNLP 2019) | 65.0 | [An Empirical Study of Incorporating Pseudo Data into Grammatical Error Correction](https://arxiv.org/abs/1909.00502) | [Official](https://github.com/butsugiri/gec-pseudodata) |
 | Sequence Labeling with edits using BERT, Faster inference (Ensemble)  (Awasthi et al., EMNLP 2019) | 61.2 | [Parallel Iterative Edit Models for Local Sequence Transduction](https://www.aclweb.org/anthology/D19-1435.pdf) | [Official](https://github.com/awasthiabhijeet/PIE) |
 | Copy-Augmented Transformer + Pre-train (Zhao and Wang, NAACL 2019) | 61.15 | [Improving Grammatical Error Correction via Pre-Training a Copy-Augmented Architecture with Unlabeled Data](https://arxiv.org/pdf/1903.00138.pdf) | [Official](https://github.com/zhawe01/fairseq-gec) |
 | Sequence Labeling with edits using BERT, Faster inference (Single Model) (Awasthi et al., EMNLP 2019) | 59.7 | [Parallel Iterative Edit Models for Local Sequence Transduction](https://www.aclweb.org/anthology/D19-1435.pdf) | [Official](https://github.com/awasthiabhijeet/PIE) |
