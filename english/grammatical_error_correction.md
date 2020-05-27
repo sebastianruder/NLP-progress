@@ -18,6 +18,8 @@ The shared task setting restricts that systems use only publicly available datas
 
 | Model           | F0.5  |  Paper / Source | Code |
 | ------------- | :-----:| --- | :-----: |
+| Sequence tagging + token-level transformations + two-stage fine-tuning + (BERT, RoBERTa, XLNet), ensemble (Omelianchuk et al., BEA 2020) | 66.5 | [GECToR – Grammatical Error Correction: Tag, Not Rewrite](https://arxiv.org/pdf/2005.12592.pdf) | [Official](https://github.com/grammarly/gector) |
+| Sequence tagging + token-level transformations + two-stage fine-tuning + XLNet, single model (Omelianchuk et al., BEA 2020) | 65.3 | [GECToR – Grammatical Error Correction: Tag, Not Rewrite](https://arxiv.org/pdf/2005.12592.pdf) | [Official](https://github.com/grammarly/gector) |
 | Transformer + Pre-train with Pseudo Data + BERT (Kaneko et al., ACL 2020) | 65.2 | [Encoder-Decoder Models Can Benefit from Pre-trained Masked Language Models in Grammatical Error Correction](https://arxiv.org/pdf/2005.00987.pdf) | [Official](https://github.com/kanekomasahiro/bert-gec) |
 | Transformer + Pre-train with Pseudo Data (Kiyono et al., EMNLP 2019) | 65.0 | [An Empirical Study of Incorporating Pseudo Data into Grammatical Error Correction](https://arxiv.org/abs/1909.00502) | [Official](https://github.com/butsugiri/gec-pseudodata) |
 | Sequence Labeling with edits using BERT, Faster inference (Ensemble)  (Awasthi et al., EMNLP 2019) | 61.2 | [Parallel Iterative Edit Models for Local Sequence Transduction](https://www.aclweb.org/anthology/D19-1435.pdf) | [Official](https://github.com/awasthiabhijeet/PIE) |
@@ -121,7 +123,9 @@ Since current state-of-the-art systems rely on as much annotated learner data as
 
 | Model           | F0.5  |  Paper / Source | Code |
 | ------------- | :-----:| --- | :-----: |
+| Sequence tagging + token-level transformations + two-stage fine-tuning + (BERT, RoBERTa, XLNet), ensemble (Omelianchuk et al., BEA 2020) | 73.6 | [GECToR – Grammatical Error Correction: Tag, Not Rewrite](https://arxiv.org/pdf/2005.12592.pdf) | [Official](https://github.com/grammarly/gector) |
 | BEA Combination | 73.18 | [Learning to Combine Grammatical Error Corrections ](https://www.aclweb.org/anthology/W19-4414/) | NA |
+| Sequence tagging + token-level transformations + two-stage fine-tuning + XLNet, single model (Omelianchuk et al., BEA 2020) | 72.4 | [GECToR – Grammatical Error Correction: Tag, Not Rewrite](https://arxiv.org/pdf/2005.12592.pdf) | [Official](https://github.com/grammarly/gector) |
 | Transformer + Pre-train with Pseudo Data (Kiyono et al., EMNLP 2019) | 70.2 | [An Empirical Study of Incorporating Pseudo Data into Grammatical Error Correction](https://arxiv.org/abs/1909.00502) | NA |
 | Transformer + Pre-train with Pseudo Data + BERT (Kaneko et al., ACL 2020) | 69.8 | [Encoder-Decoder Models Can Benefit from Pre-trained Masked Language Models in Grammatical Error Correction](https://arxiv.org/pdf/2005.00987.pdf) | [Official](https://github.com/kanekomasahiro/bert-gec) |
 | Transformer | 69.47  | [Neural Grammatical Error Correction Systems with UnsupervisedPre-training on Synthetic Data](https://www.aclweb.org/anthology/W19-4427)| [Official: Code to be updated soon](https://github.com/grammatical/pretraining-bea2019) |
