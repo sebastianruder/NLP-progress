@@ -37,9 +37,15 @@ Task Codalab: [https://competitions.codalab.org/competitions/17326](https://comp
 
 ### FewRel
 
-The Few-Shot Relation Classification Dataset (FewRel) is a different setting from the previous datasets. This dataset consists of 70K sentences expressing 100 relations annotated by crowdworkers on Wikipedia corpus. The few-shot learning task follows the N-way K-shot meta learning setting. It is both the largest supervised relation classification dataset as well as the largest few-shot learning dataset till now. 
+The Few-Shot Relation Classification Dataset (FewRel) is a different setting from the previous datasets. This dataset consists of 70K sentences expressing 100 relations annotated by crowdworkers on Wikipedia corpus. The few-shot learning task follows the N-way K-shot meta learning setting.
 
 The public leaderboard is available on the [FewRel website](http://www.zhuhao.me/fewrel/).
+
+### FewRel 2
+
+FewRel 2 extends FewRel on (1) Adaptibility to a new  domain with only a hand-ful of instances (2) Ability to detect none-of-the-above relations? The paper is at [ACL Web](https://www.aclweb.org/anthology/D19-1649.pdf).
+
+The public leaderboard is available on [FewRel 2 website](https://thunlp.github.io/2/fewrel2_da.html)
 
 ### Multi-Way Classification of Semantic Relations Between Pairs of Nominals (SemEval 2010 Task 8)
 
