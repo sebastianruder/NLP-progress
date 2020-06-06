@@ -1,0 +1,9 @@
+# Word Embeddings
+
+A collection of word embedding vectors.
+
+
+| Paper                                                                                                                                                                                                                        |                           Dataset                           |                     Evaluation                     |                     Code                      |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------: | :------------------------------------------------: | :-------------------------------------------: |
+| [AraVec: A set of Arabic Word Embedding Models for use in Arabic NLP (Abu Bakr Soliman et al., 2017)](https://www.researchgate.net/publication/319880027_AraVec_A_set_of_Arabic_Word_Embedding_Models_for_use_in_Arabic_NLP) |             Tweets and articles from Wikipedia              | Sentiment clustering and named entities clustering | [GitHub](https://github.com/bakrianoo/aravec) | https://github.com/aub-mind/hULMonA |
+| [Polyglot: Distributed Word Representations for Multilingual NLP](https://arxiv.org/pdf/1307.1662.pdf)                                                                                                                       | Articles from Wikipedia for many languages including Arabic |        Evalutated on part-of-speech tagging        |                       -                       |
