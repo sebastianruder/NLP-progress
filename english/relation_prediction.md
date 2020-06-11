@@ -44,7 +44,8 @@ As a way to overcome this problem, [Dettmers et al. (2018)](https://arxiv.org/ab
 The test set is composed of triplets, each used to create two test instances, one for each entity to be predicted. Since each instance is associated with a single true entity, the maximum value for all metrics is 1.00.
    
 | Model           | H@10 | H@1 | MRR | Paper / Source | Code | 
-| ------------- | :-----:| :-----:| :-----:| --- | --- | 
+| ------------- | :-----:| :-----:| :-----:| --- | --- |
+| CoKE (Wang, Quan, et al, 2019) | 60.3 | 47.2 | 51.5 | [CoKE: Contextualized Knowledge Graph Embedding](https://arxiv.org/abs/1911.02168) | [Official](https://github.com/PaddlePaddle/Research/tree/master/KG/CoKE) |
 | Max-Margin Markov Graph Models (Pinter & Eisenstein, 2018) | 59.02 | 45.37 | 49.83 | [Predicting Semantic Relations using Global Graph Properties](https://arxiv.org/abs/1808.08644) | [Official](http://www.github.com/yuvalpinter/m3gm) |
 | KBAT(Deepak et al., 2019) | 58.1 | 36.1 | 44 | [Learning Attention Based Embeddings for Relation Prediction](https://arxiv.org/pdf/1906.01195.pdf) | [Official](https://github.com/deepakn97/relationPrediction)
 | TransE (reimplementation by Pinter & Eisenstein, 2018) | 55.55 | 42.26 | 46.59 | [Translating Embeddings for Modeling Multi-relational Data. ](http://papers.nips.cc/paper/5071-translating-embeddings-for-modeling-multi-relational-data.pdf) | [OpenKE](https://github.com/thunlp/OpenKE) |
@@ -58,6 +59,7 @@ The test set is composed of triplets, each used to create two test instances, on
 | Model           | H@10 | H@1 | MRR | Paper / Source | Code | 
 | ------------- | :-----:| :-----:| :-----:| --- | --- | 
 | KBAT(Deepak et al., 2019) | 62.6 | 46 | 51.8 | [Learning Attention Based Embeddings for Relation Prediction](https://arxiv.org/pdf/1906.01195.pdf) | [Official](https://github.com/deepakn97/relationPrediction)
+| CoKE (Wang, Quan, et al, 2019) | 55.4 | 27.7 | 36.8 |   [CoKE: Contextualized Knowledge Graph Embedding](https://arxiv.org/abs/1911.02168) | [Official](https://github.com/PaddlePaddle/Research/tree/master/KG/CoKE) | 
 | TransE (reimplementation by Han et al., 2018) | 47.09 | 19.87 | 29.04 | [Translating Embeddings for Modeling Multi-relational Data. ](http://papers.nips.cc/paper/5071-translating-embeddings-for-modeling-multi-relational-data.pdf) | [OpenKE](https://github.com/thunlp/OpenKE) |
 | TransH (reimplementation by Han et al., 2018) | 41.32 | 5.79 | 17.66 | [Knowledge Graph Embedding by Translating on Hyperplanes.](http://www.aaai.org/ocs/index.php/AAAI/AAAI14/paper/viewFile/8531/8546) | [OpenKE](https://github.com/thunlp/OpenKE) |
 | TransR (reimplementation by Han et al., 2018) | 40.67 | 16.35 | 24.44 | [ Learning Entity and Relation Embeddings for Knowledge Graph Completion.](http://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/download/9571/9523/) | [OpenKE](https://github.com/thunlp/OpenKE) |
