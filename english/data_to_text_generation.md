@@ -74,3 +74,5 @@ The performance is evaluated using **BLEU, NIST, METEOR, ROUGE-L, CIDEr scores**
 <a name="myfootnote7">[7]</a> Shen, Sheng, et al. "Pragmatically Informative Text Generation." Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers). 2019.
 
 <a name="myfootnote8">[8]</a> Elder, Henry, et al. "Designing a Symbolic Intermediate Representation for Neural Surface Realization." Proceedings of the Workshop on Methods for Optimizing and Evaluating Neural Language Generation. 2019.
+
+[Go back to the README](../README.md)
