@@ -5,6 +5,21 @@
 Unlike Machine Translation or Question Answering tasks (also referred as **Text-to-Text Generation, or T2T NLG**) where requirement is to generate textual output using some unstructured textual input only, here the input will be provided in a structured format such as tables or knowledge graphs <sup>[[1]](#myfootnote1)</sup>.
 
 ## RotoWire
+The dataset consists of articles summarizing NBA basketball games, paired with their corresponding box- and line-score tables. It is professionally written, medium length game summaries targeted at fantasy basketball fans. The writing is colloquial, but structured, and targets an audience primarily interested in game statistics <sup>[[2]](#myfootnote2)</sup>.
+
+The dataset is evaluated on two different automated metrics: first, **BLEU** score; and second, a family of **Extractive Evaluation (EE)**. EE contains three different metrics evaluating three different aspects of the generation:
+
+1. **Content Selection (CS)**: precision (P%) and recall (R%) of unique relations extracted from generated text that are also extracted from golden text. This measures how well the generated document matches the gold document in terms of selecting which records to generate.
+
+2. **Relation Generation (RG)**: precision (P%) and number of unique relations (#) extracted from generated text that also appear in structured input provided. This measures how well the system is able to generate text containing factual (i.e., correct) records.
+
+3. **Content Ordering (CO)**: normalized Damerau-Levenshtein Distance (DLD%) between the sequences of records extracted from golden text and that extracted from generated text. This measures how well the system orders the records it chooses to discuss.
+
+| Model           | BLEU | CS (P% & R%) | RG (P% & #) | CO (DLD%) |  Paper / Source | Code |
+| ------------- | :-----: | :-----: | :-----: | :-----:| --- | --- |
+| Wiseman et al. (2017)<sup>[[2]](#myfootnote2)</sup> | 14.49 | 22.17 & 27.16 | 71.82 & 12.82 | 8.68 | [Challenges in Data-to-Document Generation](https://www.aclweb.org/anthology/D17-1239.pdf) |[Official](https://github.com/harvardnlp/data2text) |
+| Puduppully et al. (2019)<sup>[[3]](#myfootnote3)</sup> | 16.50 | 34.18 & 51.22 | 87.47 & 34.28 | 18.58 | [Data-to-text generation with content selection and planning](https://arxiv.org/pdf/1809.00582.pdf) |[Official](https://github.com/ratishsp/data2text-plan-py) |
+| Rebuffel, Clément, et al. (2020)<sup>[[4]](#myfootnote4)</sup> | 17.50 | 39.47 & 51.64 | 89.46 & 21.17 | 18.90 | [A Hierarchical Model for Data-to-Text Generation](https://link.springer.com/chapter/10.1007/978-3-030-45439-5_5) |[Official](https://github.com/KaijuML/data-to-text-hierarchical) |
 
 ## E2E Challenge
 
@@ -14,3 +29,9 @@ Unlike Machine Translation or Question Answering tasks (also referred as **Text-
 
 ## References
 <a name="myfootnote1">[1]</a> Albert Gatt and Emiel Krahmer. 2018. Survey of the state of the art in natural language generation: core tasks, applications and evaluation. J. Artif. Int. Res. 61, 1 (January 2018), 65–170.
+
+<a name="myfootnote2">[2]</a> Wiseman, Sam, Stuart M. Shieber, and Alexander M. Rush. "Challenges in Data-to-Document Generation." Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing. 2017.
+
+<a name="myfootnote3">[3]</a> Puduppully, Ratish, Li Dong, and Mirella Lapata. "Data-to-text generation with content selection and planning." Proceedings of the AAAI Conference on Artificial Intelligence. Vol. 33. 2019.
+
+<a name="myfootnote4">[4]</a> Rebuffel, Clément, et al. "A Hierarchical Model for Data-to-Text Generation." European Conference on Information Retrieval. Springer, Cham, 2020.
