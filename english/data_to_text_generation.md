@@ -32,7 +32,7 @@ The performance is evaluated based on BLEU, METEOR and TER scores.
 
 <!-- | Model           | BLEU (S & U) | METEOR (S & U) | TER (S & U) |  Paper / Source | Code | -->
 | Model           | BLEU | METEOR | TER |  Paper / Source | Code |
-| ------------- | :-----: | :-----: | :-----: | :-----:| --- | --- |
+| ------------- | :-----: | :-----: | :-----: | --- | --- |
 | Baseline System | 33.24 | 0.235436 | 0.613080 | [Baseline](https://webnlg-challenge.loria.fr/challenge_2017/#webnlg-baseline-system) |[Official](https://gitlab.com/webnlg/webnlg-baseline) |
 | Moryossef et al. (2019) <sup>[[5]](#myfootnote5)</sup> | 47.4 | 0.391 | 0.631 | [Step-by-Step: Separating Planning from Realization in Neural Data-to-Text Generation](https://www.aclweb.org/anthology/N19-1236.pdf) | [Official](https://github.com/AmitMY/chimera) |
 <!-- | Baseline System | 52.39 & 6.13 | 37.7 & 07.53 | 44.86 & 80.0 | [Baseline](https://webnlg-challenge.loria.fr/challenge_2017/#webnlg-baseline-system) |[Official](https://gitlab.com/webnlg/webnlg-baseline) | -->
