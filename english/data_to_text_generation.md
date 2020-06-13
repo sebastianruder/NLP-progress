@@ -5,7 +5,7 @@
 Unlike Machine Translation or Question Answering tasks (also referred as **Text-to-Text Generation, or T2T NLG**) where requirement is to generate textual output using some unstructured textual input only, here the input will be provided in a structured format such as tables or knowledge graphs <sup>[[1]](#myfootnote1)</sup>.
 
 ## RotoWire
-The dataset consists of articles summarizing NBA basketball games, paired with their corresponding box- and line-score tables. It is professionally written, medium length game summaries targeted at fantasy basketball fans. The writing is colloquial, but structured, and targets an audience primarily interested in game statistics <sup>[[2]](#myfootnote2)</sup>.
+The [dataset](https://github.com/harvardnlp/boxscore-data/blob/master/rotowire.tar.bz2) consists of articles summarizing NBA basketball games, paired with their corresponding box- and line-score tables. It is professionally written, medium length game summaries targeted at fantasy basketball fans. The writing is colloquial, but structured, and targets an audience primarily interested in game statistics <sup>[[2]](#myfootnote2)</sup>.
 
 The dataset is evaluated on two different automated metrics: first, **BLEU** score; and second, a family of **Extractive Evaluation (EE)**. EE contains three different metrics evaluating three different aspects of the generation:
 
