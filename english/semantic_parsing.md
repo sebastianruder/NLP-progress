@@ -38,6 +38,7 @@ Models are evaluated on the newswire section and the full dataset based on [smat
 
 | Model           | F1 Newswire  | F1 Full |  Paper / Source |
 | ------------- | :-----:| :-----:| --- |
+| AMR Parsing via Graph-Sequence Iterative Inference (Cai and Lam , 2020)&hearts;&spades; | -- | 75.4 | [AMR Parsing via Graph-Sequence Iterative Inference](https://arxiv.org/pdf/2004.05572.pdf) |
 | Broad-Coverage Semantic Parsing as Transduction (Zhang et al., 2019)&hearts; | -- | 71.3 | [Broad-Coverage Semantic Parsing as Transduction](https://www.aclweb.org/anthology/D19-1392.pdf) |
 | Two-stage Sequence-to-Graph Transducer (Zhang et al., 2019)&hearts; | -- | 70.2 | [AMR Parsing as Sequence-to-Graph Transduction](https://www.aclweb.org/anthology/P19-1009.pdf) |
 | Transition-based+improved aligner+ensemble (Liu et al. 2018)&hearts; | 73.3 | 68.4 | [An AMR Aligner Tuned by Transition-based Parser](http://aclweb.org/anthology/D18-1264) |
@@ -45,7 +46,7 @@ Models are evaluated on the newswire section and the full dataset based on [smat
 | Incremental joint model (Zhou et al., 2016)&hearts;&spades; | 71 | 66 | [AMR Parsing with an Incremental Joint Model](https://aclweb.org/anthology/D16-1065) |
 | Transition-based transducer (Wang et al., 2015)&hearts;&diams;&clubs; | 70 | 66 | [Boosting Transition-based AMR Parsing with Refined Actions and Auxiliary Analyzers](http://www.aclweb.org/anthology/P15-2141) |
 | Imitation learning  (Goodman et al., 2016)&hearts;&spades; | 70 |  -- | [Noise reduction and targeted exploration in imitation learning for Abstract Meaning Representation parsing](http://www.aclweb.org/anthology/P16-1001) |
-MT-Based (Pust et al., 2015)&spades; | -- | 66 | [Parsing English into Abstract Meaning Representation Using Syntax-Based Machine Translation ](http://www.aclweb.org/anthology/D15-1136)
+| MT-Based (Pust et al., 2015)&spades; | -- | 66 | [Parsing English into Abstract Meaning Representation Using Syntax-Based Machine Translation ](http://www.aclweb.org/anthology/D15-1136)
 | Transition-based parser-Stack-LSTM (Ballesteros and Al-Onaizan, 2017)&hearts;&diams; | 69 | 64  | [AMR Parsing using Stack-LSTMs](http://www.aclweb.org/anthology/D17-1130) |
 | Transition-based parser-Stack-LSTM (Ballesteros and Al-Onaizan, 2017) | 68 | 63  | [AMR Parsing using Stack-LSTMs](http://www.aclweb.org/anthology/D17-1130) |
 
@@ -66,15 +67,17 @@ Models are evaluated based on [smatch](https://amr.isi.edu/smatch-13.pdf).
 ### LDC2016E25
 39,260 sentences
 
-Results are computed over 8 runs. Models are evaluated based on [smatch](https://amr.isi.edu/smatch-13.pdf).
+Models are evaluated based on [smatch](https://amr.isi.edu/smatch-13.pdf).
 
 | Model           | Smatch  |  Paper / Source |
 | ------------- | :-----:| --- |
+| AMR Parsing via Graph-Sequence Iterative Inference (Cai and Lam, 2020)&hearts;&spades; | 80.2 | [AMR Parsing via Graph-Sequence Iterative Inference](https://arxiv.org/pdf/2004.05572.pdf) |
 | Broad-Coverage Semantic Parsing as Transduction (Zhang et al., 2019)&hearts; | 77.0 | [Broad-Coverage Semantic Parsing as Transduction](https://www.aclweb.org/anthology/D19-1392.pdf) |
 | Two-stage Sequence-to-Graph Transducer (Zhang et al., 2019)&hearts; | 76.3 | [AMR Parsing as Sequence-to-Graph Transduction](https://www.aclweb.org/anthology/P19-1009.pdf) |
 | Rewarding Smatch: Transition-Based AMR Parsing with Reinforcement Learning (Naseem et al., 2019)&hearts;&spades;&diams; | 75.5 | [Rewarding Smatch: Transition-Based AMR Parsing with Reinforcement Learning](https://arxiv.org/pdf/1905.13370) |
 | Joint model (Lyu and Titov, 2018)&hearts;&spades; | 74.4 | [AMR Parsing as Graph Prediction with Latent Alignment](https://arxiv.org/abs/1805.05286) |
 | Rewarding Smatch: Transition-Based AMR Parsing with Reinforcement Learning (Naseem et al., 2019); | 73.4 | [Rewarding Smatch: Transition-Based AMR Parsing with Reinforcement Learning](https://arxiv.org/pdf/1905.13370) |
+| Core Semantic First: A Top-down Approach for AMR Parsing (Cai and Lam, 2019)&hearts;&spades; | 73.2 | [Core Semantic First: A Top-down Approach for AMR Parsing](https://www.aclweb.org/anthology/D19-1393.pdf) |
 | ChSeq + 100K (van Noord and Bos, 2017)&hearts; | 71.0 | [Neural Semantic Parsing by Character-based Translation: Experiments with Abstract Meaning Representations](https://arxiv.org/abs/1705.09980) |
 | Neural-Pointer (Buys and Blunsom, 2017)&hearts;&spades; | 61.9 | [Oxford at SemEval-2017 Task 9: Neural AMR Parsing with Pointer-Augmented Attention](http://aclweb.org/anthology/S17-2157) |
 
@@ -135,7 +138,7 @@ There are two evaluation sets: one with 1,131, from the same domains (Full), and
 
 Example:
 
-| Question | SQL query | 
+| Question | SQL query |
 | ------------- |  --- |
 | what flights from any city land at MKE | `SELECT DISTINCT FLIGHTalias0.FLIGHT_ID FROM AIRPORT AS AIRPORTalias0 , AIRPORT_SERVICE AS AIRPORT_SERVICEalias0 , CITY AS CITYalias0 , FLIGHT AS FLIGHTalias0 WHERE AIRPORTalias0.AIRPORT_CODE = "MKE" AND CITYalias0.CITY_CODE = AIRPORT_SERVICEalias0.CITY_CODE AND FLIGHTalias0.FROM_AIRPORT = AIRPORT_SERVICEalias0.AIRPORT_CODE AND FLIGHTalias0.TO_AIRPORT = AIRPORTalias0.AIRPORT_CODE ;` |
 
@@ -151,7 +154,7 @@ Example:
 
 Example:
 
-| Question | SQL query | 
+| Question | SQL query |
 | ------------- |  --- |
 | Can undergrads take 550 ? | `SELECT DISTINCT COURSEalias0.ADVISORY_REQUIREMENT , COURSEalias0.ENFORCED_REQUIREMENT , COURSEalias0.NAME FROM COURSE AS COURSEalias0 WHERE COURSEalias0.DEPARTMENT = \"department0\" AND COURSEalias0.NUMBER = 550 ;` |
 
@@ -172,7 +175,7 @@ Example:
 
 Example:
 
-| Question | SQL query | 
+| Question | SQL query |
 | ------------- |  --- |
 | what is the biggest city in arizona | `SELECT CITYalias0.CITY_NAME FROM CITY AS CITYalias0 WHERE CITYalias0.POPULATION = ( SELECT MAX( CITYalias1.POPULATION ) FROM CITY AS CITYalias1 WHERE CITYalias1.STATE_NAME = "arizona" ) AND CITYalias0.STATE_NAME = "arizona"` |
 
@@ -191,7 +194,7 @@ Example:
 
 Example:
 
-| Question | SQL query | 
+| Question | SQL query |
 | ------------- |  --- |
 | What papers has sharon goldwater written ? | `SELECT DISTINCT WRITESalias0.PAPERID FROM AUTHOR AS AUTHORalias0 , WRITES AS WRITESalias0 WHERE AUTHORalias0.AUTHORNAME = "sharon goldwater" AND WRITESalias0.AUTHORID = AUTHORalias0.AUTHORID ;` |
 
@@ -219,9 +222,9 @@ Models are evaluated based on accuracy on execute result matches.
 
 Example:
 
-| Question | SQL query | 
+| Question | SQL query |
 | ------------- |  --- |
-| How many engine types did Val Musetti use? | `SELECT COUNT Engine WHERE Driver = Val Musetti` | 
+| How many engine types did Val Musetti use? | `SELECT COUNT Engine WHERE Driver = Val Musetti` |
 
 The WikiSQL dataset and leaderboard can be accessed [here](https://github.com/salesforce/WikiSQL).
 
@@ -231,7 +234,7 @@ Restaurants - 378 questions about restaurants, their cuisine and locations, coll
 
 Example:
 
-| Question | SQL query | 
+| Question | SQL query |
 | ------------- |  --- |
 | where is a restaurant in alameda ? | `SELECT LOCATIONalias0.HOUSE_NUMBER , RESTAURANTalias0.NAME FROM LOCATION AS LOCATIONalias0 , RESTAURANT AS RESTAURANTalias0 WHERE LOCATIONalias0.CITY_NAME = "alameda" AND RESTAURANTalias0.ID = LOCATIONalias0.RESTAURANT_ID ;` |
 
@@ -245,7 +248,7 @@ Academic - 196 questions about publications generated by enumerating all of the 
 
 Example:
 
-| Question | SQL query | 
+| Question | SQL query |
 | ------------- |  --- |
 | return me the homepage of PVLDB | `SELECT JOURNALalias0.HOMEPAGE FROM JOURNAL AS JOURNALalias0 WHERE JOURNALalias0.NAME = "PVLDB" ;` |
 
@@ -259,7 +262,7 @@ Yelp - 128 user questions about the Yelp website [Yaghmazadeh et al., 2017](http
 
 Example:
 
-| Question | SQL query | 
+| Question | SQL query |
 | ------------- |  --- |
 | List all businesses with rating 3.5 | `SELECT BUSINESSalias0.NAME FROM BUSINESS AS BUSINESSalias0 WHERE BUSINESSalias0.RATING = 3.5 ;` |
 
@@ -273,7 +276,7 @@ IMDB - 131 user questions about the Internet Movie Database [Yaghmazadeh et al.,
 
 Example:
 
-| Question | SQL query | 
+| Question | SQL query |
 | ------------- |  --- |
 | What year was the movie " The Imitation Game " produced | `SELECT MOVIEalias0.RELEASE_YEAR FROM MOVIE AS MOVIEalias0 WHERE MOVIEalias0.TITLE = "The Imitation Game" ;` |
 
