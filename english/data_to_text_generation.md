@@ -34,10 +34,13 @@ The performance is evaluated on the basis of **BLEU, METEOR and TER scores**. Th
 <!-- | Model           | BLEU (S & U) | METEOR (S & U) | TER (S & U) |  Paper / Source | Code | -->
 | Model           | BLEU | METEOR | TER |  Paper / Source | Code |
 | ------------- | :-----: | :-----: | :-----: | --- | --- |
+| Kale, Mihir. (2020) <sup>[[9]](#myfootnote9)</sup> | 57.1 | 0.44 |  | [Text-to-Text Pre-Training for Data-to-Text Tasks](https://arxiv.org/pdf/2005.10433v2.pdf) |  |
 | Moryossef et al. (2019) <sup>[[5]](#myfootnote5)</sup> | 47.4 | 0.391 | 0.631 | [Step-by-Step: Separating Planning from Realization in Neural Data-to-Text Generation](https://www.aclweb.org/anthology/N19-1236.pdf) | [Official](https://github.com/AmitMY/chimera) |
 | Baseline | 33.24 | 0.235436 | 0.613080 | [Baseline system provided during the challenge](https://webnlg-challenge.loria.fr/challenge_2017/#webnlg-baseline-system) |[Official](https://gitlab.com/webnlg/webnlg-baseline) |
 <!-- | Baseline System | 52.39 & 6.13 | 37.7 & 07.53 | 44.86 & 80.0 | [Baseline](https://webnlg-challenge.loria.fr/challenge_2017/#webnlg-baseline-system) |[Official](https://gitlab.com/webnlg/webnlg-baseline) | -->
 <!-- | Distiawan, Bayu, et al. (2018) | 58.6 & 34.1 | 40.6 & 32.0 | 41.7 & 57.9 | [GTR-LSTM: A Triple Encoder for Sentence Generation from RDF Data](https://www.aclweb.org/anthology/P18-1151.pdf) | | -->
+
+**P.S.**: The **test dataset** of WebNLG consists of **total 15 categories**, out of which 10 (**seen**) catgories are used for training while 5 (**unseen**) are not. The results reported here are those obtained on overall test data, i.e., all 15 categories.
 
 ## Meaning Representations
 
@@ -51,9 +54,9 @@ The performance is evaluated using **BLEU, NIST, METEOR, ROUGE-L, CIDEr scores**
 
 | Model           | BLEU | NIST | METEOR | ROUGE-L | CIDEr |  Paper / Source | Code |
 | ------------- | :-----: | :-----: |:-----: |:-----: | :-----: | --- | --- |
-| Gehrmann, Sebastian, et al. (2018) <sup>[[7]](#myfootnote6)</sup> | 68.60 | 8.73 | 45.25 | 70.82 | 2.37 | [Pragmatically Informative Text Generation](https://www.aclweb.org/anthology/N19-1410.pdf) |[Official](https://github.com/sIncerass/prag_generation) |
+| Shen, Sheng, et al. (2019) <sup>[[7]](#myfootnote6)</sup> | 68.60 | 8.73 | 45.25 | 70.82 | 2.37 | [Pragmatically Informative Text Generation](https://www.aclweb.org/anthology/N19-1410.pdf) |[Official](https://github.com/sIncerass/prag_generation) |
 | Elder, Henry, et al. (2019) <sup>[[8]](#myfootnote8)</sup> | 67.38 | 8.7277 | 45.72 | 71.52 | 2.2995 | [Designing a Symbolic Intermediate Representation for Neural Surface Realization](https://www.aclweb.org/anthology/W19-2308.pdf) | |
-| Shen, Sheng, et al. (2019) <sup>[[6]](#myfootnote7)</sup> | 66.2 | 8.60 | 45.7 | 70.4 | 2.34 | [End-to-End Content and Plan Selection for Data-to-Text Generation](https://www.aclweb.org/anthology/W18-6505.pdf) |[Official](https://github.com/sebastianGehrmann/diverse_ensembling) |
+| Gehrmann, Sebastian, et al. (2018) <sup>[[6]](#myfootnote7)</sup> | 66.2 | 8.60 | 45.7 | 70.4 | 2.34 | [End-to-End Content and Plan Selection for Data-to-Text Generation](https://www.aclweb.org/anthology/W18-6505.pdf) |[Official](https://github.com/sebastianGehrmann/diverse_ensembling) |
 | Baseline | 65.93 | 8.61 | 44.83 | 68.50 | 2.23 | [Baseline system provided during the challenge](http://www.macs.hw.ac.uk/InteractionLab/E2E/#baseline) |[Official](https://github.com/UFAL-DSG/tgen/tree/master/e2e-challenge) |
 
 <!-- ## WikiBio  -->
@@ -74,5 +77,7 @@ The performance is evaluated using **BLEU, NIST, METEOR, ROUGE-L, CIDEr scores**
 <a name="myfootnote7">[7]</a> Shen, Sheng, et al. "[Pragmatically Informative Text Generation](https://www.aclweb.org/anthology/N19-1410.pdf)." Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers). 2019.
 
 <a name="myfootnote8">[8]</a> Elder, Henry, et al. "[Designing a Symbolic Intermediate Representation for Neural Surface Realization](https://www.aclweb.org/anthology/W19-2308.pdf)." Proceedings of the Workshop on Methods for Optimizing and Evaluating Neural Language Generation. 2019.
+
+<a name="myfootnote9">[9]</a> Kale, Mihir. "Text-to-Text Pre-Training for Data-to-Text Tasks." arXiv preprint arXiv:2005.10433 (2020).
 
 [Go back to the README](../README.md)
