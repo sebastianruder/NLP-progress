@@ -7,7 +7,7 @@ Unlike other NLG tasks such as, Machine Translation or Question Answering (also 
 ## RotoWire
 The [dataset](https://github.com/harvardnlp/boxscore-data/blob/master/rotowire.tar.bz2) consists of articles summarizing NBA basketball games, paired with their corresponding box- and line-score tables. It is professionally written, medium length game summaries targeted at fantasy basketball fans. The writing is colloquial, but structured, and targets an audience primarily interested in game statistics <sup>[[2]](#myfootnote2)</sup>.
 
-The performance is evaluated on two different automated metrics: first, **BLEU score**; and second, a family of **Extractive Evaluation (EE)**. EE contains three different metrics evaluating three different aspects of the generation:
+The performance is evaluated on two different automated metrics: first, **BLEU score**; and second, a family of **Extractive Evaluations (EE)**. EE contains three different submetrics evaluating three different aspects of the generation:
 
 1. **Content Selection (CS)**: precision (P%) and recall (R%) of unique relations extracted from generated text that are also extracted from golden text. This measures how well the generated document matches the gold document in terms of selecting which records to generate.
 
@@ -17,9 +17,9 @@ The performance is evaluated on two different automated metrics: first, **BLEU s
 
 | Model           | BLEU | CS (P% & R%) | RG (P% & #) | CO (DLD%) |  Paper / Source | Code |
 | ------------- | :-----: | :-----: | :-----: | :-----:| --- | --- |
-| Wiseman et al. (2017)<sup>[[2]](#myfootnote2)</sup> | 14.49 | 22.17 & 27.16 | 71.82 & 12.82 | 8.68 | [Challenges in Data-to-Document Generation](https://www.aclweb.org/anthology/D17-1239.pdf) |[Official](https://github.com/harvardnlp/data2text) |
-| Puduppully et al. (2019)<sup>[[3]](#myfootnote3)</sup> | 16.50 | 34.18 & 51.22 | 87.47 & 34.28 | 18.58 | [Data-to-text generation with content selection and planning](https://arxiv.org/pdf/1809.00582.pdf) |[Official](https://github.com/ratishsp/data2text-plan-py) |
 | Rebuffel, Clément, et al. (2020)<sup>[[4]](#myfootnote4)</sup> | 17.50 | 39.47 & 51.64 | 89.46 & 21.17 | 18.90 | [A Hierarchical Model for Data-to-Text Generation](https://link.springer.com/chapter/10.1007/978-3-030-45439-5_5) |[Official](https://github.com/KaijuML/data-to-text-hierarchical) |
+| Puduppully et al. (2019)<sup>[[3]](#myfootnote3)</sup> | 16.50 | 34.18 & 51.22 | 87.47 & 34.28 | 18.58 | [Data-to-text generation with content selection and planning](https://www.aaai.org/ojs/index.php/AAAI/article/view/4668) |[Official](https://github.com/ratishsp/data2text-plan-py) |
+| Wiseman et al. (2017)<sup>[[2]](#myfootnote2)</sup> | 14.49 | 22.17 & 27.16 | 71.82 & 12.82 | 8.68 | [Challenges in Data-to-Document Generation](https://www.aclweb.org/anthology/D17-1239.pdf) |[Official](https://github.com/harvardnlp/data2text) |
 
 ## WebNLG
 The [WebNLG challenge](https://webnlg-challenge.loria.fr/) consists in mapping data to text. The training data consists of Data/Text pairs where the data is a set of triples extracted from DBpedia and the text is a verbalisation of these triples. For example, given the three DBpedia triples (as shown in [a]), the aim is to generate a text (as shown in [b]):
@@ -34,14 +34,14 @@ The performance is evaluated on the basis of **BLEU, METEOR and TER scores**. Th
 <!-- | Model           | BLEU (S & U) | METEOR (S & U) | TER (S & U) |  Paper / Source | Code | -->
 | Model           | BLEU | METEOR | TER |  Paper / Source | Code |
 | ------------- | :-----: | :-----: | :-----: | --- | --- |
-| Baseline | 33.24 | 0.235436 | 0.613080 | [Baseline System provided during challenge](https://webnlg-challenge.loria.fr/challenge_2017/#webnlg-baseline-system) |[Official](https://gitlab.com/webnlg/webnlg-baseline) |
 | Moryossef et al. (2019) <sup>[[5]](#myfootnote5)</sup> | 47.4 | 0.391 | 0.631 | [Step-by-Step: Separating Planning from Realization in Neural Data-to-Text Generation](https://www.aclweb.org/anthology/N19-1236.pdf) | [Official](https://github.com/AmitMY/chimera) |
+| Baseline | 33.24 | 0.235436 | 0.613080 | [Baseline system provided during the challenge](https://webnlg-challenge.loria.fr/challenge_2017/#webnlg-baseline-system) |[Official](https://gitlab.com/webnlg/webnlg-baseline) |
 <!-- | Baseline System | 52.39 & 6.13 | 37.7 & 07.53 | 44.86 & 80.0 | [Baseline](https://webnlg-challenge.loria.fr/challenge_2017/#webnlg-baseline-system) |[Official](https://gitlab.com/webnlg/webnlg-baseline) | -->
 <!-- | Distiawan, Bayu, et al. (2018) | 58.6 & 34.1 | 40.6 & 32.0 | 41.7 & 57.9 | [GTR-LSTM: A Triple Encoder for Sentence Generation from RDF Data](https://www.aclweb.org/anthology/P18-1151.pdf) | | -->
 
-## Meaning Representation
+## Meaning Representations
 
-The dataset was first provided for the [E2E Challenge](http://www.macs.hw.ac.uk/InteractionLab/E2E/) in 2017. It is a crowd-sourced data set of 50k instances in the restaurant domain.Each instance consist of a dialogue act-based meaning representation (MR) and up to 5 references in natural language (NL). For example:
+The dataset was first provided for the [E2E Challenge](http://www.macs.hw.ac.uk/InteractionLab/E2E/) in 2017. It is a crowd-sourced data set of 50k instances in the restaurant domain.Each instance consist of a dialogue act-based meaning representations (MR) and up to 5 references in natural language (NL). For example:
 
 * **MR**: name[The Eagle], eatType[coffee shop], food[French], priceRange[moderate], customerRating[3/5], area[riverside], kidsFriendly[yes], near[Burger King]
 
@@ -51,28 +51,28 @@ The performance is evaluated using **BLEU, NIST, METEOR, ROUGE-L, CIDEr scores**
 
 | Model           | BLEU | NIST | METEOR | ROUGE-L | CIDEr |  Paper / Source | Code |
 | ------------- | :-----: | :-----: |:-----: |:-----: | :-----: | --- | --- |
-| Baseline | 65.93 | 8.61 | 44.83 | 68.50 | 2.23 | [Baseline System provided during challenge](http://www.macs.hw.ac.uk/InteractionLab/E2E/#baseline) |[Official](https://github.com/UFAL-DSG/tgen/tree/master/e2e-challenge) |
-| Gehrmann, Sebastian, et al. (2018) <sup>[[6]](#myfootnote6)</sup> | 68.60 | 8.73 | 45.25 | 70.82 | 2.37 | [Pragmatically Informative Text Generation](https://www.aclweb.org/anthology/N19-1410.pdf) |[Official](https://github.com/sIncerass/prag_generation) |
-| Shen, Sheng, et al. (2019) <sup>[[7]](#myfootnote7)</sup> | 66.2 | 8.60 | 45.7 | 70.4 | 2.34 | [End-to-End Content and Plan Selection for Data-to-Text Generation](https://www.aclweb.org/anthology/W18-6505.pdf) |[Official](https://github.com/sebastianGehrmann/diverse_ensembling) |
+| Gehrmann, Sebastian, et al. (2018) <sup>[[7]](#myfootnote6)</sup> | 68.60 | 8.73 | 45.25 | 70.82 | 2.37 | [Pragmatically Informative Text Generation](https://www.aclweb.org/anthology/N19-1410.pdf) |[Official](https://github.com/sIncerass/prag_generation) |
 | Elder, Henry, et al. (2019) <sup>[[8]](#myfootnote8)</sup> | 67.38 | 8.7277 | 45.72 | 71.52 | 2.2995 | [Designing a Symbolic Intermediate Representation for Neural Surface Realization](https://www.aclweb.org/anthology/W19-2308.pdf) | |
+| Shen, Sheng, et al. (2019) <sup>[[6]](#myfootnote7)</sup> | 66.2 | 8.60 | 45.7 | 70.4 | 2.34 | [End-to-End Content and Plan Selection for Data-to-Text Generation](https://www.aclweb.org/anthology/W18-6505.pdf) |[Official](https://github.com/sebastianGehrmann/diverse_ensembling) |
+| Baseline | 65.93 | 8.61 | 44.83 | 68.50 | 2.23 | [Baseline system provided during the challenge](http://www.macs.hw.ac.uk/InteractionLab/E2E/#baseline) |[Official](https://github.com/UFAL-DSG/tgen/tree/master/e2e-challenge) |
 
 <!-- ## WikiBio  -->
 
 ## References
-<a name="myfootnote1">[1]</a> Albert Gatt and Emiel Krahmer. 2018. Survey of the state of the art in natural language generation: core tasks, applications and evaluation. J. Artif. Int. Res. 61, 1 (January 2018), 65–170.
+<a name="myfootnote1">[1]</a> Albert Gatt and Emiel Krahmer. 2018. [Survey of the state of the art in natural language generation: core tasks, applications and evaluation](https://www.jair.org/index.php/jair/article/download/11173/26378/). J. Artif. Int. Res. 61, 1 (January 2018), 65–170.
 
-<a name="myfootnote2">[2]</a> Wiseman, Sam, Stuart M. Shieber, and Alexander M. Rush. "Challenges in Data-to-Document Generation." Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing. 2017.
+<a name="myfootnote2">[2]</a> Wiseman, Sam, Stuart M. Shieber, and Alexander M. Rush. "[Challenges in Data-to-Document Generation](https://www.aclweb.org/anthology/D17-1239.pdf)." Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing. 2017.
 
-<a name="myfootnote3">[3]</a> Puduppully, Ratish, Li Dong, and Mirella Lapata. "Data-to-text generation with content selection and planning." Proceedings of the AAAI Conference on Artificial Intelligence. Vol. 33. 2019.
+<a name="myfootnote3">[3]</a> Puduppully, Ratish, Li Dong, and Mirella Lapata. "[Data-to-text generation with content selection and planning](https://www.aaai.org/ojs/index.php/AAAI/article/view/4668)." Proceedings of the AAAI Conference on Artificial Intelligence. Vol. 33. 2019.
 
-<a name="myfootnote4">[4]</a> Rebuffel, Clément, et al. "A Hierarchical Model for Data-to-Text Generation." European Conference on Information Retrieval. Springer, Cham, 2020.
+<a name="myfootnote4">[4]</a> Rebuffel, Clément, et al. "[A Hierarchical Model for Data-to-Text Generation](https://link.springer.com/chapter/10.1007/978-3-030-45439-5_5)." European Conference on Information Retrieval. Springer, Cham, 2020.
 
-<a name="myfootnote5">[5]</a> Moryossef, Amit, Yoav Goldberg, and Ido Dagan. "Step-by-Step: Separating Planning from Realization in Neural Data-to-Text Generation." Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers). 2019.
+<a name="myfootnote5">[5]</a> Moryossef, Amit, Yoav Goldberg, and Ido Dagan. "[Step-by-Step: Separating Planning from Realization in Neural Data-to-Text Generation](https://www.aclweb.org/anthology/N19-1236.pdf)." Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers). 2019.
 
-<a name="myfootnote6">[6]</a> Gehrmann, Sebastian, et al. "End-to-End Content and Plan Selection for Data-to-Text Generation." Proceedings of the 11th International Conference on Natural Language Generation. 2018.
+<a name="myfootnote6">[6]</a> Gehrmann, Sebastian, et al. "[End-to-End Content and Plan Selection for Data-to-Text Generation](https://www.aclweb.org/anthology/W18-6505.pdf)." Proceedings of the 11th International Conference on Natural Language Generation. 2018.
 
-<a name="myfootnote7">[7]</a> Shen, Sheng, et al. "Pragmatically Informative Text Generation." Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers). 2019.
+<a name="myfootnote7">[7]</a> Shen, Sheng, et al. "[Pragmatically Informative Text Generation](https://www.aclweb.org/anthology/N19-1410.pdf)." Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers). 2019.
 
-<a name="myfootnote8">[8]</a> Elder, Henry, et al. "Designing a Symbolic Intermediate Representation for Neural Surface Realization." Proceedings of the Workshop on Methods for Optimizing and Evaluating Neural Language Generation. 2019.
+<a name="myfootnote8">[8]</a> Elder, Henry, et al. "[Designing a Symbolic Intermediate Representation for Neural Surface Realization](https://www.aclweb.org/anthology/W19-2308.pdf)." Proceedings of the Workshop on Methods for Optimizing and Evaluating Neural Language Generation. 2019.
 
 [Go back to the README](../README.md)
