@@ -29,16 +29,12 @@ The [WebNLG challenge](https://webnlg-challenge.loria.fr/) consists in mapping d
 * **[b]**. John E Blaha, born in San Antonio on 1942-08-26, worked as a fighter pilot.
 
 The performance is evaluated on the basis of **BLEU, METEOR and TER scores**. The data from WebNLG Challenge 2017 can be downloaded [here](https://gitlab.com/shimorina/webnlg-dataset).
-<!-- The test-set is also divided into two broad groups: **seen (S)**, test samples from the *categories present in training set*; and **unseen (U)**, test samples from *categories not-present in training set*. -->
 
-<!-- | Model           | BLEU (S & U) | METEOR (S & U) | TER (S & U) |  Paper / Source | Code | -->
 | Model           | BLEU | METEOR | TER |  Paper / Source | Code |
 | ------------- | :-----: | :-----: | :-----: | --- | --- |
 | Kale, Mihir. (2020) <sup>[[9]](#myfootnote9)</sup> | 57.1 | 0.44 |  | [Text-to-Text Pre-Training for Data-to-Text Tasks](https://arxiv.org/pdf/2005.10433v2.pdf) |  |
 | Moryossef et al. (2019) <sup>[[5]](#myfootnote5)</sup> | 47.4 | 0.391 | 0.631 | [Step-by-Step: Separating Planning from Realization in Neural Data-to-Text Generation](https://www.aclweb.org/anthology/N19-1236.pdf) | [Official](https://github.com/AmitMY/chimera) |
 | Baseline | 33.24 | 0.235436 | 0.613080 | [Baseline system provided during the challenge](https://webnlg-challenge.loria.fr/challenge_2017/#webnlg-baseline-system) |[Official](https://gitlab.com/webnlg/webnlg-baseline) |
-<!-- | Baseline System | 52.39 & 6.13 | 37.7 & 07.53 | 44.86 & 80.0 | [Baseline](https://webnlg-challenge.loria.fr/challenge_2017/#webnlg-baseline-system) |[Official](https://gitlab.com/webnlg/webnlg-baseline) | -->
-<!-- | Distiawan, Bayu, et al. (2018) | 58.6 & 34.1 | 40.6 & 32.0 | 41.7 & 57.9 | [GTR-LSTM: A Triple Encoder for Sentence Generation from RDF Data](https://www.aclweb.org/anthology/P18-1151.pdf) | | -->
 
 **P.S.**: The **test dataset** of WebNLG consists of **total 15 categories**, out of which 10 (**seen**) catgories are used for training while 5 (**unseen**) are not. The results reported here are those obtained on overall test data, i.e., all 15 categories.
 
