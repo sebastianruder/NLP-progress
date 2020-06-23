@@ -89,6 +89,7 @@ We present the models tested in this dataset **ranked by SARI score**.
 | SBSMT + PPDB + SARI (Xu et al, 2016) | 73.08\* (72.36) | 39.96\* (37.91) | [Optimizing Statistical Machine Translation for Text Simplification](http://aclweb.org/anthology/Q16-1029) | [Official](https://github.com/cocoxu/simplification/) |
 | PBMT-R (Wubben et al., 2012) | 81.11\* | 38.56\* | [Sentence Simplification by Monolingual Machine Translation](http://aclweb.org/anthology/P12-1107) |  |
 | EditNTS (Dong et al., 2019) | 86.69 | 38.22 | [EditNTS: An Neural Programmer-Interpreter Model for Sentence Simplification through Explicit Editing](https://www.aclweb.org/anthology/P19-1331) | [Official](https://github.com/yuedongP/EditNTS) |
+| Edit-Unsup-TS (Kumar et al., 2020) | 73.62 | 37.85 | [Iterative Edit-Based Unsupervised Sentence Simplification](https://www.aclweb.org/anthology/2020.acl-main.707.pdf) | [Official](https://github.com/ddhruvkr/Edit-Unsup-TS) |
 | Pointer + Multi-task Entailment and Paraphrase Generation (Guo et al., 2018) | 81.49 | 37.45 | [Dynamic Multi-Level Multi-Task Learning for Sentence Simplification](http://aclweb.org/anthology/C18-1039) | [Official](https://github.com/HanGuo97/MultitaskSimplification) |
 | NTS + SARI (Nisioi et al., 2017) | 80.69 | 37.25 | [Exploring Neural Text Simplification Models](http://aclweb.org/anthology/P17-2014) | [Official](https://github.com/senisioi/NeuralTextSimplification) |
 | DRESS-LS (Zhang and Lapata, 2017) | 80.12 | 37.27 | [Sentence Simplification with Deep Reinforcement Learning](http://aclweb.org/anthology/D17-1062) | [Official](https://github.com/XingxingZhang/dress) |
@@ -120,6 +121,7 @@ Using their splits, [Zhang and Lapata (2017)](http://aclweb.org/anthology/D17-10
 | --------------- | :-----: | :-----: | -------------- | ---- |
 | Pointer + Multi-task Entailment and Paraphrase Generation (Guo et al., 2018) | 11.14 | 33.22 | [Dynamic Multi-Level Multi-Task Learning for Sentence Simplification](http://aclweb.org/anthology/C18-1039) | [Official](https://github.com/HanGuo97/MultitaskSimplification) |
 |S2S-Cluster-FA (Kriz et al., 2019) | 19.55 | 30.73 | [Complexity-Weighted Loss and Diverse Reranking for Sentence Simplification](https://www.aclweb.org/anthology/N19-1317) | [Official](https://github.com/rekriz11/sockeye-recipes) |
+| Edit-Unsup-TS (Kumar et al., 2020) | 17.36 | 30.44 | [Iterative Edit-Based Unsupervised Sentence Simplification](https://www.aclweb.org/anthology/2020.acl-main.707.pdf) | [Official](https://github.com/ddhruvkr/Edit-Unsup-TS) |
 | EditNTS (Dong et al., 2019) | 19.85 | 30.27 | [EditNTS: An Neural Programmer-Interpreter Model for Sentence Simplification through Explicit Editing](https://www.aclweb.org/anthology/P19-1331) | [Official](https://github.com/yuedongP/EditNTS) |
 | NSELSTM-S (Vu et al., 2018) | 22.62 | 29.58 | [Sentence Simplification with Memory-Augmented Neural Networks](http://aclweb.org/anthology/N18-2013) | |
 | SeqLabel (Alva-Manchego et al., 2017) |  | 29.53\* | [Learning How to Simplify From Explicit Labeling of Complex-Simplified Text Pairs](https://www.aclweb.org/anthology/I17-1030) | |
