@@ -21,3 +21,10 @@ The IIT Bombay English-Hindi Parallel Corpus used by Kunchukuttan et al. (2018) 
 | ------------- | :-----:| --- | --- | 
 | Saini et al. (2018) | 18.215 (eng-hin)| [Neural Machine Translation for English to Hindi](https://www.researchgate.net/publication/327717152_Neural_Machine_Translation_for_English_to_Hindi) | | 
 | Goyal et al. (2019) | 19.06 (hin-eng)| [LTRC-MT Simple & Effective Hindi-English Neural Machine Translation Systems at WAT 2019](https://www.aclweb.org/anthology/D19-5216.pdf) | |
+
+## Metadata Generation
+
+| Model           | Accuracy / Score | Paper / Source | Code | 
+| ------------- | :-----:| --- | --- | 
+| Audichya et al. (2020)  | 98.09% | [Computational Linguistic Prosody Rule-based Unified Technique for Automatic Metadata Generation for Hindi Poetry](https://ieeexplore.ieee.org/document/8987239) | | 
+
