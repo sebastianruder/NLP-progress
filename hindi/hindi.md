@@ -21,3 +21,12 @@ The IIT Bombay English-Hindi Parallel Corpus used by Kunchukuttan et al. (2018) 
 | ------------- | :-----:| --- | --- | 
 | Saini et al. (2018) | 18.215 (eng-hin)| [Neural Machine Translation for English to Hindi](https://www.researchgate.net/publication/327717152_Neural_Machine_Translation_for_English_to_Hindi) | | 
 | Goyal et al. (2019) | 19.06 (hin-eng)| [LTRC-MT Simple & Effective Hindi-English Neural Machine Translation Systems at WAT 2019](https://www.aclweb.org/anthology/D19-5216.pdf) | |
+
+
+## G2P Conversion
+
+### Schwa Deletion
+
+| Model | Schwa-level accuracy | Word-level accuracy | Paper / Source | Code |
+| ----- | :------------------: | ------------------- | -------------- | ---- |
+| Arora et al. (2020) | 98.00 | 97.78 | [Supervised Grapheme-to-Phoneme Conversion of Orthographic Schwas in Hindi and Punjabi](https://www.aclweb.org/anthology/2020.acl-main.696.pdf) | [schwa-deletion](https://github.com/aryamanarora/schwa-deletion) |
