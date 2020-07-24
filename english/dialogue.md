@@ -13,7 +13,7 @@ The Switchboard Dialogue Act Corpus (SwDA) [[download](https://web.stanford.edu/
 Annotated example:  
 *Speaker:* A, *Dialogue Act:* Yes-No-Question, *Utterance:* So do you go to college right now?  
 
-| Model           | Accuracy  |  Paper / Source | Code | 
+| Model           | Accuracy  |  Paper / Source | Code |
 | ------------- | :-----:| --- | --- |
 | SGNN (Ravi et al., 2018) | 83.1 | [Self-Governing Neural Networks for On-Device Short Text Classification](https://www.aclweb.org/anthology/D18-1105.pdf)
 | CASA (Raheja et al., 2019) | 82.9 | [Dialogue Act Classification with Context-Aware Self-Attention](https://www.aclweb.org/anthology/N19-1373.pdf)
@@ -21,7 +21,7 @@ Annotated example:
 | ALDMN (Wan et al., 2018) | 81.5 | [Improved Dynamic Memory Network for Dialogue Act Classification with Adversarial Training](https://arxiv.org/pdf/1811.05021.pdf)
 | CRF-ASN (Chen et al., 2018) | 81.3 | [Dialogue Act Recognition via CRF-Attentive Structured Network](https://arxiv.org/abs/1711.05568) | |
 | Bi-LSTM-CRF (Kumar et al., 2017) | 79.2 | [Dialogue Act Sequence Labeling using Hierarchical encoder with CRF](https://arxiv.org/abs/1709.04250) | [Link](https://github.com/YanWenqiang/HBLSTM-CRF) |
-| RNN with 3 utterances in context (Bothe et al., 2018) | 77.34 | [A Context-based Approach for Dialogue Act Recognition using Simple Recurrent Neural Networks](https://arxiv.org/abs/1805.06280) | | 
+| RNN with 3 utterances in context (Bothe et al., 2018) | 77.34 | [A Context-based Approach for Dialogue Act Recognition using Simple Recurrent Neural Networks](https://arxiv.org/abs/1805.06280) | |
 
 
 ### ICSI Meeting Recorder Dialog Act (MRDA) corpus
@@ -30,8 +30,8 @@ Annotated example:
 *Time:* 2804-2810, *Speaker:* c6, *Dialogue Act:* s^bd, *Transcript:* i mean these are just discriminative.  
 Multiple dialogue acts are separated by "^".
 
-| Model           | Accuracy  |  Paper / Source | Code | 
-| ------------- | :-----:| --- | --- | 
+| Model           | Accuracy  |  Paper / Source | Code |
+| ------------- | :-----:| --- | --- |
 | DAH-CRF (Li et al., 2019) | 92.2 | [A Dual-Attention Hierarchical Recurrent Neural Network for Dialogue Act Classification](https://www.aclweb.org/anthology/K19-1036.pdf)
 | CRF-ASN (Chen et al., 2018) | 91.7 | [Dialogue Act Recognition via CRF-Attentive Structured Network](https://arxiv.org/abs/1711.05568) | |
 | CASA (Raheja et al., 2019) | 91.1 | [Dialogue Act Classification with Context-Aware Self-Attention](https://www.aclweb.org/anthology/N19-1373.pdf)
@@ -55,7 +55,7 @@ evaluated based on accuracy on both individual and joint slot tracking.
 | Zhong et al. (2018) | 97.5 | - | - | - | 74.5| [Global-locally Self-attentive Dialogue State Tracker](https://arxiv.org/abs/1805.09655) |
 | Liu et al. (2018) | - | 90 | 84 | 92 | 72 | [Dialogue Learning with Human Teaching and Feedback in End-to-End Trainable Task-Oriented Dialogue Systems](https://arxiv.org/abs/1804.06512) |
 | Neural belief tracker (Mrkšić et al., 2017) | 96.5 | 90 | 84 | 94 | 73.4 | [Neural Belief Tracker: Data-Driven Dialogue State Tracking](https://arxiv.org/abs/1606.03777) |
-| RNN (Henderson et al., 2014) | 95.7 | 92 | 86 | 86 | 69 | [Robust dialog state tracking using delexicalised recurrent neural networks and unsupervised gate](http://svr-ftp.eng.cam.ac.uk/~sjy/papers/htyo14.pdf) | 
+| RNN (Henderson et al., 2014) | 95.7 | 92 | 86 | 86 | 69 | [Robust dialog state tracking using delexicalised recurrent neural networks and unsupervised gate](http://svr-ftp.eng.cam.ac.uk/~sjy/papers/htyo14.pdf) |
 
 ### Wizard-of-Oz
 
@@ -64,9 +64,11 @@ The [WoZ 2.0 dataset](https://arxiv.org/pdf/1606.03777.pdf) is a newer dialogue 
 
 | Model           | Request  |  Joint  |  Paper / Source |
 | ------------- |  :-----:| :-----:| --- |
+| BERT-based tracker (Lai et al., 2020) | 97.6 | 90.5 | [A Simple but Effective BERT Model for Dialog State Tracking on Resource-Limited Systems](https://ieeexplore.ieee.org/document/9053975) |
+| GCE (Nouri et al., 2018) | 97.4 | 88.5 | [Toward Scalable Neural Dialogue State Tracking Model](https://arxiv.org/abs/1812.00899) |
 | Zhong et al. (2018) | 97.1 | 88.1 | [Global-locally Self-attentive Dialogue State Tracker](https://arxiv.org/abs/1805.09655) |
 | Neural belief tracker (Mrkšić et al., 2017) | 96.5 | 84.4 | [Neural Belief Tracker: Data-Driven Dialogue State Tracking](https://arxiv.org/abs/1606.03777) |
-| RNN (Henderson et al., 2014) | 87.1 | 70.8 | [Robust dialog state tracking using delexicalised recurrent neural networks and unsupervised gate](http://svr-ftp.eng.cam.ac.uk/~sjy/papers/htyo14.pdf) | 
+| RNN (Henderson et al., 2014) | 87.1 | 70.8 | [Robust dialog state tracking using delexicalised recurrent neural networks and unsupervised gate](http://svr-ftp.eng.cam.ac.uk/~sjy/papers/htyo14.pdf) |
 
 
 ### MultiWOZ
