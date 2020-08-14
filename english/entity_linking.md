@@ -44,6 +44,8 @@ The [AIDA CoNLL-YAGO][AIDACoNLLYAGO] Dataset by [[Hoffart]](http://www.aclweb.or
    
 |  Paper / Source | Micro-Precision | Macro-Precision | Paper / Source | Code | 
 | ------------- | :-----:| :----: | :----: | --- |
+| Mulang’ et al. (2020) | 94.94 | - | [Evaluating the Impact of Knowledge Graph Context
+on Entity Disambiguation Models](https://arxiv.org/pdf/2008.05190.pdf) | [Official]() |
 | Raiman et al. (2018) | 94.88 | - | [DeepType: Multilingual Entity Linking by Neural Type System Evolution](https://arxiv.org/pdf/1802.01021.pdf) | [Official](https://github.com/openai/deeptype) |
 | Sil et al. (2018) | 94.0 | - | [Neural Cross-Lingual Entity Linking](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16501/16101) | |
 | Radhakrishnan et al. (2018) | 93.0 | 93.7 | [ELDEN: Improved Entity Linking using Densified Knowledge Graphs](http://aclweb.org/anthology/N18-1167) | |
