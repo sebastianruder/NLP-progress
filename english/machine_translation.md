@@ -16,6 +16,7 @@ on BLEU.
 | DeepL | 33.3 | [DeepL Press release](https://www.deepl.com/press.html) |
 | MUSE (Zhao et al., 2019)| 29.9 | [MUSE: Parallel Multi-Scale Attention for Sequence to Sequence Learning](https://arxiv.org/abs/1911.09483) |
 | DynamicConv (Wu et al., 2019)| 29.7 | [Pay Less Attention With Lightweight and Dynamic Convolutions](https://arxiv.org/abs/1901.10430) |
+| TaLK Convolutions (Lioutas et al., 2020)| 29.6 | [Time-aware Large Kernel Convolutions](https://arxiv.org/abs/2002.03184) |
 | AdvSoft + Transformer Big (Wang et al., 2019)| 29.52 | [Improving Neural Language Modeling via Adversarial Training](http://proceedings.mlr.press/v97/wang19f/wang19f.pdf) |
 | Transformer Big (Ott et al., 2018) | 29.3 | [Scaling Neural Machine Translation](https://arxiv.org/abs/1806.00187) |
 | RNMT+ (Chen et al., 2018) | 28.5* | [The Best of Both Worlds: Combining Recent Advances in Neural Machine Translation](https://arxiv.org/abs/1804.09849) |
@@ -34,6 +35,7 @@ on BLEU.
 | DeepL | 45.9 | [DeepL Press release](https://www.deepl.com/press.html) |
 | Transformer Big + BT (Edunov et al., 2018) | 45.6 | [Understanding Back-Translation at Scale](https://arxiv.org/pdf/1808.09381.pdf) |
 | MUSE (Zhao et al., 2019)| 43.5 | [MUSE: Parallel Multi-Scale Attention for Sequence to Sequence Learning](https://arxiv.org/abs/1911.09483) |
+| TaLK Convolutions (Lioutas et al., 2020)| 43.2 | [Time-aware Large Kernel Convolutions](https://arxiv.org/abs/2002.03184) |
 | DynamicConv (Wu et al., 2019)| 43.2 | [Pay Less Attention With Lightweight and Dynamic Convolutions](https://arxiv.org/abs/1901.10430) |
 | Transformer Big (Ott et al., 2018) | 43.2 | [Scaling Neural Machine Translation](https://arxiv.org/abs/1806.00187) |
 | RNMT+ (Chen et al., 2018) | 41.0* | [The Best of Both Worlds: Combining Recent Advances in Neural Machine Translation](https://arxiv.org/abs/1804.09849) |
