@@ -51,6 +51,7 @@ The first table covers Extractive Models, while the second covers abstractive ap
 | Model           | ROUGE-1 | ROUGE-2 | ROUGE-L | METEOR | Paper / Source | Code |
 | --------------- | :-----: | :-----: | :-----: | :----: | -------------- | ---- |
 | MatchSum (Zhong et al., 2020) | 44.41 | 20.86 | 40.55 | - | [Extractive Summarization as Text Matching](https://arxiv.org/abs/2004.08795) | [Official](https://github.com/maszhongming/MatchSum) |
+| DiscoBERT w.G_R & G_C (Xu et al. 2019) | 43.77 | 20.85 | 40.67 | - | [A Discourse-Aware Neural Extractive Model for Text Summarization](http://www.cs.utexas.edu/~jcxu/material/ACL20/DiscoBERT_ACL2020.pdf) |[Official](https://github.com/jiacheng-xu/DiscoBERT) |
 | BertSumExt (Liu and Lapata 2019) | 43.85 | 20.34 | 39.90 | - | [Text Summarization with Pretrained Encoders](https://arxiv.org/abs/1908.08345) |[Official](https://github.com/nlpyang/PreSumm) | 
 | BERT-ext + RL (Bae et al., 2019) | 42.76 | 19.87 | 39.11 | - | [Summary Level Training of Sentence Rewriting for Abstractive Summarization](https://arxiv.org/abs/1909.08752) | |
 | PNBERT (Zhong et al., 2019) | 42.69 | 19.60 | 38.85 | - | [Searching for Effective Neural Extractive Summarization: What Works and What's Next](https://arxiv.org/abs/1907.03491) | [Official](https://github.com/maszhongming/Effective_Extractive_Summarization) |
