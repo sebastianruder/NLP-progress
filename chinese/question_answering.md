@@ -19,7 +19,7 @@ dataset can be downloaded [here](https://github.com/ymcui/cmrc2018). Below we sh
 test set and the challenge set. 
 
 | Model           | Test F1 | Test EM | Challenge F1 | Challenge EM | Paper |
-| ------------- | :-----:| :-----:| --- |
+| ------------- | :-----:| :-----:| :-----:| :-----:| --- |
 | Human performance | 97.9 | 92.4 | 95.2 | 90.4 | [A Span-Extraction Dataset for Chinese Machine Reading Comprehension](https://www.aclweb.org/anthology/D19-1600/) |
 | Dual BERT (w / SQuAD; Cui et al., 2019) | 90.2 | 73.6 | 55.2 | 27.8 | [Cross-Lingual Machine Reading Comprehension](https://www.aclweb.org/anthology/D19-1169/) |
 | Dual BERT (Cui et al., 2019) | 88.1 | 70.4 | 47.9 | 23.8 | [Cross-Lingual Machine Reading Comprehension](https://www.aclweb.org/anthology/D19-1169/) |
