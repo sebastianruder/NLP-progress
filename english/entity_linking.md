@@ -17,7 +17,7 @@ Example:
 More in details can be found in this [survey](http://dbgroup.cs.tsinghua.edu.cn/wangjy/papers/TKDE14-entitylinking.pdf).
 
 ## Current SOTA
-[Raiman][Raiman] is the current SOTA in Cross-lingual Entity Linking. They construct a type system, and use it to constrain the outputs of a neural network to respect the symbolic structure. They achieve this by reformulating the design problem into a mixed integer problem: create a type system and subsequently train a neural network with it. They propose a 2-step algorithm: 1) heuristic search or stochastic optimization over discrete variables that define a type system
+[Raiman][Raiman] is the current SOTA in Cross-lingual Entity Linking for WikiDisamb30 and TAC KBP 2010 datasets (note: [Mulang’ et al. 2020](https://arxiv.org/pdf/2008.05190.pdf) is the current Sota for ConLL-AIDA dataset). They construct a type system, and use it to constrain the outputs of a neural network to respect the symbolic structure. They achieve this by reformulating the design problem into a mixed integer problem: create a type system and subsequently train a neural network with it. They propose a 2-step algorithm: 1) heuristic search or stochastic optimization over discrete variables that define a type system
 informed by an Oracle and a Learnability heuristic, 2) gradient descent to fit classifier parameters. They apply DeepType to the problem of Entity Linking on three standard datasets (i.e. WikiDisamb30, CoNLL (YAGO), TAC KBP 2010) and find that it outperforms all existing solutions by a wide margin, including approaches that rely on a human-designed type system or recent deep learning-based entity embeddings, while explicitly using symbolic information lets it integrate new entities without retraining.
 
 ## Evaluation
@@ -44,6 +44,7 @@ The [AIDA CoNLL-YAGO][AIDACoNLLYAGO] Dataset by [[Hoffart]](http://www.aclweb.or
    
 |  Paper / Source | Micro-Precision | Macro-Precision | Paper / Source | Code | 
 | ------------- | :-----:| :----: | :----: | --- |
+| Mulang’ et al. (2020) | 94.94 | - | [Evaluating the Impact of Knowledge Graph Context on Entity Disambiguation Models](https://arxiv.org/pdf/2008.05190.pdf) | -  |
 | Raiman et al. (2018) | 94.88 | - | [DeepType: Multilingual Entity Linking by Neural Type System Evolution](https://arxiv.org/pdf/1802.01021.pdf) | [Official](https://github.com/openai/deeptype) |
 | Sil et al. (2018) | 94.0 | - | [Neural Cross-Lingual Entity Linking](https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16501/16101) | |
 | Radhakrishnan et al. (2018) | 93.0 | 93.7 | [ELDEN: Improved Entity Linking using Densified Knowledge Graphs](http://aclweb.org/anthology/N18-1167) | |
