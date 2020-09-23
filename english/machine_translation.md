@@ -14,6 +14,7 @@ on BLEU.
 | ------------- | :-----:| --- |
 | Transformer Big + BT (Edunov et al., 2018) | 35.0 | [Understanding Back-Translation at Scale](https://arxiv.org/pdf/1808.09381.pdf) |
 | DeepL | 33.3 | [DeepL Press release](https://www.deepl.com/press.html) |
+| Admin (Liu et al., 2020) | 30.1 | [Very Deep Transformers for Neural Machine Translation](https://arxiv.org/abs/2008.07772) |
 | MUSE (Zhao et al., 2019)| 29.9 | [MUSE: Parallel Multi-Scale Attention for Sequence to Sequence Learning](https://arxiv.org/abs/1911.09483) |
 | DynamicConv (Wu et al., 2019)| 29.7 | [Pay Less Attention With Lightweight and Dynamic Convolutions](https://arxiv.org/abs/1901.10430) |
 | TaLK Convolutions (Lioutas et al., 2020)| 29.6 | [Time-aware Large Kernel Convolutions](https://arxiv.org/abs/2002.03184) |
@@ -34,6 +35,7 @@ on BLEU.
 | ------------- | :-----:| --- |
 | DeepL | 45.9 | [DeepL Press release](https://www.deepl.com/press.html) |
 | Transformer Big + BT (Edunov et al., 2018) | 45.6 | [Understanding Back-Translation at Scale](https://arxiv.org/pdf/1808.09381.pdf) |
+| Admin (Liu et al., 2020) | 43.8 | [Understand the Difficulty of Training Transformers](https://arxiv.org/abs/2004.08249) |
 | MUSE (Zhao et al., 2019)| 43.5 | [MUSE: Parallel Multi-Scale Attention for Sequence to Sequence Learning](https://arxiv.org/abs/1911.09483) |
 | TaLK Convolutions (Lioutas et al., 2020)| 43.2 | [Time-aware Large Kernel Convolutions](https://arxiv.org/abs/2002.03184) |
 | DynamicConv (Wu et al., 2019)| 43.2 | [Pay Less Attention With Lightweight and Dynamic Convolutions](https://arxiv.org/abs/1901.10430) |
