@@ -19,4 +19,8 @@ metric is accuracy and scores are averaged across each domain.
 | VFAE (Louizos et al., 2015) | 76.57 | 73.40 | 80.53 | 82.93 | 78.36 | [The Variational Fair Autoencoder](https://arxiv.org/abs/1511.00830) |
 | DANN (Ganin et al., 2016) | 75.40 | 71.43 | 77.67 | 80.53 | 76.26 | [Domain-Adversarial Training of Neural Networks](https://arxiv.org/abs/1505.07818) |
 
+## Financial Technology and Natural Language Processing (FinNLP) 
+
+The [FinNLP Progress](https://github.com/YangLinyi/FinNLP-Progress) is a repository to track the progress in Natural Language Processing (NLP) related to the domain of Finance, including the datasets, papers, and current state-of-the-art results for the most popular tasks. Examples include Financial Event Prediction, Financial Index Forecasting, Financial Risk Analysis, Financial Text Mining, Fraud Detection, etc.
+
 [Go back to the README](../README.md)
