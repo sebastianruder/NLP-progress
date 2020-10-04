@@ -140,9 +140,9 @@ This dataset is derived from the New York Times dataset of [Riedel et al., 2010]
 
 | Model           | F1  |  Paper / Source | Code |
 | ------------- | ----- | --- | --- |
-| WDec | 0.682 | Effective Modeling of Encoder-Decoder Architecture for Joint Entity and Relation Extraction (https://arxiv.org/pdf/1911.09886.pdf) | https://github.com/nusnlp/PtrNetDecoding4JERE |
-| PNDec | 0.673 | Effective Modeling of Encoder-Decoder Architecture for Joint Entity and Relation Extraction (https://arxiv.org/pdf/1911.09886.pdf) | https://github.com/nusnlp/PtrNetDecoding4JERE |
-| HRL | 0.643 | A Hierarchical Framework for Relation Extraction with Reinforcement Learning (https://arxiv.org/pdf/1811.03925.pdf) | https://github.com/truthless11/HRL-RE |
+| WDec (Nayak and Ng, 2020) | 0.682 | [Effective Modeling of Encoder-Decoder Architecture for Joint Entity and Relation Extraction] (https://arxiv.org/pdf/1911.09886.pdf) | [PtrNetDecoding4JERE] (https://github.com/nusnlp/PtrNetDecoding4JERE) |
+| PNDec (Nayak and Ng, 2020) | 0.673 | Effective Modeling of Encoder-Decoder Architecture for Joint Entity and Relation Extraction (https://arxiv.org/pdf/1911.09886.pdf) | [PtrNetDecoding4JERE] (https://github.com/nusnlp/PtrNetDecoding4JERE) |
+| HRLRE (Takanobu et at., 2019) | 0.643 | A Hierarchical Framework for Relation Extraction with Reinforcement Learning (https://arxiv.org/pdf/1811.03925.pdf) | [HRLRE] (https://github.com/truthless11/HRL-RE) |
 
 ##### NYT24
 
@@ -150,9 +150,9 @@ This dataset is derived from the New York Times dataset of [Hoffman et al., 2011
 
 | Model           | F1  |  Paper / Source | Code |
 | ------------- | ----- | --- | --- |
-| WDec | 0.817 | Effective Modeling of Encoder-Decoder Architecture for Joint Entity and Relation Extraction (https://arxiv.org/pdf/1911.09886.pdf) | https://github.com/nusnlp/PtrNetDecoding4JERE |
-| PNDec | 0.789 | Effective Modeling of Encoder-Decoder Architecture for Joint Entity and Relation Extraction (https://arxiv.org/pdf/1911.09886.pdf) | https://github.com/nusnlp/PtrNetDecoding4JERE |
-| HRL | 0.776 | A Hierarchical Framework for Relation Extraction with Reinforcement Learning (https://arxiv.org/pdf/1811.03925.pdf) | https://github.com/truthless11/HRL-RE |
+| WDec (Nayak and Ng, 2020) | 0.817 | [Effective Modeling of Encoder-Decoder Architecture for Joint Entity and Relation Extraction] (https://arxiv.org/pdf/1911.09886.pdf) | [PtrNetDecoding4JERE] (https://github.com/nusnlp/PtrNetDecoding4JERE) |
+| PNDec (Nayak and Ng, 2020) | 0.789 | [Effective Modeling of Encoder-Decoder Architecture for Joint Entity and Relation Extraction] (https://arxiv.org/pdf/1911.09886.pdf) | [PtrNetDecoding4JERE] (https://github.com/nusnlp/PtrNetDecoding4JERE) |
+| HRLRE (Takanobu et at., 2019) | 0.776 | [A Hierarchical Framework for Relation Extraction with Reinforcement Learning] (https://arxiv.org/pdf/1811.03925.pdf) | [HRLRE] (https://github.com/truthless11/HRL-RE) |
 
 ### TACRED
 
