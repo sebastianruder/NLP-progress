@@ -14,6 +14,7 @@ Question answering is the task of answering a question.
   - [HotpotQA](#hotpotqa)
   - [MS MARCO](#ms-marco)
   - [MultiRC](#multirc)
+  - [Natural Questions](#natural-questions)
   - [NewsQA](#newsqa)
   - [QAngaroo](#qangaroo)
   - [QuAC](#quac)
@@ -145,6 +146,18 @@ We have designed the dataset with three key challenges in mind:
  - The paragraphs in our dataset have diverse provenance by being extracted from 7 different domains such as news, fiction, historical text etc., and hence are expected to be more diverse in their contents as compared to single-domain datasets.
 
 The leaderboards for the dataset is available on the [MultiRC website](http://cogcomp.org/multirc/).
+
+### Natural Questions
+
+The [Natural Questions](https://research.google/pubs/pub47761/) corpus contains questions from real users issued to the Google search engine. It requires QA systems to read and comprehend an entire Wikipedia article that may or may not contain the answer to the question. Questions are presented along with a Wikipedia page and an extracted long answer (typically a paragraph) and short answer (one or more entities) if present on the page, or marked null if no long/short answer was present.
+
+Example:
+
+| Question | Wikipedia Page | Long Answer | Short Answer |
+| ------------- | -----:| -----: | -----: |
+| who lives in the imperial palace in tokyo | Tokyo_Imperial_Palace | The Tokyo Imperial Palace (, Kkyo, literally “Imperial Residence”) is the primary residence of the Emperor of Japan. It is a large park-like area located in the Chiyoda ward of Tokyo and contains buildings including the main palace (, Kyden), the private residences of the Imperial Family, an archive, museums and administrative offices. | The Imperial Family |
+
+The leaderboard and the dataset are available in the [Google's Natural Question website](https://ai.google.com/research/NaturalQuestions)
 
 ### NewsQA
 
