@@ -17,6 +17,8 @@
   - [Spider](#spider)
   - [WikiSQL](#wikisql)
   - [Smaller datasets](#smaller-datasets)
+- [Semantic Dependency Parsing](#semantic-dependency-parsing)
+  - [SemEval 2015 Task 18](#semeval-2015-task-18)
 
 Semantic parsing is the task of translating natural language into a formal meaning
 representation on which a machine can act. Representations may be an executable language
