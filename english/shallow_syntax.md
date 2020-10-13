@@ -20,7 +20,7 @@ Sections 15-18 are used for training, section 19 for development, and and sectio
 for testing. Models are evaluated based on F1.
 
 | Model           | F1 score  |  Paper | Source |
-| ------------- | :-----:| --- |
+| ------------- | :-----:| --- | --- |
 | ACE + fine-tune (Wang et al., 2020) | 96.90 | [Automated Concatenation of Embeddings for Structured Prediction](https://arxiv.org/pdf/2010.05006.pdf) | [Official](https://github.com/Alibaba-NLP/ACE)|
 | Flair embeddings (Akbik et al., 2018) | 96.72 | [Contextual String Embeddings for Sequence Labeling](http://aclweb.org/anthology/C18-1139) |
 | JMT (Hashimoto et al., 2017) | 95.77 | [A Joint Many-Task Model: Growing a Neural Network for Multiple NLP Tasks](https://www.aclweb.org/anthology/D17-1206) |
@@ -32,10 +32,10 @@ for testing. Models are evaluated based on F1.
 
 Though the [CoNLL 2003](https://www.clips.uantwerpen.be/conll2003/ner/) datasets are typically used for evaluating NER. It can be used for evaluating chunking. The dataset split is official standard split. Models are evaluated based on F1.
 
-| Model           | English | German  |  Paper / Source |
-| ------------- | :-----:| :-----: | --- | 
+| Model           | English | German  |  Paper | Source |
+| ------------- | :-----:| :-----: | --- | --- |
 | ACE + fine-tune (Wang et al., 2020) | 92.5 | 95.0 | [Automated Concatenation of Embeddings for Structured Prediction](https://arxiv.org/pdf/2010.05006.pdf) | [Official](https://github.com/Alibaba-NLP/ACE)|
-| Flair + BERT + Word + Char embeddings (Wang et al., 2020) | 92.0 | 94.4| [More Embeddings, Better Sequence Labelers?](https://arxiv.org/abs/2009.08330) | -|
+| Flair + BERT + Word + Char embeddings (Wang et al., 2020) | 92.0 | 94.4| [More Embeddings, Better Sequence Labelers?](https://arxiv.org/abs/2009.08330) | 
 | Word + Char + MFVI (Wang et al., 2020) | 91.71 | 94.03| [AIN: Fast and Accurate Sequence Labeling with Approximate Inference Network](https://arxiv.org/abs/2009.08229) |[Official](https://github.com/Alibaba-NLP/AIN)|
 
 ## Resolving the Scope and focus of negation
