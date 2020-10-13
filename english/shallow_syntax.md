@@ -28,6 +28,15 @@ for testing. Models are evaluated based on F1.
 | Suzuki and Isozaki (2008) | 95.15 | [Semi-Supervised Sequential Labeling and Segmentation using Giga-word Scale Unlabeled Data](https://aclanthology.info/pdf/P/P08/P08-1076.pdf) | 
 | NCRF++ (Yang and Zhang, 2018)| 95.06 | [NCRF++: An Open-source Neural Sequence Labeling Toolkit](http://www.aclweb.org/anthology/P18-4013) | [NCRF++](https://github.com/jiesutd/NCRFpp) |
 
+### CoNLL 2003
+
+Though the [CoNLL 2003](https://www.clips.uantwerpen.be/conll2003/ner/) datasets are used for evaluating NER. It can be used for evaluating chunking. The dataset split is official standard split. Models are evaluated based on F1.
+
+| Model           | English | German  |  Paper / Source |
+| ------------- | :-----:| :-----:| --- |
+| ACE + fine-tune (Wang et al., 2020) | 92.5 | 95.0 | [Automated Concatenation of Embeddings for Structured Prediction](https://arxiv.org/pdf/2010.05006.pdf) | [Official](https://github.com/Alibaba-NLP/ACE)|
+| Flair + BERT + Word + Char embeddings (Wang et al., 2020) | 92.0 | 94.4| [More Embeddings, Better Sequence Labelers?](https://arxiv.org/abs/2009.08330) |
+
 ## Resolving the Scope and focus of negation
 
 Scope of negation is the part of the meaning that is negated and focus the part of the scope that is most prominently negated (Huddleston and Pullum 2002).
