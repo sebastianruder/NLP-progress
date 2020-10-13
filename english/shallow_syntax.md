@@ -19,7 +19,7 @@ The [Penn Treebank](https://catalog.ldc.upenn.edu/LDC99T42) is typically used fo
 Sections 15-18 are used for training, section 19 for development, and and section 20
 for testing. Models are evaluated based on F1.
 
-| Model           | F1 score  |  Paper / Source |
+| Model           | F1 score  |  Paper | Source |
 | ------------- | :-----:| --- |
 | ACE + fine-tune (Wang et al., 2020) | 96.90 | [Automated Concatenation of Embeddings for Structured Prediction](https://arxiv.org/pdf/2010.05006.pdf) | [Official](https://github.com/Alibaba-NLP/ACE)|
 | Flair embeddings (Akbik et al., 2018) | 96.72 | [Contextual String Embeddings for Sequence Labeling](http://aclweb.org/anthology/C18-1139) |
