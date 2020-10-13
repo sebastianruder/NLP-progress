@@ -30,7 +30,7 @@ for testing. Models are evaluated based on F1.
 
 ### CoNLL 2003
 
-Though the [CoNLL 2003](https://www.clips.uantwerpen.be/conll2003/ner/) datasets are used for evaluating NER. It can be used for evaluating chunking. The dataset split is official standard split. Models are evaluated based on F1.
+Though the [CoNLL 2003](https://www.clips.uantwerpen.be/conll2003/ner/) datasets are typically used for evaluating NER. It can be used for evaluating chunking. The dataset split is official standard split. Models are evaluated based on F1.
 
 | Model           | English | German  |  Paper / Source |
 | ------------- | :-----:| :-----:| --- |
