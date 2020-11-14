@@ -17,6 +17,7 @@ corpus tagged with four different entity types (PER, LOC, ORG, MISC). Models are
 
 | Model           | F1  |  Paper / Source | Code |
 | ------------- | :-----:| --- | --- |
+| LUKE (Yamada et al., 2020) | 94.3 | [LUKE: Deep Contextualized Entity Representations with Entity-aware Self-attention](https://www.aclweb.org/anthology/2020.emnlp-main.523/) | [Official](https://github.com/studio-ousia/luke) |
 | CNN Large + fine-tune (Baevski et al., 2019) | 93.5 | [Cloze-driven Pretraining of Self-attention Networks](https://arxiv.org/pdf/1903.07785.pdf) | |
 | RNN-CRF+Flair | 93.47 | [Improved Differentiable Architecture Search for Language Modeling and Named Entity Recognition](https://www.aclweb.org/anthology/D19-1367/) | |
 | CrossWeigh + Flair (Wang et al., 2019)♦ | 93.43 | [CrossWeigh: Training Named Entity Tagger from Imperfect Annotations](https://www.aclweb.org/anthology/D19-1519/) | [Official](https://github.com/ZihanWangKi/CrossWeigh) |
