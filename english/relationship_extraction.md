@@ -144,8 +144,9 @@ _no_relation_ type).
 
 | Model                                  | F1    | Paper / Source  | Code           |
 | -------------------------------------- | ----- | --------------- | -------------- |
-| Matching-the-Blanks (Baldini Soares et al., 2019) | **71.5** | [Matching the Blanks: Distributional Similarity for Relation Learning](https://www.aclweb.org/anthology/P19-1279) |
-| C-GCN + PA-LSTM (Zhang et al. 2018) | **68.2** | [Graph Convolution over Pruned Dependency Trees Improves Relation Extraction](http://aclweb.org/anthology/D18-1244) | [Offical](https://github.com/qipeng/gcn-over-pruned-trees) |
+| LUKE (Yamada et al., 2020) | **72.7** | [LUKE: Deep Contextualized Entity Representations with Entity-aware Self-attention](https://www.aclweb.org/anthology/2020.emnlp-main.523) | [Official](https://github.com/studio-ousia/luke) |
+| Matching-the-Blanks (Baldini Soares et al., 2019) | 71.5 | [Matching the Blanks: Distributional Similarity for Relation Learning](https://www.aclweb.org/anthology/P19-1279) |
+| C-GCN + PA-LSTM (Zhang et al. 2018) | 68.2 | [Graph Convolution over Pruned Dependency Trees Improves Relation Extraction](http://aclweb.org/anthology/D18-1244) | [Offical](https://github.com/qipeng/gcn-over-pruned-trees) |
 | PA-LSTM (Zhang et al, 2017) | 65.1 | [Position-aware Attention and Supervised Data Improve Slot Filling](http://aclweb.org/anthology/D17-1004) | [Official](https://github.com/yuhaozhang/tacred-relation) |
 
 [Go back to the README](../README.md)
