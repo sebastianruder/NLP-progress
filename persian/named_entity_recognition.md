@@ -19,11 +19,11 @@ Download Links: [ARMAN](https://github.com/HaniehP/PersianNER/blob/master/ArmanP
 | Model           | F1  |  Paper / Source | Code |
 | ------------- | :-----:| --- | --- |
 | ParsBERT (Farahani et al., 2020) | 99.84  | [ParsBERT: Transformer-based Model for Persian Language Understanding](https://arxiv.org/abs/2005.12515) | [Official](https://github.com/hooshvare/parsbert) |
-| mBERT (Taher et al., 2020) | 84.03  | [Beheshti-NER: Persian Named Entity Recognition Using BERT](https://arxiv.org/abs/2003.08875) | [Official](https://github.com/sEhsanTaher/Beheshti-NER) |
 | LSTM-CRF (Hafezi, Rezaeian, 2018) | 86.55 | [Neural Architecture for Persian Named Entity Recognition](https://ieeexplore.ieee.org/abstract/document/8700549) | - |
-| BiLSTM-CRF (Poostchi et al., 2018) | 77.45 | [BiLSTM-CRF for Persian Named-Entity Recognition](https://www.aclweb.org/anthology/L18-1701/) | - |
+| mBERT (Taher et al., 2020) | 84.03  | [Beheshti-NER: Persian Named Entity Recognition Using BERT](https://arxiv.org/abs/2003.08875) | [Official](https://github.com/sEhsanTaher/Beheshti-NER) |
 | Deep-CRF (Bokaei, Mahmoudi, 2018) | 81.50 | [Improved Deep Persian Named Entity Recognition](https://ieeexplore.ieee.org/abstract/document/8661067) | - |
 | Deep-Local (Bokaei, Mahmoudi, 2018) | 79.19 | [Improved Deep Persian Named Entity Recognition](https://ieeexplore.ieee.org/abstract/document/8661067) | - |
+| BiLSTM-CRF (Poostchi et al., 2018) | 77.45 | [BiLSTM-CRF for Persian Named-Entity Recognition](https://www.aclweb.org/anthology/L18-1701/) | - |
 | SVM-HMM (Poostchi et al., 2016) | 72.59 | [PersoNER: Persian Named-Entity Recognition](https://www.aclweb.org/anthology/C16-1319/) | - |
 
 ### PEYMA
@@ -34,4 +34,6 @@ Download Links: [PEYMA](http://en.itrc.ac.ir/sites/default/files/pictures/NER.ra
 
 | Model           | F1  |  Paper / Source | Code |
 | ------------- | :-----:| --- | --- |
-| - | - | [X](x) | [x](x) |
+| ParsBERT (Farahani et al., 2020) | 93.40  | [ParsBERT: Transformer-based Model for Persian Language Understanding](https://arxiv.org/abs/2005.12515) | [Official](https://github.com/hooshvare/parsbert) |
+| mBERT (Taher et al., 2020) | 90.59  | [Beheshti-NER: Persian Named Entity Recognition Using BERT](https://arxiv.org/abs/2003.08875) | [Official](https://github.com/sEhsanTaher/Beheshti-NER) |
+| Rule-Based-CRF (Shahshahani et al., 2018) | 84.00 | [PEYMA: A Tagged Corpus for Persian Named Entities](https://arxiv.org/abs/1801.09936) | - |
