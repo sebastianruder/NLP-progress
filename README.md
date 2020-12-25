@@ -92,6 +92,7 @@ For more tasks, datasets and results in Chinese, check out the [Chinese NLP](htt
 - [Part-of-speech Tagging](bengali/part_of_speech_tagging.md)
 
 ### Persian
+- [Named Entity Recognition](persian/named_entity_recognition.md)
 - [Summarization](persian/summarization.md)
 
 

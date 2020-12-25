@@ -33,6 +33,6 @@ The [Persian News Summary (known as pn_summary)](https://github.com/hooshvare/pn
 | Model           | ROUGE-1 | ROUGE-2 | ROUGE-L | METEOR | Paper / Source | Code |
 | --------------- | :-----: | :-----: | :-----: | :----: | -------------- | ---- |
 | Based on NER (SD) (Khademi, Fakhredanesh, 2020) | 47.20 | 33.40 | - | - | [Persian Automatic Text Summarization Based on Named Entity Recognition](https://link.springer.com/article/10.1007%2Fs40998-020-00352-2) | - |
-| Based on NER (SD) (Khademi et all., 2020) | 45.40 | 30.10 | - | - | [Conceptual Text Summarizer: A new model in continuous vector space](http://iajit.org/index.php?option=com_content&task=view&id=1935&Itemid=488) | - |
-| Feature Extraction (SD) (Rezaei et all., 2019) | 78.00 | 71.00 | 74.00 | - | [Features in Extractive Supervised Single-document Summarization: Case of Persian News](https://arxiv.org/abs/1909.02776) | [Official](https://github.com/Hrezaei/SummBot) |
+| Based on NER (SD) (Khademi et al., 2020) | 45.40 | 30.10 | - | - | [Conceptual Text Summarizer: A new model in continuous vector space](http://iajit.org/index.php?option=com_content&task=view&id=1935&Itemid=488) | - |
+| Feature Extraction (SD) (Rezaei et al., 2019) | 78.00 | 71.00 | 74.00 | - | [Features in Extractive Supervised Single-document Summarization: Case of Persian News](https://arxiv.org/abs/1909.02776) | [Official](https://github.com/Hrezaei/SummBot) |
 | Multi-Feature Extraction (SD) (Kermani, Ghanbari, 2019) | 48.70 | 42.60 | - | - | [Extractive Persian Summarizer for News Websites](https://ieeexplore.ieee.org/document/8765279) | - |
