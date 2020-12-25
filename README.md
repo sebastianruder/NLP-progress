@@ -93,6 +93,7 @@ For more tasks, datasets and results in Chinese, check out the [Chinese NLP](htt
 
 ### Persian
 - [Named Entity Recognition](persian/named_entity_recognition.md)
+- [Natural language inference](persian/natural_language_inference.md)
 - [Summarization](persian/summarization.md)
 
 
