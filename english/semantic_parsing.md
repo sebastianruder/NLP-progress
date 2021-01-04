@@ -64,7 +64,7 @@ Models are evaluated based on [smatch](https://amr.isi.edu/smatch-13.pdf).
 | AMREager (Damonte et al., 2017)&hearts;&spades;&diams; | 64.0 | [An Incremental Parser for Abstract Meaning Representation](http://www.aclweb.org/anthology/E17-1051) |
 | SEQ2SEQ + 20M (Konstas et al., 2017)&spades; | 62.1 | [Neural AMR: Sequence-to-Sequence Models for Parsing and Generation](https://arxiv.org/abs/1704.08381) |
 
-### LDC2016E25
+### LDC2017T10 (LDC2016E25):
 39,260 sentences
 
 Models are evaluated based on [smatch](https://amr.isi.edu/smatch-13.pdf).
