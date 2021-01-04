@@ -71,6 +71,7 @@ Models are evaluated based on [smatch](https://amr.isi.edu/smatch-13.pdf).
 
 | Model           | Smatch  |  Paper / Source |
 | ------------- | :-----:| --- |
+| Pushing the Limits of AMR Parsing with Self-Learning (Young-Suk Lee et al., 2020)&hearts;&spades; | 81.3 | [Pushing the Limits of AMR Parsing with Self-Learning](https://arxiv.org/abs/2010.10673) |
 | AMR Parsing via Graph-Sequence Iterative Inference (Cai and Lam, 2020)&hearts;&spades; | 80.2 | [AMR Parsing via Graph-Sequence Iterative Inference](https://arxiv.org/pdf/2004.05572.pdf) |
 | Broad-Coverage Semantic Parsing as Transduction (Zhang et al., 2019)&hearts; | 77.0 | [Broad-Coverage Semantic Parsing as Transduction](https://www.aclweb.org/anthology/D19-1392.pdf) |
 | Two-stage Sequence-to-Graph Transducer (Zhang et al., 2019)&hearts; | 76.3 | [AMR Parsing as Sequence-to-Graph Transduction](https://www.aclweb.org/anthology/P19-1009.pdf) |
