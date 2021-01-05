@@ -43,6 +43,8 @@ The main evaluation measure is F1-score.
 |BEM    | 79.4 | 77.4 | 74.5 | 79.7 | 81.7 | [[17]](https://www.aclweb.org/anthology/2020.acl-main.95/)[[code]](https://github.com/facebookresearch/wsd-biencoders) |
 |EWISER | 78.9 | 78.4 | 71.0 | 78.9 | 79.3 | [[18]](https://www.aclweb.org/anthology/2020.acl-main.255/)[[code]](https://github.com/SapienzaNLP/ewiser) |
 |EWISER+WNGC | 80.8 | 79.0 | 75.2 | 80.7 | 81.8 | [[18]](https://www.aclweb.org/anthology/2020.acl-main.255/)[[code]](https://github.com/SapienzaNLP/ewiser) |
+|SparseLMMS | 77.9 | 77.8 | 68.8 | 76.1 | 77.5 | [[19]](https://www.aclweb.org/anthology/2020.emnlp-main.683/)[[code]](https://github.com/begab/sparsity_makes_sense) |
+|SparseLMMS+WNGC | 79.6 | 77.3 | 73.0 | 79.4 | 81.3 | [[19]](https://www.aclweb.org/anthology/2020.emnlp-main.683/)[[code]](https://github.com/begab/sparsity_makes_sense) |
 
 ### Knowledge-based:
 
@@ -92,6 +94,8 @@ Note: 'All' is the concatenation of all datasets, as described in [10] and [12].
 [17] [Moving Down the Long Tail of Word Sense Disambiguation with Gloss Informed Bi-encoders](https://www.aclweb.org/anthology/2020.acl-main.95/)
 
 [18] [Breaking Through the 80% Glass Ceiling: Raising the State of the Art in Word Sense Disambiguation by Incorporating Knowledge Graph Information](https://www.aclweb.org/anthology/2020.acl-main.255/)
+
+[19] [Sparsity Makes Sense: Word Sense Disambiguation Using Sparse Contextualized Word Representations](https://www.aclweb.org/anthology/2020.emnlp-main.683/)
 
 
 ## WSD Lexical Sample task:
