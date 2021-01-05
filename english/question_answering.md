@@ -27,6 +27,7 @@ Question answering is the task of answering a question.
   - [DuoRC](#duorc)
   - [DROP](#drop)
   - [Cosmos QA](#cosmos-qa)
+  - [ReClor (logical reasoning)](#reclor-logical-reasoning)
 - [Open-domain Question Answering](#open-domain-question-answering)
   - [DuReader](#dureader)
   - [Quasar](#quasar)
@@ -290,6 +291,12 @@ DuoRC pushes the NLP community to address challenges on incorporating knowledge 
 ### Cosmos QA
 
 [Cosmos QA](https://wilburone.github.io/cosmos/) is a large-scale dataset of 35.6K problems that require commonsense-based reading comprehension, formulated as multiple-choice questions. It focuses on reading between the lines over a diverse collection of people's everyday narratives, asking questions concerning on the likely causes or effects of events that require reasoning beyond the exact text spans in the context.
+
+### ReClor (logical reasoning)
+
+The [ReClor dataset](https://openreview.net/forum?id=HJgJtT4tvB) is a reading comprehension dataset requiring logical reasoning, which is extracted from standardized exams GMAT (Graduate Management Admission Test) and LSAT (Law School Admission Test). This dataset is very challenging and even graduate students can only achieve 63% accuracy. It has various logical reasoning types, ie, Necessary/Sufficient Assumptions, Strengthen/Weaken, Evaluation, Implication, Conclusion/Main Point, Most Strongly Supported, Explain or Resolve, Principle, Dispute, Technique, Role, Identify a Flaw, Match Flaws, Match the Structure and others.
+
+The dataset, public leaderboard, and code are available on the project page [ReClor (logical reasoning)](https://whyu.me/reclor/).
 
 ## Open-domain Question Answering
 

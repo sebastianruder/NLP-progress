@@ -38,6 +38,7 @@ The [Ritter (2011)](https://www.aclweb.org/anthology/D11-1141) dataset has becom
 
 | Model | Accuracy | Paper |
 | --- | --- | ---|
+| PretRand (Meftah et al., 2019) | 91.46 | [Joint Learning of Pre-Trained and Random Units for Domain Adaptation in Part-of-Speech Tagging](https://www.aclweb.org/anthology/N19-1416.pdf) |
 | FastText + CNN + CRF | 90.53 | [Twitter word embeddings (Godin et al. 2019 (Chapter 3))](https://fredericgodin.com/research/twitter-word-embeddings/) | 
 | CMU | 90.0 ± 0.5 | [Improved Part-of-Speech Tagging for Online Conversational Text with Word Clusters](http://www.cs.cmu.edu/~ark/TweetNLP/owoputi+etal.naacl13.pdf) | 
 | GATE  | 88.69 | [Twitter Part-of-Speech Tagging for All: Overcoming Sparse and Noisy Data](https://www.aclweb.org/anthology/R13-1026) | 

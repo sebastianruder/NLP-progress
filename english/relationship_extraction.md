@@ -130,6 +130,30 @@ has increased over the years as systems improve, with earlier systems having ver
 
 (+) Obtained from results in the paper "Neural Relation Extraction with Selective Attention over Instances"
 
+#### Joint Entity and Relation Extraction
+
+In this task binary relation tuples (two entities and a relation between them) are jointly extracted from sentences. The input to the models is just the sentences and a set of relations, output is a set of relation tuples. Models should extract all relation tuples present in the sentences with full entity names and overlapping entities. F1 score is used to evaluate the models. An extracted tuple is considered as correct if the two entities and the relation match with a ground truth tuple.
+
+##### NYT29
+
+This dataset is derived from the New York Times dataset of [Riedel et al., 2010](http://www.riedelcastro.org//publications/papers/riedel10modeling.pdf). It has 29 relations. 
+
+| Model           | F1  |  Paper / Source | Code |
+| ------------- | ----- | --- | --- |
+| WDec (Nayak and Ng, 2020) | 0.682 | [Effective Modeling of Encoder-Decoder Architecture for Joint Entity and Relation Extraction](https://arxiv.org/pdf/1911.09886.pdf) | [PtrNetDecoding4JERE](https://github.com/nusnlp/PtrNetDecoding4JERE) |
+| PNDec (Nayak and Ng, 2020) | 0.673 | [Effective Modeling of Encoder-Decoder Architecture for Joint Entity and Relation Extraction](https://arxiv.org/pdf/1911.09886.pdf) | [PtrNetDecoding4JERE](https://github.com/nusnlp/PtrNetDecoding4JERE) |
+| HRLRE (Takanobu et at., 2019) | 0.643 | [A Hierarchical Framework for Relation Extraction with Reinforcement Learning](https://arxiv.org/pdf/1811.03925.pdf) | [HRLRE](https://github.com/truthless11/HRL-RE) |
+
+##### NYT24
+
+This dataset is derived from the New York Times dataset of [Hoffman et al., 2011](https://www.aclweb.org/anthology/P11-1055.pdf). It has 24 relations. 
+
+| Model           | F1  |  Paper / Source | Code |
+| ------------- | ----- | --- | --- |
+| WDec (Nayak and Ng, 2020) | 0.817 | [Effective Modeling of Encoder-Decoder Architecture for Joint Entity and Relation Extraction](https://arxiv.org/pdf/1911.09886.pdf) | [PtrNetDecoding4JERE](https://github.com/nusnlp/PtrNetDecoding4JERE) |
+| PNDec (Nayak and Ng, 2020) | 0.789 | [Effective Modeling of Encoder-Decoder Architecture for Joint Entity and Relation Extraction](https://arxiv.org/pdf/1911.09886.pdf) | [PtrNetDecoding4JERE](https://github.com/nusnlp/PtrNetDecoding4JERE) |
+| HRLRE (Takanobu et at., 2019) | 0.776 | [A Hierarchical Framework for Relation Extraction with Reinforcement Learning](https://arxiv.org/pdf/1811.03925.pdf) | [HRLRE](https://github.com/truthless11/HRL-RE) |
+
 ### TACRED
 
 [TACRED](https://nlp.stanford.edu/projects/tacred/) is a large-scale relation extraction dataset with 106,264 examples built over newswire and web text from the [corpus](https://catalog.ldc.upenn.edu/LDC2018T03) used in the yearly [TAC Knowledge Base Population (TAC KBP) challenges](https://tac.nist.gov/2017/KBP/index.html). Examples in TACRED cover 41 relation types as used in the TAC KBP challenges (e.g., _per:schools_attended_ and _org:members_) or are labeled as _no_relation_ if no defined relation is held. These examples are created by combining available human annotations from the TAC KBP challenges and crowdsourcing.
