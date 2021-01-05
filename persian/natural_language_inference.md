@@ -2,11 +2,11 @@
 
 Natural Language Inference (NLI) is the task of determining the inference relationship between a premise and a hypothesis. It is a three-class problem assigning each input pair to one of the classes {entailment, contradiction, neutral}. 
 
-### Table of contents
+## Table of contents
 
 - [FarsTail](#farstail)
   
-## FarsTail
+### FarsTail
 
 [FarsTail](https://arxiv.org/abs/2009.08820) is a Persian NLI dataset including an indexed version for non-Persian research.  
 The dataset is available [here](https://github.com/dml-qom/FarsTail).
