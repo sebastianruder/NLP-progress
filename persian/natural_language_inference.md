@@ -1,9 +1,17 @@
-# Natural language inference
+# Natural Language Inference
 
-Natural language inference is the task of determining whether a "hypothesis" is 
-true (entailment), false (contradiction), or undetermined (neutral) given a "premise".
+Natural Language Inference (NLI) is the task of determining the inference relationship between a premise and a hypothesis. It is a three-class problem assigning each input pair to one of the classes {entailment, contradiction, neutral}. 
 
-Example:
+### Table of contents
+
+- [FarsTail](#farstail)
+  
+## FarsTail
+
+[FarsTail](https://arxiv.org/abs/2009.08820) is a Persian NLI dataset including an indexed version for non-Persian research.  
+The dataset is available [here](https://github.com/dml-qom/FarsTail).
+
+#### Example
 
 | Premise | Label | Hypothesis |
 | --- | ---| --- |
@@ -11,12 +19,9 @@ Example:
 | منشور سازمان ملل متحد ۲۶ ژوئن ۱۹۴۵، در شهر سانفرانسیسکو، ایالات متحده امریکا به وسیله ۵۰ دولت از ۵۱ دولت مؤسس سازمان ملل متحد به امضا رسید. | منشور سازمان ملل متحد در نیویورک تاسیس شد. | Contradiction |
 | منشور سازمان ملل متحد ۲۶ ژوئن ۱۹۴۵، در شهر سانفرانسیسکو، ایالات متحده امریکا به وسیله ۵۰ دولت از ۵۱ دولت مؤسس سازمان ملل متحد به امضا رسید. | ایران از جمله دولت‌های عضو مؤسس سازمان ملل متحد است. | Neutral |
 
+#### Results
 
-### FarsTail
-
-[FarsTail](https://github.com/dml-qom/FarsTail) is the first Natural Language Inference dataset effort on Persian, containing 10,367 pairs of sentences labeled as entailment, contradiction, or neutral.
-
-| Model           | Test Accuracy | Paper |
+| Model           | Accuracy | Paper / Source |
 | ------------- | :-----:| :-----:|
 | Translate-Source + fastText| 78.1 | [FarsTail: A Persian Natural Language Inference Dataset](https://arxiv.org/abs/2009.08820) |
 | LSTM + BERT (FarsTail) | 75.8 | [FarsTail: A Persian Natural Language Inference Dataset](https://arxiv.org/abs/2009.08820) |
