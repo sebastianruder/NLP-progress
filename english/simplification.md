@@ -84,6 +84,7 @@ We present the models tested in this dataset **ranked by SARI score**.
 
 | Model           | BLEU | SARI | Paper / Source | Code |
 | --------------- | :-----: | :-----: | -------------- | ---- |
+| MUSS (Martin et al., 2020) | 78.17 | 42.53 | [Multilingual Unsupervised Sentence Simplification](https://arxiv.org/abs/2005.00352v1) |   |
 | ACCESS (Martin et al., 2019) | 72.53 | 41.87  | [Controllable Sentence Simplification](https://arxiv.org/abs/1910.02677) | [Official](https://github.com/facebookresearch/access) |
 | DMASS + DCSS (Zhao et al., 2018) |  | 40.45 | [Integrating Transformer and Paraphrase Rules for Sentence Simplification](http://aclweb.org/anthology/D18-1355) | [Official](https://github.com/Sanqiang/text_simplification) |
 | SBSMT + PPDB + SARI (Xu et al, 2016) | 73.08\* (72.36) | 39.96\* (37.91) | [Optimizing Statistical Machine Translation for Text Simplification](http://aclweb.org/anthology/Q16-1029) | [Official](https://github.com/cocoxu/simplification/) |
@@ -119,6 +120,7 @@ Using their splits, [Zhang and Lapata (2017)](http://aclweb.org/anthology/D17-10
 
 | Model           | BLEU | SARI | Paper / Source | Code |
 | --------------- | :-----: | :-----: | -------------- | ---- |
+| CRF Alignment + Transformer (Jiang et al., 2020) |   | 36.6 | [Neural CRF Model for Sentence Alignment in Text Simplification](https://arxiv.org/abs/2005.02324) | [Official](https://github.com/chaojiang06/wiki-auto) |
 | Pointer + Multi-task Entailment and Paraphrase Generation (Guo et al., 2018) | 11.14 | 33.22 | [Dynamic Multi-Level Multi-Task Learning for Sentence Simplification](http://aclweb.org/anthology/C18-1039) | [Official](https://github.com/HanGuo97/MultitaskSimplification) |
 |S2S-Cluster-FA (Kriz et al., 2019) | 19.55 | 30.73 | [Complexity-Weighted Loss and Diverse Reranking for Sentence Simplification](https://www.aclweb.org/anthology/N19-1317) | [Official](https://github.com/rekriz11/sockeye-recipes) |
 | Edit-Unsup-TS (Kumar et al., 2020) | 17.36 | 30.44 | [Iterative Edit-Based Unsupervised Sentence Simplification](https://www.aclweb.org/anthology/2020.acl-main.707.pdf) | [Official](https://github.com/ddhruvkr/Edit-Unsup-TS) |
