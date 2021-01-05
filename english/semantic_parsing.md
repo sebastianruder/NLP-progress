@@ -6,6 +6,9 @@
   - [LDC2014T12](#ldc2014t12)
   - [LDC2015E86](#ldc2015e86)
   - [LDC2016E25](#ldc2016e25)
+- [DRS parsing](#drs-parsing)
+  - [PMB 2.2.0](#pmb-220)
+  - [PMB 3.0.0](#pmb-300)
 - [UCCA parsing](#ucca-parsing)
   - [SemEval 2019 Task 1](semeval-2019-task-1)
   - [CoNLL 2019](conll-2019)
@@ -79,8 +82,40 @@ Models are evaluated based on [smatch](https://amr.isi.edu/smatch-13.pdf).
 | Joint model (Lyu and Titov, 2018)&hearts;&spades; | 74.4 | [AMR Parsing as Graph Prediction with Latent Alignment](https://arxiv.org/abs/1805.05286) |
 | Rewarding Smatch: Transition-Based AMR Parsing with Reinforcement Learning (Naseem et al., 2019); | 73.4 | [Rewarding Smatch: Transition-Based AMR Parsing with Reinforcement Learning](https://arxiv.org/pdf/1905.13370) |
 | Core Semantic First: A Top-down Approach for AMR Parsing (Cai and Lam, 2019)&hearts;&spades; | 73.2 | [Core Semantic First: A Top-down Approach for AMR Parsing](https://www.aclweb.org/anthology/D19-1393.pdf) |
-| ChSeq + 100K (van Noord and Bos, 2017)&hearts; | 71.0 | [Neural Semantic Parsing by Character-based Translation: Experiments with Abstract Meaning Representations](https://arxiv.org/abs/1705.09980) |
+| ChSeq + 100K (van Noord and Bos, 2017)&hearts; | 71.0 | [Neural Semantic Parsing by Character-based Translation: Experiments with Abstract Meaning Representations](https://clinjournal.org/clinj/article/view/72/64) |
 | Neural-Pointer (Buys and Blunsom, 2017)&hearts;&spades; | 61.9 | [Oxford at SemEval-2017 Task 9: Neural AMR Parsing with Pointer-Augmented Attention](http://aclweb.org/anthology/S17-2157) |
+
+## DRS parsing
+
+Discourse Representation Structures (DRS) are formal meaning representations introduced by [Discourse Representation Theory](https://en.wikipedia.org/wiki/Discourse_representation_theory). DRS parsing is a complex task, comprising other NLP tasks, such as semantic role labeling, word sense disambiguation, co-reference resolution and named entity tagging. Also, DRSs show explicit scope for certain operators, which allows for a more principled and linguistically motivated treatment of negation, modals and quantification, as has been advocated in formal semantics. Moreover, DRSs can be translated to formal logic, which allows for automatic forms of inference by third parties.
+
+The results listed here are from annotated English DRSs released by the [Parallel Meaning Bank](pmb.let.rug.nl). An introduction of the PMB and the annotation process is described in [this paper](https://www.aclweb.org/anthology/E17-2039.pdf). A DRS consists of a list of clauses. Each clause contains a number of variables, which are matched during evaluation using the evaluation tool Counter ([paper](https://www.aclweb.org/anthology/L18-1267.pdf), [code](https://github.com/RikVN/DRS_parsing)). Counter calculates an F-score over the matching clauses for each DRS-pair and micro-averages these to calculate a final F-score, similar to the Smatch procedure of AMR parsing.
+
+The scores listed here are for PMB release [2.2.0](https://pmb.let.rug.nl/data.php) and [3.0.0](https://pmb.let.rug.nl/data.php), specifically. The development and test sets differ per release, but have a considerable overlap. The results listed here are on the test set. The data sets can be downloaded on the official [PMB webpage](https://pmb.let.rug.nl/data.php), but note that a more user-friendly format can be downloaded by following the steps in the [Neural_DRS repository](https://github.com/RikVN/Neural_DRS).
+
+### PMB-2.2.0
+
+The gold standard train, dev and test sets contain 4,597, 682 and 650 documents, respectively.
+
+| Model         | Authors | F1  |  Paper / Source |
+| ------------- |------- | :-----:| --- |
+| Bi-LSTM seq2seq: BERT + characters in 1 encoder | Van Noord et al. (2020) | 88.3 | [Character-level Representations Improve DRS-based Semantic Parsing Even in the Age of BERT](https://www.aclweb.org/anthology/2020.emnlp-main.371.pdf) |
+| Transformer seq2seq | Liu et al. (2019) | 87.1 | [Discourse Representation Structure Parsing with Recurrent Neural Networks and the Transformer Model](https://www.aclweb.org/anthology/W19-1203.pdf)
+| Character-level bi-LSTM seq2seq + linguistic features | Van Noord et al. (2019) | 86.8 | [Linguistic Information in Neural Semantic Parsing with Multiple Encoders](https://www.aclweb.org/anthology/W19-0504.pdf)|
+| Character-level bi-LSTM seq2seq | Van Noord et al. (2018) | 83.3 | [Exploring Neural Methods for Parsing Discourse Representation Structures](https://www.aclweb.org/anthology/Q18-1043.pdf)|
+| Neural graph-based system using DAG-grammars | Fancellu et al. (2019) | 76.4 | [Semantic graph parsing with recurrent neural network DAG grammars](https://www.aclweb.org/anthology/D19-1278.pdf) |
+| Transition-based Stack-LSTM | Evang (2019) | 74.4 | [Transition-based DRS Parsing Using Stack-LSTMs](https://www.aclweb.org/anthology/W19-1202.pdf) |
+
+### PMB-3.0.0
+
+The gold standard train, dev and test sets contain 6,620, 885 and 898 documents, respectively.
+
+| Model         | Authors | F1  |  Paper / Source |
+| ------------- |------- | :-----:| --- |
+| Bi-LSTM seq2seq: BERT + characters in 1 encoder | Van Noord et al. (2020) | 89.3 | [Character-level Representations Improve DRS-based Semantic Parsing Even in the Age of BERT](https://www.aclweb.org/anthology/2020.emnlp-main.371.pdf) |
+| Character-level bi-LSTM seq2seq + linguistic features | Van Noord et al. (2019) | 87.7 | [Linguistic Information in Neural Semantic Parsing with Multiple Encoders](https://www.aclweb.org/anthology/W19-0504.pdf)|
+| Character-level bi-LSTM seq2seq | Van Noord et al. (2018) | 84.9 | [Exploring Neural Methods for Parsing Discourse Representation Structures](https://www.aclweb.org/anthology/Q18-1043.pdf)|
+
 
 ## UCCA parsing
 
