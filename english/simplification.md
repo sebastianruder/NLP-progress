@@ -120,7 +120,7 @@ Using their splits, [Zhang and Lapata (2017)](http://aclweb.org/anthology/D17-10
 
 | Model           | BLEU | SARI | Paper / Source | Code |
 | --------------- | :-----: | :-----: | -------------- | ---- |
-| CRF Alianment + Transformer (Jiang et al., 2020) |   | 36.6 | [Neural CRF Model for Sentence Alignment in Text Simplification](https://arxiv.org/abs/2005.02324) | [Official](https://github.com/chaojiang06/wiki-auto) |
+| CRF Alignment + Transformer (Jiang et al., 2020) |   | 36.6 | [Neural CRF Model for Sentence Alignment in Text Simplification](https://arxiv.org/abs/2005.02324) | [Official](https://github.com/chaojiang06/wiki-auto) |
 | Pointer + Multi-task Entailment and Paraphrase Generation (Guo et al., 2018) | 11.14 | 33.22 | [Dynamic Multi-Level Multi-Task Learning for Sentence Simplification](http://aclweb.org/anthology/C18-1039) | [Official](https://github.com/HanGuo97/MultitaskSimplification) |
 |S2S-Cluster-FA (Kriz et al., 2019) | 19.55 | 30.73 | [Complexity-Weighted Loss and Diverse Reranking for Sentence Simplification](https://www.aclweb.org/anthology/N19-1317) | [Official](https://github.com/rekriz11/sockeye-recipes) |
 | Edit-Unsup-TS (Kumar et al., 2020) | 17.36 | 30.44 | [Iterative Edit-Based Unsupervised Sentence Simplification](https://www.aclweb.org/anthology/2020.acl-main.707.pdf) | [Official](https://github.com/ddhruvkr/Edit-Unsup-TS) |
