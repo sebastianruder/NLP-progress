@@ -97,6 +97,10 @@ For more tasks, datasets and results in Chinese, check out the [Chinese NLP](htt
 - [Summarization](persian/summarization.md)
 
 
+### Arabic
+- [Named entity recognition](arabic/named_entity_recognition.md)
+
+
 This document aims to track the progress in Natural Language Processing (NLP) and give an overview
 of the state-of-the-art (SOTA) across the most common NLP tasks and their corresponding datasets.
 
