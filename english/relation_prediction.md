@@ -46,6 +46,7 @@ The test set is composed of triplets, each used to create two test instances, on
 | Model           | H@10 | H@1 | MRR | Paper / Source | Code | 
 | ------------- | :-----:| :-----:| :-----:| --- | --- | 
 | Max-Margin Markov Graph Models (Pinter & Eisenstein, 2018) | 59.02 | 45.37 | 49.83 | [Predicting Semantic Relations using Global Graph Properties](https://arxiv.org/abs/1808.08644) | [Official](http://www.github.com/yuvalpinter/m3gm) |
+| Concepts of Nearest Neighbors (Ferré, 2020) | 51.9 | 44.4 | 46.9 | [Application of Concepts of Neighbors to Knowledge Graph Completion](https://datasciencehub.net/system/files/ds-paper-633.pdf) | [Official](http://www.irisa.fr/LIS/ferre/pub/link_prediction2020/) |
 | KBAT(Deepak et al., 2019) | 58.1 | 36.1 | 44 | [Learning Attention Based Embeddings for Relation Prediction](https://arxiv.org/pdf/1906.01195.pdf) | [Official](https://github.com/deepakn97/relationPrediction)
 | TransE (reimplementation by Pinter & Eisenstein, 2018) | 55.55 | 42.26 | 46.59 | [Translating Embeddings for Modeling Multi-relational Data. ](http://papers.nips.cc/paper/5071-translating-embeddings-for-modeling-multi-relational-data.pdf) | [OpenKE](https://github.com/thunlp/OpenKE) |
 | ConvKB (Nguyen et al., 2018) | 52.50 | - | 24.80 | [A Novel Embedding Model for Knowledge Base Completion Based on Convolutional Neural Network](http://www.aclweb.org/anthology/N18-2053) | [Official](https://github.com/daiquocnguyen/ConvKB) |
@@ -57,7 +58,8 @@ The test set is composed of triplets, each used to create two test instances, on
 
 | Model           | H@10 | H@1 | MRR | Paper / Source | Code | 
 | ------------- | :-----:| :-----:| :-----:| --- | --- | 
-| KBAT(Deepak et al., 2019) | 62.6 | 46 | 51.8 | [Learning Attention Based Embeddings for Relation Prediction](https://arxiv.org/pdf/1906.01195.pdf) | [Official](https://github.com/deepakn97/relationPrediction)
+| KBAT (Deepak et al., 2019) | 62.6 | 46 | 51.8 | [Learning Attention Based Embeddings for Relation Prediction](https://arxiv.org/pdf/1906.01195.pdf) | [Official](https://github.com/deepakn97/relationPrediction)
+| Concepts of Nearest Neighbors (Ferré, 2020) | 44.6 | 22.2 | 29.6 | [Application of Concepts of Neighbors to Knowledge Graph Completion](https://datasciencehub.net/system/files/ds-paper-633.pdf) | [Official](http://www.irisa.fr/LIS/ferre/pub/link_prediction2020/) |
 | TransE (reimplementation by Han et al., 2018) | 47.09 | 19.87 | 29.04 | [Translating Embeddings for Modeling Multi-relational Data. ](http://papers.nips.cc/paper/5071-translating-embeddings-for-modeling-multi-relational-data.pdf) | [OpenKE](https://github.com/thunlp/OpenKE) |
 | TransH (reimplementation by Han et al., 2018) | 41.32 | 5.79 | 17.66 | [Knowledge Graph Embedding by Translating on Hyperplanes.](http://www.aaai.org/ocs/index.php/AAAI/AAAI14/paper/viewFile/8531/8546) | [OpenKE](https://github.com/thunlp/OpenKE) |
 | TransR (reimplementation by Han et al., 2018) | 40.67 | 16.35 | 24.44 | [ Learning Entity and Relation Embeddings for Knowledge Graph Completion.](http://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/download/9571/9523/) | [OpenKE](https://github.com/thunlp/OpenKE) |

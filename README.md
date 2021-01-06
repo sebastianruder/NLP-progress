@@ -62,6 +62,8 @@
 - [Chinese word segmentation](chinese/chinese_word_segmentation.md)
 - [Question answering](chinese/question_answering.md)
 
+For more tasks, datasets and results in Chinese, check out the [Chinese NLP](https://chinesenlp.xyz/#/) website.
+
 ### French
 
 - [Question answering](french/question_answering.md)

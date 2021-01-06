@@ -51,6 +51,7 @@ The first table covers Extractive Models, while the second covers abstractive ap
 | Model           | ROUGE-1 | ROUGE-2 | ROUGE-L | METEOR | Paper / Source | Code |
 | --------------- | :-----: | :-----: | :-----: | :----: | -------------- | ---- |
 | MatchSum (Zhong et al., 2020) | 44.41 | 20.86 | 40.55 | - | [Extractive Summarization as Text Matching](https://arxiv.org/abs/2004.08795) | [Official](https://github.com/maszhongming/MatchSum) |
+| DiscoBERT w.G_R & G_C (Xu et al. 2019) | 43.77 | 20.85 | 40.67 | - | [A Discourse-Aware Neural Extractive Model for Text Summarization](http://www.cs.utexas.edu/~jcxu/material/ACL20/DiscoBERT_ACL2020.pdf) |[Official](https://github.com/jiacheng-xu/DiscoBERT) |
 | BertSumExt (Liu and Lapata 2019) | 43.85 | 20.34 | 39.90 | - | [Text Summarization with Pretrained Encoders](https://arxiv.org/abs/1908.08345) |[Official](https://github.com/nlpyang/PreSumm) | 
 | BERT-ext + RL (Bae et al., 2019) | 42.76 | 19.87 | 39.11 | - | [Summary Level Training of Sentence Rewriting for Abstractive Summarization](https://arxiv.org/abs/1909.08752) | |
 | PNBERT (Zhong et al., 2019) | 42.69 | 19.60 | 38.85 | - | [Searching for Effective Neural Extractive Summarization: What Works and What's Next](https://arxiv.org/abs/1907.03491) | [Official](https://github.com/maszhongming/Effective_Extractive_Summarization) |
@@ -65,8 +66,9 @@ The first table covers Extractive Models, while the second covers abstractive ap
 
 | Model           | ROUGE-1 | ROUGE-2 | ROUGE-L | METEOR | Paper / Source | Code |
 | --------------- | :-----: | :-----: | :-----: | :----: | -------------- | ---- |
+| GSum (Dou et al., 2020) | 45.94 | 22.32 | 42.48 | - | [GSum: A General Framework for Guided Neural Abstractive Summarizatio](https://arxiv.org/pdf/2010.08014.pdf) | [Official](https://github.com/neulab/guided_summarization) |
 | ProphetNet (Yan, Qi, Gong, Liu et al., 2020) | 44.20 | 21.17 | 41.30 | - | [ProphetNet: Predicting Future N-gram for Sequence-to-Sequence Pre-training](https://arxiv.org/pdf/2001.04063.pdf) | [Official](https://github.com/microsoft/ProphetNet) |
-| PEGASUS (Zhang et al., 2019) | 44.17 | 21.47 | 41.11 | - | [PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization](https://arxiv.org/pdf/1912.08777.pdf) | - |
+| PEGASUS (Zhang et al., 2019) | 44.17 | 21.47 | 41.11 | - | [PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization](https://arxiv.org/pdf/1912.08777.pdf) | [Official](https://github.com/google-research/pegasus) |
 | BART (Lewis et al., 2019) | 44.16 | 21.28 | 40.90 | - | [BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension](https://arxiv.org/pdf/1910.13461.pdf) | [Official](https://github.com/pytorch/fairseq/tree/master/examples/bart) |
 | T5 (Raffel et al., 2019) | 43.52 | 21.55 | 40.69 | - | [Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer](https://arxiv.org/pdf/1910.10683.pdf) | [Official](https://github.com/google-research/text-to-text-transfer-transformer) |
 | UniLM (Dong et al., 2019) | 43.33 | 20.21 | 40.51 | - | [Unified Language Model Pre-training for Natural Language Understanding and Generation](https://arxiv.org/pdf/1905.03197.pdf) | [Official](https://github.com/microsoft/unilm) |
@@ -99,7 +101,7 @@ Below Results are ranking by ROUGE-2 Scores.
 | ControlCopying (Song et al., 2020) | 39.08 | 20.47 | 36.69 | [Controlling the Amount of Verbatim Copying in Abstractive Summarizatio](https://arxiv.org/pdf/1911.10390.pdf) | [Official](https://github.com/ucfnlp/control-over-copying) |
 | ProphetNet (Yan, Qi, Gong, Liu et al., 2020) | 39.51 | 20.42 | 36.69 | [ProphetNet: Predicting Future N-gram for Sequence-to-Sequence Pre-training](https://arxiv.org/pdf/2001.04063.pdf) | [Official](https://github.com/microsoft/ProphetNet) |
 | UniLM (Dong et al., 2019) | 38.90 | 20.05 | 36.00 | [Unified Language Model Pre-training for Natural Language Understanding and Generation](https://arxiv.org/pdf/1905.03197.pdf) | [Official](https://github.com/microsoft/unilm) |
-| PEGASUS (Zhang et al., 2019) | 39.12 | 19.86 | 36.24 | [PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization](https://arxiv.org/pdf/1912.08777.pdf) | - |
+| PEGASUS (Zhang et al., 2019) | 39.12 | 19.86 | 36.24 | [PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization](https://arxiv.org/pdf/1912.08777.pdf) | [Official](https://github.com/google-research/pegasus) |
 | BiSET (Wang et al., 2019) | 39.11 | 19.78 | 36.87 | [BiSET: Bi-directional Selective Encoding with Template for Abstractive Summarization](https://www.aclweb.org/anthology/P19-1207) | [Official](https://github.com/InitialBug/BiSET) |
 | MASS (Song et al., 2019) | 38.73 | 19.71 | 35.96 | [MASS: Masked Sequence to Sequence Pre-training for Language Generation](https://arxiv.org/pdf/1905.02450v5.pdf) | [Official](https://github.com/microsoft/MASS) |
 | Re^3 Sum (Cao et al., 2018) | 37.04 | 19.03 | 34.46 | [Retrieve, Rerank and Rewrite: Soft Template Based Neural Summarization](http://aclweb.org/anthology/P18-1015) | |
@@ -132,7 +134,7 @@ Evaluation metrics are ROUGE-1, ROUGE-2 and ROUGE-L.
 
 | Model           | ROUGE-1 | ROUGE-2 | ROUGE-L | Paper / Source | Code |
 | --------------- | :-----: | :-----: | :-----: | -------------- | ---- |
-| PEGASUS (Zhang et al., 2019) | 47.21 | 24.56 | 39.25 | [PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization](https://arxiv.org/pdf/1912.08777.pdf) | - |
+| PEGASUS (Zhang et al., 2019) | 47.21 | 24.56 | 39.25 | [PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization](https://arxiv.org/pdf/1912.08777.pdf) | [Official](https://github.com/google-research/pegasus) |
 | BART (Lewis et al., 2019) | 45.14 | 22.27 | 37.25 | [BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension](https://arxiv.org/pdf/1910.13461.pdf) | [Official](https://github.com/pytorch/fairseq/tree/master/examples/bart) |
 | BertSumExtAbs (Liu et al., 2019) | 38.81 | 16.50 | 31.27 | [Text Summarization with Pretrained Encoders](https://arxiv.org/pdf/1908.08345.pdf) | [Official](https://github.com/nlpyang/PreSumm) |
 | T-ConvS2S | 31.89 | 11.54 | 25.75 | [Don’t Give Me the Details, Just the Summary!](https://arxiv.org/pdf/1808.08745.pdf) | [Official](https://github.com/EdinburghNLP/XSum) |

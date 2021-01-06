@@ -17,8 +17,10 @@ corpus tagged with four different entity types (PER, LOC, ORG, MISC). Models are
 
 | Model           | F1  |  Paper / Source | Code |
 | ------------- | :-----:| --- | --- |
+| LUKE (Yamada et al., 2020) | 94.3 | [LUKE: Deep Contextualized Entity Representations with Entity-aware Self-attention](https://www.aclweb.org/anthology/2020.emnlp-main.523/) | [Official](https://github.com/studio-ousia/luke) |
 | CNN Large + fine-tune (Baevski et al., 2019) | 93.5 | [Cloze-driven Pretraining of Self-attention Networks](https://arxiv.org/pdf/1903.07785.pdf) | |
 | RNN-CRF+Flair | 93.47 | [Improved Differentiable Architecture Search for Language Modeling and Named Entity Recognition](https://www.aclweb.org/anthology/D19-1367/) | |
+| CrossWeigh + Flair (Wang et al., 2019)♦ | 93.43 | [CrossWeigh: Training Named Entity Tagger from Imperfect Annotations](https://www.aclweb.org/anthology/D19-1519/) | [Official](https://github.com/ZihanWangKi/CrossWeigh) |
 | LSTM-CRF+ELMo+BERT+Flair | 93.38 | [Neural Architectures for Nested NER through Linearization](https://www.aclweb.org/anthology/P19-1527/) | [Official](https://github.com/ufal/acl2019_nested_ner) |
 | Flair embeddings (Akbik et al., 2018)♦ | 93.09 | [Contextual String Embeddings for Sequence Labeling](https://drive.google.com/file/d/17yVpFA7MmXaQFTe-HDpZuqw9fJlmzg56/view) | [Flair framework](https://github.com/zalandoresearch/flair)
 | BERT Large (Devlin et al., 2018) | 92.8 | [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805) | |
@@ -38,6 +40,21 @@ corpus tagged with four different entity types (PER, LOC, ORG, MISC). Models are
 | Ma and Hovy (2016) | 91.21 | [End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF](https://arxiv.org/abs/1603.01354) | |
 | LSTM-CRF (Lample et al., 2016) | 90.94 | [Neural Architectures for Named Entity Recognition](https://arxiv.org/abs/1603.01360) | |
 
+### CoNLL++ 
+
+This is a cleaner version of the CoNLL 2003 NER task, where about 5% of instances in the test set are corrected due to mislabelling. The training set is left untouched.  Models are evaluated based on span-based F1 on the test set. ♦ used both the train and development splits for training. 
+
+Links: [CoNLL++](https://github.com/ZihanWangKi/CrossWeigh) (including direct download links for data)
+
+| Model           | F1  |  Paper / Source | Code |
+| ------------- | :-----:| --- | --- |
+| CrossWeigh + Flair (Wang et al., 2019)♦ | 94.28 | [CrossWeigh: Training Named Entity Tagger from Imperfect Annotations](https://www.aclweb.org/anthology/D19-1519/) | [Official](https://github.com/ZihanWangKi/CrossWeigh) |
+| Flair embeddings (Akbik et al., 2018)♦ | 93.89 | [Contextual String Embeddings for Sequence Labeling](https://drive.google.com/file/d/17yVpFA7MmXaQFTe-HDpZuqw9fJlmzg56/view) | [Flair framework](https://github.com/zalandoresearch/flair)
+| BiLSTM-CRF+ELMo (Peters et al., 2018) | 93.42 | [Deep contextualized word representations](https://arxiv.org/abs/1802.05365) | [AllenNLP Project](https://allennlp.org/elmo) [AllenNLP GitHub](https://github.com/allenai/allennlp) |
+| Ma and Hovy (2016) | 91.87 | [End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF](https://arxiv.org/abs/1603.01354) | |
+| LSTM-CRF (Lample et al., 2016) | 91.47 | [Neural Architectures for Named Entity Recognition](https://arxiv.org/abs/1603.01360) | |
+
+
 ### Long-tail emerging entities
 
 The [WNUT 2017 Emerging Entities task](http://aclweb.org/anthology/W17-4418) operates over a wide range of English 
@@ -56,6 +73,7 @@ Links: [WNUT 2017 Emerging Entity task page](https://noisy-text.github.io/2017/e
 
 | Model         | F1  | F1 (surface form) |  Paper / Source |
 | ---           | --- | ---               | --- |
+| CrossWeigh + Flair (Wang et al., 2019) | 50.03 | [CrossWeigh: Training Named Entity Tagger from Imperfect Annotations](https://www.aclweb.org/anthology/D19-1519/) | [Official](https://github.com/ZihanWangKi/CrossWeigh) |
 | Flair embeddings (Akbik et al., 2018) | 49.59 | | [Pooled Contextualized Embeddings for Named Entity Recognition](http://alanakbik.github.io/papers/naacl2019_embeddings.pdf) / [Flair framework](https://github.com/zalandoresearch/flair) |
 | Aguilar et al. (2018) | 45.55 | | [Modeling Noisiness to Recognize Named Entities using Multitask Neural Networks on Social Media](http://aclweb.org/anthology/N18-1127.pdf) |
 | SpinningBytes | 40.78 | 39.33 | [Transfer Learning and Sentence Level Features for Named Entity Recognition on Tweets](http://aclweb.org/anthology/W17-4422.pdf) | 

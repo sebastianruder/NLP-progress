@@ -14,6 +14,7 @@ Question answering is the task of answering a question.
   - [HotpotQA](#hotpotqa)
   - [MS MARCO](#ms-marco)
   - [MultiRC](#multirc)
+  - [Natural Questions](#natural-questions)
   - [NewsQA](#newsqa)
   - [QAngaroo](#qangaroo)
   - [QuAC](#quac)
@@ -26,6 +27,7 @@ Question answering is the task of answering a question.
   - [DuoRC](#duorc)
   - [DROP](#drop)
   - [Cosmos QA](#cosmos-qa)
+  - [ReClor (logical reasoning)](#reclor-logical-reasoning)
 - [Open-domain Question Answering](#open-domain-question-answering)
   - [DuReader](#dureader)
   - [Quasar](#quasar)
@@ -145,6 +147,18 @@ We have designed the dataset with three key challenges in mind:
  - The paragraphs in our dataset have diverse provenance by being extracted from 7 different domains such as news, fiction, historical text etc., and hence are expected to be more diverse in their contents as compared to single-domain datasets.
 
 The leaderboards for the dataset is available on the [MultiRC website](http://cogcomp.org/multirc/).
+
+### Natural Questions
+
+The [Natural Questions](https://research.google/pubs/pub47761/) corpus contains questions from real users issued to the Google search engine. It requires QA systems to read and comprehend an entire Wikipedia article that may or may not contain the answer to the question. Questions are presented along with a Wikipedia page and an extracted long answer (typically a paragraph) and short answer (one or more entities) if present on the page, or marked null if no long/short answer was present.
+
+Example:
+
+| Question | Wikipedia Page | Long Answer | Short Answer |
+| ------------- | -----:| -----: | -----: |
+| who lives in the imperial palace in tokyo | Tokyo_Imperial_Palace | The Tokyo Imperial Palace (, Kkyo, literally “Imperial Residence”) is the primary residence of the Emperor of Japan. It is a large park-like area located in the Chiyoda ward of Tokyo and contains buildings including the main palace (, Kyden), the private residences of the Imperial Family, an archive, museums and administrative offices. | The Imperial Family |
+
+The leaderboard and the dataset are available in the [Google's Natural Question website](https://ai.google.com/research/NaturalQuestions)
 
 ### NewsQA
 
@@ -277,6 +291,12 @@ DuoRC pushes the NLP community to address challenges on incorporating knowledge 
 ### Cosmos QA
 
 [Cosmos QA](https://wilburone.github.io/cosmos/) is a large-scale dataset of 35.6K problems that require commonsense-based reading comprehension, formulated as multiple-choice questions. It focuses on reading between the lines over a diverse collection of people's everyday narratives, asking questions concerning on the likely causes or effects of events that require reasoning beyond the exact text spans in the context.
+
+### ReClor (logical reasoning)
+
+The [ReClor dataset](https://openreview.net/forum?id=HJgJtT4tvB) is a reading comprehension dataset requiring logical reasoning, which is extracted from standardized exams GMAT (Graduate Management Admission Test) and LSAT (Law School Admission Test). This dataset is very challenging and even graduate students can only achieve 63% accuracy. It has various logical reasoning types, ie, Necessary/Sufficient Assumptions, Strengthen/Weaken, Evaluation, Implication, Conclusion/Main Point, Most Strongly Supported, Explain or Resolve, Principle, Dispute, Technique, Role, Identify a Flaw, Match Flaws, Match the Structure and others.
+
+The dataset, public leaderboard, and code are available on the project page [ReClor (logical reasoning)](https://whyu.me/reclor/).
 
 ## Open-domain Question Answering
 
