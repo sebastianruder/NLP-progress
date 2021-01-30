@@ -102,6 +102,21 @@ We present the models tested in this dataset **ranked by SARI score**.
 | NSELSTM-B (Vu et al., 2018) | 92.02 | 33.43 | [Sentence Simplification with Memory-Augmented Neural Networks](http://aclweb.org/anthology/N18-2013) | |
 | Hybrid (Narayan and Gardent, 2014) | 48.97\* | 31.40\* | [Hybrid Simplification using Deep Semantics and Machine Translation](http://aclweb.org/anthology/P/P14/P14-1041.pdf) | [Official](https://github.com/shashiongithub/Sentence-Simplification-ACL14) |
 
+#### ASSET
+
+[Alva-Manchego et al. (2020)](https://www.aclweb.org/anthology/2020.acl-main.424/) released a dataset aligned with TurkCorpus that contains the same set of original sentences, but with manual references where multiple simplification operations could have been applied, namely lexical paraphrasing, compression and/or sentence splitting. The authors showed that human judges found this type of simplifications simpler than those from TurkCorpus. Due to its multi-operation nature, ASSET contains **1-to-1 and 1-to-N alignments**, with **10 simplification references per original sentence** (collected through Amazon Mechanical Turk). Same as TurkCorpus, [ASSET](https://github.com/facebookresearch/asset) contains 2,350 sentences split into 2,000 instances for tuning and 350 for testing.
+
+We present the models tested in this dataset **ranked by SARI score**.
+
+| Model           | BLEU | SARI | Paper / Source | Code |
+| --------------- | :-----: | :-----: | -------------- | ---- |
+| MUSS (Martin et al., 2020) | 72.98 | 44.15 | [Multilingual Unsupervised Sentence Simplification](https://arxiv.org/abs/2005.00352v1) |   |
+| ACCESS (Martin et al., 2019) | 75.99\* | 40.13\*  | [Controllable Sentence Simplification](https://arxiv.org/abs/1910.02677) | [Official](https://github.com/facebookresearch/access) |
+| DMASS + DCSS (Zhao et al., 2018) | 71.44\* | 38.67\* | [Integrating Transformer and Paraphrase Rules for Sentence Simplification](http://aclweb.org/anthology/D18-1355) | [Official](https://github.com/Sanqiang/text_simplification) |
+| DRESS-LS (Zhang and Lapata, 2017) | 86.39\* | 36.59\* | [Sentence Simplification with Deep Reinforcement Learning](http://aclweb.org/anthology/D17-1062) | [Official](https://github.com/XingxingZhang/dress) |
+| UnsupNTS (Surya et al., 2019) | 76.14\* | 35.19\* | [Unsupervised Neural Text Simplification](https://www.aclweb.org/anthology/P19-1198) | [Official](https://github.com/subramanyamdvss/UnsupNTS) |
+| PBMT-R (Wubben et al., 2012) | 79.39\* | 34.63\* | [Sentence Simplification by Monolingual Machine Translation](http://aclweb.org/anthology/P12-1107) |  |
+
 #### Other Datasets
 
 [Hwang et al. (2015)](http://aclweb.org/anthology/N15-1022) released a [dataset](http://ssli.ee.washington.edu/tial/projects/simplification/) of 392K instances, while [Kajiwara and Komachi (2016)](http://aclweb.org/anthology/C16-1109) collected the [sscorpus](https://github.com/tmu-nlp/sscorpus) of 493K instances, also from Main - Simple English Wikipedia article pairs. Both datasets contain only **1-to-1 alignments** with **one simplification reference per original sentence**. Despite their bigger sizes and the more sophisticated sentence alignment algorithms used to collect them, these datasets are not commonly used in simplification research.
