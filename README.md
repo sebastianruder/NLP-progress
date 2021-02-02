@@ -67,14 +67,17 @@ For more tasks, datasets and results in Chinese, check out the [Chinese NLP](htt
 ### French
 
 - [Question answering](french/question_answering.md)
+- [Summarization](french/summarization.md)
 
 ### Russian
 
 - [Question answering](russian/question_answering.md)
+- [Summarization](russian/summarization.md)
 
 ### Spanish
 
 - [Entity linking](spanish/entity_linking.md#entity-linking)
+- [Summarization](spanish/summarization.md)
 
 ### Portuguese
 
@@ -95,6 +98,14 @@ For more tasks, datasets and results in Chinese, check out the [Chinese NLP](htt
 - [Named entity recognition](persian/named_entity_recognition.md)
 - [Natural language inference](persian/natural_language_inference.md)
 - [Summarization](persian/summarization.md)
+
+### Turkish
+
+- [Summarization](turkish/summarization.md)
+
+### German
+
+- [Summarization](german/summarization.md)
 
 
 This document aims to track the progress in Natural Language Processing (NLP) and give an overview
