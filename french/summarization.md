@@ -21,7 +21,7 @@ the collected data form a large scale multilingual dataset which can enable new 
 We report cross-lingual comparative analyses based on state-of-the-art systems. 
 These highlight existing biases which motivate the use of a multi-lingual dataset.
 
-Below results ranked by chronological order.
+Below results are ranked by chronological order.
 
 | Model | ROUGE-1 | ROUGE-2 | ROUGE-L | METEOR | Paper / Source | Code |
 | --------------- | :-----: | :-----: | :-----: | :-----: | -------------- | ---- |
