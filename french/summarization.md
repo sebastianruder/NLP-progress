@@ -25,8 +25,8 @@ Below results are ranked by chronological order.
 
 | Model | ROUGE-1 | ROUGE-2 | ROUGE-L | METEOR | Paper / Source | Code |
 | --------------- | :-----: | :-----: | :-----: | :-----: | -------------- | ---- |
-| Lead_3 (Scialom et al., 2020) | 28.74 | 9.84 | 19.7 | 12.6 | [MLSUM](https://www.aclweb.org/anthology/2020.emnlp-main.647/) | [Official](https://github.com/recitalAI/MLSUM) |
-| Pointer-Generator (Scialom et al., 2020) | 31.08 | 10.12 | 23.6 | 14.1 | [MLSUM](https://www.aclweb.org/anthology/2020.emnlp-main.647/) | [Official](https://github.com/recitalAI/MLSUM) |
+| Lead_3 | 28.74 | 9.84 | 19.7 | 12.6 | [MLSUM](https://www.aclweb.org/anthology/2020.emnlp-main.647/) | [Official](https://github.com/recitalAI/MLSUM) |
+| Pointer-Generator | 31.08 | 10.12 | 23.6 | 14.1 | [MLSUM](https://www.aclweb.org/anthology/2020.emnlp-main.647/) | [Official](https://github.com/recitalAI/MLSUM) |
 | M-BERT (Scialom et al., 2020) | 31.59 | 10.61 | 25.1 | 15.1 | [MLSUM](https://www.aclweb.org/anthology/2020.emnlp-main.647/) | [Official](https://github.com/recitalAI/MLSUM) |
-| Oracle (Scialom et al., 2020) | 47.32 | 25.95 | 37.7 | 24.7 | [MLSUM](https://www.aclweb.org/anthology/2020.emnlp-main.647/) | [Official](https://github.com/recitalAI/MLSUM) |
+| Oracle | 47.32 | 25.95 | 37.7 | 24.7 | [MLSUM](https://www.aclweb.org/anthology/2020.emnlp-main.647/) | [Official](https://github.com/recitalAI/MLSUM) |
 | MARGE-NEWS (Train All) (Lewis et al., 2020) | - | - | 25.79 | - | [Pre-training via Paraphrasing](https://arxiv.org/abs/2006.15020) | [Official](https://github.com/lucidrains/marge-pytorch) |
