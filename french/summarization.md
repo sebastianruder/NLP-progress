@@ -8,7 +8,7 @@ input's meaning.
 For summarization, automatic metrics such as ROUGE and METEOR have serious limitations:
 1. They only assess content selection and do not account for other quality aspects, such as fluency, grammaticality, coherence, etc. 
 2. To assess content selection, they rely mostly on lexical overlap, although an abstractive summary could express they same content as a reference without any lexical overlap.
-3. Given the subjectiveness of summarization and the correspondingly low agreement between annotators, the metrics were designed to be used with multiple reference summaries per input. However, recent datasets such as CNN/DailyMail and Gigaword provide only a single reference.
+3. Given the subjectiveness of summarization and the correspondingly low agreement between annotators, the metrics were designed to be used with multiple reference summaries per input. However, recent datasets such as MLSUM provide only a single reference.
 
 Therefore, tracking progress and claiming state-of-the-art based only on these metrics is questionable. Most papers carry out additional manual comparisons of alternative summaries. Unfortunately, such experiments are difficult to compare across papers. If you have an idea on how to do that, feel free to contribute.
 
@@ -16,13 +16,12 @@ Therefore, tracking progress and claiming state-of-the-art based only on these m
 ### MLSUM
 
 We present [MLSUM](https://www.aclweb.org/anthology/2020.emnlp-main.647/), the first large-scale MultiLingual SUMmarization dataset. 
-Obtained from online newspapers, it contains 1.5M+ article/summary pairs in five different languages -- namely, 
-French, German, Spanish, Russian, Turkish. Together with English newspapers from the popular CNN / Daily Mail dataset, 
+Obtained from online newspapers, it contains 1.5M+ article/summary pairs in five different languages -- namely, [French](../french/summarization.md#mlsum), [German](../german/summarization.md#mlsum), [Spanish](../spanish/summarization.md#mlsum), [Russian](../russian/summarization.md#mlsum), [Turkish](../turkish/summarization.md#mlsum). Together with [English](../english/summarization.md#cnn--daily-mail) newspapers from the popular CNN / Daily Mail dataset, 
 the collected data form a large scale multilingual dataset which can enable new research directions for the text summarization community. 
 We report cross-lingual comparative analyses based on state-of-the-art systems. 
 These highlight existing biases which motivate the use of a multi-lingual dataset.
 
-Below Results are ranking by chronological order.
+Below results ranked by chronological order.
 
 | Model | ROUGE-1 | ROUGE-2 | ROUGE-L | METEOR | Paper / Source | Code |
 | --------------- | :-----: | :-----: | :-----: | :-----: | -------------- | ---- |
