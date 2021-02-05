@@ -45,6 +45,7 @@ The main evaluation measure is F1-score.
 |EWISER+WNGC | 80.8 | 79.0 | 75.2 | 80.7 | 81.8 | [[18]](https://www.aclweb.org/anthology/2020.acl-main.255/)[[code]](https://github.com/SapienzaNLP/ewiser) |
 |SparseLMMS | 77.9 | 77.8 | 68.8 | 76.1 | 77.5 | [[19]](https://www.aclweb.org/anthology/2020.emnlp-main.683/)[[code]](https://github.com/begab/sparsity_makes_sense) |
 |SparseLMMS+WNGC | 79.6 | 77.3 | 73.0 | 79.4 | 81.3 | [[19]](https://www.aclweb.org/anthology/2020.emnlp-main.683/)[[code]](https://github.com/begab/sparsity_makes_sense) |
+|ARES | 78.0 | 77.1 | 71.0 | 77.3 | 83.2 | [[20]](https://www.aclweb.org/anthology/2020.emnlp-main.285/)|
 
 ### Knowledge-based:
 
@@ -97,7 +98,7 @@ Note: 'All' is the concatenation of all datasets, as described in [10] and [12].
 
 [19] [Sparsity Makes Sense: Word Sense Disambiguation Using Sparse Contextualized Word Representations](https://www.aclweb.org/anthology/2020.emnlp-main.683/)
 
-
+[20] [With More Contexts Comes Better Performance: Contextualized Sense Embeddings for All-Round Word Sense Disambiguation](https://www.aclweb.org/anthology/2020.emnlp-main.285/)
 ## WSD Lexical Sample task:
 
 Above task is called All-words WSD because the systems attempt to disambiguate all of the words in a document, while there is another task which is called 
