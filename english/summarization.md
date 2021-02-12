@@ -21,6 +21,7 @@ for evaluating summarization. The dataset contains online news articles (781 tok
 on average) paired with multi-sentence summaries (3.75 sentences or 56 tokens on average).
 The processed version contains 287,226 training pairs, 13,368 validation pairs and 11,490 test pairs.
 Models are evaluated with full-length F1-scores of ROUGE-1, ROUGE-2, ROUGE-L, and METEOR (optional).
+The multilingual version of CNN / Daily Mail dataset exists and is available for five different languages ([French](../french/summarization.md#mlsum), [German](../german/summarization.md#mlsum), [Spanish](../spanish/summarization.md#mlsum), [Russian](../russian/summarization.md#mlsum), [Turkish](../turkish/summarization.md#mlsum)).
 
 #### Anonymized version
 
