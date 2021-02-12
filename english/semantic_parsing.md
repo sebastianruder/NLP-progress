@@ -9,6 +9,7 @@
 - [DRS parsing](#drs-parsing)
   - [PMB 2.2.0](#pmb-220)
   - [PMB 3.0.0](#pmb-300)
+  - [RST-DT](#rst-dt)
 - [UCCA parsing](#ucca-parsing)
   - [SemEval 2019 Task 1](semeval-2019-task-1)
   - [CoNLL 2019](conll-2019)
@@ -34,7 +35,7 @@ In the following tables, systems marked with &hearts; are pipeline systems that 
 &diams; is for those require syntax parsing,
 and &clubs; is for those require SRL.
 
-### LDC2014T12: 
+### LDC2014T12:
 13,051 sentences
 
 Models are evaluated on the newswire section and the full dataset based on [smatch](https://amr.isi.edu/smatch-13.pdf).
@@ -54,7 +55,7 @@ Models are evaluated on the newswire section and the full dataset based on [smat
 | Transition-based parser-Stack-LSTM (Ballesteros and Al-Onaizan, 2017)&hearts;&diams; | 69 | 64  | [AMR Parsing using Stack-LSTMs](http://www.aclweb.org/anthology/D17-1130) |
 | Transition-based parser-Stack-LSTM (Ballesteros and Al-Onaizan, 2017) | 68 | 63  | [AMR Parsing using Stack-LSTMs](http://www.aclweb.org/anthology/D17-1130) |
 
-### LDC2015E86: 
+### LDC2015E86:
 19,572 sentences
 
 Models are evaluated based on [smatch](https://amr.isi.edu/smatch-13.pdf).
@@ -91,11 +92,13 @@ Models are evaluated based on [smatch](https://amr.isi.edu/smatch-13.pdf).
 
 Discourse Representation Structures (DRS) are formal meaning representations introduced by [Discourse Representation Theory](https://en.wikipedia.org/wiki/Discourse_representation_theory). DRS parsing is a complex task, comprising other NLP tasks, such as semantic role labeling, word sense disambiguation, co-reference resolution and named entity tagging. Also, DRSs show explicit scope for certain operators, which allows for a more principled and linguistically motivated treatment of negation, modals and quantification, as has been advocated in formal semantics. Moreover, DRSs can be translated to formal logic, which allows for automatic forms of inference by third parties.
 
+### Parallel Meaning Bank (PMB)
+
 The results listed here are from annotated English DRSs released by the [Parallel Meaning Bank](pmb.let.rug.nl). An introduction of the PMB and the annotation process is described in [this paper](https://www.aclweb.org/anthology/E17-2039.pdf). A DRS consists of a list of clauses. Each clause contains a number of variables, which are matched during evaluation using the evaluation tool Counter ([paper](https://www.aclweb.org/anthology/L18-1267.pdf), [code](https://github.com/RikVN/DRS_parsing)). Counter calculates an F-score over the matching clauses for each DRS-pair and micro-averages these to calculate a final F-score, similar to the Smatch procedure of AMR parsing.
 
 The scores listed here are for PMB release [2.2.0](https://pmb.let.rug.nl/data.php) and [3.0.0](https://pmb.let.rug.nl/data.php), specifically. The development and test sets differ per release, but have a considerable overlap. The results listed here are on the test set. The data sets can be downloaded on the official [PMB webpage](https://pmb.let.rug.nl/data.php), but note that a more user-friendly format can be downloaded by following the steps in the [Neural_DRS repository](https://github.com/RikVN/Neural_DRS).
 
-### PMB-2.2.0
+#### PMB-2.2.0
 
 The gold standard train, dev and test sets contain 4,597, 682 and 650 documents, respectively.
 
@@ -108,7 +111,7 @@ The gold standard train, dev and test sets contain 4,597, 682 and 650 documents,
 | Neural graph-based system using DAG-grammars | Fancellu et al. (2019) | 76.4 | [Semantic graph parsing with recurrent neural network DAG grammars](https://www.aclweb.org/anthology/D19-1278.pdf) |
 | Transition-based Stack-LSTM | Evang (2019) | 74.4 | [Transition-based DRS Parsing Using Stack-LSTMs](https://www.aclweb.org/anthology/W19-1202.pdf) |
 
-### PMB-3.0.0
+#### PMB-3.0.0
 
 The gold standard train, dev and test sets contain 6,620, 885 and 898 documents, respectively.
 
@@ -118,6 +121,28 @@ The gold standard train, dev and test sets contain 6,620, 885 and 898 documents,
 | Character-level bi-LSTM seq2seq + linguistic features | Van Noord et al. (2019) | 87.7 | [Linguistic Information in Neural Semantic Parsing with Multiple Encoders](https://www.aclweb.org/anthology/W19-0504.pdf)|
 | Character-level bi-LSTM seq2seq | Van Noord et al. (2018) | 84.9 | [Exploring Neural Methods for Parsing Discourse Representation Structures](https://www.aclweb.org/anthology/Q18-1043.pdf)|
 
+### RST-DT
+
+RST-DT [(Carlson et al., 2001)](https://www.aclweb.org/anthology/W01-1605.pdf) contains 385 documents of American English selected from the Penn Treebank (Marcus et al., 1993), annotated in the framework of Rhetorical Structure Theory.
+The dataset was officially divided into 347 documents as the training dataset and 38 documents as the test dataset. Note that there is no officially available development dataset.
+In the evaluation, micro-averaged F1 scores of unlabeled spans (Span), those of nuclearity labeled spans (Nuclearity), those of rhetorical relation labeled spans (Relation), and those of both nuclearity and rhetorical relation labeled spans (Full) based on RST-Parseval [(Marcu 2000)](https://mitpress.mit.edu/books/theory-and-practice-discourse-parsing-and-summarization) are used. An implementation of the standard evaluation metrics is [here](http://alt.qcri.org/tools/discourse-eval/).
+
+| Model    | Span     | Nuclearity | Relation | Full     | Paper / Source | Code |
+| -------- | -------- | -------- | -------- | -------- | -------------- | ---- |
+| Span-based Top-down Parser (ensemble) (Kobayashi et al., 2020)  | 87.0 | 74.6 | 60.0 | -- | [Top-Down RST Parsing Utilizing Granularity Levels in Documents](https://doi.org/10.1609/aaai.v34i05.6321) | [Official](https://github.com/nttcslab-nlp/Top-Down-RST-Parser) |
+| Two-stage Parsing (Wang et al., 2017)  | 86.0 | 72.4 | 59.7 | -- | [A Two-Stage Parsing Method for Text-Level Discourse Analysis](https://www.aclweb.org/anthology/P17-2029.pdf) | [Official](https://github.com/yizhongw/StageDP)    |
+| Bottom-up Linear-chain CRF-based Parser (Feng and Hirst, 2014) | 85.7 | 71.0 | 58.2 | -- | [A Linear-Time Bottom-Up Discourse Parser with Constraints and Post-Editing](https://www.aclweb.org/anthology/P14-1048.pdf) | [Official](http://www.cs.toronto.edu/~weifeng/software.html) |
+| Transition-based Parser with Implicit Syntax Features (Yu et al., 2018)  | 85.5 | 73.1 | 60.2 | 59.9 | [Transition-based Neural RST Parsing with Implicit Syntax Features](https://www.aclweb.org/anthology/C18-1047.pdf) | [Official](https://github.com/fajri91/NeuralRST) |
+| Two-stage Discourse Parser with a Sliding Window (Joty et al., 2015) | 83.84 | 68.90 | 55.87 | -- | [CODRA: A Novel Discriminative Framework for Rhetorical Analysis](https://www.aclweb.org/anthology/J15-3002.pdf) | [Official](http://alt.qcri.org/tools/discourse-parser/) |
+|  HILDA Parser (Hernault et al., 2010) | 83.0 | 68.4 | 55.3 | 54.8 | [HILDA: a discourse parser using support vector machine classification](http://journals.linguisticsociety.org/elanguage/dad/article/download/591/591-2300-1-PB.pdf) |  |
+| Greedy Bottom-up Parser with Syntactic Features (Surdeanu et al., 2015) | 82.6* | 67.1* | 55.4* | 54.9* | [Two Practical Rhetorical Structure Theory Parsers](https://www.aclweb.org/anthology/N15-3001.pdf) | [Official](https://github.com/clulab/processors) |
+| Re-implemented HILDA RST parser (Hayashi et al., 2016)| 82.6* | 66.6* | 54.6* | 54.3* |[Empirical comparison of dependency conversions for RST discourse trees](https://www.aclweb.org/anthology/W16-3616.pdf) | -- |
+| Discourse Parser with Hierarchical Attention (Li et al., 2016) | 82.2* | 66.5* | 51.4* | 50.6* | [Discourse Parsing with Attention-based Hierarchical Neural Networks](https://www.aclweb.org/anthology/D16-1035.pdf) | -- |
+| Discourse Parsing from Linear Projection (Ji et al., 2014) | 82.0* | 68.2* | 57.8* | 57.6* | [Representation Learning for Text-level Discourse Parsing](https://www.aclweb.org/anthology/P14-1002.pdf) | [Official](https://github.com/jiyfeng/DPLP) |
+| Transition-Based Parser Trained on Cross-Lingual Corpus (Braud et al., 2017) | 81.3* | 68.1* | 56.3* | 56.0* | [Cross-lingual RST Discourse Parsing](https://www.aclweb.org/anthology/E17-1028.pdf) | [Official](https://bitbucket.org/) |
+|  LSTM Sequential Discourse Parser (Braud et al., 2016) | 79.7* | 63.6* | 47.7* | 47.5* | [Multi-view and multi-task training of RST discourse parsers](https://www.aclweb.org/anthology/C16-1179.pdf) | [Official](http://bitbucket.org/chloebt/discourse) |
+
+*: The score is reported in [Morey et al.2017](https://www.aclweb.org/anthology/D17-1136.pdf).
 
 ## UCCA parsing
 
@@ -244,16 +269,16 @@ Example:
 
 ### Spider
 
-Spider is a large-scale complex and cross-domain semantic parsing and text-to-SQL 
-dataset. It consists of 10,181 questions and 5,693 unique complex SQL queries on 
-200 databases with multiple tables covering 138 different domains. In Spider 1.0, 
-different complex SQL queries and databases appear in train and test sets. 
+Spider is a large-scale complex and cross-domain semantic parsing and text-to-SQL
+dataset. It consists of 10,181 questions and 5,693 unique complex SQL queries on
+200 databases with multiple tables covering 138 different domains. In Spider 1.0,
+different complex SQL queries and databases appear in train and test sets.
 
 The Spider dataset can be accessed and leaderboard can be accessed [here](https://yale-lily.github.io/spider).
 
 ### WikiSQL
 
-The [WikiSQL dataset](https://arxiv.org/abs/1709.00103) consists of 87,673 
+The [WikiSQL dataset](https://arxiv.org/abs/1709.00103) consists of 87,673
 examples of questions, SQL queries, and database tables built from 26,521 tables.
 Train/dev/test splits are provided so that each table is only in one split.
 Models are evaluated based on accuracy on execute result matches.
