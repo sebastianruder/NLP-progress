@@ -91,6 +91,10 @@ For more tasks, datasets and results in Chinese, check out the [Chinese NLP](htt
 ### Bengali
 - [Part-of-speech Tagging](bengali/part_of_speech_tagging.md)
 
+### Persian
+- [Named entity recognition](persian/named_entity_recognition.md)
+- [Natural language inference](persian/natural_language_inference.md)
+- [Summarization](persian/summarization.md)
 
 
 This document aims to track the progress in Natural Language Processing (NLP) and give an overview

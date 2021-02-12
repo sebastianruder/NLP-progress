@@ -81,6 +81,7 @@ Reading Comprehension with Commonsense Reasoning Dataset (ReCoRD) is a large-sca
 | Model | EM  | F1  | Paper / Source | Code |
 | ------ | ------- | ------- | ------ |  ------ | 
 | Human Performance Johns Hopkins University (Zhang et al. '18) | 91.31 | 91.69 | [ReCoRD: Bridging the Gap between Human and Machine Commonsense Reading Comprehension](https://arxiv.org/pdf/1810.12885.pdf) | | 
+| LUKE (Yamada et al., 2020) | 90.64 | 91.21 | [LUKE: Deep Contextualized Entity Representations with Entity-aware Self-attention](https://www.aclweb.org/anthology/2020.emnlp-main.523) | [Official](https://github.com/studio-ousia/luke) |
 | RoBERTa (Facebook AI)  | 90.0 | 90.6 | [RoBERTa: A Robustly Optimized BERT Pretraining Approach](https://arxiv.org/pdf/1907.11692.pdf) | [Official](https://github.com/pytorch/fairseq/tree/master/examples/roberta) | 
 | XLNet + MTL + Verifier (ensemble)  | 83.09 | 83.74 | | | 
 | CSRLM (single model) | 81.78 | 82.58 | | |
