@@ -125,6 +125,7 @@ Dataset mirror: https://github.com/uclmr/jack/tree/master/data/sentihood
 
 | Model           | Aspect (F1) | Sentiment (acc) |  Paper / Source |  Code |
 | ------------- | :-----:| :-----:| --- | --- |
+| QACG-BERT (Wu et al., 2020) | 89.7 | 93.8 | [Context-Guided BERT for Targeted Aspect-Based Sentiment Analysis](https://arxiv.org/abs/2010.07523) | [Official](https://github.com/frankaging/Quasi-Attention-ABSA)
 | Sun et al. (2019) | 87.9 | 93.6 | [Utilizing BERT for Aspect-Based Sentiment Analysis via Constructing Auxiliary Sentence](https://arxiv.org/pdf/1903.09588.pdf) | [Official](https://github.com/HSLCY/ABSA-BERT-pair)
 | Liu et al. (2018) | 78.5 | 91.0 | [Recurrent Entity Networks with Delayed Memory Update for Targeted Aspect-based Sentiment Analysis](http://aclweb.org/anthology/N18-2045) | [Official](https://github.com/liufly/delayed-memory-update-entnet)
 | SenticLSTM (Ma et al., 2018) | 78.2 | 89.3 | [Targeted Aspect-Based Sentiment Analysis via Embedding Commonsense Knowledge into an Attentive LSTM](http://sentic.net/sentic-lstm.pdf) | 
