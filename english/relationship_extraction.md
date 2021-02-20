@@ -133,7 +133,7 @@ has increased over the years as systems improve, with earlier systems having ver
 
 #### WikiData dataset for Sentential Relation Extraction
 
-The sentential RE ignores any other occurrence of the given entity pair, thereby making the target relation predictions on the sentence level [Sorokin and Gurevych, 2017](https://www.aclweb.org/anthology/D17-1188.pdf). The paper introduces a dataset on Wikidata KG containing 353 relations.
+The sentential RE ignores any other occurrence of the given entity pair, thereby making the target relation predictions on the sentence level ([Sorokin and Gurevych, 2017](https://www.aclweb.org/anthology/D17-1188.pdf)). The paper introduces a dataset on Wikidata KG containing 353 relations.
 
 | Model                               | F1    | Paper / Source  | Code           |
 | ----------------------------------- | ----- | --------------- | -------------- |
