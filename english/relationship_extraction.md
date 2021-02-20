@@ -119,6 +119,7 @@ has increased over the years as systems improve, with earlier systems having ver
 
 | Model                               | P@10% | P@30% | Paper / Source | Code           |
 | ----------------------------------- | ----- | ----- | --------------- | -------------- |
+| RECON (Bastos et al., 2021) | 87.5 | 74.1 | [RECON: Relation Extraction using Knowledge Graph Context in a Graph Neural Network](https://arxiv.org/pdf/2009.08694.pdf) | [RECON](https://github.com/ansonb/RECON) |
 | HRERE (Xu et al., 2019) | 84.9 | 72.8 | [Connecting Language and Knowledge with Heterogeneous Representations for Neural Relation Extraction](https://arxiv.org/abs/1903.10126) | [HRERE](https://github.com/billy-inn/HRERE) |
 | PCNN+noise_convert+cond_opt (Wu et al., 2019)         | 81.7   | 61.8   | [Improving Distantly Supervised Relation Extraction with Neural Noise Converter and Conditional Optimal Selector](https://arxiv.org/pdf/1811.05616.pdf) |  |
 | Intra- and Inter-Bag (Ye and Ling, 2019)         | 78.9   | 62.4   | [Distant Supervision Relation Extraction with Intra-Bag and Inter-Bag Attentions](https://arxiv.org/pdf/1904.00143.pdf) | [Code](https://github.com/ZhixiuYe/Intra-Bag-and-Inter-Bag-Attentions) |
@@ -129,6 +130,16 @@ has increased over the years as systems improve, with earlier systems having ver
 | (Mintz et al., 2009)                | 39.9+  |   -   | [Distant supervision for relation extraction without labeled data](http://www.aclweb.org/anthology/P09-1113) | |
 
 (+) Obtained from results in the paper "Neural Relation Extraction with Selective Attention over Instances"
+
+#### WikiData dataset for Sentential Relation Extraction
+
+The sentential RE ignores any other occurrence of the given entity pair, thereby making the target relation predictions on the sentence level ([Sorokin and Gurevych, 2017](https://www.aclweb.org/anthology/D17-1188.pdf)). The paper introduces a dataset on Wikidata KG containing 353 relations.
+
+| Model                               | F1    | Paper / Source  | Code           |
+| ----------------------------------- | ----- | --------------- | -------------- |
+| RECON (Bastos et al., 2021)            | **87.23**  | [RECON: Relation Extraction using Knowledge Graph Context in a Graph Neural Network](https://arxiv.org/pdf/2009.08694.pdf) |
+| GPGNN (Zhu et al., 2019)             | 82.29  | [Graph Neural Networks with Generated Parameters for Relation Extraction](https://www.aclweb.org/anthology/P19-1128.pdf) |
+| ContextAware (Sorokin and Gurevych, 2017)     | 72.07 | [Context-Aware Representations for Knowledge Base Relation Extraction](https://www.aclweb.org/anthology/D17-1188.pdf) |
 
 #### Joint Entity and Relation Extraction
 
