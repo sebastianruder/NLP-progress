@@ -26,6 +26,7 @@
 - [Named entity recognition](english/named_entity_recognition.md)
 - [Natural language inference](english/natural_language_inference.md)
 - [Part-of-speech tagging](english/part-of-speech_tagging.md)
+- [Paraphrase Generation](english/paraphrase-generation.md)
 - [Question answering](english/question_answering.md)
 - [Relation prediction](english/relation_prediction.md)
 - [Relationship extraction](english/relationship_extraction.md)
