@@ -5,8 +5,18 @@
 | -------------------------  | ---------------------- |
 |The need for investors to earn a commercial return may put upward pressure on prices| The need for profit is likely to push up prices|
 
-### Opusparcus
-The [Opusparcus dataset](https://arxiv.org/pdf/1809.06142v1.pdf) is a paraphrase corpus for six European languages: German, English, Finnish, French, Russian, and Swedish. The paraphrases are extracted from the OpenSubtitles2016 corpus, which contains subtitles from movies and TV shows.
+### PRANMT-50M
+[PARANMT-50M dataset](https://arxiv.org/pdf/1711.05732v2.pdf) is a dataset for training paraphrastic sentence embeddings. It consists of more than 50 million English-English sentential paraphrase pairs.
 
-For each target language, the Opusparcus data have been partitioned into three types of data sets: training, development and test sets. The training sets are large, consisting of millions of sentence pairs, and have been compiled automatically, with the help of probabilistic ranking functions. The development and test sets consist of sentence pairs that have been annotated manually; each set contains approximately 1000 sentence pairs that have been verified to be acceptable paraphrases by two annotators.
+| Model           | BLEU  |  Paper / Source | Code |
+| ------------- | :-----:| --- | --- |
+| Trigram (baseline)| 47.4| [Wieting and Gimpel, 2018](https://arxiv.org/pdf/1711.05732v2.pdf)| Unvailable|
+| Unsupervised BART w/ Dynamic Blocking | 20.9 | [Niu et al., 2020](https://arxiv.org/pdf/2010.12885v1.pdf)| Unavailable|
 
+### QQP-Pos
+The [QQP-POS dataset](https://www.kaggle.com/c/quora-question-pairs/overview) is a datast for paraphrase generation with 400K source-target pairs. Each pair is labelled as negative if two questions are not duplicates and positive otherwise.
+
+| Model           | BLEU  |  Paper / Source | Code |
+| ------------- | :-----:| --- | --- |
+| Unsupervised BART w/ Dynamic Blocking | 26.76 | [Niu et al., 2020](https://arxiv.org/pdf/2010.12885v1.pdf)| Unavailable|
+| ParafraGPT-UC| 35.9| [Bui et al., 2020](https://arxiv.org/pdf/2011.14344v1.pdf)| Unvailable|
