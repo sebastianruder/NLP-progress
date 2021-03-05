@@ -19,4 +19,4 @@ The [QQP-POS dataset](https://www.kaggle.com/c/quora-question-pairs/overview) is
 | Model           | BLEU  |  Paper / Source | Code |
 | ------------- | :-----:| --- | --- |
 | Unsupervised BART w/ Dynamic Blocking | 26.76 | [Niu et al., 2020](https://arxiv.org/pdf/2010.12885v1.pdf)| Unavailable|
-| ParafraGPT-UC| 35.9| [Bui et al., 2020](https://arxiv.org/pdf/2011.14344v1.pdf)| Unvailable|
+| ParafraGPT-UC| 35.9| [Bui et al., 2020](https://arxiv.org/pdf/2011.14344v1.pdf)| [Code](https://github.com/BH-So/unsupervised-paraphrase-generation)|
