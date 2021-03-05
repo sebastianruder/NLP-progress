@@ -84,6 +84,7 @@ We present the models tested in this dataset **ranked by SARI score**.
 
 | Model           | BLEU | SARI | Paper / Source | Code |
 | --------------- | :-----: | :-----: | -------------- | ---- |
+| MUSS (Martin et al., 2020) | 78.17 | 42.53 | [Multilingual Unsupervised Sentence Simplification](https://arxiv.org/abs/2005.00352v1) |   |
 | ACCESS (Martin et al., 2019) | 72.53 | 41.87  | [Controllable Sentence Simplification](https://arxiv.org/abs/1910.02677) | [Official](https://github.com/facebookresearch/access) |
 | DMASS + DCSS (Zhao et al., 2018) |  | 40.45 | [Integrating Transformer and Paraphrase Rules for Sentence Simplification](http://aclweb.org/anthology/D18-1355) | [Official](https://github.com/Sanqiang/text_simplification) |
 | SBSMT + PPDB + SARI (Xu et al, 2016) | 73.08\* (72.36) | 39.96\* (37.91) | [Optimizing Statistical Machine Translation for Text Simplification](http://aclweb.org/anthology/Q16-1029) | [Official](https://github.com/cocoxu/simplification/) |
@@ -100,6 +101,21 @@ We present the models tested in this dataset **ranked by SARI score**.
 | SEMoses (Sulem et al., 2018)                                 |      74.49       |     36.70      | [Simple and Effective Text Simplification Using Semantic and Neural Methods](http://aclweb.org/anthology/P18-1016) | [Official](https://github.com/eliorsulem/simplification-acl2018) |
 | NSELSTM-B (Vu et al., 2018) | 92.02 | 33.43 | [Sentence Simplification with Memory-Augmented Neural Networks](http://aclweb.org/anthology/N18-2013) | |
 | Hybrid (Narayan and Gardent, 2014) | 48.97\* | 31.40\* | [Hybrid Simplification using Deep Semantics and Machine Translation](http://aclweb.org/anthology/P/P14/P14-1041.pdf) | [Official](https://github.com/shashiongithub/Sentence-Simplification-ACL14) |
+
+#### ASSET
+
+[Alva-Manchego et al. (2020)](https://www.aclweb.org/anthology/2020.acl-main.424/) released a dataset aligned with TurkCorpus that contains the same set of original sentences, but with manual references where multiple simplification operations could have been applied, namely lexical paraphrasing, compression and/or sentence splitting. The authors showed that human judges found this type of simplifications simpler than those from TurkCorpus. Due to its multi-operation nature, ASSET contains **1-to-1 and 1-to-N alignments**, with **10 simplification references per original sentence** (collected through Amazon Mechanical Turk). Same as TurkCorpus, [ASSET](https://github.com/facebookresearch/asset) contains 2,350 sentences split into 2,000 instances for tuning and 350 for testing.
+
+We present the models tested in this dataset **ranked by SARI score**.
+
+| Model           | BLEU | SARI | Paper / Source | Code |
+| --------------- | :-----: | :-----: | -------------- | ---- |
+| MUSS (Martin et al., 2020) | 72.98 | 44.15 | [Multilingual Unsupervised Sentence Simplification](https://arxiv.org/abs/2005.00352v1) |   |
+| ACCESS (Martin et al., 2019) | 75.99\* | 40.13\*  | [Controllable Sentence Simplification](https://arxiv.org/abs/1910.02677) | [Official](https://github.com/facebookresearch/access) |
+| DMASS + DCSS (Zhao et al., 2018) | 71.44\* | 38.67\* | [Integrating Transformer and Paraphrase Rules for Sentence Simplification](http://aclweb.org/anthology/D18-1355) | [Official](https://github.com/Sanqiang/text_simplification) |
+| DRESS-LS (Zhang and Lapata, 2017) | 86.39\* | 36.59\* | [Sentence Simplification with Deep Reinforcement Learning](http://aclweb.org/anthology/D17-1062) | [Official](https://github.com/XingxingZhang/dress) |
+| UnsupNTS (Surya et al., 2019) | 76.14\* | 35.19\* | [Unsupervised Neural Text Simplification](https://www.aclweb.org/anthology/P19-1198) | [Official](https://github.com/subramanyamdvss/UnsupNTS) |
+| PBMT-R (Wubben et al., 2012) | 79.39\* | 34.63\* | [Sentence Simplification by Monolingual Machine Translation](http://aclweb.org/anthology/P12-1107) |  |
 
 #### Other Datasets
 
@@ -119,6 +135,7 @@ Using their splits, [Zhang and Lapata (2017)](http://aclweb.org/anthology/D17-10
 
 | Model           | BLEU | SARI | Paper / Source | Code |
 | --------------- | :-----: | :-----: | -------------- | ---- |
+| CRF Alignment + Transformer (Jiang et al., 2020) |   | 36.6 | [Neural CRF Model for Sentence Alignment in Text Simplification](https://arxiv.org/abs/2005.02324) | [Official](https://github.com/chaojiang06/wiki-auto) |
 | Pointer + Multi-task Entailment and Paraphrase Generation (Guo et al., 2018) | 11.14 | 33.22 | [Dynamic Multi-Level Multi-Task Learning for Sentence Simplification](http://aclweb.org/anthology/C18-1039) | [Official](https://github.com/HanGuo97/MultitaskSimplification) |
 |S2S-Cluster-FA (Kriz et al., 2019) | 19.55 | 30.73 | [Complexity-Weighted Loss and Diverse Reranking for Sentence Simplification](https://www.aclweb.org/anthology/N19-1317) | [Official](https://github.com/rekriz11/sockeye-recipes) |
 | Edit-Unsup-TS (Kumar et al., 2020) | 17.36 | 30.44 | [Iterative Edit-Based Unsupervised Sentence Simplification](https://www.aclweb.org/anthology/2020.acl-main.707.pdf) | [Official](https://github.com/ddhruvkr/Edit-Unsup-TS) |
