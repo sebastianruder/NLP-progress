@@ -77,6 +77,7 @@ For more tasks, datasets and results in Chinese, check out the [Chinese NLP](htt
 
 ### Spanish
 
+- [Named Entity Recognition](spanish/named_entity_recognition.md)
 - [Entity linking](spanish/entity_linking.md#entity-linking)
 - [Summarization](spanish/summarization.md)
 
