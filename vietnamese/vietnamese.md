@@ -83,6 +83,7 @@
 | Model           | F1  |  Paper | Code | Note | 
 | ------------- | :-----:| --- | --- | --- | 
 | PhoBERT-large (2020) | 94.7 | [PhoBERT: Pre-trained language models for Vietnamese](https://arxiv.org/abs/2003.00744) | [Official](https://github.com/VinAIResearch/PhoBERT) | 
+| vELECTRA (2020) | 94.07 | [Improving Sequence Tagging for Vietnamese Text Using Transformer-based Neural Models](https://arxiv.org/abs/2006.15994) | [Official](https://github.com/fpt-corp/viBERT) |
 | PhoBERT-base (2020) | 93.6 | [PhoBERT: Pre-trained language models for Vietnamese](https://arxiv.org/abs/2003.00744) |  [Official](https://github.com/VinAIResearch/PhoBERT) | 
 | VnCoreNLP (2018) [1] | 91.30 | [VnCoreNLP: A Vietnamese Natural Language Processing Toolkit](http://aclweb.org/anthology/N18-5012) | [Official](https://github.com/vncorenlp/VnCoreNLP) | Used ETNLP embeddings |
 | BiLSTM-CRF + CNN-char  (2016) [1] | 91.09 | [End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF](http://www.aclweb.org/anthology/P16-1101) | [Official](https://github.com/XuezheMax/LasagneNLP) / [Link](https://github.com/UKPLab/emnlp2017-bilstm-cnn-crf/)  | Used ETNLP embeddings | 
