@@ -126,6 +126,7 @@
 
 | Model           | F1  |  Paper | Code | 
 | ------------- | :-----:| --- | --- | 
+| UITws-v1 (2019) | 98.06 | [Vietnamese Word Segmentation with SVM: Ambiguity Reduction and Suffix Capture](https://arxiv.org/abs/2006.07804) | [Official](https://github.com/ngannlt/UITws-v1) |
 | VnCoreNLP-RDRsegmenter (2018) | 97.90 | [A Fast and Accurate Vietnamese Word Segmenter](http://www.lrec-conf.org/proceedings/lrec2018/pdf/55.pdf) | [Official](https://github.com/datquocnguyen/RDRsegmenter) | 
 | UETsegmenter (2016) | 97.87 | [A hybrid approach to Vietnamese word segmentation](http://doi.org/10.1109/RIVF.2016.7800279) | [Official](https://github.com/phongnt570/UETsegmenter) |
 | jointWPD (2018) | 97.81 | [A neural joint model for Vietnamese word segmentation, POS tagging and dependency parsing](https://arxiv.org/abs/1812.11459) | | 
