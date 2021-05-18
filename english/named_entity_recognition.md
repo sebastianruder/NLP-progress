@@ -103,7 +103,27 @@ The [Ontonotes corpus v5](https://catalog.ldc.upenn.edu/docs/LDC2013T19/OntoNote
 - Few-NERD (INTRA) is a few-shot NER task across different coarse-grained types;
 - Few-NERD (INTER) is a few-shot NER task within coarse-grained types.
 
-Website: [Few-NERD page](https://ningding97.github.io/fewnerd/)
+Website: [Few-NERD page](https://ningding97.github.io/fewnerd/);
+
+Download & code: https://github.com/thunlp/Few-NERD
+
+
+
+#### Results on Few-NERD (SUP)
+
+| Model                           |  F1   | Paper / Source                           | Code                                     |
+| ------------------------------- | :---: | ---------------------------------------- | ---------------------------------------- |
+| BERT-Tagger (Ding et al., 2021) | 68.88 | [Few-NERD: A Few-shot Named Entity Recognition Dataset](https://www.stingning.cn/assets/pdf/ACL2021-fewnerd.pdf) | [Official](https://github.com/thunlp/Few-NERD) |
+
+
+
+
+
+#### 
+
+#### 
+
+
 
 
 
