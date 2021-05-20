@@ -18,6 +18,7 @@ corpus tagged with four different entity types (PER, LOC, ORG, MISC). Models are
 | Model           | F1  |  Paper / Source | Code |
 | ------------- | :-----:| --- | --- |
 | LUKE (Yamada et al., 2020) | 94.3 | [LUKE: Deep Contextualized Entity Representations with Entity-aware Self-attention](https://www.aclweb.org/anthology/2020.emnlp-main.523/) | [Official](https://github.com/studio-ousia/luke) |
+| InferNER (Moemmur et al., 2021) | 93.76| [InferNER: an attentive model leveraging the sentence-level information for Named Entity Recognition in Microblogs](https://journals.flvc.org/FLAIRS/article/view/128538) | |
 | CNN Large + fine-tune (Baevski et al., 2019) | 93.5 | [Cloze-driven Pretraining of Self-attention Networks](https://arxiv.org/pdf/1903.07785.pdf) | |
 | RNN-CRF+Flair | 93.47 | [Improved Differentiable Architecture Search for Language Modeling and Named Entity Recognition](https://www.aclweb.org/anthology/D19-1367/) | |
 | CrossWeigh + Flair (Wang et al., 2019)♦ | 93.43 | [CrossWeigh: Training Named Entity Tagger from Imperfect Annotations](https://www.aclweb.org/anthology/D19-1519/) | [Official](https://github.com/ZihanWangKi/CrossWeigh) |
@@ -73,6 +74,7 @@ Links: [WNUT 2017 Emerging Entity task page](https://noisy-text.github.io/2017/e
 
 | Model         | F1  | F1 (surface form) |  Paper / Source |
 | ---           | --- | ---               | --- |
+| InferNER (Moemmur et al., 2021)          | 50.52| ---               | [InferNER: an attentive model leveraging the sentence-level information for Named Entity Recognition in Microblogs](https://journals.flvc.org/FLAIRS/article/view/128538) |
 | CrossWeigh + Flair (Wang et al., 2019) | 50.03 | [CrossWeigh: Training Named Entity Tagger from Imperfect Annotations](https://www.aclweb.org/anthology/D19-1519/) | [Official](https://github.com/ZihanWangKi/CrossWeigh) |
 | Flair embeddings (Akbik et al., 2018) | 49.59 | | [Pooled Contextualized Embeddings for Named Entity Recognition](http://alanakbik.github.io/papers/naacl2019_embeddings.pdf) / [Flair framework](https://github.com/zalandoresearch/flair) |
 | Aguilar et al. (2018) | 45.55 | | [Modeling Noisiness to Recognize Named Entities using Multitask Neural Networks on Social Media](http://aclweb.org/anthology/N18-1127.pdf) |
