@@ -18,6 +18,7 @@ The shared task setting restricts that systems use only publicly available datas
 
 | Model           | F0.5  |  Paper / Source | Code |
 | ------------- | :-----:| --- | :-----: |
+| Tagged corruptions - ensemble (Stahlberg and Kumar, 2021)| 68.3 | [Synthetic Data Generation for Grammatical Error Correction with Tagged Corruption Models](https://www.aclweb.org/anthology/2021.bea-1.4.pdf)| [Official](https://github.com/google-research-datasets/C4_200M-synthetic-dataset-for-grammatical-error-correction) |
 | Sequence tagging + token-level transformations + two-stage fine-tuning + (BERT, RoBERTa, XLNet), ensemble (Omelianchuk et al., BEA 2020) | 66.5 | [GECToR – Grammatical Error Correction: Tag, Not Rewrite](https://arxiv.org/pdf/2005.12592.pdf) | [Official](https://github.com/grammarly/gector) |
 | Sequence tagging + token-level transformations + two-stage fine-tuning + XLNet, single model (Omelianchuk et al., BEA 2020) | 65.3 | [GECToR – Grammatical Error Correction: Tag, Not Rewrite](https://arxiv.org/pdf/2005.12592.pdf) | [Official](https://github.com/grammarly/gector) |
 | Transformer + Pre-train with Pseudo Data + BERT (Kaneko et al., ACL 2020) | 65.2 | [Encoder-Decoder Models Can Benefit from Pre-trained Masked Language Models in Grammatical Error Correction](https://arxiv.org/pdf/2005.00987.pdf) | [Official](https://github.com/kanekomasahiro/bert-gec) |
@@ -68,6 +69,7 @@ _**Restricted**_: uses only publicly available datasets. _**Unrestricted**_: use
 
 | Model           | GLEU  |  Paper / Source | Code |
 | ------------- | :-----:| --- | :-----: |
+| Tagged corruptions (Stahlberg and Kumar, 2021)| 64.7 | [Synthetic Data Generation for Grammatical Error Correction with Tagged Corruption Models](https://www.aclweb.org/anthology/2021.bea-1.4.pdf)| [Official](https://github.com/google-research-datasets/C4_200M-synthetic-dataset-for-grammatical-error-correction) |
 | Transformer + Pre-train with Pseudo Data + BERT (Kaneko et al., ACL 2020) | 62.0 | [Encoder-Decoder Models Can Benefit from Pre-trained Masked Language Models in Grammatical Error Correction](https://arxiv.org/pdf/2005.00987.pdf) | [Official](https://github.com/kanekomasahiro/bert-gec) |
 | SMT + BiGRU (Grundkiewicz and Junczys-Dowmunt, 2018) |  61.50 | [Near Human-Level Performance in Grammatical Error Correction with Hybrid Machine Translation](http://aclweb.org/anthology/N18-2046)| NA |
 | Transformer (Junczys-Dowmunt et al., 2018) | 59.9 | [Approaching Neural Grammatical Error Correction as a Low-Resource Machine Translation Task](http://aclweb.org/anthology/N18-1055)| NA |
@@ -123,6 +125,7 @@ Since current state-of-the-art systems rely on as much annotated learner data as
 
 | Model           | F0.5  |  Paper / Source | Code |
 | ------------- | :-----:| --- | :-----: |
+| Tagged corruptions - ensemble (Stahlberg and Kumar, 2021)| 74.9 | [Synthetic Data Generation for Grammatical Error Correction with Tagged Corruption Models](https://www.aclweb.org/anthology/2021.bea-1.4.pdf)| [Official](https://github.com/google-research-datasets/C4_200M-synthetic-dataset-for-grammatical-error-correction) |
 | Sequence tagging + token-level transformations + two-stage fine-tuning + (BERT, RoBERTa, XLNet), ensemble (Omelianchuk et al., BEA 2020) | 73.6 | [GECToR – Grammatical Error Correction: Tag, Not Rewrite](https://arxiv.org/pdf/2005.12592.pdf) | [Official](https://github.com/grammarly/gector) |
 | BEA Combination | 73.18 | [Learning to Combine Grammatical Error Corrections ](https://www.aclweb.org/anthology/W19-4414/) | NA |
 | Sequence tagging + token-level transformations + two-stage fine-tuning + XLNet, single model (Omelianchuk et al., BEA 2020) | 72.4 | [GECToR – Grammatical Error Correction: Tag, Not Rewrite](https://arxiv.org/pdf/2005.12592.pdf) | [Official](https://github.com/grammarly/gector) |
