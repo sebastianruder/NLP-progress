@@ -31,4 +31,26 @@ Data link: [Zenodo](https://doi.org/10.5281/zenodo.3773228)
 | BiLSTM-CRF+FasText+Char (Carreto Fidalgo et al., 2020) | 84.5 | [Recognai’s Working Notes for CANTEMIST-NER Track](http://ceur-ws.org/Vol-2664/cantemist_paper4.pdf) | [Official](https://github.com/recognai/cantemist-ner) |
 | BiLSTM-BiLSTM-CRF+FasText+PoS+Char (Santamaria Carrasco et al., 2020) | 83.4 | [Using Embeddings and Bi-LSTM+CRF Model to Detect Tumor Morphology Entities in Spanish Clinical Cases](http://ceur-ws.org/Vol-2664/cantemist_paper6.pdf) | [Official](https://github.com/ssantamaria94/CANTEMIST-Participation) |
 
+
+### ProfNER 2021
+
+The [ProfNER-NER 2021](https://temu.bsc.es/smm4h-spanish/) task consists of Spanish COVID-19 related Twitter corpus tagged with four entity types (PROFESION,SITUACION_LABORAL,ACTIVIDAD,FIGURATIVA). 
+Models are evaluated based on span AND label-based F1 on the test set: see [Task 7 of Codalab SMM4H competition](https://competitions.codalab.org/competitions/28766).
+
+The ProfNER shared task contains as well a tweet classification subtrack (ProfNER-Track A).
+
+Data link: [Zenodo](https://doi.org/10.5281/zenodo.4309356)
+
+| Model           | F1  |  Paper / Source | Code |
+| ------------- | :-----:| --- | --- |
+| BETO-Linear-CRF (David Carreto Fidalgo et al., 2021) | 83.9 | [Recognai](https://www.aclweb.org/anthology/2021.smm4h-1.11.pdf) | [Official](https://github.com/recognai/profner) |
+| 3xBiLSTM-CRF+BPE+FastText+BETOemb (Usama Yaseen et al., 2021) | 82.4 | [MIC-NLP](https://www.aclweb.org/anthology/2021.smm4h-1.14.pdf) | |
+| BiLSTM-LSTM-CRF+Char+STE+SME+BETO+Syllabes+POS (Sergio Santamaría Carrasco et al., 2021) | 82.3 | [Troy](https://www.aclweb.org/anthology/2021.smm4h-1.12.pdf) | [Official](https://github.com/ssantamaria94/ProfNER-SMM4H) |
+| BiGRU-BiLSTM-TokenClassification-CRF+STE+Char (David Carreto Fidalgo et al., 2021) | 76.4 | [Recognai](https://www.aclweb.org/anthology/2021.smm4h-1.11.pdf) | [Official](https://github.com/recognai/profner) | [Official](https://github.com/recognai/profner) |
+| BiLSTM-CRF+Char+STE+SME+WikiFastText (Vasile Pais, et al., 2021) | 75.7 | [RACAI](https://www.aclweb.org/anthology/2021.smm4h-1.27.pdf) | |
+| 30xBETO-BiLSTM (Tong Zhou et al., 2021) | 73.3 | [CASIA_Unisound](https://www.aclweb.org/anthology/2021.smm4h-1.13.pdf) | [Official](https://github.com/recognai/cantemist-ner) |
+| Dictionaries-CRF (Alberto Mesa Murgado et al., 2021) | 72.8 | [SINAI](https://www.aclweb.org/anthology/2021.smm4h-1.31.pdf) | [Official](https://github.com/ssantamaria94/CANTEMIST-Participation) |
+| BiLSTM-CRF+FLAIR+FastText (Pedro Ruas et al., 2021) | 72.7 | [Lasige-BioTM](https://www.aclweb.org/anthology/2021.smm4h-1.21.pdf) | [Official](https://github.com/lasigeBioTM/LASIGE-participation-in-ProfNER) |
+
+
 [Go back to the README](../README.md)
