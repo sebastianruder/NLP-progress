@@ -12,8 +12,8 @@ Example:
 
 ## Parsing
 
-CCG parsing is evaluated in terms of labeled dependency F-score, which "take\[s\] into account the lexical category containing the dependency relation, the argument slot, the word associated with the lexical category, and the argument head word: All four must be correct to score a point." ([Clark & Curran, 2007](https://doi.org/10.1162/coli.2007.33.4.493))
-Besides the word forms, some popular parsers like the C&C parser, take POS tags as input. For fair comparison, systems should use automatically obtained POS as input, though some papers additionally report performance with oracle gold-standard POS features.
+CCG parsing is evaluated in terms of labeled dependency F-score, which "take\[s\] into account the lexical category containing the dependency relation, the argument slot, the word associated with the lexical category, and the argument head word: All four must be correct to score a point" ([Clark & Curran, 2007](https://doi.org/10.1162/coli.2007.33.4.493)).
+Besides the word forms, some popular parsers (like the C&C parser) take POS tags as input. For fair comparison, systems should use automatically obtained POS as input, though some papers additionally report performance with oracle gold-standard POS features.
 
 ### CCGBank
 
