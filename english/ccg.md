@@ -72,10 +72,10 @@ As for parsing, sections 2-21 are used for training, section 00 for development,
 #### Rare and unseen supertags
 
 | Model           | Acc on tags seen 1-9 times | Acc on unseen tags |  Paper / Source |
-| ------------- | :-----:| --- |
+| ------------- | :-----: | ----- | --- |
 | Prange et al. (2021), constructive | 37.40 | 3.03 | [Supertagging the Long Tail with Tree-Structured Decoding of Complex Categories](https://doi.org/10.1162/tacl_a_00364) |
+| Bhargava and Penn (2020), constructive | - | 5.00 | [Supertagging with CCG primitives](https://www.aclweb.org/anthology/2020.repl4nlp-1.23/) |
 | Prange et al. (2021), non-constructive, no tag threshold | 23.17 | 0.00 | [Supertagging the Long Tail with Tree-Structured Decoding of Complex Categories](https://doi.org/10.1162/tacl_a_00364) |
-| Bhargava and Penn (2020), constructive | - | 5.00 | [Supertagging with CCG primitives](https://www.aclweb.org/anthology/2020.repl4nlp-1.23/)
 
 ### Wikipedia
 
