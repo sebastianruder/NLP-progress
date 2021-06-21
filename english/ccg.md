@@ -12,13 +12,16 @@ Example:
 
 ## Parsing
 
+CCG parsing is evaluated in terms of labeled dependency F-score, which "take\[s\] into account the lexical category containing the dependency relation, the argument slot, the word associated with the lexical category, and the argument head word: All four must be correct to score a point." ([Clark & Curran, 2007](https://doi.org/10.1162/coli.2007.33.4.493))
+Besides the word forms, some popular parsers like the C&C parser, take POS tags as input. For fair comparison, systems should use automatically obtained POS as input, though some papers additionally report performance with oracle gold-standard POS features.
+
 ### CCGBank
 
 The CCGBank is a corpus of CCG derivations and dependency structures extracted from the Penn Treebank by
 [Hockenmaier and Steedman (2007)](http://www.aclweb.org/anthology/J07-3004). Sections 2-21 are used for training,
-section 00 for development, and section 23 as in-domain test set. Some work
+section 00 for development, and section 23 as in-domain test set.
 
-| Model           | Accuracy |  Paper / Source |
+| Model           | Labeled F-score |  Paper / Source |
 | ------------- | :-----:| --- |
 | Vaswani et al. (2016) | 88.32 | [Supertagging with LSTMs](https://aclweb.org/anthology/N/N16/N16-1027.pdf) |
 | Lewis et al. (2016) | 88.1 | [LSTM CCG Parsing](https://aclweb.org/anthology/N/N16/N16-1026.pdf) |
@@ -45,9 +48,11 @@ section 00 for development, and section 23 as in-domain test set. Some work
 
 ## Supertagging
 
+To mitigate sparsity, CCG supertaggers have traditionally been trained only on categories that occur 10 times or more in the CCGBank training data, which amounts to the 425 most frequent categories. In more recent work, using this threshold is becoming less common. In any case, supertagging evaluation is always measured for all supertags occurring in the test set. Models are evaluated based on token accuracy.
+
 ### CCGBank
 
-For Supertagging evaluation on CCGBank, performance is only calculated over the 425 most frequent labels. Models are evaluated based on accuracy.
+As for parsing, sections 2-21 are used for training, section 00 for development, and section 23 as in-domain test set.
 
 | Model           | Accuracy |  Paper / Source |
 | ------------- | :-----:| --- |
