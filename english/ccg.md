@@ -53,9 +53,13 @@ section 00 for development, and section 23 as in-domain test set.
 
 To mitigate sparsity, CCG supertaggers have traditionally been trained only on categories that occur 10 times or more in the CCGBank training data, which amounts to the 425 most frequent categories. In more recent work, using this threshold is becoming less common. In any case, supertagging evaluation is always measured for all supertags occurring in the test set. Models are evaluated based on token accuracy.
 
+### Constructive supertagging
+
+A constructive tagger models the internal structure of supertags rather than treating each supertag type as opaque ([Kogkalidis et al., 2019](https://www.aclweb.org/anthology/W19-4314/)). Supertags are constructed from minimal pieces (which for CCG are slashes and atomic categories) and there is no frequency cutoff.
+
 ### CCGBank
 
-As for parsing, sections 2-21 are used for training, section 00 for development, and section 23 as in-domain test set.
+Like for parsing, sections 2-21 are used for training, section 00 for development, and section 23 as in-domain test set.
 
 | Model           | Accuracy |  Paper / Source |
 | ----------------- | :-----:| --- |
