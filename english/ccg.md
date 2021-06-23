@@ -23,7 +23,7 @@ section 00 for development, and section 23 as in-domain test set.
 
 | Model           | Labeled F-score |  Paper / Source |
 | ------------- | :-----:| --- |
-| Prange et al. (2021), non-constructive, no tag threshold | 90.91 | [Supertagging the Long Tail with Tree-Structured Decoding of Complex Categories](https://doi.org/10.1162/tacl_a_00364) |
+| Prange et al. (2021), non-constructive | 90.91 | [Supertagging the Long Tail with Tree-Structured Decoding of Complex Categories](https://doi.org/10.1162/tacl_a_00364) |
 | Bhargava and Penn (2020), constructive | 90.9 | [Supertagging with CCG primitives](https://www.aclweb.org/anthology/2020.repl4nlp-1.23/) |
 | Prange et al. (2021), constructive | 90.79 | [Supertagging the Long Tail with Tree-Structured Decoding of Complex Categories](https://doi.org/10.1162/tacl_a_00364) |
 | Vaswani et al. (2016) | 88.32 | [Supertagging with LSTMs](https://aclweb.org/anthology/N/N16/N16-1027.pdf) |
@@ -58,8 +58,8 @@ To mitigate sparsity, CCG supertaggers have traditionally been trained only on c
 As for parsing, sections 2-21 are used for training, section 00 for development, and section 23 as in-domain test set.
 
 | Model           | Accuracy |  Paper / Source |
-| ------------- | :-----:| --- |
-| Prange et al. (2021), non-constructive, no tag threshold | 96.22 | [Supertagging the Long Tail with Tree-Structured Decoding of Complex Categories](https://doi.org/10.1162/tacl_a_00364) |
+| ----------------- | :-----:| --- |
+| Prange et al. (2021), non-constructive | 96.22 | [Supertagging the Long Tail with Tree-Structured Decoding of Complex Categories](https://doi.org/10.1162/tacl_a_00364) |
 | Prange et al. (2021), constructive | 96.09 | [Supertagging the Long Tail with Tree-Structured Decoding of Complex Categories](https://doi.org/10.1162/tacl_a_00364) |
 | Clark et al. (2018) | 96.05 | [Semi-Supervised Sequence Modeling with Cross-View Training](https://arxiv.org/abs/1809.08370) |
 | Bhargava and Penn (2020), constructive | 96.00 | [Supertagging with CCG primitives](https://www.aclweb.org/anthology/2020.repl4nlp-1.23/) |
@@ -72,15 +72,15 @@ As for parsing, sections 2-21 are used for training, section 00 for development,
 #### Rare and unseen supertags
 
 | Model           | Acc on tags seen 1-9 times | Acc on unseen tags |  Paper / Source |
-| ------------- | :-----: | ----- | --- |
-| Prange et al. (2021), constructive | 37.40 | 3.03 | [Supertagging the Long Tail with Tree-Structured Decoding of Complex Categories](https://doi.org/10.1162/tacl_a_00364) |
+| ------------- | :-----: | :-----: | --- |
 | Bhargava and Penn (2020), constructive | - | 5.00 | [Supertagging with CCG primitives](https://www.aclweb.org/anthology/2020.repl4nlp-1.23/) |
-| Prange et al. (2021), non-constructive, no tag threshold | 23.17 | 0.00 | [Supertagging the Long Tail with Tree-Structured Decoding of Complex Categories](https://doi.org/10.1162/tacl_a_00364) |
+| Prange et al. (2021), constructive | 37.40 | 3.03 | [Supertagging the Long Tail with Tree-Structured Decoding of Complex Categories](https://doi.org/10.1162/tacl_a_00364) |
+| Prange et al. (2021), non-constructive | 23.17 | 0.00 | [Supertagging the Long Tail with Tree-Structured Decoding of Complex Categories](https://doi.org/10.1162/tacl_a_00364) |
 
 ### Wikipedia
 
 | Model           | Accuracy |  Paper / Source |
-| ------------- | :-----:| --- |
+| ------------- | :-----: | --- |
 | Prange et al. (2021), non-constructive | 92.54 | [Supertagging the Long Tail with Tree-Structured Decoding of Complex Categories](https://doi.org/10.1162/tacl_a_00364) |
 | Prange et al. (2021), constructive | 92.46 | [Supertagging the Long Tail with Tree-Structured Decoding of Complex Categories](https://doi.org/10.1162/tacl_a_00364) |
 | Xu et al. (2015) | 90.00 | [CCG Supertagging with a Recurrent Neural Network](http://www.aclweb.org/anthology/P15-2041) |
