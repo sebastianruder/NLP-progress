@@ -119,6 +119,7 @@ has increased over the years as systems improve, with earlier systems having ver
 
 | Model                               | P@10% | P@30% | Paper / Source | Code           |
 | ----------------------------------- | ----- | ----- | --------------- | -------------- |
+| RECON (Bastos et al., 2021) | 87.5 | 74.1 | [RECON: Relation Extraction using Knowledge Graph Context in a Graph Neural Network](https://arxiv.org/pdf/2009.08694.pdf) | [RECON](https://github.com/ansonb/RECON) |
 | HRERE (Xu et al., 2019) | 84.9 | 72.8 | [Connecting Language and Knowledge with Heterogeneous Representations for Neural Relation Extraction](https://arxiv.org/abs/1903.10126) | [HRERE](https://github.com/billy-inn/HRERE) |
 | PCNN+noise_convert+cond_opt (Wu et al., 2019)         | 81.7   | 61.8   | [Improving Distantly Supervised Relation Extraction with Neural Noise Converter and Conditional Optimal Selector](https://arxiv.org/pdf/1811.05616.pdf) |  |
 | Intra- and Inter-Bag (Ye and Ling, 2019)         | 78.9   | 62.4   | [Distant Supervision Relation Extraction with Intra-Bag and Inter-Bag Attentions](https://arxiv.org/pdf/1904.00143.pdf) | [Code](https://github.com/ZhixiuYe/Intra-Bag-and-Inter-Bag-Attentions) |
@@ -129,6 +130,40 @@ has increased over the years as systems improve, with earlier systems having ver
 | (Mintz et al., 2009)                | 39.9+  |   -   | [Distant supervision for relation extraction without labeled data](http://www.aclweb.org/anthology/P09-1113) | |
 
 (+) Obtained from results in the paper "Neural Relation Extraction with Selective Attention over Instances"
+
+#### WikiData dataset for Sentential Relation Extraction
+
+The sentential RE ignores any other occurrence of the given entity pair, thereby making the target relation predictions on the sentence level ([Sorokin and Gurevych, 2017](https://www.aclweb.org/anthology/D17-1188.pdf)). The paper introduces a dataset on Wikidata KG containing 353 relations.
+
+| Model                               | F1    | Paper / Source  | Code           |
+| ----------------------------------- | ----- | --------------- | -------------- |
+| RECON (Bastos et al., 2021)            | **87.23**  | [RECON: Relation Extraction using Knowledge Graph Context in a Graph Neural Network](https://arxiv.org/pdf/2009.08694.pdf) |
+| GPGNN (Zhu et al., 2019)             | 82.29  | [Graph Neural Networks with Generated Parameters for Relation Extraction](https://www.aclweb.org/anthology/P19-1128.pdf) |
+| ContextAware (Sorokin and Gurevych, 2017)     | 72.07 | [Context-Aware Representations for Knowledge Base Relation Extraction](https://www.aclweb.org/anthology/D17-1188.pdf) |
+
+#### Joint Entity and Relation Extraction
+
+In this task binary relation tuples (two entities and a relation between them) are jointly extracted from sentences. The input to the models is just the sentences and a set of relations, output is a set of relation tuples. Models should extract all relation tuples present in the sentences with full entity names and overlapping entities. F1 score is used to evaluate the models. An extracted tuple is considered as correct if the two entities and the relation match with a ground truth tuple.
+
+##### NYT29
+
+This dataset is derived from the New York Times dataset of [Riedel et al., 2010](http://www.riedelcastro.org//publications/papers/riedel10modeling.pdf). It has 29 relations. 
+
+| Model           | F1  |  Paper / Source | Code |
+| ------------- | ----- | --- | --- |
+| WDec (Nayak and Ng, 2020) | 0.682 | [Effective Modeling of Encoder-Decoder Architecture for Joint Entity and Relation Extraction](https://arxiv.org/pdf/1911.09886.pdf) | [PtrNetDecoding4JERE](https://github.com/nusnlp/PtrNetDecoding4JERE) |
+| PNDec (Nayak and Ng, 2020) | 0.673 | [Effective Modeling of Encoder-Decoder Architecture for Joint Entity and Relation Extraction](https://arxiv.org/pdf/1911.09886.pdf) | [PtrNetDecoding4JERE](https://github.com/nusnlp/PtrNetDecoding4JERE) |
+| HRLRE (Takanobu et at., 2019) | 0.643 | [A Hierarchical Framework for Relation Extraction with Reinforcement Learning](https://arxiv.org/pdf/1811.03925.pdf) | [HRLRE](https://github.com/truthless11/HRL-RE) |
+
+##### NYT24
+
+This dataset is derived from the New York Times dataset of [Hoffman et al., 2011](https://www.aclweb.org/anthology/P11-1055.pdf). It has 24 relations. 
+
+| Model           | F1  |  Paper / Source | Code |
+| ------------- | ----- | --- | --- |
+| WDec (Nayak and Ng, 2020) | 0.817 | [Effective Modeling of Encoder-Decoder Architecture for Joint Entity and Relation Extraction](https://arxiv.org/pdf/1911.09886.pdf) | [PtrNetDecoding4JERE](https://github.com/nusnlp/PtrNetDecoding4JERE) |
+| PNDec (Nayak and Ng, 2020) | 0.789 | [Effective Modeling of Encoder-Decoder Architecture for Joint Entity and Relation Extraction](https://arxiv.org/pdf/1911.09886.pdf) | [PtrNetDecoding4JERE](https://github.com/nusnlp/PtrNetDecoding4JERE) |
+| HRLRE (Takanobu et at., 2019) | 0.776 | [A Hierarchical Framework for Relation Extraction with Reinforcement Learning](https://arxiv.org/pdf/1811.03925.pdf) | [HRLRE](https://github.com/truthless11/HRL-RE) |
 
 ### TACRED
 

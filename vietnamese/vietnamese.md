@@ -83,6 +83,7 @@
 | Model           | F1  |  Paper | Code | Note | 
 | ------------- | :-----:| --- | --- | --- | 
 | PhoBERT-large (2020) | 94.7 | [PhoBERT: Pre-trained language models for Vietnamese](https://arxiv.org/abs/2003.00744) | [Official](https://github.com/VinAIResearch/PhoBERT) | 
+| vELECTRA (2020) | 94.07 | [Improving Sequence Tagging for Vietnamese Text Using Transformer-based Neural Models](https://arxiv.org/abs/2006.15994) | [Official](https://github.com/fpt-corp/viBERT) |
 | PhoBERT-base (2020) | 93.6 | [PhoBERT: Pre-trained language models for Vietnamese](https://arxiv.org/abs/2003.00744) |  [Official](https://github.com/VinAIResearch/PhoBERT) | 
 | VnCoreNLP (2018) [1] | 91.30 | [VnCoreNLP: A Vietnamese Natural Language Processing Toolkit](http://aclweb.org/anthology/N18-5012) | [Official](https://github.com/vncorenlp/VnCoreNLP) | Used ETNLP embeddings |
 | BiLSTM-CRF + CNN-char  (2016) [1] | 91.09 | [End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF](http://www.aclweb.org/anthology/P16-1101) | [Official](https://github.com/XuezheMax/LasagneNLP) / [Link](https://github.com/UKPLab/emnlp2017-bilstm-cnn-crf/)  | Used ETNLP embeddings | 
@@ -125,6 +126,7 @@
 
 | Model           | F1  |  Paper | Code | 
 | ------------- | :-----:| --- | --- | 
+| UITws-v1 (2019) | 98.06 | [Vietnamese Word Segmentation with SVM: Ambiguity Reduction and Suffix Capture](https://arxiv.org/abs/2006.07804) | [Official](https://github.com/ngannlt/UITws-v1) |
 | VnCoreNLP-RDRsegmenter (2018) | 97.90 | [A Fast and Accurate Vietnamese Word Segmenter](http://www.lrec-conf.org/proceedings/lrec2018/pdf/55.pdf) | [Official](https://github.com/datquocnguyen/RDRsegmenter) | 
 | UETsegmenter (2016) | 97.87 | [A hybrid approach to Vietnamese word segmentation](http://doi.org/10.1109/RIVF.2016.7800279) | [Official](https://github.com/phongnt570/UETsegmenter) |
 | jointWPD (2018) | 97.81 | [A neural joint model for Vietnamese word segmentation, POS tagging and dependency parsing](https://arxiv.org/abs/1812.11459) | | 
