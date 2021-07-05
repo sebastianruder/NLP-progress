@@ -7,6 +7,7 @@ Question answering is the task of answering a question.
 - [ARC](#arc)
 - [ShARC](#sharc)
 - [Reading comprehension](#reading-comprehension)
+  - [AdversarialQA](#adversarialqa)
   - [CliCR](#clicr)
   - [CNN / Daily Mail](#cnn--daily-mail)
   - [CODAH](#codah)
@@ -59,6 +60,24 @@ The public data, further task details and public leaderboard are available on th
 Most current question answering datasets frame the task as reading comprehension where the question is about a paragraph
 or document and the answer often is a span in the document. The Machine Reading group
 at UCL also provides an [overview of reading comprehension tasks](https://uclnlp.github.io/ai4exams/data.html).
+
+### AdversarialQA
+
+[AdversarialQA](https://adversarialqa.github.io/) provides three Reading Comprehension datasets constructed using an adversarial model-in-the-loop, where the annotator has to ask questions that the model fails to answer successfully. The passages are identical to the ones used in [SQuADv1.1](https://arxiv.org/abs/1606.05250).
+
+AdversarialQA uses three different models; [BiDAF](https://arxiv.org/abs/1611.01603), [BERT-Large](https://arxiv.org/abs/1810.04805), and [RoBERTa-Large](https://arxiv.org/abs/1907.11692) in the annotation loop to create three datasets; D(BiDAF), D(BERT), and D(RoBERTa), each with 10,000 training examples, 1,000 validation, and 1,000 test examples.
+
+The adversarial human annotation paradigm ensures that these datasets consist of questions that current state-of-the-art models (at least the ones used as adversaries in the annotation loop) find challenging.
+
+Examples:
+
+| Dataset | Passage  | Question | Answer |
+| ------------- | -----:| -----:| -----: |
+| D(BiDAF) | Martin Luther married Katharina von Bora, one of 12 nuns he had helped escape from the Nimbschen Cistercian convent in April 1523, when he arranged for them to be smuggled out in herring barrels. "Suddenly, and while I was occupied with far different thoughts," he wrote to Wenceslaus Link, "the Lord has plunged me into marriage." At the time of their marriage, Katharina was 26 years old and Luther was 41 years old. | In a letter who did Luther credit for his union with Katharina? | the Lord |
+| D(BERT) | This combination of cancellations and σ and π overlaps results in dioxygen's double bond character and reactivity, and a triplet electronic ground state. An electron configuration with two unpaired electrons as found in dioxygen (see the filled π* orbitals in the diagram), orbitals that are of equal energy—i.e., degenerate—is a configuration termed a spin triplet state. Hence, the ground state of the O2 molecule is referred to as triplet oxygen.[b] The highest energy, partially filled orbitals are antibonding, and so their filling weakens the bond order from three to two. Because of its unpaired electrons, triplet oxygen reacts only slowly with most organic molecules, which have paired electron spins; this prevents spontaneous combustion. | What are in the orbitals of atoms? | electrons |
+| D(RoBERTa) | Between 1991 and 2000, the total area of forest lost in the Amazon rose from 415,000 to 587,000 square kilometres (160,000 to 227,000 sq mi), with most of the lost forest becoming pasture for cattle. Seventy percent of formerly forested land in the Amazon, and 91% of land deforested since 1970, is used for livestock pasture. Currently, Brazil is the second-largest global producer of soybeans after the United States. New research however, conducted by Leydimere Oliveira et al., has shown that the more rainforest is logged in the Amazon, the less precipitation reaches the area and so the lower the yield per hectare becomes. So despite the popular perception, there has been no economical advantage for Brazil from logging rainforest zones and converting these to pastoral fields. | Of the two countries that produce soybeans, which country is clearing rain forest in order to increase production? | Brazil |
+
+More details on the task and the dataset can be found in the [TACL paper](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00338/96474/Beat-the-AI-Investigating-Adversarial-Human). The public leaderboard is available through [Dynabench](https://dynabench.org/tasks/2#overall) as the QA round 1 task.
 
 ### CliCR
 
@@ -253,7 +272,7 @@ More details are available on the [Story Cloze Test Challenge](https://competiti
 
 [SWAG](https://arxiv.org/abs/1808.05326) (Situations With Adversarial Generations) is a large-scale dataset for the task of grounded commonsense inference, unifying natural language inference and physically grounded reasoning. The dataset consists of 113k multiple choice questions about grounded situations. Each question is a video caption from LSMDC or ActivityNet Captions, with four answer choices about what might happen next in the scene. The correct answer is the (real) video caption for the next event in the video; the three incorrect answers are adversarially generated and human verified, so as to fool machines but not humans.
 
-The public leaderboard is available on the [AI2 website] (https://leaderboard.allenai.org/swag/submissions/public).
+The public leaderboard is available on the [AI2 website](https://leaderboard.allenai.org/swag/submissions/public).
 
 ### RecipeQA
 
