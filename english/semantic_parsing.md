@@ -38,7 +38,7 @@ In the following tables, systems marked with &hearts; are pipeline systems that 
 and &clubs; is for those require SRL.
 
 ### LDC2014T12:
-13,051 sentences
+The dataset contains 13,051 AMRs split across training, dev, and test partitions.
 
 Models are evaluated on the newswire section and the full dataset based on [smatch](https://amr.isi.edu/smatch-13.pdf).
 
@@ -58,7 +58,7 @@ Models are evaluated on the newswire section and the full dataset based on [smat
 | Transition-based parser-Stack-LSTM (Ballesteros and Al-Onaizan, 2017) | 68 | 63  | [AMR Parsing using Stack-LSTMs](http://www.aclweb.org/anthology/D17-1130) |
 
 ### LDC2015E86:
-19,572 sentences
+The dataset contains 19,572 AMRs split across training, dev, and test partitions.
 
 Models are evaluated based on [smatch](https://amr.isi.edu/smatch-13.pdf).
 
@@ -72,7 +72,7 @@ Models are evaluated based on [smatch](https://amr.isi.edu/smatch-13.pdf).
 | SEQ2SEQ + 20M (Konstas et al., 2017)&spades; | 62.1 | [Neural AMR: Sequence-to-Sequence Models for Parsing and Generation](https://arxiv.org/abs/1704.08381) |
 
 ### LDC2017T10 (LDC2016E25):
-39,260 sentences
+The dataset contains 39,260 AMRs split across training, dev, and test partitions.
 
 Models are evaluated based on [smatch](https://amr.isi.edu/smatch-13.pdf).
 
@@ -95,6 +95,7 @@ Models are evaluated based on [smatch](https://amr.isi.edu/smatch-13.pdf).
 The dataset contains 59,255 AMRs split across training, dev, and test partitions.
 
 Models are evaluated based on [smatch](https://amr.isi.edu/smatch-13.pdf).
+
 | Model           | Smatch  |  Paper / Source |
 | ------------- | :-----:| --- |
 | One SPRING to Rule Them Both: Symmetric AMR Semantic Parsing and Generation without a Complex Pipeline (Bevilacqua et al., 2020) | 83.0 | [One SPRING to Rule Them Both: Symmetric AMR Semantic Parsing and Generation without a Complex Pipeline](https://ojs.aaai.org/index.php/AAAI/article/view/17489) |
