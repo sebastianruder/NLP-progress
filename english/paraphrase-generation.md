@@ -1,7 +1,7 @@
 # Paraphrase Generation
-[Paraphrase generation](https://arxiv.org/abs/1908.07831) is the task to generate an output sentence which is sementically identical to the input sentence but contains variations in lexicon or syntext. See the example given below:
+[Paraphrase generation](https://arxiv.org/abs/1908.07831) is the task of generating an output sentence that preserves the meaning of the input sentence but contains variations in word choice and grammar. See the example given below:
 
-| Input (Erroneous)          | Output (Corrected)     |
+| Input                      | Output                 |
 | -------------------------  | ---------------------- |
 |The need for investors to earn a commercial return may put upward pressure on prices| The need for profit is likely to push up prices|
 
@@ -10,11 +10,11 @@
 
 | Model           | BLEU  |  Paper / Source | Code |
 | ------------- | :-----:| --- | --- |
-| Trigram (baseline)| 47.4| [Wieting and Gimpel, 2018](https://arxiv.org/pdf/1711.05732v2.pdf)| Unvailable|
+| Trigram (baseline)| 47.4| [Wieting and Gimpel, 2018](https://arxiv.org/pdf/1711.05732v2.pdf)| Unavailable|
 | Unsupervised BART w/ Dynamic Blocking | 20.9 | [Niu et al., 2020](https://arxiv.org/pdf/2010.12885v1.pdf)| Unavailable|
 
 ### QQP-Pos
-The [QQP-POS dataset](https://www.kaggle.com/c/quora-question-pairs/overview) is a datast for paraphrase generation with 400K source-target pairs. Each pair is labelled as negative if two questions are not duplicates and positive otherwise.
+The [QQP-POS dataset](https://www.kaggle.com/c/quora-question-pairs/overview) is a paraphrase generation dataset with 400K source-target pairs. Each pair is labelled as negative if two questions are not duplicates and positive otherwise.
 
 | Model           | BLEU  |  Paper / Source | Code |
 | ------------- | :-----:| --- | --- |
