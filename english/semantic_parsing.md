@@ -90,7 +90,7 @@ Models are evaluated based on [smatch](https://amr.isi.edu/smatch-13.pdf).
 | Neural-Pointer (Buys and Blunsom, 2017)&hearts;&spades; | 61.9 | [Oxford at SemEval-2017 Task 9: Neural AMR Parsing with Pointer-Augmented Attention](http://aclweb.org/anthology/S17-2157) |
 
 ### LDC2020T02
-67,507
+59,255 sentences
 
 Models are evaluated based on [smatch](https://amr.isi.edu/smatch-13.pdf).
 | Model           | Smatch  |  Paper / Source |
