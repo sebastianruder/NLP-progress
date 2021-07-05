@@ -6,9 +6,9 @@ O is used for non-entity tokens.
 
 Example:
 
-| Mark | Watney | visited | Mars |
-| --- | ---| --- | --- |
-| B-PER | I-PER | O | B-LOC |
+| Mark  | Watney | visited | Mars  |
+| ----- | ------ | ------- | ----- |
+| B-PER | I-PER  | O       | B-LOC |
 
 ### CoNLL 2003 (English)
 
@@ -48,8 +48,8 @@ This is a cleaner version of the CoNLL 2003 NER task, where about 5% of instance
 
 Links: [CoNLL++](https://github.com/ZihanWangKi/CrossWeigh) (including direct download links for data)
 
-| Model           | F1  |  Paper / Source | Code |
-| ------------- | :-----:| --- | --- |
+| Model                                   |  F1   | Paper / Source                           | Code                                     |
+| --------------------------------------- | :---: | ---------------------------------------- | ---------------------------------------- |
 | CrossWeigh + Flair (Wang et al., 2019)♦ | 94.28 | [CrossWeigh: Training Named Entity Tagger from Imperfect Annotations](https://www.aclweb.org/anthology/D19-1519/) | [Official](https://github.com/ZihanWangKi/CrossWeigh) |
 | Flair embeddings (Akbik et al., 2018)♦ | 93.89 | [Contextual String Embeddings for Sequence Labeling](https://drive.google.com/file/d/17yVpFA7MmXaQFTe-HDpZuqw9fJlmzg56/view) | [Flair framework](https://github.com/zalandoresearch/flair)
 | BiLSTM-CRF+ELMo (Peters et al., 2018) | 93.42 | [Deep contextualized word representations](https://arxiv.org/abs/1802.05365) | [AllenNLP Project](https://allennlp.org/elmo) [AllenNLP GitHub](https://github.com/allenai/allennlp) |
@@ -63,11 +63,11 @@ The [WNUT 2017 Emerging Entities task](http://aclweb.org/anthology/W17-4418) ope
 text and focuses on generalisation beyond memorisation in high-variance environments. Scores are given both over
 entity chunk instances, and unique entity surface forms, to normalise the biasing impact of entities that occur frequently.
 
-| Feature | Train | Dev | Test |
-| --- | --- | --- | --- |
-| Posts | 3,395 | 1,009 | 1,287 |
-| Tokens | 62,729 | 15,733 | 23,394 |
-| NE tokens | 3,160 | 1,250 | 1,589 |
+| Feature   | Train  | Dev    | Test   |
+| --------- | ------ | ------ | ------ |
+| Posts     | 3,395  | 1,009  | 1,287  |
+| Tokens    | 62,729 | 15,733 | 23,394 |
+| NE tokens | 3,160  | 1,250  | 1,589  |
 
 The data is annotated for six classes - person, location, group, creative work, product and corporation.
 
@@ -77,24 +77,58 @@ Links: [WNUT 2017 Emerging Entity task page](https://noisy-text.github.io/2017/e
 | ---           | --- | ---               | --- |
 | InferNER (Moemmur et al., 2021)          | 50.52| ---               | [InferNER: an attentive model leveraging the sentence-level information for Named Entity Recognition in Microblogs](https://journals.flvc.org/FLAIRS/article/view/128538) |
 | CrossWeigh + Flair (Wang et al., 2019) | 50.03 | [CrossWeigh: Training Named Entity Tagger from Imperfect Annotations](https://www.aclweb.org/anthology/D19-1519/) | [Official](https://github.com/ZihanWangKi/CrossWeigh) |
-| Flair embeddings (Akbik et al., 2018) | 49.59 | | [Pooled Contextualized Embeddings for Named Entity Recognition](http://alanakbik.github.io/papers/naacl2019_embeddings.pdf) / [Flair framework](https://github.com/zalandoresearch/flair) |
-| Aguilar et al. (2018) | 45.55 | | [Modeling Noisiness to Recognize Named Entities using Multitask Neural Networks on Social Media](http://aclweb.org/anthology/N18-1127.pdf) |
-| SpinningBytes | 40.78 | 39.33 | [Transfer Learning and Sentence Level Features for Named Entity Recognition on Tweets](http://aclweb.org/anthology/W17-4422.pdf) | 
+| Flair embeddings (Akbik et al., 2018)  | 49.59 |                                          | [Pooled Contextualized Embeddings for Named Entity Recognition](http://alanakbik.github.io/papers/naacl2019_embeddings.pdf) / [Flair framework](https://github.com/zalandoresearch/flair) |
+| Aguilar et al. (2018)                  | 45.55 |                                          | [Modeling Noisiness to Recognize Named Entities using Multitask Neural Networks on Social Media](http://aclweb.org/anthology/N18-1127.pdf) |
+| SpinningBytes                          | 40.78 | 39.33                                    | [Transfer Learning and Sentence Level Features for Named Entity Recognition on Tweets](http://aclweb.org/anthology/W17-4422.pdf) |
 
 ### Ontonotes v5 (English)
 
 The [Ontonotes corpus v5](https://catalog.ldc.upenn.edu/docs/LDC2013T19/OntoNotes-Release-5.0.pdf) is a richly annotated corpus with several layers of annotation, including named entities, coreference, part of speech, word sense, propositions, and syntactic parse trees. These annotations are over a large number of tokens, a broad cross-section of domains, and 3 languages (English, Arabic, and Chinese). The NER dataset (of interest here) includes 18 tags, consisting of 11 _types_ (PERSON, ORGANIZATION, etc) and 7 _values_ (DATE, PERCENT, etc), and contains 2 million tokens. The common datasplit used in NER is defined in [Pradhan et al 2013](https://www.semanticscholar.org/paper/Towards-Robust-Linguistic-Analysis-using-OntoNotes-Pradhan-Moschitti/a94e4fe6f475e047be5dcc9077f445e496240852) and can be found [here](http://cemantix.org/data/ontonotes.html).
 
-| Model           | F1  |  Paper / Source | Code |
-| ------------- | :-----:| --- | --- |
-| Flair embeddings (Akbik et al., 2018) | 89.71 | [Contextual String Embeddings for Sequence Labeling](http://aclweb.org/anthology/C18-1139) | [Official](https://github.com/zalandoresearch/flair) |
-| CVT + Multi-Task (Clark et al., 2018) | 88.81 | [Semi-Supervised Sequence Modeling with Cross-View Training](https://arxiv.org/abs/1809.08370)  | [Official](https://github.com/tensorflow/models/tree/master/research/cvt_text) |
-| Bi-LSTM-CRF + Lexical Features (Ghaddar and Langlais 2018) | 87.95 | [Robust Lexical Features for Improved Neural Network Named-Entity Recognition](https://arxiv.org/pdf/1806.03489.pdf) | [Official](https://github.com/ghaddarAbs/NER-with-LS)|
-| BiLSTM-CRF (Strubell et al, 2017) | 86.99 | [Fast and Accurate Entity Recognition with Iterated Dilated Convolutions](https://arxiv.org/pdf/1702.02098.pdf)  | [Official](https://github.com/iesl/dilated-cnn-ner) |
-| Iterated Dilated CNN (Strubell et al, 2017) | 86.84 | [Fast and Accurate Entity Recognition with Iterated Dilated Convolutions](https://arxiv.org/pdf/1702.02098.pdf)  | [Official](https://github.com/iesl/dilated-cnn-ner) |
-| Chiu and Nichols (2016) | 86.28 | [Named entity recognition with bidirectional LSTM-CNNs](https://arxiv.org/abs/1511.08308) | |
-| Joint Model (Durrett and Klein 2014) | 84.04 | [A Joint Model for Entity Analysis: Coreference, Typing, and Linking](https://pdfs.semanticscholar.org/2eaf/f2205c56378e715d8d12c521d045c0756a76.pdf) |
+| Model                                    |  F1   | Paper / Source                           | Code                                     |
+| ---------------------------------------- | :---: | ---------------------------------------- | ---------------------------------------- |
+| Flair embeddings (Akbik et al., 2018)    | 89.71 | [Contextual String Embeddings for Sequence Labeling](http://aclweb.org/anthology/C18-1139) | [Official](https://github.com/zalandoresearch/flair) |
+| CVT + Multi-Task (Clark et al., 2018)    | 88.81 | [Semi-Supervised Sequence Modeling with Cross-View Training](https://arxiv.org/abs/1809.08370) | [Official](https://github.com/tensorflow/models/tree/master/research/cvt_text) |
+| Bi-LSTM-CRF + Lexical Features (Ghaddar and Langlais 2018) | 87.95 | [Robust Lexical Features for Improved Neural Network Named-Entity Recognition](https://arxiv.org/pdf/1806.03489.pdf) | [Official](https://github.com/ghaddarAbs/NER-with-LS) |
+| BiLSTM-CRF (Strubell et al, 2017)        | 86.99 | [Fast and Accurate Entity Recognition with Iterated Dilated Convolutions](https://arxiv.org/pdf/1702.02098.pdf) | [Official](https://github.com/iesl/dilated-cnn-ner) |
+| Iterated Dilated CNN (Strubell et al, 2017) | 86.84 | [Fast and Accurate Entity Recognition with Iterated Dilated Convolutions](https://arxiv.org/pdf/1702.02098.pdf) | [Official](https://github.com/iesl/dilated-cnn-ner) |
+| Chiu and Nichols (2016)                  | 86.28 | [Named entity recognition with bidirectional LSTM-CNNs](https://arxiv.org/abs/1511.08308) |                                          |
+| Joint Model (Durrett and Klein 2014)     | 84.04 | [A Joint Model for Entity Analysis: Coreference, Typing, and Linking](https://pdfs.semanticscholar.org/2eaf/f2205c56378e715d8d12c521d045c0756a76.pdf) |                                          |
 | Averaged Perceptron (Ratinov and Roth 2009) | 83.45 | [Design Challenges and Misconceptions in Named Entity Recognition](https://www.semanticscholar.org/paper/Design-Challenges-and-Misconceptions-in-Named-Ratinov-Roth/27496a2ee337db705e7c611dea1fd8e6f41437c2) (These scores reported in ([Durrett and Klein 2014](https://pdfs.semanticscholar.org/2eaf/f2205c56378e715d8d12c521d045c0756a76.pdf))) | [Official](https://github.com/CogComp/cogcomp-nlp/tree/master/ner) |
+
+
+
+### Few-NERD
+
+[Few-NERD](https://arxiv.org/abs/2105.07464) is a large-scale, fine-grained manually annotated named entity recognition dataset, which contains 8 coarse-grained types, 66 fine-grained types, 188,200 sentences, 491,711 entities and 4,601,223 tokens. Three benchmark tasks are built:
+
+- Few-NERD (SUP) is a standard NER task;
+- Few-NERD (INTRA) is a few-shot NER task across different coarse-grained types;
+- Few-NERD (INTER) is a few-shot NER task within coarse-grained types.
+
+Website: [Few-NERD page](https://ningding97.github.io/fewnerd/);
+
+Download & code: https://github.com/thunlp/Few-NERD
+
+
+
+#### Results on Few-NERD (SUP)
+
+| Model                           |  F1   | Paper / Source                           | Code                                     |
+| ------------------------------- | :---: | ---------------------------------------- | ---------------------------------------- |
+| BERT-Tagger (Ding et al., 2021) | 68.88 | [Few-NERD: A Few-shot Named Entity Recognition Dataset](https://www.stingning.cn/assets/pdf/ACL2021-fewnerd.pdf) | [Official](https://github.com/thunlp/Few-NERD) |
+
+
+
+
+
+#### 
+
+#### 
+
+
+
+
 
 
 
