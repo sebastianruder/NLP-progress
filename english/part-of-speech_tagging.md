@@ -36,12 +36,13 @@ different POS tags. Sections 0-18 are used for training, sections 19-21 for deve
 
 The [Ritter (2011)](https://www.aclweb.org/anthology/D11-1141) dataset has become the benchmark for social media part-of-speech tagging. This is comprised of  some 50K tokens of English social media sampled in late 2011, and is tagged using an extended version of the PTB tagset.
 
-| Model | Accuracy | Paper |
-| --- | --- | ---|
-| PretRand (Meftah et al., 2019) | 91.46 | [Joint Learning of Pre-Trained and Random Units for Domain Adaptation in Part-of-Speech Tagging](https://www.aclweb.org/anthology/N19-1416.pdf) |
-| FastText + CNN + CRF | 90.53 | [Twitter word embeddings (Godin et al. 2019 (Chapter 3))](https://fredericgodin.com/research/twitter-word-embeddings/) | 
-| CMU | 90.0 ± 0.5 | [Improved Part-of-Speech Tagging for Online Conversational Text with Word Clusters](http://www.cs.cmu.edu/~ark/TweetNLP/owoputi+etal.naacl13.pdf) | 
-| GATE  | 88.69 | [Twitter Part-of-Speech Tagging for All: Overcoming Sparse and Noisy Data](https://www.aclweb.org/anthology/R13-1026) | 
+| Model | Accuracy | Paper | Source|
+| --- | --- | ---|---|
+| ACE + fine-tune (Wang et al., 2020) | 93.4 | [Automated Concatenation of Embeddings for Structured Prediction](https://arxiv.org/pdf/2010.05006.pdf) | [Official](https://github.com/Alibaba-NLP/ACE)|
+| PretRand (Meftah et al., 2019) | 91.46 | [Joint Learning of Pre-Trained and Random Units for Domain Adaptation in Part-of-Speech Tagging](https://www.aclweb.org/anthology/N19-1416.pdf) | |
+| FastText + CNN + CRF | 90.53 | [Twitter word embeddings (Godin et al. 2019 (Chapter 3))](https://fredericgodin.com/research/twitter-word-embeddings/) |  |
+| CMU | 90.0 ± 0.5 | [Improved Part-of-Speech Tagging for Online Conversational Text with Word Clusters](http://www.cs.cmu.edu/~ark/TweetNLP/owoputi+etal.naacl13.pdf) | |
+| GATE  | 88.69 | [Twitter Part-of-Speech Tagging for All: Overcoming Sparse and Noisy Data](https://www.aclweb.org/anthology/R13-1026) |  |
 
 ### UD
 
