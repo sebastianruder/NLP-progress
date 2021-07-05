@@ -119,6 +119,7 @@ has increased over the years as systems improve, with earlier systems having ver
 
 | Model                               | P@10% | P@30% | Paper / Source | Code           |
 | ----------------------------------- | ----- | ----- | --------------- | -------------- |
+| KGPOOL (Nadgeri et al., 2021) | 92.3 | 86.7 | [KGPool: Dynamic Knowledge Graph Context Selection for Relation Extraction](https://arxiv.org/pdf/2106.00459.pdf) | [KGPOOL](https://github.com/nadgeri14/KGPool) |
 | RECON (Bastos et al., 2021) | 87.5 | 74.1 | [RECON: Relation Extraction using Knowledge Graph Context in a Graph Neural Network](https://arxiv.org/pdf/2009.08694.pdf) | [RECON](https://github.com/ansonb/RECON) |
 | HRERE (Xu et al., 2019) | 84.9 | 72.8 | [Connecting Language and Knowledge with Heterogeneous Representations for Neural Relation Extraction](https://arxiv.org/abs/1903.10126) | [HRERE](https://github.com/billy-inn/HRERE) |
 | PCNN+noise_convert+cond_opt (Wu et al., 2019)         | 81.7   | 61.8   | [Improving Distantly Supervised Relation Extraction with Neural Noise Converter and Conditional Optimal Selector](https://arxiv.org/pdf/1811.05616.pdf) |  |
@@ -137,6 +138,7 @@ The sentential RE ignores any other occurrence of the given entity pair, thereby
 
 | Model                               | F1    | Paper / Source  | Code           |
 | ----------------------------------- | ----- | --------------- | -------------- |
+| KGPOOL (Nadgeri et al., 2021)            | **88.60**  | [KGPool: Dynamic Knowledge Graph Context Selection for Relation Extraction](https://arxiv.org/pdf/2106.00459.pdf) |
 | RECON (Bastos et al., 2021)            | **87.23**  | [RECON: Relation Extraction using Knowledge Graph Context in a Graph Neural Network](https://arxiv.org/pdf/2009.08694.pdf) |
 | GPGNN (Zhu et al., 2019)             | 82.29  | [Graph Neural Networks with Generated Parameters for Relation Extraction](https://www.aclweb.org/anthology/P19-1128.pdf) |
 | ContextAware (Sorokin and Gurevych, 2017)     | 72.07 | [Context-Aware Representations for Knowledge Base Relation Extraction](https://www.aclweb.org/anthology/D17-1188.pdf) |
