@@ -13,6 +13,8 @@
 - [UCCA parsing](#ucca-parsing)
   - [SemEval 2019 Task 1](semeval-2019-task-1)
   - [CoNLL 2019](conll-2019)
+- [Semantic Dependency Parsing](#semantic-dependency-parsing)
+  - [SemEval 2015 Task 18](#semeval-2015-task-18)
 - [SQL parsing](#sql-parsing)
   - [ATIS](#atis)
   - [Advising](#advising)
@@ -188,6 +190,30 @@ There are two evaluation sets: one with 1,131, from the same domains (Full), and
 | Transition-based + BERT (Hershcovich and Arviv, 2019) | 57.4 | 77.7 |  65.9 | 82.2 | [TUPA at MRP 2019: A Multi-Task Baseline System](https://www.aclweb.org/anthology/K19-2002.pdf) | https://github.com/danielhers/tupa/tree/mrp |
 | Transition-based + BERT + MTL (Hershcovich and Arviv, 2019) | 35.6 | 64.1 |  50.3 | 73.1 | [TUPA at MRP 2019: A Multi-Task Baseline System](https://www.aclweb.org/anthology/K19-2002.pdf) | https://github.com/danielhers/tupa/tree/mrp |
 
+## Semantic Dependency Parsing
+
+Broad-coverage semantic dependency parsing (SDP) [(Oepen et al., 2014)](aclweb.org/anthology/S14-2008) is defined as the task of recovering sentence-internal predicate–argument relationships for all content words, i.e. the semantic structure constituting the relational core of sentence meaning.  Target representations, thus, are semantic dependency graphs, as shown in our running example for the (Wall Street Journal) sentence:
+
+```
+A similar technique is almost impossible to apply to other crops, such as cotton, soybeans, and rice.
+```
+ Here, ‘technique’ for example, is the argument of at least the determiner (as the quantificational locus), the intersective modifier ‘similar’, and the predicate ‘apply’.  Conversely, the predicative copula, infinitival ‘to’, and the vacuous preposition marking the deep object of ‘apply’ arguably have no semantic contribution of their own.  For general background on the 2014 variant and an overview of participating systems (and results), please see the [(Oepen et al., 2014)](aclweb.org/anthology/S14-2008).
+ 
+ ### [SemEval 2015 Task 18](http://alt.qcri.org/semeval2015/task18/)
+ 
+ This Task is a re-run with some extensions of [Task 8 at SemEval 2014](http://alt.qcri.org/semeval2014/task8/). The task has three distinct target representations, dubbed DM, PAS, and PSD (renamed from what was PCEDT at SemEval 2014), representing different traditions of semantic annotation. More detail on the linguistic ‘pedigree’ of these formats is available in the [summary](http://alt.qcri.org/semeval2015/task18/index.php?id=representations) of target representations, and there is also an [on-line search](http://wesearch.delph-in.net/sdp/) interface available to interactively explore these representations (like the initial release of the training data, this interface in early August 2014 still lacks semantic dependency graphs for languages other than English).
+
+In each dataset, there is a in-domain (ID) and out-of-domain (OOD) test set. The evaluation metric is the labeled F1 score.
+
+| Model           | DM ID | DM OOD | PAS ID | PAS OOD | PSD ID | PSD OOD | Paper / Source | Code |
+| --------------- | :-----: |  :-----:|:-----: |  :-----:|:-----: |  :-----:| --------------- | ---- |
+| ACE + fine-tune (Wang et al., 2020) | 95.3 | 92.6 | 95.3 | 93.9 | 83.6 | 83.2| [Automated Concatenation of Embeddings for Structured Prediction](https://arxiv.org/pdf/2010.05006.pdf) | [Official](https://github.com/Alibaba-NLP/ACE)|
+|Transition-based Pointer Network+Char+Lemma+BERT (Fernández-González & Gómez-Rodríguez, 2020)|94.4|91.0|95.1|93.4|82.6|82.0|[Transition-based Semantic Dependency Parsing with Pointer Networks](https://www.aclweb.org/anthology/2020.acl-main.629/)|[Official](https://github.com/danifg/SemanticPointer)|
+|Second-Order+Biaffine+Char+Lemma (Wang et al., 2019)|94.0|89.7|94.1|91.3|81.4|79.6|[Second-Order Semantic Dependency Parsing with End-to-End Neural Networks](https://www.aclweb.org/anthology/P19-1454/)|[Official](https://github.com/wangxinyu0922/Second_Order_SDP)|
+|Biaffine+Char+Lemma (Dozat and Manning, 2018)|93.7|88.9|93.9|90.6|81.0|79.4|[Simpler but More Accurate Semantic Dependency Parsing](https://www.aclweb.org/anthology/P18-2077/)|[Official](https://github.com/tdozat/Parser-v3)|
+
+
+
 ## SQL parsing
 
 ### ATIS
@@ -350,3 +376,4 @@ Example:
 | Template Baseline (Finegan-Dollak et al., 2018) | 0 | 0 | [Improving Text-to-SQL Evaluation Methodology](http://arxiv.org/abs/1806.09029) | [Data and System](https://github.com/jkkummerfeld/text2sql-data) |
 
 [Go back to the README](../README.md)
+

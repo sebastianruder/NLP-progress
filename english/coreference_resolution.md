@@ -23,6 +23,7 @@ CoNLL-2012 evaluation scripts. The main evaluation metric is the average F1 of t
 
 | Model           | Avg F1 |  Paper / Source | Code |
 | ------------- | :-----:| --- | --- |
+| Kirstain et al. (2021) | 80.3 | [Coreference Resolution without Span Representations](https://arxiv.org/abs/2101.00434) |[Official](https://github.com/yuvalkirstain/s2e-coref.git) |
 | Xu et al. (2020) | 80.2 | [Revealing the Myth of Higher-Order Inference in Coreference Resolution](https://arxiv.org/abs/2009.12013) |[Official](https://github.com/emorynlp/coref-hoi) |
 | Joshi et al. (2019)<sup>[1](#myfootnote1)</sup> | 79.6 | [SpanBERT: Improving Pre-training by Representing and Predicting Spans](https://arxiv.org/pdf/1907.10529) |[Official](https://github.com/facebookresearch/SpanBERT) |
 | Joshi et al. (2019)<sup>[2](#myfootnote2)</sup> | 76.9 | [BERT for Coreference Resolution: Baselines and Analysis](https://arxiv.org/abs/1908.09091) | [Official](https://github.com/mandarjoshi90/coref) |
