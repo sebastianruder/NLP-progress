@@ -78,6 +78,7 @@ Models are evaluated based on [smatch](https://amr.isi.edu/smatch-13.pdf).
 
 | Model           | Smatch  |  Paper / Source |
 | ------------- | :-----:| --- |
+| One SPRING to Rule Them Both: Symmetric AMR Semantic Parsing and Generation without a Complex Pipeline (Bevilacqua et al., 2020) | 84.5 | [One SPRING to Rule Them Both: Symmetric AMR Semantic Parsing and Generation without a Complex Pipeline](https://ojs.aaai.org/index.php/AAAI/article/view/17489) |
 | AMR Parsing with Sequence-to-Sequence Pre-training (Xu, et al., 2020) | 81.4 | [Improving AMR Parsing with Sequence-to-Sequence Pre-training](https://arxiv.org/pdf/2010.01771.pdf) |
 | Pushing the Limits of AMR Parsing with Self-Learning (Young-Suk Lee et al., 2020) | 81.3 | [Pushing the Limits of AMR Parsing with Self-Learning](https://arxiv.org/abs/2010.10673) |
 | AMR Parsing via Graph-Sequence Iterative Inference (Cai and Lam, 2020)&hearts;&spades; | 80.2 | [AMR Parsing via Graph-Sequence Iterative Inference](https://arxiv.org/pdf/2004.05572.pdf) |
@@ -89,6 +90,15 @@ Models are evaluated based on [smatch](https://amr.isi.edu/smatch-13.pdf).
 | Core Semantic First: A Top-down Approach for AMR Parsing (Cai and Lam, 2019)&hearts;&spades; | 73.2 | [Core Semantic First: A Top-down Approach for AMR Parsing](https://www.aclweb.org/anthology/D19-1393.pdf) |
 | ChSeq + 100K (van Noord and Bos, 2017)&hearts; | 71.0 | [Neural Semantic Parsing by Character-based Translation: Experiments with Abstract Meaning Representations](https://clinjournal.org/clinj/article/view/72/64) |
 | Neural-Pointer (Buys and Blunsom, 2017)&hearts;&spades; | 61.9 | [Oxford at SemEval-2017 Task 9: Neural AMR Parsing with Pointer-Augmented Attention](http://aclweb.org/anthology/S17-2157) |
+
+### LDC2020T02
+The dataset contains 59,255 AMRs split across training, dev, and test partitions.
+
+Models are evaluated based on [smatch](https://amr.isi.edu/smatch-13.pdf).
+| Model           | Smatch  |  Paper / Source |
+| ------------- | :-----:| --- |
+| One SPRING to Rule Them Both: Symmetric AMR Semantic Parsing and Generation without a Complex Pipeline (Bevilacqua et al., 2020) | 83.0 | [One SPRING to Rule Them Both: Symmetric AMR Semantic Parsing and Generation without a Complex Pipeline](https://ojs.aaai.org/index.php/AAAI/article/view/17489) |
+
 
 ## DRS parsing
 
