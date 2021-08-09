@@ -71,6 +71,7 @@
 
 
 ## Named entity recognition
+### VLSP
 * 16,861 sentences for training and development from the VLSP 2016 NER shared task:
   *  14,861 sentences are used for training.
   *  2k sentences are used for development.
@@ -95,6 +96,22 @@
 
 * [1] denotes that scores are reported in  "[ETNLP: a visual-aided systematic approach to select pre-trained embeddings for a downstream task](https://arxiv.org/abs/1903.04433)"
 * [2] denotes that BiLSTM-CRF-based scores are reported in  "[VnCoreNLP: A Vietnamese Natural Language Processing Toolkit](http://aclweb.org/anthology/N18-5012)"
+
+### [PhoNER_COVID19](https://github.com/VinAIResearch/PhoNER_COVID19)
+* A named entity recognition dataset for Vietnamese with 10 newly-defined entity types in the context of the COVID-19 pandemic. Data is extracted from news articles and manually annotated.
+* Training set: 5027 sentences
+* Development set: 2000 sentences
+* Test set: 3000 sentences
+
+| Model           | F1  |  Paper | Code | Note | 
+| ------------- | :-----:| --- | --- | --- | 
+| PhoBERT-large (2020) | 94.5 | [PhoBERT: Pre-trained language models for Vietnamese](https://arxiv.org/abs/2003.00744) | [Official](https://github.com/VinAIResearch/PhoBERT) | 
+| PhoBERT-base (2020) | 94.2 | [PhoBERT: Pre-trained language models for Vietnamese](https://arxiv.org/abs/2003.00744) | [Official](https://github.com/VinAIResearch/PhoBERT) | 
+| XLM-R-large (2019) | 93.8 | [Unsupervised Cross-lingual Representation Learning at Scale](https://aclanthology.org/2020.acl-main.747/) | [Official](https://github.com/facebookresearch/XLM) | 
+| XLM-R-base (2019) | 92.5 | [Unsupervised Cross-lingual Representation Learning at Scale](https://aclanthology.org/2020.acl-main.747/) | [Official](https://github.com/facebookresearch/XLM) | 
+| BiLSTM-CRF + CNN-char (2016) + Word Segmentation | 91 | [End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF](http://www.aclweb.org/anthology/P16-1101) | [Official](https://github.com/XuezheMax/LasagneNLP) / [Link](https://github.com/UKPLab/emnlp2017-bilstm-cnn-crf/) | Text are automatically word-segmented by using [RDRSegmenter](https://github.com/vncorenlp/VnCoreNLP) |
+| BiLSTM-CRF + CNN-char  (2016) | 90.6 | [End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF](http://www.aclweb.org/anthology/P16-1101) | [Official](https://github.com/XuezheMax/LasagneNLP) / [Link](https://github.com/UKPLab/emnlp2017-bilstm-cnn-crf/) | No word segmentation |
+
 
 ## Part-of-speech tagging 
 
