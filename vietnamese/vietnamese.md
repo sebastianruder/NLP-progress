@@ -161,6 +161,6 @@
 * Test set: 893 sentences
 
 | Model           | Intent Acc. | Slot F1 | Sentence Acc.  |  Paper | Code | Note |
-| ------------- | :-----:| --- | --- | --- |
+| ------------- | :-----:| --- |--- |--- | --- | --- |
 | JointIDSF (2021) | 97.62 | 94.98 | 86.25 | [Intent Detection and Slot Filling for Vietnamese](https://arxiv.org/abs/2104.02021) | [Official](https://github.com/VinAIResearch/JointIDSF) | Text are automatically word-segmented using [RDRSegmenter](https://github.com/vncorenlp/VnCoreNLP)
 | JointBERT (2019) with PhoBERT encoder | 97.40 | 94.75 | 85.55 | [Intent Detection and Slot Filling for Vietnamese](https://arxiv.org/abs/2104.02021) | [Link](https://github.com/VinAIResearch/JointIDSF) | Text are automatically word-segmented using [RDRSegmenter](https://github.com/vncorenlp/VnCoreNLP)
