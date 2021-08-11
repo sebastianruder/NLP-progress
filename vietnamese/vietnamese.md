@@ -8,6 +8,7 @@
 
 | | Model           | LAS |  UAS  |  Paper | Code | 
 | ----- | ------------- | :-----:| --- | --- | --- |
+| **Predicted POS** | PhoNLP (2021) | 79.11 | 85.47 | [PhoNLP: A joint multi-task learning model for Vietnamese part-of-speech tagging, named entity recognition and dependency parsing](https://aclanthology.org/2021.naacl-demos.1.pdf) | [Official](https://github.com/VinAIResearch/PhoNLP) |
 | **Predicted POS** | PhoBERT-base (2020) | 78.77 | 85.22 | [PhoBERT: Pre-trained language models for Vietnamese](https://arxiv.org/abs/2003.00744) | [Official](https://github.com/VinAIResearch/PhoBERT) | 
 | **Predicted POS** | PhoBERT-large (2020) | 77.85 | 84.32 | [PhoBERT: Pre-trained language models for Vietnamese](https://arxiv.org/abs/2003.00744) |  [Official](https://github.com/VinAIResearch/PhoBERT) | 
 | **Predicted POS** | Biaffine (2017) | 74.99 | 81.19 | [Deep Biaffine Attention for Neural Dependency Parsing](https://arxiv.org/abs/1611.01734) |  | 
@@ -84,6 +85,7 @@
 | Model           | F1  |  Paper | Code | Note | 
 | ------------- | :-----:| --- | --- | --- | 
 | PhoBERT-large (2020) | 94.7 | [PhoBERT: Pre-trained language models for Vietnamese](https://arxiv.org/abs/2003.00744) | [Official](https://github.com/VinAIResearch/PhoBERT) | 
+| PhoNLP (2021) | 94.41 | [PhoNLP: A joint multi-task learning model for Vietnamese part-of-speech tagging, named entity recognition and dependency parsing](https://aclanthology.org/2021.naacl-demos.1.pdf) | [Official](https://github.com/VinAIResearch/PhoNLP) |
 | vELECTRA (2020) | 94.07 | [Improving Sequence Tagging for Vietnamese Text Using Transformer-based Neural Models](https://arxiv.org/abs/2006.15994) | [Official](https://github.com/fpt-corp/viBERT) |
 | PhoBERT-base (2020) | 93.6 | [PhoBERT: Pre-trained language models for Vietnamese](https://arxiv.org/abs/2003.00744) |  [Official](https://github.com/VinAIResearch/PhoBERT) | 
 | VnCoreNLP (2018) [1] | 91.30 | [VnCoreNLP: A Vietnamese Natural Language Processing Toolkit](http://aclweb.org/anthology/N18-5012) | [Official](https://github.com/vncorenlp/VnCoreNLP) | Used ETNLP embeddings |
@@ -124,6 +126,7 @@
 | ------------- | :-----:| --- | --- | 
 | PhoBERT-large (2020) | 96.8 | [PhoBERT: Pre-trained language models for Vietnamese](https://arxiv.org/abs/2003.00744) | [Official](https://github.com/VinAIResearch/PhoBERT) |
 | vELECTRA (2020) | 96.77 | [Improving Sequence Tagging for Vietnamese Text Using Transformer-based Neural Models](https://arxiv.org/abs/2006.15994) | [Official](https://github.com/fpt-corp/viBERT) |
+| PhoNLP (2021) | 96.76 | [PhoNLP: A joint multi-task learning model for Vietnamese part-of-speech tagging, named entity recognition and dependency parsing](https://aclanthology.org/2021.naacl-demos.1.pdf) | [Official](https://github.com/VinAIResearch/PhoNLP) |
 | PhoBERT-base (2020) | 96.7 | [PhoBERT: Pre-trained language models for Vietnamese](https://arxiv.org/abs/2003.00744) |  [Official](https://github.com/VinAIResearch/PhoBERT) | 
 | jointWPD (2018) | 95.97 | [A neural joint model for Vietnamese word segmentation, POS tagging and dependency parsing](https://arxiv.org/abs/1812.11459) | | 
 | VnCoreNLP-VnMarMoT (2017) | 95.88 | [From Word Segmentation to POS Tagging for Vietnamese](http://aclweb.org/anthology/U17-1013) | [Official](https://github.com/datquocnguyen/vnmarmot) | 
