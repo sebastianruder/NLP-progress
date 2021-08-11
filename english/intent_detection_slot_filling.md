@@ -18,6 +18,8 @@ ATIS (Air Travel Information System) (Hemphill et al.) is a dataset by Microsoft
 | Model | Slot F1 Score | Intent Accuracy | Paper / Source | Code |
 | ------ | ------ | ------ | ------ | ------ |
 | Bi-model with decoder | 96.89 | 98.99  | [A Bi-model based RNN Semantic Frame Parsing Model for Intent Detection and Slot Filling](https://arxiv.org/abs/1812.10235) |
+| SlotRefine + BERT | 96.16 | 97.74  | [SlotRefine: A Fast Non-Autoregressive Model for Joint Intent Detection and Slot Filling](https://aclanthology.org/2020.emnlp-main.152.pdf) | [Official](https://github.com/moore3930/SlotRefine)|
+| SlotRefine | 96.22 | 97.11  | [SlotRefine: A Fast Non-Autoregressive Model for Joint Intent Detection and Slot Filling](https://aclanthology.org/2020.emnlp-main.152.pdf) | [Official](https://github.com/moore3930/SlotRefine)|
 | Stack-Propagation + BERT | 96.10 | 97.50 | [A Stack-Propagation Framework with Token-level Intent Detection for Spoken Language Understanding](https://arxiv.org/abs/1909.02188)|[Official](https://github.com/LeePleased/StackPropagation-SLU)|
 | Stack-Propagation | 95.90 | 96.90 | [A Stack-Propagation Framework with Token-level Intent Detection for Spoken Language Understanding](https://arxiv.org/abs/1909.02188)|[Official](https://github.com/LeePleased/StackPropagation-SLU)|
 | Attention Encoder-Decoder NN | 95.87 | 98.43 | [Attention-Based Recurrent Neural Network Models for Joint Intent Detection and Slot Filling](https://arxiv.org/abs/1609.01454)|
@@ -40,6 +42,8 @@ SNIPS is a dataset by Snips.ai for Intent Detection and Slot Filling benchmarkin
 
 | Model | Slot F1 Score | Intent Accuracy | Paper / Source | Code |
 | ------ | ------ | ------ | ------ | ------ |
+| SlotRefine + BERT | 97.05 | 99.04  | [SlotRefine: A Fast Non-Autoregressive Model for Joint Intent Detection and Slot Filling](https://aclanthology.org/2020.emnlp-main.152.pdf) | [Official](https://github.com/moore3930/SlotRefine)|
+| SlotRefine | 93.72 | 97.44  | [SlotRefine: A Fast Non-Autoregressive Model for Joint Intent Detection and Slot Filling](https://aclanthology.org/2020.emnlp-main.152.pdf) | [Official](https://github.com/moore3930/SlotRefine)|
 | Stack-Propagation + BERT | 97.00 | 99.00 | [A Stack-Propagation Framework with Token-level Intent Detection for Spoken Language Understanding](https://arxiv.org/abs/1909.02188)|[Official](https://github.com/LeePleased/StackPropagation-SLU)|
 | Stack-Propagation | 94.20 | 98.00 | [A Stack-Propagation Framework with Token-level Intent Detection for Spoken Language Understanding](https://arxiv.org/abs/1909.02188)|[Official](https://github.com/LeePleased/StackPropagation-SLU)|
 | Context Encoder | 93.60 | NA | [Improving Slot Filling by Utilizing Contextual Information](https://arxiv.org/pdf/1911.01680.pdf) |
