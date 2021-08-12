@@ -20,3 +20,14 @@ The [QQP-POS dataset](https://www.kaggle.com/c/quora-question-pairs/overview) is
 | ------------- | :-----:| --- | --- |
 | Unsupervised BART w/ Dynamic Blocking | 26.76 | [Niu et al., 2020](https://arxiv.org/pdf/2010.12885v1.pdf)| Unavailable|
 | ParafraGPT-UC| 35.9| [Bui et al., 2020](https://arxiv.org/pdf/2011.14344v1.pdf)| [Code](https://github.com/BH-So/unsupervised-paraphrase-generation)|
+
+### Quora
+The Quora dataset (https://www.kaggle.com/c/quora-question-pairs) contains 140K paraphrased sentence pairs and 260K non-paraphrased sentence pairs
+
+#### Unsupervised
+
+| Model           | BLEU  |  Paper / Source | Code |
+| ------------- | :-----:| --- | --- |
+| CGMH | 15.73 | [Miao et al., 2018](https://arxiv.org/pdf/1811.10996.pdf)|  |
+| UPSA| 18.18| [Liu et al., 2019](https://arxiv.org/pdf/1909.03588.pdf)|  |
+| G2LC| 23.27| [Sha et al., 2020](https://aclanthology.org/2020.emnlp-main.701.pdf)|  |
