@@ -47,6 +47,7 @@
 
 - [Dependency parsing](vietnamese/vietnamese.md#dependency-parsing)
 - [Machine translation](vietnamese/vietnamese.md#machine-translation)
+- [Intent detection and Slot filling](vietnamese/vietnamese.md#intent-detection-and-slot-filling)
 - [Named entity recognition](vietnamese/vietnamese.md#named-entity-recognition)
 - [Part-of-speech tagging](vietnamese/vietnamese.md#part-of-speech-tagging)
 - [Word segmentation](vietnamese/vietnamese.md#word-segmentation)
