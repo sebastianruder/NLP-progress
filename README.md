@@ -49,6 +49,7 @@
 - [Machine translation](vietnamese/vietnamese.md#machine-translation)
 - [Named entity recognition](vietnamese/vietnamese.md#named-entity-recognition)
 - [Part-of-speech tagging](vietnamese/vietnamese.md#part-of-speech-tagging)
+- [Semantic parsing](vietnamese/vietnamese.md#semantic_parsing)
 - [Word segmentation](vietnamese/vietnamese.md#word-segmentation)
 
 ### Hindi
