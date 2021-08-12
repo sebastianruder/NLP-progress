@@ -148,7 +148,7 @@
 
 
 | Model           | Exact Match Accuracy  |  Paper | Code | Note |
-| ------------- | :-----:| --- | --- | --- | --- |
+| ------------- | :-----:| --- | --- | --- |
 | IRNet (2019) | 53.2 | [A Pilot Study of Text-to-SQL Semantic Parsing for Vietnamese](hhttps://aclanthology.org/2020.findings-emnlp.364/) | [Link](https://github.com/microsoft/IRNet) | Using [PhoBERT](https://aclanthology.org/2020.findings-emnlp.92/) as encoder |
 | EditSQL (2019) |  52.6 | [A Pilot Study of Text-to-SQL Semantic Parsing for Vietnamese](https://aclanthology.org/2020.findings-emnlp.364/) | [Link](https://github.com/ryanzhumich/editsql) | Using [PhoBERT](https://aclanthology.org/2020.findings-emnlp.92/) as encoder |
 
