@@ -167,15 +167,3 @@
 | DongDu (2012) | 96.90 |  [Ứng dụng phương pháp Pointwise vào bài toán tách từ cho tiếng Việt](https://tiengvietmenyeu.wordpress.com/2013/02/16/ung%C2%B7dung-phuong%C2%B7phap-pointwise-vao-bai%C2%B7toan-tach-tu-cho-tieng%C2%B7viet/) |  |
 
 * Results for VnTokenizer, JVnSegmenter and DongDu are reported in "[A hybrid approach to Vietnamese word segmentation](http://doi.org/10.1109/RIVF.2016.7800279)."
-
-## Intent Detection and Slot Filling
-### [PhoATIS](https://github.com/VinAIResearch/JointIDSF)
-* The first dataset for intent detection and slot filling for Vietnamese, based on the common ATIS benchmark in the flight booking domain. Data is localized (e.g. replacing slot values with Vietnamese-specific entities) to fit the context of flight booking in Vietnam.
-* Training set: 4478 sentences
-* Development set: 500 sentences
-* Test set: 893 sentences
-
-| Model           | Intent Acc. | Slot F1 | Sentence Acc.  |  Paper | Code | Note |
-| ------------- | :-----:| --- |--- |--- | --- | --- |
-| JointIDSF (2021) | 97.62 | 94.98 | 86.25 | [Intent Detection and Slot Filling for Vietnamese](https://arxiv.org/abs/2104.02021) | [Official](https://github.com/VinAIResearch/JointIDSF) | Text are automatically word-segmented using [RDRSegmenter](https://github.com/vncorenlp/VnCoreNLP)
-| JointBERT (2019) with PhoBERT encoder | 97.40 | 94.75 | 85.55 | [Intent Detection and Slot Filling for Vietnamese](https://arxiv.org/abs/2104.02021) | [Official](https://github.com/VinAIResearch/JointIDSF) | Text are automatically word-segmented using [RDRSegmenter](https://github.com/vncorenlp/VnCoreNLP)
