@@ -32,6 +32,18 @@
 
 * Results for the BIST graph/transition-based parsers, MSTparser and MaltParser are reported in "[An empirical study for Vietnamese dependency parsing](http://www.aclweb.org/anthology/U16-1017)."
 
+## Intent detection and Slot filling
+### [PhoATIS](https://github.com/VinAIResearch/JointIDSF)
+* The first dataset for intent detection and slot filling for Vietnamese, based on the common ATIS benchmark in the flight booking domain. Data is localized (e.g. replacing slot values with Vietnamese-specific entities) to fit the context of flight booking in Vietnam.
+* Training set: 4478 sentences
+* Development set: 500 sentences
+* Test set: 893 sentences
+
+| Model           | Intent Acc. | Slot F1 | Sentence Acc.  |  Paper | Code | Note |
+| ------------- | :-----:| --- |--- |--- | --- | --- |
+| JointIDSF (2021) | 97.62 | 94.98 | 86.25 | [Intent Detection and Slot Filling for Vietnamese](https://arxiv.org/abs/2104.02021) | [Official](https://github.com/VinAIResearch/JointIDSF) | Text are automatically word-segmented using [RDRSegmenter](https://github.com/vncorenlp/VnCoreNLP)
+| JointBERT (2019) with PhoBERT encoder | 97.40 | 94.75 | 85.55 | [Intent Detection and Slot Filling for Vietnamese](https://arxiv.org/abs/2104.02021) | [Official](https://github.com/VinAIResearch/JointIDSF) | Text are automatically word-segmented using [RDRSegmenter](https://github.com/vncorenlp/VnCoreNLP)
+
 ## Machine translation
 
 ### English-Vietnamese translation
@@ -72,6 +84,21 @@
 
 
 ## Named entity recognition
+### [PhoNER_COVID19](https://github.com/VinAIResearch/PhoNER_COVID19)
+* A named entity recognition dataset for Vietnamese with 10 newly-defined entity types in the context of the COVID-19 pandemic. Data is extracted from news articles and manually annotated. In total, there are 34 984 entities over 10 027 sentences.
+* Training set: 5027 sentences
+* Development set: 2000 sentences
+* Test set: 3000 sentences
+
+| Model           | F1  |  Paper | Code | Note | 
+| ------------- | :-----:| --- | --- | --- | 
+| PhoBERT-large (2020) | 94.5 | [PhoBERT: Pre-trained language models for Vietnamese](https://arxiv.org/abs/2003.00744) | [Official](https://github.com/VinAIResearch/PhoBERT) | 
+| PhoBERT-base (2020) | 94.2 | [PhoBERT: Pre-trained language models for Vietnamese](https://arxiv.org/abs/2003.00744) | [Official](https://github.com/VinAIResearch/PhoBERT) | 
+| XLM-R-large (2019) | 93.8 | [Unsupervised Cross-lingual Representation Learning at Scale](https://aclanthology.org/2020.acl-main.747/) | [Official](https://github.com/facebookresearch/XLM) | 
+| XLM-R-base (2019) | 92.5 | [Unsupervised Cross-lingual Representation Learning at Scale](https://aclanthology.org/2020.acl-main.747/) | [Official](https://github.com/facebookresearch/XLM) | 
+| BiLSTM-CRF + CNN-char (2016) + Word Segmentation | 91 | [End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF](http://www.aclweb.org/anthology/P16-1101) | [Link](https://github.com/UKPLab/emnlp2017-bilstm-cnn-crf/) | Text are automatically word-segmented using [RDRSegmenter](https://github.com/vncorenlp/VnCoreNLP) |
+| BiLSTM-CRF + CNN-char  (2016) | 90.6 | [End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF](http://www.aclweb.org/anthology/P16-1101) | [Link](https://github.com/UKPLab/emnlp2017-bilstm-cnn-crf/) | No word segmentation |
+
 ### VLSP
 * 16,861 sentences for training and development from the VLSP 2016 NER shared task:
   *  14,861 sentences are used for training.
@@ -98,21 +125,6 @@
 
 * [1] denotes that scores are reported in  "[ETNLP: a visual-aided systematic approach to select pre-trained embeddings for a downstream task](https://arxiv.org/abs/1903.04433)"
 * [2] denotes that BiLSTM-CRF-based scores are reported in  "[VnCoreNLP: A Vietnamese Natural Language Processing Toolkit](http://aclweb.org/anthology/N18-5012)"
-
-### [PhoNER_COVID19](https://github.com/VinAIResearch/PhoNER_COVID19)
-* A named entity recognition dataset for Vietnamese with 10 newly-defined entity types in the context of the COVID-19 pandemic. Data is extracted from news articles and manually annotated. In total, there are 34 984 entities over 10 027 sentences.
-* Training set: 5027 sentences
-* Development set: 2000 sentences
-* Test set: 3000 sentences
-
-| Model           | F1  |  Paper | Code | Note | 
-| ------------- | :-----:| --- | --- | --- | 
-| PhoBERT-large (2020) | 94.5 | [PhoBERT: Pre-trained language models for Vietnamese](https://arxiv.org/abs/2003.00744) | [Official](https://github.com/VinAIResearch/PhoBERT) | 
-| PhoBERT-base (2020) | 94.2 | [PhoBERT: Pre-trained language models for Vietnamese](https://arxiv.org/abs/2003.00744) | [Official](https://github.com/VinAIResearch/PhoBERT) | 
-| XLM-R-large (2019) | 93.8 | [Unsupervised Cross-lingual Representation Learning at Scale](https://aclanthology.org/2020.acl-main.747/) | [Official](https://github.com/facebookresearch/XLM) | 
-| XLM-R-base (2019) | 92.5 | [Unsupervised Cross-lingual Representation Learning at Scale](https://aclanthology.org/2020.acl-main.747/) | [Official](https://github.com/facebookresearch/XLM) | 
-| BiLSTM-CRF + CNN-char (2016) + Word Segmentation | 91 | [End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF](http://www.aclweb.org/anthology/P16-1101) | [Link](https://github.com/UKPLab/emnlp2017-bilstm-cnn-crf/) | Text are automatically word-segmented using [RDRSegmenter](https://github.com/vncorenlp/VnCoreNLP) |
-| BiLSTM-CRF + CNN-char  (2016) | 90.6 | [End-to-end Sequence Labeling via Bi-directional LSTM-CNNs-CRF](http://www.aclweb.org/anthology/P16-1101) | [Link](https://github.com/UKPLab/emnlp2017-bilstm-cnn-crf/) | No word segmentation |
 
 
 ## Part-of-speech tagging 
@@ -155,15 +167,3 @@
 | DongDu (2012) | 96.90 |  [Ứng dụng phương pháp Pointwise vào bài toán tách từ cho tiếng Việt](https://tiengvietmenyeu.wordpress.com/2013/02/16/ung%C2%B7dung-phuong%C2%B7phap-pointwise-vao-bai%C2%B7toan-tach-tu-cho-tieng%C2%B7viet/) |  |
 
 * Results for VnTokenizer, JVnSegmenter and DongDu are reported in "[A hybrid approach to Vietnamese word segmentation](http://doi.org/10.1109/RIVF.2016.7800279)."
-
-## Intent Detection and Slot Filling
-### [PhoATIS](https://github.com/VinAIResearch/JointIDSF)
-* The first dataset for intent detection and slot filling for Vietnamese, based on the common ATIS benchmark in the flight booking domain. Data is localized (e.g. replacing slot values with Vietnamese-specific entities) to fit the context of flight booking in Vietnam.
-* Training set: 4478 sentences
-* Development set: 500 sentences
-* Test set: 893 sentences
-
-| Model           | Intent Acc. | Slot F1 | Sentence Acc.  |  Paper | Code | Note |
-| ------------- | :-----:| --- |--- |--- | --- | --- |
-| JointIDSF (2021) | 97.62 | 94.98 | 86.25 | [Intent Detection and Slot Filling for Vietnamese](https://arxiv.org/abs/2104.02021) | [Official](https://github.com/VinAIResearch/JointIDSF) | Text are automatically word-segmented using [RDRSegmenter](https://github.com/vncorenlp/VnCoreNLP)
-| JointBERT (2019) with PhoBERT encoder | 97.40 | 94.75 | 85.55 | [Intent Detection and Slot Filling for Vietnamese](https://arxiv.org/abs/2104.02021) | [Official](https://github.com/VinAIResearch/JointIDSF) | Text are automatically word-segmented using [RDRSegmenter](https://github.com/vncorenlp/VnCoreNLP)

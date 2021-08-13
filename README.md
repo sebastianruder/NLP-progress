@@ -46,6 +46,7 @@
 ### Vietnamese
 
 - [Dependency parsing](vietnamese/vietnamese.md#dependency-parsing)
+- [Intent detection and Slot filling](vietnamese/vietnamese.md#intent-detection-and-slot-filling)
 - [Machine translation](vietnamese/vietnamese.md#machine-translation)
 - [Named entity recognition](vietnamese/vietnamese.md#named-entity-recognition)
 - [Part-of-speech tagging](vietnamese/vietnamese.md#part-of-speech-tagging)
