@@ -151,6 +151,20 @@
 * Result for jPTDP-v2 is reported in "[A neural joint model for Vietnamese word segmentation, POS tagging and dependency parsing](https://arxiv.org/abs/1812.11459)." 
 * Results for BiLSTM-CRF-based models and RDRPOSTagger are reported in  "[From Word Segmentation to POS Tagging for Vietnamese](http://aclweb.org/anthology/U17-1013)."
 
+## Semantic parsing
+### [ViText2SQL](https://github.com/VinAIResearch/ViText2SQL)
+* The first public large-scale Text-to-SQL semantic parsing dataset for Vietnamese, consisting of about 10K question and SQL query pairs.
+* Training set:  6831 question and query pairs 
+* Development set: 954 question and query pairs 
+* Test set: 1906 question and query pairs 
+
+
+| Model           | Exact Match Accuracy  |  Paper | Code | Note |
+| ------------- | :-----:| --- | --- | --- |
+| IRNet (2019) | 53.2 | [A Pilot Study of Text-to-SQL Semantic Parsing for Vietnamese](https://aclanthology.org/2020.findings-emnlp.364/) | [Link](https://github.com/microsoft/IRNet) | Using [PhoBERT](https://aclanthology.org/2020.findings-emnlp.92/) as encoder |
+| EditSQL (2019) |  52.6 | [A Pilot Study of Text-to-SQL Semantic Parsing for Vietnamese](https://aclanthology.org/2020.findings-emnlp.364/) | [Link](https://github.com/ryanzhumich/editsql) | Using [PhoBERT](https://aclanthology.org/2020.findings-emnlp.92/) as encoder |
+
+
 ## Word segmentation 
 
 * Training & development data: 75k manually word-segmented training sentences from the [VLSP](http://vlsp.org.vn/) 2013 word segmentation shared task.
