@@ -126,6 +126,7 @@ Since current state-of-the-art systems rely on as much annotated learner data as
 
 | Model           | F0.5  |  Paper / Source | Code |
 | ------------- | :-----:| --- | :-----: |
+| GECToR large without synthetic pre-training - ensemble (Tarnavskyi and Omelianchuk, 2021) | 76.05 | [Improving Sequence Tagging for Grammatical Error Correction](https://er.ucu.edu.ua/handle/1/2707) | [Official](https://github.com/MaksTarnavskyi/gector-large) |
 | T5 ([t5.1.1.xxl](https://github.com/google-research/text-to-text-transfer-transformer/blob/master/released_checkpoints.md)) trained on [cLang-8](https://github.com/google-research-datasets/clang8) (Rothe et al., ACL-IJCNLP 2021) | 75.88 | [A Simple Recipe for Multilingual Grammatical Error Correction](https://arxiv.org/pdf/2106.03830.pdf) | [T5](https://github.com/google-research/text-to-text-transfer-transformer), [cLang-8](https://github.com/google-research-datasets/clang8) |
 | Tagged corruptions - ensemble (Stahlberg and Kumar, 2021)| 74.9 | [Synthetic Data Generation for Grammatical Error Correction with Tagged Corruption Models](https://www.aclweb.org/anthology/2021.bea-1.4.pdf)| [Official](https://github.com/google-research-datasets/C4_200M-synthetic-dataset-for-grammatical-error-correction) |
 | Sequence tagging + token-level transformations + two-stage fine-tuning + (BERT, RoBERTa, XLNet), ensemble (Omelianchuk et al., BEA 2020) | 73.6 | [GECToR – Grammatical Error Correction: Tag, Not Rewrite](https://arxiv.org/pdf/2005.12592.pdf) | [Official](https://github.com/grammarly/gector) |
