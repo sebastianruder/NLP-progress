@@ -21,7 +21,7 @@ for testing. Models are evaluated based on F1.
 
 | Model           | F1 score  |  Paper | Source |
 | ------------- | :-----:| --- | --- |
-| ACE + fine-tune (Wang et al., 2020) | 96.90 | [Automated Concatenation of Embeddings for Structured Prediction](https://arxiv.org/pdf/2010.05006.pdf) | [Official](https://github.com/Alibaba-NLP/ACE)|
+| ACE + fine-tune (Wang et al., 2020) | 97.30 | [Automated Concatenation of Embeddings for Structured Prediction](https://arxiv.org/pdf/2010.05006.pdf) | [Official](https://github.com/Alibaba-NLP/ACE)|
 | Flair embeddings (Akbik et al., 2018) | 96.72 | [Contextual String Embeddings for Sequence Labeling](http://aclweb.org/anthology/C18-1139) | [Flair](https://github.com/flairNLP/flair) |
 | JMT (Hashimoto et al., 2017) | 95.77 | [A Joint Many-Task Model: Growing a Neural Network for Multiple NLP Tasks](https://www.aclweb.org/anthology/D17-1206) |
 | Low supervision (Søgaard and Goldberg, 2016) | 95.57 | [Deep multi-task learning with low level tasks supervised at lower layers](http://anthology.aclweb.org/P16-2038) |

@@ -217,7 +217,7 @@ In each dataset, there is a in-domain (ID) and out-of-domain (OOD) test set. The
 
 | Model           | DM ID | DM OOD | PAS ID | PAS OOD | PSD ID | PSD OOD | Paper / Source | Code |
 | --------------- | :-----: |  :-----:|:-----: |  :-----:|:-----: |  :-----:| --------------- | ---- |
-| ACE + fine-tune (Wang et al., 2020) | 95.3 | 92.6 | 95.3 | 93.9 | 83.6 | 83.2| [Automated Concatenation of Embeddings for Structured Prediction](https://arxiv.org/pdf/2010.05006.pdf) | [Official](https://github.com/Alibaba-NLP/ACE)|
+| ACE + fine-tune (Wang et al., 2020) | 95.6 | 92.6 | 95.8 | 94.6 | 83.8 | 83.4| [Automated Concatenation of Embeddings for Structured Prediction](https://arxiv.org/pdf/2010.05006.pdf) | [Official](https://github.com/Alibaba-NLP/ACE)|
 |Transition-based Pointer Network+Char+Lemma+BERT (Fernández-González & Gómez-Rodríguez, 2020)|94.4|91.0|95.1|93.4|82.6|82.0|[Transition-based Semantic Dependency Parsing with Pointer Networks](https://www.aclweb.org/anthology/2020.acl-main.629/)|[Official](https://github.com/danifg/SemanticPointer)|
 |Second-Order+Biaffine+Char+Lemma (Wang et al., 2019)|94.0|89.7|94.1|91.3|81.4|79.6|[Second-Order Semantic Dependency Parsing with End-to-End Neural Networks](https://www.aclweb.org/anthology/P19-1454/)|[Official](https://github.com/wangxinyu0922/Second_Order_SDP)|
 |Biaffine+Char+Lemma (Dozat and Manning, 2018)|93.7|88.9|93.9|90.6|81.0|79.4|[Simpler but More Accurate Semantic Dependency Parsing](https://www.aclweb.org/anthology/P18-2077/)|[Official](https://github.com/tdozat/Parser-v3)|
