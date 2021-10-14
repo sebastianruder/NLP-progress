@@ -21,6 +21,9 @@ Question answering is the task of answering a question.
   - [QuAC](#quac)
   - [RACE](#race)
   - [SQuAD](#squad)
+  - [FQuAD](#fquad)
+  - [GermanQuAD](#germanquad)
+  - [SberQuAD](#sberquad)
   - [Story Cloze Test](#story-cloze-test)
   - [SWAG](#swag)
   - [Recipe QA](#recipeqa)
@@ -251,6 +254,19 @@ from the corresponding reading passage. Recently, [SQuAD 2.0](https://arxiv.org/
 has been released, which includes unanswerable questions.
 
 The public leaderboard is available on the [SQuAD website](https://rajpurkar.github.io/SQuAD-explorer/).
+
+### FQuAD
+
+The [French Question Answering Dataset(FQuAD)](https://arxiv.org/abs/2002.06071) is based on the SQuAD dataset and contains ~25,000 French QA pairs released by Illuin Technology. More details are available on the [FQuAD website](https://fquad.illuin.tech/).
+
+### GermanQuAD
+
+[GermanQuAD](https://arxiv.org/abs/2104.12741) contains ~14,000 German QA pairs released by deepset in the same format as the original SQuAD dataset. In the same paper, a second dataset called GermanDPR was released, which can be used for training dense passage retrieval models. For each question, it provides a set of relevant and irrelevant documents.
+More details are available on the [GermanQuAD website](https://www.deepset.ai/germanquad).
+
+### SberQuAD
+
+Based on the SQuAD dataset, the Russian Reading Comprehension Dataset [SberQuAD](https://arxiv.org/abs/1912.09723) contains ~90,000 Russian QA pairs released by Sberbank. More details are available on the [SberQuAD website](https://github.com/annnyway/QA-for-Russian).
 
 ### Story Cloze Test
 
