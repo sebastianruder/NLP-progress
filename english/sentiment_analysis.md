@@ -152,7 +152,7 @@ Subtask 1 results (SemEval-2014 Task 4 for Laptop and SemEval-2016 Task 5 for Re
 
 | Model           | Laptop (F1) | Restaurant (F1) |  Paper / Source |  Code |
 | ------------- | :-----:| :-----:| --- | --- |
-| ACE + fine-tune (Wang et al., 2020) | 85.0 | 81.2 | [Automated Concatenation of Embeddings for Structured Prediction](https://arxiv.org/pdf/2010.05006.pdf) | [Official](https://github.com/Alibaba-NLP/ACE)|
+| ACE + fine-tune (Wang et al., 2020) | 87.4 | 81.3 | [Automated Concatenation of Embeddings for Structured Prediction](https://arxiv.org/pdf/2010.05006.pdf) | [Official](https://github.com/Alibaba-NLP/ACE)|
 | BERT-PT (Hu, Xu, et al., 2019) | 84.26 | 77.97 | [BERT Post-Training for Review Reading Comprehension and Aspect-based Sentiment Analysis](https://arxiv.org/pdf/1904.02232.pdf) | [official](https://github.com/howardhsu/BERT-for-RRC-ABSA)
 | DE-CNN (Hu, Xu, et al., 2018) | 81.59 | 74.37 | [Double Embeddings and CNN-based Sequence Labeling for Aspect Extraction](https://www.aclweb.org/anthology/P18-2094) | [official](https://github.com/howardhsu/DE-CNN)
 | MIN (Li, Xin, et al., 2017) | 77.58 | 73.44 | [Deep Multi-Task Learning for Aspect Term Extraction with Memory Interaction] | 
