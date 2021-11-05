@@ -90,6 +90,7 @@ The [Ontonotes corpus v5](https://catalog.ldc.upenn.edu/docs/LDC2013T19/OntoNote
 
 | Model                                    |  F1   | Paper / Source                           | Code                                     |
 | ---------------------------------------- | :---: | ---------------------------------------- | ---------------------------------------- |
+| BERT+KVMN (Nie et al., 2020)    | 90.32 | [Improving Named Entity Recognition with Attentive Ensemble of Syntactic Information](https://aclanthology.org/2020.findings-emnlp.378/) | [Official](https://github.com/cuhksz-nlp/AESINER) |
 | Flair embeddings (Akbik et al., 2018)    | 89.71 | [Contextual String Embeddings for Sequence Labeling](http://aclweb.org/anthology/C18-1139) | [Official](https://github.com/zalandoresearch/flair) |
 | CVT + Multi-Task (Clark et al., 2018)    | 88.81 | [Semi-Supervised Sequence Modeling with Cross-View Training](https://arxiv.org/abs/1809.08370) | [Official](https://github.com/tensorflow/models/tree/master/research/cvt_text) |
 | Bi-LSTM-CRF + Lexical Features (Ghaddar and Langlais 2018) | 87.95 | [Robust Lexical Features for Improved Neural Network Named-Entity Recognition](https://arxiv.org/pdf/1806.03489.pdf) | [Official](https://github.com/ghaddarAbs/NER-with-LS) |
