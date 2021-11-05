@@ -63,6 +63,7 @@ Like for parsing, sections 2-21 are used for training, section 00 for developmen
 
 | Model           | Accuracy |  Paper / Source |
 | ----------------- | :-----:| --- |
+| Tian et al. (2020), non-constructive | 96.25 | [Supertagging Combinatory Categorial Grammar with Attentive Graph Convolutional Networks](https://aclanthology.org/2020.emnlp-main.487/) |
 | Prange et al. (2021), non-constructive | 96.22 | [Supertagging the Long Tail with Tree-Structured Decoding of Complex Categories](https://doi.org/10.1162/tacl_a_00364) |
 | Prange et al. (2021), constructive | 96.09 | [Supertagging the Long Tail with Tree-Structured Decoding of Complex Categories](https://doi.org/10.1162/tacl_a_00364) |
 | Clark et al. (2018) | 96.05 | [Semi-Supervised Sequence Modeling with Cross-View Training](https://arxiv.org/abs/1809.08370) |
