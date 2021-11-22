@@ -9,5 +9,3 @@ Sentiment Analysis is the task of classifying polarity of a given text.
 | Model | F1-score | Paper / Source | Code |
 | ------------ | ------------- | ------------ | ------------- |
 | U + B + T + C2 + C3 + C4 + C5 | 64.61 | [SentNoB: A Dataset for Analysing Sentiment on Noisy Bangla Texts](https://aclanthology.org/2021.findings-emnlp.278.pdf) | [Official](https://github.com/KhondokerIslam/SentNoB) |
-| Bi-LSTM + Attn. (FastText) | 57.15 | [SentNoB: A Dataset for Analysing Sentiment on Noisy Bangla Texts](https://aclanthology.org/2021.findings-emnlp.278.pdf) | [Official](https://github.com/KhondokerIslam/SentNoB) |
-| mBERT | 52.79 | [SentNoB: A Dataset for Analysing Sentiment on Noisy Bangla Texts](https://aclanthology.org/2021.findings-emnlp.278.pdf) | [Official](https://github.com/KhondokerIslam/SentNoB) |
