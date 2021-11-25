@@ -82,8 +82,12 @@
 | Provilkov et al. (2019) | 32.99 (uncased) | [BPE-Dropout: Simple and Effective Subword Regularization](https://arxiv.org/abs/1910.13267) | |
 | Kudo (2018) | 26.31 | [Subword Regularization: Improving Neural Network Translation Models with Multiple Subword Candidates](https://arxiv.org/abs/1804.10959) | | 
 
-### PhoMT Dataset
-* Dataset is from [PhoMT: A High-Quality and Large-Scale Benchmark Dataset for Vietnamese-English Machine Translation](https://aclanthology.org/2021.emnlp-main.369/) with 3M sentence pairs, can be downloaded from [https://github.com/VinAIResearch/PhoMT](https://github.com/VinAIResearch/PhoMT).
+### [PhoMT Dataset](https://aclanthology.org/2021.emnlp-main.369/)
+* A large-scale and high-quality dataset for Vietnamese-English Machine Translation with 3.02M sentence pairs, available at [https://github.com/VinAIResearch/PhoMT](https://github.com/VinAIResearch/PhoMT).
+  * Consists of 6 domains: TED Talks, WikiHow, MediaWiki, OpenSubtitles, News and Blog.
+  * Training set: 2.9M sentence pairs
+  * Validation set: 18719 sentence pairs
+  * Test set: 19151 sentence pairs
 
 | Model           | EN-VI (BLEU) | VI-EN (BLEU) |  Paper | Code | 
 | ------------- | :-----:| :-----:| --- | --- | 
