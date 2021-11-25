@@ -47,17 +47,18 @@
 ## Machine translation
 
 ### English-Vietnamese translation
-* Dataset is from [The IWSLT 2015 Evaluation Campaign](http://workshop2015.iwslt.org/downloads/proceeding.pdf), also be obtained from [https://github.com/tensorflow/nmt](https://github.com/tensorflow/nmt).
+* `IWSLT2015 dataset` from [The IWSLT 2015 Evaluation Campaign](http://workshop2015.iwslt.org/downloads/proceeding.pdf), also be obtained from [https://github.com/tensorflow/nmt](https://github.com/tensorflow/nmt).
+* `PhoMT dataset` from [PhoMT: A High-Quality and Large-Scale Benchmark Dataset for Vietnamese-English Machine Translation](https://aclanthology.org/2021.emnlp-main.369/), can be downloaded at [https://github.com/VinAIResearch/PhoMT](https://github.com/VinAIResearch/PhoMT)
 
+---
 #### English-to-Vietnamese
-`tst2015` is used for test
+`IWSLT2015 - tst2015` is used for test
 
 | Model           | BLEU  |  Paper | Code | 
 | ------------- | :-----:| --- | --- | 
 | Stanford (2015) | 26.4 | [Stanford Neural Machine Translation Systems for Spoken Language Domains](https://nlp.stanford.edu/pubs/luong-manning-iwslt15.pdf) | | 
 
----
-`tst2013` is used for test
+`IWSLT2015 - tst2013` is used for test
 
 | Model           | BLEU  |  Paper | Code | 
 | ------------- | :-----:| --- | --- | 
@@ -73,15 +74,32 @@
 
 * The ELMo score is reported in [Semi-Supervised Sequence Modeling with Cross-View Training](https://arxiv.org/abs/1809.08370). The Transformer score is available at  [https://github.com/duyvuleo/Transformer-DyNet](https://github.com/duyvuleo/Transformer-DyNet).
 
+
+`PhoMT` is used for test
+
+| Model           | BLEU  |  Paper | Code | 
+| ------------- | :-----:| --- | --- | 
+| Transformer-base (2017) | 42.12 | [Attention is all you need](https://arxiv.org/abs/1706.03762) | [Link](https://github.com/pytorch/fairseq/tree/main/examples/translation) | 
+| Transformer-big (2017) | 42.94 | [Attention is all you need](https://arxiv.org/abs/1706.03762) | [Link](https://github.com/pytorch/fairseq/tree/main/examples/translation) | 
+| mBART (2017) | 43.46 | [Multilingual Denoising Pre-training for Neural Machine Translation](https://arxiv.org/abs/2001.08210) | [Link](https://github.com/pytorch/fairseq/tree/main/examples/mbart) | 
+
+---
 #### Vietnamese-to-English
 
-`tst2013` is used for test
+`IWSLT2015 - tst2013` is used for test
 
 | Model           | BLEU  |  Paper | Code | 
 | ------------- | :-----:| --- | --- | 
 | Provilkov et al. (2019) | 32.99 (uncased) | [BPE-Dropout: Simple and Effective Subword Regularization](https://arxiv.org/abs/1910.13267) | |
 | Kudo (2018) | 26.31 | [Subword Regularization: Improving Neural Network Translation Models with Multiple Subword Candidates](https://arxiv.org/abs/1804.10959) | | 
 
+`PhoMT` is used for test
+
+| Model           | BLEU  |  Paper | Code | 
+| ------------- | :-----:| --- | --- | 
+| Transformer-base (2017) | 37.19 | [Attention is all you need](https://arxiv.org/abs/1706.03762) | [Link](https://github.com/pytorch/fairseq/tree/main/examples/translation) | 
+| Transformer-big (2017) | 37.83 | [Attention is all you need](https://arxiv.org/abs/1706.03762) | [Link](https://github.com/pytorch/fairseq/tree/main/examples/translation) | 
+| mBART (2017) | 39.78 | [Multilingual Denoising Pre-training for Neural Machine Translation](https://arxiv.org/abs/2001.08210) | [Link](https://github.com/pytorch/fairseq/tree/main/examples/mbart) | 
 
 ## Named entity recognition
 ### [PhoNER_COVID19](https://github.com/VinAIResearch/PhoNER_COVID19)
