@@ -86,6 +86,7 @@ We present the models tested in this dataset **ranked by SARI score**.
 | Model           | BLEU | SARI | Paper / Source | Code |
 | --------------- | :-----: | :-----: | -------------- | ---- |
 | MUSS (Martin et al., 2020) | 78.17 | 42.53 | [Multilingual Unsupervised Sentence Simplification](https://arxiv.org/abs/2005.00352v1) |   |
+| Trans-SS (Lu et al., 2021) | 73.72 | 41.97 | [An Unsupervised Method for Building Sentence Simplification Corpora in Multiple Languages](https://arxiv.org/abs/2109.00165) | [Official](https://github.com/luxinyu1/Trans-SS) | 
 | ACCESS (Martin et al., 2019) | 72.53 | 41.87  | [Controllable Sentence Simplification](https://arxiv.org/abs/1910.02677) | [Official](https://github.com/facebookresearch/access) |
 | TST (Omelianchuk et al., 2021) | | 41.46 | [Text Simplification by Tagging](https://aclanthology.org/2021.bea-1.2.pdf) |   |
 | DMASS + DCSS (Zhao et al., 2018) |  | 40.45 | [Integrating Transformer and Paraphrase Rules for Sentence Simplification](http://aclweb.org/anthology/D18-1355) | [Official](https://github.com/Sanqiang/text_simplification) |
@@ -114,6 +115,7 @@ We present the models tested in this dataset **ranked by SARI score**.
 | --------------- | :-----: | :-----: | -------------- | ---- |
 | MUSS (Martin et al., 2020) | 72.98 | 44.15 | [Multilingual Unsupervised Sentence Simplification](https://arxiv.org/abs/2005.00352v1) |   |
 | TST (Omelianchuk et al., 2021) | | 43.21 | [Text Simplification by Tagging](https://aclanthology.org/2021.bea-1.2.pdf) |   |
+| Trans-SS (Lu et al., 2021) | 71.83 | 42.69 | [An Unsupervised Method for Building Sentence Simplification Corpora in Multiple Languages](https://arxiv.org/abs/2109.00165) | [Official](https://github.com/luxinyu1/Trans-SS) | 
 | ACCESS (Martin et al., 2019) | 75.99\* | 40.13\*  | [Controllable Sentence Simplification](https://arxiv.org/abs/1910.02677) | [Official](https://github.com/facebookresearch/access) |
 | DMASS + DCSS (Zhao et al., 2018) | 71.44\* | 38.67\* | [Integrating Transformer and Paraphrase Rules for Sentence Simplification](http://aclweb.org/anthology/D18-1355) | [Official](https://github.com/Sanqiang/text_simplification) |
 | DRESS-LS (Zhang and Lapata, 2017) | 86.39\* | 36.59\* | [Sentence Simplification with Deep Reinforcement Learning](http://aclweb.org/anthology/D17-1062) | [Official](https://github.com/XingxingZhang/dress) |
