@@ -104,7 +104,7 @@ The results for each model participant are presented below.
 
 ####  Diachronic WordNet Datasets
 
-The SemEval-2016 Task 14 setting implies pre-defined glosses. However, it is possible that new words tobe added to the taxonomy may have no definition in any other sources: they could be very rare (“apparatchik”, “falanga”), relatively new (“selfie”, “hashtag”) or come from a narrow domain (“vermiculite”).
+The SemEval-2016 Task 14 setting implies pre-defined glosses. However, it is possible that new words that should be added to the taxonomy may have no definition in any other sources: they could be very rare (“apparatchik”, “falanga”), relatively new (“selfie”, “hashtag”) or come from a narrow domain (“vermiculite”).
 
 [Nikishina et al., 2020](https://aclanthology.org/2020.coling-main.276/) created multiple datasets for studying diachronic evolution of wordnets, which can be downloaded from [here](https://doi.org/10.5281/zenodo.4279821). They chose two versions of WordNet and then select words which appear only in a newer version. For each word, they got its hypernyms from the newer WordNet version and consider them as gold standard
 hypernyms. The words were added to the dataset if only their hypernyms appear in both snippets. They skipped one or more WordNet versions, otherwise the dataset would be too small. 
