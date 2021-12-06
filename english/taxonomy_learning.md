@@ -61,7 +61,7 @@ The results for each model and dataset (general, medical and music) are presente
 
 ## Taxonomy Enrichment
 
-Given words that are not included in a taxonomy, the task is associate each query word with the appropriate hypernyms from it. For instance, given an input word “milk” we need to provide a list of the most probable hypernyms the word could be attached to, e.g. “dairy product”, “beverage”. A word may have multiple hypernyms.
+Given words that are not included in a taxonomy, the task is to associate each query word with its appropriate hypernyms. For instance, given an input word “milk” we need to provide a list of the most probable hypernyms the word could be attached to, e.g. “dairy product”, “beverage”. A word may have multiple hypernyms.
 
 ### Datasets
 
