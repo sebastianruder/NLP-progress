@@ -30,3 +30,35 @@ Below results are ranked by chronological order.
 | M-BERT (Scialom et al., 2020) | 31.59 | 10.61 | 25.1 | 15.1 | [MLSUM](https://www.aclweb.org/anthology/2020.emnlp-main.647/) | [Official](https://github.com/recitalAI/MLSUM) |
 | Oracle | 47.32 | 25.95 | 37.7 | 24.7 | [MLSUM](https://www.aclweb.org/anthology/2020.emnlp-main.647/) | [Official](https://github.com/recitalAI/MLSUM) |
 | MARGE-NEWS (Train All) (Lewis et al., 2020) | - | - | 25.79 | - | [Pre-training via Paraphrasing](https://arxiv.org/abs/2006.15020) | [Official](https://github.com/lucidrains/marge-pytorch) |
+
+### OrangeSum
+
+The OrangeSum dataset was introduced in ["BARThez: a Skilled Pretrained French Sequence-to-Sequence Model"](https://aclanthology.org/2021.emnlp-main.740/). It was created by scraping the "Orange Actu" website: https://actu.orange.fr/. Orange S.A. is a large French multinational telecommunications corporation, with 266M customers worldwide. Scraped pages cover almost a decade from Feb 2011 to Sep 2020. They belong to five main categories: France, world, politics, automotive, and society. The society category is itself divided into 8 subcategories: health, environment, people, culture, media, high-tech, unsual ("insolite" in French), and miscellaneous.
+
+Each article featured a single-sentence title as well as a very brief abstract, both professionally written by the author of the article. These two fields were extracted from each page, thus creating two summarization tasks: OrangeSum Title and OrangeSum Abstract.
+
+The dataset can be found [here](https://huggingface.co/datasets/orange_sum).
+   
+
+#### OrangeSum-abstract
+
+| Model | ROUGE-1 | ROUGE-2 | ROUGE-L | METEOR | Paper / Source | Code |
+| --------------- | :-----: | :-----: | :-----: | :-----: | -------------- | ---- |
+| BARThez | 31.44 | 12.77 | 22.23 | - | [BARThez](https://aclanthology.org/2021.emnlp-main.740/) | [Official](https://github.com/moussaKam/BARThez) |
+| mBARThez | 32.67 | 13.73 | 23.18 | - | [BARThez](https://aclanthology.org/2021.emnlp-main.740/) | [Official](https://github.com/moussaKam/BARThez) |
+| CamemBERT2CamemBERT (Martin, Louis, et al.) | 29.23 | 09.79 | 19.95 | - | [BARThez](https://aclanthology.org/2021.emnlp-main.740/) | [Official](https://github.com/moussaKam/BARThez) |
+| mBART (Liu, Yinhan, et al.) | 31.85 | 13.10 | 22.35 | - | [BARThez](https://aclanthology.org/2021.emnlp-main.740/) | [Official](https://github.com/moussaKam/BARThez) |
+| PAGnol-S | 24.54 | 8.98 | 18.45 | - | [PAGnol](https://arxiv.org/pdf/2110.08554.pdf) | [Official](https://github.com/lightonai/lairgpt) |
+| PAGnol-M | 27.80 | 10.56 | 20.29 | - | [PAGnol](https://arxiv.org/pdf/2110.08554.pdf) | [Official](https://github.com/lightonai/lairgpt) |
+| PAGnol-L | 28.25 | 11.05 | 21.03 | - | [PAGnol](https://arxiv.org/pdf/2110.08554.pdf) | [Official](https://github.com/lightonai/lairgpt) |
+| PAGnol-XL | 28.72 | 11.08 | 20.89 | - | [PAGnol](https://arxiv.org/pdf/2110.08554.pdf) | [Official](https://github.com/lightonai/lairgpt) |
+
+#### OrangeSum-title
+
+| Model | ROUGE-1 | ROUGE-2 | ROUGE-L | METEOR | Paper / Source | Code |
+| --------------- | :-----: | :-----: | :-----: | :-----: | -------------- | ---- |
+| BARThez | 40.86 | 23.68 | 36.03 | - | [BARThez](https://aclanthology.org/2021.emnlp-main.740/) | [Official](https://github.com/moussaKam/BARThez) |
+| mBARThez | 41.08 | 24.11 | 36.41 | - | [BARThez](https://aclanthology.org/2021.emnlp-main.740/) | [Official](https://github.com/moussaKam/BARThez) |
+| CamemBERT2CamemBERT (Martin, Louis, et al.) | 34.92 | 18.04 | 30.83 | - | [BARThez](https://aclanthology.org/2021.emnlp-main.740/) | [Official](https://github.com/moussaKam/BARThez) |
+| mBART (Liu, Yinhan, et al.) | 40.74 | 23.70 | 36.04 | - | [BARThez](https://aclanthology.org/2021.emnlp-main.740/) | [Official](https://github.com/moussaKam/BARThez) |
+
