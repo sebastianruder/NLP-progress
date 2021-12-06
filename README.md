@@ -75,6 +75,7 @@ For more tasks, datasets and results in Chinese, check out the [Chinese NLP](htt
 ### Russian
 
 - [Question answering](russian/question_answering.md)
+- [Sentiment Analysis](russian/sentiment-analysis.md)
 - [Summarization](russian/summarization.md)
 
 ### Spanish
