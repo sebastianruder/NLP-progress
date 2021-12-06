@@ -46,8 +46,21 @@
 
 ## Machine translation
 
-### English-Vietnamese translation
-* Dataset is from [The IWSLT 2015 Evaluation Campaign](http://workshop2015.iwslt.org/downloads/proceeding.pdf), also be obtained from [https://github.com/tensorflow/nmt](https://github.com/tensorflow/nmt).
+### [PhoMT Dataset](https://aclanthology.org/2021.emnlp-main.369/)
+* A large-scale and high-quality dataset for Vietnamese-English Machine Translation with 3.02M sentence pairs, available at [https://github.com/VinAIResearch/PhoMT](https://github.com/VinAIResearch/PhoMT).
+  * Consists of 6 domains: TED Talks, WikiHow, MediaWiki, OpenSubtitles, News and Blog.
+  * Training set: 2.9M sentence pairs
+  * Validation set: 18719 sentence pairs
+  * Test set: 19151 sentence pairs
+
+| Model           | EN-VI (BLEU) | VI-EN (BLEU) |  Paper | Code | 
+| ------------- | :-----:| :-----:| --- | --- | 
+| mBART (2020) | 43.46 | 39.78 | [Multilingual Denoising Pre-training for Neural Machine Translation](https://arxiv.org/abs/2001.08210) | [Link](https://github.com/pytorch/fairseq/tree/main/examples/mbart) | 
+| Transformer-big (2017) | 42.94 | 37.83 | [Attention is all you need](https://arxiv.org/abs/1706.03762) | [Link](https://github.com/pytorch/fairseq/tree/main/examples/translation) | 
+| Transformer-base (2017) | 42.12 | 37.19 | [Attention is all you need](https://arxiv.org/abs/1706.03762) | [Link](https://github.com/pytorch/fairseq/tree/main/examples/translation) |
+
+### IWSLT2015 Dataset
+* Dataset is from [The IWSLT 2015 Evaluation Campaign](http://workshop2015.iwslt.org/downloads/proceeding.pdf) with 150K sentence pairs, also be obtained from [https://github.com/tensorflow/nmt](https://github.com/tensorflow/nmt).
 
 #### English-to-Vietnamese
 `tst2015` is used for test
@@ -81,7 +94,6 @@
 | ------------- | :-----:| --- | --- | 
 | Provilkov et al. (2019) | 32.99 (uncased) | [BPE-Dropout: Simple and Effective Subword Regularization](https://arxiv.org/abs/1910.13267) | |
 | Kudo (2018) | 26.31 | [Subword Regularization: Improving Neural Network Translation Models with Multiple Subword Candidates](https://arxiv.org/abs/1804.10959) | | 
-
 
 ## Named entity recognition
 ### [PhoNER_COVID19](https://github.com/VinAIResearch/PhoNER_COVID19)
