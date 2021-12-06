@@ -11,7 +11,7 @@ Question answering is the task of answering a question.
   
 ### Bangla-SQuAD
 
-The [Bengali Question Answering Dataset (Bengali-SQuAD)](https://zenodo.org/record/4557874#.YaEUp9BBxPY) is a translated and preprocessed subset of large-scale reading comprehension
+The [Bengali Question Answering Dataset (Bengali-SQuAD)](https://zenodo.org/record/4557874#.YaEUp9BBxPY) is an automatically translated (using Google Translate) and preprocessed subset of the large-scale reading comprehension
 dataset English [SQuAD 2.0](https://rajpurkar.github.io/SQuAD-explorer/) introduced in the paper ["Deep Learning Based Question Answering System
 in Bengali"](https://www.tandfonline.com/doi/full/10.1080/24751839.2020.1833136)
 
