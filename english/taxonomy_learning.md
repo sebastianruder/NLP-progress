@@ -67,7 +67,7 @@ Given words that are not included in a taxonomy, the task is to associate each q
 
 #### SemEval 2016 Task 14
 
-The SemEval-2016 Task 14 aims to enrich the WordNet taxonomy with new words and word senses. A system's task is to identify the WordNet synset to which the new word sense should be merged (i.e., the term is synonymous with those in the synset) or added as a hyponym (i.e., the new word sense is a specialization of an exisiting word sense).
+The SemEval-2016 Task 14 aims to enrich the WordNet taxonomy with new words and word senses. A system's task is to identify the WordNet synset with which the new word sense should be merged (i.e., the term is synonymous with those in the synset) or added as a hyponym (i.e., the new word sense is a specialization of an exisiting word sense).
 
 The following table gives examples of word senses that are not defined in WordNet and their corresponding operations, illustrating the type of data that might be seen in the task.
 
