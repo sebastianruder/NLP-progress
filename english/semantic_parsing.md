@@ -44,6 +44,7 @@ Models are evaluated on the newswire section and the full dataset based on [smat
 
 | Model           | F1 Newswire  | F1 Full |  Paper / Source |
 | ------------- | :-----:| :-----:| --- |
+| StructBART (Structure-aware Fine-tuning of BART, Zhou et al., 2021) | -- | 81.7 | [Structure-aware Fine-tuning of Sequence-to-sequence Transformers for Transition-based AMR Parsing](https://aclanthology.org/2021.emnlp-main.507/) |
 | APT (Action-Pointer Transformer, Zhou et al., 2021) | -- | 79.8 | [AMR Parsing with Action-Pointer Transformer](https://aclanthology.org/2021.naacl-main.443/) |
 | Pushing the Limits of AMR Parsing with Self-Learning (Young-Suk Lee et al., 2020) | -- | 78.2 | [Pushing the Limits of AMR Parsing with Self-Learning](https://arxiv.org/abs/2010.10673) |
 | AMR Parsing via Graph-Sequence Iterative Inference (Cai and Lam , 2020)&hearts;&spades; | -- | 75.4 | [AMR Parsing via Graph-Sequence Iterative Inference](https://arxiv.org/pdf/2004.05572.pdf) |
@@ -79,6 +80,7 @@ Models are evaluated based on [smatch](https://amr.isi.edu/smatch-13.pdf).
 
 | Model           | Smatch  |  Paper / Source |
 | ------------- | :-----:| --- |
+| StructBART (Structure-aware Fine-tuning of BART, Zhou et al., 2021) | 84.9 | [Structure-aware Fine-tuning of Sequence-to-sequence Transformers for Transition-based AMR Parsing](https://aclanthology.org/2021.emnlp-main.507/) |
 | One SPRING to Rule Them Both: Symmetric AMR Semantic Parsing and Generation without a Complex Pipeline (Bevilacqua et al., 2020) | 84.5 | [One SPRING to Rule Them Both: Symmetric AMR Semantic Parsing and Generation without a Complex Pipeline](https://ojs.aaai.org/index.php/AAAI/article/view/17489) |
 | APT (Action-Pointer Transformer, Zhou et al., 2021) | 83.4 | [AMR Parsing with Action-Pointer Transformer](https://aclanthology.org/2021.naacl-main.443/) |
 | AMR Parsing with Sequence-to-Sequence Pre-training (Xu, et al., 2020) | 81.4 | [Improving AMR Parsing with Sequence-to-Sequence Pre-training](https://arxiv.org/pdf/2010.01771.pdf) |
@@ -100,6 +102,7 @@ Models are evaluated based on [smatch](https://amr.isi.edu/smatch-13.pdf).
 
 | Model           | Smatch  |  Paper / Source |
 | ------------- | :-----:| --- |
+| StructBART (Structure-aware Fine-tuning of BART, Zhou et al., 2021) | 83.1 | [Structure-aware Fine-tuning of Sequence-to-sequence Transformers for Transition-based AMR Parsing](https://aclanthology.org/2021.emnlp-main.507/) |
 | One SPRING to Rule Them Both: Symmetric AMR Semantic Parsing and Generation without a Complex Pipeline (Bevilacqua et al., 2020) | 83.0 | [One SPRING to Rule Them Both: Symmetric AMR Semantic Parsing and Generation without a Complex Pipeline](https://ojs.aaai.org/index.php/AAAI/article/view/17489) |
 | APT (Action-Pointer Transformer, Zhou et al., 2021) | 81.2 | [AMR Parsing with Action-Pointer Transformer](https://aclanthology.org/2021.naacl-main.443/) |
 
