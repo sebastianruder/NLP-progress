@@ -179,6 +179,8 @@ This is the same task on sentiment classification, where the given text is a rev
 
 | Model              | IMDB (acc) | Yelp 2013 (acc) | Yelp 2014 (acc) | Paper / Source | Code |
 | ------------------ | :--------: | :-------------: | :-------------: | -------------- | ---- |
+| MA-BERT (Zhang, et al., 2021) | 57.3 | 70.3 | 71.4 | [MA-BERT: Learning Representation by Incorporating Multi-Attribute Knowledge in Transformers](https://aclanthology.org/2021.findings-acl.206.pdf) | [Link](https://github.com/yoyo-yun/MA-Bert) |
+| IUPC (Lyu, et al., 2020) | 53.8 | 70.5 | 71.2 | [Improving Document-Level Sentiment Analysis with User and Product Context](https://aclanthology.org/2020.coling-main.590/) | [Link](https://paperswithcode.com/paper/improving-document-level-sentiment-analysis) |
 | BiLSTM+CHIM (Amplayo, 2019) | 56.4 | 67.8 | 69.2 | [Rethinking Attribute Representation and Injection for Sentiment Classification](https://arxiv.org/pdf/1908.09590.pdf) | [Link](https://github.com/rktamplayo/CHIM) |
 | BiLSTM + linear-basis-cust (Kim, et al., 2019) | - | 67.1 | - | [Categorical Metadata Representation for Customized Text Classification](https://arxiv.org/pdf/1902.05196.pdf) | [Link](https://github.com/zizi1532/BasisCustomize) |
 | CMA (Ma, et al., 2017) | 54.0 | 66.4 | 67.6 | [Cascading Multiway Attention for Document-level Sentiment Classification](http://aclweb.org/anthology/I17-1064) | - |
