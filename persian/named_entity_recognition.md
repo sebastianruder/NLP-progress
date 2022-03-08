@@ -37,3 +37,4 @@ Download Links: [PEYMA](http://en.itrc.ac.ir/sites/default/files/pictures/NER.ra
 | ParsBERT (Farahani et al., 2020) | 93.40  | [ParsBERT: Transformer-based Model for Persian Language Understanding](https://arxiv.org/abs/2005.12515) | [Official](https://github.com/hooshvare/parsbert) |
 | mBERT (Taher et al., 2020) | 90.59  | [Beheshti-NER: Persian Named Entity Recognition Using BERT](https://arxiv.org/abs/2003.08875) | [Official](https://github.com/sEhsanTaher/Beheshti-NER) |
 | Rule-Based-CRF (Shahshahani et al., 2018) | 84.00 | [PEYMA: A Tagged Corpus for Persian Named Entities](https://arxiv.org/abs/1801.09936) | - |
+.
