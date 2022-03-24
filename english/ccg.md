@@ -63,6 +63,7 @@ Like for parsing, sections 2-21 are used for training, section 00 for developmen
 
 | Model           | Accuracy |  Paper / Source |
 | ----------------- | :-----:| --- |
+| Kogkalidis and Moortgat (2022), constructive | 96.29 | [Geometry-Aware Supertagging with Heterogeneous Dynamic Convolutions](https://arxiv.org/abs/2203.12235) | 
 | Tian et al. (2020), non-constructive | 96.25 | [Supertagging Combinatory Categorial Grammar with Attentive Graph Convolutional Networks](https://aclanthology.org/2020.emnlp-main.487/) |
 | Prange et al. (2021), non-constructive | 96.22 | [Supertagging the Long Tail with Tree-Structured Decoding of Complex Categories](https://doi.org/10.1162/tacl_a_00364) |
 | Prange et al. (2021), constructive | 96.09 | [Supertagging the Long Tail with Tree-Structured Decoding of Complex Categories](https://doi.org/10.1162/tacl_a_00364) |
@@ -81,6 +82,7 @@ Like for parsing, sections 2-21 are used for training, section 00 for developmen
 | Bhargava and Penn (2020), constructive | - | 5.00 | [Supertagging with CCG primitives](https://www.aclweb.org/anthology/2020.repl4nlp-1.23/) |
 | Prange et al. (2021), constructive | 37.40 | 3.03 | [Supertagging the Long Tail with Tree-Structured Decoding of Complex Categories](https://doi.org/10.1162/tacl_a_00364) |
 | Prange et al. (2021), non-constructive | 23.17 | 0.00 | [Supertagging the Long Tail with Tree-Structured Decoding of Complex Categories](https://doi.org/10.1162/tacl_a_00364) |
+| Kogkalidis and Moortgat (2022), constructive | 34.45 | 4.55 | [Geometry-Aware Supertagging with Heterogeneous Dynamic Convolutions](https://arxiv.org/abs/2203.12235) |
 
 ### Wikipedia
 
