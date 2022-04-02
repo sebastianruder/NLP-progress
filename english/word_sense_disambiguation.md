@@ -47,6 +47,9 @@ The main evaluation measure is F1-score.
 |SparseLMMS+WNGC | 79.6 | 77.3 | 73.0 | 79.4 | 81.3 | [[19]](https://www.aclweb.org/anthology/2020.emnlp-main.683/)[[code]](https://github.com/begab/sparsity_makes_sense) |
 |ARES | 78.0 | 77.1 | 71.0 | 77.3 | 83.2 | [[20]](https://www.aclweb.org/anthology/2020.emnlp-main.285/)|
 |ESCHER | 81.7 | 77.8 | 76.3 | 82.2 | 83.2 | [[21]](https://aclanthology.org/2021.naacl-main.371/)|
+|ESR | 81.3 | 79.9 | 77.0 | 81.5 | 84.1 | [[22]](https://aclanthology.org/2021.findings-emnlp.365/)[[code]](https://github.com/nusnlp/esr) |
+|ESR+WNGC | 82.5 | 80.2 | 78.5 | 82.3 | 85.3 | [[22]](https://aclanthology.org/2021.findings-emnlp.365/)[[code]](https://github.com/nusnlp/esr) |
+
 ### Knowledge-based:
 
 | Model           | All | Senseval 2 |Senseval 3 |SemEval 2007 |SemEval 2013 |SemEval 2015 |  Paper / Source |
@@ -101,6 +104,8 @@ Note: 'All' is the concatenation of all datasets, as described in [10] and [12].
 [20] [With More Contexts Comes Better Performance: Contextualized Sense Embeddings for All-Round Word Sense Disambiguation](https://www.aclweb.org/anthology/2020.emnlp-main.285/)
 
 [21] [ESC: Redesigning WSD with Extractive Sense Comprehension](https://aclanthology.org/2021.naacl-main.371/)
+
+[22] [Improved Word Sense Disambiguation with Enhanced Sense Representations](https://aclanthology.org/2021.findings-emnlp.365/)
 
 ## WSD Lexical Sample task:
 
