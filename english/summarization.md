@@ -67,6 +67,7 @@ The first table covers Extractive Models, while the second covers abstractive ap
 
 | Model           | ROUGE-1 | ROUGE-2 | ROUGE-L | METEOR | Paper / Source | Code |
 | --------------- | :-----: | :-----: | :-----: | :----: | -------------- | ---- |
+| BRIO (Liu et al., 2022) | 47.78 | 23.55 | 44.57 | - | [BRIO: Bringing Order to Abstractive Summarization](https://arxiv.org/pdf/2203.16804.pdf) | [Official](https://github.com/yixinL7/BRIO) |
 | SimCLS (Liu et al., 2021) | 46.67 | 22.15 | 43.54 | - | [SimCLS: A Simple Framework for Contrastive Learning of Abstractive Summarization](https://arxiv.org/abs/2106.01890.pdf) | [Official](https://github.com/yixinL7/SimCLS) |
 | GSum (Dou et al., 2020) | 45.94 | 22.32 | 42.48 | - | [GSum: A General Framework for Guided Neural Abstractive Summarization](https://arxiv.org/pdf/2010.08014.pdf) | [Official](https://github.com/neulab/guided_summarization) |
 | ProphetNet (Yan, Qi, Gong, Liu et al., 2020) | 44.20 | 21.17 | 41.30 | - | [ProphetNet: Predicting Future N-gram for Sequence-to-Sequence Pre-training](https://arxiv.org/pdf/2001.04063.pdf) | [Official](https://github.com/microsoft/ProphetNet) |
@@ -136,6 +137,7 @@ Evaluation metrics are ROUGE-1, ROUGE-2 and ROUGE-L.
 
 | Model           | ROUGE-1 | ROUGE-2 | ROUGE-L | Paper / Source | Code |
 | --------------- | :-----: | :-----: | :-----: | -------------- | ---- |
+| BRIO (Liu et al., 2022) | 49.07 | 25.59 | 40.40 | [BRIO: Bringing Order to Abstractive Summarization](https://arxiv.org/pdf/2203.16804.pdf) | [Official](https://github.com/yixinL7/BRIO) |
 | PEGASUS (Zhang et al., 2019) | 47.21 | 24.56 | 39.25 | [PEGASUS: Pre-training with Extracted Gap-sentences for Abstractive Summarization](https://arxiv.org/pdf/1912.08777.pdf) | [Official](https://github.com/google-research/pegasus) |
 | BART (Lewis et al., 2019) | 45.14 | 22.27 | 37.25 | [BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension](https://arxiv.org/pdf/1910.13461.pdf) | [Official](https://github.com/pytorch/fairseq/tree/master/examples/bart) |
 | BertSumExtAbs (Liu et al., 2019) | 38.81 | 16.50 | 31.27 | [Text Summarization with Pretrained Encoders](https://arxiv.org/pdf/1908.08345.pdf) | [Official](https://github.com/nlpyang/PreSumm) |
