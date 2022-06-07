@@ -49,6 +49,8 @@ The main evaluation measure is F1-score.
 |ESCHER | 81.7 | 77.8 | 76.3 | 82.2 | 83.2 | [[21]](https://aclanthology.org/2021.naacl-main.371/)|
 |ESR | 81.3 | 79.9 | 77.0 | 81.5 | 84.1 | [[22]](https://aclanthology.org/2021.findings-emnlp.365/)[[code]](https://github.com/nusnlp/esr) |
 |ESR+WNGC | 82.5 | 80.2 | 78.5 | 82.3 | 85.3 | [[22]](https://aclanthology.org/2021.findings-emnlp.365/)[[code]](https://github.com/nusnlp/esr) |
+|ConSeC | 82.3 | 79.9 | 77.4 | 83.2 | 85.2 | [[23]](https://aclanthology.org/2021.emnlp-main.112.pdf)[[code]](https://github.com/SapienzaNLP/consec) |
+|ConSeC+WNGC | 82.7 | 81.0 | 78.5 | 85.2 | 87.5 | [[23]](https://aclanthology.org/2021.emnlp-main.112.pdf)[[code]](https://github.com/SapienzaNLP/consec) |
 
 ### Knowledge-based:
 
@@ -106,6 +108,8 @@ Note: 'All' is the concatenation of all datasets, as described in [10] and [12].
 [21] [ESC: Redesigning WSD with Extractive Sense Comprehension](https://aclanthology.org/2021.naacl-main.371/)
 
 [22] [Improved Word Sense Disambiguation with Enhanced Sense Representations](https://aclanthology.org/2021.findings-emnlp.365/)
+
+[23] [ConSeC: Word Sense Disambiguation as Continuous Sense Comprehension](https://aclanthology.org/2021.emnlp-main.112.pdf)
 
 ## WSD Lexical Sample task:
 
