@@ -19,6 +19,7 @@ The performance is evaluated on two different automated metrics: first, **BLEU s
 | ------------- | :-----: | :-----: | :-----: | :-----:| --- | --- |
 | Rebuffel, Clément, et al. (2020)<sup>[[4]](#myfootnote4)</sup> | 17.50 | 39.47 & 51.64 | 89.46 & 21.17 | 18.90 | [A Hierarchical Model for Data-to-Text Generation](https://link.springer.com/chapter/10.1007/978-3-030-45439-5_5) |[Official](https://github.com/KaijuML/data-to-text-hierarchical) |
 | Puduppully et al. (2019)<sup>[[3]](#myfootnote3)</sup> | 16.50 | 34.18 & 51.22 | 87.47 & 34.28 | 18.58 | [Data-to-text generation with content selection and planning](https://www.aaai.org/ojs/index.php/AAAI/article/view/4668) |[Official](https://github.com/ratishsp/data2text-plan-py) |
+| Puduppully and Lapata (2021)<sup>[[10]](#myfootnote10)</sup> | 15.46 | 34.1 & 57.8 |  97.6 & 42.1 | 17.7 | [Data-to-text generation with macro planning](https://doi.org/10.1162/tacl_a_00381) |[Official](https://github.com/ratishsp/data2text-macro-plan-py) |
 | Wiseman et al. (2017)<sup>[[2]](#myfootnote2)</sup> | 14.49 | 22.17 & 27.16 | 71.82 & 12.82 | 8.68 | [Challenges in Data-to-Document Generation](https://www.aclweb.org/anthology/D17-1239.pdf) |[Official](https://github.com/harvardnlp/data2text) |
 
 ## WebNLG
@@ -75,5 +76,7 @@ The performance is evaluated using **BLEU, NIST, METEOR, ROUGE-L, CIDEr scores**
 <a name="myfootnote8">[8]</a> Elder, Henry, et al. "[Designing a Symbolic Intermediate Representation for Neural Surface Realization](https://www.aclweb.org/anthology/W19-2308.pdf)." Proceedings of the Workshop on Methods for Optimizing and Evaluating Neural Language Generation. 2019.
 
 <a name="myfootnote9">[9]</a> Kale, Mihir. "[Text-to-Text Pre-Training for Data-to-Text Tasks](https://arxiv.org/pdf/2005.10433v2.pdf)" arXiv preprint arXiv:2005.10433 (2020).
+
+<a name="myfootnote10">[10]</a> Puduppully, Ratish and Mirella Lapata. "[Data-to-text generation with macro planning](https://doi.org/10.1162/tacl_a_00381)." Transactions of the Association for Computational Linguistics 2021; 9 510–527.
 
 [Go back to the README](../README.md)
