@@ -121,22 +121,28 @@ The results for each system on the current dataset are presented below.
 
 | Model           | MAP (Nouns) | MAP (Verbs)|  Paper / Source |
 | ------------- | :-----:| :-----:| --- |
+|DWRank-Meta (Meta-embeddings based on Word and Graph Embeddings) | 0.367 | 0.288 | [Taxonomy enrichment with text and graph vector representations](https://content.iospress.com/articles/semantic-web/sw212955)|
 |AAEME triplet loss (Tikhomirov and Loukachevitch, 2021) | 0.345 | 0.289 | [Meta-Embeddings in Taxonomy Enrichment Task](http://www.dialog-21.ru/media/5287/tikhomirovmmplusloukachevitchnv091.pdf)|
 |Ranking + Wiki (Nikishina et al., 2020) | 0.337 | 0.270 | [Studying Taxonomy Enrichment on Diachronic WordNet Versions](https://aclanthology.org/2020.coling-main.276/) |
 |Ranking + Wiki + node2vec + Poincare (Nikishina et al., 2021) | 0.311 | 0.251 | [Exploring Graph-based Representations for Taxonomy Enrichment](https://aclanthology.org/2021.gwc-1.15/)|
+
 
 ##### WordNet 1.7 - WordNet 3.0
 
 | Model           | MAP (Nouns) | MAP (Verbs)|  Paper / Source |
 | ------------- | :-----:| :-----:| --- |
+|DWRank-Meta (Meta-embeddings based on Word and Graph Embeddings) | 0.418 | 0.227 | [Taxonomy enrichment with text and graph vector representations](https://content.iospress.com/articles/semantic-web/sw212955)|
 |AAEME triplet loss (Tikhomirov and Loukachevitch, 2021) |  0.394 | 0.239 | [Meta-Embeddings in Taxonomy Enrichment Task](http://www.dialog-21.ru/media/5287/tikhomirovmmplusloukachevitchnv091.pdf)|
 |Ranking + Wiki (Nikishina et al., 2020) | 0.380 | 0.200 | [Studying Taxonomy Enrichment on Diachronic WordNet Versions](https://aclanthology.org/2020.coling-main.276/) |
 |Ranking + Wiki + node2vec + Poincare (Nikishina et al., 2021) | 0.350 |  0.177 | [Exploring Graph-based Representations for Taxonomy Enrichment](https://aclanthology.org/2021.gwc-1.15/)|
+
 
 ##### WordNet 2.0 - WordNet 3.0
 
 | Model           | MAP (Nouns) | MAP (Verbs)|  Paper / Source |
 | ------------- | :-----:| :-----:| --- |
+|DWRank-Meta (Meta-embeddings based on Word and Graph Embeddings) | 0.480 | 0.280 | [Taxonomy enrichment with text and graph vector representations](https://content.iospress.com/articles/semantic-web/sw212955)|
 |AAEME triplet loss (Tikhomirov and Loukachevitch, 2021) | 0.445 | 0.272 | [Meta-Embeddings in Taxonomy Enrichment Task](http://www.dialog-21.ru/media/5287/tikhomirovmmplusloukachevitchnv091.pdf)|
 |Ranking + Wiki (Nikishina et al., 2020) | 0.400 | 0.238 | [Studying Taxonomy Enrichment on Diachronic WordNet Versions](https://aclanthology.org/2020.coling-main.276/) |
 |Ranking + Wiki + node2vec + Poincare (Nikishina et al., 2021) | 0.300 | 0.248 | [Exploring Graph-based Representations for Taxonomy Enrichment](https://aclanthology.org/2021.gwc-1.15/)|
+
