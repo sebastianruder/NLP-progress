@@ -84,6 +84,8 @@ gold POS-tags.
 | MALOPA (Ammar et al., 2016)                |       | 70.5  | [Many Languages, One Parser](https://www.transacl.org/ojs/index.php/tacl/article/view/892)                                                   | [Official](https://github.com/clab/language-universal-parser) |
 | Guo et al. (2016)                          | 76.7  | 69.9  | [A representation learning framework for multi-source transfer parsing](https://dl.acm.org/citation.cfm?id=3016100.3016284)                  |
 
+*: Evaluated on four target languages.
+
 # Unsupervised dependency parsing
 
 Unsupervised dependency parsing is the task of inferring the dependency parse of sentences without any labeled training data.
