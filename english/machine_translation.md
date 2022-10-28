@@ -50,8 +50,7 @@ on BLEU.
  
  | Model           | BLEU  |  Paper / Source |
 | ------------- | :-----:| --- |
-| vanilla MNMT models| 17.95 | [Tencent’s Multilingual Machine Translation System for WMT22
-Large-Scale African Languages](https://arxiv.org/pdf/2210.09644v1.pdf) |
+| vanilla MNMT models| 17.95 | [Tencent’s Multilingual Machine Translation System for WMT22 Large-Scale African Languages](https://arxiv.org/pdf/2210.09644v1.pdf)|
 
 
 [Go back to the README](../README.md)
