@@ -22,11 +22,14 @@ The [QQP-POS dataset](https://www.kaggle.com/c/quora-question-pairs/overview) is
 | ParafraGPT-UC| 35.9| [Bui et al., 2020](https://arxiv.org/pdf/2011.14344v1.pdf)| [Code](https://github.com/BH-So/unsupervised-paraphrase-generation)|
 
 ### MULTIPITCROWD
-MULTIPIT: Topic Paraphrase in Twitter corpus that consists of a total of 130k sentence pairs with crowdsoursing (MULTIPITCROWD ) and expert (MULTIPITEXPERT ) annotations. MULTIPITCROWD is a large crowdsourced set of 125K sentence pairs that is useful for tracking information onTwitter.
+MULTIPIT is topic Paraphrase in Twitter corpus that consists of a total of 130k sentence pairs with crowdsoursing (MULTIPITCROWD ) and expert (MULTIPITEXPERT ) annotations. MULTIPITCROWD is a large crowdsourced set of 125K sentence pairs that is useful for tracking information onTwitter.
 | Model           | F1  |  Paper / Source | Code |
 | ------------- | :-----:| --- | --- |
 | DeBERTaV3large | 92.00 |[Improving Large-scale Paraphrase Acquisition and Generation](https://arxiv.org/pdf/2210.03235v2.pdf)| Unavailable|
 
-
+### MULTIPITEXPERT
 MULTIPITEXPERT is an expert annotated set of 5.5K sentence pairs using a stricter definition that is more suitable for acquiring paraphrases for
 generation purpose. 
+| Model           | F1  |  Paper / Source | Code |
+| ------------- | :-----:| --- | --- |
+| DeBERTaV3large | 83.20 |[Improving Large-scale Paraphrase Acquisition and Generation](https://arxiv.org/pdf/2210.03235v2.pdf)| Unavailable|
