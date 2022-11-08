@@ -8,6 +8,8 @@ The Avicenna corpus is a benchmark for syllogistic NLI and syllogistic NLG:
 - syllogistic NLI: Identifying the possibility of inferring between pairs of inputted sentences. 
 - syllogistic NLG: Generating a conclusion sentence for two sentences with a syllogistic relation.
 
+The dataset is available [here](https://github.com/ZeinabAghahadi/Syllogistic-Commonsense-Reasoning/tree/main/Data).
+
 
 
 
