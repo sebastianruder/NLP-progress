@@ -1,5 +1,7 @@
 # Multimodal
 
+`Multimodal` NLP involves the **combination of different types of information, such as text, speech, images, and videos, to enhance natural language processing tasks**. This allows machines to better comprehend human communication by taking into account additional contextual information beyond just text. For instance, multimodal NLP can be used to enhance machine translation by integrating visual data from images or videos to provide better translations. It can also be used to improve sentiment analysis by incorporating non-textual data such as facial expressions or tone of voice. Multimodal NLP is a growing field of study and is expected to become increasingly significant as more data becomes available across multiple modalities.
+
 ## Multimodal Emotion Recognition 
 
 ### IEMOCAP
