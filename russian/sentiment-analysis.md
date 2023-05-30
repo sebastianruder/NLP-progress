@@ -27,7 +27,7 @@ The public leaderboard is available at [github repository](https://github.com/ni
 The dataset for RuSentNE-2023 evaluation is based on the Russian news corpus RuSentNE having rich sentiment-related annotation. The corpus
 is annotated with named entities and sentiments towards these entities, along with related effects and emotional states. The dataset contains over 11000 sentences from 400+ large texts.
 
-In the RuSentNE-2023 competition, named entities should be classified into one of three sentiment classes: positive, negative or neutral within the context of a single sentence.
+**Entity-Oriented Sentiment Analysis task:** Given a subset of sentences, in which every sentence includes one or several named entities. For each sentence all of the named entities should be classified into one of three sentiment classes: positive, negative or neutral within the context of a single sentence.
 
 Task paper: https://arxiv.org/pdf/2305.17679.pdf
 
@@ -35,6 +35,6 @@ The public leaderboard is available at [github repository](https://github.com/di
 
 | Example                                                                                                                                                                                                                                                     |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| "Notorious figure in the country - <ins>Berlusconi</ins> has been repeatedly accused of financial fraud
+| Notorious figure in the country - <ins>Berlusconi</ins> has been repeatedly accused of financial fraud
 | (Berlusconi-> neg)
 
