@@ -22,3 +22,16 @@ The public leaderboard is available at [github repository](https://github.com/ni
 | ... Meanwhile <ins>Moscow</ins> has repeatedly emphasized that its activity in the <ins>Baltic Sea</ins> is a response precisely to actions of **<ins>NATO</ins>** and the escalation of the hostile approach to **<ins>Russia</ins>** near its eastern borders ...
 | (NATO->Russia, neg), (Russia->NATO, neg)                                                                                                                                                                                                                    |
 
+## RuSentNE-2023
+
+Participants are offered the task of extracting sentiments of three classes (negative, positive, neutral) from news texts in relation to pre-marked entities such as PERSON, ORGANIZATION, PROFESSION, COUNTRY, NATIONALITY within a separate sentence.
+
+Task paper: https://arxiv.org/pdf/2305.17679.pdf
+
+The public leaderboard is available at [github repository](https://github.com/dialogue-evaluation/RuSentNE-evaluation)
+
+| Example                                                                                                                                                                                                                                                     |
+|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| "Notorious figure in the country - <ins>Berlusconi</ins> has been repeatedly accused of financial fraud
+| (Berlusconi-> neg)
+
