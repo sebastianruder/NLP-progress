@@ -24,7 +24,10 @@ The public leaderboard is available at [github repository](https://github.com/ni
 
 ## RuSentNE-2023
 
-Participants are offered the task of extracting sentiments of three classes (negative, positive, neutral) from news texts in relation to pre-marked entities such as PERSON, ORGANIZATION, PROFESSION, COUNTRY, NATIONALITY within a separate sentence.
+The dataset for RuSentNE-2023 evaluation is based on the Russian news corpus RuSentNE having rich sentiment-related annotation. The corpus
+is annotated with named entities and sentiments towards these entities, along with related effects and emotional states. The dataset contains over 11000 sentences from 400+ large texts.
+
+In the RuSentNE-2023 competition, named entities should be classified into one of three sentiment classes: positive, negative or neutral within the context of a single sentence.
 
 Task paper: https://arxiv.org/pdf/2305.17679.pdf
 
