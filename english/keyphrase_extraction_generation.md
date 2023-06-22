@@ -52,6 +52,7 @@ Here are a few notes on results:
 
 | Model           | Present-F1\@5 | Absent-F1\@5 | Paper / Source | Code |
 | --------------- | :-----: |  :-----: | -------------- | ---- |
+|ChatGPT (Martinez et.al., 2023)|0.232 (!) |0.044 (!) |[ChatGPT vs State-of-the-Art Models: A Benchmarking Study in Keyphrase Generation Task](https://arxiv.org/abs/2304.14177) | - |
 | P-AKG (Wu et.al., 2022) |  0.351(!) | 0.032(!)  | [Fast and Constrained Absent Keyphrase Generation by Prompt-Based Learning](https://ojs.aaai.org/index.php/AAAI/article/view/21402) | -  |
 |WR-SetTrans (Xie et.al., 2022) |0.370 | 0.050 |[WR-One2Set: Towards Well-Calibrated Keyphrase Generation](https://aclanthology.org/2022.emnlp-main.491/)|
 | Beam+KPD-A (Chowdhury et.al., 2022) | 0.363 | 0.067 | [KPDROP: Improving Absent Keyphrase Generation](https://aclanthology.org/2022.findings-emnlp.357) |  
@@ -65,6 +66,7 @@ Here are a few notes on results:
 #### SemEval
 | Model           | Present-F1\@5 | Absent-F1\@5 | Paper / Source | Code |
 | --------------- | :-----: |  :-----: | -------------- | ---- |
+|ChatGPT (Martinez et.al., 2023)|-|- |[ChatGPT vs State-of-the-Art Models: A Benchmarking Study in Keyphrase Generation Task](https://arxiv.org/abs/2304.14177) | - |
 | P-AKG (Wu et.al., 2022) |  0.329 (!)| 0.028 (!) | [Fast and Constrained Absent Keyphrase Generation by Prompt-Based Learning](https://ojs.aaai.org/index.php/AAAI/article/view/21402) | -  |
 |WR-SetTrans (Xie et.al., 2022) |0.360 | 0.043 |[WR-One2Set: Towards Well-Calibrated Keyphrase Generation](https://aclanthology.org/2022.emnlp-main.491/)|
 | Beam+KPD-A (Chowdhury et.al., 2022) | 0.343 | 0.053 | [KPDROP: Improving Absent Keyphrase Generation](https://aclanthology.org/2022.findings-emnlp.357) |
@@ -78,6 +80,7 @@ Here are a few notes on results:
 
 | Model           | Present-F1\@5 | Absent-F1\@5 | Paper / Source | Code |
 | --------------- | :-----: |  :-----: | -------------- | ---- |
+|ChatGPT (Martinez et.al., 2023)|0.352 (!)|0.049 (!)|[ChatGPT vs State-of-the-Art Models: A Benchmarking Study in Keyphrase Generation Task](https://arxiv.org/abs/2304.14177) | - |
 | P-AKG (Wu et.al., 2022) |  0.26 (!) | 0.017(!) | [Fast and Constrained Absent Keyphrase Generation by Prompt-Based Learning](https://ojs.aaai.org/index.php/AAAI/article/view/21402) | -  |
 |WR-SetTrans (Xie et.al., 2022) | 0.330 | 0.025 |[WR-One2Set: Towards Well-Calibrated Keyphrase Generation](https://aclanthology.org/2022.emnlp-main.491/)|
 | Beam+KPD-A (Chowdhury et.al., 2022) | 0.322 | 0.036 | [KPDROP: Improving Absent Keyphrase Generation](https://aclanthology.org/2022.findings-emnlp.357) |  
@@ -91,6 +94,7 @@ Here are a few notes on results:
 | Model           | Present-F1\@5 | Absent-F1\@5 | Paper / Source | Code |
 | --------------- | :-----: |  :-----: | -------------- | ---- |
 | P-AKG (Wu et.al., 2022) | - |- | [Fast and Constrained Absent Keyphrase Generation by Prompt-Based Learning](https://ojs.aaai.org/index.php/AAAI/article/view/21402) | -  |
+|ChatGPT (Martinez et.al., 2023)|-|-|[ChatGPT vs State-of-the-Art Models: A Benchmarking Study in Keyphrase Generation Task](https://arxiv.org/abs/2304.14177) | - |
 |WR-SetTrans (Xie et.al., 2022) | 0.360|0.057 |[WR-One2Set: Towards Well-Calibrated Keyphrase Generation](https://aclanthology.org/2022.emnlp-main.491/)|
 | Beam+KPD-A (Chowdhury et.al., 2022) | 0.323 | 0.078 | [KPDROP: Improving Absent Keyphrase Generation](https://aclanthology.org/2022.findings-emnlp.357) | 
 |SetTrans (Ye et.al., 2021) | 0.326| 0.047| [One2Set: Generating Diverse Keyphrases as a Set](https://aclanthology.org/2021.acl-long.354/)|
@@ -102,6 +106,7 @@ Here are a few notes on results:
 #### NUS 
 | Model           | Present-F1\@5 | Absent-F1\@5 | Paper / Source | Code |
 | --------------- | :-----: |  :-----: | -------------- | ---- |
+|ChatGPT (Martinez et.al., 2023)|-|-|[ChatGPT vs State-of-the-Art Models: A Benchmarking Study in Keyphrase Generation Task](https://arxiv.org/abs/2304.14177) | - |
 | P-AKG (Wu et.al., 2022) |  0.412 (!)| 0.036(!) | [Fast and Constrained Absent Keyphrase Generation by Prompt-Based Learning](https://ojs.aaai.org/index.php/AAAI/article/view/21402) | -  |
 |WR-SetTrans (Xie et.al., 2022) |0.428 |0.057 |[WR-One2Set: Towards Well-Calibrated Keyphrase Generation](https://aclanthology.org/2022.emnlp-main.491/)|
 | Beam+KPD-A (Chowdhury et.al., 2022) | 0.418 | 0.079 | [KPDROP: Improving Absent Keyphrase Generation](https://aclanthology.org/2022.findings-emnlp.357) |
