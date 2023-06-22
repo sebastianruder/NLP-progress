@@ -53,7 +53,9 @@ Here are a few notes on results:
 | Model           | Present-F1\@5 | Absent-F1\@5 | Paper / Source | Code |
 | --------------- | :-----: |  :-----: | -------------- | ---- |
 | P-AKG (Wu et.al., 2022) |  0.351(!) | 0.032(!)  | [Fast and Constrained Absent Keyphrase Generation by Prompt-Based Learning](https://ojs.aaai.org/index.php/AAAI/article/view/21402) | -  |
+|WR-SetTrans (Xie et.al., 2022) |0.370 | 0.050 |[WR-One2Set: Towards Well-Calibrated Keyphrase Generation](https://aclanthology.org/2022.emnlp-main.491/)|
 | Beam+KPD-A (Chowdhury et.al., 2022) | 0.363 | 0.067 | [KPDROP: Improving Absent Keyphrase Generation](https://aclanthology.org/2022.findings-emnlp.357) |  
+|SetTrans (Ye et.al., 2021) | 0.358| 0.036| [One2Set: Generating Diverse Keyphrases as a Set](https://aclanthology.org/2021.acl-long.354/)|
 | UniKeyphrase (Wu et.al., 2021)| 0.408 (!) | 0.047 (!)| [UniKeyphrase: A Unified Extraction and Generation Framework for Keyphrase Prediction](https://aclanthology.org/2021.findings-acl.73/) | 
 |ExHiRD-h (Chen et.al., 2020) |0.311 |0.016 |[Exclusive Hierarchical Decoding for Deep Keyphrase Generation](https://aclanthology.org/2020.acl-main.103) |
 |CorrRNN (Chen et.al., 2018) |- |- | [Keyphrase Generation with Correlation Constraints](https://aclanthology.org/D18-1439)|
@@ -64,7 +66,9 @@ Here are a few notes on results:
 | Model           | Present-F1\@5 | Absent-F1\@5 | Paper / Source | Code |
 | --------------- | :-----: |  :-----: | -------------- | ---- |
 | P-AKG (Wu et.al., 2022) |  0.329 (!)| 0.028 (!) | [Fast and Constrained Absent Keyphrase Generation by Prompt-Based Learning](https://ojs.aaai.org/index.php/AAAI/article/view/21402) | -  |
+|WR-SetTrans (Xie et.al., 2022) |0.360 | 0.043 |[WR-One2Set: Towards Well-Calibrated Keyphrase Generation](https://aclanthology.org/2022.emnlp-main.491/)|
 | Beam+KPD-A (Chowdhury et.al., 2022) | 0.343 | 0.053 | [KPDROP: Improving Absent Keyphrase Generation](https://aclanthology.org/2022.findings-emnlp.357) |
+|SetTrans (Ye et.al., 2021) | 0.331| 0.026| [One2Set: Generating Diverse Keyphrases as a Set](https://aclanthology.org/2021.acl-long.354/)|
 | UniKeyphrase (Wu et.al., 2021)| 0.416 (!) | 0.030 (!)| [UniKeyphrase: A Unified Extraction and Generation Framework for Keyphrase Prediction](https://aclanthology.org/2021.findings-acl.73/) |
 |ExHiRD-h (Chen et.al., 2020) |0.284 | 0.017|[Exclusive Hierarchical Decoding for Deep Keyphrase Generation](https://aclanthology.org/2020.acl-main.103) |
 |CorrRNN (Chen et.al., 2018) |0.320 | - | [Keyphrase Generation with Correlation Constraints](https://aclanthology.org/D18-1439)|
@@ -75,7 +79,9 @@ Here are a few notes on results:
 | Model           | Present-F1\@5 | Absent-F1\@5 | Paper / Source | Code |
 | --------------- | :-----: |  :-----: | -------------- | ---- |
 | P-AKG (Wu et.al., 2022) |  0.26 (!) | 0.017(!) | [Fast and Constrained Absent Keyphrase Generation by Prompt-Based Learning](https://ojs.aaai.org/index.php/AAAI/article/view/21402) | -  |
+|WR-SetTrans (Xie et.al., 2022) | 0.330 | 0.025 |[WR-One2Set: Towards Well-Calibrated Keyphrase Generation](https://aclanthology.org/2022.emnlp-main.491/)|
 | Beam+KPD-A (Chowdhury et.al., 2022) | 0.322 | 0.036 | [KPDROP: Improving Absent Keyphrase Generation](https://aclanthology.org/2022.findings-emnlp.357) |  
+|SetTrans (Ye et.al., 2021) | 0.285| 0.021| [One2Set: Generating Diverse Keyphrases as a Set](https://aclanthology.org/2021.acl-long.354/)|  
 | UniKeyphrase (Wu et.al., 2021)| 0.29 (!) | 0.029 (!)| [UniKeyphrase: A Unified Extraction and Generation Framework for Keyphrase Prediction](https://aclanthology.org/2021.findings-acl.73/) | 
 |ExHiRD-h (Chen et.al., 2020) |0.253 |0.011 |[Exclusive Hierarchical Decoding for Deep Keyphrase Generation](https://aclanthology.org/2020.acl-main.103) |
 |CorrRNN (Chen et.al., 2018) | - |- | [Keyphrase Generation with Correlation Constraints](https://aclanthology.org/D18-1439)|
@@ -85,7 +91,9 @@ Here are a few notes on results:
 | Model           | Present-F1\@5 | Absent-F1\@5 | Paper / Source | Code |
 | --------------- | :-----: |  :-----: | -------------- | ---- |
 | P-AKG (Wu et.al., 2022) | - |- | [Fast and Constrained Absent Keyphrase Generation by Prompt-Based Learning](https://ojs.aaai.org/index.php/AAAI/article/view/21402) | -  |
-| Beam+KPD-A (Chowdhury et.al., 2022) | 0.323 | 0.078 | [KPDROP: Improving Absent Keyphrase Generation](https://aclanthology.org/2022.findings-emnlp.357) |
+|WR-SetTrans (Xie et.al., 2022) | 0.360|0.057 |[WR-One2Set: Towards Well-Calibrated Keyphrase Generation](https://aclanthology.org/2022.emnlp-main.491/)|
+| Beam+KPD-A (Chowdhury et.al., 2022) | 0.323 | 0.078 | [KPDROP: Improving Absent Keyphrase Generation](https://aclanthology.org/2022.findings-emnlp.357) | 
+|SetTrans (Ye et.al., 2021) | 0.326| 0.047| [One2Set: Generating Diverse Keyphrases as a Set](https://aclanthology.org/2021.acl-long.354/)|
 | UniKeyphrase (Wu et.al., 2021)| - | - | [UniKeyphrase: A Unified Extraction and Generation Framework for Keyphrase Prediction](https://aclanthology.org/2021.findings-acl.73/) | 
 |ExHiRD-h (Chen et.al., 2020) | 0.286 | 0.022 |[Exclusive Hierarchical Decoding for Deep Keyphrase Generation](https://aclanthology.org/2020.acl-main.103) |
 |CorrRNN (Chen et.al., 2018) | 0.318|- | [Keyphrase Generation with Correlation Constraints](https://aclanthology.org/D18-1439)|
@@ -95,7 +103,9 @@ Here are a few notes on results:
 | Model           | Present-F1\@5 | Absent-F1\@5 | Paper / Source | Code |
 | --------------- | :-----: |  :-----: | -------------- | ---- |
 | P-AKG (Wu et.al., 2022) |  0.412 (!)| 0.036(!) | [Fast and Constrained Absent Keyphrase Generation by Prompt-Based Learning](https://ojs.aaai.org/index.php/AAAI/article/view/21402) | -  |
+|WR-SetTrans (Xie et.al., 2022) |0.428 |0.057 |[WR-One2Set: Towards Well-Calibrated Keyphrase Generation](https://aclanthology.org/2022.emnlp-main.491/)|
 | Beam+KPD-A (Chowdhury et.al., 2022) | 0.418 | 0.079 | [KPDROP: Improving Absent Keyphrase Generation](https://aclanthology.org/2022.findings-emnlp.357) |
+|SetTrans (Ye et.al., 2021) | 0.406| 0.042| [One2Set: Generating Diverse Keyphrases as a Set](https://aclanthology.org/2021.acl-long.354/)|
 | UniKeyphrase (Wu et.al., 2021)| 0.434 (!) | 0.037 (!) | [UniKeyphrase: A Unified Extraction and Generation Framework for Keyphrase Prediction](https://aclanthology.org/2021.findings-acl.73/) | 
 |ExHiRD-h (Chen et.al., 2020) | - | - |[Exclusive Hierarchical Decoding for Deep Keyphrase Generation](https://aclanthology.org/2020.acl-main.103) |
 |CorrRNN (Chen et.al., 2018) |0.358 |- | [Keyphrase Generation with Correlation Constraints](https://aclanthology.org/D18-1439)| 
