@@ -52,3 +52,29 @@ Each paper below has used different datasets. The dataset for Arora et al. (2020
 | Tyson and Nagar (2009) | | 95.00 | [Prosodic rules for schwa-deletion in hindi text-to-speech synthesis](http://www.academia.edu/download/38321628/tyson_nagar_2009.pdf) | |
 | Narasimhan et al. (2004) | | 88.97 | [Schwa-Deletion in Hindi Text-to-Speech Synthesis](https://pure.mpg.de/rest/items/item_59025/component/file_59026/content) | | 
 | Choudhury et al. (2004) | | 99.89 | [A Diachronic Approach for Schwa Deletion in Indo Aryan Languages](https://www.aclweb.org/anthology/W04-0103.pdf) | |
+
+## Metadata Generation for Hindi Poetry
+
+The following research works are based on Hindi verses and their rule-based modelling of a metadata generator for metadata generation. The research covers detecting verses based upon many rules in Hindi poetry.
+
+| Model           | Accuracy / Score | Paper / Source | Dataset | 
+| ------------- | :-----:| --- | --- | 
+| Audichya et al. (2019)  | 98.09% | [Computational Linguistic Prosody Rule-based Unified Technique for Automatic Metadata Generation for Hindi Poetry](https://ieeexplore.ieee.org/document/8987239) | [Hindi Verse Dataset](https://data.mendeley.com/datasets/cp6htsbbpp/1) | 
+| Audichya et al. (2021)  | 95.02% | [Stanza Type Identification using Systematization of Versification System of Hindi Poetry](https://thesai.org/Publications/ViewPaper?Volume=12&Issue=1&Code=IJACSA&SerialNo=17) | [Hindi Verse Dataset](https://data.mendeley.com/datasets/cp6htsbbpp/1) |
+
+## Figure of Speech
+
+This study arranges Hindi figure of speech in a taxonomic hierarchical form and attempts to identify Hindi figure of speech.
+
+| Model           | Accuracy / Score | Paper / Source | Dataset | 
+| ------------- | :-----:| --- | --- | 
+| Audichya et al. (2021)  | 97.00% | [Towards Natural Language Processing with Figures of Speech in Hindi Poetry](https://thesai.org/Publications/ViewPaper?Volume=12&Issue=3&Code=IJACSA&SerialNo=16) | [Hindi Verse Dataset](https://data.mendeley.com/datasets/cp6htsbbpp/1) | 
+
+## WordNets Improvement
+
+This research effort represents a method for dealing with load words / borrowed words, missing words, and newly generated terminologies inclusion in the WordNet for the benefit of the wordnet.
+
+| Model           | Score | Paper / Source | Dataset | 
+| ------------- | :-----:| --- | --- | 
+| Audichya et al. (2022)  | 13.23% (Hindi), 1.4%(Gujarati) | [Towards a Richer IndoWordNet with New Additions for Hindi and Gujarati Languages](https://thesai.org/Publications/ViewPaper?Volume=13&Issue=7&Code=IJACSA&SerialNo=97) | [Additional Hindi Words for IndoWordNet](https://data.mendeley.com/datasets/db8sh8js67/1), [Additional Gujarati Words for IndoWordNet](https://data.mendeley.com/datasets/3jtm7htsyt/1)  | 
+
