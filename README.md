@@ -117,6 +117,9 @@ For more tasks, datasets and results in Chinese, check out the [Chinese NLP](htt
 ### Arabic
 - [Language modeling](arabic/language_modeling.md)
 
+### Bodo
+- [Machine Translation](bodo/machine_translation.md)
+
 
 This document aims to track the progress in Natural Language Processing (NLP) and give an overview
 of the state-of-the-art (SOTA) across the most common NLP tasks and their corresponding datasets.
