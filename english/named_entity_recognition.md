@@ -124,14 +124,17 @@ Download & code: https://github.com/thunlp/Few-NERD
 
 
 
+### MultiCoNER (SemEval 2022 Task 11)
+MultiCoNER, a large multilingual dataset for Named Entity Recognition that covers 3 domains (Wiki sentences, questions, and search queries) across 11 languages, as well as multilingual and code-mixing subsets. This dataset is designed to represent contemporary challenges in NER, including low-context scenarios (short and uncased text), syntactically complex entities like movie titles, and long-tail entity distributions. The 26M token dataset is compiled from public resources using techniques such as heuristic-based sentence sampling, template extraction and slotting, and machine translation. MultiCoNER poses challenges even for large pre-trained language models, and we believe that it can help further research in building robust NER systems. MultiCoNER is publicly available at https://registry.opendata.aws/multiconer/ and we hope that this resource will help advance research in various aspects of NER.
+It was part of <a href"https://multiconer.github.io/multiconer_1/">SemEval 2022 Task 11</a>
+
+### MultiCoNER v2 (SemEval 2023 Task 2)
+We present MULTICONER V2, a dataset for fine-grained Named Entity Recognition covering 33 entity classes across 12 languages, in both monolingual and multilingual settings. This dataset aims to tackle the following practical challenges in NER: (i) effective handling of fine-grained classes that include complex entities like movie titles, and (ii) performance degradation due to noise generated from typing mistakes or OCR errors. The dataset is compiled from open resources like Wikipedia and Wikidata, and is publicly available. Evaluation based on the XLM-RoBERTa baseline highlights the unique challenges posed by MULTICONER V2: (i) the fine-grained taxonomy is challenging, where the scores are low with macro-F1=0.63 (across all languages), and (ii) the corruption strategy significantly impairs performance, with entity corruption resulting in 9% lower performance relative to non-entity corruptions across all languages. This highlights the greater impact of entity noise in contrast to context noise.
+It was part of <a href"https://multiconer.github.io/">SemEval 2023 Task 2</a>
+
 
 
 #### 
-
-#### 
-
-
-
 
 
 
