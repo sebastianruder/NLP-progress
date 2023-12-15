@@ -46,4 +46,11 @@ on BLEU.
 | ConvS2S (Gehring et al., 2017) | 40.46 | [Convolutional Sequence to Sequence Learning](https://arxiv.org/abs/1705.03122) | 
 | Transformer Base (Vaswani et al., 2017) | 38.1 | [Attention Is All You Need](https://arxiv.org/abs/1706.03762) |
 
+ ### WMT22 shared task on Large-Scale Machine Translation Evaluation for African Languages
+ 
+ | Model           | BLEU  |  Paper / Source |
+| ------------- | :-----:| --- |
+| vanilla MNMT models| 17.95 | [Tencent’s Multilingual Machine Translation System for WMT22 Large-Scale African Languages](https://arxiv.org/pdf/2210.09644v1.pdf)|
+
+
 [Go back to the README](../README.md)
