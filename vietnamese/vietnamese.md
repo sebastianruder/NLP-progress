@@ -159,6 +159,8 @@
 | BiLSTM-CRF + LSTM-char (2016) | 95.31 | [Neural Architectures for Named Entity Recognition](http://www.aclweb.org/anthology/N16-1030) | [Link](https://github.com/UKPLab/emnlp2017-bilstm-cnn-crf/) | 
 | BiLSTM-CRF (2015) | 95.06 | [Bidirectional LSTM-CRF Models for Sequence Tagging](https://arxiv.org/abs/1508.01991) | [Link](https://github.com/UKPLab/emnlp2017-bilstm-cnn-crf/) | 
 | RDRPOSTagger (2014) | 95.11 |  [RDRPOSTagger: A Ripple Down Rules-based Part-Of-Speech Tagger](http://www.aclweb.org/anthology/E14-2005) | [Official](https://github.com/datquocnguyen/rdrpostagger) | 
+| underthersea |  |  | [Official](https://github.com/undertheseanlp/underthesea) |
+| pyvi |  |  | [Official](https://github.com/trungtv/pyvi) |
 
 * Result for jPTDP-v2 is reported in "[A neural joint model for Vietnamese word segmentation, POS tagging and dependency parsing](https://arxiv.org/abs/1812.11459)." 
 * Results for BiLSTM-CRF-based models and RDRPOSTagger are reported in  "[From Word Segmentation to POS Tagging for Vietnamese](http://aclweb.org/anthology/U17-1013)."
@@ -191,5 +193,8 @@
 | vnTokenizer (2008) | 97.33 | [A Hybrid Approach to Word Segmentation of Vietnamese Texts](https://link.springer.com/chapter/10.1007/978-3-540-88282-4_23) |  |
 | JVnSegmenter (2006) | 97.06 | [Vietnamese Word Segmentation with CRFs and SVMs: An Investigation](http://www.aclweb.org/anthology/Y06-1028) |  |
 | DongDu (2012) | 96.90 |  [Ứng dụng phương pháp Pointwise vào bài toán tách từ cho tiếng Việt](https://tiengvietmenyeu.wordpress.com/2013/02/16/ung%C2%B7dung-phuong%C2%B7phap-pointwise-vao-bai%C2%B7toan-tach-tu-cho-tieng%C2%B7viet/) |  |
+| underthersea |  |  | [Official](https://github.com/undertheseanlp/underthesea) |
+| coccoc-tokenizer |  |  | [Official](https://github.com/coccoc/coccoc-tokenizer) |
+| pyvi |  |  | [Official](https://github.com/trungtv/pyvi) |
 
 * Results for VnTokenizer, JVnSegmenter and DongDu are reported in "[A hybrid approach to Vietnamese word segmentation](http://doi.org/10.1109/RIVF.2016.7800279)."
