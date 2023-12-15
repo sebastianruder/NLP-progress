@@ -52,6 +52,8 @@ Models are typically evaluated based on the average test accuracy across 21 high
 
 | Model           | Avg accuracy  |  Paper / Source |
 | ------------- | :-----:| --- |
+| XLM-R + SUB^2 data augmentation (Shi et al., 2021) | 97.7 | [Substructure Substitution: Structured Data Augmentation for NLP](https://aclanthology.org/2021.findings-acl.307/) / [code](https://github.com/ExplorerFreda/sub2-augmentation) |
+| XLM-R (Shi et al., 2021) | 97.7 | [Substructure Substitution: Structured Data Augmentation for NLP](https://aclanthology.org/2021.findings-acl.307/) / [code](https://github.com/ExplorerFreda/sub2-augmentation) |
 | Multilingual BERT and BPEmb (Heinzerling and Strube, 2019) | 96.77 | [Sequence Tagging with Contextual and Non-Contextual Subword Representations: A Multilingual Evaluation](https://arxiv.org/abs/1906.01569) |
 | Adversarial Bi-LSTM (Yasunaga et al., 2018) | 96.65 | [Robust Multilingual Part-of-Speech Tagging via Adversarial Training](https://arxiv.org/abs/1711.04903) | 
 | MultiBPEmb (Heinzerling and Strube, 2019) | 96.62 | [Sequence Tagging with Contextual and Non-Contextual Subword Representations: A Multilingual Evaluation](https://arxiv.org/abs/1906.01569) |
