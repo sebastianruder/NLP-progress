@@ -18,9 +18,13 @@ ATIS (Air Travel Information System) (Hemphill et al.) is a dataset by Microsoft
 | Model | Slot F1 Score | Intent Accuracy | Paper / Source | Code |
 | ------ | ------ | ------ | ------ | ------ |
 | Bi-model with decoder | 96.89 | 98.99  | [A Bi-model based RNN Semantic Frame Parsing Model for Intent Detection and Slot Filling](https://arxiv.org/abs/1812.10235) |
+| CTRAN | 98.46 | 98.07  | [CTRAN: CNN-Transformer-based network for natural language understanding](https://www.sciencedirect.com/science/article/abs/pii/S0952197623011971) | [Official](https://github.com/rafiepour/CTran/)|
 | SlotRefine + BERT | 96.16 | 97.74  | [SlotRefine: A Fast Non-Autoregressive Model for Joint Intent Detection and Slot Filling](https://aclanthology.org/2020.emnlp-main.152.pdf) | [Official](https://github.com/moore3930/SlotRefine)|
 | SlotRefine | 96.22 | 97.11  | [SlotRefine: A Fast Non-Autoregressive Model for Joint Intent Detection and Slot Filling](https://aclanthology.org/2020.emnlp-main.152.pdf) | [Official](https://github.com/moore3930/SlotRefine)|
 | Stack-Propagation + BERT | 96.10 | 97.50 | [A Stack-Propagation Framework with Token-level Intent Detection for Spoken Language Understanding](https://arxiv.org/abs/1909.02188)|[Official](https://github.com/LeePleased/StackPropagation-SLU)|
+| JointBERT-CAE | 96.1 | 97.50 | [CAE: Mechanism to Diminish the Class Imbalanced in SLU Slot Filling Task](https://link.springer.com/chapter/10.1007/978-3-031-16210-7_12)|[Official](https://github.com/phuongnm94/JointBERT_CAE)|
+| Co-interactive Transformer | 95.90 | 97.70 | [A Co-Interactive Transformer for Joint Slot Filling and Intent Detection](https://arxiv.org/abs/2010.03880)|[Official](https://github.com/kangbrilliant/DCA-Net)|
+| Heterogeneous Attention | 95.58 | 97.76 | [Joint agricultural intent detection and slot filling based on enhanced heterogeneous attention mechanism](https://www.sciencedirect.com/science/article/abs/pii/S0168169923001448)|  |
 | Stack-Propagation | 95.90 | 96.90 | [A Stack-Propagation Framework with Token-level Intent Detection for Spoken Language Understanding](https://arxiv.org/abs/1909.02188)|[Official](https://github.com/LeePleased/StackPropagation-SLU)|
 | Attention Encoder-Decoder NN | 95.87 | 98.43 | [Attention-Based Recurrent Neural Network Models for Joint Intent Detection and Slot Filling](https://arxiv.org/abs/1609.01454)|
 | SF-ID (BLSTM) network | 95.80 | 97.76 | [A Novel Bi-directional Interrelated Model for Joint Intent Detection and Slot Filling](https://arxiv.org/abs/1907.00390) | [Official](https://github.com/ZephyrChenzf/SF-ID-Network-For-NLU) |
@@ -42,11 +46,15 @@ SNIPS is a dataset by Snips.ai for Intent Detection and Slot Filling benchmarkin
 
 | Model | Slot F1 Score | Intent Accuracy | Paper / Source | Code |
 | ------ | ------ | ------ | ------ | ------ |
+| CTRAN | 98.30 | 99.42  | [CTRAN: CNN-Transformer-based Network for Natural Language Understanding](https://www.sciencedirect.com/science/article/abs/pii/S0952197623011971) | [Official](https://github.com/rafiepour/CTran/)|
 | SlotRefine + BERT | 97.05 | 99.04  | [SlotRefine: A Fast Non-Autoregressive Model for Joint Intent Detection and Slot Filling](https://aclanthology.org/2020.emnlp-main.152.pdf) | [Official](https://github.com/moore3930/SlotRefine)|
-| SlotRefine | 93.72 | 97.44  | [SlotRefine: A Fast Non-Autoregressive Model for Joint Intent Detection and Slot Filling](https://aclanthology.org/2020.emnlp-main.152.pdf) | [Official](https://github.com/moore3930/SlotRefine)|
 | Stack-Propagation + BERT | 97.00 | 99.00 | [A Stack-Propagation Framework with Token-level Intent Detection for Spoken Language Understanding](https://arxiv.org/abs/1909.02188)|[Official](https://github.com/LeePleased/StackPropagation-SLU)|
+| JointBERT-CAE | 97.00 | 98.30 | [CAE: Mechanism to Diminish the Class Imbalanced in SLU Slot Filling Task](https://link.springer.com/chapter/10.1007/978-3-031-16210-7_12)|[Official](https://github.com/phuongnm94/JointBERT_CAE)|
+| Heterogeneous Attention | 96.32 | 98.29 | [Joint agricultural intent detection and slot filling based on enhanced heterogeneous attention mechanism](https://www.sciencedirect.com/science/article/abs/pii/S0168169923001448)|  |
+| Co-interactive Transformer | 95.90 | 98.80 | [A Co-Interactive Transformer for Joint Slot Filling and Intent Detection](https://arxiv.org/abs/2010.03880)|[Official](https://github.com/kangbrilliant/DCA-Net)|
 | Stack-Propagation | 94.20 | 98.00 | [A Stack-Propagation Framework with Token-level Intent Detection for Spoken Language Understanding](https://arxiv.org/abs/1909.02188)|[Official](https://github.com/LeePleased/StackPropagation-SLU)|
+| SlotRefine | 93.72 | 97.44  | [SlotRefine: A Fast Non-Autoregressive Model for Joint Intent Detection and Slot Filling](https://aclanthology.org/2020.emnlp-main.152.pdf) | [Official](https://github.com/moore3930/SlotRefine)|
 | Context Encoder | 93.60 | NA | [Improving Slot Filling by Utilizing Contextual Information](https://arxiv.org/pdf/1911.01680.pdf) |
 | SF-ID (BLSTM) network | 92.23 | 97.43 | [A Novel Bi-directional Interrelated Model for Joint Intent Detection and Slot Filling](https://arxiv.org/abs/1907.00390) | [Official](https://github.com/ZephyrChenzf/SF-ID-Network-For-NLU) |
 | Capsule-NLU | 91.80 | 97.70 | [Joint Slot Filling and Intent Detection via Capsule Neural Networks](https://arxiv.org/abs/1812.09471) | [Official](https://github.com/czhang99/Capsule-NLU) |
-| Slot-Gated BLSTM with Attension | 88.80 | 97.00 | [Slot-Gated Modeling for Joint Slot Filling and Intent Prediction](https://www.csie.ntu.edu.tw/~yvchen/doc/NAACL18_SlotGated.pdf)| [Official](https://github.com/MiuLab/SlotGated-SLU) |
+| Slot-Gated BLSTM with Attention | 88.80 | 97.00 | [Slot-Gated Modeling for Joint Slot Filling and Intent Prediction](https://www.csie.ntu.edu.tw/~yvchen/doc/NAACL18_SlotGated.pdf)| [Official](https://github.com/MiuLab/SlotGated-SLU) |
