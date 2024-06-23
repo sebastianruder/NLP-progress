@@ -18,6 +18,7 @@ The shared task setting restricts that systems use only publicly available datas
 
 | Model           | F0.5  |  Paper / Source | Code |
 | ------------- | :-----:| --- | :-----: |
+| Majority-voting ensemble (7 systems) (Omelianchuk et al., BEA 2024) | 72.8 | [Pillars of Grammatical Error Correction: Comprehensive Inspection Of Contemporary Approaches In The Era of Large Language Models](https://arxiv.org/abs/2404.14914) | [official](https://github.com/grammarly/pillars-of-gec) |
 | GRECO (Qorib and Ng, EMNLP 2023) | 71.12 | [System Combination via Quality Estimation for Grammatical Error Correction](https://aclanthology.org/2023.emnlp-main.785) | [official](https://github.com/nusnlp/greco) |
 | ESC (Qorib et al., NAACL 2022) | 69.51 | [Frustratingly Easy System Combination for Grammatical Error Correction](https://aclanthology.org/2022.naacl-main.143/) | [official](https://github.com/nusnlp/esc) |
 | T5 ([t5.1.1.xxl](https://github.com/google-research/text-to-text-transfer-transformer/blob/master/released_checkpoints.md)) trained on [cLang-8](https://github.com/google-research-datasets/clang8) (Rothe et al., ACL-IJCNLP 2021) | 68.87 | [A Simple Recipe for Multilingual Grammatical Error Correction](https://arxiv.org/pdf/2106.03830.pdf) | [T5](https://github.com/google-research/text-to-text-transfer-transformer), [cLang-8](https://github.com/google-research-datasets/clang8) |
@@ -135,6 +136,7 @@ Since current state-of-the-art systems rely on as much annotated learner data as
 
 | Model           | F0.5  |  Paper / Source | Code |
 | ------------- | :-----:| --- | :-----: |
+| Majority-voting ensemble (7 systems) (Omelianchuk et al., BEA 2024) | 81.4 | [Pillars of Grammatical Error Correction: Comprehensive Inspection Of Contemporary Approaches In The Era of Large Language Models](https://arxiv.org/abs/2404.14914) | [official](https://github.com/grammarly/pillars-of-gec) |
 | GRECO (Qorib and Ng, EMNLP 2023) | 80.84 | [System Combination via Quality Estimation for Grammatical Error Correction](https://aclanthology.org/2023.emnlp-main.785) | [official](https://github.com/nusnlp/greco) |
 | ESC (Qorib et al., NAACL 2022) | 79.90| [Frustratingly Easy System Combination for Grammatical Error Correction](https://aclanthology.org/2022.naacl-main.143/) | [official](https://github.com/nusnlp/esc) |
 | TMTC (Lai et al., ACL Findings 2022) | 77.93 | [Type-Driven Multi-Turn Corrections for Grammatical Error Correction](https://aclanthology.org/2022.findings-acl.254) | [official](https://github.com/DeepLearnXMU/TMTC) |
