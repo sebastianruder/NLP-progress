@@ -98,6 +98,7 @@ For more tasks, datasets and results in Chinese, check out the [Chinese NLP](htt
 
 ### Bengali
 - [Part-of-speech Tagging](bengali/part_of_speech_tagging.md)
+- [Emotion Detection](bengali/emotion_detection.md)
 - [Sentiment Analysis](bengali/sentiment_analysis.md)
 
 ### Persian
