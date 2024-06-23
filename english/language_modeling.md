@@ -8,7 +8,7 @@ Language modeling is the task of predicting the next word or character in a docu
 
 ### Penn Treebank
 
-A common evaluation dataset for language modeling ist the Penn Treebank,
+A common evaluation dataset for language modeling is the Penn Treebank,
 as pre-processed by [Mikolov et al., (2011)](https://www.isca-speech.org/archive/archive_papers/interspeech_2011/i11_0605.pdf).
 The dataset consists of 929k training words, 73k validation words, and
 82k test words. As part of the pre-processing, words were lower-cased, numbers
@@ -20,11 +20,13 @@ per-word log-probability (lower is better).
 
 | Model           | Validation perplexity | Test perplexity | Number of params |  Paper / Source | Code |
 | ------------- | :-----:| :-----: | :-----: | -------------- | ---- |
+| Mogrifier RLSTM + dynamic eval (Melis, 2022)            | 42.9  | 42.9  | 24M | [Circling Back to Recurrent Models of Language](https://arxiv.org/abs/2211.01848) | [Official](https://github.com/deepmind/lamb) |
 | Mogrifier LSTM + dynamic eval (Melis et al., 2019)      | 44.9  | 44.8  | 24M | [Mogrifier LSTM](http://arxiv.org/abs/1909.01792) | [Official](https://github.com/deepmind/lamb) |
 | AdvSoft + AWD-LSTM-MoS + dynamic eval (Wang et al., 2019) | 46.63 | 46.01 | 22M | [Improving Neural Language Modeling via Adversarial Training](http://proceedings.mlr.press/v97/wang19f/wang19f.pdf) | [Official](https://github.com/ChengyueGongR/advsoft) |
 | FRAGE + AWD-LSTM-MoS + dynamic eval (Gong et al., 2018) | 47.38 | 46.54 | 22M | [FRAGE: Frequency-Agnostic Word Representation](https://arxiv.org/abs/1809.06858) | [Official](https://github.com/ChengyueGongR/Frequency-Agnostic) |
 | AWD-LSTM-DOC x5 (Takase et al., 2018) | 48.63 | 47.17 | 185M | [Direct Output Connection for a High-Rank Language Model](https://arxiv.org/abs/1808.10143) | [Official](https://github.com/nttcslab-nlp/doc_lm) |
 | AWD-LSTM-MoS + dynamic eval (Yang et al., 2018)* | 48.33 | 47.69 | 22M | [Breaking the Softmax Bottleneck: A High-Rank RNN Language Model](https://arxiv.org/abs/1711.03953) | [Official](https://github.com/zihangdai/mos) |
+| Mogrifier RLSTM (Melis, 2022)                           | 48.9  | 47.9  | 24M | [Circling Back to Recurrent Models of Language](https://arxiv.org/abs/2211.01848) | [Official](https://github.com/deepmind/lamb) |
 | Mogrifier LSTM (Melis et al., 2019)                     | 51.4  | 50.1  | 24M | [Mogrifier LSTM](http://arxiv.org/abs/1909.01792) | [Official](https://github.com/deepmind/lamb) |
 | AWD-LSTM + dynamic eval (Krause et al., 2017)* | 51.6 | 51.1 | 24M | [Dynamic Evaluation of Neural Sequence Models](https://arxiv.org/abs/1709.07432) | [Official](https://github.com/benkrause/dynamic-evaluation) |
 | AWD-LSTM-DOC + Partial Shuffle (Press, 2019) ***preprint*** | 53.79 | 52.00 | 23M | [Partially Shuffling the Training Data to Improve Language Models](https://arxiv.org/abs/1903.04167) | [Official](https://github.com/ofirpress/PartialShuffle) |
@@ -46,6 +48,7 @@ consists of around 2 million words extracted from Wikipedia articles.
 
 | Model           | Validation perplexity | Test perplexity | Number of params | Paper / Source | Code |
 | ------------- | :-----:| :-----: | :-----: | -------------- | ---- |
+| Mogrifier RLSTM + dynamic eval (Melis, 2022)            | 39.3  | 38.0  | 24M | [Circling Back to Recurrent Models of Language](https://arxiv.org/abs/2211.01848) | [Official](https://github.com/deepmind/lamb) |
 | Mogrifier LSTM + dynamic eval (Melis et al., 2019)      | 40.2  | 38.6  | 35M | [Mogrifier LSTM](http://arxiv.org/abs/1909.01792) | [Official](https://github.com/deepmind/lamb) |
 | AdvSoft + AWD-LSTM-MoS + dynamic eval (Wang et al., 2019) | 40.27 | 38.65 | 35M | [Improving Neural Language Modeling via Adversarial Training](http://proceedings.mlr.press/v97/wang19f/wang19f.pdf) | [Official](https://github.com/ChengyueGongR/advsoft) |
 | FRAGE + AWD-LSTM-MoS + dynamic eval (Gong et al., 2018) | 40.85 | 39.14 | 35M | [FRAGE: Frequency-Agnostic Word Representation](https://arxiv.org/abs/1809.06858) | [Official](https://github.com/ChengyueGongR/Frequency-Agnostic) |
@@ -53,6 +56,7 @@ consists of around 2 million words extracted from Wikipedia articles.
 | AWD-LSTM + dynamic eval (Krause et al., 2017)* | 46.4 | 44.3 | 33M | [Dynamic Evaluation of Neural Sequence Models](https://arxiv.org/abs/1709.07432) | [Official](https://github.com/benkrause/dynamic-evaluation) |
 | AWD-LSTM + continuous cache pointer (Merity et al., 2017)* | 53.8 | 52.0 | 33M | [Regularizing and Optimizing LSTM Language Models](https://arxiv.org/abs/1708.02182) | [Official](https://github.com/salesforce/awd-lstm-lm) |
 | AWD-LSTM-DOC x5 (Takase et al., 2018) | 54.19 | 53.09 | 185M | [Direct Output Connection for a High-Rank Language Model](https://arxiv.org/abs/1808.10143) | [Official](https://github.com/nttcslab-nlp/doc_lm) |
+| Mogrifier RLSTM (Melis, 2022)                           | 56.7  | 55.0  | 24M | [Circling Back to Recurrent Models of Language](https://arxiv.org/abs/2211.01848) | [Official](https://github.com/deepmind/lamb) |
 | Mogrifier LSTM (Melis et al., 2019)                     | 57.3  | 55.1  | 35M | [Mogrifier LSTM](http://arxiv.org/abs/1909.01792) | [Official](https://github.com/deepmind/lamb) |
 | AWD-LSTM-DOC + Partial Shuffle (Press, 2019) ***preprint*** | 60.16 | 57.85 | 37M | [Partially Shuffling the Training Data to Improve Language Models](https://arxiv.org/abs/1903.04167) | [Official](https://github.com/ofirpress/PartialShuffle) |
 | AWD-LSTM-DOC (Takase et al., 2018) | 60.29 | 58.03 | 37M | [Direct Output Connection for a High-Rank Language Model](https://arxiv.org/abs/1808.10143) | [Official](https://github.com/nttcslab-nlp/doc_lm) |
@@ -116,6 +120,7 @@ Within these 100 million bytes are 205 unique tokens.
 
 | Model           | Bit per Character (BPC) |  Number of params | Paper / Source | Code |
 | ---------------- | :-----: | :-----: | -------------- | ---- |
+| Mogrifier RLSTM + dynamic eval (Melis, 2022)                                  | 0.935 | 96M | [Circling Back to Recurrent Models of Language](https://arxiv.org/abs/2211.01848) | [Official](https://github.com/deepmind/lamb) |
 | Transformer-XL + RMS dynamic eval (Krause et al., 2019)* ***arxiv preprint*** | 0.94 | 277M | [Dynamic Evaluation of Transformer Language Models](https://arxiv.org/pdf/1904.08378.pdf) | [Official](https://github.com/benkrause/dynamiceval-transformer) |
 | Compressive Transformer (Rae et al., 2019) ***arxiv preprint*** | 0.97 | - | [Compressive Transformers for Long-Range Sequence Modelling](https://arxiv.org/pdf/1911.05507.pdf) | - |
 | Mogrifier LSTM + dynamic eval (Melis et al., 2019)            | 0.988 | 96M | [Mogrifier LSTM](http://arxiv.org/abs/1909.01792) | [Official](https://github.com/deepmind/lamb) |
@@ -123,6 +128,7 @@ Within these 100 million bytes are 205 unique tokens.
 | Longformer Large (Beltagy, Peters, and Cohan; 2020) | 0.99 | 102M | [Longformer: The Long-Document Transformer](https://arxiv.org/pdf/2004.05150.pdf) | [Official](https://github.com/allenai/longformer) |
 | Longformer Small (Beltagy, Peters, and Cohan; 2020) | 1.00 | 41M | [Longformer: The Long-Document Transformer](https://arxiv.org/pdf/2004.05150.pdf) | [Official](https://github.com/allenai/longformer) |
 | 18-layer Transformer-XL (Dai et al., 2018) ***under review*** | 1.03 | 88M | [Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context](https://arxiv.org/pdf/1901.02860.pdf) | [Official](https://github.com/kimiyoung/transformer-xl) |
+| Mogrifier RLSTM (Melis, 2022)                                 | 1.042 | 96M | [Circling Back to Recurrent Models of Language](https://arxiv.org/abs/2211.01848) | [Official](https://github.com/deepmind/lamb) |
 | 12-layer Transformer-XL (Dai et al., 2018) ***under review*** | 1.06 | 41M | [Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context](https://arxiv.org/pdf/1901.02860.pdf) | [Official](https://github.com/kimiyoung/transformer-xl) |
 | 64-layer Character Transformer Model (Al-Rfou et al., 2018) | 1.06 | 235M | [Character-Level Language Modeling with Deeper Self-Attention](https://arxiv.org/abs/1808.04444) ||
 | mLSTM + dynamic eval (Krause et al., 2017)* | 1.08 | 46M | [Dynamic Evaluation of Neural Sequence Models](https://arxiv.org/abs/1709.07432) | [Official](https://github.com/benkrause/dynamic-evaluation) |
@@ -140,7 +146,9 @@ Within these 100 million bytes are 205 unique tokens.
 | Model           | Bit per Character (BPC) |  Number of params | Paper / Source | Code |
 | ---------------- | :-----: | :-----: | -------------- | ---- |
 | Transformer-XL + RMS dynamic eval (Krause et al., 2019)* ***arxiv preprint*** | 1.038 | 277M | [Dynamic Evaluation of Transformer Language Models](https://arxiv.org/pdf/1904.08378.pdf) | [Official](https://github.com/benkrause/dynamiceval-transformer) |
+| Mogrifier RLSTM + dynamic eval (Melis, 2022)               | 1.044 | 96M | [Circling Back to Recurrent Models of Language](https://arxiv.org/abs/2211.01848) | [Official](https://github.com/deepmind/lamb) |
 | Transformer-XL Large (Dai et al., 2018) ***under review*** | 1.08 | 277M | [Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context](https://arxiv.org/pdf/1901.02860.pdf) | [Official](https://github.com/kimiyoung/transformer-xl) |
+| Mogrifier RLSTM (Melis, 2022)                              | 1.096 | 96M | [Circling Back to Recurrent Models of Language](https://arxiv.org/abs/2211.01848) | [Official](https://github.com/deepmind/lamb) |
 | Longformer Small (Beltagy, Peters, and Cohan; 2020) | 1.10 | 41M | [Longformer: The Long-Document Transformer](https://arxiv.org/pdf/2004.05150.pdf) | [Official](https://github.com/allenai/longformer) |
 | 64-layer Character Transformer Model (Al-Rfou et al., 2018) | 1.13 | 235M | [Character-Level Language Modeling with Deeper Self-Attention](https://arxiv.org/abs/1808.04444) ||
 | 12-layer Character Transformer Model (Al-Rfou et al., 2018) | 1.18 | 44M | [Character-Level Language Modeling with Deeper Self-Attention](https://arxiv.org/abs/1808.04444) ||
@@ -156,7 +164,9 @@ The vocabulary of the words in the character-level dataset is limited to 10 000 
 
 | Model           | Bit per Character (BPC) |  Number of params | Paper / Source | Code |
 | ---------------- | :-----: | :-----: | -------------- | ---- |
+| Mogrifier RLSTM + dynamic eval (Melis, 2022)      | 1.061 | 24M | [Circling Back to Recurrent Models of Language](https://arxiv.org/abs/2211.01848) | [Official](https://github.com/deepmind/lamb) |
 | Mogrifier LSTM + dynamic eval (Melis et al., 2019)| 1.083 | 24M | [Mogrifier LSTM](http://arxiv.org/abs/1909.01792) | [Official](https://github.com/deepmind/lamb) |
+| Mogrifier RLSTM (Melis, 2022)                     | 1.096 | 24M | [Circling Back to Recurrent Models of Language](https://arxiv.org/abs/2211.01848) | [Official](https://github.com/deepmind/lamb) |
 | Mogrifier LSTM (Melis et al., 2019)               | 1.120 | 24M | [Mogrifier LSTM](http://arxiv.org/abs/1909.01792) | [Official](https://github.com/deepmind/lamb) |
 | Trellis Network (Bai et al., 2019) | 1.159 | 13.4M | [Trellis Networks for Sequence Modeling](https://openreview.net/pdf?id=HyeVtoRqtQ) | [Official](https://github.com/locuslab/trellisnet)
 | 3-layer AWD-LSTM (Merity et al., 2018)  | 1.175 | 13.8M | [An Analysis of Neural Language Modeling at Multiple Scales](https://arxiv.org/abs/1803.08240) | [Official](https://github.com/salesforce/awd-lstm-lm) |

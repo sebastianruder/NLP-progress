@@ -29,6 +29,7 @@ are excluded from the evaluation. Evaluation metrics are unlabeled attachment sc
 | Model                                                                        |  POS  |  UAS  |  LAS  | Paper / Source                                                                                                                    | Code                                                                           |
 | ---------------------------------------------------------------------------- | :---: | :---: | :---: | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
 | Label Attention Layer + HPSG + XLNet (Mrini et al., 2019)                    | 97.3  | 97.42 | 96.26 | [Rethinking Self-Attention: Towards Interpretability for Neural Parsing](https://khalilmrini.github.io/Label_Attention_Layer.pdf) | [Official](https://github.com/KhalilMrini/LAL-Parser)                          |
+| Pre-training + XLNet (Tian et al. 2022) | - | 97.30 | 95.92 | [Enhancing Structure-aware Encoder with Extremely Limited Data for Graph-based Dependency Parsing](https://aclanthology.org/2022.coling-1.483/) | [Official](https://github.com/synlp/DMPar) |
 | ACE + fine-tune (Wang et al., 2020) | - | 97.20 | 95.80 | [Automated Concatenation of Embeddings for Structured Prediction](https://arxiv.org/pdf/2010.05006.pdf) | [Official](https://github.com/Alibaba-NLP/ACE)|
 | HPSG Parser (Joint) + XLNet (Zhou et al, 2020)                            | 97.3  | 97.20 | 95.72 | [Head-Driven Phrase Structure Grammar Parsing on Penn Treebank](https://www.aclweb.org/anthology/2020.findings-emnlp.398.pdf)                        | [Official](https://github.com/DoodleJZ/HPSG-Neural-Parser)                     |
 | Second-Order MFVI + BERT (Wang et al., 2020) | - | 96.91 | 95.34 | [Second-Order Neural Dependency Parsing with Message Passing and End-to-End Training](https://arxiv.org/pdf/2010.05003.pdf) | [Official](https://github.com/wangxinyu0922/Second_Order_Parsing)|
@@ -79,9 +80,12 @@ gold POS-tags.
 
 | Model                                      |  UAS  |  LAS  | Paper / Source                                                                                                                               | Code                                                          |
 | ------------------------------------------ | :---: | :---: | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| XLM-R + SubDP (Shi et al., 2022) | --- | 79.6* | [Substructure Distribution Projection for Zero-Shot Cross-Lingual Dependency Parsing](https://aclanthology.org/2022.acl-long.452/) | [Official](https://aclanthology.org/attachments/2022.acl-long.452.software.zip)
 | Cross-Lingual ELMo (Schuster et al., 2019) | 84.2  | 77.3  | [Cross-Lingual Alignment of Contextual Word Embeddings, with Applications to Zero-shot Dependency Parsing](https://arxiv.org/abs/1902.09492) | [Official](https://github.com/TalSchuster/CrossLingualELMo)   |
 | MALOPA (Ammar et al., 2016)                |       | 70.5  | [Many Languages, One Parser](https://www.transacl.org/ojs/index.php/tacl/article/view/892)                                                   | [Official](https://github.com/clab/language-universal-parser) |
 | Guo et al. (2016)                          | 76.7  | 69.9  | [A representation learning framework for multi-source transfer parsing](https://dl.acm.org/citation.cfm?id=3016100.3016284)                  |
+
+*: Evaluated on four target languages.
 
 # Unsupervised dependency parsing
 

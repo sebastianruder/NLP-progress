@@ -283,7 +283,9 @@ The public leaderboard is available on the [RecipeQA website](https://hucvl.gith
 
 
 ### NarrativeQA
-[NarrativeQA](https://arxiv.org/abs/1712.07040) is a dataset built to encourage deeper comprehension of language. This dataset involves reasoning over reading entire books or movie scripts. This dataset contains approximately 45K question answer pairs in free form text. There are two modes of this dataset (1) reading comprehension over summaries and (2) reading comprehension over entire books/scripts. 
+[NarrativeQA](https://arxiv.org/abs/1712.07040) is a dataset built to encourage deeper comprehension of language. This dataset involves reasoning over reading entire books or movie scripts. This dataset contains approximately 45K question answer pairs in free form text. There are two modes of this dataset (1) reading comprehension over summaries and (2) reading comprehension over entire books/scripts.
+
+The results for the first, summary mode are below.
 
 | Model                        | BLEU-1     | BLEU-4   | METEOR | Rouge-L | Paper / Source | Code |
 | -------------                | :-----:   | :-----:|:-----:| :-----:|---            | ---  |
@@ -291,7 +293,13 @@ The public leaderboard is available on the [RecipeQA website](https://hucvl.gith
 |BiAttention + DCU-LSTM (Tay et al., 2018)	   |36.55    |19.79	 | 17.87 | 41.44  |[Multi-Granular Sequence Encoding via Dilated Compositional Units for Reading Comprehension](http://aclweb.org/anthology/D18-1238)       |      |
 |BiDAF (Seo et al., 2017)	   |33.45    |15.69	 | 15.68 | 36.74  |[Bidirectional Attention Flow for Machine Comprehension](https://arxiv.org/abs/1611.01603)       |      |
 
-*Note that the above is for the Summary setting. There are no official published results for reading over entire books/stories except for the original paper. 
+The results for the second mode (question answering over entire books or movie scripts) are below.
+
+| Model                        | BLEU-1     | BLEU-4   | METEOR | Rouge-L | Paper / Source | Code |
+| -------------                | :-----:   | :-----:|:-----:| :-----:|---            | ---  |
+|Retriever + Reader (Izacard and Grave, 2020)     |35.3    |7.5  | 11.1 | 32.0   |[Distilling Knowledge from Reader to Retriever for Question Answering](https://openreview.net/forum?id=NTEz-6wysdb)       |  [Official](https://github.com/facebookresearch/FiD)    |
+|Summary + Reader (UnifiedQA) (Wu et al., 2021)    |21.82    |3.87  | 10.52 | 21.03  |[Recursively Summarizing Books with Human Feedback](https://arxiv.org/abs/2109.10862)       |      |
+|ReadTwice (Zemlyanskiy et al., 2021)     |21.1    |4.0  | 7.0 | 23.2  |[ReadTwice: Reading Very Large Documents with Memories](https://aclanthology.org/2021.naacl-main.408.pdf) | [Official](https://github.com/google-research/google-research/tree/master/readtwice) |
 
 ### DuoRC
 

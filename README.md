@@ -75,6 +75,7 @@ For more tasks, datasets and results in Chinese, check out the [Chinese NLP](htt
 ### Russian
 
 - [Question answering](russian/question_answering.md)
+- [Sentiment Analysis](russian/sentiment-analysis.md)
 - [Summarization](russian/summarization.md)
 
 ### Spanish
@@ -98,6 +99,7 @@ For more tasks, datasets and results in Chinese, check out the [Chinese NLP](htt
 ### Bengali
 - [Part-of-speech Tagging](bengali/part_of_speech_tagging.md)
 - [Emotion Detection](bengali/emotion_detection.md)
+- [Sentiment Analysis](bengali/sentiment_analysis.md)
 
 ### Persian
 - [Named entity recognition](persian/named_entity_recognition.md)
@@ -110,7 +112,11 @@ For more tasks, datasets and results in Chinese, check out the [Chinese NLP](htt
 
 ### German
 
+- [Question Answering](german/question_answering.md)
 - [Summarization](german/summarization.md)
+
+### Arabic
+- [Language modeling](arabic/language_modeling.md)
 
 
 This document aims to track the progress in Natural Language Processing (NLP) and give an overview
