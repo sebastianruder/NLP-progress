@@ -1,0 +1,1 @@
+The Icelandic Natural Language Processing resources are listed here: https://cadia-lvl.github.io/icelandic-NLP-resources/#speech-recognition- and here is the source code: https://github.com/cadia-lvl/icelandic-NLP-resources.
