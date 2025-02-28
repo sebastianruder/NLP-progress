@@ -2,9 +2,10 @@
 
 ## Table of contents
 
-### English
+### Speech
+- [Automatic speech recognition](speech/automatic_speech_recognition.md)
 
-- [Automatic speech recognition](english/automatic_speech_recognition.md)
+### English
 - [CCG](english/ccg.md)
 - [Common sense](english/common_sense.md)
 - [Constituency parsing](english/constituency_parsing.md)
@@ -16,7 +17,7 @@
 - [Entity linking](english/entity_linking.md)
 - [Grammatical error correction](english/grammatical_error_correction.md)
 - [Information extraction](english/information_extraction.md)
-- [Intent Detection and Slot Filling](english/intent_detection_slot_filling.md) 
+- [Intent Detection and Slot Filling](english/intent_detection_slot_filling.md)
 - [Keyphrase Extraction and Generation](english/keyphrase_extraction_generation.md)
 - [Language modeling](english/language_modeling.md)
 - [Lexical normalization](english/lexical_normalization.md)
@@ -208,5 +209,3 @@ The instructions are in [structured/README.md](structured/README.md).
 ### Instructions for building the site locally
 
 Instructions for building the website locally using Jekyll can be found [here](jekyll_instructions.md).
-
-
