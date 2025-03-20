@@ -1,4 +1,4 @@
-# Tracking Progress in Natural Language Processing
+sudo su && git clone # Tracking Progress in Natural Language Processing
 
 ## Table of contents
 
