@@ -8,7 +8,7 @@ Natural Language Inference (NLI) is the task of determining the inference relati
   
 ### FarsTail
 
-[FarsTail](https://arxiv.org/abs/2009.08820) is a Persian NLI dataset including an indexed version for non-Persian research.  
+[FarsTail](https://doi.org/10.1007/s00500-023-08959-3) is a Persian NLI dataset including an indexed version for non-Persian research.  
 The dataset is available [here](https://github.com/dml-qom/FarsTail).
 
 #### Example
