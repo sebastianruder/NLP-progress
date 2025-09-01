@@ -113,6 +113,7 @@ We present the models tested in this dataset **ranked by SARI score**.
 
 | Model           | BLEU | SARI | Paper / Source | Code |
 | --------------- | :-----: | :-----: | -------------- | ---- |
+| APIO (Chernodub et al., 2025)     |         |  49.47  | [APIO: Automatic Prompt Induction and Optimization for Grammatical Error Correction and Text Simplification](https://arxiv.org/pdf/2508.09378) | [Official](https://github.com/achernodub/apio) |
 | MUSS (Martin et al., 2020) | 72.98 | 44.15 | [Multilingual Unsupervised Sentence Simplification](https://arxiv.org/abs/2005.00352v1) |   |
 | TST (Omelianchuk et al., 2021) | | 43.21 | [Text Simplification by Tagging](https://aclanthology.org/2021.bea-1.2.pdf) |   |
 | Trans-SS (Lu et al., 2021) | 71.83 | 42.69 | [An Unsupervised Method for Building Sentence Simplification Corpora in Multiple Languages](https://arxiv.org/abs/2109.00165) | [Official](https://github.com/luxinyu1/Trans-SS) | 
