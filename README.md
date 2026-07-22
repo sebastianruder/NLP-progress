@@ -131,7 +131,7 @@ place where results for a task are already published and regularly maintained, s
 the reader will be pointed there.
 
 If you want to find this document again in the future, just go to [`nlpprogress.com`](https://nlpprogress.com/)
-or [`nlpsota.com`](http://nlpsota.com/) in your browser.
+or [`nlpsota.com`](https://nlpsota.com/) in your browser.
 
 ### Contributing
 
@@ -144,8 +144,8 @@ the one that introduced the dataset.
 
 **Code** &nbsp; We recommend to add a link to an implementation 
 if available. You can add a `Code` column (see below) to the table if it does not exist.
-In the `Code` column, indicate an official implementation with [Official](http://link_to_implementation).
-If an unofficial implementation is available, use [Link](http://link_to_implementation) (see below).
+In the `Code` column, indicate an official implementation with [Official](https://link_to_implementation).
+If an unofficial implementation is available, use [Link](https://link_to_implementation) (see below).
 If no implementation is available, you can leave the cell empty.
 
 #### Adding a new result
